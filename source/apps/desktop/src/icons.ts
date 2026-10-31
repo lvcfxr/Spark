@@ -33,6 +33,8 @@ const P: Record<string, string> = {
   layers: '<path d="m12 3 9 5-9 5-9-5z"/><path d="m3 13 9 5 9-5"/>',
   external: '<path d="M14 4h6v6"/><path d="m20 4-9 9"/><path d="M18 14v4.5A1.5 1.5 0 0 1 16.5 20h-11A1.5 1.5 0 0 1 4 18.5v-11A1.5 1.5 0 0 1 5.5 6H10"/>',
   trash: '<path d="M4 7h16"/><path d="M9.5 7V4.5h5V7"/><path d="M6.5 7l1 13h9l1-13"/>',
+  bulb: '<path d="M9 18h6"/><path d="M10 21h4"/><path d="M12 3a6 6 0 0 0-3.6 10.8c.6.5 1 1.2 1.1 2V16h5v-.2c.1-.8.5-1.5 1.1-2A6 6 0 0 0 12 3z"/>',
+  trophy: '<path d="M8 4h8v5a4 4 0 0 1-8 0z"/><path d="M8 6H5a3 3 0 0 0 3 4"/><path d="M16 6h3a3 3 0 0 1-3 4"/><path d="M12 13v4"/><path d="M8.5 20.5h7"/><path d="M10 17h4v3.5h-4z"/>',
   pause: '<rect x="7" y="5.5" width="3.5" height="13" rx="1"/><rect x="13.5" y="5.5" width="3.5" height="13" rx="1"/>',
   record: '<circle cx="12" cy="12" r="6" fill="currentColor" stroke="none"/>',
   stop: '<rect x="7" y="7" width="10" height="10" rx="1.5" fill="currentColor" stroke="none"/>',
@@ -45,4 +47,22 @@ export function ic(name: string, cls = ""): string {
 /** Иконки в статичной разметке: <span data-ic="stats"></span>. */
 export function fillIcons(root: ParentNode = document) {
   root.querySelectorAll<HTMLElement>("[data-ic]").forEach((el) => { if (!el.dataset.icDone) { el.innerHTML = ic(el.dataset.ic!); el.dataset.icDone = "1"; } });
+}
+
+/**
+ * Знак серии Spark — живая мини-версия логотипа: две карточки «дышат», сфера пульсирует,
+ * звезда-искра вращается и мерцает, вокруг летают искры (их больше на высоких уровнях). Анимация постоянная.
+ * Цвет уровня задаёт родитель через --c1 (сфера) и --c3 (задняя карточка).
+ */
+export function sparkMark(cls = ""): string {
+  const ph = `--ph:-${((performance.now() % 6000) / 1000).toFixed(2)}s`; // фаза продолжается между перерисовками — без рывков
+  return `<svg class="smark ${cls}" style="${ph}" viewBox="0 0 32 32" aria-hidden="true">
+    <g class="sm-back"><rect x="5.5" y="6" width="12.5" height="17" rx="3.2" transform="rotate(-13 11.75 14.5)"/></g>
+    <g class="sm-front"><rect x="12.4" y="7.6" width="13" height="17.6" rx="3.4" transform="rotate(10 18.9 16.4)"/></g>
+    <circle class="sm-glow" cx="18.9" cy="16.4" r="6"/>
+    <g class="sm-orbit o1"><circle cx="18.9" cy="6.2" r="1.25"/></g>
+    <g class="sm-orbit o2"><circle cx="18.9" cy="26.4" r="1"/></g>
+    <g class="sm-orbit o3"><circle cx="8.8" cy="16.4" r=".95"/></g>
+    <circle class="sm-orb" cx="18.9" cy="16.4" r="5.2"/>
+    <path class="sm-star" d="M18.9 12.6l.95 2.85 2.85.95-2.85.95-.95 2.85-.95-2.85-2.85-.95 2.85-.95z"/></svg>`;
 }

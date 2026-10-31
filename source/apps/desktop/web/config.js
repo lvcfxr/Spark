@@ -4,4 +4,5 @@
 window.SPARK_CONFIG = {
   supabaseUrl: "",   // например "https://abcdxyz.supabase.co"
   supabaseKey: "",   // ключ "anon" или "publishable"
+  botUsername: "",   // имя бота без @ — для ссылки t.me/<бот>?startapp в настройках
 };

@@ -379,3 +379,228 @@ svg.i.row-ic { width: 17px; height: 17px; vertical-align: -3px; opacity: .85; }
 
 /* узкая боковая колонка (планшет): только иконки, подписи — во всплывающей подсказке */
 @media (max-width: 1000px) and (min-width: 761px) { .side-foot button span:last-child { display: none; } .side-foot button { padding: 9px 0; } }
+
+/* ================= серия правильных ответов (комбо) ================= */
+.combo { --c: var(--muted); display: inline-flex; align-items: center; gap: 4px; padding: 4px 10px 4px 8px; border-radius: 16px; font-weight: 750; font-variant-numeric: tabular-nums;
+  color: var(--c); background: color-mix(in srgb, var(--c) 13%, transparent); transition: color .3s, background .3s, box-shadow .3s; flex: none; margin-right: 4px; }
+.combo svg.i { width: 18px; height: 18px; vertical-align: 0; }
+.combo b { min-width: 1ch; text-align: center; }
+.combo.t0 { --c: var(--muted); }
+.combo.t1 { --c: #34c759; }
+.combo.t2 { --c: #3390ec; box-shadow: 0 0 0 1px color-mix(in srgb, var(--c) 35%, transparent); }
+.combo.t3 { --c: #7c3aed; animation: glow 2.4s ease-in-out infinite; }
+.combo.t4 { --c: #ff9500; animation: glow 1.8s ease-in-out infinite; } .combo.t4 svg.i { animation: flicker .9s ease-in-out infinite; transform-origin: 50% 90%; }
+.combo.t5 { --c: #ff2d55; color: #fff; background: linear-gradient(90deg, #ff2d55, #ff9500, #ff2d55); background-size: 200% 100%; animation: shift 2s linear infinite, glow 1.4s ease-in-out infinite; }
+.combo.t5 svg.i { animation: flicker .7s ease-in-out infinite; transform-origin: 50% 90%; }
+.combo.t6 { --c: #a78bfa; color: #fff; background: linear-gradient(90deg, #7c3aed, #3390ec, #34c759, #ffcc00, #ff9500, #ff2d55, #7c3aed); background-size: 300% 100%; animation: shift 2.4s linear infinite, glow 1.2s ease-in-out infinite; }
+.combo.t6 svg.i { animation: flicker .6s ease-in-out infinite, spinwob 3s ease-in-out infinite; transform-origin: 50% 90%; }
+@keyframes glow { 50% { box-shadow: 0 0 14px 2px color-mix(in srgb, var(--c) 55%, transparent); } }
+@keyframes shift { to { background-position: -200% 0; } }
+@keyframes flicker { 0%, 100% { transform: scale(1) rotate(0); } 30% { transform: scale(1.12, .92) rotate(-6deg); } 60% { transform: scale(.94, 1.1) rotate(5deg); } }
+@keyframes spinwob { 50% { filter: hue-rotate(40deg); } }
+/* реакция на ответ: чем выше уровень, тем ярче */
+.combo.up { animation-name: pop; animation-duration: .45s; animation-timing-function: cubic-bezier(.3, 1.8, .5, 1); animation-iteration-count: 1; }
+.combo.t2.up { animation-name: popwiggle; animation-duration: .55s; }
+.combo.t3.up, .combo.t4.up { animation-name: popbig; animation-duration: .6s; }
+.combo.t5.up, .combo.t6.up { animation-name: popbig, shift; animation-duration: .6s, 2s; animation-iteration-count: 1, infinite; animation-timing-function: cubic-bezier(.3, 1.8, .5, 1), linear; }
+.combo.break { animation: shake .45s ease-in-out; color: var(--bad); background: color-mix(in srgb, var(--bad) 14%, transparent); }
+@keyframes pop { 40% { transform: scale(1.3); } }
+@keyframes popwiggle { 30% { transform: scale(1.3) rotate(-8deg); } 60% { transform: scale(1.15) rotate(6deg); } }
+@keyframes popbig { 35% { transform: scale(1.5); box-shadow: 0 0 22px 6px color-mix(in srgb, var(--c) 60%, transparent); } }
+@keyframes shake { 20%, 60% { transform: translateX(-5px); } 40%, 80% { transform: translateX(5px); } }
+/* вехи: 5, 10, 20, 30, 50… — салют в центре экрана */
+.milestone { --c: #34c759; position: absolute; left: 50%; top: 38%; transform: translate(-50%, -50%); z-index: 5; pointer-events: none; text-align: center; animation: msfade 1.7s ease forwards; }
+.milestone.t2 { --c: #3390ec; } .milestone.t3 { --c: #7c3aed; } .milestone.t4 { --c: #ff9500; } .milestone.t5 { --c: #ff2d55; } .milestone.t6 { --c: #ffcc00; }
+.ms-n { font-size: 84px; font-weight: 850; line-height: 1; color: var(--c); text-shadow: 0 6px 30px color-mix(in srgb, var(--c) 55%, transparent); animation: msnum .9s cubic-bezier(.3, 1.8, .5, 1); }
+.milestone.t5 .ms-n, .milestone.t6 .ms-n { background: linear-gradient(90deg, #7c3aed, #3390ec, #34c759, #ffcc00, #ff9500, #ff2d55); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.ms-t { font-weight: 700; font-size: 17px; color: var(--c); margin-top: 4px; }
+.ms-burst { position: absolute; left: 50%; top: 42px; }
+.ms-burst i { position: absolute; width: 9px; height: 9px; border-radius: 50%; background: var(--c); left: -4px; top: -4px; opacity: 0;
+  animation: burst 1.1s cubic-bezier(.1, .7, .3, 1) forwards; transform: rotate(var(--a)) translateY(0) scale(var(--s)); }
+.ms-burst i:nth-child(3n) { background: #fff; } .milestone.t6 .ms-burst i:nth-child(4n+1) { background: #ff2d55; } .milestone.t6 .ms-burst i:nth-child(4n+2) { background: #3390ec; }
+@keyframes burst { 10% { opacity: 1; } to { opacity: 0; transform: rotate(var(--a)) translateY(calc(-1 * var(--d))) scale(var(--s)); } }
+@keyframes msnum { from { transform: scale(.2); opacity: 0; } }
+@keyframes msfade { 0% { opacity: 0; } 12% { opacity: 1; } 75% { opacity: 1; } to { opacity: 0; transform: translate(-50%, -62%); } }
+.best-combo { display: inline-flex; align-items: center; gap: 6px; font-weight: 650; color: #7c3aed; }
+.best-combo svg.i { width: 18px; height: 18px; }
+.best-combo.t4, .best-combo.t5 { color: #ff9500; } .best-combo.t6 { color: #ff2d55; }
+
+/* ================= серия дней на главной ================= */
+#streak { padding: 0 8px 6px; }
+#streak:empty { display: none; }
+.streak-card { --c: var(--muted); display: flex; align-items: center; gap: 10px; padding: 10px 12px; border-radius: 14px; cursor: pointer;
+  background: color-mix(in srgb, var(--c) 10%, var(--card)); border: 1px solid color-mix(in srgb, var(--c) 30%, var(--line)); transition: transform .12s; }
+.streak-card:hover { transform: translateY(-1px); }
+.streak-card.d1 { --c: #ff9500; } .streak-card.d2 { --c: #ff7a00; } .streak-card.d3 { --c: #ff5a1f; } .streak-card.d4 { --c: #ff2d55; } .streak-card.d5 { --c: #d63aff; } .streak-card.d6 { --c: #7c3aed; }
+.streak-card.pending { border-style: dashed; }
+.streak-card.pending .sc-ic { opacity: .55; filter: grayscale(.4); }
+.sc-ic { width: 36px; height: 36px; border-radius: 11px; display: grid; place-items: center; color: var(--c); background: color-mix(in srgb, var(--c) 16%, transparent); flex: none; }
+.sc-ic svg.i { width: 22px; height: 22px; }
+.streak-card.d4 .sc-ic svg.i, .streak-card.d5 .sc-ic svg.i, .streak-card.d6 .sc-ic svg.i { animation: flicker 1.1s ease-in-out infinite; transform-origin: 50% 90%; }
+.sc-main { flex: 1; min-width: 0; display: flex; flex-direction: column; }
+.sc-main b { font-size: 15px; } .sc-main span { font-size: 12px; color: var(--muted); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.sc-best { font-size: 12px; color: var(--muted); display: inline-flex; align-items: center; gap: 3px; }
+.streak-card.celebrate { animation: celebrate 1.2s cubic-bezier(.3, 1.6, .5, 1); }
+.streak-card.celebrate .sc-ic { animation: popbig .9s cubic-bezier(.3, 1.8, .5, 1) .15s; }
+@keyframes celebrate { 0% { transform: scale(.94); } 40% { transform: scale(1.04); box-shadow: 0 0 0 4px color-mix(in srgb, var(--c) 30%, transparent); } }
+
+/* ================= советы ================= */
+#tips { position: fixed; inset: 0; z-index: 15; background: var(--bg); display: none; flex-direction: column; }
+#tips.on { display: flex; animation: fade .18s; }
+.tips-list { display: grid; gap: 10px; max-width: 760px; margin: 4px auto 0; }
+.tip { display: flex; gap: 14px; padding: 14px 16px; border-radius: 16px; background: var(--card); border: 1px solid var(--line); }
+.tip-n { width: 28px; height: 28px; border-radius: 50%; display: grid; place-items: center; font-weight: 750; font-size: 13px; flex: none;
+  color: var(--accent); background: color-mix(in srgb, var(--accent) 13%, transparent); }
+.tip-main b { font-size: 15px; } .tip-main p { margin: 4px 0 0; line-height: 1.5; color: var(--muted); font-size: 14px; }
+@media (max-width: 760px) { .combo { padding: 4px 8px 4px 6px; } .ms-n { font-size: 68px; } }
+.milestone { top: 42%; padding: 18px 34px 16px; border-radius: 26px; background: color-mix(in srgb, var(--card) 92%, transparent); backdrop-filter: blur(10px);
+  box-shadow: 0 10px 40px color-mix(in srgb, var(--c) 35%, transparent), 0 0 0 1px color-mix(in srgb, var(--c) 30%, transparent); }
+.ms-burst { top: 50%; }
+.milestone { background: var(--panel-solid); backdrop-filter: none; }
+
+/* ================= живой огонёк серии ================= */
+.flame { --f1: #9aa0a6; --f2: #c4c8cd; --f3: #eceef0; --k: 1; width: 22px; height: 22px; overflow: visible; flex: none; display: inline-block; vertical-align: -5px; }
+.flame.big { width: 28px; height: 28px; }
+.flame.inline { width: 24px; height: 24px; vertical-align: -4px; }
+.flame .fo, .flame .fm, .flame .fc { transform-box: view-box; transform-origin: 12px 22.5px; animation-delay: var(--ph, 0s); animation-iteration-count: infinite; animation-timing-function: ease-in-out; }
+.flame .fo { fill: var(--f1); animation-name: fl-o; animation-duration: calc(1.7s * var(--k)); }
+.flame .fm { fill: var(--f2); animation-name: fl-m; animation-duration: calc(1.15s * var(--k)); }
+.flame .fc { fill: var(--f3); animation-name: fl-c; animation-duration: calc(.8s * var(--k)); }
+.flame .sp { fill: var(--f2); opacity: 0; display: none; transform-box: view-box; animation: fl-sp calc(1.5s * var(--k)) ease-out infinite; }
+.flame .s2 { animation-delay: .5s; fill: var(--f1); } .flame .s3 { animation-delay: 1s; }
+@keyframes fl-o { 0%, 100% { transform: scale(1, 1) skewX(0); } 25% { transform: scale(1.05, .95) skewX(-4deg); } 50% { transform: scale(.96, 1.06) skewX(3deg); } 75% { transform: scale(1.02, .98) skewX(-2deg); } }
+@keyframes fl-m { 0%, 100% { transform: scale(1, 1) skewX(0); } 30% { transform: scale(.93, 1.08) skewX(4deg); } 65% { transform: scale(1.06, .94) skewX(-3deg); } }
+@keyframes fl-c { 0%, 100% { transform: scale(1, 1); opacity: 1; } 50% { transform: scale(.88, 1.12); opacity: .85; } }
+@keyframes fl-sp { 0% { opacity: 0; transform: translateY(2px); } 25% { opacity: 1; } 100% { opacity: 0; transform: translateY(-9px) scale(.4); } }
+/* уровни серии ответов */
+.combo.t0 .flame, .streak-card.pending .flame, .streak-card.d0 .flame { --k: 1.9; }
+.combo.t1 .flame { --f1: #16a34a; --f2: #4ade80; --f3: #dcfce7; }
+.combo.t2 .flame { --f1: #2563eb; --f2: #60a5fa; --f3: #dbeafe; }
+.combo.t3 .flame { --f1: #7c3aed; --f2: #a78bfa; --f3: #f3e8ff; --k: .9; }
+.combo.t4 .flame { --f1: #ea580c; --f2: #fb923c; --f3: #fef08a; --k: .8; }
+.combo.t5 .flame { --f1: #dc2626; --f2: #f97316; --f3: #fde047; --k: .7; }
+.combo.t6 .flame { --f1: #db2777; --f2: #f59e0b; --f3: #fffbeb; --k: .62; }
+.combo.t6 .flame .fo { animation-name: fl-o, fl-hue; animation-duration: calc(1.7s * var(--k)), 2.4s; }
+@keyframes fl-hue { to { filter: hue-rotate(360deg); } }
+.combo.t2 .flame .s1, .combo.t3 .flame .s1, .combo.t3 .flame .s2, .combo.t4 .flame .sp, .combo.t5 .flame .sp, .combo.t6 .flame .sp { display: block; }
+.combo.t5 .flame, .combo.t6 .flame { --f3: #fff; }
+.combo.t5 .flame .fc, .combo.t6 .flame .fc { fill: #fff7cc; }
+/* на «радужных» плашках огонёк белый с золотой серединой — чтобы был виден */
+.combo.t5 .flame, .combo.t6 .flame { --f1: #ffffff; --f2: #ffe08a; --f3: #ffffff; }
+/* уровни серии дней */
+.streak-card.d1 .flame { --f1: #f59e0b; --f2: #fcd34d; --f3: #fffbeb; }
+.streak-card.d2 .flame, .stat-streak.d2 .flame { --f1: #f97316; --f2: #fdba74; --f3: #fff7ed; }
+.streak-card.d3 .flame, .stat-streak.d3 .flame { --f1: #ea580c; --f2: #fb923c; --f3: #fef08a; --k: .9; }
+.streak-card.d4 .flame, .stat-streak.d4 .flame { --f1: #dc2626; --f2: #f97316; --f3: #fde047; --k: .8; }
+.streak-card.d5 .flame, .stat-streak.d5 .flame { --f1: #c026d3; --f2: #f472b6; --f3: #fdf4ff; --k: .75; }
+.streak-card.d6 .flame, .stat-streak.d6 .flame { --f1: #7c3aed; --f2: #f472b6; --f3: #fff; --k: .7; }
+.stat-streak.d1 .flame { --f1: #f59e0b; --f2: #fcd34d; --f3: #fffbeb; }
+.streak-card:not(.pending):not(.d0) .flame .s1, .streak-card.d3 .flame .sp, .streak-card.d4 .flame .sp, .streak-card.d5 .flame .sp, .streak-card.d6 .flame .sp { display: block; }
+.streak-card .sc-ic { overflow: visible; }
+/* убрать старую «прыгающую» анимацию иконки — теперь живёт сам огонёк */
+.streak-card .sc-ic svg.i, .combo svg.i { animation: none !important; }
+@media (prefers-reduced-motion: reduce) { .flame * { animation: none !important; } .flame .sp { display: none !important; } }
+/* баннер предложения ярлыка */
+.update-bar .bar-x { background: transparent; color: #fff; padding: 2px 4px; margin-left: 2px; } .update-bar .bar-x svg.i { width: 16px; height: 16px; }
+
+/* ================= знак серии Spark (живой логотип) ================= */
+.smark { --c1: #8e8e93; --c3: #d1d1d6; --k: 1; width: 24px; height: 24px; overflow: visible; flex: none; display: inline-block; vertical-align: -6px; }
+.smark.big { width: 32px; height: 32px; } .smark.inline { width: 26px; height: 26px; vertical-align: -6px; }
+.smark * { transform-box: view-box; animation-delay: var(--ph, 0s); animation-iteration-count: infinite; }
+.smark .sm-back rect { fill: color-mix(in srgb, var(--c3) 55%, #fff); stroke: color-mix(in srgb, var(--c3) 80%, #000 5%); stroke-width: 1; }
+.smark .sm-front rect { fill: #0b0b0f; stroke: #fff; stroke-width: 1.5; }
+.smark .sm-back { transform-origin: 11.75px 23px; animation: sm-back calc(3.2s * var(--k)) ease-in-out infinite; }
+.smark .sm-front { transform-origin: 18.9px 25px; animation: sm-front calc(3.2s * var(--k)) ease-in-out infinite; }
+.smark .sm-orb { fill: var(--c1); transform-origin: 18.9px 16.4px; animation: sm-orb calc(1.6s * var(--k)) ease-in-out infinite; }
+.smark .sm-glow { fill: var(--c1); opacity: 0; transform-origin: 18.9px 16.4px; animation: sm-glow calc(1.6s * var(--k)) ease-out infinite; }
+.smark .sm-star { fill: #fff; transform-origin: 18.9px 16.4px; animation: sm-star calc(2.6s * var(--k)) ease-in-out infinite; }
+.smark .sm-orbit { fill: var(--c1); transform-origin: 18.9px 16.4px; display: none; animation-timing-function: linear; }
+.smark .o1 { animation-name: sm-spin; animation-duration: calc(2.2s * var(--k)); }
+.smark .o2 { animation-name: sm-spin; animation-duration: calc(3s * var(--k)); animation-direction: reverse; }
+.smark .o3 { animation-name: sm-spin; animation-duration: calc(2.6s * var(--k)); }
+@keyframes sm-back { 0%, 100% { transform: rotate(0); } 50% { transform: rotate(-5deg) translateY(-.4px); } }
+@keyframes sm-front { 0%, 100% { transform: rotate(0); } 50% { transform: rotate(4deg) translateY(-.6px); } }
+@keyframes sm-orb { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.1); } }
+@keyframes sm-glow { 0% { opacity: .45; transform: scale(.9); } 100% { opacity: 0; transform: scale(1.9); } }
+@keyframes sm-star { 0% { transform: rotate(0) scale(.85); } 50% { transform: rotate(90deg) scale(1.12); } 100% { transform: rotate(180deg) scale(.85); } }
+@keyframes sm-spin { to { transform: rotate(360deg); } }
+/* уровни серии ответов: 0 серый и спокойный → 50+ радужный и быстрый */
+.combo.t0 .smark, .streak-card.pending .smark, .streak-card.d0 .smark { --k: 1.8; }
+.combo.t0 .smark .sm-glow, .streak-card.pending .smark .sm-glow { display: none; }
+.combo.t1 .smark { --c1: #22c55e; --c3: #bbf7d0; }
+.combo.t2 .smark { --c1: #3b82f6; --c3: #bfdbfe; --k: .95; }
+.combo.t3 .smark { --c1: #7c3aed; --c3: #ddd6fe; --k: .85; }
+.combo.t4 .smark { --c1: #f97316; --c3: #fed7aa; --k: .75; }
+.combo.t5 .smark { --c1: #ef4444; --c3: #fecaca; --k: .65; }
+.combo.t6 .smark { --c1: #ec4899; --c3: #fbcfe8; --k: .55; }
+.combo.t6 .smark .sm-orb, .combo.t6 .smark .sm-glow, .combo.t6 .smark .sm-orbit { animation-name: sm-orb, sm-hue; animation-duration: calc(1.6s * var(--k)), 2.4s; }
+.combo.t6 .smark .sm-glow { animation-name: sm-glow, sm-hue; }
+.combo.t6 .smark .o1, .combo.t6 .smark .o3 { animation-name: sm-spin, sm-hue; animation-duration: calc(2.2s * var(--k)), 2.4s; }
+.combo.t6 .smark .o2 { animation-name: sm-spin, sm-hue; animation-duration: calc(3s * var(--k)), 2.4s; }
+@keyframes sm-hue { to { filter: hue-rotate(360deg); } }
+.combo.t2 .smark .o1, .combo.t3 .smark .o1, .combo.t3 .smark .o2, .combo.t4 .smark .sm-orbit, .combo.t5 .smark .sm-orbit, .combo.t6 .smark .sm-orbit { display: block; }
+/* на цветных плашках 30+ — белая сфера, чтобы знак не сливался */
+.combo.t5 .smark .sm-orb, .combo.t5 .smark .sm-orbit { fill: #fff; } .combo.t5 .smark .sm-star { fill: #ef4444; }
+.combo.t6 .smark .sm-orbit { fill: #fff; }
+/* уровни серии дней */
+.streak-card.d1 .smark, .stat-streak.d1 .smark { --c1: #a78bfa; --c3: #ede9fe; }
+.streak-card.d2 .smark, .stat-streak.d2 .smark { --c1: #8b5cf6; --c3: #ddd6fe; }
+.streak-card.d3 .smark, .stat-streak.d3 .smark { --c1: #7c3aed; --c3: #ddd6fe; --k: .9; }
+.streak-card.d4 .smark, .stat-streak.d4 .smark { --c1: #f97316; --c3: #fed7aa; --k: .8; }
+.streak-card.d5 .smark, .stat-streak.d5 .smark { --c1: #ef4444; --c3: #fecaca; --k: .7; }
+.streak-card.d6 .smark, .stat-streak.d6 .smark { --c1: #ec4899; --c3: #fbcfe8; --k: .6; }
+.streak-card:not(.pending):not(.d0) .smark .o1, .streak-card.d3 .smark .o2, .streak-card.d4 .smark .sm-orbit, .streak-card.d5 .smark .sm-orbit, .streak-card.d6 .smark .sm-orbit { display: block; }
+.streak-card .sc-ic { background: none; width: 38px; height: 38px; }
+@media (prefers-reduced-motion: reduce) { .smark * { animation: none !important; } .smark .sm-orbit, .smark .sm-glow { display: none !important; } }
+
+/* ================= переключатели и флажки ================= */
+.sw-row { display: flex !important; align-items: center; justify-content: space-between; gap: 14px; cursor: pointer; -webkit-tap-highlight-color: transparent; }
+.sw-txt { display: flex; flex-direction: column; gap: 2px; min-width: 0; text-align: left; }
+.sw-t { font-size: 14.5px; line-height: 1.3; color: var(--text); }
+.sw-d { font-size: 12px; line-height: 1.35; color: var(--muted); }
+input.switch { -webkit-appearance: none; appearance: none; flex: none; width: 46px; height: 28px; border-radius: 14px; margin: 0; padding: 0; border: 0;
+  background: color-mix(in srgb, var(--muted) 35%, transparent); position: relative; cursor: pointer; transition: background .2s; outline: none; }
+input.switch::before { content: ""; position: absolute; top: 2px; left: 2px; width: 24px; height: 24px; border-radius: 50%; background: #fff;
+  box-shadow: 0 1px 3px #0003, 0 2px 6px #0001; transition: transform .22s cubic-bezier(.3, 1.3, .5, 1); }
+input.switch:checked { background: var(--accent); }
+input.switch:checked::before { transform: translateX(18px); }
+input.switch:focus-visible { box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent) 30%, transparent); }
+.sw-group { margin-top: 16px; }
+input.check { -webkit-appearance: none; appearance: none; flex: none; width: 22px; height: 22px; margin: 0; border-radius: 7px; border: 1.6px solid color-mix(in srgb, var(--muted) 60%, transparent);
+  background: var(--card); display: inline-grid; place-items: center; cursor: pointer; transition: background .15s, border-color .15s; }
+input.check:checked { background: var(--accent); border-color: var(--accent); }
+input.check:checked::after { content: ""; width: 6px; height: 11px; border: solid #fff; border-width: 0 2.2px 2.2px 0; transform: translateY(-1px) rotate(45deg); }
+/* цвета плашки серии дней совпадают со знаком */
+.streak-card.d1 { --c: #a78bfa; } .streak-card.d2 { --c: #8b5cf6; } .streak-card.d3 { --c: #7c3aed; } .streak-card.d4 { --c: #f97316; } .streak-card.d5 { --c: #ef4444; } .streak-card.d6 { --c: #ec4899; }
+
+/* ---- 0.10 layout fixes ---- */
+.group > .item.sw-row, .sw-row { flex-wrap: nowrap !important; }
+.sw-txt { flex: 1; min-width: 0; }
+.sw-t { font-weight: 500; line-height: 1.3; }
+.sw-d { font-size: 12px; color: var(--muted); line-height: 1.35; }
+input.switch { flex: none; margin: 0; }
+.editor label.sw-row { text-transform: none; letter-spacing: 0; font-size: inherit; font-weight: 400; color: var(--text); margin: 0; display: flex; }
+.editor .sw-group { margin-top: 16px; }
+.tile-m span { display: inline-flex; align-items: center; gap: 4px; line-height: 1.35; white-space: nowrap; }
+.tile-m svg.i, .tile-m svg.tiny { width: 12px; height: 12px; flex: none; }
+.tile-m .have { font-weight: 600; }
+.name-row.nowrap { flex-wrap: nowrap !important; }
+.name-row #p-emoji { width: 56px; text-align: center; flex: none; }
+.name-row #p-title, .name-row #m-name { flex: 1; min-width: 0; }
+.toast { left: 0; right: 0; margin-inline: auto; transform: none; top: auto; bottom: calc(28px + env(safe-area-inset-bottom)); font-size: 14px; pointer-events: none; box-shadow: 0 6px 24px #0003; }
+@media (max-width: 700px) { .toast { top: auto; bottom: calc(86px + env(safe-area-inset-bottom)); } }
+.group > .item > span:first-child { min-width: 0; }
+.group > .item:has(> .btn:only-of-type) { flex-wrap: nowrap; }
+.group > .item > .btn { flex: none; }
+.tips-h { font-size: 13px; font-weight: 600; color: var(--muted); text-transform: uppercase; letter-spacing: .4px; margin: 4px 4px 10px; }
+.br-tabs button { white-space: nowrap; }
+.br-tabs button span { overflow: hidden; text-overflow: ellipsis; }
+.s-x { margin-top: 6px; font-size: 12.5px; color: var(--muted); line-height: 1.4; }
+.s-x blockquote { margin: 4px 0 0; padding: 4px 8px; font-size: 12.5px; }
+.s-q .snd, .s-a .snd { transform: scale(.85); vertical-align: middle; }
+.extra { font-size: 15px; line-height: 1.45; }
+.extra > div:not(.inset):not(.sub):not(.gap) { font-size: 14.5px; color: var(--muted); margin: 2px 0; }
+.extra > .inset { font-size: 15px; }
+#browser, #tips { z-index: 75; }
+#modal { z-index: 80; } .toast { z-index: 90; }
+.drop { z-index: 85; }
