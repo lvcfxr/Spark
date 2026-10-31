@@ -1,10 +1,10 @@
 /** Раздел «Советы»: короткие практические рекомендации (RU/EN). Только общепринятые приёмы, без выдуманных цифр. */
 type L = { ru: string; en: string };
-export interface TipSection { id: string; icon: string; title: L; items: { title: L; text: L }[] }
+export interface TipSection { id: string; icon: string; title: L; tab?: L; items: { title: L; text: L }[] }
 
 export const TIPS: TipSection[] = [
   {
-    id: "spark", icon: "spark", title: { ru: "Как заниматься в Spark", en: "Getting the most out of Spark" },
+    id: "spark", icon: "spark", tab: { ru: "Spark", en: "Spark" }, title: { ru: "Как заниматься в Spark", en: "Getting the most out of Spark" },
     items: [
       { title: { ru: "Каждый день понемногу", en: "A little every day" },
         text: { ru: "15–20 минут в день работают лучше, чем два часа раз в неделю: повторения не копятся, а серия дней помогает не бросить.", en: "15–20 minutes a day beats two hours once a week: reviews don't pile up and the day streak keeps you going." } },
@@ -25,7 +25,7 @@ export const TIPS: TipSection[] = [
     ],
   },
   {
-    id: "lang", icon: "globe", title: { ru: "Изучение языков", en: "Learning languages" },
+    id: "lang", icon: "globe", tab: { ru: "Языки", en: "Languages" }, title: { ru: "Изучение языков", en: "Learning languages" },
     items: [
       { title: { ru: "Начните с самых частых слов", en: "Start with the most frequent words" },
         text: { ru: "Небольшое число самых частых слов покрывает большую часть обычной речи и текстов. Базовые колоды в каталоге — хороший старт.", en: "A small set of the most frequent words covers most everyday speech and text. The core decks in the catalog are a good start." } },
@@ -48,7 +48,7 @@ export const TIPS: TipSection[] = [
     ],
   },
   {
-    id: "memory", icon: "layers", title: { ru: "Как работает память", en: "How memory works" },
+    id: "memory", icon: "layers", tab: { ru: "Память", en: "Memory" }, title: { ru: "Как работает память", en: "How memory works" },
     items: [
       { title: { ru: "Интервальные повторения", en: "Spaced repetition" },
         text: { ru: "Повтор незадолго до того, как вы забудете, укрепляет память сильнее всего. Spark (алгоритм FSRS) рассчитывает этот момент для каждой карточки.", en: "Reviewing just before you'd forget strengthens memory the most. Spark (the FSRS algorithm) works out that moment for every card." } },

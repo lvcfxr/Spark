@@ -23,9 +23,15 @@
 1. **Project Settings → API** (или **API Keys**): скопируйте **Project URL** и публичный ключ **anon** (или **publishable**).
 2. Пришлите их в чат Claude — он внесёт их в `config.js` патчем. Или сами: откройте `config.js` в репозитории → ✏️ → заполните:
    ```js
-   window.SPARK_CONFIG = { supabaseUrl: "https://xxxx.supabase.co", supabaseKey: "ваш anon-ключ" };
+   window.SPARK_CONFIG = { supabaseUrl: "https://xxxx.supabase.co", supabaseKey: "ваш anon-ключ", botUsername: "имя_бота_без_@" };
    ```
    Этот ключ публичный по замыслу Supabase — данные защищены правилами RLS. Ключ `service_role` сюда не вставляйте никогда.
+
+## 5. Запуск без захода в чат с ботом
+1. В @BotFather: **/mybots → ваш бот → Bot Settings → Configure Mini App → Enable Mini App** и укажите адрес сайта Spark (тот же, что у кнопки меню).
+2. Теперь в профиле бота есть кнопка **«Open App»**, а Spark открывается по ссылке `https://t.me/имя_бота?startapp` — прямо из поиска Telegram, из закрепа или из пересланной ссылки, без чата.
+3. Впишите `botUsername` в `config.js` (шаг 4) — тогда в Spark появится кнопка «Ссылка на Spark» (Настройки → Быстрый запуск).
+4. Там же кнопка **«Ярлык на главном экране»**: Telegram добавит иконку Spark на рабочий стол телефона, и приложение открывается одним касанием. Spark сам предложит это после первой тренировки.
 
 ## Проверка
 Откройте бота в Telegram → кнопка Spark → Настройки: в разделе «Синхронизация» должно быть «Telegram · ваше имя · синхронизировано».

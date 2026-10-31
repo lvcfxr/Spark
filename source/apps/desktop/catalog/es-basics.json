@@ -1,209 +1,512 @@
 {
-"id": "es-basics",
-"version": 1,
-"cards": [
-{
-"front": "hola",
-"back": "привет"
-},
-{
-"front": "adiós",
-"back": "до свидания"
-},
-{
-"front": "gracias",
-"back": "спасибо"
-},
-{
-"front": "por favor",
-"back": "пожалуйста"
-},
-{
-"front": "sí",
-"back": "да"
-},
-{
-"front": "no",
-"back": "нет"
-},
-{
-"front": "el agua",
-"back": "вода"
-},
-{
-"front": "la casa",
-"back": "дом"
-},
-{
-"front": "el perro",
-"back": "собака"
-},
-{
-"front": "el gato",
-"back": "кошка"
-},
-{
-"front": "el libro",
-"back": "книга"
-},
-{
-"front": "la mesa",
-"back": "стол"
-},
-{
-"front": "la silla",
-"back": "стул"
-},
-{
-"front": "el coche",
-"back": "машина",
-"hint": "в Испании"
-},
-{
-"front": "la ciudad",
-"back": "город"
-},
-{
-"front": "el día",
-"back": "день"
-},
-{
-"front": "la noche",
-"back": "ночь"
-},
-{
-"front": "el tiempo",
-"back": "время; погода"
-},
-{
-"front": "el amigo",
-"back": "друг"
-},
-{
-"front": "la familia",
-"back": "семья"
-},
-{
-"front": "el trabajo",
-"back": "работа"
-},
-{
-"front": "la escuela",
-"back": "школа"
-},
-{
-"front": "la comida",
-"back": "еда"
-},
-{
-"front": "el pan",
-"back": "хлеб"
-},
-{
-"front": "la leche",
-"back": "молоко"
-},
-{
-"front": "el café",
-"back": "кофе"
-},
-{
-"front": "rojo",
-"back": "красный"
-},
-{
-"front": "azul",
-"back": "синий"
-},
-{
-"front": "verde",
-"back": "зелёный"
-},
-{
-"front": "blanco",
-"back": "белый"
-},
-{
-"front": "negro",
-"back": "чёрный"
-},
-{
-"front": "grande",
-"back": "большой"
-},
-{
-"front": "pequeño",
-"back": "маленький"
-},
-{
-"front": "bueno",
-"back": "хороший"
-},
-{
-"front": "malo",
-"back": "плохой"
-},
-{
-"front": "nuevo",
-"back": "новый"
-},
-{
-"front": "viejo",
-"back": "старый"
-},
-{
-"front": "hablar",
-"back": "говорить"
-},
-{
-"front": "comer",
-"back": "есть"
-},
-{
-"front": "beber",
-"back": "пить"
-},
-{
-"front": "vivir",
-"back": "жить"
-},
-{
-"front": "ser",
-"back": "быть",
-"hint": "постоянное качество"
-},
-{
-"front": "estar",
-"back": "быть",
-"hint": "состояние, местоположение"
-},
-{
-"front": "tener",
-"back": "иметь"
-},
-{
-"front": "ir",
-"back": "идти; ехать"
-},
-{
-"front": "hacer",
-"back": "делать"
-},
-{
-"front": "querer",
-"back": "хотеть; любить"
-},
-{
-"front": "uno",
-"back": "один"
-},
-{
-"front": "dos",
-"back": "два"
-},
-{
-"front": "tres",
-"back": "три"
-}
-]
+ "id": "es-basics",
+ "version": 2,
+ "cards": [
+  {
+   "front": "hola [audio](media:6ded89f412d0973eef7b5757)",
+   "back": "привет",
+   "hint": "/ˈola/",
+   "extra": "h в испанском никогда не читается.\n> ¡Hola! ¿Qué tal? — *Привет! Как дела?*"
+  },
+  {
+   "front": "adiós [audio](media:1b3433ef6475301ea73bc28c)",
+   "back": "до свидания",
+   "hint": "/aˈðjos/",
+   "extra": "Ударение на последний слог — отмечено знаком.\n> Adiós, hasta mañana. — *До свидания, до завтра.*"
+  },
+  {
+   "front": "gracias [audio](media:cef8ac799a3ba53b6fe3f812)",
+   "back": "спасибо",
+   "hint": "/ˈɡɾaθjas/",
+   "extra": "В Латинской Америке — /ˈɡɾasjas/. Большое спасибо — muchas gracias.\n> Muchas gracias por todo. — *Большое спасибо за всё.*"
+  },
+  {
+   "front": "por favor [audio](media:e6ece9f4f69e9b9a26b35447)",
+   "back": "пожалуйста",
+   "hint": "/poɾ faˈβoɾ/",
+   "extra": "Ставится в начале или в конце просьбы.\n> Un café, por favor. — *Кофе, пожалуйста.*"
+  },
+  {
+   "front": "sí [audio](media:6b5d4b0f4da946161dd935c5)",
+   "back": "да",
+   "hint": "/si/",
+   "extra": "С ударением — «да»; si без знака — «если».\n> Sí, claro. — *Да, конечно.*"
+  },
+  {
+   "front": "no [audio](media:a0531a5deb1244ab451bb38a)",
+   "back": "нет",
+   "hint": "/no/",
+   "extra": "И «нет», и частица «не»: no sé — не знаю.\n> No, gracias. — *Нет, спасибо.*"
+  },
+  {
+   "front": "el agua [audio](media:e057de1dfe348df020b1e4cb)",
+   "back": "вода",
+   "hint": "/el ˈaɣwa/",
+   "extra": "Женский род, но el — потому что слово начинается с ударной a: el agua fría.\n> Un vaso de agua, por favor. — *Стакан воды, пожалуйста.*"
+  },
+  {
+   "front": "la casa [audio](media:5240545208ad493bcb05019d)",
+   "back": "дом",
+   "hint": "/la ˈkasa/",
+   "extra": "Дома — en casa, домой — a casa.\n> Mi casa es tu casa. — *Мой дом — твой дом.*"
+  },
+  {
+   "front": "el perro [audio](media:0bbd86f2335cf594d6927a55)",
+   "back": "собака",
+   "hint": "/el ˈpero/",
+   "extra": "rr — раскатистое р. Сравните: pero /ˈpeɾo/ — «но».\n> Tengo un perro. — *У меня есть собака.*"
+  },
+  {
+   "front": "el gato [audio](media:1df6f46c4bc36c1e4080ac96)",
+   "back": "кошка",
+   "hint": "/el ˈɡato/",
+   "extra": "Кошка-самка — la gata.\n> El gato duerme. — *Кот спит.*"
+  },
+  {
+   "front": "el libro [audio](media:3fbfa031c608fdfcb4c7709e)",
+   "back": "книга",
+   "hint": "/el ˈliβɾo/",
+   "extra": "b между гласными звучит мягко, почти как в.\n> Leo un libro. — *Я читаю книгу.*"
+  },
+  {
+   "front": "la mesa [audio](media:76401cafdbcb3ffe633154de)",
+   "back": "стол",
+   "hint": "/la ˈmesa/",
+   "extra": "Накрыть на стол — poner la mesa.\n> La comida está en la mesa. — *Еда на столе.*"
+  },
+  {
+   "front": "la silla [audio](media:ccbfb45a56907328f8ab8d55)",
+   "back": "стул",
+   "hint": "/la ˈsiʎa/",
+   "extra": "ll в большинстве регионов звучит как й: /ˈsiʝa/.\n> Siéntate en la silla. — *Садись на стул.*"
+  },
+  {
+   "front": "el coche [audio](media:b54e68ea63ffc42220fe9167)",
+   "back": "машина",
+   "hint": "/el ˈkotʃe/ · в Испании",
+   "extra": "В Латинской Америке чаще el carro или el auto.\n> Voy en coche. — *Я еду на машине.*"
+  },
+  {
+   "front": "la ciudad [audio](media:7bca9ea8434fcc789b0c6011)",
+   "back": "город",
+   "hint": "/la θjuˈðað/",
+   "extra": "В Латинской Америке c — /s/. Конечное d почти не слышно.\n> Madrid es una ciudad grande. — *Мадрид — большой город.*"
+  },
+  {
+   "front": "el día [audio](media:5fd4b7e405617921a8f52187)",
+   "back": "день",
+   "hint": "/el ˈdia/",
+   "extra": "Мужской род, хотя оканчивается на -a.\n> Buenos días. — *Доброе утро / добрый день.*"
+  },
+  {
+   "front": "la noche [audio](media:f7b2f3792f6049463dfe1b46)",
+   "back": "ночь",
+   "hint": "/la ˈnotʃe/",
+   "extra": "Вечером и ночью — por la noche.\n> Buenas noches. — *Добрый вечер / спокойной ночи.*"
+  },
+  {
+   "front": "el tiempo [audio](media:c2a1a91fbc8b9635ba866a84)",
+   "back": "время; погода",
+   "hint": "/el ˈtjempo/",
+   "extra": "О погоде: ¿Qué tiempo hace? — Какая погода?\n> No tengo tiempo. — *У меня нет времени.*"
+  },
+  {
+   "front": "el amigo [audio](media:df644d8d2e217baec28ed6ff)",
+   "back": "друг",
+   "hint": "/el aˈmiɣo/",
+   "extra": "Подруга — la amiga.\n> Es mi mejor amigo. — *Это мой лучший друг.*"
+  },
+  {
+   "front": "la familia [audio](media:1ca5c79918933b7bb86a27b5)",
+   "back": "семья",
+   "hint": "/la faˈmilja/",
+   "extra": "Ударение на -mi-.\n> Mi familia es pequeña. — *Моя семья маленькая.*"
+  },
+  {
+   "front": "el trabajo [audio](media:ad0223b244759ec5a553d89c)",
+   "back": "работа",
+   "hint": "/el tɾaˈβaxo/",
+   "extra": "j — гортанный звук, как русское х. Работать — trabajar.\n> Voy al trabajo. — *Я иду на работу.*"
+  },
+  {
+   "front": "la escuela [audio](media:3bad9705d832755cd067001e)",
+   "back": "школа",
+   "hint": "/la esˈkwela/",
+   "extra": "Испанцы добавляют e перед s+согласный: escuela, España.\n> Los niños van a la escuela. — *Дети идут в школу.*"
+  },
+  {
+   "front": "la comida [audio](media:41d48403074318d50f0e1602)",
+   "back": "еда",
+   "hint": "/la koˈmiða/",
+   "extra": "Ещё — «обед»: comer — обедать, есть.\n> La comida está rica. — *Еда вкусная.*"
+  },
+  {
+   "front": "el pan [audio](media:fdb5cc3e41754574512868ef)",
+   "back": "хлеб",
+   "hint": "/el pan/",
+   "extra": "Хлеб с маслом — pan con mantequilla.\n> Compro pan cada día. — *Я покупаю хлеб каждый день.*"
+  },
+  {
+   "front": "la leche [audio](media:5e19c896bbeb09b60aac5d91)",
+   "back": "молоко",
+   "hint": "/la ˈletʃe/",
+   "extra": "Кофе с молоком — café con leche.\n> Un café con leche, por favor. — *Кофе с молоком, пожалуйста.*"
+  },
+  {
+   "front": "el café [audio](media:0d316066db44ecacbfb938ba)",
+   "back": "кофе",
+   "hint": "/el kaˈfe/",
+   "extra": "Ещё и «кафе» как место.\n> ¿Tomamos un café? — *Выпьем кофе?*"
+  },
+  {
+   "front": "rojo [audio](media:bad35d3281a9c3d045fb8cec)",
+   "back": "красный",
+   "hint": "/ˈroxo/",
+   "extra": "Начальное r — раскатистое. Женский род — roja.\n> Me gusta el vino rojo. — *Мне нравится красное вино.*"
+  },
+  {
+   "front": "azul [audio](media:6c82dd5419cfa896d1de7724)",
+   "back": "синий",
+   "hint": "/aˈθul/",
+   "extra": "Одна форма для обоих родов: el cielo azul, la casa azul.\n> El mar es azul. — *Море синее.*"
+  },
+  {
+   "front": "verde [audio](media:29afae584f54b5c78f1c70d1)",
+   "back": "зелёный",
+   "hint": "/ˈbeɾðe/",
+   "extra": "v читается как б. Одна форма для обоих родов.\n> La hierba es verde. — *Трава зелёная.*"
+  },
+  {
+   "front": "blanco [audio](media:25d12924a7ab51b61335665b)",
+   "back": "белый",
+   "hint": "/ˈblaŋko/",
+   "extra": "Женский род — blanca.\n> Quiero vino blanco. — *Я хочу белого вина.*"
+  },
+  {
+   "front": "negro [audio](media:0d6cd6fe2bc5ca7f573ffcbc)",
+   "back": "чёрный",
+   "hint": "/ˈneɣɾo/",
+   "extra": "Женский род — negra.\n> Tengo un gato negro. — *У меня чёрный кот.*"
+  },
+  {
+   "front": "grande [audio](media:c3ec986d8a60b0d8c6bbbf96)",
+   "back": "большой",
+   "hint": "/ˈɡɾande/",
+   "extra": "Перед существительным ед. ч. — gran: una gran idea.\n> Es una casa grande. — *Это большой дом.*"
+  },
+  {
+   "front": "pequeño [audio](media:7cc4f45d25ae5624e0993b3b)",
+   "back": "маленький",
+   "hint": "/peˈkeɲo/",
+   "extra": "ñ звучит как нь.\n> Mi piso es pequeño. — *Моя квартира маленькая.*"
+  },
+  {
+   "front": "bueno [audio](media:858b7e343ca9fd9867113ba9)",
+   "back": "хороший",
+   "hint": "/ˈbweno/",
+   "extra": "Перед существительным мужского рода — buen: un buen día.\n> Es un libro bueno. — *Это хорошая книга.*"
+  },
+  {
+   "front": "malo [audio](media:b84c7628a812e8ee2a5ab392)",
+   "back": "плохой",
+   "hint": "/ˈmalo/",
+   "extra": "Перед существительным мужского рода — mal: un mal día.\n> Hace mal tiempo. — *Плохая погода.*"
+  },
+  {
+   "front": "nuevo [audio](media:8b6f09df66260c9f8f27f8dc)",
+   "back": "новый",
+   "hint": "/ˈnweβo/",
+   "extra": "Женский род — nueva.\n> Tengo un coche nuevo. — *У меня новая машина.*"
+  },
+  {
+   "front": "viejo [audio](media:820ee0af10099c2c4012d319)",
+   "back": "старый",
+   "hint": "/ˈbjexo/",
+   "extra": "О людях вежливее — mayor.\n> Es un edificio viejo. — *Это старое здание.*"
+  },
+  {
+   "front": "hablar [audio](media:a0e151ee7ec0b5295ef976c2)",
+   "back": "говорить",
+   "hint": "/aˈβlaɾ/",
+   "extra": "Правильный глагол на -ar: hablo, hablas, habla.\n> ¿Hablas español? — *Ты говоришь по-испански?*"
+  },
+  {
+   "front": "comer [audio](media:e1a3c052746577cea3b8e291)",
+   "back": "есть",
+   "hint": "/koˈmeɾ/",
+   "extra": "Ещё «обедать». Правильный на -er: como, comes, come.\n> Comemos a las dos. — *Мы обедаем в два.*"
+  },
+  {
+   "front": "beber [audio](media:765495340e91e55bbf9f6034)",
+   "back": "пить",
+   "hint": "/beˈβeɾ/",
+   "extra": "В Латинской Америке чаще tomar.\n> Bebo mucha agua. — *Я пью много воды.*"
+  },
+  {
+   "front": "vivir [audio](media:ee89c0cc2224b5c74490d2e7)",
+   "back": "жить",
+   "hint": "/biˈβiɾ/",
+   "extra": "Правильный на -ir: vivo, vives, vive.\n> Vivo en Madrid. — *Я живу в Мадриде.*"
+  },
+  {
+   "front": "ser [audio](media:06e309dea88d715a5a090670)",
+   "back": "быть",
+   "hint": "/seɾ/ · постоянное качество",
+   "extra": "Постоянное: кто или какой. soy, eres, es.\n> Soy de Rusia. — *Я из России.*"
+  },
+  {
+   "front": "estar [audio](media:1146f0600bff97ffc9609459)",
+   "back": "быть",
+   "hint": "/esˈtaɾ/ · состояние, местоположение",
+   "extra": "Временное состояние и место: estoy, estás, está.\n> Estoy cansado. — *Я устал.*"
+  },
+  {
+   "front": "tener [audio](media:729501143729a58eee32e35f)",
+   "back": "иметь",
+   "hint": "/teˈneɾ/",
+   "extra": "Возраст — через tener: tengo 20 años.\n> Tengo dos hermanos. — *У меня два брата.*"
+  },
+  {
+   "front": "ir [audio](media:fb0093d8b13423400b3dd13e)",
+   "back": "идти; ехать",
+   "hint": "/iɾ/",
+   "extra": "Неправильный: voy, vas, va. Ir a + инфинитив — собираться.\n> Voy a la playa. — *Я иду на пляж.*"
+  },
+  {
+   "front": "hacer [audio](media:8a8b3fde989571f3e3d46d65)",
+   "back": "делать",
+   "hint": "/aˈθeɾ/",
+   "extra": "О погоде: hace frío — холодно. Я делаю — hago.\n> ¿Qué haces? — *Что ты делаешь?*"
+  },
+  {
+   "front": "querer [audio](media:306ad70424d26337fd986af9)",
+   "back": "хотеть; любить",
+   "hint": "/keˈɾeɾ/",
+   "extra": "Te quiero — я тебя люблю. Хочу — quiero.\n> Quiero un café. — *Я хочу кофе.*"
+  },
+  {
+   "front": "uno [audio](media:7445d15865b191abbbe90f4a)",
+   "back": "один",
+   "hint": "/ˈuno/",
+   "extra": "Перед существительным мужского рода — un: un libro.\n> Uno, dos, tres… — *Один, два, три…*"
+  },
+  {
+   "front": "dos [audio](media:cbdfab2e221a9c55cd4eb97c)",
+   "back": "два",
+   "hint": "/dos/",
+   "extra": "Не изменяется по родам.\n> Dos cafés, por favor. — *Два кофе, пожалуйста.*"
+  },
+  {
+   "front": "tres [audio](media:f774296d91a217a037f7fa66)",
+   "back": "три",
+   "hint": "/tɾes/",
+   "extra": "r после t — короткий удар языком.\n> Son las tres. — *Сейчас три часа.*"
+  }
+ ],
+ "media": {
+  "file": "es-basics.media",
+  "type": "audio/mpeg",
+  "index": {
+   "6ded89f412d0973eef7b5757": [
+    0,
+    2637
+   ],
+   "1b3433ef6475301ea73bc28c": [
+    2637,
+    3717
+   ],
+   "cef8ac799a3ba53b6fe3f812": [
+    6354,
+    4197
+   ],
+   "e6ece9f4f69e9b9a26b35447": [
+    10551,
+    4077
+   ],
+   "6b5d4b0f4da946161dd935c5": [
+    14628,
+    3237
+   ],
+   "a0531a5deb1244ab451bb38a": [
+    17865,
+    3117
+   ],
+   "e057de1dfe348df020b1e4cb": [
+    20982,
+    3477
+   ],
+   "5240545208ad493bcb05019d": [
+    24459,
+    4077
+   ],
+   "0bbd86f2335cf594d6927a55": [
+    28536,
+    4557
+   ],
+   "1df6f46c4bc36c1e4080ac96": [
+    33093,
+    4077
+   ],
+   "3fbfa031c608fdfcb4c7709e": [
+    37170,
+    3717
+   ],
+   "76401cafdbcb3ffe633154de": [
+    40887,
+    3837
+   ],
+   "ccbfb45a56907328f8ab8d55": [
+    44724,
+    4317
+   ],
+   "b54e68ea63ffc42220fe9167": [
+    49041,
+    5037
+   ],
+   "7bca9ea8434fcc789b0c6011": [
+    54078,
+    4317
+   ],
+   "5fd4b7e405617921a8f52187": [
+    58395,
+    4317
+   ],
+   "f7b2f3792f6049463dfe1b46": [
+    62712,
+    4797
+   ],
+   "c2a1a91fbc8b9635ba866a84": [
+    67509,
+    4677
+   ],
+   "df644d8d2e217baec28ed6ff": [
+    72186,
+    3837
+   ],
+   "1ca5c79918933b7bb86a27b5": [
+    76023,
+    4677
+   ],
+   "ad0223b244759ec5a553d89c": [
+    80700,
+    4917
+   ],
+   "3bad9705d832755cd067001e": [
+    85617,
+    4677
+   ],
+   "41d48403074318d50f0e1602": [
+    90294,
+    4317
+   ],
+   "fdb5cc3e41754574512868ef": [
+    94611,
+    4077
+   ],
+   "5e19c896bbeb09b60aac5d91": [
+    98688,
+    4677
+   ],
+   "0d316066db44ecacbfb938ba": [
+    103365,
+    3957
+   ],
+   "bad35d3281a9c3d045fb8cec": [
+    107322,
+    3837
+   ],
+   "6c82dd5419cfa896d1de7724": [
+    111159,
+    3837
+   ],
+   "29afae584f54b5c78f1c70d1": [
+    114996,
+    3117
+   ],
+   "25d12924a7ab51b61335665b": [
+    118113,
+    3957
+   ],
+   "0d6cd6fe2bc5ca7f573ffcbc": [
+    122070,
+    3837
+   ],
+   "c3ec986d8a60b0d8c6bbbf96": [
+    125907,
+    3837
+   ],
+   "7cc4f45d25ae5624e0993b3b": [
+    129744,
+    3837
+   ],
+   "858b7e343ca9fd9867113ba9": [
+    133581,
+    3117
+   ],
+   "b84c7628a812e8ee2a5ab392": [
+    136698,
+    4317
+   ],
+   "8b6f09df66260c9f8f27f8dc": [
+    141015,
+    3477
+   ],
+   "820ee0af10099c2c4012d319": [
+    144492,
+    4557
+   ],
+   "a0e151ee7ec0b5295ef976c2": [
+    149049,
+    4317
+   ],
+   "e1a3c052746577cea3b8e291": [
+    153366,
+    2997
+   ],
+   "765495340e91e55bbf9f6034": [
+    156363,
+    3117
+   ],
+   "ee89c0cc2224b5c74490d2e7": [
+    159480,
+    3477
+   ],
+   "06e309dea88d715a5a090670": [
+    162957,
+    7917
+   ],
+   "1146f0600bff97ffc9609459": [
+    170874,
+    3837
+   ],
+   "729501143729a58eee32e35f": [
+    174711,
+    3717
+   ],
+   "fb0093d8b13423400b3dd13e": [
+    178428,
+    4917
+   ],
+   "8a8b3fde989571f3e3d46d65": [
+    183345,
+    3237
+   ],
+   "306ad70424d26337fd986af9": [
+    186582,
+    2757
+   ],
+   "7445d15865b191abbbe90f4a": [
+    189339,
+    3597
+   ],
+   "cbdfab2e221a9c55cd4eb97c": [
+    192936,
+    3237
+   ],
+   "f774296d91a217a037f7fa66": [
+    196173,
+    3837
+   ]
+  }
+ }
 }

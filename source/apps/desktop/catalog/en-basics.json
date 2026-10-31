@@ -1,306 +1,612 @@
 {
-"id": "en-basics",
-"version": 1,
-"cards": [
-{
-"front": "time",
-"back": "время",
-"hint": "сущ."
-},
-{
-"front": "year",
-"back": "год",
-"hint": "сущ."
-},
-{
-"front": "people",
-"back": "люди",
-"hint": "сущ."
-},
-{
-"front": "day",
-"back": "день",
-"hint": "сущ."
-},
-{
-"front": "man",
-"back": "мужчина; человек",
-"hint": "сущ."
-},
-{
-"front": "woman",
-"back": "женщина",
-"hint": "сущ."
-},
-{
-"front": "child",
-"back": "ребёнок",
-"hint": "сущ."
-},
-{
-"front": "life",
-"back": "жизнь",
-"hint": "сущ."
-},
-{
-"front": "world",
-"back": "мир",
-"hint": "сущ."
-},
-{
-"front": "family",
-"back": "семья",
-"hint": "сущ."
-},
-{
-"front": "friend",
-"back": "друг",
-"hint": "сущ."
-},
-{
-"front": "school",
-"back": "школа",
-"hint": "сущ."
-},
-{
-"front": "country",
-"back": "страна",
-"hint": "сущ."
-},
-{
-"front": "city",
-"back": "город",
-"hint": "сущ."
-},
-{
-"front": "house",
-"back": "дом (здание)",
-"hint": "сущ."
-},
-{
-"front": "room",
-"back": "комната",
-"hint": "сущ."
-},
-{
-"front": "door",
-"back": "дверь",
-"hint": "сущ."
-},
-{
-"front": "water",
-"back": "вода",
-"hint": "сущ."
-},
-{
-"front": "money",
-"back": "деньги",
-"hint": "сущ."
-},
-{
-"front": "book",
-"back": "книга",
-"hint": "сущ."
-},
-{
-"front": "word",
-"back": "слово",
-"hint": "сущ."
-},
-{
-"front": "question",
-"back": "вопрос",
-"hint": "сущ."
-},
-{
-"front": "work",
-"back": "работа",
-"hint": "сущ."
-},
-{
-"front": "hour",
-"back": "час",
-"hint": "сущ."
-},
-{
-"front": "week",
-"back": "неделя",
-"hint": "сущ."
-},
-{
-"front": "month",
-"back": "месяц",
-"hint": "сущ."
-},
-{
-"front": "night",
-"back": "ночь",
-"hint": "сущ."
-},
-{
-"front": "name",
-"back": "имя",
-"hint": "сущ."
-},
-{
-"front": "idea",
-"back": "идея",
-"hint": "сущ."
-},
-{
-"front": "head",
-"back": "голова",
-"hint": "сущ."
-},
-{
-"front": "be",
-"back": "быть",
-"hint": "гл."
-},
-{
-"front": "have",
-"back": "иметь",
-"hint": "гл."
-},
-{
-"front": "do",
-"back": "делать",
-"hint": "гл."
-},
-{
-"front": "say",
-"back": "сказать",
-"hint": "гл."
-},
-{
-"front": "go",
-"back": "идти; ехать",
-"hint": "гл."
-},
-{
-"front": "get",
-"back": "получать",
-"hint": "гл."
-},
-{
-"front": "make",
-"back": "делать; создавать",
-"hint": "гл."
-},
-{
-"front": "know",
-"back": "знать",
-"hint": "гл."
-},
-{
-"front": "think",
-"back": "думать",
-"hint": "гл."
-},
-{
-"front": "take",
-"back": "брать",
-"hint": "гл."
-},
-{
-"front": "see",
-"back": "видеть",
-"hint": "гл."
-},
-{
-"front": "come",
-"back": "приходить",
-"hint": "гл."
-},
-{
-"front": "want",
-"back": "хотеть",
-"hint": "гл."
-},
-{
-"front": "look",
-"back": "смотреть",
-"hint": "гл."
-},
-{
-"front": "use",
-"back": "использовать",
-"hint": "гл."
-},
-{
-"front": "find",
-"back": "находить",
-"hint": "гл."
-},
-{
-"front": "give",
-"back": "давать",
-"hint": "гл."
-},
-{
-"front": "tell",
-"back": "рассказывать",
-"hint": "гл."
-},
-{
-"front": "good",
-"back": "хороший",
-"hint": "прил."
-},
-{
-"front": "new",
-"back": "новый",
-"hint": "прил."
-},
-{
-"front": "first",
-"back": "первый",
-"hint": "прил."
-},
-{
-"front": "last",
-"back": "последний",
-"hint": "прил."
-},
-{
-"front": "long",
-"back": "длинный",
-"hint": "прил."
-},
-{
-"front": "great",
-"back": "отличный; великий",
-"hint": "прил."
-},
-{
-"front": "little",
-"back": "маленький",
-"hint": "прил."
-},
-{
-"front": "old",
-"back": "старый",
-"hint": "прил."
-},
-{
-"front": "big",
-"back": "большой",
-"hint": "прил."
-},
-{
-"front": "young",
-"back": "молодой",
-"hint": "прил."
-},
-{
-"front": "important",
-"back": "важный",
-"hint": "прил."
-},
-{
-"front": "different",
-"back": "разный; другой",
-"hint": "прил."
-}
-]
+ "id": "en-basics",
+ "version": 2,
+ "cards": [
+  {
+   "front": "time [audio](media:4379e599256276c3366bf69e)",
+   "back": "время",
+   "hint": "/taɪm/ · сущ.",
+   "extra": "Обычно неисчисляемое: much time, a lot of time. «Раз» — тоже time: three times.\n> What time is it? — *Который час?*"
+  },
+  {
+   "front": "year [audio](media:a618e559f52dd8e750cf24db)",
+   "back": "год",
+   "hint": "/jɪr/ · сущ.",
+   "extra": "Возраст говорят через years old.\n> I'm twenty years old. — *Мне двадцать лет.*"
+  },
+  {
+   "front": "people [audio](media:83d352da8321730e431125a5)",
+   "back": "люди",
+   "hint": "/ˈpiːpəl/ · сущ.",
+   "extra": "Множественное число от person — глагол во множественном: people are.\n> Many people live here. — *Здесь живёт много людей.*"
+  },
+  {
+   "front": "day [audio](media:4f2afa3dbe59c0a16f389e00)",
+   "back": "день",
+   "hint": "/deɪ/ · сущ.",
+   "extra": "Сочетания: every day — каждый день, one day — однажды.\n> Have a nice day! — *Хорошего дня!*"
+  },
+  {
+   "front": "man [audio](media:dd22a30891eda37171e321c6)",
+   "back": "мужчина; человек",
+   "hint": "/mæn/ · сущ.",
+   "extra": "Мн. ч. — men /men/. Иногда значит «человек» вообще.\n> He is a kind man. — *Он добрый человек.*"
+  },
+  {
+   "front": "woman [audio](media:c4850d44c7af9cd2a671bd04)",
+   "back": "женщина",
+   "hint": "/ˈwʊmən/ · сущ.",
+   "extra": "Мн. ч. women читается /ˈwɪmɪn/ — меняется первый гласный.\n> That woman is my teacher. — *Та женщина — моя учительница.*"
+  },
+  {
+   "front": "child [audio](media:701b8b3f7cdd5fe95f95ae28)",
+   "back": "ребёнок",
+   "hint": "/tʃaɪld/ · сущ.",
+   "extra": "Мн. ч. — children /ˈtʃɪldrən/.\n> The child is sleeping. — *Ребёнок спит.*"
+  },
+  {
+   "front": "life [audio](media:fe9024abf44aeb0b0dadda46)",
+   "back": "жизнь",
+   "hint": "/laɪf/ · сущ.",
+   "extra": "Мн. ч. — lives /laɪvz/: f меняется на v.\n> Life is beautiful. — *Жизнь прекрасна.*"
+  },
+  {
+   "front": "world [audio](media:15c14cd420d0bbc25d119622)",
+   "back": "мир",
+   "hint": "/wɝːld/ · сущ.",
+   "extra": "Обычно с the: the world, all over the world.\n> It's the best café in the world. — *Это лучшее кафе в мире.*"
+  },
+  {
+   "front": "family [audio](media:fdf6d3d683b8804d26da79bb)",
+   "back": "семья",
+   "hint": "/ˈfæməli/ · сущ.",
+   "extra": "Мн. ч. — families.\n> I have a big family. — *У меня большая семья.*"
+  },
+  {
+   "front": "friend [audio](media:10cdf66c44edf6eb7f66100d)",
+   "back": "друг",
+   "hint": "/frend/ · сущ.",
+   "extra": "Буква i не читается: /frend/. Подружиться — make friends.\n> She is my best friend. — *Она моя лучшая подруга.*"
+  },
+  {
+   "front": "school [audio](media:8350612ba3edd322ab815911)",
+   "back": "школа",
+   "hint": "/skuːl/ · сущ.",
+   "extra": "ch читается как /k/. В школе — at school, без артикля.\n> My son goes to school. — *Мой сын ходит в школу.*"
+  },
+  {
+   "front": "country [audio](media:313d4c263a13aebd84f98976)",
+   "back": "страна",
+   "hint": "/ˈkʌntri/ · сущ.",
+   "extra": "Ещё значит «сельская местность»: in the country — за городом.\n> Spain is a beautiful country. — *Испания — красивая страна.*"
+  },
+  {
+   "front": "city [audio](media:bc011f7b35adde93864b7e74)",
+   "back": "город",
+   "hint": "/ˈsɪti/ · сущ.",
+   "extra": "Крупный город; поменьше — town.\n> London is a big city. — *Лондон — большой город.*"
+  },
+  {
+   "front": "house [audio](media:4c17bb85fcf8bbcc15417390)",
+   "back": "дом (здание)",
+   "hint": "/haʊs/ · сущ.",
+   "extra": "Здание. «Дом» как место, где живёшь, — home. Мн. ч. houses /ˈhaʊzɪz/.\n> They live in a small house. — *Они живут в маленьком доме.*"
+  },
+  {
+   "front": "room [audio](media:3ab4a0a7839a42daed8c5c8c)",
+   "back": "комната",
+   "hint": "/ruːm/ · сущ.",
+   "extra": "Ещё значит «место»: no room — нет места.\n> My room is on the first floor. — *Моя комната на первом этаже.*"
+  },
+  {
+   "front": "door [audio](media:a9d8770a47881e31edb2ed45)",
+   "back": "дверь",
+   "hint": "/dɔːr/ · сущ.",
+   "extra": "oo здесь читается как /ɔː/, а не /uː/.\n> Close the door, please. — *Закрой дверь, пожалуйста.*"
+  },
+  {
+   "front": "water [audio](media:1aab05db5c89ddb8fe217857)",
+   "back": "вода",
+   "hint": "/ˈwɔːtər/ · сущ.",
+   "extra": "Неисчисляемое: some water, a glass of water.\n> Can I have some water? — *Можно мне воды?*"
+  },
+  {
+   "front": "money [audio](media:98aa2ca0334a559f33a5be5b)",
+   "back": "деньги",
+   "hint": "/ˈmʌni/ · сущ.",
+   "extra": "Неисчисляемое, глагол в ед. ч.: money is.\n> I don't have much money. — *У меня мало денег.*"
+  },
+  {
+   "front": "book [audio](media:0c584a66f4532bd5d0c58a99)",
+   "back": "книга",
+   "hint": "/bʊk/ · сущ.",
+   "extra": "Глагол book — бронировать: book a table.\n> This book is very interesting. — *Эта книга очень интересная.*"
+  },
+  {
+   "front": "word [audio](media:e7ac7d1fab42566279243a7d)",
+   "back": "слово",
+   "hint": "/wɝːd/ · сущ.",
+   "extra": "In other words — другими словами.\n> What does this word mean? — *Что значит это слово?*"
+  },
+  {
+   "front": "question [audio](media:a67ef32176102d857d830350)",
+   "back": "вопрос",
+   "hint": "/ˈkwestʃən/ · сущ.",
+   "extra": "Задать вопрос — ask a question.\n> Can I ask a question? — *Можно задать вопрос?*"
+  },
+  {
+   "front": "work [audio](media:ff244ebe6e999b81a4216c37)",
+   "back": "работа",
+   "hint": "/wɝːk/ · сущ.",
+   "extra": "И существительное, и глагол «работать». Как место — at work.\n> I go to work by bus. — *Я езжу на работу на автобусе.*"
+  },
+  {
+   "front": "hour [audio](media:0fc2b64786aff695bf6794d8)",
+   "back": "час",
+   "hint": "/ˈaʊər/ · сущ.",
+   "extra": "h не читается, поэтому an hour.\n> The film lasts two hours. — *Фильм идёт два часа.*"
+  },
+  {
+   "front": "week [audio](media:47766c6e8f09a24b0a5816a3)",
+   "back": "неделя",
+   "hint": "/wiːk/ · сущ.",
+   "extra": "Next week — на следующей неделе, last week — на прошлой.\n> See you next week! — *Увидимся на следующей неделе!*"
+  },
+  {
+   "front": "month [audio](media:39c478de50bf08963e37c216)",
+   "back": "месяц",
+   "hint": "/mʌnθ/ · сущ.",
+   "extra": "th — межзубный звук /θ/.\n> I'm on holiday this month. — *В этом месяце я в отпуске.*"
+  },
+  {
+   "front": "night [audio](media:02b8c830b765f8fc26201fd8)",
+   "back": "ночь",
+   "hint": "/naɪt/ · сущ.",
+   "extra": "gh не читается. Ночью — at night.\n> Good night! — *Спокойной ночи!*"
+  },
+  {
+   "front": "name [audio](media:e9bad15e45376579ff27f7bf)",
+   "back": "имя",
+   "hint": "/neɪm/ · сущ.",
+   "extra": "First name — имя, last name — фамилия.\n> What's your name? — *Как тебя зовут?*"
+  },
+  {
+   "front": "idea [audio](media:f8efecacc19d19afcf2fc798)",
+   "back": "идея",
+   "hint": "/aɪˈdiːə/ · сущ.",
+   "extra": "Ударение на второй слог.\n> That's a good idea! — *Хорошая идея!*"
+  },
+  {
+   "front": "head [audio](media:9a536c2fb58f1ef1f7a9418d)",
+   "back": "голова",
+   "hint": "/hed/ · сущ.",
+   "extra": "ea здесь читается коротко: /e/.\n> My head hurts. — *У меня болит голова.*"
+  },
+  {
+   "front": "be [audio](media:4dcb949ff72ed0cf123dd78b)",
+   "back": "быть",
+   "hint": "/biː/ · гл.",
+   "extra": "am / is / are в настоящем; was / were в прошедшем.\n> I am happy to be here. — *Я рад быть здесь.*"
+  },
+  {
+   "front": "have [audio](media:730ec7d96fcb14cfb4250b8f)",
+   "back": "иметь",
+   "hint": "/hæv/ · гл.",
+   "extra": "В 3-м лице — has. Часто have got в британском.\n> I have two brothers. — *У меня два брата.*"
+  },
+  {
+   "front": "do [audio](media:2e49f38fe9dfb63c34f8ae57)",
+   "back": "делать",
+   "hint": "/duː/ · гл.",
+   "extra": "В 3-м лице — does /dʌz/. Ещё вспомогательный глагол в вопросах.\n> What do you do? — *Чем ты занимаешься?*"
+  },
+  {
+   "front": "say [audio](media:7d484e4f84040402ff04e7ef)",
+   "back": "сказать",
+   "hint": "/seɪ/ · гл.",
+   "extra": "Say — сказать слова; tell — сказать кому-то: tell me.\n> What did she say? — *Что она сказала?*"
+  },
+  {
+   "front": "go [audio](media:12000b24176ee386a009ea4c)",
+   "back": "идти; ехать",
+   "hint": "/ɡoʊ/ · гл.",
+   "extra": "Go home — идти домой, без to.\n> Let's go to the cinema. — *Пойдём в кино.*"
+  },
+  {
+   "front": "get [audio](media:b542b642bd0e9d7e9429e308)",
+   "back": "получать",
+   "hint": "/ɡet/ · гл.",
+   "extra": "Очень многозначный: получать, становиться, добираться.\n> I get up at seven. — *Я встаю в семь.*"
+  },
+  {
+   "front": "make [audio](media:cfa51ddba687d79a253b5325)",
+   "back": "делать; создавать",
+   "hint": "/meɪk/ · гл.",
+   "extra": "Make — создавать результат: make coffee, make a mistake.\n> I'll make some tea. — *Я сделаю чаю.*"
+  },
+  {
+   "front": "know [audio](media:9e055019fbe1e10f7c783533)",
+   "back": "знать",
+   "hint": "/noʊ/ · гл.",
+   "extra": "k не читается.\n> I don't know. — *Я не знаю.*"
+  },
+  {
+   "front": "think [audio](media:153df74e0c8f6f3968383e23)",
+   "back": "думать",
+   "hint": "/θɪŋk/ · гл.",
+   "extra": "Думать о — think about.\n> I think you're right. — *Думаю, ты прав.*"
+  },
+  {
+   "front": "take [audio](media:a15c4e3a914046c8b5dd3d88)",
+   "back": "брать",
+   "hint": "/teɪk/ · гл.",
+   "extra": "Ещё «занимать по времени»: it takes an hour.\n> Take an umbrella. — *Возьми зонт.*"
+  },
+  {
+   "front": "see [audio](media:d4178023e868f6445c09fb2a)",
+   "back": "видеть",
+   "hint": "/siː/ · гл.",
+   "extra": "See — видеть, look — смотреть, watch — наблюдать.\n> I can see the sea. — *Я вижу море.*"
+  },
+  {
+   "front": "come [audio](media:bf590bcd091db788ed3a4f8d)",
+   "back": "приходить",
+   "hint": "/kʌm/ · гл.",
+   "extra": "Come — к говорящему, go — от него.\n> Come here, please. — *Иди сюда, пожалуйста.*"
+  },
+  {
+   "front": "want [audio](media:45986ce00018891d4c1d19c7)",
+   "back": "хотеть",
+   "hint": "/wɑːnt/ · гл.",
+   "extra": "Хотеть сделать — want to do.\n> I want to learn English. — *Я хочу выучить английский.*"
+  },
+  {
+   "front": "look [audio](media:ed7834fde09b7bf34eedd504)",
+   "back": "смотреть",
+   "hint": "/lʊk/ · гл.",
+   "extra": "Смотреть на — look at. Look like — быть похожим.\n> Look at this photo! — *Посмотри на это фото!*"
+  },
+  {
+   "front": "use [audio](media:87994cc70a2ebcd23d6f1c91)",
+   "back": "использовать",
+   "hint": "/juːz/ · гл.",
+   "extra": "Глагол — /juːz/, существительное use — /juːs/.\n> Can I use your phone? — *Можно воспользоваться твоим телефоном?*"
+  },
+  {
+   "front": "find [audio](media:2c378b16d9c59f4798c3d891)",
+   "back": "находить",
+   "hint": "/faɪnd/ · гл.",
+   "extra": "Find out — узнать, выяснить.\n> I can't find my keys. — *Не могу найти ключи.*"
+  },
+  {
+   "front": "give [audio](media:aca8336d31b6289a700e4433)",
+   "back": "давать",
+   "hint": "/ɡɪv/ · гл.",
+   "extra": "Give up — сдаться, бросить.\n> Give me a minute. — *Дай мне минутку.*"
+  },
+  {
+   "front": "tell [audio](media:5eb0f7ab1da95280c0c64399)",
+   "back": "рассказывать",
+   "hint": "/tel/ · гл.",
+   "extra": "Tell + кому: tell me, tell him. Рассказать историю — tell a story.\n> Tell me about your day. — *Расскажи мне о своём дне.*"
+  },
+  {
+   "front": "good [audio](media:531356f6cd5bf5e21567c042)",
+   "back": "хороший",
+   "hint": "/ɡʊd/ · прил.",
+   "extra": "Наречие — well: good work, but work well.\n> This soup is very good. — *Этот суп очень хороший.*"
+  },
+  {
+   "front": "new [audio](media:bdc252da4d84e3960a7d2ec5)",
+   "back": "новый",
+   "hint": "/nuː/ · прил.",
+   "extra": "В британском — /njuː/.\n> I have a new job. — *У меня новая работа.*"
+  },
+  {
+   "front": "first [audio](media:4b7ada1a2dcafbce52e6483d)",
+   "back": "первый",
+   "hint": "/fɝːst/ · прил.",
+   "extra": "At first — сначала.\n> Is this your first time here? — *Ты здесь впервые?*"
+  },
+  {
+   "front": "last [audio](media:f895d724a504d71da57eb513)",
+   "back": "последний",
+   "hint": "/læst/ · прил.",
+   "extra": "Ещё «прошлый»: last year — в прошлом году.\n> This is the last bus. — *Это последний автобус.*"
+  },
+  {
+   "front": "long [audio](media:7313ccd7cd69dffcc83df765)",
+   "back": "длинный",
+   "hint": "/lɔːŋ/ · прил.",
+   "extra": "О времени тоже: How long? — Как долго?\n> It's a long story. — *Это долгая история.*"
+  },
+  {
+   "front": "great [audio](media:fc798c61b42b9826a5ffd0a1)",
+   "back": "отличный; великий",
+   "hint": "/ɡreɪt/ · прил.",
+   "extra": "ea здесь читается /eɪ/. Часто — «отлично!»\n> That's great news! — *Отличная новость!*"
+  },
+  {
+   "front": "little [audio](media:8ee5441cd3ad942b2f7a1377)",
+   "back": "маленький",
+   "hint": "/ˈlɪtəl/ · прил.",
+   "extra": "A little — немного: a little water.\n> I speak a little English. — *Я немного говорю по-английски.*"
+  },
+  {
+   "front": "old [audio](media:07f0218a6f58fc56adae3e8e)",
+   "back": "старый",
+   "hint": "/oʊld/ · прил.",
+   "extra": "Сравнение: older, но о родных — elder.\n> This is an old town. — *Это старый город.*"
+  },
+  {
+   "front": "big [audio](media:69b4942412290863ba23065d)",
+   "back": "большой",
+   "hint": "/bɪɡ/ · прил.",
+   "extra": "Сравнение — bigger, the biggest (g удваивается).\n> They have a big dog. — *У них большая собака.*"
+  },
+  {
+   "front": "young [audio](media:5cfa537a3d7012d9a5e2d6c8)",
+   "back": "молодой",
+   "hint": "/jʌŋ/ · прил.",
+   "extra": "ou здесь читается /ʌ/.\n> She looks very young. — *Она выглядит очень молодо.*"
+  },
+  {
+   "front": "important [audio](media:fe197012fc06a502654a1c89)",
+   "back": "важный",
+   "hint": "/ɪmˈpɔːrtənt/ · прил.",
+   "extra": "Ударение на второй слог.\n> This is very important. — *Это очень важно.*"
+  },
+  {
+   "front": "different [audio](media:7173a2aa6bba4708f5857dc8)",
+   "back": "разный; другой",
+   "hint": "/ˈdɪfərənt/ · прил.",
+   "extra": "Отличаться от — different from.\n> We have different ideas. — *У нас разные идеи.*"
+  }
+ ],
+ "media": {
+  "file": "en-basics.media",
+  "type": "audio/mpeg",
+  "index": {
+   "4379e599256276c3366bf69e": [
+    0,
+    3717
+   ],
+   "a618e559f52dd8e750cf24db": [
+    3717,
+    3597
+   ],
+   "83d352da8321730e431125a5": [
+    7314,
+    3477
+   ],
+   "4f2afa3dbe59c0a16f389e00": [
+    10791,
+    3237
+   ],
+   "dd22a30891eda37171e321c6": [
+    14028,
+    3717
+   ],
+   "c4850d44c7af9cd2a671bd04": [
+    17745,
+    3837
+   ],
+   "701b8b3f7cdd5fe95f95ae28": [
+    21582,
+    3717
+   ],
+   "fe9024abf44aeb0b0dadda46": [
+    25299,
+    3717
+   ],
+   "15c14cd420d0bbc25d119622": [
+    29016,
+    3237
+   ],
+   "fdf6d3d683b8804d26da79bb": [
+    32253,
+    3477
+   ],
+   "10cdf66c44edf6eb7f66100d": [
+    35730,
+    3717
+   ],
+   "8350612ba3edd322ab815911": [
+    39447,
+    3477
+   ],
+   "313d4c263a13aebd84f98976": [
+    42924,
+    3837
+   ],
+   "bc011f7b35adde93864b7e74": [
+    46761,
+    3237
+   ],
+   "4c17bb85fcf8bbcc15417390": [
+    49998,
+    3717
+   ],
+   "3ab4a0a7839a42daed8c5c8c": [
+    53715,
+    3477
+   ],
+   "a9d8770a47881e31edb2ed45": [
+    57192,
+    3237
+   ],
+   "1aab05db5c89ddb8fe217857": [
+    60429,
+    3357
+   ],
+   "98aa2ca0334a559f33a5be5b": [
+    63786,
+    3237
+   ],
+   "0c584a66f4532bd5d0c58a99": [
+    67023,
+    3117
+   ],
+   "e7ac7d1fab42566279243a7d": [
+    70140,
+    3357
+   ],
+   "a67ef32176102d857d830350": [
+    73497,
+    3957
+   ],
+   "ff244ebe6e999b81a4216c37": [
+    77454,
+    3117
+   ],
+   "0fc2b64786aff695bf6794d8": [
+    80571,
+    3477
+   ],
+   "47766c6e8f09a24b0a5816a3": [
+    84048,
+    3117
+   ],
+   "39c478de50bf08963e37c216": [
+    87165,
+    3717
+   ],
+   "02b8c830b765f8fc26201fd8": [
+    90882,
+    3597
+   ],
+   "e9bad15e45376579ff27f7bf": [
+    94479,
+    3717
+   ],
+   "f8efecacc19d19afcf2fc798": [
+    98196,
+    4077
+   ],
+   "9a536c2fb58f1ef1f7a9418d": [
+    102273,
+    3117
+   ],
+   "4dcb949ff72ed0cf123dd78b": [
+    105390,
+    2757
+   ],
+   "730ec7d96fcb14cfb4250b8f": [
+    108147,
+    3837
+   ],
+   "2e49f38fe9dfb63c34f8ae57": [
+    111984,
+    2997
+   ],
+   "7d484e4f84040402ff04e7ef": [
+    114981,
+    3237
+   ],
+   "12000b24176ee386a009ea4c": [
+    118218,
+    3357
+   ],
+   "b542b642bd0e9d7e9429e308": [
+    121575,
+    2757
+   ],
+   "cfa51ddba687d79a253b5325": [
+    124332,
+    2997
+   ],
+   "9e055019fbe1e10f7c783533": [
+    127329,
+    3477
+   ],
+   "153df74e0c8f6f3968383e23": [
+    130806,
+    3237
+   ],
+   "a15c4e3a914046c8b5dd3d88": [
+    134043,
+    3117
+   ],
+   "d4178023e868f6445c09fb2a": [
+    137160,
+    3117
+   ],
+   "bf590bcd091db788ed3a4f8d": [
+    140277,
+    3597
+   ],
+   "45986ce00018891d4c1d19c7": [
+    143874,
+    3117
+   ],
+   "ed7834fde09b7bf34eedd504": [
+    146991,
+    2997
+   ],
+   "87994cc70a2ebcd23d6f1c91": [
+    149988,
+    4077
+   ],
+   "2c378b16d9c59f4798c3d891": [
+    154065,
+    3357
+   ],
+   "aca8336d31b6289a700e4433": [
+    157422,
+    3597
+   ],
+   "5eb0f7ab1da95280c0c64399": [
+    161019,
+    3357
+   ],
+   "531356f6cd5bf5e21567c042": [
+    164376,
+    3357
+   ],
+   "bdc252da4d84e3960a7d2ec5": [
+    167733,
+    3237
+   ],
+   "4b7ada1a2dcafbce52e6483d": [
+    170970,
+    3837
+   ],
+   "f895d724a504d71da57eb513": [
+    174807,
+    3837
+   ],
+   "7313ccd7cd69dffcc83df765": [
+    178644,
+    3597
+   ],
+   "fc798c61b42b9826a5ffd0a1": [
+    182241,
+    2997
+   ],
+   "8ee5441cd3ad942b2f7a1377": [
+    185238,
+    3357
+   ],
+   "07f0218a6f58fc56adae3e8e": [
+    188595,
+    3477
+   ],
+   "69b4942412290863ba23065d": [
+    192072,
+    3237
+   ],
+   "5cfa537a3d7012d9a5e2d6c8": [
+    195309,
+    3717
+   ],
+   "fe197012fc06a502654a1c89": [
+    199026,
+    4437
+   ],
+   "7173a2aa6bba4708f5857dc8": [
+    203463,
+    3357
+   ]
+  }
+ }
 }

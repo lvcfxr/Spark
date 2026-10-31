@@ -6,10 +6,14 @@ export interface CatalogDeck {
   title: string; title_en?: string; description: string; description_en?: string;
   emoji: string; lang_front: string; lang_back: string; tags: string[]; count: number;
   version: number; author?: string; file?: string; downloads?: number; updated?: string;
+  /** Файл со звуком произношения рядом с колодой (decks/<id>.media). */
+  media?: string; audio?: boolean;
 }
+/** Звук колоды: все mp3 одним файлом; index — ключ медиа → [смещение, длина]. */
+export interface DeckMedia { file: string; type: string; index: Record<string, [number, number]> }
 export interface DeckCard { front: string; back?: string; hint?: string; extra?: string; tags?: string; kind?: string; n?: number }
 
-interface Embedded { catalog: { decks: Omit<CatalogDeck, "source">[] }; cards: Record<string, DeckCard[]> }
+interface Embedded { catalog: { decks: Omit<CatalogDeck, "source">[] }; cards: Record<string, DeckCard[]>; media?: Record<string, DeckMedia> }
 declare const __CATALOG__: Embedded;
 
 /** Где лежит каталог на хостинге: рядом с приложением (Mini App) или на GitHub Pages (для .exe). */
@@ -41,13 +45,43 @@ export async function loadSparkCatalog(): Promise<CatalogDeck[]> {
   return decks;
 }
 
+const mediaIndex = new Map<string, DeckMedia>(Object.entries(__CATALOG__.media ?? {}));
 export async function loadSparkCards(d: CatalogDeck): Promise<DeckCard[]> {
   const local = __CATALOG__.cards[d.id];
   const embeddedVersion = __CATALOG__.catalog.decks.find((x) => x.id === d.id)?.version ?? 0;
   if (local && embeddedVersion >= d.version) return local;
   const r = await fetch(remoteBase() + (d.file ?? `${d.id}.json`), { cache: "no-cache" });
   if (!r.ok) { if (local) return local; throw new Error(`HTTP ${r.status}`); }
-  return ((await r.json()) as { cards: DeckCard[] }).cards;
+  const j = (await r.json()) as { cards: DeckCard[]; media?: DeckMedia };
+  if (j.media) mediaIndex.set(d.id, j.media);
+  return j.cards;
+}
+
+/** Скачать звук колоды одним файлом и разложить на отдельные записи. Без сети — молча ничего. */
+const packs = new Map<string, Promise<Map<string, Blob>>>();
+export function loadDeckMedia(deckId: string): Promise<Map<string, Blob>> {
+  const m = mediaIndex.get(deckId);
+  if (!m) return Promise.resolve(new Map());
+  let p = packs.get(deckId);
+  if (!p) {
+    p = (async () => {
+      const out = new Map<string, Blob>();
+      try {
+        const r = await fetch(remoteBase() + m.file);
+        if (!r.ok) throw new Error(String(r.status));
+        const buf = await r.arrayBuffer();
+        for (const [k, [o, n]] of Object.entries(m.index)) out.set(k, new Blob([buf.slice(o, o + n)], { type: m.type }));
+      } catch { packs.delete(deckId); }
+      return out;
+    })();
+    packs.set(deckId, p);
+  }
+  return p;
+}
+/** В какой встроенной колоде лежит этот звук (для карточек, пришедших синхронизацией с другого устройства). */
+export function bundledDeckOf(key: string): string | null {
+  for (const [id, m] of mediaIndex) if (m.index[key]) return id;
+  return null;
 }
 
 // ---------- колоды пользователей (Supabase: таблица shared_decks) ----------
