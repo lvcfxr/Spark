@@ -23,9 +23,29 @@
 1. **Project Settings → API** (или **API Keys**): скопируйте **Project URL** и публичный ключ **anon** (или **publishable**).
 2. Пришлите их в чат Claude — он внесёт их в `config.js` патчем. Или сами: откройте `config.js` в репозитории → ✏️ → заполните:
    ```js
-   window.SPARK_CONFIG = { supabaseUrl: "https://xxxx.supabase.co", supabaseKey: "ваш anon-ключ" };
+   window.SPARK_CONFIG = { supabaseUrl: "https://xxxx.supabase.co", supabaseKey: "ваш anon-ключ", botUsername: "имя_бота_без_@" };
    ```
    Этот ключ публичный по замыслу Supabase — данные защищены правилами RLS. Ключ `service_role` сюда не вставляйте никогда.
+
+## 5. Запуск без захода в чат с ботом
+1. В @BotFather: **/mybots → ваш бот → Bot Settings → Configure Mini App → Enable Mini App** и укажите адрес сайта Spark (тот же, что у кнопки меню).
+2. Теперь в профиле бота есть кнопка **«Open App»**, а Spark открывается по ссылке `https://t.me/имя_бота?startapp` — прямо из поиска Telegram, из закрепа или из пересланной ссылки, без чата.
+3. Впишите `botUsername` в `config.js` (шаг 4) — тогда в Spark появится кнопка «Ссылка на Spark» (Настройки → Быстрый запуск).
+4. Там же кнопка **«Ярлык на главном экране»**: Telegram добавит иконку Spark на рабочий стол телефона, и приложение открывается одним касанием. Spark сам предложит это после первой тренировки.
+
+## 6. Бот: приветствие, «Что нового» и уведомления об обновлениях
+Бот отвечает на /start картинкой-приветствием с кнопкой «Открыть Spark», показывает /news (что нового) и присылает список изменений, когда выходит новая версия (кто не хочет — /notify).
+1. Таблицы бота уже есть в `setup/schema.sql` — если вы выполняли его раньше, выполните файл ещё раз (повторно можно).
+2. **Edge Functions → Deploy a new function → Via Editor**, имя `telegram-bot`, вставьте код из `setup/telegram-bot.ts` → **Deploy**. В настройках функции выключите **Verify JWT**.
+3. **Edge Functions → Secrets** → добавьте `BOT_ADMIN_SECRET` — придумайте длинный пароль только из латинских букв и цифр (например, 30 символов). `TELEGRAM_BOT_TOKEN` уже добавлен на шаге 3.
+4. Откройте в браузере (подставьте свой адрес проекта и пароль):
+   `https://xxxx.supabase.co/functions/v1/telegram-bot?action=setup&key=ВАШ_BOT_ADMIN_SECRET`
+   Должно показать `"ok": true` в четырёх местах — бот подключён, команды и кнопка меню настроены.
+5. Чтобы рассылка шла сама при каждом обновлении: в GitHub — **Settings → Secrets and variables → Actions → New repository secret**:
+   `SPARK_BOT_URL` = `https://xxxx.supabase.co/functions/v1/telegram-bot`, `SPARK_BOT_SECRET` = тот же пароль.
+   Если файл `.github/workflows/bot-news.yml` не попал в репозиторий (GitHub иногда не даёт добавлять workflow через Pull Request), создайте его вручную: **Add file → Create new file**, путь `.github/workflows/bot-news.yml`, содержимое — из `setup/bot-news.yml`.
+   Разослать вручную: откройте `…/telegram-bot?action=broadcast&key=ВАШ_ПАРОЛЬ` (одну версию бот дважды не шлёт).
+6. Аватарка бота: в @BotFather → `/setuserpic` → выберите бота → отправьте картинку `bot/avatar-640.png` из репозитория (скачайте её на телефон).
 
 ## Проверка
 Откройте бота в Telegram → кнопка Spark → Настройки: в разделе «Синхронизация» должно быть «Telegram · ваше имя · синхронизировано».
@@ -36,3 +56,4 @@
 - «TELEGRAM_BOT_TOKEN не задан» — не добавлен секрет (шаг 3.5).
 - 401 при входе — не выключена проверка JWT у функции (шаг 3.4).
 - 404 на `changes`, `shared_decks` — не выполнен `schema.sql` (шаг 2).
+- Бот молчит на /start — не открыта ссылка `?action=setup` (шаг 6.4) или включена проверка JWT у `telegram-bot`.

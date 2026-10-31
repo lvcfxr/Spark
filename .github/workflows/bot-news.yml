@@ -1,0 +1,30 @@
+# Когда в main приходит новая версия Spark, бот рассылает список изменений тем, кто не отключил уведомления.
+# Нужны секреты репозитория (Settings → Secrets and variables → Actions):
+#   SPARK_BOT_URL    — адрес функции, например https://xxxx.supabase.co/functions/v1/telegram-bot
+#   SPARK_BOT_SECRET — тот же BOT_ADMIN_SECRET, что в секретах функции
+# Без секретов workflow просто ничего не делает.
+name: Bot — новости об обновлении
+on:
+  push:
+    branches: [main]
+    paths: [changelog.json, version.json]
+  workflow_dispatch:
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Дождаться, пока GitHub Pages покажет новую версию, и разослать
+        env:
+          BOT_URL: ${{ secrets.SPARK_BOT_URL }}
+          BOT_SECRET: ${{ secrets.SPARK_BOT_SECRET }}
+        run: |
+          if [ -z "$BOT_URL" ] || [ -z "$BOT_SECRET" ]; then echo "Секреты бота не заданы — пропускаю"; exit 0; fi
+          want=$(jq -r '.releases[0].version' changelog.json)
+          site="https://${GITHUB_REPOSITORY_OWNER}.github.io/${GITHUB_REPOSITORY#*/}"
+          for i in $(seq 1 40); do
+            got=$(curl -fsS "$site/changelog.json?t=$(date +%s)" | jq -r '.releases[0].version' || true)
+            [ "$got" = "$want" ] && break
+            echo "Pages ещё отдаёт $got, жду…"; sleep 15
+          done
+          curl -fsS -X POST "$BOT_URL?action=broadcast" -H "x-admin-secret: $BOT_SECRET"
