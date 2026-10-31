@@ -14,6 +14,7 @@ import {
 } from "./tg";
 import { answerVariants, clozeFace, clozeNumbers, esc, fmt, fmtDur, isCorrect, mediaRefs, stripMedia } from "./format";
 import { fillIcons, ic } from "./icons";
+import { TIPS } from "./tips";
 import { detectLang, getLang, setLang, t, translateStatic, type Lang } from "./i18n";
 import { AUDIO_RE, IMAGE_RE, LIMITS, VIDEO_RE, allMediaKeys, getMediaBlob, hydrateMedia, mediaDuration, mediaUrl, mimeOf, playAudio, putMedia, setMediaSync, shrinkImage } from "./media";
 import {
@@ -31,6 +32,32 @@ const $ = (id: string) => document.getElementById(id)!;
 const DAY_START_HOUR = 4;
 const LEARN_AHEAD = 20 * 60_000;
 const uid = () => crypto.randomUUID();
+
+/** Учебный день как строка (YYYY-MM-DD; день начинается в 4:00). Не ломается при переводе часов. */
+function dayKey(ts: number): string {
+  const d = new Date(ts - DAY_START_HOUR * 3600_000);
+  return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}-${String(d.getDate()).padStart(2, "0")}`;
+}
+function prevKey(key: string): string {
+  const [y, m, d] = key.split("-").map(Number) as [number, number, number];
+  const x = new Date(y, m - 1, d - 1);
+  return `${x.getFullYear()}-${String(x.getMonth() + 1).padStart(2, "0")}-${String(x.getDate()).padStart(2, "0")}`;
+}
+/** Серия дней подряд (сегодня или вчера — серия ещё жива), рекорд, сколько повторов сегодня. */
+function dayStreak() {
+  const days = new Set(store.reviews.map((r) => dayKey(r.ts)));
+  const today = dayKey(Date.now());
+  let streak = 0;
+  for (let k = days.has(today) ? today : prevKey(today); days.has(k); k = prevKey(k)) streak++;
+  let best = 0;
+  for (const k of days) { if (days.has(prevKey(k))) continue; let n = 0; for (let x = k; days.has(x); ) { n++; const [y, m, d] = x.split("-").map(Number) as [number, number, number]; const nx = new Date(y, m - 1, d + 1); x = `${nx.getFullYear()}-${String(nx.getMonth() + 1).padStart(2, "0")}-${String(nx.getDate()).padStart(2, "0")}`; } best = Math.max(best, n); }
+  const todayCount = store.reviews.filter((r) => dayKey(r.ts) === today).length;
+  return { streak, best, today: todayCount, studiedToday: days.has(today) };
+}
+const DAY_TIERS = [0, 1, 3, 7, 14, 30, 100];
+const COMBO_TIERS = [0, 3, 5, 10, 20, 30, 50];
+const MILESTONES = [5, 10, 20, 30, 50, 75, 100, 150, 200, 300];
+const tierOf = (n: number, tiers: number[]) => tiers.reduce((acc, v, i) => (n >= v ? i : acc), 0);
 
 function dayStart(ts: number): number {
   const d = new Date(ts - DAY_START_HOUR * 3600_000);
@@ -89,6 +116,8 @@ interface Review {
   deckId: string; cardId: string | null; show: boolean; typed: string | null; ok: boolean | null; done: number;
   t0: number; paused: number; baseline: number; dur: number;
   pending: { rating: Rating; speed: Speed; dur: number } | null; locking: boolean;
+  /** серия правильных ответов подряд в этой сессии */
+  combo: number; best: number; bump: "up" | "break" | null; milestone: number | null;
 }
 interface Browser {
   tab: "spark" | "community" | "web"; q: string; lang: string; loading: boolean; error: string;
@@ -105,6 +134,7 @@ const S = {
   pane: "decks" as "decks" | "cards" | "editor",
   review: null as Review | null,
   browser: null as Browser | null,
+  tips: null as null | { tab: string },
   /** куда добавлять медиа: карточка при повторении (сторона вопроса/ответа) или null — в редактор, в позицию курсора */
   attach: null as null | { cardId: string; side: "q" | "a" },
   modal: null as null | { type: ModalType; id?: string },
@@ -171,12 +201,12 @@ function applyLang() {
 
 function render() {
   applyLang(); applyTheme(); fillIcons();
-  renderDecks(); renderList(); renderEditor(); renderReview(); renderBrowser(); renderModal(); updateChrome();
+  renderDecks(); renderList(); renderEditor(); renderReview(); renderBrowser(); renderTips(); renderModal(); updateChrome();
 }
 
 function updateChrome() {
   $("app").dataset.pane = S.pane;
-  setBackButton(!!S.review || !!S.modal || !!S.browser || (isMobile() && S.pane !== "decks"));
+  setBackButton(!!S.review || !!S.modal || !!S.browser || !!S.tips || (isMobile() && S.pane !== "decks"));
   closingConfirmation(!!S.review);
   updateSyncInd();
 }
@@ -185,6 +215,7 @@ function goBack() {
   else if (S.modal) { S.modal = null; render(); }
   else if (S.browser?.open) { S.browser.open = null; S.browser.cards = null; renderBrowser(); updateChrome(); }
   else if (S.browser) { S.browser = null; render(); }
+  else if (S.tips) { S.tips = null; render(); }
   else if (S.pane === "editor") { S.pane = "cards"; render(); }
   else if (S.pane === "cards") { S.pane = "decks"; render(); }
 }
@@ -219,7 +250,25 @@ function renderDecks() {
   $("decks").innerHTML = row("all", ic("layers", "row-ic") + " " + t("Все карточки"), sum(counts)) +
     decks.map((d) => row(d.id, (d.emoji ? d.emoji + " " : "") + esc(d.name) + (d.typedMode === "on" ? ' <span class="muted tiny-ic" title="' + t("Ввод ответа включён для всей колоды") + '">' + ic("keyboard") + "</span>" : ""), counts.get(d.id))).join("")
     + (decks.length ? "" : isMobile() ? welcomeHtml() : `<div class="hint" style="padding:10px">${t("Колод пока нет. Откройте «Каталог» — там готовые колоды.")}</div>`);
+  renderStreak(decks.length > 0);
   $("deck-actions").innerHTML = decks.some((d) => d.id === S.deckId) ? `<button class="icon-btn" data-a="deck-edit" title="${t("Настройки колоды")}">${ic("more")}</button>` : "";
+}
+
+function renderStreak(show: boolean) {
+  const host = document.getElementById("streak");
+  if (!host) return;
+  const st = dayStreak();
+  if (!show && !st.best) { host.innerHTML = ""; return; }
+  const tier = tierOf(st.streak, DAY_TIERS);
+  const todayK = dayKey(Date.now());
+  let celebrate = "";
+  try { if (st.studiedToday && !S.review && localStorage.getItem("spark.streakSeen") !== todayK) { celebrate = "celebrate"; localStorage.setItem("spark.streakSeen", todayK); } } catch { /* без хранилища — без анимации */ }
+  const sub = st.studiedToday ? t("Сегодня: {n} повторов", { n: st.today })
+    : st.streak > 0 ? t("Позанимайтесь сегодня, чтобы не прервать серию") : t("Начните серию — позанимайтесь сегодня");
+  host.innerHTML = `<div class="streak-card d${tier} ${st.studiedToday ? "" : "pending"} ${celebrate}" data-a="stats" title="${t("Статистика")}">
+    <div class="sc-ic">${ic("flame")}</div>
+    <div class="sc-main"><b>${t("{n} дн. подряд", { n: st.streak })}</b><span>${sub}</span></div>
+    ${st.best > st.streak ? `<div class="sc-best">${ic("trophy", "tiny")} ${st.best}</div>` : ""}</div>`;
 }
 
 // ---------- список карточек ----------
@@ -575,6 +624,7 @@ function renderReview() {
   const timer = manual ? "" : `<div class="tm"><div class="tm-bar"><i id="rv-bar"></i></div><span id="rv-time" class="muted"></span></div>`;
   const top = `<div class="rv-top"><button class="icon-btn" data-a="rv-close" title="${t("Закрыть")} (Esc)">${ic("close")}</button>
     <div class="t">${esc(deck?.name ?? t("Все карточки"))}<div class="muted" style="font-weight:400;font-size:12px"><span style="color:var(--accent)">${counts.n}</span> · <span style="color:var(--bad)">${counts.l}</span> · <span style="color:var(--good)">${counts.r}</span></div></div>
+    <div class="combo t${tierOf(r.combo, COMBO_TIERS)} ${r.bump ?? ""}" title="${t("Серия правильных ответов подряд")}">${ic("flame")}<b>${r.combo}</b></div>
     ${r.cardId ? `<button class="icon-btn rv-att" data-a="rv-attach" title="${t("Добавить к карточке картинку, видео или звук")}">${ic("clip")}</button>` : ""}
     <button class="kbd-toggle ${typedNow ? "on" : ""}" data-a="rv-typed" title="${t("Ввод ответа с клавиатуры: переход без Enter при верном слове")}">${ic("keyboard")}<span class="lbl"> ${t("Ввод")}: ${typedNow ? t("вкл") : t("выкл")}</span></button>
     <svg class="ring" viewBox="0 0 38 38"><circle class="bg" cx="19" cy="19" r="17"/><circle class="fg" cx="19" cy="19" r="17" stroke-dasharray="${C}" stroke-dashoffset="${C * (1 - frac)}"/></svg></div>`;
@@ -583,6 +633,7 @@ function renderReview() {
     el.innerHTML = top + `<div class="rv-body"><div class="rv-done"><div class="em done-ic">${ic("check-circle")}</div>
       <h2>${r.done ? t("Отличная работа!") : t("На сегодня всё")}</h2>
       <p class="muted">${r.done ? t("Повторено карточек: {n}", { n: r.done }) : t("Нет карточек к повторению.")}</p>
+      ${r.best >= 3 ? `<p class="best-combo t${tierOf(r.best, COMBO_TIERS)}">${ic("trophy")} ${t("Лучшая серия: {n} правильных подряд", { n: r.best })}</p>` : ""}
       <button class="btn big" data-a="rv-close">${t("Готово")}</button></div></div>`;
     return;
   }
@@ -612,8 +663,23 @@ function renderReview() {
     <div class="rv-q">${faceHtml(card, "q")}</div>${mid}</div></div>
     <div class="rv-foot">${timer}${foot}</div>`;
   media(el);
+  comboEffects(el, r);
   if (!r.show && typedMode) ($("rv-input") as HTMLInputElement).focus();
   if (r.locking) ($("rv-input") as HTMLInputElement | null)?.setAttribute("disabled", "");
+}
+
+/** Анимация серии: «пружинка» при росте, тряска при сбросе, салют на вехах (5, 10, 20…). */
+function comboEffects(el: HTMLElement, r: Review) {
+  r.bump = null;
+  if (!r.milestone) return;
+  const n = r.milestone, tier = tierOf(n, COMBO_TIERS);
+  r.milestone = null;
+  const parts = Array.from({ length: 18 }, (_, i) => `<i style="--a:${(i * 360) / 18 + (Math.random() * 14 - 7)}deg;--d:${70 + Math.random() * 70}px;--s:${0.6 + Math.random() * 0.7}"></i>`).join("");
+  const box = document.createElement("div");
+  box.className = `milestone t${tier}`;
+  box.innerHTML = `<div class="ms-burst">${parts}</div><div class="ms-n">${n}</div><div class="ms-t">${t("правильных подряд!")}</div>`;
+  el.appendChild(box);
+  setTimeout(() => box.remove(), 1700);
 }
 
 function toggleTyped() {
@@ -629,7 +695,7 @@ function toggleTyped() {
 }
 function startReview(deckId: string) {
   haptic("light");
-  S.review = { deckId, cardId: null, show: false, typed: null, ok: null, done: 0, t0: 0, paused: 0, baseline: computeBaseline(), dur: 0, pending: null, locking: false };
+  S.review = { deckId, cardId: null, show: false, typed: null, ok: null, done: 0, t0: 0, paused: 0, baseline: computeBaseline(), dur: 0, pending: null, locking: false, combo: 0, best: 0, bump: null, milestone: null };
   showNext();
 }
 function showNext() {
@@ -675,10 +741,18 @@ function checkTyped(valueIn?: string) {
   if (ok && x.live) { x.r.locking = true; renderReview(); setTimeout(() => applyPending(), 420); }
   else { renderReview(); void playFirst(".ans"); }
 }
+function bumpCombo(rating: Rating) {
+  const r = S.review!;
+  if (rating >= 2) {
+    r.combo++; r.best = Math.max(r.best, r.combo); r.bump = "up";
+    if (MILESTONES.includes(r.combo)) { r.milestone = r.combo; haptic("success"); }
+  } else { r.bump = r.combo > 0 ? "break" : null; r.combo = 0; }
+}
 function applyPending(rating?: Rating) {
   const r = S.review;
   if (!r?.cardId || !r.pending) return;
   store.answer(r.cardId, rating ?? r.pending.rating, r.pending.dur);
+  bumpCombo(rating ?? r.pending.rating);
   haptic("select");
   r.done++;
   showNext();
@@ -687,6 +761,7 @@ function rateManual(g: Rating) {
   const r = S.review;
   if (!r?.cardId || !r.show) return;
   store.answer(r.cardId, g, r.dur);
+  bumpCombo(g);
   haptic("select");
   r.done++;
   showNext();
@@ -738,13 +813,23 @@ async function reloadCatalog() {
   renderBrowser();
 }
 
+function renderTips() {
+  const el = $("tips"), tp = S.tips;
+  el.classList.toggle("on", !!tp);
+  if (!tp) { el.innerHTML = ""; return; }
+  const L = getLang(), sec = TIPS.find((x) => x.id === tp.tab) ?? TIPS[0]!;
+  const tabs = `<div class="seg br-tabs">${TIPS.map((x) => `<button data-a="tips-tab" data-k="${x.id}" class="${x.id === sec.id ? "on" : ""}">${ic(x.icon)}<span>${x.title[L]}</span></button>`).join("")}</div>`;
+  el.innerHTML = `<div class="br-top"><button class="icon-btn" data-a="tips-close" title="${t("Закрыть")}">${ic("close")}</button><h1>${t("Советы")}</h1>${tabs}</div>
+    <div class="br-body"><div class="tips-list">${sec.items.map((it, i) => `<div class="tip"><div class="tip-n">${i + 1}</div><div class="tip-main"><b>${esc(it.title[L])}</b><p>${esc(it.text[L])}</p></div></div>`).join("")}</div></div>`;
+}
+
 function renderBrowser() {
   const el = $("browser"), b = S.browser;
   el.classList.toggle("on", !!b);
   if (!b) { el.innerHTML = ""; return; }
   const tab = (k: string, icon: string, label: string) => `<button data-a="br-tab" data-k="${k}" class="${b.tab === k ? "on" : ""}">${ic(icon)}<span>${label}</span></button>`;
   const tabs = `<div class="seg br-tabs">${tab("spark", "spark", APP)}${tab("community", "users", t("Сообщество"))}${tab("web", "globe", t("Браузер"))}</div>`;
-  const head = `<div class="br-top"><button class="icon-btn" data-a="br-close" title="${t("Закрыть")}">${ic("close")}</button><h1>${t("Каталог колод")}</h1>${tabs}</div>`;
+  const head = `<div class="br-top"><button class="icon-btn" data-a="br-close" title="${t("Закрыть")}">${ic("close")}</button><h1>${t("Каталог колод")}</h1><button class="icon-btn" data-a="import-decks" title="${t("Импорт файла (.apkg, .csv, .txt)")}">${ic("import")}</button>${tabs}</div>`;
   if (b.open) { el.innerHTML = head + `<div class="br-body">${deckDetailHtml(b)}</div>`; media(el); return; }
   if (b.tab === "web") { el.innerHTML = head + `<div class="br-body">${webHtml()}</div>`; return; }
   const inst = installed();
@@ -1005,8 +1090,7 @@ function renderModal() {
     const now = Date.now(), per = new Map<number, number>();
     for (const r of store.reviews) per.set(dayStart(r.ts), (per.get(dayStart(r.ts)) ?? 0) + 1);
     const today = dayStart(now);
-    let streak = 0;
-    for (let d = per.has(today) ? today : today - DAY_MS; per.has(d); d -= DAY_MS) streak++;
+    const streak = dayStreak().streak;
     const month = store.reviews.filter((r) => r.ts > now - 30 * DAY_MS);
     const ret = month.length ? Math.round((month.filter((r) => r.rating > 1).length / month.length) * 100) : null;
     const cards = allCards().filter((c) => !c.suspended);
@@ -1335,6 +1419,9 @@ document.addEventListener("click", (e) => {
     }
     case "stats": S.modal = { type: "stats" }; renderModal(); updateChrome(); break;
     case "browser-open": void openBrowser("spark"); break;
+    case "tips-open": S.tips = { tab: "spark" }; render(); break;
+    case "tips-close": S.tips = null; render(); break;
+    case "tips-tab": if (S.tips) { S.tips.tab = el.dataset.k!; renderTips(); } break;
     case "br-close": S.browser = null; render(); break;
     case "br-tab": if (S.browser) { S.browser.tab = el.dataset.k as "spark" | "community" | "web"; S.browser.open = null; S.browser.lang = ""; renderBrowser(); updateChrome(); } break;
     case "br-lang": if (S.browser) { S.browser.lang = el.dataset.k ?? ""; renderBrowser(); } break;
@@ -1466,12 +1553,12 @@ document.addEventListener("keydown", (e) => {
     else if (store.settings.manualGrades && ["1", "2", "3", "4"].includes(e.key)) rateManual(Number(e.key) as Rating);
     return;
   }
-  if (e.key === "Escape" && (S.modal || S.browser)) { goBack(); return; }
+  if (e.key === "Escape" && (S.modal || S.browser || S.tips)) { goBack(); return; }
   if (S.modal) {
     if (e.key === "Enter" && S.modal.type === "deck" && (e.target as HTMLElement).id === "m-name") (document.querySelector('[data-a="deck-save"]') as HTMLElement)?.click();
     return;
   }
-  if (S.browser) return;
+  if (S.browser || S.tips) return;
   const tag = (e.target as HTMLElement).tagName;
   if (mod && e.key === "Enter" && !activeId() && document.getElementById("f-front")) { e.preventDefault(); addCardFromForm(); }
   else if (mod && e.key.toLowerCase() === "n") { e.preventDefault(); S.sel.clear(); renderList(); renderEditor(); ($("f-front") as HTMLTextAreaElement | null)?.focus(); }
