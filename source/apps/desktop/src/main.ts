@@ -141,7 +141,9 @@ const S = {
 const isMobile = () => matchMedia("(max-width: 760px)").matches;
 const activeId = () => (S.sel.size === 1 ? [...S.sel][0]! : null);
 
-interface Counts { n: number; l: number; r: number }
+interface Counts { n: number; l: number; r: number; spare?: number }
+/** Дополнительные новые карточки на сегодня («Учить ещё»), по колодам. */
+const extraToday = (): Record<string, number> => { const e = store.settings.extraNew; return e && e.day === dayKey(Date.now()) ? e.by : {}; };
 function scan(now: number, cards: CardView[], decks: DeckView[]): Map<string, Counts> {
   const today = dayStart(now), out = new Map<string, Counts>();
   const newToday = new Map<string, number>(), newAvail = new Map<string, number>();
@@ -155,10 +157,11 @@ function scan(now: number, cards: CardView[], decks: DeckView[]): Map<string, Co
     else if (st.phase === "learning" || st.phase === "relearning") { if (st.due <= now + LEARN_AHEAD) o.l++; }
     else if (st.due <= now) o.r++;
   }
-  const limit = store.settings.newPerDay;
+  const limit = store.settings.newPerDay, extra = extraToday();
   for (const [id, o] of out) {
-    const lim = decks.find((d) => d.id === id)?.newPerDay ?? limit;
+    const lim = (decks.find((d) => d.id === id)?.newPerDay ?? limit) + (extra[id] ?? 0);
     o.n = Math.min(newAvail.get(id) ?? 0, Math.max(0, lim - (newToday.get(id) ?? 0)));
+    o.spare = (newAvail.get(id) ?? 0) - o.n; // новые сверх сегодняшнего лимита — их можно открыть кнопкой «Учить ещё»
   }
   return out;
 }
@@ -643,6 +646,7 @@ function renderReview() {
       <h2>${r.done ? t("Отличная работа!") : t("На сегодня всё")}</h2>
       <p class="muted">${r.done ? t("Повторено карточек: {n}", { n: r.done }) : t("Нет карточек к повторению.")}</p>
       ${r.best >= 3 ? `<p class="best-combo lv${streakLevel(r.best)}">${ic("trophy")} ${t("Лучшая серия: {n} правильных подряд", { n: r.best })}</p>` : ""}
+      ${moreHtml(r.deckId)}
       <button class="btn big" data-a="rv-close">${t("Готово")}</button></div></div>`;
     return;
   }
@@ -702,6 +706,34 @@ function toggleTyped() {
   if (card && !r.show) { r.t0 = Date.now(); r.paused = 0; }
   renderReview();
 }
+/** «Учить ещё»: +10 / +20 / +30 новых карточек сверх дневного лимита. */
+function spareNew(deckId: string): Map<string, number> {
+  const cards = allCards().filter((c) => (deckId === "all" || c.deckId === deckId) && !c.suspended);
+  const out = new Map<string, number>();
+  for (const [id, c] of scan(Date.now(), cards, allDecks())) if ((c.spare ?? 0) > 0) out.set(id, c.spare!);
+  return out;
+}
+function moreHtml(deckId: string): string {
+  const spare = [...spareNew(deckId).values()].reduce((a, b) => a + b, 0);
+  if (!spare) return "";
+  const opts = [10, 20, 30].filter((n) => n < spare);
+  const btns = [...opts.map((n) => `<button class="btn sec" data-a="rv-more" data-n="${n}">+${n}</button>`),
+    ...(opts.length < 3 ? [`<button class="btn sec" data-a="rv-more" data-n="${spare}">${opts.length ? t("все {n}", { n: spare }) : "+" + spare}</button>`] : [])].join("");
+  return `<div class="rv-more"><div class="rv-more-t">${ic("plus")} ${t("Учить ещё")}</div>
+    <p class="muted">${t("Новых карточек осталось: {n}. Сколько добавить на сегодня?", { n: spare })}</p><div class="rv-more-b">${btns}</div></div>`;
+}
+function learnMore(n: number) {
+  const r = S.review;
+  if (!r || n <= 0) return;
+  const today = dayKey(Date.now()), spare = spareNew(r.deckId), by = { ...extraToday() };
+  // раздаём по колодам по порядку, пока не наберём n
+  let left = n;
+  for (const d of allDecks()) { const sp = spare.get(d.id) ?? 0; if (!sp || left <= 0) continue; const k = Math.min(sp, left); by[d.id] = (by[d.id] ?? 0) + k; left -= k; }
+  store.setSetting("extraNew", { day: today, by });
+  haptic("success");
+  showNext();
+}
+
 function startReview(deckId: string) {
   haptic("light");
   S.review = { deckId, cardId: null, show: false, typed: null, ok: null, done: 0, t0: 0, paused: 0, baseline: computeBaseline(), dur: 0, pending: null, locking: false, combo: 0, best: 0, bump: null, milestone: null };
@@ -1498,6 +1530,7 @@ document.addEventListener("click", (e) => {
     case "reload-app": store.flush(true); location.reload(); break;
     case "study": startReview(S.deckId); break;
     case "rv-close": closeReview(); break;
+    case "rv-more": learnMore(Number(el.dataset.n) || 0); break;
     case "rv-typed": toggleTyped(); break;
     case "rv-attach": if (S.review?.cardId) { S.attach = { cardId: S.review.cardId, side: S.review.show ? "a" : "q" }; S.modal = { type: "attach" }; renderModal(); updateChrome(); } break;
     case "att-side": if (S.attach) { S.attach.side = el.dataset.k as "q" | "a"; renderModal(); } break;

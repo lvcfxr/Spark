@@ -262,4 +262,7 @@ export const EN: Record<string, string> = {
   "Туманность": "Nebula",
   "Сверхновая": "Supernova",
   "дальше — «{name}» через {n} дн.": "next: “{name}” in {n} d",
+  "Учить ещё": "Learn more",
+  "Новых карточек осталось: {n}. Сколько добавить на сегодня?": "New cards left: {n}. How many more for today?",
+  "все {n}": "all {n}",
 };

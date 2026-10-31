@@ -19,6 +19,8 @@ export interface Settings {
   typedAll: boolean;
   lang?: "auto" | "ru" | "en";
   autoAudio: boolean;
+  /** «Учить ещё»: сколько новых карточек сверх дневного лимита разрешено сегодня, по колодам. */
+  extraNew?: { day: string; by: Record<string, number> };
 }
 export const DEFAULT_SETTINGS: Settings = { theme: "auto", accent: "#7c3aed", retention: 0.9, newPerDay: 20, typedDefault: false, manualGrades: false, typedAll: true, autoAudio: true };
 
