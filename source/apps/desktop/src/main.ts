@@ -1164,8 +1164,8 @@ function renderModal() {
 /** Быстрый запуск: ярлык на главном экране и ссылка, которая открывает Spark сразу, без чата с ботом. */
 let homeStatus: string = "unknown";
 function botLink(): string {
-  const c = (window as unknown as { SPARK_CONFIG?: { botUsername?: string } }).SPARK_CONFIG;
-  const u = c?.botUsername?.replace(/^@/, "");
+  const w = window as unknown as { SPARK_CONFIG?: { botUsername?: string }; RECALL_CONFIG?: { botUsername?: string } };
+  const u = (w.SPARK_CONFIG?.botUsername || w.RECALL_CONFIG?.botUsername || "Sparkling_app").replace(/^@/, "");
   return u ? `https://t.me/${u}?startapp` : "";
 }
 function launchGroup(): string {
