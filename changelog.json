@@ -1,6 +1,18 @@
 {
  "releases": [
   {
+   "version": "0.13.1",
+   "date": "31.10.2026",
+   "ru": [
+    "Новая карточка больше не пролистывается сама после верного ответа — можно спокойно прочитать перевод и пояснение",
+    "Проверка ответа: «е» вместо «ё», ответ без пояснения в скобках, одно из слов через запятую, без артикля и «to», буквы без ударений (adios = adiós)"
+   ],
+   "en": [
+    "A new card no longer flips away on its own after a correct answer — take your time to read the translation and notes",
+    "Answer checking: one of several words separated by commas, no text in brackets needed, no article or “to”, letters without accents (adios = adiós), е for ё"
+   ]
+  },
+  {
    "version": "0.13",
    "date": "31.10.2026",
    "ru": [
