@@ -1,6 +1,34 @@
 {
  "releases": [
   {
+   "version": "0.13",
+   "date": "31.10.2026",
+   "ru": [
+    "Курсы: испанский, английский, французский, немецкий, японский и русский — по 8 уровней, с произношением, озвучкой слов и примеров",
+    "Новая главная: серия дней, уровень и опыт, ваши курсы и колоды",
+    "Опыт (XP): начисляется за ответы и растёт вместе с сериями и количеством повторений за день",
+    "Встроенные колоды и курсы — на русском и английском"
+   ],
+   "en": [
+    "Courses: Spanish, English, French, German, Japanese and Russian — 8 levels each, with pronunciation, audio for words and examples",
+    "New home screen: day streak, level and XP, your courses and decks",
+    "XP: earned for answers and boosted by streaks and the number of reviews per day",
+    "Built-in decks and courses in Russian and English"
+   ]
+  },
+  {
+   "version": "0.12",
+   "date": "31.10.2026",
+   "ru": [
+    "Кнопка «Учить ещё»: когда карточки на сегодня закончились, можно добавить +10, +20 или +30 новых",
+    "Новая иконка Spark — искра над карточкой"
+   ],
+   "en": [
+    "“Learn more” button: when today's cards are done, add +10, +20 or +30 new ones",
+    "New Spark icon — a spark over a card"
+   ]
+  },
+  {
    "version": "0.11",
    "date": "31.10.2026",
    "ru": [
@@ -37,8 +65,16 @@
   {
    "version": "0.9",
    "date": "31.10.2026",
-   "ru": ["Серия правильных ответов в углу при повторении", "Серия дней на главной", "Раздел «Советы»"],
-   "en": ["Correct-answer streak in the review corner", "Day streak on the home screen", "Tips section"]
+   "ru": [
+    "Серия правильных ответов в углу при повторении",
+    "Серия дней на главной",
+    "Раздел «Советы»"
+   ],
+   "en": [
+    "Correct-answer streak in the review corner",
+    "Day streak on the home screen",
+    "Tips section"
+   ]
   }
  ]
 }

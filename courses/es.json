@@ -1,0 +1,1772 @@
+{
+"id": "es",
+"version": 1,
+"cards": [
+{
+"id": "hello",
+"unit": "greet",
+"front": "hola [audio](media:188e892380744fec7f38c5e4)",
+"hint": "ˈola",
+"back": {
+"ru": "привет; здравствуйте",
+"en": "hello"
+},
+"extra": {
+"ru": "h не читается.\n> ¡Hola! Me alegro de verte. [audio](media:f6fc93b1fb20d0a4155b2d11)\n> — Привет! Рад тебя видеть.",
+"en": "The h is silent.\n> ¡Hola! Me alegro de verte. [audio](media:f6fc93b1fb20d0a4155b2d11)\n> — Hello! Nice to see you."
+}
+},
+{
+"id": "bye",
+"unit": "greet",
+"front": "adiós [audio](media:bda7e0c640aa1d51d07b6ca7)",
+"hint": "aˈðjos",
+"back": {
+"ru": "до свидания",
+"en": "goodbye"
+},
+"extra": {
+"ru": "Hasta mañana — «до завтра».\n> ¡Adiós, hasta mañana! [audio](media:a4d8d795247cb488a7e645d5)\n> — До свидания, до завтра!",
+"en": "Hasta mañana means “see you tomorrow”.\n> ¡Adiós, hasta mañana! [audio](media:a4d8d795247cb488a7e645d5)\n> — Goodbye, see you tomorrow!"
+}
+},
+{
+"id": "thanks",
+"unit": "greet",
+"front": "gracias [audio](media:0770c27b4567c593dd1d49d3)",
+"hint": "ˈɡɾaθjas",
+"back": {
+"ru": "спасибо",
+"en": "thank you"
+},
+"extra": {
+"ru": "В Латинской Америке — /ˈɡɾasjas/.\n> Gracias por la ayuda. [audio](media:1ecd29ef1032a24de6d9112c)\n> — Спасибо за помощь.",
+"en": "In Latin America: /ˈɡɾasjas/.\n> Gracias por la ayuda. [audio](media:1ecd29ef1032a24de6d9112c)\n> — Thank you for the help."
+}
+},
+{
+"id": "please",
+"unit": "greet",
+"front": "por favor [audio](media:5ad2019ea958770dc31e54e3)",
+"hint": "poɾ faˈβoɾ",
+"back": {
+"ru": "пожалуйста (просьба)",
+"en": "please"
+},
+"extra": {
+"ru": "> Un café, por favor. [audio](media:3be1ef2e1f4ebd683e4e7199)\n> — Кофе, пожалуйста.",
+"en": "> Un café, por favor. [audio](media:3be1ef2e1f4ebd683e4e7199)\n> — A coffee, please."
+}
+},
+{
+"id": "yes",
+"unit": "greet",
+"front": "sí [audio](media:ffe597b8f647561130866c6a)",
+"hint": "si",
+"back": {
+"ru": "да",
+"en": "yes"
+},
+"extra": {
+"ru": "С ударением — «да», si без знака — «если».\n> Sí, claro. [audio](media:3c1e9c9d43589c2a3a1e97b7)\n> — Да, конечно.",
+"en": "With the accent it means “yes”; si means “if”.\n> Sí, claro. [audio](media:3c1e9c9d43589c2a3a1e97b7)\n> — Yes, of course."
+}
+},
+{
+"id": "no",
+"unit": "greet",
+"front": "no [audio](media:37af55bd728bd8a1cb5ee77f)",
+"hint": "no",
+"back": {
+"ru": "нет",
+"en": "no"
+},
+"extra": {
+"ru": "И «нет», и «не»: no sé — не знаю.\n> No, gracias. [audio](media:0727362f4372e0b7a8a8b57f)\n> — Нет, спасибо.",
+"en": "Both “no” and “not”: no sé — I don't know.\n> No, gracias. [audio](media:0727362f4372e0b7a8a8b57f)\n> — No, thank you."
+}
+},
+{
+"id": "sorry",
+"unit": "greet",
+"front": "perdón [audio](media:d741ac120f63a67bdc20c495)",
+"hint": "peɾˈðon",
+"back": {
+"ru": "извините",
+"en": "sorry; excuse me"
+},
+"extra": {
+"ru": "Ещё: lo siento — мне жаль.\n> Perdón, llego tarde. [audio](media:78babf2210bcb3cc56f6af12)\n> — Извините, я опоздал.",
+"en": "Also: lo siento — I'm sorry.\n> Perdón, llego tarde. [audio](media:78babf2210bcb3cc56f6af12)\n> — Sorry, I'm late."
+}
+},
+{
+"id": "morning",
+"unit": "greet",
+"front": "buenos días [audio](media:5dd4c28a481460b7e4f6de28)",
+"hint": "ˈbwenos ˈðias",
+"back": {
+"ru": "доброе утро",
+"en": "good morning"
+},
+"extra": {
+"ru": "Говорят до обеда.\n> ¡Buenos días, mamá! [audio](media:d998b46d956387ac08fd9de2)\n> — Доброе утро, мама!",
+"en": "Used until lunchtime.\n> ¡Buenos días, mamá! [audio](media:d998b46d956387ac08fd9de2)\n> — Good morning, Mom!"
+}
+},
+{
+"id": "night",
+"unit": "greet",
+"front": "buenas noches [audio](media:33826b710bddd81ad8640c4c)",
+"hint": "ˈbwenas ˈnotʃes",
+"back": {
+"ru": "спокойной ночи",
+"en": "good night"
+},
+"extra": {
+"ru": "И «добрый вечер», и «спокойной ночи».\n> Buenas noches, hasta mañana. [audio](media:6823045eebe463758197f220)\n> — Спокойной ночи, до завтра.",
+"en": "Both “good evening” and “good night”.\n> Buenas noches, hasta mañana. [audio](media:6823045eebe463758197f220)\n> — Good night, see you tomorrow."
+}
+},
+{
+"id": "howru",
+"unit": "greet",
+"front": "¿qué tal? [audio](media:03945f219a03836b97d11293)",
+"hint": "ke ˈtal",
+"back": {
+"ru": "как дела?",
+"en": "how are you?"
+},
+"extra": {
+"ru": "Вежливо: ¿Cómo está usted?\n> ¿Qué tal? — Bien, gracias. [audio](media:0cc376163f1526f3ae86ed35)\n> — Как дела? — Хорошо, спасибо.",
+"en": "Polite: ¿Cómo está usted?\n> ¿Qué tal? — Bien, gracias. [audio](media:0cc376163f1526f3ae86ed35)\n> — How are you? — Fine, thanks."
+}
+},
+{
+"id": "man",
+"unit": "people",
+"front": "el hombre [audio](media:7cfe2beb2d7a202ebedea285)",
+"hint": "el ˈombɾe",
+"back": {
+"ru": "мужчина",
+"en": "man"
+},
+"extra": {
+"ru": "h не читается.\n> Este hombre es mi profesor. [audio](media:39f33ab7f9b6f86481732d72)\n> — Этот мужчина — мой учитель.",
+"en": "The h is silent.\n> Este hombre es mi profesor. [audio](media:39f33ab7f9b6f86481732d72)\n> — This man is my teacher."
+}
+},
+{
+"id": "woman",
+"unit": "people",
+"front": "la mujer [audio](media:e6e98469ce6d3ce3cc9a19f0)",
+"hint": "la muˈxeɾ",
+"back": {
+"ru": "женщина",
+"en": "woman"
+},
+"extra": {
+"ru": "j — как русское х.\n> Esta mujer es médica. [audio](media:fb7dc6cd668efc739ae320b9)\n> — Эта женщина — врач.",
+"en": "j sounds like a throaty h.\n> Esta mujer es médica. [audio](media:fb7dc6cd668efc739ae320b9)\n> — This woman is a doctor."
+}
+},
+{
+"id": "child",
+"unit": "people",
+"front": "el niño [audio](media:5ebb4d3aec72e32556cd1aec)",
+"hint": "el ˈniɲo",
+"back": {
+"ru": "ребёнок",
+"en": "child"
+},
+"extra": {
+"ru": "Девочка — la niña.\n> El niño duerme. [audio](media:e2f7864840a7d05d1fc22603)\n> — Ребёнок спит.",
+"en": "A girl is la niña.\n> El niño duerme. [audio](media:e2f7864840a7d05d1fc22603)\n> — The child is sleeping."
+}
+},
+{
+"id": "friend",
+"unit": "people",
+"front": "el amigo [audio](media:3780194f45dd8129bf4d6176)",
+"hint": "el aˈmiɣo",
+"back": {
+"ru": "друг",
+"en": "friend"
+},
+"extra": {
+"ru": "Подруга — la amiga.\n> Es mi mejor amigo. [audio](media:4a5cd68c2cf96e3261607f3a)\n> — Он мой лучший друг.",
+"en": "A female friend is la amiga.\n> Es mi mejor amigo. [audio](media:4a5cd68c2cf96e3261607f3a)\n> — He is my best friend."
+}
+},
+{
+"id": "mother",
+"unit": "people",
+"front": "la madre [audio](media:bec02ba5a99756ce89ff094a)",
+"hint": "la ˈmaðɾe",
+"back": {
+"ru": "мать; мама",
+"en": "mother"
+},
+"extra": {
+"ru": "Ласково — mamá.\n> Mi madre es profesora. [audio](media:465c665bdd30e0d32ad6fbfb)\n> — Моя мама — учитель.",
+"en": "Informally: mamá.\n> Mi madre es profesora. [audio](media:465c665bdd30e0d32ad6fbfb)\n> — My mother is a teacher."
+}
+},
+{
+"id": "father",
+"unit": "people",
+"front": "el padre [audio](media:d505f2e8844abeb5105e5649)",
+"hint": "el ˈpaðɾe",
+"back": {
+"ru": "отец; папа",
+"en": "father"
+},
+"extra": {
+"ru": "Ласково — papá.\n> Mi padre trabaja en un banco. [audio](media:b46c5f27844a28031d3db6cc)\n> — Мой папа работает в банке.",
+"en": "Informally: papá.\n> Mi padre trabaja en un banco. [audio](media:b46c5f27844a28031d3db6cc)\n> — My father works at a bank."
+}
+},
+{
+"id": "brother",
+"unit": "people",
+"front": "el hermano [audio](media:6bdbc2acf928e6df0888594c)",
+"hint": "el eɾˈmano",
+"back": {
+"ru": "брат",
+"en": "brother"
+},
+"extra": {
+"ru": "Братья и сёстры — hermanos.\n> Tengo un hermano. [audio](media:d7b21b5dd49475fe936a0abb)\n> — У меня есть брат.",
+"en": "Siblings: hermanos.\n> Tengo un hermano. [audio](media:d7b21b5dd49475fe936a0abb)\n> — I have a brother."
+}
+},
+{
+"id": "sister",
+"unit": "people",
+"front": "la hermana [audio](media:81541252999cdc3da2de7186)",
+"hint": "la eɾˈmana",
+"back": {
+"ru": "сестра",
+"en": "sister"
+},
+"extra": {
+"ru": "> Mi hermana ama la música. [audio](media:35fa02ce32ce4045f4152cd0)\n> — Моя сестра любит музыку.",
+"en": "> Mi hermana ama la música. [audio](media:35fa02ce32ce4045f4152cd0)\n> — My sister loves music."
+}
+},
+{
+"id": "family",
+"unit": "people",
+"front": "la familia [audio](media:c390c8f271aad44b61112ac9)",
+"hint": "la faˈmilja",
+"back": {
+"ru": "семья",
+"en": "family"
+},
+"extra": {
+"ru": "> Tengo una familia grande. [audio](media:1f34cafc9de4436ec2fab099)\n> — У меня большая семья.",
+"en": "> Tengo una familia grande. [audio](media:1f34cafc9de4436ec2fab099)\n> — I have a big family."
+}
+},
+{
+"id": "name",
+"unit": "people",
+"front": "el nombre [audio](media:8d676364bc8780284dd039cc)",
+"hint": "el ˈnombɾe",
+"back": {
+"ru": "имя",
+"en": "name"
+},
+"extra": {
+"ru": "Как тебя зовут? — ¿Cómo te llamas?\n> Me llamo Ana. [audio](media:d67920f24c9bf06d1a5677eb)\n> — Меня зовут Анна.",
+"en": "What's your name? — ¿Cómo te llamas?\n> Me llamo Ana. [audio](media:d67920f24c9bf06d1a5677eb)\n> — My name is Anna."
+}
+},
+{
+"id": "one",
+"unit": "numbers",
+"front": "uno [audio](media:9a6e9ef6e5283101d09fe2ab)",
+"hint": "ˈuno",
+"back": {
+"ru": "один",
+"en": "one"
+},
+"extra": {
+"ru": "Перед существительным: un / una.\n> Una manzana, por favor. [audio](media:c35df812ffe0f3eea93ac510)\n> — Одно яблоко, пожалуйста.",
+"en": "Before a noun: un / una.\n> Una manzana, por favor. [audio](media:c35df812ffe0f3eea93ac510)\n> — One apple, please."
+}
+},
+{
+"id": "two",
+"unit": "numbers",
+"front": "dos [audio](media:580dfc344b1ba692367b4eb7)",
+"hint": "dos",
+"back": {
+"ru": "два",
+"en": "two"
+},
+"extra": {
+"ru": "> Dos cafés, por favor. [audio](media:d1d71a67e576d0158bb2a3f5)\n> — Два кофе, пожалуйста.",
+"en": "> Dos cafés, por favor. [audio](media:d1d71a67e576d0158bb2a3f5)\n> — Two coffees, please."
+}
+},
+{
+"id": "three",
+"unit": "numbers",
+"front": "tres [audio](media:e9b0fc136a8d37e4a87d8aad)",
+"hint": "tɾes",
+"back": {
+"ru": "три",
+"en": "three"
+},
+"extra": {
+"ru": "> Son las tres. [audio](media:a77682f60921966b32e0aaf0)\n> — Сейчас три часа.",
+"en": "> Son las tres. [audio](media:a77682f60921966b32e0aaf0)\n> — It's three o'clock."
+}
+},
+{
+"id": "ten",
+"unit": "numbers",
+"front": "diez [audio](media:3cc304f3aa3507b272310365)",
+"hint": "djeθ",
+"back": {
+"ru": "десять",
+"en": "ten"
+},
+"extra": {
+"ru": "> Espere diez minutos, por favor. [audio](media:91eab83074cc17b0e8e3238c)\n> — Подождите десять минут.",
+"en": "> Espere diez minutos, por favor. [audio](media:91eab83074cc17b0e8e3238c)\n> — Please wait ten minutes."
+}
+},
+{
+"id": "hundred",
+"unit": "numbers",
+"front": "cien [audio](media:ef2ccb502e9618d360af0f70)",
+"hint": "θjen",
+"back": {
+"ru": "сто",
+"en": "a hundred"
+},
+"extra": {
+"ru": "101 и дальше — ciento uno…\n> Cuesta cien euros. [audio](media:fe2dcc652f17aa6d11eaecda)\n> — Это стоит сто евро.",
+"en": "101 and on: ciento uno…\n> Cuesta cien euros. [audio](media:fe2dcc652f17aa6d11eaecda)\n> — It costs a hundred euros."
+}
+},
+{
+"id": "day",
+"unit": "numbers",
+"front": "el día [audio](media:642af4090537e9e0a77b09e2)",
+"hint": "el ˈdia",
+"back": {
+"ru": "день",
+"en": "day"
+},
+"extra": {
+"ru": "Мужской род, хотя на -a.\n> ¡Que tengas un buen día! [audio](media:1224369e9a50003707113258)\n> — Хорошего дня!",
+"en": "Masculine although it ends in -a.\n> ¡Que tengas un buen día! [audio](media:1224369e9a50003707113258)\n> — Have a nice day!"
+}
+},
+{
+"id": "week",
+"unit": "numbers",
+"front": "la semana [audio](media:9bcd54953c5ae5a865e2526c)",
+"hint": "la seˈmana",
+"back": {
+"ru": "неделя",
+"en": "week"
+},
+"extra": {
+"ru": "> Hasta la semana que viene. [audio](media:ba678d4c4e73b7f43f4cd47c)\n> — Увидимся на следующей неделе.",
+"en": "> Hasta la semana que viene. [audio](media:ba678d4c4e73b7f43f4cd47c)\n> — See you next week."
+}
+},
+{
+"id": "today",
+"unit": "numbers",
+"front": "hoy [audio](media:e585483c095750c3222c674f)",
+"hint": "oj",
+"back": {
+"ru": "сегодня",
+"en": "today"
+},
+"extra": {
+"ru": "h не читается.\n> Hoy hace frío. [audio](media:68306e197616aeb9f69be5fa)\n> — Сегодня холодно.",
+"en": "The h is silent.\n> Hoy hace frío. [audio](media:68306e197616aeb9f69be5fa)\n> — It's cold today."
+}
+},
+{
+"id": "tomorrow",
+"unit": "numbers",
+"front": "mañana [audio](media:b324189754595bf5113e6fa7)",
+"hint": "maˈɲana",
+"back": {
+"ru": "завтра",
+"en": "tomorrow"
+},
+"extra": {
+"ru": "Ещё значит «утро».\n> Mañana trabajo. [audio](media:2c8f4ba9a917c692e7e0fdcf)\n> — Завтра я работаю.",
+"en": "Also means “morning”.\n> Mañana trabajo. [audio](media:2c8f4ba9a917c692e7e0fdcf)\n> — I'm working tomorrow."
+}
+},
+{
+"id": "yesterday",
+"unit": "numbers",
+"front": "ayer [audio](media:f32f7df56dcb2e80b312c0ee)",
+"hint": "aˈʝeɾ",
+"back": {
+"ru": "вчера",
+"en": "yesterday"
+},
+"extra": {
+"ru": "> Ayer llovió. [audio](media:286d8162f434c200d996d215)\n> — Вчера был дождь.",
+"en": "> Ayer llovió. [audio](media:286d8162f434c200d996d215)\n> — It rained yesterday."
+}
+},
+{
+"id": "water",
+"unit": "food",
+"front": "el agua [audio](media:bc289a7efbfe92f712af3a44)",
+"hint": "el ˈaɣwa",
+"back": {
+"ru": "вода",
+"en": "water"
+},
+"extra": {
+"ru": "Женский род, но el agua.\n> Un vaso de agua, por favor. [audio](media:f3b6ef38e5ce47e5d0e25a63)\n> — Стакан воды, пожалуйста.",
+"en": "Feminine, but el agua.\n> Un vaso de agua, por favor. [audio](media:f3b6ef38e5ce47e5d0e25a63)\n> — A glass of water, please."
+}
+},
+{
+"id": "bread",
+"unit": "food",
+"front": "el pan [audio](media:8926a195e35065f49b40f8c3)",
+"hint": "el pan",
+"back": {
+"ru": "хлеб",
+"en": "bread"
+},
+"extra": {
+"ru": "> Compro pan. [audio](media:8d2894b603b7e9456140b262)\n> — Я покупаю хлеб.",
+"en": "> Compro pan. [audio](media:8d2894b603b7e9456140b262)\n> — I'm buying bread."
+}
+},
+{
+"id": "coffee",
+"unit": "food",
+"front": "el café [audio](media:a27a6570af4bede8246e6426)",
+"hint": "el kaˈfe",
+"back": {
+"ru": "кофе",
+"en": "coffee"
+},
+"extra": {
+"ru": "> Tomo café cada mañana. [audio](media:fb7f8692d260ee5b0237614d)\n> — Я пью кофе каждое утро.",
+"en": "> Tomo café cada mañana. [audio](media:fb7f8692d260ee5b0237614d)\n> — I drink coffee every morning."
+}
+},
+{
+"id": "tea",
+"unit": "food",
+"front": "el té [audio](media:2715b6358678f215d6223c8e)",
+"hint": "el te",
+"back": {
+"ru": "чай",
+"en": "tea"
+},
+"extra": {
+"ru": "> ¿Quieres un té? [audio](media:22e2613ecbdfddb702705127)\n> — Хочешь чаю?",
+"en": "> ¿Quieres un té? [audio](media:22e2613ecbdfddb702705127)\n> — Would you like some tea?"
+}
+},
+{
+"id": "milk",
+"unit": "food",
+"front": "la leche [audio](media:e760731af79475a2a4d06143)",
+"hint": "la ˈletʃe",
+"back": {
+"ru": "молоко",
+"en": "milk"
+},
+"extra": {
+"ru": "> Café con leche. [audio](media:8baa6a0fe9a44edf59a1be17)\n> — Кофе с молоком.",
+"en": "> Café con leche. [audio](media:8baa6a0fe9a44edf59a1be17)\n> — Coffee with milk."
+}
+},
+{
+"id": "apple",
+"unit": "food",
+"front": "la manzana [audio](media:901a354fb5759fb26f738f5c)",
+"hint": "la manˈθana",
+"back": {
+"ru": "яблоко",
+"en": "apple"
+},
+"extra": {
+"ru": "> Es una manzana verde. [audio](media:acda171ac07fa79d973776fb)\n> — Это зелёное яблоко.",
+"en": "> Es una manzana verde. [audio](media:acda171ac07fa79d973776fb)\n> — This is a green apple."
+}
+},
+{
+"id": "meat",
+"unit": "food",
+"front": "la carne [audio](media:f1fc91250f9669cd82fe1879)",
+"hint": "la ˈkaɾne",
+"back": {
+"ru": "мясо",
+"en": "meat"
+},
+"extra": {
+"ru": "> No como carne. [audio](media:f699a1450e3dba03c425a2f8)\n> — Я не ем мясо.",
+"en": "> No como carne. [audio](media:f699a1450e3dba03c425a2f8)\n> — I don't eat meat."
+}
+},
+{
+"id": "fish",
+"unit": "food",
+"front": "el pescado [audio](media:6dfc64ad972fa676d25dbd6b)",
+"hint": "el pesˈkaðo",
+"back": {
+"ru": "рыба",
+"en": "fish"
+},
+"extra": {
+"ru": "Живая рыба — el pez.\n> Hoy cenamos pescado. [audio](media:8911b5e276c5484669029cb5)\n> — Сегодня на ужин рыба.",
+"en": "A live fish is el pez.\n> Hoy cenamos pescado. [audio](media:8911b5e276c5484669029cb5)\n> — We're having fish for dinner today."
+}
+},
+{
+"id": "eat",
+"unit": "food",
+"front": "comer [audio](media:1e9d718343f4479e6d97856b)",
+"hint": "koˈmeɾ",
+"back": {
+"ru": "есть, кушать",
+"en": "to eat"
+},
+"extra": {
+"ru": "> Comemos a las siete. [audio](media:1f8d88f7db26d8b0c87bd19a)\n> — Мы едим в семь.",
+"en": "> Comemos a las siete. [audio](media:1f8d88f7db26d8b0c87bd19a)\n> — We eat at seven."
+}
+},
+{
+"id": "drink",
+"unit": "food",
+"front": "beber [audio](media:588f4fe6319c17e489302a38)",
+"hint": "beˈβeɾ",
+"back": {
+"ru": "пить",
+"en": "to drink"
+},
+"extra": {
+"ru": "В Латинской Америке чаще tomar.\n> ¿Qué vas a beber? [audio](media:a28e0c6f11f45bedd0ac4761)\n> — Что ты будешь пить?",
+"en": "In Latin America tomar is more common.\n> ¿Qué vas a beber? [audio](media:a28e0c6f11f45bedd0ac4761)\n> — What will you drink?"
+}
+},
+{
+"id": "house",
+"unit": "city",
+"front": "la casa [audio](media:f479b9e4d6eb3f5ad5b3340b)",
+"hint": "la ˈkasa",
+"back": {
+"ru": "дом",
+"en": "house; home"
+},
+"extra": {
+"ru": "Дома — en casa.\n> Esta es mi casa. [audio](media:ba590f22b5a7fe517aeaf18d)\n> — Это мой дом.",
+"en": "At home — en casa.\n> Esta es mi casa. [audio](media:ba590f22b5a7fe517aeaf18d)\n> — This is my house."
+}
+},
+{
+"id": "room",
+"unit": "city",
+"front": "la habitación [audio](media:a082ddbbdc4a128afdd248b9)",
+"hint": "la aβitaˈθjon",
+"back": {
+"ru": "комната",
+"en": "room"
+},
+"extra": {
+"ru": "> Mi habitación es pequeña. [audio](media:790d8f8d133f706835c79fd6)\n> — Моя комната маленькая.",
+"en": "> Mi habitación es pequeña. [audio](media:790d8f8d133f706835c79fd6)\n> — My room is small."
+}
+},
+{
+"id": "door",
+"unit": "city",
+"front": "la puerta [audio](media:f87022b1bc5068a35c1d5cea)",
+"hint": "la ˈpweɾta",
+"back": {
+"ru": "дверь",
+"en": "door"
+},
+"extra": {
+"ru": "> Cierra la puerta, por favor. [audio](media:f3b4b8d223f45a52d589c270)\n> — Закрой дверь, пожалуйста.",
+"en": "> Cierra la puerta, por favor. [audio](media:f3b4b8d223f45a52d589c270)\n> — Close the door, please."
+}
+},
+{
+"id": "street",
+"unit": "city",
+"front": "la calle [audio](media:d7718e979e8fbb70efd5b1be)",
+"hint": "la ˈkaʎe",
+"back": {
+"ru": "улица",
+"en": "street"
+},
+"extra": {
+"ru": "> Vivo en esta calle. [audio](media:e4fd837734f1148878be5266)\n> — Я живу на этой улице.",
+"en": "> Vivo en esta calle. [audio](media:e4fd837734f1148878be5266)\n> — I live on this street."
+}
+},
+{
+"id": "town",
+"unit": "city",
+"front": "la ciudad [audio](media:4f78a3fcda3ca15e1140bfd8)",
+"hint": "la θjuˈðað",
+"back": {
+"ru": "город",
+"en": "city; town"
+},
+"extra": {
+"ru": "> Es una ciudad bonita. [audio](media:3a96a1ea2817f0cc54de59bb)\n> — Это красивый город.",
+"en": "> Es una ciudad bonita. [audio](media:3a96a1ea2817f0cc54de59bb)\n> — It's a beautiful city."
+}
+},
+{
+"id": "shop",
+"unit": "city",
+"front": "la tienda [audio](media:8e7b792a13e3f825e883c14d)",
+"hint": "la ˈtjenda",
+"back": {
+"ru": "магазин",
+"en": "shop; store"
+},
+"extra": {
+"ru": "> La tienda está cerrada. [audio](media:dbcb0bf7da45f226ff0223ae)\n> — Магазин закрыт.",
+"en": "> La tienda está cerrada. [audio](media:dbcb0bf7da45f226ff0223ae)\n> — The shop is closed."
+}
+},
+{
+"id": "school",
+"unit": "city",
+"front": "la escuela [audio](media:e0a42f6be701b308ba837f1b)",
+"hint": "la esˈkwela",
+"back": {
+"ru": "школа",
+"en": "school"
+},
+"extra": {
+"ru": "> Los niños están en la escuela. [audio](media:e6fdd298168b96e9160566fa)\n> — Дети в школе.",
+"en": "> Los niños están en la escuela. [audio](media:e6fdd298168b96e9160566fa)\n> — The children are at school."
+}
+},
+{
+"id": "hospital",
+"unit": "city",
+"front": "el hospital [audio](media:70fa53235d101971ced23d1b)",
+"hint": "el ospiˈtal",
+"back": {
+"ru": "больница",
+"en": "hospital"
+},
+"extra": {
+"ru": "h не читается.\n> ¿Dónde está el hospital? [audio](media:fe1f2bd9506d0848ec7f0c8a)\n> — Где больница?",
+"en": "The h is silent.\n> ¿Dónde está el hospital? [audio](media:fe1f2bd9506d0848ec7f0c8a)\n> — Where is the hospital?"
+}
+},
+{
+"id": "station",
+"unit": "city",
+"front": "la estación [audio](media:4b79aa59bffdc904d78878fd)",
+"hint": "la estaˈθjon",
+"back": {
+"ru": "вокзал; станция",
+"en": "station"
+},
+"extra": {
+"ru": "> La estación está cerca. [audio](media:29c5e542c6658c963e2fc1d6)\n> — Вокзал рядом.",
+"en": "> La estación está cerca. [audio](media:29c5e542c6658c963e2fc1d6)\n> — The station is nearby."
+}
+},
+{
+"id": "park",
+"unit": "city",
+"front": "el parque [audio](media:39055b82b08ceb972f84b96c)",
+"hint": "el ˈpaɾke",
+"back": {
+"ru": "парк",
+"en": "park"
+},
+"extra": {
+"ru": "> Vamos al parque. [audio](media:739447e17d73bb46a087835e)\n> — Пойдём в парк.",
+"en": "> Vamos al parque. [audio](media:739447e17d73bb46a087835e)\n> — Let's go to the park."
+}
+},
+{
+"id": "be",
+"unit": "verbs",
+"front": "ser [audio](media:268e99c4382dcd79f0b52951)",
+"hint": "seɾ",
+"back": {
+"ru": "быть",
+"en": "to be"
+},
+"extra": {
+"ru": "Ser — постоянное, estar — состояние и место.\n> Soy estudiante. [audio](media:e6cdc539802c46cc3a84be68)\n> — Я студент.",
+"en": "Ser for identity, estar for states and places.\n> Soy estudiante. [audio](media:e6cdc539802c46cc3a84be68)\n> — I am a student."
+}
+},
+{
+"id": "have",
+"unit": "verbs",
+"front": "tener [audio](media:bba168504148b7a3315d2abc)",
+"hint": "teˈneɾ",
+"back": {
+"ru": "иметь",
+"en": "to have"
+},
+"extra": {
+"ru": "Я имею — tengo.\n> Tengo un coche. [audio](media:85c9f21adae9b79baec89294)\n> — У меня есть машина.",
+"en": "I have — tengo.\n> Tengo un coche. [audio](media:85c9f21adae9b79baec89294)\n> — I have a car."
+}
+},
+{
+"id": "go",
+"unit": "verbs",
+"front": "ir [audio](media:d1050994a9cfeb21fb4e9f75)",
+"hint": "iɾ",
+"back": {
+"ru": "идти; ехать",
+"en": "to go"
+},
+"extra": {
+"ru": "voy, vas, va.\n> Voy a la escuela. [audio](media:acc84fceadf71e29e53b893f)\n> — Я иду в школу.",
+"en": "voy, vas, va.\n> Voy a la escuela. [audio](media:acc84fceadf71e29e53b893f)\n> — I'm going to school."
+}
+},
+{
+"id": "come",
+"unit": "verbs",
+"front": "venir [audio](media:4d589da9f3b01ceb645e9171)",
+"hint": "beˈniɾ",
+"back": {
+"ru": "приходить",
+"en": "to come"
+},
+"extra": {
+"ru": "> Ven mañana. [audio](media:ea532a9c0a4571c3f9f0a792)\n> — Приходи завтра.",
+"en": "> Ven mañana. [audio](media:ea532a9c0a4571c3f9f0a792)\n> — Come tomorrow."
+}
+},
+{
+"id": "see",
+"unit": "verbs",
+"front": "ver [audio](media:ef75f87aa1dfd1b4161f5b34)",
+"hint": "beɾ",
+"back": {
+"ru": "видеть; смотреть",
+"en": "to see"
+},
+"extra": {
+"ru": "> Veo la tele. [audio](media:ff09d69cf72a71d41fdff933)\n> — Я смотрю телевизор.",
+"en": "> Veo la tele. [audio](media:ff09d69cf72a71d41fdff933)\n> — I'm watching TV."
+}
+},
+{
+"id": "speak",
+"unit": "verbs",
+"front": "hablar [audio](media:3bd03ea2d2692e384c6e6380)",
+"hint": "aˈβlaɾ",
+"back": {
+"ru": "говорить",
+"en": "to speak"
+},
+"extra": {
+"ru": "> Hable más despacio, por favor. [audio](media:7710c0113242949fd7a12a37)\n> — Говорите медленнее, пожалуйста.",
+"en": "> Hable más despacio, por favor. [audio](media:7710c0113242949fd7a12a37)\n> — Speak more slowly, please."
+}
+},
+{
+"id": "know",
+"unit": "verbs",
+"front": "saber [audio](media:f275a81a5c19a4a570ae2e21)",
+"hint": "saˈβeɾ",
+"back": {
+"ru": "знать",
+"en": "to know"
+},
+"extra": {
+"ru": "Знать человека — conocer.\n> No sé. [audio](media:5ebf62906c9f788e3ac5926b)\n> — Я не знаю.",
+"en": "To know a person — conocer.\n> No sé. [audio](media:5ebf62906c9f788e3ac5926b)\n> — I don't know."
+}
+},
+{
+"id": "want",
+"unit": "verbs",
+"front": "querer [audio](media:295207cb3abff704e32dba41)",
+"hint": "keˈɾeɾ",
+"back": {
+"ru": "хотеть",
+"en": "to want"
+},
+"extra": {
+"ru": "Te quiero — я тебя люблю.\n> Quiero un café. [audio](media:7c8c0a29ccfb474a67520f7b)\n> — Я хочу кофе.",
+"en": "Te quiero — I love you.\n> Quiero un café. [audio](media:7c8c0a29ccfb474a67520f7b)\n> — I want coffee."
+}
+},
+{
+"id": "can",
+"unit": "verbs",
+"front": "poder [audio](media:0320050df0634664fded9531)",
+"hint": "poˈðeɾ",
+"back": {
+"ru": "мочь",
+"en": "can; to be able"
+},
+"extra": {
+"ru": "puedo, puedes, puede.\n> Puedo ayudar. [audio](media:a8cd9fb9cc67cae1bc04ca35)\n> — Я могу помочь.",
+"en": "puedo, puedes, puede.\n> Puedo ayudar. [audio](media:a8cd9fb9cc67cae1bc04ca35)\n> — I can help."
+}
+},
+{
+"id": "live",
+"unit": "verbs",
+"front": "vivir [audio](media:9edd2a82c835a1708cf50dfd)",
+"hint": "biˈβiɾ",
+"back": {
+"ru": "жить",
+"en": "to live"
+},
+"extra": {
+"ru": "> ¿Dónde vives? [audio](media:8f4441fb1b1a4f9f2463adf6)\n> — Где ты живёшь?",
+"en": "> ¿Dónde vives? [audio](media:8f4441fb1b1a4f9f2463adf6)\n> — Where do you live?"
+}
+},
+{
+"id": "big",
+"unit": "describe",
+"front": "grande [audio](media:03e3f5033092dd551e03b6d4)",
+"hint": "ˈɡɾande",
+"back": {
+"ru": "большой",
+"en": "big"
+},
+"extra": {
+"ru": "> Tienen una casa grande. [audio](media:74964a7611a161d752c74ec6)\n> — У них большой дом.",
+"en": "> Tienen una casa grande. [audio](media:74964a7611a161d752c74ec6)\n> — They have a big house."
+}
+},
+{
+"id": "small",
+"unit": "describe",
+"front": "pequeño [audio](media:27471c5ed0a075f544defadb)",
+"hint": "peˈkeɲo",
+"back": {
+"ru": "маленький",
+"en": "small"
+},
+"extra": {
+"ru": "ñ — как нь.\n> Es un perro pequeño. [audio](media:0bab60963a4543bcf2863fdd)\n> — Это маленькая собака.",
+"en": "ñ sounds like “ny”.\n> Es un perro pequeño. [audio](media:0bab60963a4543bcf2863fdd)\n> — It's a small dog."
+}
+},
+{
+"id": "good",
+"unit": "describe",
+"front": "bueno [audio](media:6ba92e5ca0e59dacdee3f8f5)",
+"hint": "ˈbweno",
+"back": {
+"ru": "хороший",
+"en": "good"
+},
+"extra": {
+"ru": "Перед сущ. м. р. — buen.\n> Es una buena idea. [audio](media:a3bf681d6f6868d189e598c4)\n> — Это хорошая идея.",
+"en": "Before a masculine noun: buen.\n> Es una buena idea. [audio](media:a3bf681d6f6868d189e598c4)\n> — That's a good idea."
+}
+},
+{
+"id": "bad",
+"unit": "describe",
+"front": "malo [audio](media:29ec586b7f180cd9cb38512f)",
+"hint": "ˈmalo",
+"back": {
+"ru": "плохой",
+"en": "bad"
+},
+"extra": {
+"ru": "Перед сущ. м. р. — mal.\n> Hoy hace mal tiempo. [audio](media:29d6910583c30eff369f408d)\n> — Сегодня плохая погода.",
+"en": "Before a masculine noun: mal.\n> Hoy hace mal tiempo. [audio](media:29d6910583c30eff369f408d)\n> — The weather is bad today."
+}
+},
+{
+"id": "new",
+"unit": "describe",
+"front": "nuevo [audio](media:c6a2c1addc967898ab0ebfba)",
+"hint": "ˈnweβo",
+"back": {
+"ru": "новый",
+"en": "new"
+},
+"extra": {
+"ru": "> Tengo un teléfono nuevo. [audio](media:e7e86e431ec252c7cdbb5874)\n> — У меня новый телефон.",
+"en": "> Tengo un teléfono nuevo. [audio](media:e7e86e431ec252c7cdbb5874)\n> — I have a new phone."
+}
+},
+{
+"id": "old",
+"unit": "describe",
+"front": "viejo [audio](media:ed9fecedca18084d8b08b0d6)",
+"hint": "ˈbjexo",
+"back": {
+"ru": "старый",
+"en": "old"
+},
+"extra": {
+"ru": "> Es una ciudad vieja. [audio](media:09a04e56acc6628d6118a64f)\n> — Это старый город.",
+"en": "> Es una ciudad vieja. [audio](media:09a04e56acc6628d6118a64f)\n> — It's an old town."
+}
+},
+{
+"id": "hot",
+"unit": "describe",
+"front": "caliente [audio](media:88a5094b5e33f07ef2503ba7)",
+"hint": "kaˈljente",
+"back": {
+"ru": "горячий",
+"en": "hot"
+},
+"extra": {
+"ru": "О погоде: hace calor.\n> El té está caliente. [audio](media:c7cc0b758a3171f94ce6c102)\n> — Чай горячий.",
+"en": "For weather: hace calor.\n> El té está caliente. [audio](media:c7cc0b758a3171f94ce6c102)\n> — The tea is hot."
+}
+},
+{
+"id": "cold",
+"unit": "describe",
+"front": "frío [audio](media:cf8f57e1a3c77a08a4d4ff25)",
+"hint": "ˈfɾio",
+"back": {
+"ru": "холодный",
+"en": "cold"
+},
+"extra": {
+"ru": "> El agua está fría. [audio](media:742b9fa1936b5ed3fc41e3ac)\n> — Вода холодная.",
+"en": "> El agua está fría. [audio](media:742b9fa1936b5ed3fc41e3ac)\n> — The water is cold."
+}
+},
+{
+"id": "beautiful",
+"unit": "describe",
+"front": "bonito [audio](media:8ea52794360b582fd51633ac)",
+"hint": "boˈnito",
+"back": {
+"ru": "красивый",
+"en": "beautiful"
+},
+"extra": {
+"ru": "Ещё: hermoso, precioso.\n> ¡Qué vista tan bonita! [audio](media:cf28c0f1d7eb706aac8e864a)\n> — Какой красивый вид!",
+"en": "Also: hermoso, precioso.\n> ¡Qué vista tan bonita! [audio](media:cf28c0f1d7eb706aac8e864a)\n> — What a beautiful view!"
+}
+},
+{
+"id": "red",
+"unit": "describe",
+"front": "rojo [audio](media:6c0db59ec9e03a51344b4308)",
+"hint": "ˈroxo",
+"back": {
+"ru": "красный",
+"en": "red"
+},
+"extra": {
+"ru": "> Me gusta el color rojo. [audio](media:a04b8125a3ea0c40e5479c8d)\n> — Мне нравится красный цвет.",
+"en": "> Me gusta el color rojo. [audio](media:a04b8125a3ea0c40e5479c8d)\n> — I like the colour red."
+}
+},
+{
+"id": "car",
+"unit": "travel",
+"front": "el coche [audio](media:062e6857c02c1526f736293c)",
+"hint": "el ˈkotʃe",
+"back": {
+"ru": "машина",
+"en": "car"
+},
+"extra": {
+"ru": "В Латинской Америке — el carro / el auto.\n> Este es mi coche. [audio](media:1cc6cda404dd94593cd32a4d)\n> — Это моя машина.",
+"en": "In Latin America: el carro / el auto.\n> Este es mi coche. [audio](media:1cc6cda404dd94593cd32a4d)\n> — This is my car."
+}
+},
+{
+"id": "bus",
+"unit": "travel",
+"front": "el autobús [audio](media:6cb62574078c4568547bdab3)",
+"hint": "el awtoˈβus",
+"back": {
+"ru": "автобус",
+"en": "bus"
+},
+"extra": {
+"ru": "> El autobús llega tarde. [audio](media:174c6d3e1a067cb810e70d05)\n> — Автобус опаздывает.",
+"en": "> El autobús llega tarde. [audio](media:174c6d3e1a067cb810e70d05)\n> — The bus is late."
+}
+},
+{
+"id": "train",
+"unit": "travel",
+"front": "el tren [audio](media:c893442c94c7f3b3986fafdb)",
+"hint": "el tɾen",
+"back": {
+"ru": "поезд",
+"en": "train"
+},
+"extra": {
+"ru": "> El tren sale a las seis. [audio](media:1f82060a2145d4852dfe9143)\n> — Поезд уходит в шесть.",
+"en": "> El tren sale a las seis. [audio](media:1f82060a2145d4852dfe9143)\n> — The train leaves at six."
+}
+},
+{
+"id": "plane",
+"unit": "travel",
+"front": "el avión [audio](media:209f8bbdf5915cb07cf86b6e)",
+"hint": "el aˈβjon",
+"back": {
+"ru": "самолёт",
+"en": "plane"
+},
+"extra": {
+"ru": "> El avión vuela a Roma. [audio](media:f8bf65e443a1d2c93115faef)\n> — Самолёт летит в Рим.",
+"en": "> El avión vuela a Roma. [audio](media:f8bf65e443a1d2c93115faef)\n> — The plane is flying to Rome."
+}
+},
+{
+"id": "ticket",
+"unit": "travel",
+"front": "el billete [audio](media:ea100702473c0807afa4251c)",
+"hint": "el biˈʎete",
+"back": {
+"ru": "билет",
+"en": "ticket"
+},
+"extra": {
+"ru": "В Латинской Америке — el boleto.\n> Un billete, por favor. [audio](media:1c88d6585173214b77c117e2)\n> — Один билет, пожалуйста.",
+"en": "In Latin America: el boleto.\n> Un billete, por favor. [audio](media:1c88d6585173214b77c117e2)\n> — One ticket, please."
+}
+},
+{
+"id": "hotel",
+"unit": "travel",
+"front": "el hotel [audio](media:7f575985484d5b280f21104e)",
+"hint": "el oˈtel",
+"back": {
+"ru": "гостиница, отель",
+"en": "hotel"
+},
+"extra": {
+"ru": "> El hotel está en el centro. [audio](media:bcc76e5ed75e085cd203cc75)\n> — Отель в центре.",
+"en": "> El hotel está en el centro. [audio](media:bcc76e5ed75e085cd203cc75)\n> — The hotel is in the centre."
+}
+},
+{
+"id": "map",
+"unit": "travel",
+"front": "el mapa [audio](media:5c40920ceeb338e1110e2cf5)",
+"hint": "el ˈmapa",
+"back": {
+"ru": "карта",
+"en": "map"
+},
+"extra": {
+"ru": "Мужской род.\n> ¿Tienes un mapa? [audio](media:36da331e511a3bf8edca6ade)\n> — У тебя есть карта?",
+"en": "Masculine.\n> ¿Tienes un mapa? [audio](media:36da331e511a3bf8edca6ade)\n> — Do you have a map?"
+}
+},
+{
+"id": "left",
+"unit": "travel",
+"front": "a la izquierda [audio](media:e77468aa27738aea54b9c83d)",
+"hint": "a la iθˈkjeɾða",
+"back": {
+"ru": "налево; левый",
+"en": "left"
+},
+"extra": {
+"ru": "> Gire a la izquierda. [audio](media:e06031089ed576e899e45001)\n> — Поверните налево.",
+"en": "> Gire a la izquierda. [audio](media:e06031089ed576e899e45001)\n> — Turn left."
+}
+},
+{
+"id": "right",
+"unit": "travel",
+"front": "a la derecha [audio](media:d2e0478011da03d3e5b88347)",
+"hint": "a la deˈɾetʃa",
+"back": {
+"ru": "направо; правый",
+"en": "right"
+},
+"extra": {
+"ru": "Derecho — прямо.\n> Gire a la derecha. [audio](media:fe3a66e2862896da31454181)\n> — Поверните направо.",
+"en": "Derecho — straight on.\n> Gire a la derecha. [audio](media:fe3a66e2862896da31454181)\n> — Turn right."
+}
+},
+{
+"id": "where",
+"unit": "travel",
+"front": "dónde [audio](media:e59cafbaf7d8f9abef8412a3)",
+"hint": "ˈdonde",
+"back": {
+"ru": "где",
+"en": "where"
+},
+"extra": {
+"ru": "> ¿Dónde está el metro? [audio](media:4dcc0491a077d24ebdcb3557)\n> — Где метро?",
+"en": "> ¿Dónde está el metro? [audio](media:4dcc0491a077d24ebdcb3557)\n> — Where is the metro?"
+}
+}
+],
+"media": {
+"file": "es.audio.mp3",
+"type": "audio/mpeg",
+"index": {
+"188e892380744fec7f38c5e4": [
+0,
+4197
+],
+"f6fc93b1fb20d0a4155b2d11": [
+4197,
+13437
+],
+"bda7e0c640aa1d51d07b6ca7": [
+17634,
+7197
+],
+"a4d8d795247cb488a7e645d5": [
+24831,
+8397
+],
+"0770c27b4567c593dd1d49d3": [
+33228,
+5277
+],
+"1ecd29ef1032a24de6d9112c": [
+38505,
+7317
+],
+"5ad2019ea958770dc31e54e3": [
+45822,
+4917
+],
+"3be1ef2e1f4ebd683e4e7199": [
+50739,
+8037
+],
+"ffe597b8f647561130866c6a": [
+58776,
+8037
+],
+"3c1e9c9d43589c2a3a1e97b7": [
+66813,
+5157
+],
+"37af55bd728bd8a1cb5ee77f": [
+71970,
+4677
+],
+"0727362f4372e0b7a8a8b57f": [
+76647,
+6957
+],
+"d741ac120f63a67bdc20c495": [
+83604,
+4437
+],
+"78babf2210bcb3cc56f6af12": [
+88041,
+7317
+],
+"5dd4c28a481460b7e4f6de28": [
+95358,
+5517
+],
+"d998b46d956387ac08fd9de2": [
+100875,
+7917
+],
+"33826b710bddd81ad8640c4c": [
+108792,
+5757
+],
+"6823045eebe463758197f220": [
+114549,
+9477
+],
+"03945f219a03836b97d11293": [
+124026,
+4677
+],
+"0cc376163f1526f3ae86ed35": [
+128703,
+13797
+],
+"7cfe2beb2d7a202ebedea285": [
+142500,
+5997
+],
+"39f33ab7f9b6f86481732d72": [
+148497,
+8157
+],
+"e6e98469ce6d3ce3cc9a19f0": [
+156654,
+4917
+],
+"fb7dc6cd668efc739ae320b9": [
+161571,
+8037
+],
+"5ebb4d3aec72e32556cd1aec": [
+169608,
+5037
+],
+"e2f7864840a7d05d1fc22603": [
+174645,
+6117
+],
+"3780194f45dd8129bf4d6176": [
+180762,
+4437
+],
+"4a5cd68c2cf96e3261607f3a": [
+185199,
+6357
+],
+"bec02ba5a99756ce89ff094a": [
+191556,
+4437
+],
+"465c665bdd30e0d32ad6fbfb": [
+195993,
+7677
+],
+"d505f2e8844abeb5105e5649": [
+203670,
+5037
+],
+"b46c5f27844a28031d3db6cc": [
+208707,
+10197
+],
+"6bdbc2acf928e6df0888594c": [
+218904,
+5757
+],
+"d7b21b5dd49475fe936a0abb": [
+224661,
+5877
+],
+"81541252999cdc3da2de7186": [
+230538,
+5277
+],
+"35fa02ce32ce4045f4152cd0": [
+235815,
+8757
+],
+"c390c8f271aad44b61112ac9": [
+244572,
+5397
+],
+"1f34cafc9de4436ec2fab099": [
+249969,
+8157
+],
+"8d676364bc8780284dd039cc": [
+258126,
+5757
+],
+"d67920f24c9bf06d1a5677eb": [
+263883,
+5397
+],
+"9a6e9ef6e5283101d09fe2ab": [
+269280,
+4077
+],
+"c35df812ffe0f3eea93ac510": [
+273357,
+8397
+],
+"580dfc344b1ba692367b4eb7": [
+281754,
+4917
+],
+"d1d71a67e576d0158bb2a3f5": [
+286671,
+8397
+],
+"e9b0fc136a8d37e4a87d8aad": [
+295068,
+5877
+],
+"a77682f60921966b32e0aaf0": [
+300945,
+6237
+],
+"3cc304f3aa3507b272310365": [
+307182,
+3957
+],
+"91eab83074cc17b0e8e3238c": [
+311139,
+10557
+],
+"ef2ccb502e9618d360af0f70": [
+321696,
+5397
+],
+"fe2dcc652f17aa6d11eaecda": [
+327093,
+6717
+],
+"642af4090537e9e0a77b09e2": [
+333810,
+4437
+],
+"1224369e9a50003707113258": [
+338247,
+7197
+],
+"9bcd54953c5ae5a865e2526c": [
+345444,
+5277
+],
+"ba678d4c4e73b7f43f4cd47c": [
+350721,
+7797
+],
+"e585483c095750c3222c674f": [
+358518,
+5637
+],
+"68306e197616aeb9f69be5fa": [
+364155,
+5877
+],
+"b324189754595bf5113e6fa7": [
+370032,
+5157
+],
+"2c8f4ba9a917c692e7e0fdcf": [
+375189,
+6597
+],
+"f32f7df56dcb2e80b312c0ee": [
+381786,
+5397
+],
+"286d8162f434c200d996d215": [
+387183,
+6477
+],
+"bc289a7efbfe92f712af3a44": [
+393660,
+6477
+],
+"f3b6ef38e5ce47e5d0e25a63": [
+400137,
+9357
+],
+"8926a195e35065f49b40f8c3": [
+409494,
+5997
+],
+"8d2894b603b7e9456140b262": [
+415491,
+5637
+],
+"a27a6570af4bede8246e6426": [
+421128,
+5757
+],
+"fb7f8692d260ee5b0237614d": [
+426885,
+7557
+],
+"2715b6358678f215d6223c8e": [
+434442,
+5877
+],
+"22e2613ecbdfddb702705127": [
+440319,
+5397
+],
+"e760731af79475a2a4d06143": [
+445716,
+6357
+],
+"8baa6a0fe9a44edf59a1be17": [
+452073,
+7797
+],
+"901a354fb5759fb26f738f5c": [
+459870,
+5637
+],
+"acda171ac07fa79d973776fb": [
+465507,
+7197
+],
+"f1fc91250f9669cd82fe1879": [
+472704,
+5997
+],
+"f699a1450e3dba03c425a2f8": [
+478701,
+6357
+],
+"6dfc64ad972fa676d25dbd6b": [
+485058,
+5637
+],
+"8911b5e276c5484669029cb5": [
+490695,
+7197
+],
+"1e9d718343f4479e6d97856b": [
+497892,
+5757
+],
+"1f8d88f7db26d8b0c87bd19a": [
+503649,
+7077
+],
+"588f4fe6319c17e489302a38": [
+510726,
+5037
+],
+"a28e0c6f11f45bedd0ac4761": [
+515763,
+5397
+],
+"f479b9e4d6eb3f5ad5b3340b": [
+521160,
+5637
+],
+"ba590f22b5a7fe517aeaf18d": [
+526797,
+6237
+],
+"a082ddbbdc4a128afdd248b9": [
+533034,
+6117
+],
+"790d8f8d133f706835c79fd6": [
+539151,
+7437
+],
+"f87022b1bc5068a35c1d5cea": [
+546588,
+4917
+],
+"f3b4b8d223f45a52d589c270": [
+551505,
+8997
+],
+"d7718e979e8fbb70efd5b1be": [
+560502,
+5997
+],
+"e4fd837734f1148878be5266": [
+566499,
+6717
+],
+"4f78a3fcda3ca15e1140bfd8": [
+573216,
+5157
+],
+"3a96a1ea2817f0cc54de59bb": [
+578373,
+7437
+],
+"8e7b792a13e3f825e883c14d": [
+585810,
+5157
+],
+"dbcb0bf7da45f226ff0223ae": [
+590967,
+7797
+],
+"e0a42f6be701b308ba837f1b": [
+598764,
+5277
+],
+"e6fdd298168b96e9160566fa": [
+604041,
+9477
+],
+"70fa53235d101971ced23d1b": [
+613518,
+5757
+],
+"fe1f2bd9506d0848ec7f0c8a": [
+619275,
+7197
+],
+"4b79aa59bffdc904d78878fd": [
+626472,
+5637
+],
+"29c5e542c6658c963e2fc1d6": [
+632109,
+7917
+],
+"39055b82b08ceb972f84b96c": [
+640026,
+5157
+],
+"739447e17d73bb46a087835e": [
+645183,
+6357
+],
+"268e99c4382dcd79f0b52951": [
+651540,
+4317
+],
+"e6cdc539802c46cc3a84be68": [
+655857,
+6477
+],
+"bba168504148b7a3315d2abc": [
+662334,
+4557
+],
+"85c9f21adae9b79baec89294": [
+666891,
+6837
+],
+"d1050994a9cfeb21fb4e9f75": [
+673728,
+4557
+],
+"acc84fceadf71e29e53b893f": [
+678285,
+6117
+],
+"4d589da9f3b01ceb645e9171": [
+684402,
+5397
+],
+"ea532a9c0a4571c3f9f0a792": [
+689799,
+5397
+],
+"ef75f87aa1dfd1b4161f5b34": [
+695196,
+5157
+],
+"ff09d69cf72a71d41fdff933": [
+700353,
+5757
+],
+"3bd03ea2d2692e384c6e6380": [
+706110,
+5277
+],
+"7710c0113242949fd7a12a37": [
+711387,
+9597
+],
+"f275a81a5c19a4a570ae2e21": [
+720984,
+4917
+],
+"5ebf62906c9f788e3ac5926b": [
+725901,
+5277
+],
+"295207cb3abff704e32dba41": [
+731178,
+4317
+],
+"7c8c0a29ccfb474a67520f7b": [
+735495,
+5397
+],
+"0320050df0634664fded9531": [
+740892,
+4917
+],
+"a8cd9fb9cc67cae1bc04ca35": [
+745809,
+5637
+],
+"9edd2a82c835a1708cf50dfd": [
+751446,
+4197
+],
+"8f4441fb1b1a4f9f2463adf6": [
+755643,
+5397
+],
+"03e3f5033092dd551e03b6d4": [
+761040,
+4677
+],
+"74964a7611a161d752c74ec6": [
+765717,
+7437
+],
+"27471c5ed0a075f544defadb": [
+773154,
+5277
+],
+"0bab60963a4543bcf2863fdd": [
+778431,
+6957
+],
+"6ba92e5ca0e59dacdee3f8f5": [
+785388,
+4677
+],
+"a3bf681d6f6868d189e598c4": [
+790065,
+6597
+],
+"29ec586b7f180cd9cb38512f": [
+796662,
+5277
+],
+"29d6910583c30eff369f408d": [
+801939,
+7077
+],
+"c6a2c1addc967898ab0ebfba": [
+809016,
+4797
+],
+"e7e86e431ec252c7cdbb5874": [
+813813,
+7797
+],
+"ed9fecedca18084d8b08b0d6": [
+821610,
+4557
+],
+"09a04e56acc6628d6118a64f": [
+826167,
+6837
+],
+"88a5094b5e33f07ef2503ba7": [
+833004,
+4677
+],
+"c7cc0b758a3171f94ce6c102": [
+837681,
+7317
+],
+"cf8f57e1a3c77a08a4d4ff25": [
+844998,
+5517
+],
+"742b9fa1936b5ed3fc41e3ac": [
+850515,
+6597
+],
+"8ea52794360b582fd51633ac": [
+857112,
+5877
+],
+"cf28c0f1d7eb706aac8e864a": [
+862989,
+6957
+],
+"6c0db59ec9e03a51344b4308": [
+869946,
+4437
+],
+"a04b8125a3ea0c40e5479c8d": [
+874383,
+7557
+],
+"062e6857c02c1526f736293c": [
+881940,
+7317
+],
+"1cc6cda404dd94593cd32a4d": [
+889257,
+6357
+],
+"6cb62574078c4568547bdab3": [
+895614,
+7197
+],
+"174c6d3e1a067cb810e70d05": [
+902811,
+7917
+],
+"c893442c94c7f3b3986fafdb": [
+910728,
+4917
+],
+"1f82060a2145d4852dfe9143": [
+915645,
+8157
+],
+"209f8bbdf5915cb07cf86b6e": [
+923802,
+4677
+],
+"f8bf65e443a1d2c93115faef": [
+928479,
+7317
+],
+"ea100702473c0807afa4251c": [
+935796,
+5997
+],
+"1c88d6585173214b77c117e2": [
+941793,
+7797
+],
+"7f575985484d5b280f21104e": [
+949590,
+5877
+],
+"bcc76e5ed75e085cd203cc75": [
+955467,
+8277
+],
+"5c40920ceeb338e1110e2cf5": [
+963744,
+6357
+],
+"36da331e511a3bf8edca6ade": [
+970101,
+5877
+],
+"e77468aa27738aea54b9c83d": [
+975978,
+6477
+],
+"e06031089ed576e899e45001": [
+982455,
+6117
+],
+"d2e0478011da03d3e5b88347": [
+988572,
+7437
+],
+"fe3a66e2862896da31454181": [
+996009,
+6117
+],
+"e59cafbaf7d8f9abef8412a3": [
+1002126,
+4677
+],
+"4dcc0491a077d24ebdcb3557": [
+1006803,
+6717
+]
+}
+}
+}

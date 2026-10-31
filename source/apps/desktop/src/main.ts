@@ -14,11 +14,13 @@ import {
 } from "./tg";
 import { answerVariants, clozeFace, clozeNumbers, esc, fmt, fmtDur, isCorrect, mediaRefs, norm, stripMedia } from "./format";
 import { DAY_LEVELS, dayColor, dayLevel, dayMark, fillIcons, ic, sparkMark, streakLevel, streakMark } from "./icons";
+import { xpStats } from "./xp";
+import { courseMediaId, embeddedCourses, loadCourseCards, loadCourses, type Course, type CourseCard } from "./courses";
 import { TIPS } from "./tips";
 import { detectLang, getLang, setLang, t, translateStatic, type Lang } from "./i18n";
 import { AUDIO_RE, IMAGE_RE, LIMITS, VIDEO_RE, allMediaKeys, getMediaBlob, hydrateMedia, mediaDuration, mediaUrl, mimeOf, playAudio, putLocal, putMedia, setBundledMedia, setMediaSync, shrinkImage } from "./media";
 import {
-  LANGS, bundledDeckOf, communityAvailable, loadCommunity, loadCommunityCards, loadDeckMedia, loadSparkCards, loadSparkCatalog, myPublished, publishDeck, unpublishDeck,
+  LANGS, bundledDeckOf, localizeCard, communityAvailable, loadCommunity, loadCommunityCards, loadDeckMedia, loadSparkCards, loadSparkCatalog, myPublished, publishDeck, unpublishDeck,
   type CatalogDeck, type DeckCard, type MyPublished,
 } from "./catalog";
 
@@ -117,6 +119,10 @@ interface Review {
   pending: { rating: Rating; speed: Speed; dur: number } | null; locking: boolean;
   /** серия правильных ответов подряд в этой сессии */
   combo: number; best: number; bump: "up" | "break" | null; milestone: number | null;
+  /** занятие по уровню курса: только карточки с этим тегом, без дневного лимита новых */
+  unit?: string; unitTitle?: string;
+  /** опыт: сколько было в начале занятия и последнее начисление (для «+N») */
+  xp0: number; xpGain: number;
 }
 interface Browser {
   tab: "spark" | "community" | "web"; q: string; lang: string; loading: boolean; error: string;
@@ -134,6 +140,7 @@ const S = {
   review: null as Review | null,
   browser: null as Browser | null,
   tips: null as null | { tab: string },
+  courses: null as null | { open: string | null; list: Course[]; cards: CourseCard[] | null; busy: boolean },
   /** куда добавлять медиа: карточка при повторении (сторона вопроса/ответа) или null — в редактор, в позицию курсора */
   attach: null as null | { cardId: string; side: "q" | "a" },
   modal: null as null | { type: ModalType; id?: string },
@@ -141,8 +148,10 @@ const S = {
 const isMobile = () => matchMedia("(max-width: 760px)").matches;
 const activeId = () => (S.sel.size === 1 ? [...S.sel][0]! : null);
 
-interface Counts { n: number; l: number; r: number }
-function scan(now: number, cards: CardView[], decks: DeckView[]): Map<string, Counts> {
+interface Counts { n: number; l: number; r: number; spare?: number }
+/** Дополнительные новые карточки на сегодня («Учить ещё»), по колодам. */
+const extraToday = (): Record<string, number> => { const e = store.settings.extraNew; return e && e.day === dayKey(Date.now()) ? e.by : {}; };
+function scan(now: number, cards: CardView[], decks: DeckView[], unlimited = false): Map<string, Counts> {
   const today = dayStart(now), out = new Map<string, Counts>();
   const newToday = new Map<string, number>(), newAvail = new Map<string, number>();
   for (const c of cards) {
@@ -155,19 +164,21 @@ function scan(now: number, cards: CardView[], decks: DeckView[]): Map<string, Co
     else if (st.phase === "learning" || st.phase === "relearning") { if (st.due <= now + LEARN_AHEAD) o.l++; }
     else if (st.due <= now) o.r++;
   }
-  const limit = store.settings.newPerDay;
+  const limit = store.settings.newPerDay, extra = extraToday();
   for (const [id, o] of out) {
-    const lim = decks.find((d) => d.id === id)?.newPerDay ?? limit;
-    o.n = Math.min(newAvail.get(id) ?? 0, Math.max(0, lim - (newToday.get(id) ?? 0)));
+    const lim = (decks.find((d) => d.id === id)?.newPerDay ?? limit) + (extra[id] ?? 0);
+    o.n = unlimited ? newAvail.get(id) ?? 0 : Math.min(newAvail.get(id) ?? 0, Math.max(0, lim - (newToday.get(id) ?? 0)));
+    o.spare = (newAvail.get(id) ?? 0) - o.n; // новые сверх сегодняшнего лимита — их можно открыть кнопкой «Учить ещё»
   }
   return out;
 }
 const sum = (m: Map<string, Counts>): Counts => [...m.values()].reduce((a, c) => ({ n: a.n + c.n, l: a.l + c.l, r: a.r + c.r }), { n: 0, l: 0, r: 0 });
 
-function pickNext(deckId: string, now: number): string | null {
+const hasTag = (c: CardView, tag?: string) => !tag || c.tags.split(/\s+/).includes(tag);
+function pickNext(deckId: string, now: number, unit?: string): string | null {
   const decks = allDecks();
-  const cards = allCards().filter((c) => (deckId === "all" || c.deckId === deckId) && !c.suspended);
-  const counts = scan(now, cards, decks);
+  const cards = allCards().filter((c) => (deckId === "all" || c.deckId === deckId) && !c.suspended && hasTag(c, unit));
+  const counts = scan(now, cards, decks, !!unit);
   const newLeft = new Map([...counts].map(([k, v]) => [k, v.n]));
   let lNow: CardView | null = null, lAhead: CardView | null = null, rev: CardView | null = null, nw: CardView | null = null;
   const due = (c: CardView) => store.stateOf(c.id).due;
@@ -202,12 +213,12 @@ function applyLang() {
 
 function render() {
   applyLang(); applyTheme(); fillIcons();
-  renderDecks(); renderList(); renderEditor(); renderReview(); renderBrowser(); renderTips(); renderModal(); updateChrome();
+  renderDecks(); renderList(); renderEditor(); renderReview(); renderBrowser(); renderTips(); renderCourses(); renderModal(); updateChrome();
 }
 
 function updateChrome() {
   $("app").dataset.pane = S.pane;
-  setBackButton(!!S.review || !!S.modal || !!S.browser || !!S.tips || (isMobile() && S.pane !== "decks"));
+  setBackButton(!!S.review || !!S.modal || !!S.browser || !!S.tips || !!S.courses || (isMobile() && S.pane !== "decks"));
   closingConfirmation(!!S.review);
   updateSyncInd();
 }
@@ -217,6 +228,8 @@ function goBack() {
   else if (S.browser?.open) { S.browser.open = null; S.browser.cards = null; renderBrowser(); updateChrome(); }
   else if (S.browser) { S.browser = null; render(); }
   else if (S.tips) { S.tips = null; render(); }
+  else if (S.courses?.open) { S.courses.open = null; renderCourses(); updateChrome(); }
+  else if (S.courses) { S.courses = null; render(); }
   else if (S.pane === "editor") { S.pane = "cards"; render(); }
   else if (S.pane === "cards") { S.pane = "decks"; render(); }
 }
@@ -248,30 +261,21 @@ function renderDecks() {
   };
   const row = (id: string, label: string, c?: Counts) =>
     `<div class="row ${S.deckId === id ? "sel" : ""}" data-a="deck" data-id="${id}"><span class="name">${label}</span>${cnt(c)}</div>`;
-  $("decks").innerHTML = row("all", ic("layers", "row-ic") + " " + t("Все карточки"), sum(counts)) +
+  $("decks").innerHTML = `<div class="sec-h"><span>${t("Мои колоды")}</span><button class="link" data-a="browser-open">${t("Каталог")} ${ic("chevron")}</button></div>` + row("all", ic("layers", "row-ic") + " " + t("Все карточки"), sum(counts)) +
     decks.map((d) => row(d.id, (d.emoji ? d.emoji + " " : "") + esc(d.name) + (d.typedMode === "on" ? ' <span class="muted tiny-ic" title="' + t("Ввод ответа включён для всей колоды") + '">' + ic("keyboard") + "</span>" : ""), counts.get(d.id))).join("")
     + (decks.length ? "" : isMobile() ? welcomeHtml() : `<div class="hint" style="padding:10px">${t("Колод пока нет. Откройте «Каталог» — там готовые колоды.")}</div>`);
   renderStreak(decks.length > 0);
   $("deck-actions").innerHTML = decks.some((d) => d.id === S.deckId) ? `<button class="icon-btn" data-a="deck-edit" title="${t("Настройки колоды")}">${ic("more")}</button>` : "";
 }
 
-function renderStreak(show: boolean) {
+function renderStreak(_show: boolean) {
   const host = document.getElementById("streak");
   if (!host) return;
-  const st = dayStreak();
-  if (!show && !st.best) { host.innerHTML = ""; return; }
-  const lv = dayLevel(st.streak), next = DAY_LEVELS[lv + 1];
-  const todayK = dayKey(Date.now());
-  let celebrate = "";
-  try { if (st.studiedToday && !S.review && localStorage.getItem("spark.streakSeen") !== todayK) { celebrate = "celebrate"; localStorage.setItem("spark.streakSeen", todayK); } } catch { /* без хранилища — без анимации */ }
-  const name = lv ? t(DAY_NAMES[lv]!) : "";
-  const toNext = next ? t("дальше — «{name}» через {n} дн.", { name: t(DAY_NAMES[lv + 1]!), n: next - st.streak }) : "";
-  const sub = !st.studiedToday ? (st.streak > 0 ? t("Позанимайтесь сегодня, чтобы не прервать серию") : t("Начните серию — позанимайтесь сегодня"))
-    : [name && `<span class="sc-lvl">${esc(name)}</span>`, toNext || t("Повторений сегодня: {n}", { n: st.today })].filter(Boolean).join(" · ");
-  host.innerHTML = `<div class="streak-card dlv ${st.studiedToday ? "" : "pending"} ${celebrate}" style="--c:${dayColor(lv)}" data-a="stats" title="${esc(t("Повторений сегодня: {n}", { n: st.today }))}">
-    <div class="sc-ic">${dayMark(lv, "big")}</div>
-    <div class="sc-main"><b>${t("{n} дн. подряд", { n: st.streak })}</b><span>${sub}</span></div>
-    ${st.best > st.streak ? `<div class="sc-best">${ic("trophy", "tiny")} ${st.best}</div>` : ""}</div>`;
+  const todayK = dayKey(Date.now()), st = dayStreak();
+  host.innerHTML = heroHtml();
+  try { if (st.studiedToday && !S.review && localStorage.getItem("spark.streakSeen") !== todayK) { host.firstElementChild?.classList.add("celebrate"); localStorage.setItem("spark.streakSeen", todayK); } } catch { /* без хранилища — без анимации */ }
+  const mc = document.getElementById("mycourses");
+  if (mc) mc.innerHTML = myCoursesHtml();
 }
 
 // ---------- список карточек ----------
@@ -624,7 +628,7 @@ function renderReview() {
   el.classList.toggle("on", !!r);
   if (!r) { el.innerHTML = ""; return; }
   const now = Date.now(), decks = allDecks();
-  const counts = sum(scan(now, allCards().filter((c) => r.deckId === "all" || c.deckId === r.deckId), decks));
+  const counts = sum(scan(now, allCards().filter((c) => (r.deckId === "all" || c.deckId === r.deckId) && hasTag(c, r.unit)), decks, !!r.unit));
   const left = r.cardId ? counts.n + counts.l + counts.r : 0;
   const total = r.done + left, frac = total ? r.done / total : 1, C = 2 * Math.PI * 17;
   const deck = decks.find((d) => d.id === r.deckId);
@@ -632,8 +636,8 @@ function renderReview() {
   const typedNow = (() => { const c = r.cardId ? allCards().find((k) => k.id === r.cardId) : null; return c ? isTyped(c, decks.find((d) => d.id === c.deckId)) : store.settings.typedAll; })();
   const timer = manual ? "" : `<div class="tm"><div class="tm-bar"><i id="rv-bar"></i></div><span id="rv-time" class="muted"></span></div>`;
   const top = `<div class="rv-top"><button class="icon-btn" data-a="rv-close" title="${t("Закрыть")} (Esc)">${ic("close")}</button>
-    <div class="t">${esc(deck?.name ?? t("Все карточки"))}<div class="muted" style="font-weight:400;font-size:12px"><span style="color:var(--accent)">${counts.n}</span> · <span style="color:var(--bad)">${counts.l}</span> · <span style="color:var(--good)">${counts.r}</span></div></div>
-    <div class="combo lv${streakLevel(r.combo)} ${r.bump ?? ""}" title="${t("Серия правильных ответов подряд")}">${streakMark(streakLevel(r.combo))}<b>${r.combo}</b></div>
+    <div class="t">${esc(r.unitTitle ?? deck?.name ?? t("Все карточки"))}<div class="muted" style="font-weight:400;font-size:12px"><span style="color:var(--accent)">${counts.n}</span> · <span style="color:var(--bad)">${counts.l}</span> · <span style="color:var(--good)">${counts.r}</span></div></div>
+    <div class="combo lv${streakLevel(r.combo)} ${r.bump ?? ""}" title="${t("Серия правильных ответов подряд")}">${streakMark(streakLevel(r.combo))}<b>${r.combo}</b>${r.xpGain && r.bump ? `<span class="xp-pop">+${r.xpGain} XP</span>` : ""}</div>
     ${r.cardId ? `<button class="icon-btn rv-att" data-a="rv-attach" title="${t("Добавить к карточке картинку, видео или звук")}">${ic("clip")}</button>` : ""}
     <button class="kbd-toggle ${typedNow ? "on" : ""}" data-a="rv-typed" title="${t("Ввод ответа с клавиатуры: переход без Enter при верном слове")}">${ic("keyboard")}<span class="lbl"> ${t("Ввод")}: ${typedNow ? t("вкл") : t("выкл")}</span></button>
     <svg class="ring" viewBox="0 0 38 38"><circle class="bg" cx="19" cy="19" r="17"/><circle class="fg" cx="19" cy="19" r="17" stroke-dasharray="${C}" stroke-dashoffset="${C * (1 - frac)}"/></svg></div>`;
@@ -641,8 +645,10 @@ function renderReview() {
   if (!x) {
     el.innerHTML = top + `<div class="rv-body"><div class="rv-done"><div class="em done-ic">${ic("check-circle")}</div>
       <h2>${r.done ? t("Отличная работа!") : t("На сегодня всё")}</h2>
-      <p class="muted">${r.done ? t("Повторено карточек: {n}", { n: r.done }) : t("Нет карточек к повторению.")}</p>
+      <p class="muted">${r.done ? t("Повторено карточек: {n}", { n: r.done }) : r.unit ? t("Уровень пройден — все слова изучены.") : t("Нет карточек к повторению.")}</p>
+      ${r.done ? (() => { const x = xpStats(store.reviews); return `<p class="xp-sum">${ic("spark")} ${t("Опыт за занятие: +{n}", { n: x.total - r.xp0 })} · ${t("уровень {n}", { n: x.level })}</p>`; })() : ""}
       ${r.best >= 3 ? `<p class="best-combo lv${streakLevel(r.best)}">${ic("trophy")} ${t("Лучшая серия: {n} правильных подряд", { n: r.best })}</p>` : ""}
+      ${r.unit ? "" : moreHtml(r.deckId)}
       <button class="btn big" data-a="rv-close">${t("Готово")}</button></div></div>`;
     return;
   }
@@ -702,14 +708,43 @@ function toggleTyped() {
   if (card && !r.show) { r.t0 = Date.now(); r.paused = 0; }
   renderReview();
 }
-function startReview(deckId: string) {
+/** «Учить ещё»: +10 / +20 / +30 новых карточек сверх дневного лимита. */
+function spareNew(deckId: string): Map<string, number> {
+  const cards = allCards().filter((c) => (deckId === "all" || c.deckId === deckId) && !c.suspended);
+  const out = new Map<string, number>();
+  for (const [id, c] of scan(Date.now(), cards, allDecks())) if ((c.spare ?? 0) > 0) out.set(id, c.spare!);
+  return out;
+}
+function moreHtml(deckId: string): string {
+  const spare = [...spareNew(deckId).values()].reduce((a, b) => a + b, 0);
+  if (!spare) return "";
+  const opts = [10, 20, 30].filter((n) => n < spare);
+  const btns = [...opts.map((n) => `<button class="btn sec" data-a="rv-more" data-n="${n}">+${n}</button>`),
+    ...(opts.length < 3 ? [`<button class="btn sec" data-a="rv-more" data-n="${spare}">${opts.length ? t("все {n}", { n: spare }) : "+" + spare}</button>`] : [])].join("");
+  return `<div class="rv-more"><div class="rv-more-t">${ic("plus")} ${t("Учить ещё")}</div>
+    <p class="muted">${t("Новых карточек осталось: {n}. Сколько добавить на сегодня?", { n: spare })}</p><div class="rv-more-b">${btns}</div></div>`;
+}
+function learnMore(n: number) {
+  const r = S.review;
+  if (!r || n <= 0) return;
+  const today = dayKey(Date.now()), spare = spareNew(r.deckId), by = { ...extraToday() };
+  // раздаём по колодам по порядку, пока не наберём n
+  let left = n;
+  for (const d of allDecks()) { const sp = spare.get(d.id) ?? 0; if (!sp || left <= 0) continue; const k = Math.min(sp, left); by[d.id] = (by[d.id] ?? 0) + k; left -= k; }
+  store.setSetting("extraNew", { day: today, by });
+  haptic("success");
+  showNext();
+}
+
+function startReview(deckId: string, unit?: { tag: string; title: string }) {
   haptic("light");
-  S.review = { deckId, cardId: null, show: false, typed: null, ok: null, done: 0, t0: 0, paused: 0, baseline: computeBaseline(), dur: 0, pending: null, locking: false, combo: 0, best: 0, bump: null, milestone: null };
+  S.review = { deckId, cardId: null, show: false, typed: null, ok: null, done: 0, t0: 0, paused: 0, baseline: computeBaseline(), dur: 0, pending: null, locking: false, combo: 0, best: 0, bump: null, milestone: null,
+    unit: unit?.tag, unitTitle: unit?.title, xp0: xpStats(store.reviews).total, xpGain: 0 };
   showNext();
 }
 function showNext() {
   const r = S.review!;
-  r.cardId = pickNext(r.deckId, Date.now());
+  r.cardId = pickNext(r.deckId, Date.now(), r.unit);
   Object.assign(r, { show: false, typed: null, ok: null, pending: null, locking: false, t0: Date.now(), paused: 0, dur: 0 });
   if (r.done > 0 && r.done % 10 === 0) r.baseline = computeBaseline();
   hiddenAt = document.hidden ? Date.now() : null;
@@ -776,6 +811,7 @@ function applyPending(rating?: Rating) {
   if (!r?.cardId || !r.pending) return;
   store.answer(r.cardId, rating ?? r.pending.rating, r.pending.dur);
   bumpCombo(rating ?? r.pending.rating);
+  r.xpGain = xpStats(store.reviews).lastGain;
   haptic("select");
   r.done++;
   showNext();
@@ -785,6 +821,7 @@ function rateManual(g: Rating) {
   if (!r?.cardId || !r.show) return;
   store.answer(r.cardId, g, r.dur);
   bumpCombo(g);
+  r.xpGain = xpStats(store.reviews).lastGain;
   haptic("select");
   r.done++;
   showNext();
@@ -856,7 +893,7 @@ function renderBrowser() {
   if (b.open) { el.innerHTML = head + `<div class="br-body">${deckDetailHtml(b)}</div>`; media(el); return; }
   if (b.tab === "web") { el.innerHTML = head + `<div class="br-body">${webHtml()}</div>`; return; }
   const inst = installed();
-  const pool = b.decks.filter((d) => (b.tab === "spark" ? d.source === "spark" : d.source === "community"));
+  const pool = b.decks.filter((d) => (b.tab === "spark" ? d.source === "spark" && (!d.natives || d.natives.includes(getLang())) : d.source === "community"));
   const langs = [...new Set(pool.flatMap((d) => [d.lang_front, d.lang_back]).filter(Boolean))].sort();
   const q = b.q.trim().toLowerCase();
   const list = pool.filter((d) => (!b.lang || d.lang_front === b.lang || d.lang_back === b.lang)
@@ -892,7 +929,7 @@ function renderBrowser() {
 function deckDetailHtml(b: Browser): string {
   const d = b.open!, have = installed().get(sourceKey(d));
   const cards = b.cards;
-  const sample = cards ? cards.slice(0, 12).map((c) => `<div class="sample"><div class="s-q">${fmt(c.front)}${c.hint ? `<div class="hint-line">${fmt(c.hint)}</div>` : ""}</div><div class="s-a">${fmt(c.back ?? "")}${c.extra ? `<div class="s-x">${fmt(c.extra)}</div>` : ""}</div></div>`).join("") : `<div class="muted">${t("Загружаю карточки…")}</div>`;
+  const sample = cards ? cards.slice(0, 12).map((c) => localizeCard(c, deckNative(d))).map((c) => `<div class="sample"><div class="s-q">${fmt(c.front)}${c.hint ? `<div class="hint-line">${fmt(c.hint)}</div>` : ""}</div><div class="s-a">${fmt(c.back ?? "")}${c.extra ? `<div class="s-x">${fmt(c.extra)}</div>` : ""}</div></div>`).join("") : `<div class="muted">${t("Загружаю карточки…")}</div>`;
   const outdated = have && d.source === "spark" && Number(have.source.split("@")[1] ?? 0) < d.version;
   return `<div class="detail">
     <button class="btn sec" data-a="br-back">${ic("back")} ${t("Назад к каталогу")}</button>
@@ -916,11 +953,14 @@ async function openCatalogDeck(key: string) {
   if (S.browser === b) renderBrowser();
 }
 
+/** На каком языке перевод встроенной колоды: язык интерфейса, если колода его поддерживает. */
+const deckNative = (d: CatalogDeck) => (!d.natives || d.natives.includes(getLang()) ? getLang() : d.natives[0]!);
 async function addCatalogDeck() {
   const b = S.browser;
   if (!b?.open || !b.cards || b.busy) return;
   b.busy = true; renderBrowser();
   const d = b.open, have = installed().get(sourceKey(d));
+  const cardsL = b.cards.map((c) => localizeCard(c, deckNative(d)));
   const deckId = have?.id ?? store.addDeck(deckTitle(d));
   if (!have && d.emoji) store.set("deck", deckId, "emoji", d.emoji);
   store.set("deck", deckId, "source", `${sourceKey(d)}@${d.version}`);
@@ -930,7 +970,7 @@ async function addCatalogDeck() {
   const same = (s: string) => norm(stripMedia(s ?? ""));
   const existing = new Map(allCards().filter((c) => c.deckId === deckId).map((c) => [same(c.front) + "\u0000" + same(c.back), c]));
   let added = 0, updated = 0;
-  for (const c of b.cards) {
+  for (const c of cardsL) {
     const cur = existing.get(same(c.front) + "\u0000" + same(c.back ?? ""));
     if (cur) {
       // дополнить уже добавленную карточку: звук, произношение, пояснение — правки пользователя не трогаем
@@ -953,6 +993,155 @@ async function addCatalogDeck() {
   b.busy = false;
   toast(have ? t("Колода обновлена: новых {n}, дополнено {u}", { n: added, u: updated }) : t("Колода добавлена: {n} карточек", { n: added }));
   renderBrowser(); renderDecks(); if (S.deckId === deckId) { renderList(); renderEditor(); }
+}
+
+
+// ================= Курсы =================
+type L2key = "ru" | "en";
+const UNIT_COLORS = ["#8b5cf6", "#f59e0b", "#ec4899", "#3b82f6", "#ef4444", "#10b981", "#06b6d4", "#f97316"];
+const courseDeck = (id: string) => allDecks().find((d) => d.source.startsWith(`course:${id}@`)) ?? null;
+const unitTag = (u: string) => "unit-" + u;
+const courseNative = (c: Course): L2key => (c.natives.includes(getLang()) ? getLang() : c.natives[0]!) as L2key;
+const uiL = (): L2key => (getLang() === "en" ? "en" : "ru");
+const visibleCourses = (list: Course[]) => list.filter((c) => c.natives.includes(getLang()));
+const hours = (min: number) => (min < 60 ? t("{n} мин", { n: min }) : t("~{n} ч", { n: Math.round(min / 6) / 10 }));
+interface UnitStat { total: number; added: number; studied: number; status: "done" | "progress" | "open" | "locked" }
+function courseStats(c: Course) {
+  const deck = courseDeck(c.id), byUnit = new Map<string, { added: number; studied: number }>();
+  if (deck) for (const card of allCards()) {
+    if (card.deckId !== deck.id) continue;
+    const u = card.tags.split(/\s+/).find((x) => x.startsWith("unit-"))?.slice(5);
+    if (!u) continue;
+    const o = byUnit.get(u) ?? { added: 0, studied: 0 };
+    o.added++;
+    const st = store.states.get(card.id);
+    if (st && st.phase !== "new") o.studied++;
+    byUnit.set(u, o);
+  }
+  let prevDone = true;
+  const units: UnitStat[] = c.units.map((u) => {
+    const o = byUnit.get(u.id) ?? { added: 0, studied: 0 };
+    const status = o.studied >= u.count ? "done" : o.added || o.studied ? "progress" : prevDone ? "open" : "locked";
+    prevDone = status === "done";
+    return { total: u.count, added: o.added, studied: Math.min(o.studied, u.count), status };
+  });
+  const studied = units.reduce((a, u) => a + u.studied, 0);
+  return { deck, units, studied, done: units.filter((u) => u.status === "done").length, pct: c.words ? Math.round((studied / c.words) * 100) : 0 };
+}
+
+async function openCourses(id: string | null = null) {
+  S.courses = { open: id, list: embeddedCourses(), cards: null, busy: false };
+  render();
+  const list = await loadCourses();
+  if (S.courses) { S.courses.list = list; renderCourses(); }
+}
+function courseTile(c: Course): string {
+  const L = uiL(), st = courseStats(c);
+  return `<button class="ctile" data-a="crs-open" data-id="${c.id}">
+    <div class="ct-top"><span class="flag">${c.flag}</span><span class="lvl-badge">${esc(c.level[L])}</span>${c.audio ? `<span class="ct-snd">${ic("sound", "tiny")}</span>` : ""}</div>
+    <div class="ct-t">${esc(c.title[L])}</div>
+    <div class="ct-m">${t("{n} уровней", { n: c.units.length })} · ${t("{n} слов", { n: c.words })} · ${hours(c.minutes)}</div>
+    ${st.deck ? `<div class="pbar"><i style="width:${Math.max(st.pct, 2)}%"></i><span>${t("{a}/{b} уровней", { a: st.done, b: c.units.length })}</span><span>${t("{a}/{b} слов", { a: st.studied, b: c.words })}</span></div>` : ""}
+  </button>`;
+}
+function renderCourses() {
+  const el = document.getElementById("courses");
+  if (!el) return;
+  const cs = S.courses;
+  el.classList.toggle("on", !!cs);
+  if (!cs) { el.innerHTML = ""; return; }
+  const L = uiL(), course = cs.open ? cs.list.find((c) => c.id === cs.open) : null;
+  if (!course) {
+    const list = visibleCourses(cs.list);
+    el.innerHTML = `<div class="br-top"><button class="icon-btn" data-a="crs-close" title="${t("Закрыть")}">${ic("close")}</button><h1>${t("Курсы")}</h1></div>
+      <div class="br-body"><p class="crs-intro">${t("Курсы — это путь по уровням: слова, произношение, озвучка и примеры. Уровни открываются по очереди. Колоды из каталога остаются отдельно.")}</p>
+      <div class="ctiles">${list.map(courseTile).join("") || `<div class="muted">${t("Курсы загружаются…")}</div>`}</div></div>`;
+    return;
+  }
+  const st = courseStats(course), N = courseNative(course);
+  const next = course.units.findIndex((_, i) => st.units[i]!.status === "open" || st.units[i]!.status === "progress");
+  const units = course.units.map((u, i) => {
+    const us = st.units[i]!, badge = us.status === "done" ? `<span class="ub done">${t("пройден")}</span>` : us.status === "progress" ? `<span class="ub prog">${t("в процессе")} · ${us.studied}/${us.total}</span>` : "";
+    return `<button class="unit ${us.status}" data-a="crs-unit" data-id="${u.id}" ${cs.busy ? "disabled" : ""}>
+      <span class="u-ic" style="--u:${UNIT_COLORS[i % UNIT_COLORS.length]}">${us.status === "locked" ? ic("lock") : us.status === "done" ? ic("check") : `<b>${i + 1}</b>`}</span>
+      <span class="u-main"><span class="u-t">${esc(u.title[L])}</span><span class="u-m">${t("{n} слов", { n: u.count })} ${badge}</span></span>
+      ${us.status === "locked" ? "" : ic("chevron", "u-chev")}</button>`;
+  }).join("");
+  const dueCount = st.deck ? sum(scan(Date.now(), allCards().filter((c) => c.deckId === st.deck!.id), allDecks())).r : 0;
+  el.innerHTML = `<div class="c-hero"><div class="c-hero-top"><button class="icon-btn" data-a="crs-back" title="${t("Назад")}">${ic("back")}</button><span class="flag big">${course.flag}</span><button class="icon-btn" data-a="crs-close" title="${t("Закрыть")}">${ic("close")}</button></div>
+      <h1>${esc(course.title[L])}</h1><div class="c-sub"><span class="lvl-badge">${esc(course.level[L])}</span> · ${t("{n} уровней", { n: course.units.length })}</div>
+      <div class="pbar big"><i style="width:${Math.max(st.pct, 2)}%"></i><span>${st.pct}%</span></div>
+      <div class="c-acts"><button class="btn" data-a="crs-next" ${cs.busy ? "disabled" : ""}>${ic("play")} ${cs.busy ? t("Загружаю…") : st.deck ? t("Продолжить") : t("Начать курс")}</button>
+        <button class="btn sec" data-a="crs-review" ${st.deck ? "" : "disabled"}>${ic("sync")} ${t("Повторить")}${dueCount ? ` · ${dueCount}` : ""}</button></div></div>
+    <div class="br-body c-body">
+      <div class="sec-t">${t("Описание")}</div><p class="c-desc">${esc(course.description[L])}</p>
+      <div class="c-info"><div><b>${course.words}</b><span>${t("слов")}</span></div><div><b>${hours(course.minutes)}</b><span>${t("длительность")}</span></div>
+        <div><b>${course.units.length}</b><span>${t("уровней")}</span></div><div><b>${N === "ru" ? "RU" : "EN"}</b><span>${t("язык перевода")}</span></div></div>
+      <div class="sec-t">${t("Уровни")}</div><div class="units">${units}</div>
+      ${next < 0 && st.deck ? `<p class="muted c-fin">${t("Все уровни пройдены! Повторяйте курс, чтобы слова не забывались.")}</p>` : ""}</div>`;
+}
+async function startUnit(courseId: string, unitId: string) {
+  const cs = S.courses, course = cs?.list.find((c) => c.id === courseId);
+  if (!cs || !course || cs.busy) return;
+  const i = course.units.findIndex((u) => u.id === unitId), st = courseStats(course);
+  if (st.units[i]?.status === "locked") { toast(t("Сначала пройдите уровень «{u}»", { u: course.units[i - 1]!.title[uiL()] })); return; }
+  cs.busy = true; renderCourses();
+  try {
+    const cards = await loadCourseCards(course), N = courseNative(course);
+    let deck = courseDeck(course.id);
+    const deckId = deck?.id ?? store.addDeck(course.title[N]);
+    if (!deck) { store.set("deck", deckId, "emoji", course.flag); store.set("deck", deckId, "source", `course:${course.id}@${course.version}`); store.set("deck", deckId, "native", N); }
+    const have = new Set(allCards().filter((c) => c.deckId === deckId).flatMap((c) => c.tags.split(/\s+/)));
+    for (const c of cards.filter((x) => x.unit === unitId && !have.has("w-" + x.id)))
+      store.addCardFull({ deckId, front: c.front, back: c.back[N], hint: c.hint, extra: c.extra[N], tags: `${unitTag(unitId)} w-${c.id}` });
+    const media = await loadDeckMedia(courseMediaId(course.id));
+    for (const [k, blob] of media) await putLocal(k, blob).catch(() => {});
+    cs.busy = false;
+    renderDecks();
+    startReview(deckId, { tag: unitTag(unitId), title: `${course.flag} ${course.units[i]!.title[uiL()]}` });
+  } catch (e) { cs.busy = false; toast(t("Не удалось загрузить курс") + ": " + (e as Error).message); renderCourses(); }
+}
+function courseNext(courseId: string) {
+  const course = S.courses?.list.find((c) => c.id === courseId);
+  if (!course) return;
+  const st = courseStats(course);
+  const i = course.units.findIndex((_, k) => st.units[k]!.status === "progress" || st.units[k]!.status === "open");
+  if (i >= 0) void startUnit(courseId, course.units[i]!.id);
+  else if (st.deck) startReview(st.deck.id);
+}
+
+// ================= Главная: шапка с серией, опытом и курсами =================
+function heroHtml(): string {
+  const st = dayStreak(), x = xpStats(store.reviews), u = tgUser(), lv = dayLevel(st.streak);
+  const learned = [...store.states.values()].filter((s) => s.phase !== "new").length;
+  const name = u?.first_name || t("Мой Spark");
+  const photo = (u as { photo_url?: string } | null)?.photo_url;
+  const avatar = photo ? `<img src="${esc(photo)}" alt="">` : `<span>${esc((u?.first_name ?? "S").slice(0, 1).toUpperCase())}</span>`;
+  const next = DAY_LEVELS[lv + 1], pct = Math.round(((x.total - x.levelFrom) / Math.max(1, x.levelTo - x.levelFrom)) * 100);
+  const sub = !st.studiedToday ? (st.streak > 0 ? t("Позанимайтесь сегодня, чтобы не прервать серию") : t("Начните серию — позанимайтесь сегодня"))
+    : [lv ? t(DAY_NAMES[lv]!) : "", next ? t("дальше — «{name}» через {n} дн.", { name: t(DAY_NAMES[lv + 1]!), n: next - st.streak }) : ""].filter(Boolean).join(" · ");
+  const n = (v: number) => v.toLocaleString(getLang() === "en" ? "en-US" : "ru-RU");
+  return `<div class="hero ${st.studiedToday ? "" : "pending"}" style="--c:${dayColor(lv)}">
+    <div class="hero-top"><button class="hero-user" data-a="settings"><span class="av">${avatar}</span><span class="nm">${esc(name)}</span>${ic("chevron")}</button>
+      <button class="hero-lvl" data-a="stats" title="${t("{a} из {b} опыта до следующего уровня", { a: n(x.total - x.levelFrom), b: n(x.levelTo - x.levelFrom) })}">${ic("spark")}<span>${t("Ур. {n}", { n: x.level })}</span><i><b style="width:${pct}%"></b></i></button></div>
+    <button class="hero-streak" data-a="stats"><span class="hs-ic">${dayMark(lv, "xl")}</span><span class="hs-n">${st.streak}</span></button>
+    <button class="hs-cap" data-a="stats">${t("дней подряд")} ${ic("chevron")}</button>
+    <div class="hs-sub">${sub}</div>
+    <div class="hero-tiles"><div class="ht"><b>${ic("spark")} ${n(x.total)}</b><span>${t("Всего опыта")}${x.today ? ` · +${n(x.today)} ${t("сегодня")}` : ""}</span></div>
+      <div class="ht"><b>${ic("layers")} ${n(learned)}</b><span>${t("Слов изучено")}</span></div></div></div>`;
+}
+function myCoursesHtml(): string {
+  const all = embeddedCourses(), mine = all.filter((c) => courseDeck(c.id));
+  const L = uiL();
+  const head = `<div class="sec-h"><span>${t("Мои курсы")}</span><button class="link" data-a="courses-open">${t("Все курсы")} ${ic("chevron")}</button></div>`;
+  if (!mine.length) {
+    const flags = visibleCourses(all).map((c) => c.flag).join(" ");
+    return head + `<button class="mc promo" data-a="courses-open"><span class="mc-flags">${flags}</span><span class="mc-t">${t("Курсы по уровням")}</span>
+      <span class="mc-d">${t("Слова, произношение, озвучка и примеры — шаг за шагом")}</span><span class="mc-go">${t("Выбрать курс")} ${ic("chevron")}</span></button>`;
+  }
+  return head + mine.map((c) => { const st = courseStats(c); return `<button class="mc" data-a="crs-home" data-id="${c.id}">
+    <span class="mc-top"><span class="flag">${c.flag}</span><span class="lvl-badge">${esc(c.level[L])}</span></span><span class="mc-t">${esc(c.title[L])}</span>
+    <span class="pbar"><i style="width:${Math.max(st.pct, 2)}%"></i><span>${t("{a}/{b} уровней", { a: st.done, b: c.units.length })}</span><span>${t("{a}/{b} слов", { a: st.studied, b: c.words })}</span></span></button>`; }).join("");
 }
 
 function webHtml(): string {
@@ -1482,6 +1671,14 @@ document.addEventListener("click", (e) => {
     case "stats": S.modal = { type: "stats" }; renderModal(); updateChrome(); break;
     case "browser-open": void openBrowser("spark"); break;
     case "tips-open": S.tips = { tab: "spark" }; render(); break;
+    case "courses-open": void openCourses(); break;
+    case "crs-home": void openCourses(id!); break;
+    case "crs-open": if (S.courses) { S.courses.open = id!; renderCourses(); updateChrome(); $("courses").scrollTop = 0; } break;
+    case "crs-back": if (S.courses) { S.courses.open = null; renderCourses(); updateChrome(); } break;
+    case "crs-close": S.courses = null; render(); break;
+    case "crs-unit": if (S.courses?.open) void startUnit(S.courses.open, id!); break;
+    case "crs-next": if (S.courses?.open) courseNext(S.courses.open); break;
+    case "crs-review": { const d = S.courses?.open ? courseDeck(S.courses.open) : null; if (d) startReview(d.id); break; }
     case "tips-close": S.tips = null; render(); break;
     case "tips-tab": if (S.tips) { S.tips.tab = el.dataset.k!; renderTips(); } break;
     case "br-close": S.browser = null; render(); break;
@@ -1498,6 +1695,7 @@ document.addEventListener("click", (e) => {
     case "reload-app": store.flush(true); location.reload(); break;
     case "study": startReview(S.deckId); break;
     case "rv-close": closeReview(); break;
+    case "rv-more": learnMore(Number(el.dataset.n) || 0); break;
     case "rv-typed": toggleTyped(); break;
     case "rv-attach": if (S.review?.cardId) { S.attach = { cardId: S.review.cardId, side: S.review.show ? "a" : "q" }; S.modal = { type: "attach" }; renderModal(); updateChrome(); } break;
     case "att-side": if (S.attach) { S.attach.side = el.dataset.k as "q" | "a"; renderModal(); } break;
@@ -1616,7 +1814,7 @@ document.addEventListener("keydown", (e) => {
     else if (store.settings.manualGrades && ["1", "2", "3", "4"].includes(e.key)) rateManual(Number(e.key) as Rating);
     return;
   }
-  if (e.key === "Escape" && (S.modal || S.browser || S.tips)) { goBack(); return; }
+  if (e.key === "Escape" && (S.modal || S.browser || S.tips || S.courses)) { goBack(); return; }
   if (S.modal) {
     if (e.key === "Enter" && S.modal.type === "deck" && (e.target as HTMLElement).id === "m-name") (document.querySelector('[data-a="deck-save"]') as HTMLElement)?.click();
     return;

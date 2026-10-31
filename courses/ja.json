@@ -1,0 +1,1772 @@
+{
+"id": "ja",
+"version": 1,
+"cards": [
+{
+"id": "hello",
+"unit": "greet",
+"front": "こんにちは [audio](media:52b858140eb18678a9ea8f85)",
+"hint": "konnichiwa",
+"back": {
+"ru": "привет; здравствуйте",
+"en": "hello"
+},
+"extra": {
+"ru": "Днём; утром — おはよう.\n> こんにちは！会えてうれしいです。 [audio](media:ca3c4f04dce2ec389bd7d8e9)\n> *Konnichiwa! Aete ureshii desu.*\n> — Привет! Рад тебя видеть.",
+"en": "In the daytime; in the morning — おはよう.\n> こんにちは！会えてうれしいです。 [audio](media:ca3c4f04dce2ec389bd7d8e9)\n> *Konnichiwa! Aete ureshii desu.*\n> — Hello! Nice to see you."
+}
+},
+{
+"id": "bye",
+"unit": "greet",
+"front": "さようなら [audio](media:9531a14c1cbe02ead02306a8)",
+"hint": "sayōnara",
+"back": {
+"ru": "до свидания",
+"en": "goodbye"
+},
+"extra": {
+"ru": "Между друзьями чаще じゃあね.\n> さようなら、また明日！ [audio](media:55b76b8d68ce777cdc5131c6)\n> *Sayōnara, mata ashita!*\n> — До свидания, до завтра!",
+"en": "Between friends: じゃあね.\n> さようなら、また明日！ [audio](media:55b76b8d68ce777cdc5131c6)\n> *Sayōnara, mata ashita!*\n> — Goodbye, see you tomorrow!"
+}
+},
+{
+"id": "thanks",
+"unit": "greet",
+"front": "ありがとう [audio](media:df7f17ca05b083516e1a1809)",
+"hint": "arigatō",
+"back": {
+"ru": "спасибо",
+"en": "thank you"
+},
+"extra": {
+"ru": "Вежливо — ありがとうございます.\n> 手伝ってくれてありがとう。 [audio](media:ca5689b4da0b04d9b49d0311)\n> *Tetsudatte kurete arigatō.*\n> — Спасибо за помощь.",
+"en": "Politely: ありがとうございます.\n> 手伝ってくれてありがとう。 [audio](media:ca5689b4da0b04d9b49d0311)\n> *Tetsudatte kurete arigatō.*\n> — Thank you for the help."
+}
+},
+{
+"id": "please",
+"unit": "greet",
+"front": "お願いします [audio](media:54611f0ccf772571da9ea686)",
+"hint": "onegaishimasu",
+"back": {
+"ru": "пожалуйста (просьба)",
+"en": "please"
+},
+"extra": {
+"ru": "Просьба о чём-то; «дайте» — ください.\n> コーヒーをお願いします。 [audio](media:6b54981769b1e4aa25f6c70b)\n> *Kōhī o onegaishimasu.*\n> — Кофе, пожалуйста.",
+"en": "When asking for something; “give me” — ください.\n> コーヒーをお願いします。 [audio](media:6b54981769b1e4aa25f6c70b)\n> *Kōhī o onegaishimasu.*\n> — A coffee, please."
+}
+},
+{
+"id": "yes",
+"unit": "greet",
+"front": "はい [audio](media:79f0f7777ff39e24d3e71ab6)",
+"hint": "hai",
+"back": {
+"ru": "да",
+"en": "yes"
+},
+"extra": {
+"ru": "> はい、もちろん。 [audio](media:5e90bdedecc1a0ae36deb48c)\n> *Hai, mochiron.*\n> — Да, конечно.",
+"en": "> はい、もちろん。 [audio](media:5e90bdedecc1a0ae36deb48c)\n> *Hai, mochiron.*\n> — Yes, of course."
+}
+},
+{
+"id": "no",
+"unit": "greet",
+"front": "いいえ [audio](media:fb05331e60033909d845cee6)",
+"hint": "iie",
+"back": {
+"ru": "нет",
+"en": "no"
+},
+"extra": {
+"ru": "Вежливый отказ — けっこうです.\n> いいえ、けっこうです。 [audio](media:2ffb18373156653ad26bd7e0)\n> *Iie, kekkō desu.*\n> — Нет, спасибо.",
+"en": "Polite refusal — けっこうです.\n> いいえ、けっこうです。 [audio](media:2ffb18373156653ad26bd7e0)\n> *Iie, kekkō desu.*\n> — No, thank you."
+}
+},
+{
+"id": "sorry",
+"unit": "greet",
+"front": "すみません [audio](media:30ee7b0e313db71b827af6aa)",
+"hint": "sumimasen",
+"back": {
+"ru": "извините",
+"en": "sorry; excuse me"
+},
+"extra": {
+"ru": "Ещё «простите, можно вас?»\n> すみません、遅れました。 [audio](media:9a353bd1c14aa9bf792a5484)\n> *Sumimasen, okuremashita.*\n> — Извините, я опоздал.",
+"en": "Also “excuse me”.\n> すみません、遅れました。 [audio](media:9a353bd1c14aa9bf792a5484)\n> *Sumimasen, okuremashita.*\n> — Sorry, I'm late."
+}
+},
+{
+"id": "morning",
+"unit": "greet",
+"front": "おはよう [audio](media:757abbe1c8a76f4cdfcba67a)",
+"hint": "ohayō",
+"back": {
+"ru": "доброе утро",
+"en": "good morning"
+},
+"extra": {
+"ru": "Вежливо — おはようございます.\n> おはよう、お母さん！ [audio](media:d417c5b2b82dade8597c11c5)\n> *Ohayō, okāsan!*\n> — Доброе утро, мама!",
+"en": "Politely: おはようございます.\n> おはよう、お母さん！ [audio](media:d417c5b2b82dade8597c11c5)\n> *Ohayō, okāsan!*\n> — Good morning, Mom!"
+}
+},
+{
+"id": "night",
+"unit": "greet",
+"front": "おやすみ [audio](media:316ea02f5c855b7a91b97803)",
+"hint": "oyasumi",
+"back": {
+"ru": "спокойной ночи",
+"en": "good night"
+},
+"extra": {
+"ru": "Вежливо — おやすみなさい.\n> おやすみ、また明日。 [audio](media:133215c8aa8df592a81ce873)\n> *Oyasumi, mata ashita.*\n> — Спокойной ночи, до завтра.",
+"en": "Politely: おやすみなさい.\n> おやすみ、また明日。 [audio](media:133215c8aa8df592a81ce873)\n> *Oyasumi, mata ashita.*\n> — Good night, see you tomorrow."
+}
+},
+{
+"id": "howru",
+"unit": "greet",
+"front": "お元気ですか [audio](media:ce6d36e6aa08f58b227c158e)",
+"hint": "ogenki desu ka",
+"back": {
+"ru": "как дела?",
+"en": "how are you?"
+},
+"extra": {
+"ru": "> お元気ですか？ — 元気です、ありがとう。 [audio](media:c56f68abff4a7c99221db75c)\n> *Ogenki desu ka? — Genki desu, arigatō.*\n> — Как дела? — Хорошо, спасибо.",
+"en": "> お元気ですか？ — 元気です、ありがとう。 [audio](media:c56f68abff4a7c99221db75c)\n> *Ogenki desu ka? — Genki desu, arigatō.*\n> — How are you? — Fine, thanks."
+}
+},
+{
+"id": "man",
+"unit": "people",
+"front": "男の人 [audio](media:6b691de3bf2589a32347ff60)",
+"hint": "otoko no hito",
+"back": {
+"ru": "мужчина",
+"en": "man"
+},
+"extra": {
+"ru": "> この男の人は私の先生です。 [audio](media:78719080d5265e5b25548c3b)\n> *Kono otoko no hito wa watashi no sensei desu.*\n> — Этот мужчина — мой учитель.",
+"en": "> この男の人は私の先生です。 [audio](media:78719080d5265e5b25548c3b)\n> *Kono otoko no hito wa watashi no sensei desu.*\n> — This man is my teacher."
+}
+},
+{
+"id": "woman",
+"unit": "people",
+"front": "女の人 [audio](media:44a44cb7c40824e740d5dc68)",
+"hint": "onna no hito",
+"back": {
+"ru": "женщина",
+"en": "woman"
+},
+"extra": {
+"ru": "> この女の人は医者です。 [audio](media:022f58f4737624b3be2a9b40)\n> *Kono onna no hito wa isha desu.*\n> — Эта женщина — врач.",
+"en": "> この女の人は医者です。 [audio](media:022f58f4737624b3be2a9b40)\n> *Kono onna no hito wa isha desu.*\n> — This woman is a doctor."
+}
+},
+{
+"id": "child",
+"unit": "people",
+"front": "子ども [audio](media:a22e9ef26e361d60a079abd8)",
+"hint": "kodomo",
+"back": {
+"ru": "ребёнок",
+"en": "child"
+},
+"extra": {
+"ru": "> 子どもが寝ています。 [audio](media:beca5c64a8d4f7b967c95a60)\n> *Kodomo ga nete imasu.*\n> — Ребёнок спит.",
+"en": "> 子どもが寝ています。 [audio](media:beca5c64a8d4f7b967c95a60)\n> *Kodomo ga nete imasu.*\n> — The child is sleeping."
+}
+},
+{
+"id": "friend",
+"unit": "people",
+"front": "友達 [audio](media:23a38fe2bbfe1f8b06a58cb2)",
+"hint": "tomodachi",
+"back": {
+"ru": "друг",
+"en": "friend"
+},
+"extra": {
+"ru": "> 彼は私のいちばんの友達です。 [audio](media:21967d3ac8b8c912486132b5)\n> *Kare wa watashi no ichiban no tomodachi desu.*\n> — Он мой лучший друг.",
+"en": "> 彼は私のいちばんの友達です。 [audio](media:21967d3ac8b8c912486132b5)\n> *Kare wa watashi no ichiban no tomodachi desu.*\n> — He is my best friend."
+}
+},
+{
+"id": "mother",
+"unit": "people",
+"front": "母 [audio](media:e25f1add58bc7cafbdf92e79)",
+"hint": "haha",
+"back": {
+"ru": "мать; мама",
+"en": "mother"
+},
+"extra": {
+"ru": "Свою маму — 母, чужую — お母さん.\n> 母は先生です。 [audio](media:66cf3925bb9b003c77f1ccc7)\n> *Haha wa sensei desu.*\n> — Моя мама — учитель.",
+"en": "Your own mother — 母; someone else's — お母さん.\n> 母は先生です。 [audio](media:66cf3925bb9b003c77f1ccc7)\n> *Haha wa sensei desu.*\n> — My mother is a teacher."
+}
+},
+{
+"id": "father",
+"unit": "people",
+"front": "父 [audio](media:be9e6d4ac3ec6891bfc49942)",
+"hint": "chichi",
+"back": {
+"ru": "отец; папа",
+"en": "father"
+},
+"extra": {
+"ru": "Чужой отец — お父さん.\n> 父は銀行で働いています。 [audio](media:49c840debd67942d8ff0c2ac)\n> *Chichi wa ginkō de hataraite imasu.*\n> — Мой папа работает в банке.",
+"en": "Someone else's father — お父さん.\n> 父は銀行で働いています。 [audio](media:49c840debd67942d8ff0c2ac)\n> *Chichi wa ginkō de hataraite imasu.*\n> — My father works at a bank."
+}
+},
+{
+"id": "brother",
+"unit": "people",
+"front": "兄 [audio](media:2e023503dd0c82b56b98ffab)",
+"hint": "ani",
+"back": {
+"ru": "брат",
+"en": "brother"
+},
+"extra": {
+"ru": "Старший брат; младший — 弟 (otōto).\n> 私には兄がいます。 [audio](media:8e2e58a9a980ab6dac9cf16e)\n> *Watashi ni wa ani ga imasu.*\n> — У меня есть брат.",
+"en": "Older brother; younger — 弟 (otōto).\n> 私には兄がいます。 [audio](media:8e2e58a9a980ab6dac9cf16e)\n> *Watashi ni wa ani ga imasu.*\n> — I have a brother."
+}
+},
+{
+"id": "sister",
+"unit": "people",
+"front": "姉 [audio](media:9dc6c8f67ac4fdd1b17ff933)",
+"hint": "ane",
+"back": {
+"ru": "сестра",
+"en": "sister"
+},
+"extra": {
+"ru": "Старшая сестра; младшая — 妹 (imōto).\n> 姉は音楽が好きです。 [audio](media:5cfaa43333584219270b1ef5)\n> *Ane wa ongaku ga suki desu.*\n> — Моя сестра любит музыку.",
+"en": "Older sister; younger — 妹 (imōto).\n> 姉は音楽が好きです。 [audio](media:5cfaa43333584219270b1ef5)\n> *Ane wa ongaku ga suki desu.*\n> — My sister loves music."
+}
+},
+{
+"id": "family",
+"unit": "people",
+"front": "家族 [audio](media:7d63ccbf6fbd00129a06aaaf)",
+"hint": "kazoku",
+"back": {
+"ru": "семья",
+"en": "family"
+},
+"extra": {
+"ru": "> うちは大家族です。 [audio](media:07cb6bda329b6a6d826e8055)\n> *Uchi wa daikazoku desu.*\n> — У меня большая семья.",
+"en": "> うちは大家族です。 [audio](media:07cb6bda329b6a6d826e8055)\n> *Uchi wa daikazoku desu.*\n> — I have a big family."
+}
+},
+{
+"id": "name",
+"unit": "people",
+"front": "名前 [audio](media:24b11e7512535065b10e9cd7)",
+"hint": "namae",
+"back": {
+"ru": "имя",
+"en": "name"
+},
+"extra": {
+"ru": "Как вас зовут? — お名前は？\n> 私の名前はアンナです。 [audio](media:38db9d3f7d780138c7bb2817)\n> *Watashi no namae wa Anna desu.*\n> — Меня зовут Анна.",
+"en": "What's your name? — お名前は？\n> 私の名前はアンナです。 [audio](media:38db9d3f7d780138c7bb2817)\n> *Watashi no namae wa Anna desu.*\n> — My name is Anna."
+}
+},
+{
+"id": "one",
+"unit": "numbers",
+"front": "一 [audio](media:7e07f3cc7e95f758273b361e)",
+"hint": "ichi",
+"back": {
+"ru": "один",
+"en": "one"
+},
+"extra": {
+"ru": "Предметы считают так: 一つ (hitotsu).\n> りんごを一つください。 [audio](media:2c31362167e7060f16a0a5ca)\n> *Ringo o hitotsu kudasai.*\n> — Одно яблоко, пожалуйста.",
+"en": "Things are counted 一つ (hitotsu).\n> りんごを一つください。 [audio](media:2c31362167e7060f16a0a5ca)\n> *Ringo o hitotsu kudasai.*\n> — One apple, please."
+}
+},
+{
+"id": "two",
+"unit": "numbers",
+"front": "二 [audio](media:279d3bf3b4dd6736ca37aa28)",
+"hint": "ni",
+"back": {
+"ru": "два",
+"en": "two"
+},
+"extra": {
+"ru": "Два предмета — 二つ (futatsu).\n> コーヒーを二つお願いします。 [audio](media:551a10592ee07828ced2c622)\n> *Kōhī o futatsu onegaishimasu.*\n> — Два кофе, пожалуйста.",
+"en": "Two things — 二つ (futatsu).\n> コーヒーを二つお願いします。 [audio](media:551a10592ee07828ced2c622)\n> *Kōhī o futatsu onegaishimasu.*\n> — Two coffees, please."
+}
+},
+{
+"id": "three",
+"unit": "numbers",
+"front": "三 [audio](media:3cddf884da984755cf99f343)",
+"hint": "san",
+"back": {
+"ru": "три",
+"en": "three"
+},
+"extra": {
+"ru": "> 今、三時です。 [audio](media:d06903d8c7ea55c04d17a6fc)\n> *Ima, sanji desu.*\n> — Сейчас три часа.",
+"en": "> 今、三時です。 [audio](media:d06903d8c7ea55c04d17a6fc)\n> *Ima, sanji desu.*\n> — It's three o'clock."
+}
+},
+{
+"id": "ten",
+"unit": "numbers",
+"front": "十 [audio](media:e0c9273895afe5584e63ad3d)",
+"hint": "jū",
+"back": {
+"ru": "десять",
+"en": "ten"
+},
+"extra": {
+"ru": "10 минут — 十分 (juppun).\n> 十分待ってください。 [audio](media:f5f994568de94fd6cc3f3e2f)\n> *Juppun matte kudasai.*\n> — Подождите десять минут.",
+"en": "Ten minutes — 十分 (juppun).\n> 十分待ってください。 [audio](media:f5f994568de94fd6cc3f3e2f)\n> *Juppun matte kudasai.*\n> — Please wait ten minutes."
+}
+},
+{
+"id": "hundred",
+"unit": "numbers",
+"front": "百 [audio](media:70d2b78b2e65600ff5d2fdf6)",
+"hint": "hyaku",
+"back": {
+"ru": "сто",
+"en": "a hundred"
+},
+"extra": {
+"ru": "> これは百ユーロです。 [audio](media:c4b0e4534e337128491e143a)\n> *Kore wa hyaku yūro desu.*\n> — Это стоит сто евро.",
+"en": "> これは百ユーロです。 [audio](media:c4b0e4534e337128491e143a)\n> *Kore wa hyaku yūro desu.*\n> — It costs a hundred euros."
+}
+},
+{
+"id": "day",
+"unit": "numbers",
+"front": "日 [audio](media:f5f0e1d72eacbf0211aabbc2)",
+"hint": "hi",
+"back": {
+"ru": "день",
+"en": "day"
+},
+"extra": {
+"ru": "Один день — 一日 (ichinichi).\n> いい一日を！ [audio](media:e981d644acc87bbbe22011ff)\n> *Ii ichinichi o!*\n> — Хорошего дня!",
+"en": "One day — 一日 (ichinichi).\n> いい一日を！ [audio](media:e981d644acc87bbbe22011ff)\n> *Ii ichinichi o!*\n> — Have a nice day!"
+}
+},
+{
+"id": "week",
+"unit": "numbers",
+"front": "週 [audio](media:d8e13c43aff06322d5947d27)",
+"hint": "shū",
+"back": {
+"ru": "неделя",
+"en": "week"
+},
+"extra": {
+"ru": "Следующая неделя — 来週 (raishū).\n> また来週！ [audio](media:9d57b8dbbb0d58170340b6c7)\n> *Mata raishū!*\n> — Увидимся на следующей неделе.",
+"en": "Next week — 来週 (raishū).\n> また来週！ [audio](media:9d57b8dbbb0d58170340b6c7)\n> *Mata raishū!*\n> — See you next week."
+}
+},
+{
+"id": "today",
+"unit": "numbers",
+"front": "今日 [audio](media:92db4e539b0c52155a22e664)",
+"hint": "kyō",
+"back": {
+"ru": "сегодня",
+"en": "today"
+},
+"extra": {
+"ru": "> 今日は寒いです。 [audio](media:b1fe3f3bba9326ac258d06ee)\n> *Kyō wa samui desu.*\n> — Сегодня холодно.",
+"en": "> 今日は寒いです。 [audio](media:b1fe3f3bba9326ac258d06ee)\n> *Kyō wa samui desu.*\n> — It's cold today."
+}
+},
+{
+"id": "tomorrow",
+"unit": "numbers",
+"front": "明日 [audio](media:d617758ad2fd4040cde8d527)",
+"hint": "ashita",
+"back": {
+"ru": "завтра",
+"en": "tomorrow"
+},
+"extra": {
+"ru": "> 明日は仕事です。 [audio](media:3600d157b28c5c5f01cd9632)\n> *Ashita wa shigoto desu.*\n> — Завтра я работаю.",
+"en": "> 明日は仕事です。 [audio](media:3600d157b28c5c5f01cd9632)\n> *Ashita wa shigoto desu.*\n> — I'm working tomorrow."
+}
+},
+{
+"id": "yesterday",
+"unit": "numbers",
+"front": "昨日 [audio](media:1620677e37a6a9bb251183d0)",
+"hint": "kinō",
+"back": {
+"ru": "вчера",
+"en": "yesterday"
+},
+"extra": {
+"ru": "> 昨日は雨でした。 [audio](media:58255987c30242466e844df7)\n> *Kinō wa ame deshita.*\n> — Вчера был дождь.",
+"en": "> 昨日は雨でした。 [audio](media:58255987c30242466e844df7)\n> *Kinō wa ame deshita.*\n> — It rained yesterday."
+}
+},
+{
+"id": "water",
+"unit": "food",
+"front": "水 [audio](media:9cad43b9141f2340981b7d53)",
+"hint": "mizu",
+"back": {
+"ru": "вода",
+"en": "water"
+},
+"extra": {
+"ru": "Холодная вода; кипяток — お湯.\n> 水を一杯ください。 [audio](media:899ff56ab5b5d953f640784d)\n> *Mizu o ippai kudasai.*\n> — Стакан воды, пожалуйста.",
+"en": "Cold water; hot water — お湯.\n> 水を一杯ください。 [audio](media:899ff56ab5b5d953f640784d)\n> *Mizu o ippai kudasai.*\n> — A glass of water, please."
+}
+},
+{
+"id": "bread",
+"unit": "food",
+"front": "パン [audio](media:3b37e72e7926a538017811cd)",
+"hint": "pan",
+"back": {
+"ru": "хлеб",
+"en": "bread"
+},
+"extra": {
+"ru": "> パンを買います。 [audio](media:c4eaae91c31416b7237e5d6b)\n> *Pan o kaimasu.*\n> — Я покупаю хлеб.",
+"en": "> パンを買います。 [audio](media:c4eaae91c31416b7237e5d6b)\n> *Pan o kaimasu.*\n> — I'm buying bread."
+}
+},
+{
+"id": "coffee",
+"unit": "food",
+"front": "コーヒー [audio](media:dfc8f2b6ceb1298cc2b1f4cd)",
+"hint": "kōhī",
+"back": {
+"ru": "кофе",
+"en": "coffee"
+},
+"extra": {
+"ru": "> 毎朝コーヒーを飲みます。 [audio](media:f284f1e5065e9aa83a5a99ba)\n> *Maiasa kōhī o nomimasu.*\n> — Я пью кофе каждое утро.",
+"en": "> 毎朝コーヒーを飲みます。 [audio](media:f284f1e5065e9aa83a5a99ba)\n> *Maiasa kōhī o nomimasu.*\n> — I drink coffee every morning."
+}
+},
+{
+"id": "tea",
+"unit": "food",
+"front": "お茶 [audio](media:8e877b7ba8ee9171ae2caa86)",
+"hint": "ocha",
+"back": {
+"ru": "чай",
+"en": "tea"
+},
+"extra": {
+"ru": "Обычно зелёный чай.\n> お茶はいかがですか？ [audio](media:c3f6ed6bccebd30e50581c0e)\n> *Ocha wa ikaga desu ka?*\n> — Хочешь чаю?",
+"en": "Usually green tea.\n> お茶はいかがですか？ [audio](media:c3f6ed6bccebd30e50581c0e)\n> *Ocha wa ikaga desu ka?*\n> — Would you like some tea?"
+}
+},
+{
+"id": "milk",
+"unit": "food",
+"front": "牛乳 [audio](media:0a2b1078b5945cb8048d77c4)",
+"hint": "gyūnyū",
+"back": {
+"ru": "молоко",
+"en": "milk"
+},
+"extra": {
+"ru": "В кафе — ミルク.\n> 牛乳入りのコーヒー。 [audio](media:16801a4447b71d4360af91cd)\n> *Gyūnyū iri no kōhī.*\n> — Кофе с молоком.",
+"en": "In cafés: ミルク.\n> 牛乳入りのコーヒー。 [audio](media:16801a4447b71d4360af91cd)\n> *Gyūnyū iri no kōhī.*\n> — Coffee with milk."
+}
+},
+{
+"id": "apple",
+"unit": "food",
+"front": "りんご [audio](media:655380d3943da22c9c2462a9)",
+"hint": "ringo",
+"back": {
+"ru": "яблоко",
+"en": "apple"
+},
+"extra": {
+"ru": "> これは青りんごです。 [audio](media:45df437cf26106bf924cd52f)\n> *Kore wa aoringo desu.*\n> — Это зелёное яблоко.",
+"en": "> これは青りんごです。 [audio](media:45df437cf26106bf924cd52f)\n> *Kore wa aoringo desu.*\n> — This is a green apple."
+}
+},
+{
+"id": "meat",
+"unit": "food",
+"front": "肉 [audio](media:37fbc12def107dd8b637425d)",
+"hint": "niku",
+"back": {
+"ru": "мясо",
+"en": "meat"
+},
+"extra": {
+"ru": "> 私は肉を食べません。 [audio](media:e900a497576e7bbd72110177)\n> *Watashi wa niku o tabemasen.*\n> — Я не ем мясо.",
+"en": "> 私は肉を食べません。 [audio](media:e900a497576e7bbd72110177)\n> *Watashi wa niku o tabemasen.*\n> — I don't eat meat."
+}
+},
+{
+"id": "fish",
+"unit": "food",
+"front": "魚 [audio](media:13c3a0026fb8ba4b9730b2bf)",
+"hint": "sakana",
+"back": {
+"ru": "рыба",
+"en": "fish"
+},
+"extra": {
+"ru": "> 今日の夕飯は魚です。 [audio](media:152f2db8346cfc2432c174ba)\n> *Kyō no yūhan wa sakana desu.*\n> — Сегодня на ужин рыба.",
+"en": "> 今日の夕飯は魚です。 [audio](media:152f2db8346cfc2432c174ba)\n> *Kyō no yūhan wa sakana desu.*\n> — We're having fish for dinner today."
+}
+},
+{
+"id": "eat",
+"unit": "food",
+"front": "食べる [audio](media:872134651d2ca8b8cdbee542)",
+"hint": "taberu",
+"back": {
+"ru": "есть, кушать",
+"en": "to eat"
+},
+"extra": {
+"ru": "Вежливо — 食べます.\n> 七時に食べます。 [audio](media:497588689938c1ade2130d1a)\n> *Shichiji ni tabemasu.*\n> — Мы едим в семь.",
+"en": "Polite form: 食べます.\n> 七時に食べます。 [audio](media:497588689938c1ade2130d1a)\n> *Shichiji ni tabemasu.*\n> — We eat at seven."
+}
+},
+{
+"id": "drink",
+"unit": "food",
+"front": "飲む [audio](media:240d47b2dcf85be96518c39e)",
+"hint": "nomu",
+"back": {
+"ru": "пить",
+"en": "to drink"
+},
+"extra": {
+"ru": "Вежливо — 飲みます.\n> 何を飲みますか？ [audio](media:8045424881869fe941b1fe8f)\n> *Nani o nomimasu ka?*\n> — Что ты будешь пить?",
+"en": "Polite form: 飲みます.\n> 何を飲みますか？ [audio](media:8045424881869fe941b1fe8f)\n> *Nani o nomimasu ka?*\n> — What will you drink?"
+}
+},
+{
+"id": "house",
+"unit": "city",
+"front": "家 [audio](media:169b347db6dd0a03cc9b080f)",
+"hint": "ie",
+"back": {
+"ru": "дом",
+"en": "house; home"
+},
+"extra": {
+"ru": "Мой дом, домой — うち.\n> これは私の家です。 [audio](media:61e1edbdf3d696509cb53e9c)\n> *Kore wa watashi no ie desu.*\n> — Это мой дом.",
+"en": "My home — うち.\n> これは私の家です。 [audio](media:61e1edbdf3d696509cb53e9c)\n> *Kore wa watashi no ie desu.*\n> — This is my house."
+}
+},
+{
+"id": "room",
+"unit": "city",
+"front": "部屋 [audio](media:42264ec8f308f0264d997b1c)",
+"hint": "heya",
+"back": {
+"ru": "комната",
+"en": "room"
+},
+"extra": {
+"ru": "> 私の部屋は小さいです。 [audio](media:be143ba9e88e45186dde27c0)\n> *Watashi no heya wa chiisai desu.*\n> — Моя комната маленькая.",
+"en": "> 私の部屋は小さいです。 [audio](media:be143ba9e88e45186dde27c0)\n> *Watashi no heya wa chiisai desu.*\n> — My room is small."
+}
+},
+{
+"id": "door",
+"unit": "city",
+"front": "ドア [audio](media:938ce04bbf7b56b400fc0e6a)",
+"hint": "doa",
+"back": {
+"ru": "дверь",
+"en": "door"
+},
+"extra": {
+"ru": "> ドアを閉めてください。 [audio](media:5d1361b3b3f5be7db9875901)\n> *Doa o shimete kudasai.*\n> — Закрой дверь, пожалуйста.",
+"en": "> ドアを閉めてください。 [audio](media:5d1361b3b3f5be7db9875901)\n> *Doa o shimete kudasai.*\n> — Close the door, please."
+}
+},
+{
+"id": "street",
+"unit": "city",
+"front": "通り [audio](media:d480387dedb7e4d206bebeb0)",
+"hint": "tōri",
+"back": {
+"ru": "улица",
+"en": "street"
+},
+"extra": {
+"ru": "> 私はこの通りに住んでいます。 [audio](media:af8278e650bc31ad000e32f3)\n> *Watashi wa kono tōri ni sunde imasu.*\n> — Я живу на этой улице.",
+"en": "> 私はこの通りに住んでいます。 [audio](media:af8278e650bc31ad000e32f3)\n> *Watashi wa kono tōri ni sunde imasu.*\n> — I live on this street."
+}
+},
+{
+"id": "town",
+"unit": "city",
+"front": "町 [audio](media:0f07dffc12b384aeac4d9cc8)",
+"hint": "machi",
+"back": {
+"ru": "город",
+"en": "city; town"
+},
+"extra": {
+"ru": "Большой город — 都市 (toshi).\n> きれいな町ですね。 [audio](media:f67427168bcb2b1ccbfc487d)\n> *Kirei na machi desu ne.*\n> — Это красивый город.",
+"en": "A large city — 都市 (toshi).\n> きれいな町ですね。 [audio](media:f67427168bcb2b1ccbfc487d)\n> *Kirei na machi desu ne.*\n> — It's a beautiful city."
+}
+},
+{
+"id": "shop",
+"unit": "city",
+"front": "店 [audio](media:a5473756a2faba7357629d0a)",
+"hint": "mise",
+"back": {
+"ru": "магазин",
+"en": "shop; store"
+},
+"extra": {
+"ru": "> 店は閉まっています。 [audio](media:b8c7aae4629d3abb3e60f3ac)\n> *Mise wa shimatte imasu.*\n> — Магазин закрыт.",
+"en": "> 店は閉まっています。 [audio](media:b8c7aae4629d3abb3e60f3ac)\n> *Mise wa shimatte imasu.*\n> — The shop is closed."
+}
+},
+{
+"id": "school",
+"unit": "city",
+"front": "学校 [audio](media:005d83a9d60aaeae30980cfe)",
+"hint": "gakkō",
+"back": {
+"ru": "школа",
+"en": "school"
+},
+"extra": {
+"ru": "> 子どもたちは学校にいます。 [audio](media:517a4a6735d20f271a91be21)\n> *Kodomotachi wa gakkō ni imasu.*\n> — Дети в школе.",
+"en": "> 子どもたちは学校にいます。 [audio](media:517a4a6735d20f271a91be21)\n> *Kodomotachi wa gakkō ni imasu.*\n> — The children are at school."
+}
+},
+{
+"id": "hospital",
+"unit": "city",
+"front": "病院 [audio](media:bd566372d7306d79a6afd45f)",
+"hint": "byōin",
+"back": {
+"ru": "больница",
+"en": "hospital"
+},
+"extra": {
+"ru": "> 病院はどこですか？ [audio](media:d689f427d6f9f03c95fffe03)\n> *Byōin wa doko desu ka?*\n> — Где больница?",
+"en": "> 病院はどこですか？ [audio](media:d689f427d6f9f03c95fffe03)\n> *Byōin wa doko desu ka?*\n> — Where is the hospital?"
+}
+},
+{
+"id": "station",
+"unit": "city",
+"front": "駅 [audio](media:23d9e179d319cea0b5a02052)",
+"hint": "eki",
+"back": {
+"ru": "вокзал; станция",
+"en": "station"
+},
+"extra": {
+"ru": "> 駅は近いです。 [audio](media:a2d19d69058ff5f3b0c1e7fc)\n> *Eki wa chikai desu.*\n> — Вокзал рядом.",
+"en": "> 駅は近いです。 [audio](media:a2d19d69058ff5f3b0c1e7fc)\n> *Eki wa chikai desu.*\n> — The station is nearby."
+}
+},
+{
+"id": "park",
+"unit": "city",
+"front": "公園 [audio](media:bb36097c0e825c587c0cc960)",
+"hint": "kōen",
+"back": {
+"ru": "парк",
+"en": "park"
+},
+"extra": {
+"ru": "> 公園に行こう。 [audio](media:e17e0d15236e80f941b6d2ef)\n> *Kōen ni ikō.*\n> — Пойдём в парк.",
+"en": "> 公園に行こう。 [audio](media:e17e0d15236e80f941b6d2ef)\n> *Kōen ni ikō.*\n> — Let's go to the park."
+}
+},
+{
+"id": "be",
+"unit": "verbs",
+"front": "です [audio](media:5564e9ac2b795c9ac792b8c3)",
+"hint": "desu",
+"back": {
+"ru": "быть",
+"en": "to be"
+},
+"extra": {
+"ru": "Вежливая связка «есть, является».\n> 私は学生です。 [audio](media:13282b773b554bf0c6263877)\n> *Watashi wa gakusei desu.*\n> — Я студент.",
+"en": "Polite “is / am / are”.\n> 私は学生です。 [audio](media:13282b773b554bf0c6263877)\n> *Watashi wa gakusei desu.*\n> — I am a student."
+}
+},
+{
+"id": "have",
+"unit": "verbs",
+"front": "持つ [audio](media:3a82277f09695981b51703c6)",
+"hint": "motsu",
+"back": {
+"ru": "иметь",
+"en": "to have"
+},
+"extra": {
+"ru": "> 私は車を持っています。 [audio](media:a96100fff6ddbf93ec8139bc)\n> *Watashi wa kuruma o motte imasu.*\n> — У меня есть машина.",
+"en": "> 私は車を持っています。 [audio](media:a96100fff6ddbf93ec8139bc)\n> *Watashi wa kuruma o motte imasu.*\n> — I have a car."
+}
+},
+{
+"id": "go",
+"unit": "verbs",
+"front": "行く [audio](media:21fbefa3a2ebf6b880456bd9)",
+"hint": "iku",
+"back": {
+"ru": "идти; ехать",
+"en": "to go"
+},
+"extra": {
+"ru": "> 学校に行きます。 [audio](media:62a3df0ba5f0ccd3cf1d934e)\n> *Gakkō ni ikimasu.*\n> — Я иду в школу.",
+"en": "> 学校に行きます。 [audio](media:62a3df0ba5f0ccd3cf1d934e)\n> *Gakkō ni ikimasu.*\n> — I'm going to school."
+}
+},
+{
+"id": "come",
+"unit": "verbs",
+"front": "来る [audio](media:5a2143b0780ad1f1afc1f082)",
+"hint": "kuru",
+"back": {
+"ru": "приходить",
+"en": "to come"
+},
+"extra": {
+"ru": "> 明日来てください。 [audio](media:89e61c6d61dfb7efc1758ae9)\n> *Ashita kite kudasai.*\n> — Приходи завтра.",
+"en": "> 明日来てください。 [audio](media:89e61c6d61dfb7efc1758ae9)\n> *Ashita kite kudasai.*\n> — Come tomorrow."
+}
+},
+{
+"id": "see",
+"unit": "verbs",
+"front": "見る [audio](media:453c11abe712fa3ab14fecdd)",
+"hint": "miru",
+"back": {
+"ru": "видеть; смотреть",
+"en": "to see"
+},
+"extra": {
+"ru": "> テレビを見ます。 [audio](media:70991b18d7e7ca705b496fbf)\n> *Terebi o mimasu.*\n> — Я смотрю телевизор.",
+"en": "> テレビを見ます。 [audio](media:70991b18d7e7ca705b496fbf)\n> *Terebi o mimasu.*\n> — I'm watching TV."
+}
+},
+{
+"id": "speak",
+"unit": "verbs",
+"front": "話す [audio](media:cc1f263e52ca5689b8bc70f1)",
+"hint": "hanasu",
+"back": {
+"ru": "говорить",
+"en": "to speak"
+},
+"extra": {
+"ru": "> ゆっくり話してください。 [audio](media:8221859c18f2b472fb762e9d)\n> *Yukkuri hanashite kudasai.*\n> — Говорите медленнее, пожалуйста.",
+"en": "> ゆっくり話してください。 [audio](media:8221859c18f2b472fb762e9d)\n> *Yukkuri hanashite kudasai.*\n> — Speak more slowly, please."
+}
+},
+{
+"id": "know",
+"unit": "verbs",
+"front": "知る [audio](media:eea58ceb0cc4461393f11c1a)",
+"hint": "shiru",
+"back": {
+"ru": "знать",
+"en": "to know"
+},
+"extra": {
+"ru": "«Знаю» — 知っています.\n> 知りません。 [audio](media:08b480100f590c556f9a64da)\n> *Shirimasen.*\n> — Я не знаю.",
+"en": "“I know” — 知っています.\n> 知りません。 [audio](media:08b480100f590c556f9a64da)\n> *Shirimasen.*\n> — I don't know."
+}
+},
+{
+"id": "want",
+"unit": "verbs",
+"front": "欲しい [audio](media:29996e67382f7dad2f29cd70)",
+"hint": "hoshii",
+"back": {
+"ru": "хотеть",
+"en": "to want"
+},
+"extra": {
+"ru": "Хочу что-то; хочу сделать — 〜たい.\n> コーヒーが欲しいです。 [audio](media:be313c2227a8560ed8ebb5c0)\n> *Kōhī ga hoshii desu.*\n> — Я хочу кофе.",
+"en": "Want a thing; want to do — 〜たい.\n> コーヒーが欲しいです。 [audio](media:be313c2227a8560ed8ebb5c0)\n> *Kōhī ga hoshii desu.*\n> — I want coffee."
+}
+},
+{
+"id": "can",
+"unit": "verbs",
+"front": "できる [audio](media:3d7eec21eec1b06ec67eba32)",
+"hint": "dekiru",
+"back": {
+"ru": "мочь",
+"en": "can; to be able"
+},
+"extra": {
+"ru": "> 手伝うことができます。 [audio](media:be80ba52f110e148e59f724a)\n> *Tetsudau koto ga dekimasu.*\n> — Я могу помочь.",
+"en": "> 手伝うことができます。 [audio](media:be80ba52f110e148e59f724a)\n> *Tetsudau koto ga dekimasu.*\n> — I can help."
+}
+},
+{
+"id": "live",
+"unit": "verbs",
+"front": "住む [audio](media:55167745bff0747fb5f12cb9)",
+"hint": "sumu",
+"back": {
+"ru": "жить",
+"en": "to live"
+},
+"extra": {
+"ru": "> どこに住んでいますか？ [audio](media:e0778d3354aad5fedbad8b01)\n> *Doko ni sunde imasu ka?*\n> — Где ты живёшь?",
+"en": "> どこに住んでいますか？ [audio](media:e0778d3354aad5fedbad8b01)\n> *Doko ni sunde imasu ka?*\n> — Where do you live?"
+}
+},
+{
+"id": "big",
+"unit": "describe",
+"front": "大きい [audio](media:3671d029297d67edb7cf0c34)",
+"hint": "ōkii",
+"back": {
+"ru": "большой",
+"en": "big"
+},
+"extra": {
+"ru": "> 彼らの家は大きいです。 [audio](media:81c312ea35a032f94deb18ba)\n> *Karera no ie wa ōkii desu.*\n> — У них большой дом.",
+"en": "> 彼らの家は大きいです。 [audio](media:81c312ea35a032f94deb18ba)\n> *Karera no ie wa ōkii desu.*\n> — They have a big house."
+}
+},
+{
+"id": "small",
+"unit": "describe",
+"front": "小さい [audio](media:e089af6c5a60ccd6b1dd0e46)",
+"hint": "chiisai",
+"back": {
+"ru": "маленький",
+"en": "small"
+},
+"extra": {
+"ru": "> 小さい犬です。 [audio](media:dfbdb81a2ba0a2bcadd94f15)\n> *Chiisai inu desu.*\n> — Это маленькая собака.",
+"en": "> 小さい犬です。 [audio](media:dfbdb81a2ba0a2bcadd94f15)\n> *Chiisai inu desu.*\n> — It's a small dog."
+}
+},
+{
+"id": "good",
+"unit": "describe",
+"front": "いい [audio](media:9852b3a65675977dfca738c7)",
+"hint": "ii",
+"back": {
+"ru": "хороший",
+"en": "good"
+},
+"extra": {
+"ru": "> いい考えですね。 [audio](media:204918285f0a4dae87e90253)\n> *Ii kangae desu ne.*\n> — Это хорошая идея.",
+"en": "> いい考えですね。 [audio](media:204918285f0a4dae87e90253)\n> *Ii kangae desu ne.*\n> — That's a good idea."
+}
+},
+{
+"id": "bad",
+"unit": "describe",
+"front": "悪い [audio](media:bfd8616bfd002f1c8e297b76)",
+"hint": "warui",
+"back": {
+"ru": "плохой",
+"en": "bad"
+},
+"extra": {
+"ru": "> 今日は天気が悪いです。 [audio](media:23c65d11c2252c4225fad4fa)\n> *Kyō wa tenki ga warui desu.*\n> — Сегодня плохая погода.",
+"en": "> 今日は天気が悪いです。 [audio](media:23c65d11c2252c4225fad4fa)\n> *Kyō wa tenki ga warui desu.*\n> — The weather is bad today."
+}
+},
+{
+"id": "new",
+"unit": "describe",
+"front": "新しい [audio](media:0edf6e71322a4c027662bbec)",
+"hint": "atarashii",
+"back": {
+"ru": "новый",
+"en": "new"
+},
+"extra": {
+"ru": "> 新しいスマホを持っています。 [audio](media:f2d67c72f14c61debb073cfd)\n> *Atarashii sumaho o motte imasu.*\n> — У меня новый телефон.",
+"en": "> 新しいスマホを持っています。 [audio](media:f2d67c72f14c61debb073cfd)\n> *Atarashii sumaho o motte imasu.*\n> — I have a new phone."
+}
+},
+{
+"id": "old",
+"unit": "describe",
+"front": "古い [audio](media:56b24a11621ebdb02c803574)",
+"hint": "furui",
+"back": {
+"ru": "старый",
+"en": "old"
+},
+"extra": {
+"ru": "О вещах; о людях не говорят.\n> 古い町です。 [audio](media:0a4fa43497a6c32561a3b641)\n> *Furui machi desu.*\n> — Это старый город.",
+"en": "For things, not people.\n> 古い町です。 [audio](media:0a4fa43497a6c32561a3b641)\n> *Furui machi desu.*\n> — It's an old town."
+}
+},
+{
+"id": "hot",
+"unit": "describe",
+"front": "熱い [audio](media:432c5a341eb7481b61e9a471)",
+"hint": "atsui",
+"back": {
+"ru": "горячий",
+"en": "hot"
+},
+"extra": {
+"ru": "Жарко (погода) — 暑い.\n> お茶が熱いです。 [audio](media:2bbf672d17439f2ba5d2e8de)\n> *Ocha ga atsui desu.*\n> — Чай горячий.",
+"en": "Hot weather — 暑い.\n> お茶が熱いです。 [audio](media:2bbf672d17439f2ba5d2e8de)\n> *Ocha ga atsui desu.*\n> — The tea is hot."
+}
+},
+{
+"id": "cold",
+"unit": "describe",
+"front": "冷たい [audio](media:e958ce83ab911c17d0a623e9)",
+"hint": "tsumetai",
+"back": {
+"ru": "холодный",
+"en": "cold"
+},
+"extra": {
+"ru": "Холодно (погода) — 寒い.\n> 水が冷たいです。 [audio](media:a500ddb9b0ba2bbee1e1b01f)\n> *Mizu ga tsumetai desu.*\n> — Вода холодная.",
+"en": "Cold weather — 寒い.\n> 水が冷たいです。 [audio](media:a500ddb9b0ba2bbee1e1b01f)\n> *Mizu ga tsumetai desu.*\n> — The water is cold."
+}
+},
+{
+"id": "beautiful",
+"unit": "describe",
+"front": "きれい [audio](media:afb3fa89d10979b8101d853f)",
+"hint": "kirei",
+"back": {
+"ru": "красивый",
+"en": "beautiful"
+},
+"extra": {
+"ru": "Ещё «чистый».\n> きれいな景色ですね！ [audio](media:8cad2a24133a2b5e224f015d)\n> *Kirei na keshiki desu ne!*\n> — Какой красивый вид!",
+"en": "Also “clean”.\n> きれいな景色ですね！ [audio](media:8cad2a24133a2b5e224f015d)\n> *Kirei na keshiki desu ne!*\n> — What a beautiful view!"
+}
+},
+{
+"id": "red",
+"unit": "describe",
+"front": "赤い [audio](media:3c6c9a8ca22545c3bed208e7)",
+"hint": "akai",
+"back": {
+"ru": "красный",
+"en": "red"
+},
+"extra": {
+"ru": "> 赤い色が好きです。 [audio](media:fa7bcac86f96e34a73016032)\n> *Akai iro ga suki desu.*\n> — Мне нравится красный цвет.",
+"en": "> 赤い色が好きです。 [audio](media:fa7bcac86f96e34a73016032)\n> *Akai iro ga suki desu.*\n> — I like the colour red."
+}
+},
+{
+"id": "car",
+"unit": "travel",
+"front": "車 [audio](media:3f99035ac0242b44fb91549d)",
+"hint": "kuruma",
+"back": {
+"ru": "машина",
+"en": "car"
+},
+"extra": {
+"ru": "> これは私の車です。 [audio](media:0e1d2e914113ce107c0fbcc4)\n> *Kore wa watashi no kuruma desu.*\n> — Это моя машина.",
+"en": "> これは私の車です。 [audio](media:0e1d2e914113ce107c0fbcc4)\n> *Kore wa watashi no kuruma desu.*\n> — This is my car."
+}
+},
+{
+"id": "bus",
+"unit": "travel",
+"front": "バス [audio](media:eb06e67f7f397d66e3b0f7fa)",
+"hint": "basu",
+"back": {
+"ru": "автобус",
+"en": "bus"
+},
+"extra": {
+"ru": "> バスが遅れています。 [audio](media:de03733401b232fa8ed9d42a)\n> *Basu ga okurete imasu.*\n> — Автобус опаздывает.",
+"en": "> バスが遅れています。 [audio](media:de03733401b232fa8ed9d42a)\n> *Basu ga okurete imasu.*\n> — The bus is late."
+}
+},
+{
+"id": "train",
+"unit": "travel",
+"front": "電車 [audio](media:ba2230bbc569ec2c5a5e9948)",
+"hint": "densha",
+"back": {
+"ru": "поезд",
+"en": "train"
+},
+"extra": {
+"ru": "> 電車は六時に出ます。 [audio](media:d01d4dff8b99216ffe26a08f)\n> *Densha wa rokuji ni demasu.*\n> — Поезд уходит в шесть.",
+"en": "> 電車は六時に出ます。 [audio](media:d01d4dff8b99216ffe26a08f)\n> *Densha wa rokuji ni demasu.*\n> — The train leaves at six."
+}
+},
+{
+"id": "plane",
+"unit": "travel",
+"front": "飛行機 [audio](media:0ba7dc705e46dd57b5f845a2)",
+"hint": "hikōki",
+"back": {
+"ru": "самолёт",
+"en": "plane"
+},
+"extra": {
+"ru": "> 飛行機はローマへ行きます。 [audio](media:4834ee900cbb0d5d526ca06e)\n> *Hikōki wa Rōma e ikimasu.*\n> — Самолёт летит в Рим.",
+"en": "> 飛行機はローマへ行きます。 [audio](media:4834ee900cbb0d5d526ca06e)\n> *Hikōki wa Rōma e ikimasu.*\n> — The plane is flying to Rome."
+}
+},
+{
+"id": "ticket",
+"unit": "travel",
+"front": "切符 [audio](media:9b18e5c16baea9b3037ffc60)",
+"hint": "kippu",
+"back": {
+"ru": "билет",
+"en": "ticket"
+},
+"extra": {
+"ru": "> 切符を一枚ください。 [audio](media:d0b47962a7f672376aaf16c4)\n> *Kippu o ichimai kudasai.*\n> — Один билет, пожалуйста.",
+"en": "> 切符を一枚ください。 [audio](media:d0b47962a7f672376aaf16c4)\n> *Kippu o ichimai kudasai.*\n> — One ticket, please."
+}
+},
+{
+"id": "hotel",
+"unit": "travel",
+"front": "ホテル [audio](media:0792e81ce7ac5d9d0467edd2)",
+"hint": "hoteru",
+"back": {
+"ru": "гостиница, отель",
+"en": "hotel"
+},
+"extra": {
+"ru": "> ホテルは中心にあります。 [audio](media:aeea0399be3588866a34bd2f)\n> *Hoteru wa chūshin ni arimasu.*\n> — Отель в центре.",
+"en": "> ホテルは中心にあります。 [audio](media:aeea0399be3588866a34bd2f)\n> *Hoteru wa chūshin ni arimasu.*\n> — The hotel is in the centre."
+}
+},
+{
+"id": "map",
+"unit": "travel",
+"front": "地図 [audio](media:f849d7fcaf2539b813894454)",
+"hint": "chizu",
+"back": {
+"ru": "карта",
+"en": "map"
+},
+"extra": {
+"ru": "> 地図を持っていますか？ [audio](media:2a60f0bf887128701de7f295)\n> *Chizu o motte imasu ka?*\n> — У тебя есть карта?",
+"en": "> 地図を持っていますか？ [audio](media:2a60f0bf887128701de7f295)\n> *Chizu o motte imasu ka?*\n> — Do you have a map?"
+}
+},
+{
+"id": "left",
+"unit": "travel",
+"front": "左 [audio](media:e3638276d8d0a4991c657e85)",
+"hint": "hidari",
+"back": {
+"ru": "налево; левый",
+"en": "left"
+},
+"extra": {
+"ru": "> 左に曲がってください。 [audio](media:241c4a0d44650e7a1e80b0f4)\n> *Hidari ni magatte kudasai.*\n> — Поверните налево.",
+"en": "> 左に曲がってください。 [audio](media:241c4a0d44650e7a1e80b0f4)\n> *Hidari ni magatte kudasai.*\n> — Turn left."
+}
+},
+{
+"id": "right",
+"unit": "travel",
+"front": "右 [audio](media:83a9cead191c6bae633209c6)",
+"hint": "migi",
+"back": {
+"ru": "направо; правый",
+"en": "right"
+},
+"extra": {
+"ru": "> 右に曲がってください。 [audio](media:4c468aaed360824adbed8816)\n> *Migi ni magatte kudasai.*\n> — Поверните направо.",
+"en": "> 右に曲がってください。 [audio](media:4c468aaed360824adbed8816)\n> *Migi ni magatte kudasai.*\n> — Turn right."
+}
+},
+{
+"id": "where",
+"unit": "travel",
+"front": "どこ [audio](media:9ef93d9ae47ceff789ad2d9c)",
+"hint": "doko",
+"back": {
+"ru": "где",
+"en": "where"
+},
+"extra": {
+"ru": "> 地下鉄はどこですか？ [audio](media:b1e6958e792675bc70dd20bc)\n> *Chikatetsu wa doko desu ka?*\n> — Где метро?",
+"en": "> 地下鉄はどこですか？ [audio](media:b1e6958e792675bc70dd20bc)\n> *Chikatetsu wa doko desu ka?*\n> — Where is the metro?"
+}
+}
+],
+"media": {
+"file": "ja.audio.mp3",
+"type": "audio/mpeg",
+"index": {
+"52b858140eb18678a9ea8f85": [
+0,
+5757
+],
+"ca3c4f04dce2ec389bd7d8e9": [
+5757,
+19317
+],
+"9531a14c1cbe02ead02306a8": [
+25074,
+5397
+],
+"55b76b8d68ce777cdc5131c6": [
+30471,
+9957
+],
+"df7f17ca05b083516e1a1809": [
+40428,
+5277
+],
+"ca5689b4da0b04d9b49d0311": [
+45705,
+10317
+],
+"54611f0ccf772571da9ea686": [
+56022,
+8277
+],
+"6b54981769b1e4aa25f6c70b": [
+64299,
+8517
+],
+"79f0f7777ff39e24d3e71ab6": [
+72816,
+3957
+],
+"5e90bdedecc1a0ae36deb48c": [
+76773,
+7197
+],
+"fb05331e60033909d845cee6": [
+83970,
+4317
+],
+"2ffb18373156653ad26bd7e0": [
+88287,
+8157
+],
+"30ee7b0e313db71b827af6aa": [
+96444,
+5637
+],
+"9a353bd1c14aa9bf792a5484": [
+102081,
+10917
+],
+"757abbe1c8a76f4cdfcba67a": [
+112998,
+5517
+],
+"d417c5b2b82dade8597c11c5": [
+118515,
+8997
+],
+"316ea02f5c855b7a91b97803": [
+127512,
+5157
+],
+"133215c8aa8df592a81ce873": [
+132669,
+9117
+],
+"ce6d36e6aa08f58b227c158e": [
+141786,
+6357
+],
+"c56f68abff4a7c99221db75c": [
+148143,
+18477
+],
+"6b691de3bf2589a32347ff60": [
+166620,
+5997
+],
+"78719080d5265e5b25548c3b": [
+172617,
+13197
+],
+"44a44cb7c40824e740d5dc68": [
+185814,
+7077
+],
+"022f58f4737624b3be2a9b40": [
+192891,
+10077
+],
+"a22e9ef26e361d60a079abd8": [
+202968,
+5037
+],
+"beca5c64a8d4f7b967c95a60": [
+208005,
+7317
+],
+"23a38fe2bbfe1f8b06a58cb2": [
+215322,
+5877
+],
+"21967d3ac8b8c912486132b5": [
+221199,
+13557
+],
+"e25f1add58bc7cafbdf92e79": [
+234756,
+4077
+],
+"66cf3925bb9b003c77f1ccc7": [
+238833,
+7797
+],
+"be9e6d4ac3ec6891bfc49942": [
+246630,
+6477
+],
+"49c840debd67942d8ff0c2ac": [
+253107,
+11997
+],
+"2e023503dd0c82b56b98ffab": [
+265104,
+4317
+],
+"8e2e58a9a980ab6dac9cf16e": [
+269421,
+9597
+],
+"9dc6c8f67ac4fdd1b17ff933": [
+279018,
+4317
+],
+"5cfaa43333584219270b1ef5": [
+283335,
+9717
+],
+"7d63ccbf6fbd00129a06aaaf": [
+293052,
+5037
+],
+"07cb6bda329b6a6d826e8055": [
+298089,
+7557
+],
+"24b11e7512535065b10e9cd7": [
+305646,
+5997
+],
+"38db9d3f7d780138c7bb2817": [
+311643,
+10437
+],
+"7e07f3cc7e95f758273b361e": [
+322080,
+4437
+],
+"2c31362167e7060f16a0a5ca": [
+326517,
+8517
+],
+"279d3bf3b4dd6736ca37aa28": [
+335034,
+3597
+],
+"551a10592ee07828ced2c622": [
+338631,
+11877
+],
+"3cddf884da984755cf99f343": [
+350508,
+4317
+],
+"d06903d8c7ea55c04d17a6fc": [
+354825,
+7557
+],
+"e0c9273895afe5584e63ad3d": [
+362382,
+4077
+],
+"f5f994568de94fd6cc3f3e2f": [
+366459,
+9477
+],
+"70d2b78b2e65600ff5d2fdf6": [
+375936,
+4437
+],
+"c4b0e4534e337128491e143a": [
+380373,
+8637
+],
+"f5f0e1d72eacbf0211aabbc2": [
+389010,
+3717
+],
+"e981d644acc87bbbe22011ff": [
+392727,
+6477
+],
+"d8e13c43aff06322d5947d27": [
+399204,
+4317
+],
+"9d57b8dbbb0d58170340b6c7": [
+403521,
+6237
+],
+"92db4e539b0c52155a22e664": [
+409758,
+4077
+],
+"b1fe3f3bba9326ac258d06ee": [
+413835,
+6837
+],
+"d617758ad2fd4040cde8d527": [
+420672,
+4437
+],
+"3600d157b28c5c5f01cd9632": [
+425109,
+6717
+],
+"1620677e37a6a9bb251183d0": [
+431826,
+4317
+],
+"58255987c30242466e844df7": [
+436143,
+7077
+],
+"9cad43b9141f2340981b7d53": [
+443220,
+4197
+],
+"899ff56ab5b5d953f640784d": [
+447417,
+8517
+],
+"3b37e72e7926a538017811cd": [
+455934,
+4197
+],
+"c4eaae91c31416b7237e5d6b": [
+460131,
+5997
+],
+"dfc8f2b6ceb1298cc2b1f4cd": [
+466128,
+4797
+],
+"f284f1e5065e9aa83a5a99ba": [
+470925,
+9957
+],
+"8e877b7ba8ee9171ae2caa86": [
+480882,
+4437
+],
+"c3f6ed6bccebd30e50581c0e": [
+485319,
+7677
+],
+"0a2b1078b5945cb8048d77c4": [
+492996,
+5037
+],
+"16801a4447b71d4360af91cd": [
+498033,
+8757
+],
+"655380d3943da22c9c2462a9": [
+506790,
+4677
+],
+"45df437cf26106bf924cd52f": [
+511467,
+8037
+],
+"37fbc12def107dd8b637425d": [
+519504,
+4677
+],
+"e900a497576e7bbd72110177": [
+524181,
+11037
+],
+"13c3a0026fb8ba4b9730b2bf": [
+535218,
+4797
+],
+"152f2db8346cfc2432c174ba": [
+540015,
+10077
+],
+"872134651d2ca8b8cdbee542": [
+550092,
+4077
+],
+"497588689938c1ade2130d1a": [
+554169,
+7197
+],
+"240d47b2dcf85be96518c39e": [
+561366,
+4197
+],
+"8045424881869fe941b1fe8f": [
+565563,
+7077
+],
+"169b347db6dd0a03cc9b080f": [
+572640,
+4197
+],
+"61e1edbdf3d696509cb53e9c": [
+576837,
+9357
+],
+"42264ec8f308f0264d997b1c": [
+586194,
+4077
+],
+"be143ba9e88e45186dde27c0": [
+590271,
+10197
+],
+"938ce04bbf7b56b400fc0e6a": [
+600468,
+4317
+],
+"5d1361b3b3f5be7db9875901": [
+604785,
+8037
+],
+"d480387dedb7e4d206bebeb0": [
+612822,
+4317
+],
+"af8278e650bc31ad000e32f3": [
+617139,
+10557
+],
+"0f07dffc12b384aeac4d9cc8": [
+627696,
+4677
+],
+"f67427168bcb2b1ccbfc487d": [
+632373,
+7437
+],
+"a5473756a2faba7357629d0a": [
+639810,
+4317
+],
+"b8c7aae4629d3abb3e60f3ac": [
+644127,
+7197
+],
+"005d83a9d60aaeae30980cfe": [
+651324,
+5037
+],
+"517a4a6735d20f271a91be21": [
+656361,
+10797
+],
+"bd566372d7306d79a6afd45f": [
+667158,
+4557
+],
+"d689f427d6f9f03c95fffe03": [
+671715,
+8157
+],
+"23d9e179d319cea0b5a02052": [
+679872,
+3477
+],
+"a2d19d69058ff5f3b0c1e7fc": [
+683349,
+6957
+],
+"bb36097c0e825c587c0cc960": [
+690306,
+4077
+],
+"e17e0d15236e80f941b6d2ef": [
+694383,
+6477
+],
+"5564e9ac2b795c9ac792b8c3": [
+700860,
+3837
+],
+"13282b773b554bf0c6263877": [
+704697,
+8637
+],
+"3a82277f09695981b51703c6": [
+713334,
+4677
+],
+"a96100fff6ddbf93ec8139bc": [
+718011,
+9717
+],
+"21fbefa3a2ebf6b880456bd9": [
+727728,
+4437
+],
+"62a3df0ba5f0ccd3cf1d934e": [
+732165,
+7437
+],
+"5a2143b0780ad1f1afc1f082": [
+739602,
+3717
+],
+"89e61c6d61dfb7efc1758ae9": [
+743319,
+6957
+],
+"453c11abe712fa3ab14fecdd": [
+750276,
+3837
+],
+"70991b18d7e7ca705b496fbf": [
+754113,
+6597
+],
+"cc1f263e52ca5689b8bc70f1": [
+760710,
+5037
+],
+"8221859c18f2b472fb762e9d": [
+765747,
+8517
+],
+"eea58ceb0cc4461393f11c1a": [
+774264,
+4077
+],
+"08b480100f590c556f9a64da": [
+778341,
+5397
+],
+"29996e67382f7dad2f29cd70": [
+783738,
+6357
+],
+"be313c2227a8560ed8ebb5c0": [
+790095,
+7797
+],
+"3d7eec21eec1b06ec67eba32": [
+797892,
+4557
+],
+"be80ba52f110e148e59f724a": [
+802449,
+8397
+],
+"55167745bff0747fb5f12cb9": [
+810846,
+4317
+],
+"e0778d3354aad5fedbad8b01": [
+815163,
+8037
+],
+"3671d029297d67edb7cf0c34": [
+823200,
+5517
+],
+"81c312ea35a032f94deb18ba": [
+828717,
+9357
+],
+"e089af6c5a60ccd6b1dd0e46": [
+838074,
+4797
+],
+"dfbdb81a2ba0a2bcadd94f15": [
+842871,
+6117
+],
+"9852b3a65675977dfca738c7": [
+848988,
+3597
+],
+"204918285f0a4dae87e90253": [
+852585,
+6957
+],
+"bfd8616bfd002f1c8e297b76": [
+859542,
+4317
+],
+"23c65d11c2252c4225fad4fa": [
+863859,
+8757
+],
+"0edf6e71322a4c027662bbec": [
+872616,
+9117
+],
+"f2d67c72f14c61debb073cfd": [
+881733,
+11517
+],
+"56b24a11621ebdb02c803574": [
+893250,
+4677
+],
+"0a4fa43497a6c32561a3b641": [
+897927,
+6237
+],
+"432c5a341eb7481b61e9a471": [
+904164,
+5037
+],
+"2bbf672d17439f2ba5d2e8de": [
+909201,
+6597
+],
+"e958ce83ab911c17d0a623e9": [
+915798,
+4917
+],
+"a500ddb9b0ba2bbee1e1b01f": [
+920715,
+7317
+],
+"afb3fa89d10979b8101d853f": [
+928032,
+4077
+],
+"8cad2a24133a2b5e224f015d": [
+932109,
+8037
+],
+"3c6c9a8ca22545c3bed208e7": [
+940146,
+4317
+],
+"fa7bcac86f96e34a73016032": [
+944463,
+7437
+],
+"3f99035ac0242b44fb91549d": [
+951900,
+4797
+],
+"0e1d2e914113ce107c0fbcc4": [
+956697,
+10437
+],
+"eb06e67f7f397d66e3b0f7fa": [
+967134,
+4557
+],
+"de03733401b232fa8ed9d42a": [
+971691,
+7797
+],
+"ba2230bbc569ec2c5a5e9948": [
+979488,
+4797
+],
+"d01d4dff8b99216ffe26a08f": [
+984285,
+12117
+],
+"0ba7dc705e46dd57b5f845a2": [
+996402,
+5397
+],
+"4834ee900cbb0d5d526ca06e": [
+1001799,
+10437
+],
+"9b18e5c16baea9b3037ffc60": [
+1012236,
+4677
+],
+"d0b47962a7f672376aaf16c4": [
+1016913,
+8517
+],
+"0792e81ce7ac5d9d0467edd2": [
+1025430,
+4437
+],
+"aeea0399be3588866a34bd2f": [
+1029867,
+9477
+],
+"f849d7fcaf2539b813894454": [
+1039344,
+5397
+],
+"2a60f0bf887128701de7f295": [
+1044741,
+7437
+],
+"e3638276d8d0a4991c657e85": [
+1052178,
+4077
+],
+"241c4a0d44650e7a1e80b0f4": [
+1056255,
+8877
+],
+"83a9cead191c6bae633209c6": [
+1065132,
+4797
+],
+"4c468aaed360824adbed8816": [
+1069929,
+8397
+],
+"9ef93d9ae47ceff789ad2d9c": [
+1078326,
+4557
+],
+"b1e6958e792675bc70dd20bc": [
+1082883,
+7917
+]
+}
+}
+}

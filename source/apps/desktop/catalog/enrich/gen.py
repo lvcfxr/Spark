@@ -7,6 +7,7 @@ from data_en import EN, IRR
 from data_es_de import ES, DE
 from data_ru import RU
 from data_misc import CAP, EL
+from data_en_side import ES_EN, DE_EN, CAP_EN, EL_EN
 
 CAT = sys.argv[1]
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -75,7 +76,7 @@ def build(deck_id: str, version: int, rows):
     """rows: list of dicts with front/back/hint/extra and optional ('front_tts'|'back_tts', lang)."""
     pack, index, cards = bytearray(), {}, []
     for r in rows:
-        c = {k: r[k] for k in ("front", "back", "hint", "extra") if r.get(k)}
+        c = {k: r[k] for k in ("front", "back", "hint", "extra", "front_en", "back_en", "hint_en", "extra_en") if r.get(k)}
         for side in ("front", "back"):
             spec = r.get(side + "_tts")
             if not spec: continue
@@ -100,7 +101,7 @@ def plain(s):  # strip earlier audio markers if the script is re-run
     import re
     return re.sub(r"\s*\[audio\]\(media:[0-9a-f]+\)", "", s or "").strip()
 
-V = 3
+V = 4
 rows = []
 for c in load("en-basics"):
     w = plain(c["front"]); ipa, note, e, tr = EN[w]
@@ -123,7 +124,9 @@ for deck_id, data, lang in (("es-basics", ES, "es"), ("de-basics", DE, "de")):
         w = plain(c["front"]); ipa, note, e, tr = data[w]
         old = c.get("hint") or ""
         old = old.split(" · ", 1)[1] if old.startswith("/") and " · " in old else ("" if old.startswith("/") else old)
-        rows.append({"front": w, "back": plain(c["back"]), "hint": f"/{ipa}/" + (f" · {old}" if old else ""), "extra": ex(note, e, tr), "front_tts": (lang, w)})
+        men, nen, ten = (ES_EN if lang == "es" else DE_EN)[w]
+        rows.append({"front": w, "back": plain(c["back"]), "hint": f"/{ipa}/" + (f" · {old}" if old else ""), "extra": ex(note, e, tr), "front_tts": (lang, w),
+                     "back_en": men, "hint_en": f"/{ipa}/", "extra_en": ex(nen, e, ten)})
     build(deck_id, V, rows)
 
 rows = []
@@ -136,19 +139,25 @@ rows = []
 for c in load("capitals"):
     w = plain(c["front"]); region, fact = CAP[w]
     extra = fact + ("\n" + c["hint"] if c.get("hint") and "столиц" in c["hint"] and c["hint"] not in fact and "Африка" not in c["hint"] else "")
-    rows.append({"front": w, "back": c["back"], "hint": region, "extra": fact})
+    ce, cap, reg, fen = CAP_EN[w]
+    rows.append({"front": w, "back": c["back"], "hint": region, "extra": fact, "front_en": ce, "back_en": cap, "hint_en": reg, "extra_en": fen})
 build("capitals", V, rows)
 
 rows = []
 for c in load("elements"):
     w = plain(c["front"]); latin, fact = EL[w]
     num = c["hint"].split(" · ")[0]
-    rows.append({"front": w, "back": c["back"], "hint": num, "extra": f"*{latin}*. {fact}"})
+    nen, fen = EL_EN[w]
+    rows.append({"front": w, "back": c["back"], "hint": num, "extra": f"*{latin}*. {fact}", "back_en": nen, "hint_en": num.replace("№", "No."), "extra_en": f"*{latin}*. {fen}"})
 build("elements", V, rows)
 
 cat = json.load(open(f"{CAT}/catalog.json"))
+NATIVES = {"en-basics": ["ru"], "en-irregular": ["ru"], "ru-basics": ["en"]}
 for d in cat["decks"]:
     d["version"] = V
+    d["natives"] = NATIVES.get(d["id"], ["ru", "en"])
+    if d["id"] == "capitals": d["title_en"] = "World capitals"; d["description_en"] = "60 countries and their capitals: Europe, Asia, the Americas, Africa and Oceania. With hints and short explanations."
+    if d["id"] == "elements": d["title_en"] = "Chemical elements 1–30"; d["description_en"] = "Symbols of the first 30 elements of the periodic table and their names. The hint shows the atomic number. With short explanations."
     m = f"{CAT}/{d['id']}.audio.mp3"
     if os.path.exists(m):
         d["media"] = d["id"] + ".audio.mp3"; d["audio"] = True

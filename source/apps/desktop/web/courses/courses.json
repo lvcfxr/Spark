@@ -1,0 +1,561 @@
+{
+ "version": 1,
+ "courses": [
+  {
+   "id": "es",
+   "lang": "es",
+   "flag": "🇪🇸",
+   "natives": [
+    "ru",
+    "en"
+   ],
+   "title": {
+    "ru": "Испанский: первые шаги",
+    "en": "Spanish: first steps"
+   },
+   "level": {
+    "ru": "Начинающий",
+    "en": "Beginner"
+   },
+   "description": {
+    "ru": "80 самых нужных слов и фраз в 8 уровнях: приветствия, семья, числа, еда, город, глаголы, описания и поездки. У каждого слова — произношение, озвучка и живой пример с переводом. Уровни открываются по очереди.",
+    "en": "The 80 most useful words and phrases in 8 levels: greetings, family, numbers, food, town, verbs, describing and travel. Every word has pronunciation, audio and a real example with translation. Levels unlock one by one."
+   },
+   "author": "Spark",
+   "words": 80,
+   "minutes": 120,
+   "units": [
+    {
+     "id": "greet",
+     "title": {
+      "ru": "Приветствия и вежливость",
+      "en": "Greetings and politeness"
+     },
+     "count": 10
+    },
+    {
+     "id": "people",
+     "title": {
+      "ru": "Люди и семья",
+      "en": "People and family"
+     },
+     "count": 10
+    },
+    {
+     "id": "numbers",
+     "title": {
+      "ru": "Числа и время",
+      "en": "Numbers and time"
+     },
+     "count": 10
+    },
+    {
+     "id": "food",
+     "title": {
+      "ru": "Еда и напитки",
+      "en": "Food and drink"
+     },
+     "count": 10
+    },
+    {
+     "id": "city",
+     "title": {
+      "ru": "Дом и город",
+      "en": "Home and town"
+     },
+     "count": 10
+    },
+    {
+     "id": "verbs",
+     "title": {
+      "ru": "Глаголы: первые шаги",
+      "en": "Verbs: first steps"
+     },
+     "count": 10
+    },
+    {
+     "id": "describe",
+     "title": {
+      "ru": "Какой? Описания",
+      "en": "Describing things"
+     },
+     "count": 10
+    },
+    {
+     "id": "travel",
+     "title": {
+      "ru": "Поездки и транспорт",
+      "en": "Travel and transport"
+     },
+     "count": 10
+    }
+   ],
+   "version": 1,
+   "file": "es.json",
+   "audio": true
+  },
+  {
+   "id": "en",
+   "lang": "en",
+   "flag": "🇬🇧",
+   "natives": [
+    "ru"
+   ],
+   "title": {
+    "ru": "Английский: первые шаги",
+    "en": "English: first steps"
+   },
+   "level": {
+    "ru": "Начинающий",
+    "en": "Beginner"
+   },
+   "description": {
+    "ru": "80 самых нужных слов и фраз в 8 уровнях: приветствия, семья, числа, еда, город, глаголы, описания и поездки. У каждого слова — произношение, озвучка и живой пример с переводом. Уровни открываются по очереди.",
+    "en": "The 80 most useful words and phrases in 8 levels: greetings, family, numbers, food, town, verbs, describing and travel. Every word has pronunciation, audio and a real example with translation. Levels unlock one by one."
+   },
+   "author": "Spark",
+   "words": 80,
+   "minutes": 120,
+   "units": [
+    {
+     "id": "greet",
+     "title": {
+      "ru": "Приветствия и вежливость",
+      "en": "Greetings and politeness"
+     },
+     "count": 10
+    },
+    {
+     "id": "people",
+     "title": {
+      "ru": "Люди и семья",
+      "en": "People and family"
+     },
+     "count": 10
+    },
+    {
+     "id": "numbers",
+     "title": {
+      "ru": "Числа и время",
+      "en": "Numbers and time"
+     },
+     "count": 10
+    },
+    {
+     "id": "food",
+     "title": {
+      "ru": "Еда и напитки",
+      "en": "Food and drink"
+     },
+     "count": 10
+    },
+    {
+     "id": "city",
+     "title": {
+      "ru": "Дом и город",
+      "en": "Home and town"
+     },
+     "count": 10
+    },
+    {
+     "id": "verbs",
+     "title": {
+      "ru": "Глаголы: первые шаги",
+      "en": "Verbs: first steps"
+     },
+     "count": 10
+    },
+    {
+     "id": "describe",
+     "title": {
+      "ru": "Какой? Описания",
+      "en": "Describing things"
+     },
+     "count": 10
+    },
+    {
+     "id": "travel",
+     "title": {
+      "ru": "Поездки и транспорт",
+      "en": "Travel and transport"
+     },
+     "count": 10
+    }
+   ],
+   "version": 1,
+   "file": "en.json",
+   "audio": true
+  },
+  {
+   "id": "fr",
+   "lang": "fr",
+   "flag": "🇫🇷",
+   "natives": [
+    "ru",
+    "en"
+   ],
+   "title": {
+    "ru": "Французский: первые шаги",
+    "en": "French: first steps"
+   },
+   "level": {
+    "ru": "Начинающий",
+    "en": "Beginner"
+   },
+   "description": {
+    "ru": "80 самых нужных слов и фраз в 8 уровнях: приветствия, семья, числа, еда, город, глаголы, описания и поездки. У каждого слова — произношение, озвучка и живой пример с переводом. Уровни открываются по очереди.",
+    "en": "The 80 most useful words and phrases in 8 levels: greetings, family, numbers, food, town, verbs, describing and travel. Every word has pronunciation, audio and a real example with translation. Levels unlock one by one."
+   },
+   "author": "Spark",
+   "words": 80,
+   "minutes": 120,
+   "units": [
+    {
+     "id": "greet",
+     "title": {
+      "ru": "Приветствия и вежливость",
+      "en": "Greetings and politeness"
+     },
+     "count": 10
+    },
+    {
+     "id": "people",
+     "title": {
+      "ru": "Люди и семья",
+      "en": "People and family"
+     },
+     "count": 10
+    },
+    {
+     "id": "numbers",
+     "title": {
+      "ru": "Числа и время",
+      "en": "Numbers and time"
+     },
+     "count": 10
+    },
+    {
+     "id": "food",
+     "title": {
+      "ru": "Еда и напитки",
+      "en": "Food and drink"
+     },
+     "count": 10
+    },
+    {
+     "id": "city",
+     "title": {
+      "ru": "Дом и город",
+      "en": "Home and town"
+     },
+     "count": 10
+    },
+    {
+     "id": "verbs",
+     "title": {
+      "ru": "Глаголы: первые шаги",
+      "en": "Verbs: first steps"
+     },
+     "count": 10
+    },
+    {
+     "id": "describe",
+     "title": {
+      "ru": "Какой? Описания",
+      "en": "Describing things"
+     },
+     "count": 10
+    },
+    {
+     "id": "travel",
+     "title": {
+      "ru": "Поездки и транспорт",
+      "en": "Travel and transport"
+     },
+     "count": 10
+    }
+   ],
+   "version": 1,
+   "file": "fr.json",
+   "audio": true
+  },
+  {
+   "id": "de",
+   "lang": "de",
+   "flag": "🇩🇪",
+   "natives": [
+    "ru",
+    "en"
+   ],
+   "title": {
+    "ru": "Немецкий: первые шаги",
+    "en": "German: first steps"
+   },
+   "level": {
+    "ru": "Начинающий",
+    "en": "Beginner"
+   },
+   "description": {
+    "ru": "80 самых нужных слов и фраз в 8 уровнях: приветствия, семья, числа, еда, город, глаголы, описания и поездки. У каждого слова — произношение, озвучка и живой пример с переводом. Уровни открываются по очереди.",
+    "en": "The 80 most useful words and phrases in 8 levels: greetings, family, numbers, food, town, verbs, describing and travel. Every word has pronunciation, audio and a real example with translation. Levels unlock one by one."
+   },
+   "author": "Spark",
+   "words": 80,
+   "minutes": 120,
+   "units": [
+    {
+     "id": "greet",
+     "title": {
+      "ru": "Приветствия и вежливость",
+      "en": "Greetings and politeness"
+     },
+     "count": 10
+    },
+    {
+     "id": "people",
+     "title": {
+      "ru": "Люди и семья",
+      "en": "People and family"
+     },
+     "count": 10
+    },
+    {
+     "id": "numbers",
+     "title": {
+      "ru": "Числа и время",
+      "en": "Numbers and time"
+     },
+     "count": 10
+    },
+    {
+     "id": "food",
+     "title": {
+      "ru": "Еда и напитки",
+      "en": "Food and drink"
+     },
+     "count": 10
+    },
+    {
+     "id": "city",
+     "title": {
+      "ru": "Дом и город",
+      "en": "Home and town"
+     },
+     "count": 10
+    },
+    {
+     "id": "verbs",
+     "title": {
+      "ru": "Глаголы: первые шаги",
+      "en": "Verbs: first steps"
+     },
+     "count": 10
+    },
+    {
+     "id": "describe",
+     "title": {
+      "ru": "Какой? Описания",
+      "en": "Describing things"
+     },
+     "count": 10
+    },
+    {
+     "id": "travel",
+     "title": {
+      "ru": "Поездки и транспорт",
+      "en": "Travel and transport"
+     },
+     "count": 10
+    }
+   ],
+   "version": 1,
+   "file": "de.json",
+   "audio": true
+  },
+  {
+   "id": "ja",
+   "lang": "ja",
+   "flag": "🇯🇵",
+   "natives": [
+    "ru",
+    "en"
+   ],
+   "title": {
+    "ru": "Японский: первые шаги",
+    "en": "Japanese: first steps"
+   },
+   "level": {
+    "ru": "Начинающий",
+    "en": "Beginner"
+   },
+   "description": {
+    "ru": "80 самых нужных слов и фраз в 8 уровнях: приветствия, семья, числа, еда, город, глаголы, описания и поездки. У каждого слова — произношение, озвучка и живой пример с переводом. Уровни открываются по очереди.",
+    "en": "The 80 most useful words and phrases in 8 levels: greetings, family, numbers, food, town, verbs, describing and travel. Every word has pronunciation, audio and a real example with translation. Levels unlock one by one."
+   },
+   "author": "Spark",
+   "words": 80,
+   "minutes": 120,
+   "units": [
+    {
+     "id": "greet",
+     "title": {
+      "ru": "Приветствия и вежливость",
+      "en": "Greetings and politeness"
+     },
+     "count": 10
+    },
+    {
+     "id": "people",
+     "title": {
+      "ru": "Люди и семья",
+      "en": "People and family"
+     },
+     "count": 10
+    },
+    {
+     "id": "numbers",
+     "title": {
+      "ru": "Числа и время",
+      "en": "Numbers and time"
+     },
+     "count": 10
+    },
+    {
+     "id": "food",
+     "title": {
+      "ru": "Еда и напитки",
+      "en": "Food and drink"
+     },
+     "count": 10
+    },
+    {
+     "id": "city",
+     "title": {
+      "ru": "Дом и город",
+      "en": "Home and town"
+     },
+     "count": 10
+    },
+    {
+     "id": "verbs",
+     "title": {
+      "ru": "Глаголы: первые шаги",
+      "en": "Verbs: first steps"
+     },
+     "count": 10
+    },
+    {
+     "id": "describe",
+     "title": {
+      "ru": "Какой? Описания",
+      "en": "Describing things"
+     },
+     "count": 10
+    },
+    {
+     "id": "travel",
+     "title": {
+      "ru": "Поездки и транспорт",
+      "en": "Travel and transport"
+     },
+     "count": 10
+    }
+   ],
+   "version": 1,
+   "file": "ja.json",
+   "audio": true
+  },
+  {
+   "id": "ru",
+   "lang": "ru",
+   "flag": "🇷🇺",
+   "natives": [
+    "en"
+   ],
+   "title": {
+    "ru": "Русский: первые шаги",
+    "en": "Russian: first steps"
+   },
+   "level": {
+    "ru": "Начинающий",
+    "en": "Beginner"
+   },
+   "description": {
+    "ru": "80 самых нужных слов и фраз в 8 уровнях: приветствия, семья, числа, еда, город, глаголы, описания и поездки. У каждого слова — произношение, озвучка и живой пример с переводом. Уровни открываются по очереди.",
+    "en": "The 80 most useful words and phrases in 8 levels: greetings, family, numbers, food, town, verbs, describing and travel. Every word has pronunciation, audio and a real example with translation. Levels unlock one by one."
+   },
+   "author": "Spark",
+   "words": 80,
+   "minutes": 120,
+   "units": [
+    {
+     "id": "greet",
+     "title": {
+      "ru": "Приветствия и вежливость",
+      "en": "Greetings and politeness"
+     },
+     "count": 10
+    },
+    {
+     "id": "people",
+     "title": {
+      "ru": "Люди и семья",
+      "en": "People and family"
+     },
+     "count": 10
+    },
+    {
+     "id": "numbers",
+     "title": {
+      "ru": "Числа и время",
+      "en": "Numbers and time"
+     },
+     "count": 10
+    },
+    {
+     "id": "food",
+     "title": {
+      "ru": "Еда и напитки",
+      "en": "Food and drink"
+     },
+     "count": 10
+    },
+    {
+     "id": "city",
+     "title": {
+      "ru": "Дом и город",
+      "en": "Home and town"
+     },
+     "count": 10
+    },
+    {
+     "id": "verbs",
+     "title": {
+      "ru": "Глаголы: первые шаги",
+      "en": "Verbs: first steps"
+     },
+     "count": 10
+    },
+    {
+     "id": "describe",
+     "title": {
+      "ru": "Какой? Описания",
+      "en": "Describing things"
+     },
+     "count": 10
+    },
+    {
+     "id": "travel",
+     "title": {
+      "ru": "Поездки и транспорт",
+      "en": "Travel and transport"
+     },
+     "count": 10
+    }
+   ],
+   "version": 1,
+   "file": "ru.json",
+   "audio": true
+  }
+ ]
+}
