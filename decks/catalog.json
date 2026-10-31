@@ -15,7 +15,7 @@
     "beginner"
    ],
    "count": 60,
-   "version": 2,
+   "version": 3,
    "author": "Spark",
    "file": "en-basics.json",
    "media": "en-basics.audio.mp3",
@@ -35,7 +35,7 @@
     "grammar"
    ],
    "count": 54,
-   "version": 2,
+   "version": 3,
    "author": "Spark",
    "file": "en-irregular.json",
    "media": "en-irregular.audio.mp3",
@@ -55,7 +55,7 @@
     "beginner"
    ],
    "count": 50,
-   "version": 2,
+   "version": 3,
    "author": "Spark",
    "file": "es-basics.json",
    "media": "es-basics.audio.mp3",
@@ -75,7 +75,7 @@
     "beginner"
    ],
    "count": 50,
-   "version": 2,
+   "version": 3,
    "author": "Spark",
    "file": "de-basics.json",
    "media": "de-basics.audio.mp3",
@@ -95,7 +95,7 @@
     "beginner"
    ],
    "count": 50,
-   "version": 2,
+   "version": 3,
    "author": "Spark",
    "file": "ru-basics.json",
    "media": "ru-basics.audio.mp3",
@@ -114,7 +114,7 @@
     "geography"
    ],
    "count": 60,
-   "version": 2,
+   "version": 3,
    "author": "Spark",
    "file": "capitals.json"
   },
@@ -132,7 +132,7 @@
     "science"
    ],
    "count": 30,
-   "version": 2,
+   "version": 3,
    "author": "Spark",
    "file": "elements.json"
   }

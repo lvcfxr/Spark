@@ -56,13 +56,29 @@ export function fillIcons(root: ParentNode = document) {
  */
 export function sparkMark(cls = ""): string {
   const ph = `--ph:-${((performance.now() % 6000) / 1000).toFixed(2)}s`; // фаза продолжается между перерисовками — без рывков
+  // «Искра» Spark: четырёхлучевая звезда из логотипа, вытянутая вверх языком пламени; ядро мерцает, искры улетают вверх
+  const star = "M15.3 2.6C18 6.4 17.3 10.4 18.3 14.1C19.1 17 22.5 18.6 26.6 20C21.7 21.3 18.2 22.5 16.8 29.4C15.2 22.7 12.3 21.3 5.4 20C11.5 18.4 14.6 16.1 14.4 11.5C14.3 8.3 13.4 5.5 15.3 2.6Z";
   return `<svg class="smark ${cls}" style="${ph}" viewBox="0 0 32 32" aria-hidden="true">
-    <g class="sm-back"><rect x="5.5" y="6" width="12.5" height="17" rx="3.2" transform="rotate(-13 11.75 14.5)"/></g>
-    <g class="sm-front"><rect x="12.4" y="7.6" width="13" height="17.6" rx="3.4" transform="rotate(10 18.9 16.4)"/></g>
-    <circle class="sm-glow" cx="18.9" cy="16.4" r="6"/>
-    <g class="sm-orbit o1"><circle cx="18.9" cy="6.2" r="1.25"/></g>
-    <g class="sm-orbit o2"><circle cx="18.9" cy="26.4" r="1"/></g>
-    <g class="sm-orbit o3"><circle cx="8.8" cy="16.4" r=".95"/></g>
-    <circle class="sm-orb" cx="18.9" cy="16.4" r="5.2"/>
-    <path class="sm-star" d="M18.9 12.6l.95 2.85 2.85.95-2.85.95-.95 2.85-.95-2.85-2.85-.95 2.85-.95z"/></svg>`;
+    <circle class="sk-halo" cx="16" cy="19.5" r="10.5"/>
+    <g class="sk-out"><path d="${star}"/></g>
+    <g class="sk-mid"><path d="${star}"/></g>
+    <path class="sk-core" d="M16 16.4l.9 2.7 2.7.9-2.7.9-.9 2.7-.9-2.7-2.7-.9 2.7-.9z"/>
+    <circle class="sk-em e1" cx="19.5" cy="6" r="1.1"/><circle class="sk-em e2" cx="22.5" cy="12" r=".9"/><circle class="sk-em e3" cx="10" cy="12.5" r=".85"/></svg>`;
+}
+
+/** Уровни серии: 1, 3, 5, 10, 15, 20, 25, 30+ — с каждым уровнем эффекты вокруг искры сильнее и разнообразнее. */
+export const STREAK_LEVELS = [0, 1, 3, 5, 10, 15, 20, 25, 30];
+export const streakLevel = (n: number) => STREAK_LEVELS.reduce((acc, v, i) => (n >= v ? i : acc), 0);
+/** Искра + эффекты вокруг неё (свечение, волны, орбиты искр, мерцающие звёзды, созвездие, карточки, лучи). */
+export function streakMark(level: number, cls = ""): string {
+  const ph = `--ph:-${((performance.now() % 6000) / 1000).toFixed(2)}s`;
+  const many = (n: number, f: (i: number) => string) => Array.from({ length: n }, (_, i) => f(i)).join("");
+  return `<span class="spk lv${level}" style="${ph}"><span class="spk-fx" aria-hidden="true">
+    <i class="fx-rays"></i><i class="fx-glow"></i><i class="fx-ring r1"></i><i class="fx-ring r2"></i>
+    <svg class="fx-const" viewBox="0 0 100 100"><circle cx="50" cy="50" r="44"/>${[0, 72, 144, 216, 288].map((a) => `<path transform="rotate(${a} 50 50)" d="M50 2.5l1.6 3.9 3.9 1.6-3.9 1.6-1.6 3.9-1.6-3.9-3.9-1.6 3.9-1.6z"/>`).join("")}</svg>
+    ${many(3, (i) => `<span class="fx-orbit o${i + 1}"><i></i></span>`)}
+    ${many(2, (i) => `<span class="fx-orbit fx-card c${i + 1}"><i></i></span>`)}
+    ${many(4, (i) => `<i class="fx-tw w${i + 1}"></i>`)}
+    ${many(5, (i) => `<i class="fx-up u${i + 1}"></i>`)}
+  </span>${sparkMark(cls)}</span>`;
 }

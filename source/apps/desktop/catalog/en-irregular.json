@@ -1,328 +1,328 @@
 {
  "id": "en-irregular",
- "version": 2,
+ "version": 3,
  "cards": [
   {
-   "front": "be [audio](media:4dcb949ff72ed0cf123dd78b)",
-   "back": "was / were — been [audio](media:633e47c1830902f217f9deb9)",
+   "front": "be [audio](media:32080767e9c53682bafa351f)",
+   "back": "was / were — been [audio](media:dc8a05288806cd48b86f4a8a)",
    "hint": "быть · /biː/",
    "extra": "was /wʌz/, were /wɝː/ — been /bɪn/\nWas — с I/he/she/it, were — с you/we/they.\n> I was tired yesterday. — *Вчера я устал.*"
   },
   {
-   "front": "become [audio](media:0b36b14eb0983cb020d8ccd4)",
-   "back": "became — become [audio](media:f619530d5e573229f3034c06)",
+   "front": "become [audio](media:e378c3dc11d47e3dec04f758)",
+   "back": "became — become [audio](media:fcca61f1214a9c9cb17ea6d9)",
    "hint": "становиться · /bɪˈkʌm/",
    "extra": "became /bɪˈkeɪm/ — become /bɪˈkʌm/\nТретья форма совпадает с первой.\n> She became a doctor. — *Она стала врачом.*"
   },
   {
-   "front": "begin [audio](media:2a6333f366b79629535f7d52)",
-   "back": "began — begun [audio](media:eadf522d76fb864973705205)",
+   "front": "begin [audio](media:4b662d8d481869759c510535)",
+   "back": "began — begun [audio](media:43fbd91031c39f6757f8b74e)",
    "hint": "начинать · /bɪˈɡɪn/",
    "extra": "began /bɪˈɡæn/ — begun /bɪˈɡʌn/\nСхема i — a — u, как drink и swim.\n> The lesson has begun. — *Урок начался.*"
   },
   {
-   "front": "break [audio](media:f11d942d47e2c52dfc3cbc6b)",
-   "back": "broke — broken [audio](media:2ce1ea6a73541230f1d8d143)",
+   "front": "break [audio](media:e7b2673b9b2284ea509463de)",
+   "back": "broke — broken [audio](media:50cd5b96616ad95e255d99d3)",
    "hint": "ломать · /breɪk/",
    "extra": "broke /broʊk/ — broken /ˈbroʊkən/\nBroken — ещё и прилагательное «сломанный».\n> I broke my phone. — *Я разбил телефон.*"
   },
   {
-   "front": "bring [audio](media:496869f6a40915cbea71b80c)",
-   "back": "brought — brought [audio](media:8bdf7931eb6ffccc3fa7966b)",
+   "front": "bring [audio](media:7d4fa744db7b74012cfcd466)",
+   "back": "brought — brought [audio](media:e6b022798a8258071cd676d6)",
    "hint": "приносить · /brɪŋ/",
    "extra": "brought /brɔːt/ — brought /brɔːt/\nНе путать с buy — bought.\n> She brought a cake. — *Она принесла торт.*"
   },
   {
-   "front": "build [audio](media:07e0c61406ee9ef7aea9aa9d)",
-   "back": "built — built [audio](media:9601de7a90afe32134480dfa)",
+   "front": "build [audio](media:591cecd0fbdb1bcfb43b6a04)",
+   "back": "built — built [audio](media:014871b9a8383dfeffea26c8)",
    "hint": "строить · /bɪld/",
    "extra": "built /bɪlt/ — built /bɪlt/\nu не читается: /bɪld/.\n> They built a new bridge. — *Они построили новый мост.*"
   },
   {
-   "front": "buy [audio](media:a35b75adf914f7dbdce6fefc)",
-   "back": "bought — bought [audio](media:47b75c0f0049388a8bc6b395)",
+   "front": "buy [audio](media:58634271d4351a4f30bd108b)",
+   "back": "bought — bought [audio](media:9ddd27be247277744256bf23)",
    "hint": "покупать · /baɪ/",
    "extra": "bought /bɔːt/ — bought /bɔːt/\nНе путать с bring — brought.\n> I bought some bread. — *Я купил хлеба.*"
   },
   {
-   "front": "catch [audio](media:c7caa3b4efc4d477ed932845)",
-   "back": "caught — caught [audio](media:69e63f13b40c1185b42404c9)",
+   "front": "catch [audio](media:d2297c431a66c4bc630df196)",
+   "back": "caught — caught [audio](media:1f91939d0f3564dba969c14b)",
    "hint": "ловить · /kætʃ/",
    "extra": "caught /kɔːt/ — caught /kɔːt/\nCatch a cold — простудиться.\n> I caught the last train. — *Я успел на последний поезд.*"
   },
   {
-   "front": "choose [audio](media:4fdba26607ec22ca0f874d4d)",
-   "back": "chose — chosen [audio](media:31411658b63d8323bee0324c)",
+   "front": "choose [audio](media:8a08576c1efadac8c2df0c23)",
+   "back": "chose — chosen [audio](media:da6a5e9c7f2c5e0e78c4b28f)",
    "hint": "выбирать · /tʃuːz/",
    "extra": "chose /tʃoʊz/ — chosen /ˈtʃoʊzən/\nВ прошедшем одна o: chose.\n> Have you chosen a dish? — *Вы выбрали блюдо?*"
   },
   {
-   "front": "come [audio](media:bf590bcd091db788ed3a4f8d)",
-   "back": "came — come [audio](media:424cde352dcab9907b0b4b34)",
+   "front": "come [audio](media:c09eb38ddbc91c5088bcdd67)",
+   "back": "came — come [audio](media:7862d8c637580d2400566a29)",
    "hint": "приходить · /kʌm/",
    "extra": "came /keɪm/ — come /kʌm/\nТретья форма совпадает с первой.\n> He came home late. — *Он пришёл домой поздно.*"
   },
   {
-   "front": "cost [audio](media:cb3b333abe401201adba3717)",
-   "back": "cost — cost [audio](media:7d2530fd3e21970b5310cb7d)",
+   "front": "cost [audio](media:56fb2e463448afca3b8dab16)",
+   "back": "cost — cost [audio](media:9730d79a51dda91186bcc22a)",
    "hint": "стоить · /kɔːst/",
    "extra": "cost /kɔːst/ — cost /kɔːst/\nВсе три формы одинаковые.\n> It cost ten euros. — *Это стоило десять евро.*"
   },
   {
-   "front": "cut [audio](media:2cc83ac43fda29e1a549cfbd)",
-   "back": "cut — cut [audio](media:509eed50a002556e1b0aa324)",
+   "front": "cut [audio](media:d2634d90b4d97d5dfe58fce0)",
+   "back": "cut — cut [audio](media:d1606d74bbc1903c9ce56dde)",
    "hint": "резать · /kʌt/",
    "extra": "cut /kʌt/ — cut /kʌt/\nВсе три формы одинаковые.\n> I cut my finger. — *Я порезал палец.*"
   },
   {
-   "front": "do [audio](media:2e49f38fe9dfb63c34f8ae57)",
-   "back": "did — done [audio](media:0b82da818b7cb49bd5b83441)",
+   "front": "do [audio](media:c778896bb8ad3dc8da173659)",
+   "back": "did — done [audio](media:6abb403e33f73620a27bd0b7)",
    "hint": "делать · /duː/",
    "extra": "did /dɪd/ — done /dʌn/\nDone — ещё «готово, сделано».\n> I've done my homework. — *Я сделал домашнее задание.*"
   },
   {
-   "front": "draw [audio](media:1ab0e9405dd93a836a015f95)",
-   "back": "drew — drawn [audio](media:481321c7aa9cb5e29418c286)",
+   "front": "draw [audio](media:71214d82f6a84d0213598d64)",
+   "back": "drew — drawn [audio](media:4acc8fa148407d53949d3232)",
    "hint": "рисовать · /drɔː/",
    "extra": "drew /druː/ — drawn /drɔːn/\nСхема как у grow, know, fly.\n> She drew a cat. — *Она нарисовала кота.*"
   },
   {
-   "front": "drink [audio](media:dc6a74a4e3a8a3c8297aacbe)",
-   "back": "drank — drunk [audio](media:975a9384e93ee8eaf3d7c37e)",
+   "front": "drink [audio](media:7788488d7955a6c33c5aedd8)",
+   "back": "drank — drunk [audio](media:a0801d426e85083eebff7fe5)",
    "hint": "пить · /drɪŋk/",
    "extra": "drank /dræŋk/ — drunk /drʌŋk/\nDrunk — ещё «пьяный».\n> I drank a glass of milk. — *Я выпил стакан молока.*"
   },
   {
-   "front": "drive [audio](media:a01e7e2e8e0b8cca8fed7f8c)",
-   "back": "drove — driven [audio](media:8d728dddfc8774ed8fdf3d52)",
+   "front": "drive [audio](media:a3086fabb56135bb1f924517)",
+   "back": "drove — driven [audio](media:4b1ad53fe0cd52fdf580ef69)",
    "hint": "водить машину · /draɪv/",
    "extra": "drove /droʊv/ — driven /ˈdrɪvən/\nКак write — wrote — written.\n> We drove to the sea. — *Мы поехали на машине к морю.*"
   },
   {
-   "front": "eat [audio](media:cd0893bf9060306363a3ed46)",
-   "back": "ate — eaten [audio](media:04fb85f08dfdcfb777bfcaee)",
+   "front": "eat [audio](media:295295b5fe3a2fdcf20fc50d)",
+   "back": "ate — eaten [audio](media:1bee087aaa576c39e4405c93)",
    "hint": "есть · /iːt/",
    "extra": "ate /eɪt/ — eaten /ˈiːtən/\nAte звучит как eight /eɪt/.\n> Have you eaten? — *Ты поел?*"
   },
   {
-   "front": "fall [audio](media:d773c9cd0ad66eac1f230103)",
-   "back": "fell — fallen [audio](media:13e901db411a1aa6bb8540d7)",
+   "front": "fall [audio](media:14a86f29cfd8eaf8e2ae227b)",
+   "back": "fell — fallen [audio](media:bc10cdec565e6dbf8e9f0b9f)",
    "hint": "падать · /fɔːl/",
    "extra": "fell /fel/ — fallen /ˈfɔːlən/\nFall — ещё «осень» в американском.\n> The glass fell on the floor. — *Стакан упал на пол.*"
   },
   {
-   "front": "feel [audio](media:87c166136e05af035f33f78d)",
-   "back": "felt — felt [audio](media:8cb90cc08127554dc6630583)",
+   "front": "feel [audio](media:23c3cff7cc6ece7d22abbde6)",
+   "back": "felt — felt [audio](media:4976ffe4ab4f79c77b1639cb)",
    "hint": "чувствовать · /fiːl/",
    "extra": "felt /felt/ — felt /felt/\nНе путать с fall — fell.\n> I felt better. — *Мне стало лучше.*"
   },
   {
-   "front": "find [audio](media:2c378b16d9c59f4798c3d891)",
-   "back": "found — found [audio](media:6f5805fbfb2f8475f45be094)",
+   "front": "find [audio](media:f898bca8fb3ae66bdc3fee14)",
+   "back": "found — found [audio](media:cfa0877e19e27c0ad87d4ec0)",
    "hint": "находить · /faɪnd/",
    "extra": "found /faʊnd/ — found /faʊnd/\nFound — ещё отдельный глагол «основать».\n> I found my keys. — *Я нашёл ключи.*"
   },
   {
-   "front": "fly [audio](media:3dfdb9fde21e4c0d118d3530)",
-   "back": "flew — flown [audio](media:36f781589de791c6f50717d6)",
+   "front": "fly [audio](media:2e9bc4381f8f813eb041f331)",
+   "back": "flew — flown [audio](media:ca5bd85e723539568c164474)",
    "hint": "летать · /flaɪ/",
    "extra": "flew /fluː/ — flown /floʊn/\nСхема как у grow и know.\n> We flew to Rome. — *Мы полетели в Рим.*"
   },
   {
-   "front": "forget [audio](media:bd93c00778684a509549660c)",
-   "back": "forgot — forgotten [audio](media:9b9a7819806f2697eb18f7f9)",
+   "front": "forget [audio](media:39208c883adbc211f4d81750)",
+   "back": "forgot — forgotten [audio](media:6a86c6dcfc0c36199b4553b6)",
    "hint": "забывать · /fərˈɡet/",
    "extra": "forgot /fərˈɡɑːt/ — forgotten /fərˈɡɑːtən/\nВ третьей форме t удваивается.\n> I forgot his name. — *Я забыл, как его зовут.*"
   },
   {
-   "front": "get [audio](media:b542b642bd0e9d7e9429e308)",
-   "back": "got — got [audio](media:281a645d2a48a9981f25250a)",
+   "front": "get [audio](media:1f6d5493af1072d256c12201)",
+   "back": "got — got [audio](media:0de5843fbf28dda83246a4bd)",
    "hint": "получать · /ɡet/",
    "extra": "got /ɡɑːt/ — got /ɡɑːt/\nВ американском третья форма часто gotten.\n> I got a letter. — *Я получил письмо.*"
   },
   {
-   "front": "give [audio](media:aca8336d31b6289a700e4433)",
-   "back": "gave — given [audio](media:b0f9b5e355ab87486bd78358)",
+   "front": "give [audio](media:43fb39fd939a1c161a7d11ce)",
+   "back": "gave — given [audio](media:4203ede4b9a5e098dde0f889)",
    "hint": "давать · /ɡɪv/",
    "extra": "gave /ɡeɪv/ — given /ˈɡɪvən/\nСхема i — a — i+en.\n> He gave me a book. — *Он дал мне книгу.*"
   },
   {
-   "front": "go [audio](media:12000b24176ee386a009ea4c)",
-   "back": "went — gone [audio](media:c398b6521d418f74a4aaa609)",
+   "front": "go [audio](media:9a60f725582de7733a6bde64)",
+   "back": "went — gone [audio](media:64694971afe1673b4c459391)",
    "hint": "идти · /ɡoʊ/",
    "extra": "went /went/ — gone /ɡɔːn/\nWent — от совсем другого корня. Been тоже бывает третьей формой: I've been to Paris.\n> She has gone home. — *Она ушла домой.*"
   },
   {
-   "front": "grow [audio](media:00dddab9ba752bfbdf695bc2)",
-   "back": "grew — grown [audio](media:bd5ead2c01f0b48199ca5cc1)",
+   "front": "grow [audio](media:41aeb958e0b6268313701a2f)",
+   "back": "grew — grown [audio](media:8187d73d3f151c194c5e7dde)",
    "hint": "расти · /ɡroʊ/",
    "extra": "grew /ɡruː/ — grown /ɡroʊn/\nGrow up — вырасти, повзрослеть.\n> Tomatoes grow fast. — *Помидоры быстро растут.*"
   },
   {
-   "front": "have [audio](media:730ec7d96fcb14cfb4250b8f)",
-   "back": "had — had [audio](media:d2c7f2c0e3a4b56192b00f00)",
+   "front": "have [audio](media:e985ebc1047d9bfec0fb8130)",
+   "back": "had — had [audio](media:57d46d55aa9d42d3764694a0)",
    "hint": "иметь · /hæv/",
    "extra": "had /hæd/ — had /hæd/\nHad — и прошедшее, и третья форма.\n> We had a great time. — *Мы отлично провели время.*"
   },
   {
-   "front": "hear [audio](media:a79200e159fc71955762e610)",
-   "back": "heard — heard [audio](media:d4e237c11cd75678c56a4938)",
+   "front": "hear [audio](media:9af3695791aabd1d373b938c)",
+   "back": "heard — heard [audio](media:94e3ad719c522ffbf2399897)",
    "hint": "слышать · /hɪr/",
    "extra": "heard /hɝːd/ — heard /hɝːd/\nГласный меняется: /hɪr/ → /hɝːd/.\n> Did you hear that? — *Ты это слышал?*"
   },
   {
-   "front": "keep [audio](media:938b7d2f50a3819fad1ac5e9)",
-   "back": "kept — kept [audio](media:5e47be2a7211a9aa54255fce)",
+   "front": "keep [audio](media:0139b5e908c175428c43e382)",
+   "back": "kept — kept [audio](media:0d9408c5d271900c45b84788)",
    "hint": "держать; хранить · /kiːp/",
    "extra": "kept /kept/ — kept /kept/\nKeep doing — продолжать делать.\n> Keep the change. — *Сдачи не надо.*"
   },
   {
-   "front": "know [audio](media:9e055019fbe1e10f7c783533)",
-   "back": "knew — known [audio](media:1c43c7322f5e1864b96a60ff)",
+   "front": "know [audio](media:f8009bb8e33eba167078aa64)",
+   "back": "knew — known [audio](media:3677322d24f6bf551d56ac31)",
    "hint": "знать · /noʊ/",
    "extra": "knew /nuː/ — known /noʊn/\nk не читается во всех формах.\n> I knew it! — *Я так и знал!*"
   },
   {
-   "front": "leave [audio](media:9cf356e473e0144b15eb2ad1)",
-   "back": "left — left [audio](media:5bf7ed7405e9f21aab3f4c2b)",
+   "front": "leave [audio](media:abb12d61ad8aa31f5e4b95fc)",
+   "back": "left — left [audio](media:8af9b644a1e274f5c3e957d0)",
    "hint": "оставлять; уходить · /liːv/",
    "extra": "left /left/ — left /left/\nLeft — ещё «левый».\n> The train left at six. — *Поезд ушёл в шесть.*"
   },
   {
-   "front": "lose [audio](media:4dd5bac85202d9daddb7004c)",
-   "back": "lost — lost [audio](media:54ac7c69a490e1e9e29148ac)",
+   "front": "lose [audio](media:79bd609415fed960de6bbfae)",
+   "back": "lost — lost [audio](media:4293b85428a633f8b166c2ee)",
    "hint": "терять · /luːz/",
    "extra": "lost /lɔːst/ — lost /lɔːst/\nLose — одна o; loose /luːs/ — «свободный».\n> I lost my wallet. — *Я потерял кошелёк.*"
   },
   {
-   "front": "make [audio](media:cfa51ddba687d79a253b5325)",
-   "back": "made — made [audio](media:7c65cbf0c14c2fe348308417)",
+   "front": "make [audio](media:7acd79f69d8718be04da6bd1)",
+   "back": "made — made [audio](media:888f75d7e763e1349acbe328)",
    "hint": "делать · /meɪk/",
    "extra": "made /meɪd/ — made /meɪd/\nMade in — сделано в.\n> She made a cake. — *Она испекла торт.*"
   },
   {
-   "front": "meet [audio](media:337c9ca3985a2fe5a021feb9)",
-   "back": "met — met [audio](media:d3fe83375542a80078bf4b95)",
+   "front": "meet [audio](media:90f313a728fca18a102ce2a2)",
+   "back": "met — met [audio](media:f1fe8bac42d98c94e4e02c88)",
    "hint": "встречать · /miːt/",
    "extra": "met /met/ — met /met/\nNice to meet you — приятно познакомиться.\n> We met in Madrid. — *Мы познакомились в Мадриде.*"
   },
   {
-   "front": "pay [audio](media:7fbf66eb85ff5f44f2c8340b)",
-   "back": "paid — paid [audio](media:bac0cbed8c063258c08aa261)",
+   "front": "pay [audio](media:673d2f20941614515a62fa68)",
+   "back": "paid — paid [audio](media:2a1e58db4ccaf4fe9164fd21)",
    "hint": "платить · /peɪ/",
    "extra": "paid /peɪd/ — paid /peɪd/\nПишется paid, а не payed.\n> I paid by card. — *Я заплатил картой.*"
   },
   {
-   "front": "put [audio](media:510ff27a864b646072033b05)",
-   "back": "put — put [audio](media:5c87fd50d26fe689f5bbe22e)",
+   "front": "put [audio](media:154821a6ce4fd320857c42cf)",
+   "back": "put — put [audio](media:9bde2da5c3d9350b63857530)",
    "hint": "класть · /pʊt/",
    "extra": "put /pʊt/ — put /pʊt/\nВсе три формы одинаковые.\n> Put it on the table. — *Положи это на стол.*"
   },
   {
-   "front": "read [audio](media:1805373892d805034656cccb)",
-   "back": "read — read [audio](media:ecfbd1061bed30e0b340ddc4)",
+   "front": "read [audio](media:593670818ad62b921c3c2b17)",
+   "back": "read — read [audio](media:ce54eabd44152aee942b36c5)",
    "hint": "читать · /riːd/",
    "extra": "read /red/ — read /red/\nПишется одинаково, но в прошедшем читается /red/.\n> I read this book last year. — *Я прочитал эту книгу в прошлом году.*"
   },
   {
-   "front": "run [audio](media:02fcac49a8ae68d197d779d1)",
-   "back": "ran — run [audio](media:f93dc9304464eb75b7fcc74f)",
+   "front": "run [audio](media:fd8a36eb08a401a4417618f2)",
+   "back": "ran — run [audio](media:2ba50d0bd03c07ae866800a1)",
    "hint": "бежать · /rʌn/",
    "extra": "ran /ræn/ — run /rʌn/\nТретья форма совпадает с первой.\n> He ran to the bus. — *Он побежал к автобусу.*"
   },
   {
-   "front": "say [audio](media:7d484e4f84040402ff04e7ef)",
-   "back": "said — said [audio](media:888cbd7560cd24fe67259ba8)",
+   "front": "say [audio](media:dfdcd892c71d625a84592bda)",
+   "back": "said — said [audio](media:c4ce0827eee172073ad4f94e)",
    "hint": "сказать · /seɪ/",
    "extra": "said /sed/ — said /sed/\nSaid читается /sed/, а не /seɪd/.\n> She said hello. — *Она поздоровалась.*"
   },
   {
-   "front": "see [audio](media:d4178023e868f6445c09fb2a)",
-   "back": "saw — seen [audio](media:c7fe45801f2ac7b06e9f2d87)",
+   "front": "see [audio](media:9bd12fb23d6588da81b1c29f)",
+   "back": "saw — seen [audio](media:745e3883e10313344040d437)",
    "hint": "видеть · /siː/",
    "extra": "saw /sɔː/ — seen /siːn/\nSaw — ещё «пила».\n> Have you seen this film? — *Ты видел этот фильм?*"
   },
   {
-   "front": "sell [audio](media:b1b5f38fc5d142b72111b3dc)",
-   "back": "sold — sold [audio](media:97ee1bc23b01706462e5aa53)",
+   "front": "sell [audio](media:6e4436ebc7c45020249b8ecb)",
+   "back": "sold — sold [audio](media:3e555e5dd45e2c8fbf716bc9)",
    "hint": "продавать · /sel/",
    "extra": "sold /soʊld/ — sold /soʊld/\nКак tell — told.\n> They sold their car. — *Они продали машину.*"
   },
   {
-   "front": "send [audio](media:5fc908a8adda06e596fa2637)",
-   "back": "sent — sent [audio](media:5c3b1e320c4b0905d5d0ad11)",
+   "front": "send [audio](media:c387e9f95653ce8ae6b0f09b)",
+   "back": "sent — sent [audio](media:086e253be62846adacf80279)",
    "hint": "отправлять · /send/",
    "extra": "sent /sent/ — sent /sent/\nd меняется на t, как в spend и build.\n> I sent you an email. — *Я отправил тебе письмо.*"
   },
   {
-   "front": "sit [audio](media:61b83022134e860afbec4d60)",
-   "back": "sat — sat [audio](media:e1d6233c2219b91ad5186024)",
+   "front": "sit [audio](media:ab893dd940d065426bf8f664)",
+   "back": "sat — sat [audio](media:a95ba44df6b8bf2b5a500c26)",
    "hint": "сидеть · /sɪt/",
    "extra": "sat /sæt/ — sat /sæt/\nSit down — садиться.\n> We sat by the window. — *Мы сидели у окна.*"
   },
   {
-   "front": "sleep [audio](media:6bfa1dc6039cbd0434a8b293)",
-   "back": "slept — slept [audio](media:36cd002291c1a5f617c479b3)",
+   "front": "sleep [audio](media:d4e07b104b972605a6fcefde)",
+   "back": "slept — slept [audio](media:1493e32503257335851cd892)",
    "hint": "спать · /sliːp/",
    "extra": "slept /slept/ — slept /slept/\nКак keep — kept.\n> I slept well. — *Я хорошо спал.*"
   },
   {
-   "front": "speak [audio](media:4eb5ff75a517ec20caf230c7)",
-   "back": "spoke — spoken [audio](media:d20ae135f88677a8dc808e4d)",
+   "front": "speak [audio](media:a94d3bebf59d72c3d41c181a)",
+   "back": "spoke — spoken [audio](media:79467a60afecaa7c8493975d)",
    "hint": "говорить · /spiːk/",
    "extra": "spoke /spoʊk/ — spoken /ˈspoʊkən/\nSpeak — язык, говорить с кем-то; talk — разговаривать.\n> She spoke slowly. — *Она говорила медленно.*"
   },
   {
-   "front": "spend [audio](media:fe54fbe4c21d8199cd868a5a)",
-   "back": "spent — spent [audio](media:81ce7783d06dc5cb061286c7)",
+   "front": "spend [audio](media:e1f6a1cceb283d07873d0387)",
+   "back": "spent — spent [audio](media:c7351fde182ae3dda7f1644f)",
    "hint": "тратить · /spend/",
    "extra": "spent /spent/ — spent /spent/\nТратить и деньги, и время.\n> I spent all my money. — *Я потратил все деньги.*"
   },
   {
-   "front": "stand [audio](media:e100c1243b5988b56110e21e)",
-   "back": "stood — stood [audio](media:22fa1d12a7eb852a448a9ee8)",
+   "front": "stand [audio](media:c7772e5f2a115d6e4d005597)",
+   "back": "stood — stood [audio](media:ee105a5fb8daa96db25a1693)",
    "hint": "стоять · /stænd/",
    "extra": "stood /stʊd/ — stood /stʊd/\nUnderstand — понимать — изменяется так же.\n> He stood at the door. — *Он стоял у двери.*"
   },
   {
-   "front": "swim [audio](media:10135db8277289fc97877a87)",
-   "back": "swam — swum [audio](media:c8dff426abdad454ab22a478)",
+   "front": "swim [audio](media:04e3e4fcb73f295f10deb93d)",
+   "back": "swam — swum [audio](media:3fbb6f4e94b7b4ddf9d438f2)",
    "hint": "плавать · /swɪm/",
    "extra": "swam /swæm/ — swum /swʌm/\nСхема i — a — u, как begin и drink.\n> We swam in the sea. — *Мы плавали в море.*"
   },
   {
-   "front": "take [audio](media:a15c4e3a914046c8b5dd3d88)",
-   "back": "took — taken [audio](media:557e7dc03990c83b041601c7)",
+   "front": "take [audio](media:68309df533d5ceabceacd045)",
+   "back": "took — taken [audio](media:c768ffa37d270c25a87b9fe0)",
    "hint": "брать · /teɪk/",
    "extra": "took /tʊk/ — taken /ˈteɪkən/\nTake a photo — сфотографировать.\n> I took a taxi. — *Я взял такси.*"
   },
   {
-   "front": "teach [audio](media:8756efea7b259679dafe00c7)",
-   "back": "taught — taught [audio](media:33e93f3e97130d4747bd4656)",
+   "front": "teach [audio](media:c595d9030b0d69f635b09f42)",
+   "back": "taught — taught [audio](media:3e28096db965f18876cc94c1)",
    "hint": "учить (кого-то) · /tiːtʃ/",
    "extra": "taught /tɔːt/ — taught /tɔːt/\nTeach — учить кого-то; learn — учиться самому.\n> She taught me to swim. — *Она научила меня плавать.*"
   },
   {
-   "front": "tell [audio](media:5eb0f7ab1da95280c0c64399)",
-   "back": "told — told [audio](media:3d70191428aa1ab45e45a4d9)",
+   "front": "tell [audio](media:89dceecb80bd16292ee5cc78)",
+   "back": "told — told [audio](media:61e9ed62d832ba84d9ae0b99)",
    "hint": "рассказывать · /tel/",
    "extra": "told /toʊld/ — told /toʊld/\nКак sell — sold.\n> He told me a secret. — *Он рассказал мне секрет.*"
   },
   {
-   "front": "think [audio](media:153df74e0c8f6f3968383e23)",
-   "back": "thought — thought [audio](media:7c1729851410b023ca7b5b4f)",
+   "front": "think [audio](media:64b652ce00f1d6075fb01e36)",
+   "back": "thought — thought [audio](media:c17299d0440b86e5e36d3a46)",
    "hint": "думать · /θɪŋk/",
    "extra": "thought /θɔːt/ — thought /θɔːt/\nThought — ещё «мысль».\n> I thought so. — *Я так и думал.*"
   },
   {
-   "front": "understand [audio](media:c85ada3a92ab107ee0d4a53b)",
-   "back": "understood — understood [audio](media:5948a0815a2ef1156b016c9f)",
+   "front": "understand [audio](media:22b4c7d8df0dc37cc5a4bd3d)",
+   "back": "understood — understood [audio](media:02e20896e25b669d6e4d0555)",
    "hint": "понимать · /ˌʌndərˈstænd/",
    "extra": "understood /ˌʌndərˈstʊd/ — understood\nИзменяется как stand.\n> I understood everything. — *Я всё понял.*"
   },
   {
-   "front": "write [audio](media:d20ec62996cdbaacd1dd440e)",
-   "back": "wrote — written [audio](media:c8659c9eac481b8b702483a1)",
+   "front": "write [audio](media:d938f036b7a2556ac97e16d1)",
+   "back": "wrote — written [audio](media:d0fc782b33d6a808e4769c63)",
    "hint": "писать · /raɪt/",
    "extra": "wrote /roʊt/ — written /ˈrɪtən/\nw не читается; в written t удваивается.\n> He wrote a letter. — *Он написал письмо.*"
   }
@@ -331,437 +331,437 @@
   "file": "en-irregular.audio.mp3",
   "type": "audio/mpeg",
   "index": {
-   "4dcb949ff72ed0cf123dd78b": [
+   "32080767e9c53682bafa351f": [
     0,
-    2757
+    3357
    ],
-   "633e47c1830902f217f9deb9": [
-    2757,
+   "dc8a05288806cd48b86f4a8a": [
+    3357,
+    5277
+   ],
+   "e378c3dc11d47e3dec04f758": [
+    8634,
+    4317
+   ],
+   "fcca61f1214a9c9cb17ea6d9": [
+    12951,
     5757
    ],
-   "0b36b14eb0983cb020d8ccd4": [
-    8514,
-    4197
+   "4b662d8d481869759c510535": [
+    18708,
+    3957
    ],
-   "f619530d5e573229f3034c06": [
-    12711,
-    5517
+   "43fbd91031c39f6757f8b74e": [
+    22665,
+    5997
    ],
-   "2a6333f366b79629535f7d52": [
-    18228,
-    3717
-   ],
-   "eadf522d76fb864973705205": [
-    21945,
-    5277
-   ],
-   "f11d942d47e2c52dfc3cbc6b": [
-    27222,
-    2997
-   ],
-   "2ce1ea6a73541230f1d8d143": [
-    30219,
-    5157
-   ],
-   "496869f6a40915cbea71b80c": [
-    35376,
-    3237
-   ],
-   "8bdf7931eb6ffccc3fa7966b": [
-    38613,
-    5037
-   ],
-   "07e0c61406ee9ef7aea9aa9d": [
-    43650,
-    3717
-   ],
-   "9601de7a90afe32134480dfa": [
-    47367,
-    4557
-   ],
-   "a35b75adf914f7dbdce6fefc": [
-    51924,
+   "e7b2673b9b2284ea509463de": [
+    28662,
     3357
    ],
-   "47b75c0f0049388a8bc6b395": [
-    55281,
-    4677
-   ],
-   "c7caa3b4efc4d477ed932845": [
-    59958,
-    3477
-   ],
-   "69e63f13b40c1185b42404c9": [
-    63435,
-    4197
-   ],
-   "4fdba26607ec22ca0f874d4d": [
-    67632,
-    3717
-   ],
-   "31411658b63d8323bee0324c": [
-    71349,
+   "50cd5b96616ad95e255d99d3": [
+    32019,
     5637
    ],
-   "bf590bcd091db788ed3a4f8d": [
-    76986,
-    3597
-   ],
-   "424cde352dcab9907b0b4b34": [
-    80583,
-    5517
-   ],
-   "cb3b333abe401201adba3717": [
-    86100,
-    3717
-   ],
-   "7d2530fd3e21970b5310cb7d": [
-    89817,
-    5277
-   ],
-   "2cc83ac43fda29e1a549cfbd": [
-    95094,
-    3237
-   ],
-   "509eed50a002556e1b0aa324": [
-    98331,
-    4197
-   ],
-   "2e49f38fe9dfb63c34f8ae57": [
-    102528,
-    2997
-   ],
-   "0b82da818b7cb49bd5b83441": [
-    105525,
-    4557
-   ],
-   "1ab0e9405dd93a836a015f95": [
-    110082,
+   "7d4fa744db7b74012cfcd466": [
+    37656,
     3477
    ],
-   "481321c7aa9cb5e29418c286": [
-    113559,
-    4797
-   ],
-   "dc6a74a4e3a8a3c8297aacbe": [
-    118356,
-    3117
-   ],
-   "975a9384e93ee8eaf3d7c37e": [
-    121473,
-    4917
-   ],
-   "a01e7e2e8e0b8cca8fed7f8c": [
-    126390,
-    3477
-   ],
-   "8d728dddfc8774ed8fdf3d52": [
-    129867,
-    5157
-   ],
-   "cd0893bf9060306363a3ed46": [
-    135024,
-    3117
-   ],
-   "04fb85f08dfdcfb777bfcaee": [
-    138141,
-    4197
-   ],
-   "d773c9cd0ad66eac1f230103": [
-    142338,
-    2997
-   ],
-   "13e901db411a1aa6bb8540d7": [
-    145335,
-    5157
-   ],
-   "87c166136e05af035f33f78d": [
-    150492,
-    3957
-   ],
-   "8cb90cc08127554dc6630583": [
-    154449,
-    4317
-   ],
-   "2c378b16d9c59f4798c3d891": [
-    158766,
-    3357
-   ],
-   "6f5805fbfb2f8475f45be094": [
-    162123,
-    4437
-   ],
-   "3dfdb9fde21e4c0d118d3530": [
-    166560,
-    3597
-   ],
-   "36f781589de791c6f50717d6": [
-    170157,
-    5037
-   ],
-   "bd93c00778684a509549660c": [
-    175194,
-    3717
-   ],
-   "9b9a7819806f2697eb18f7f9": [
-    178911,
-    5517
-   ],
-   "b542b642bd0e9d7e9429e308": [
-    184428,
-    2757
-   ],
-   "281a645d2a48a9981f25250a": [
-    187185,
-    4557
-   ],
-   "aca8336d31b6289a700e4433": [
-    191742,
-    3597
-   ],
-   "b0f9b5e355ab87486bd78358": [
-    195339,
-    4797
-   ],
-   "12000b24176ee386a009ea4c": [
-    200136,
-    3357
-   ],
-   "c398b6521d418f74a4aaa609": [
-    203493,
-    4797
-   ],
-   "00dddab9ba752bfbdf695bc2": [
-    208290,
-    3357
-   ],
-   "bd5ead2c01f0b48199ca5cc1": [
-    211647,
-    4797
-   ],
-   "730ec7d96fcb14cfb4250b8f": [
-    216444,
-    3837
-   ],
-   "d2c7f2c0e3a4b56192b00f00": [
-    220281,
-    4437
-   ],
-   "a79200e159fc71955762e610": [
-    224718,
-    3237
-   ],
-   "d4e237c11cd75678c56a4938": [
-    227955,
-    4797
-   ],
-   "938b7d2f50a3819fad1ac5e9": [
-    232752,
-    3357
-   ],
-   "5e47be2a7211a9aa54255fce": [
-    236109,
-    4797
-   ],
-   "9e055019fbe1e10f7c783533": [
-    240906,
-    3477
-   ],
-   "1c43c7322f5e1864b96a60ff": [
-    244383,
-    4557
-   ],
-   "9cf356e473e0144b15eb2ad1": [
-    248940,
-    4077
-   ],
-   "5bf7ed7405e9f21aab3f4c2b": [
-    253017,
-    4797
-   ],
-   "4dd5bac85202d9daddb7004c": [
-    257814,
-    3717
-   ],
-   "54ac7c69a490e1e9e29148ac": [
-    261531,
-    5517
-   ],
-   "cfa51ddba687d79a253b5325": [
-    267048,
-    2997
-   ],
-   "7c65cbf0c14c2fe348308417": [
-    270045,
-    5157
-   ],
-   "337c9ca3985a2fe5a021feb9": [
-    275202,
-    2877
-   ],
-   "d3fe83375542a80078bf4b95": [
-    278079,
-    4317
-   ],
-   "7fbf66eb85ff5f44f2c8340b": [
-    282396,
-    3957
-   ],
-   "bac0cbed8c063258c08aa261": [
-    286353,
-    4917
-   ],
-   "510ff27a864b646072033b05": [
-    291270,
-    3357
-   ],
-   "5c87fd50d26fe689f5bbe22e": [
-    294627,
-    4317
-   ],
-   "1805373892d805034656cccb": [
-    298944,
-    3477
-   ],
-   "ecfbd1061bed30e0b340ddc4": [
-    302421,
-    4197
-   ],
-   "02fcac49a8ae68d197d779d1": [
-    306618,
-    3237
-   ],
-   "f93dc9304464eb75b7fcc74f": [
-    309855,
-    4917
-   ],
-   "7d484e4f84040402ff04e7ef": [
-    314772,
-    3237
-   ],
-   "888cbd7560cd24fe67259ba8": [
-    318009,
-    4557
-   ],
-   "d4178023e868f6445c09fb2a": [
-    322566,
-    3117
-   ],
-   "c7fe45801f2ac7b06e9f2d87": [
-    325683,
-    5157
-   ],
-   "b1b5f38fc5d142b72111b3dc": [
-    330840,
-    3357
-   ],
-   "97ee1bc23b01706462e5aa53": [
-    334197,
+   "e6b022798a8258071cd676d6": [
+    41133,
     5397
    ],
-   "5fc908a8adda06e596fa2637": [
-    339594,
-    3597
-   ],
-   "5c3b1e320c4b0905d5d0ad11": [
-    343191,
-    4197
-   ],
-   "61b83022134e860afbec4d60": [
-    347388,
-    2877
-   ],
-   "e1d6233c2219b91ad5186024": [
-    350265,
-    4557
-   ],
-   "6bfa1dc6039cbd0434a8b293": [
-    354822,
-    3477
-   ],
-   "36cd002291c1a5f617c479b3": [
-    358299,
-    5637
-   ],
-   "4eb5ff75a517ec20caf230c7": [
-    363936,
-    3117
-   ],
-   "d20ae135f88677a8dc808e4d": [
-    367053,
-    4917
-   ],
-   "fe54fbe4c21d8199cd868a5a": [
-    371970,
-    3357
-   ],
-   "81ce7783d06dc5cb061286c7": [
-    375327,
-    4437
-   ],
-   "e100c1243b5988b56110e21e": [
-    379764,
+   "591cecd0fbdb1bcfb43b6a04": [
+    46530,
     3837
    ],
-   "22fa1d12a7eb852a448a9ee8": [
-    383601,
+   "014871b9a8383dfeffea26c8": [
+    50367,
+    5397
+   ],
+   "58634271d4351a4f30bd108b": [
+    55764,
+    3837
+   ],
+   "9ddd27be247277744256bf23": [
+    59601,
     4917
    ],
-   "10135db8277289fc97877a87": [
-    388518,
+   "d2297c431a66c4bc630df196": [
+    64518,
     3957
    ],
-   "c8dff426abdad454ab22a478": [
-    392475,
+   "1f91939d0f3564dba969c14b": [
+    68475,
+    4917
+   ],
+   "8a08576c1efadac8c2df0c23": [
+    73392,
+    3717
+   ],
+   "da6a5e9c7f2c5e0e78c4b28f": [
+    77109,
+    6117
+   ],
+   "c09eb38ddbc91c5088bcdd67": [
+    83226,
+    3717
+   ],
+   "7862d8c637580d2400566a29": [
+    86943,
+    5037
+   ],
+   "56fb2e463448afca3b8dab16": [
+    91980,
+    3957
+   ],
+   "9730d79a51dda91186bcc22a": [
+    95937,
+    5397
+   ],
+   "d2634d90b4d97d5dfe58fce0": [
+    101334,
+    3477
+   ],
+   "d1606d74bbc1903c9ce56dde": [
+    104811,
+    4677
+   ],
+   "c778896bb8ad3dc8da173659": [
+    109488,
+    3357
+   ],
+   "6abb403e33f73620a27bd0b7": [
+    112845,
+    4917
+   ],
+   "71214d82f6a84d0213598d64": [
+    117762,
+    3957
+   ],
+   "4acc8fa148407d53949d3232": [
+    121719,
     5277
    ],
-   "a15c4e3a914046c8b5dd3d88": [
-    397752,
-    3117
+   "7788488d7955a6c33c5aedd8": [
+    126996,
+    3477
    ],
-   "557e7dc03990c83b041601c7": [
-    400869,
+   "a0801d426e85083eebff7fe5": [
+    130473,
+    5277
+   ],
+   "a3086fabb56135bb1f924517": [
+    135750,
+    3957
+   ],
+   "4b1ad53fe0cd52fdf580ef69": [
+    139707,
+    5277
+   ],
+   "295295b5fe3a2fdcf20fc50d": [
+    144984,
+    3597
+   ],
+   "1bee087aaa576c39e4405c93": [
+    148581,
+    4677
+   ],
+   "14a86f29cfd8eaf8e2ae227b": [
+    153258,
+    3957
+   ],
+   "bc10cdec565e6dbf8e9f0b9f": [
+    157215,
+    5157
+   ],
+   "23c3cff7cc6ece7d22abbde6": [
+    162372,
+    3717
+   ],
+   "4976ffe4ab4f79c77b1639cb": [
+    166089,
+    4917
+   ],
+   "f898bca8fb3ae66bdc3fee14": [
+    171006,
+    3837
+   ],
+   "cfa0877e19e27c0ad87d4ec0": [
+    174843,
+    5037
+   ],
+   "2e9bc4381f8f813eb041f331": [
+    179880,
+    3717
+   ],
+   "ca5bd85e723539568c164474": [
+    183597,
+    4917
+   ],
+   "39208c883adbc211f4d81750": [
+    188514,
+    3837
+   ],
+   "6a86c6dcfc0c36199b4553b6": [
+    192351,
+    6237
+   ],
+   "1f6d5493af1072d256c12201": [
+    198588,
+    3357
+   ],
+   "0de5843fbf28dda83246a4bd": [
+    201945,
     4797
    ],
-   "8756efea7b259679dafe00c7": [
-    405666,
-    3357
+   "43fb39fd939a1c161a7d11ce": [
+    206742,
+    3837
    ],
-   "33e93f3e97130d4747bd4656": [
-    409023,
-    4077
-   ],
-   "5eb0f7ab1da95280c0c64399": [
-    413100,
-    3357
-   ],
-   "3d70191428aa1ab45e45a4d9": [
-    416457,
+   "4203ede4b9a5e098dde0f889": [
+    210579,
     5037
    ],
-   "153df74e0c8f6f3968383e23": [
-    421494,
+   "9a60f725582de7733a6bde64": [
+    215616,
     3237
    ],
-   "7c1729851410b023ca7b5b4f": [
-    424731,
-    5037
+   "64694971afe1673b4c459391": [
+    218853,
+    5397
    ],
-   "c85ada3a92ab107ee0d4a53b": [
-    429768,
+   "41aeb958e0b6268313701a2f": [
+    224250,
+    3597
+   ],
+   "8187d73d3f151c194c5e7dde": [
+    227847,
+    4557
+   ],
+   "e985ebc1047d9bfec0fb8130": [
+    232404,
+    3957
+   ],
+   "57d46d55aa9d42d3764694a0": [
+    236361,
+    4317
+   ],
+   "9af3695791aabd1d373b938c": [
+    240678,
+    3477
+   ],
+   "94e3ad719c522ffbf2399897": [
+    244155,
+    4797
+   ],
+   "0139b5e908c175428c43e382": [
+    248952,
+    3357
+   ],
+   "0d9408c5d271900c45b84788": [
+    252309,
     4917
    ],
-   "5948a0815a2ef1156b016c9f": [
-    434685,
+   "f8009bb8e33eba167078aa64": [
+    257226,
+    4197
+   ],
+   "3677322d24f6bf551d56ac31": [
+    261423,
+    5517
+   ],
+   "abb12d61ad8aa31f5e4b95fc": [
+    266940,
+    3957
+   ],
+   "8af9b644a1e274f5c3e957d0": [
+    270897,
+    5757
+   ],
+   "79bd609415fed960de6bbfae": [
+    276654,
+    4317
+   ],
+   "4293b85428a633f8b166c2ee": [
+    280971,
+    6117
+   ],
+   "7acd79f69d8718be04da6bd1": [
+    287088,
+    3837
+   ],
+   "888f75d7e763e1349acbe328": [
+    290925,
+    5157
+   ],
+   "90f313a728fca18a102ce2a2": [
+    296082,
+    3597
+   ],
+   "f1fe8bac42d98c94e4e02c88": [
+    299679,
+    4797
+   ],
+   "673d2f20941614515a62fa68": [
+    304476,
+    3477
+   ],
+   "2a1e58db4ccaf4fe9164fd21": [
+    307953,
+    5397
+   ],
+   "154821a6ce4fd320857c42cf": [
+    313350,
+    3357
+   ],
+   "9bde2da5c3d9350b63857530": [
+    316707,
+    4437
+   ],
+   "593670818ad62b921c3c2b17": [
+    321144,
+    3837
+   ],
+   "ce54eabd44152aee942b36c5": [
+    324981,
+    4437
+   ],
+   "fd8a36eb08a401a4417618f2": [
+    329418,
+    3717
+   ],
+   "2ba50d0bd03c07ae866800a1": [
+    333135,
+    5037
+   ],
+   "dfdcd892c71d625a84592bda": [
+    338172,
+    3597
+   ],
+   "c4ce0827eee172073ad4f94e": [
+    341769,
+    4557
+   ],
+   "9bd12fb23d6588da81b1c29f": [
+    346326,
+    3357
+   ],
+   "745e3883e10313344040d437": [
+    349683,
+    5037
+   ],
+   "6e4436ebc7c45020249b8ecb": [
+    354720,
+    3237
+   ],
+   "3e555e5dd45e2c8fbf716bc9": [
+    357957,
+    5397
+   ],
+   "c387e9f95653ce8ae6b0f09b": [
+    363354,
+    3717
+   ],
+   "086e253be62846adacf80279": [
+    367071,
+    4437
+   ],
+   "ab893dd940d065426bf8f664": [
+    371508,
+    2997
+   ],
+   "a95ba44df6b8bf2b5a500c26": [
+    374505,
+    4797
+   ],
+   "d4e07b104b972605a6fcefde": [
+    379302,
+    3357
+   ],
+   "1493e32503257335851cd892": [
+    382659,
+    5517
+   ],
+   "a94d3bebf59d72c3d41c181a": [
+    388176,
+    3357
+   ],
+   "79467a60afecaa7c8493975d": [
+    391533,
+    5277
+   ],
+   "e1f6a1cceb283d07873d0387": [
+    396810,
+    3597
+   ],
+   "c7351fde182ae3dda7f1644f": [
+    400407,
+    5277
+   ],
+   "c7772e5f2a115d6e4d005597": [
+    405684,
+    3837
+   ],
+   "ee105a5fb8daa96db25a1693": [
+    409521,
+    5397
+   ],
+   "04e3e4fcb73f295f10deb93d": [
+    414918,
+    3357
+   ],
+   "3fbb6f4e94b7b4ddf9d438f2": [
+    418275,
+    5277
+   ],
+   "68309df533d5ceabceacd045": [
+    423552,
+    3837
+   ],
+   "c768ffa37d270c25a87b9fe0": [
+    427389,
+    4917
+   ],
+   "c595d9030b0d69f635b09f42": [
+    432306,
+    3357
+   ],
+   "3e28096db965f18876cc94c1": [
+    435663,
+    4437
+   ],
+   "89dceecb80bd16292ee5cc78": [
+    440100,
+    3357
+   ],
+   "61e9ed62d832ba84d9ae0b99": [
+    443457,
+    5397
+   ],
+   "64b652ce00f1d6075fb01e36": [
+    448854,
+    3597
+   ],
+   "c17299d0440b86e5e36d3a46": [
+    452451,
+    4677
+   ],
+   "22b4c7d8df0dc37cc5a4bd3d": [
+    457128,
+    5637
+   ],
+   "02e20896e25b669d6e4d0555": [
+    462765,
     8157
    ],
-   "d20ec62996cdbaacd1dd440e": [
-    442842,
-    3237
+   "d938f036b7a2556ac97e16d1": [
+    470922,
+    3717
    ],
-   "c8659c9eac481b8b702483a1": [
-    446079,
-    4917
+   "d0fc782b33d6a808e4769c63": [
+    474639,
+    5157
    ]
   }
  }

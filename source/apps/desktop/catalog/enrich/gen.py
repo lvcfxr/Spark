@@ -11,29 +11,59 @@ from data_misc import CAP, EL
 CAT = sys.argv[1]
 HERE = os.path.dirname(os.path.abspath(__file__))
 PIPER = f"{HERE}/piper_amd64/piper/piper"
-VOICES = {
-    "en": (f"{HERE}/voice-en-us-lessac-medium/en-us-lessac-medium.onnx", 1.08),
-    "es": (f"{HERE}/voice-es-carlfm-x-low/es-carlfm-x-low.onnx", 1.1),
-    "de": (f"{HERE}/voice-de-thorsten-low/de-thorsten-low.onnx", 1.05),
-    "ru": (f"{HERE}/voice-ru-irinia-medium/ru-irinia-medium.onnx", 1.08),
+VOICES = {  # piper: (onnx, скорость); vits: Coqui VITS (испанский и немецкий заметно чище коротких слов у piper)
+    "en": ("piper", f"{HERE}/voice-en-us-lessac-medium/en-us-lessac-medium.onnx", 1.08),
+    "es": ("vits", f"{HERE}/es-css10/tts_models--es--css10--vits", 1.0),
+    "de": ("vits", f"{HERE}/de-vits/tts_models--de--thorsten--vits", 1.0),
+    "ru": ("piper", f"{HERE}/voice-ru-irinia-medium/ru-irinia-medium.onnx", 1.08),
 }
+VITS_PY = os.environ.get("VITS_PY", "/home/claude/ctts/bin/python")
 CACHE = f"{HERE}/cache"; os.makedirs(CACHE, exist_ok=True)
 
-def tts(lang: str, text: str) -> bytes:
-    model, speed = VOICES[lang]
-    tag = hashlib.sha1(f"{lang}|{speed}|{text}".encode()).hexdigest()[:16]
-    mp3 = f"{CACHE}/{tag}.mp3"
-    if not os.path.exists(mp3):
+# тишину срезаем осторожно (-60 dB и запас 60 мс), иначе тихие «с», «ш», «ф» в начале слова пропадают
+AF = ("silenceremove=start_periods=1:start_threshold=-60dB:start_silence=0.06,areverse,"
+      "silenceremove=start_periods=1:start_threshold=-60dB:start_silence=0.1,areverse,"
+      "apad=pad_dur=0.1,loudnorm=I=-16:TP=-1.5")
+
+def sentence(text: str) -> str:  # VITS обучен на предложениях: заглавная буква и точка дают чистое произношение
+    t = text.strip()
+    return (t[0].upper() + t[1:]) + ","   # с запятой модель не тянет и не «договаривает» конец слова
+
+def cache_path(lang, text):
+    eng, model, speed = VOICES[lang]
+    if eng == "piper": return f"{CACHE}/" + hashlib.sha1(f"{lang}|{eng}|{model}|{speed}|v2|{text}".encode()).hexdigest()[:16] + ".wav"
+    tag = hashlib.sha1(f"{lang}|{eng}|{model}|{speed}|v4|{text}".encode()).hexdigest()[:16]
+    return f"{CACHE}/{tag}.wav"
+
+def to_mp3(wav, mp3):
+    subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", wav, "-af", AF, "-ac", "1", "-ar", "24000",
+                    "-c:a", "libmp3lame", "-b:a", "40k", mp3], check=True)
+
+def prefetch(items):
+    """VITS: одна загрузка модели на язык, все фразы пакетом."""
+    by = {}
+    for lang, text in items:
+        if VOICES[lang][0] == "vits" and not os.path.exists(cache_path(lang, text)): by.setdefault(lang, set()).add(text)
+    for lang, texts in by.items():
         with tempfile.TemporaryDirectory() as td:
-            wav = f"{td}/a.wav"
+            jobs = [(t, f"{td}/{i}.wav") for i, t in enumerate(sorted(texts))]
+            inp = "".join(f"{sentence(t)}\t{w}\n" for t, w in jobs)
+            r = subprocess.run([VITS_PY, f"{HERE}/vits.py", VOICES[lang][1]], input=inp.encode(), check=True, capture_output=True)
+            open(f"{HERE}/vits-{lang}.log", "w").write(r.stdout.decode())
+            for t, w in jobs: os.replace(w, cache_path(lang, t))
+        print(f"vits {lang}: {len(texts)} clips")
+
+def tts(lang: str, text: str) -> bytes:
+    eng, model, speed = VOICES[lang]
+    wav = cache_path(lang, text)
+    if not os.path.exists(wav):
+        if eng == "vits": prefetch([(lang, text)])
+        else:
             subprocess.run([PIPER, "-m", model, "-f", wav, "--length_scale", str(speed), "--sentence_silence", "0.25"],
                            input=text.encode(), check=True, capture_output=True)
-            af = ("silenceremove=start_periods=1:start_threshold=-45dB,areverse,"
-                  "silenceremove=start_periods=1:start_threshold=-45dB,areverse,"
-                  "adelay=60,apad=pad_dur=0.15,loudnorm=I=-16:TP=-1.5")
-            subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", wav, "-af", af, "-ac", "1", "-ar", "24000",
-                            "-c:a", "libmp3lame", "-b:a", "40k", mp3], check=True)
-    return open(mp3, "rb").read()
+    with tempfile.TemporaryDirectory() as td:
+        to_mp3(wav, f"{td}/a.mp3")
+        return open(f"{td}/a.mp3", "rb").read()
 
 def key(b: bytes) -> str:  # same as media.ts: SHA-256 hex, first 24 chars
     return hashlib.sha256(b).hexdigest()[:24]
@@ -70,7 +100,7 @@ def plain(s):  # strip earlier audio markers if the script is re-run
     import re
     return re.sub(r"\s*\[audio\]\(media:[0-9a-f]+\)", "", s or "").strip()
 
-V = 2
+V = 3
 rows = []
 for c in load("en-basics"):
     w = plain(c["front"]); ipa, note, e, tr = EN[w]
@@ -86,6 +116,7 @@ for c in load("en-irregular"):
                  "front_tts": ("en", w), "back_tts": ("en", say)})
 build("en-irregular", V, rows)
 
+prefetch([("es", w) for w in ES] + [("de", w) for w in DE])
 for deck_id, data, lang in (("es-basics", ES, "es"), ("de-basics", DE, "de")):
     rows = []
     for c in load(deck_id):

@@ -13,7 +13,7 @@ import {
   addToHomeScreen, checkHomeScreen, homeScreenSupported, onHomeScreenAdded, paintTelegramChrome, tgColorScheme, closingConfirmation, haptic, initTelegram, inTelegram, loadTelegram, openExternal, setBackButton, tgInitData, tgUser,
 } from "./tg";
 import { answerVariants, clozeFace, clozeNumbers, esc, fmt, fmtDur, isCorrect, mediaRefs, norm, stripMedia } from "./format";
-import { fillIcons, ic, sparkMark } from "./icons";
+import { fillIcons, ic, sparkMark, streakLevel, streakMark } from "./icons";
 import { TIPS } from "./tips";
 import { detectLang, getLang, setLang, t, translateStatic, type Lang } from "./i18n";
 import { AUDIO_RE, IMAGE_RE, LIMITS, VIDEO_RE, allMediaKeys, getMediaBlob, hydrateMedia, mediaDuration, mediaUrl, mimeOf, playAudio, putLocal, putMedia, setBundledMedia, setMediaSync, shrinkImage } from "./media";
@@ -54,10 +54,7 @@ function dayStreak() {
   const todayCount = store.reviews.filter((r) => dayKey(r.ts) === today).length;
   return { streak, best, today: todayCount, studiedToday: days.has(today) };
 }
-const DAY_TIERS = [0, 1, 3, 7, 14, 30, 100];
-const COMBO_TIERS = [0, 3, 5, 10, 20, 30, 50];
-const MILESTONES = [5, 10, 20, 30, 50, 75, 100, 150, 200, 300];
-const tierOf = (n: number, tiers: number[]) => tiers.reduce((acc, v, i) => (n >= v ? i : acc), 0);
+const MILESTONES = [3, 5, 10, 15, 20, 25, 30, 40, 50, 75, 100, 150, 200, 300];
 
 function dayStart(ts: number): number {
   const d = new Date(ts - DAY_START_HOUR * 3600_000);
@@ -261,14 +258,14 @@ function renderStreak(show: boolean) {
   if (!host) return;
   const st = dayStreak();
   if (!show && !st.best) { host.innerHTML = ""; return; }
-  const tier = tierOf(st.streak, DAY_TIERS);
+  const tier = streakLevel(st.streak);
   const todayK = dayKey(Date.now());
   let celebrate = "";
   try { if (st.studiedToday && !S.review && localStorage.getItem("spark.streakSeen") !== todayK) { celebrate = "celebrate"; localStorage.setItem("spark.streakSeen", todayK); } } catch { /* без хранилища — без анимации */ }
   const sub = st.studiedToday ? t("Повторений сегодня: {n}", { n: st.today })
     : st.streak > 0 ? t("Позанимайтесь сегодня, чтобы не прервать серию") : t("Начните серию — позанимайтесь сегодня");
-  host.innerHTML = `<div class="streak-card d${tier} ${st.studiedToday ? "" : "pending"} ${celebrate}" data-a="stats" title="${t("Статистика")}">
-    <div class="sc-ic">${sparkMark("big")}</div>
+  host.innerHTML = `<div class="streak-card lv${tier} ${st.studiedToday ? "" : "pending"} ${celebrate}" data-a="stats" title="${t("Статистика")}">
+    <div class="sc-ic">${streakMark(st.studiedToday ? tier : 0, "big")}</div>
     <div class="sc-main"><b>${t("{n} дн. подряд", { n: st.streak })}</b><span>${sub}</span></div>
     ${st.best > st.streak ? `<div class="sc-best">${ic("trophy", "tiny")} ${st.best}</div>` : ""}</div>`;
 }
@@ -632,7 +629,7 @@ function renderReview() {
   const timer = manual ? "" : `<div class="tm"><div class="tm-bar"><i id="rv-bar"></i></div><span id="rv-time" class="muted"></span></div>`;
   const top = `<div class="rv-top"><button class="icon-btn" data-a="rv-close" title="${t("Закрыть")} (Esc)">${ic("close")}</button>
     <div class="t">${esc(deck?.name ?? t("Все карточки"))}<div class="muted" style="font-weight:400;font-size:12px"><span style="color:var(--accent)">${counts.n}</span> · <span style="color:var(--bad)">${counts.l}</span> · <span style="color:var(--good)">${counts.r}</span></div></div>
-    <div class="combo t${tierOf(r.combo, COMBO_TIERS)} ${r.bump ?? ""}" title="${t("Серия правильных ответов подряд")}">${sparkMark()}<b>${r.combo}</b></div>
+    <div class="combo lv${streakLevel(r.combo)} ${r.bump ?? ""}" title="${t("Серия правильных ответов подряд")}">${streakMark(streakLevel(r.combo))}<b>${r.combo}</b></div>
     ${r.cardId ? `<button class="icon-btn rv-att" data-a="rv-attach" title="${t("Добавить к карточке картинку, видео или звук")}">${ic("clip")}</button>` : ""}
     <button class="kbd-toggle ${typedNow ? "on" : ""}" data-a="rv-typed" title="${t("Ввод ответа с клавиатуры: переход без Enter при верном слове")}">${ic("keyboard")}<span class="lbl"> ${t("Ввод")}: ${typedNow ? t("вкл") : t("выкл")}</span></button>
     <svg class="ring" viewBox="0 0 38 38"><circle class="bg" cx="19" cy="19" r="17"/><circle class="fg" cx="19" cy="19" r="17" stroke-dasharray="${C}" stroke-dashoffset="${C * (1 - frac)}"/></svg></div>`;
@@ -641,7 +638,7 @@ function renderReview() {
     el.innerHTML = top + `<div class="rv-body"><div class="rv-done"><div class="em done-ic">${ic("check-circle")}</div>
       <h2>${r.done ? t("Отличная работа!") : t("На сегодня всё")}</h2>
       <p class="muted">${r.done ? t("Повторено карточек: {n}", { n: r.done }) : t("Нет карточек к повторению.")}</p>
-      ${r.best >= 3 ? `<p class="best-combo t${tierOf(r.best, COMBO_TIERS)}">${ic("trophy")} ${t("Лучшая серия: {n} правильных подряд", { n: r.best })}</p>` : ""}
+      ${r.best >= 3 ? `<p class="best-combo lv${streakLevel(r.best)}">${ic("trophy")} ${t("Лучшая серия: {n} правильных подряд", { n: r.best })}</p>` : ""}
       <button class="btn big" data-a="rv-close">${t("Готово")}</button></div></div>`;
     return;
   }
@@ -680,11 +677,11 @@ function renderReview() {
 function comboEffects(el: HTMLElement, r: Review) {
   r.bump = null;
   if (!r.milestone) return;
-  const n = r.milestone, tier = tierOf(n, COMBO_TIERS);
+  const n = r.milestone, tier = streakLevel(n);
   r.milestone = null;
   const parts = Array.from({ length: 18 }, (_, i) => `<i style="--a:${(i * 360) / 18 + (Math.random() * 14 - 7)}deg;--d:${70 + Math.random() * 70}px;--s:${0.6 + Math.random() * 0.7}"></i>`).join("");
   const box = document.createElement("div");
-  box.className = `milestone t${tier}`;
+  box.className = `milestone lv${tier}`;
   box.innerHTML = `<div class="ms-burst">${parts}</div><div class="ms-n">${n}</div><div class="ms-t">${t("правильных подряд!")}</div>`;
   el.appendChild(box);
   setTimeout(() => box.remove(), 1700);
@@ -935,8 +932,10 @@ async function addCatalogDeck() {
       // дополнить уже добавленную карточку: звук, произношение, пояснение — правки пользователя не трогаем
       let ch = false;
       const up = (f: "front" | "back" | "hint" | "extra", v: string | undefined, ok: boolean) => { if (v && ok && cur[f] !== v) { store.set("card", cur.id, f, v); ch = true; } };
-      up("front", c.front, !mediaRefs(cur.front).length);
-      up("back", c.back, !mediaRefs(cur.back).length);
+      // звук ставим, если его нет, или меняем, если это наш прежний звук из каталога («слово [audio](media:…)» через пробел)
+      const ours = (v: string) => !mediaRefs(v).length || /^[^\n]* \[audio\]\(media:[0-9a-f]+\)$/.test(v);
+      up("front", c.front, ours(cur.front));
+      up("back", c.back, ours(cur.back));
       up("hint", c.hint, !cur.hint || (c.hint ?? "").includes(cur.hint));
       up("extra", c.extra, !cur.extra);
       if (ch) updated++;
@@ -1150,7 +1149,7 @@ function renderModal() {
     const fmax = Math.max(1, ...forecast);
     const seg = (n: number, c: string, l: string) => n ? `<i style="flex:${n};background:${c}" title="${l}: ${n}"></i>` : "";
     el.innerHTML = `<div class="sheet"><h2>${t("Статистика")}</h2><div class="stats3">
-      <div><b>${per.get(today) ?? 0}</b><span>${t("сегодня")}</span></div><div class="stat-streak d${tierOf(streak, DAY_TIERS)}"><b>${streak} ${sparkMark("inline")}</b><span>${t("дней подряд")}</span></div><div><b>${ret == null ? "—" : ret + "%"}</b><span>${t("удержание, 30 дн")}</span></div>
+      <div><b>${per.get(today) ?? 0}</b><span>${t("сегодня")}</span></div><div class="stat-streak lv${streakLevel(streak)}"><b>${streak} ${streakMark(streakLevel(streak), "inline")}</b><span>${t("дней подряд")}</span></div><div><b>${ret == null ? "—" : ret + "%"}</b><span>${t("удержание, 30 дн")}</span></div>
       <div><b>${cards.length}</b><span>${t("карточек")}</span></div><div><b>${nMature}</b><span>${t("зрелых (21+ дн)")}</span></div><div><b>${store.reviews.length}</b><span>${t("всего повторов")}</span></div></div>
       <div class="sec-t">${t("Активность")}</div><div class="heat">${cells.join("")}</div>
       <div class="sec-t">${t("Состав коллекции")}</div><div class="stack">${seg(nNew, "#8e8e93", t("Новые"))}${seg(nLearn, "#ff9500", t("Изучаются"))}${seg(nYoung, "#3390ec", t("Молодые"))}${seg(nMature, "#34c759", t("Зрелые"))}</div>
@@ -1679,7 +1678,7 @@ async function boot() {
     for (const [key, blob] of all) await putLocal(key, blob).catch(() => {});
     return all.get(k) ?? null;
   });
-  (window as unknown as { __spark: unknown }).__spark = { store, S, render, sync, inTelegram, t };
+  (window as unknown as { __spark: unknown }).__spark = { store, S, render, sync, inTelegram, t, sparkMark, streakMark };
   (window as unknown as { __recall: unknown }).__recall = (window as unknown as { __spark: unknown }).__spark;
   render();
   sync.startBackground();
