@@ -319,3 +319,63 @@ details.adv { margin: 4px 2px 10px; } details.adv summary { cursor: pointer; col
   .chk > .muted { flex-basis: 100%; padding-left: 25px; margin-top: -4px; }
   #decks .welcome { padding: 18px 8px; }
 }
+
+/* ================= иконки ================= */
+svg.i { width: 20px; height: 20px; flex: none; vertical-align: -4px; }
+.icon-btn svg.i { width: 21px; height: 21px; vertical-align: 0; }
+.side-foot .ic svg.i { width: 22px; height: 22px; }
+.side-foot button { color: var(--muted); } .side-foot button:hover { color: var(--accent); }
+.btn svg.i { width: 18px; height: 18px; margin-right: 2px; vertical-align: -4px; }
+.tbb svg.i { width: 16px; height: 16px; vertical-align: -3px; }
+svg.i.tiny { width: 13px; height: 13px; vertical-align: -2px; }
+svg.i.inline { width: 22px; height: 22px; vertical-align: -3px; color: var(--warn); }
+svg.i.row-ic { width: 17px; height: 17px; vertical-align: -3px; opacity: .85; }
+.tiny-ic svg.i { width: 14px; height: 14px; vertical-align: -2px; }
+.card-row .st { display: inline-flex; gap: 3px; align-items: center; }
+.empty .em svg.i { width: 42px; height: 42px; color: var(--muted); opacity: .7; }
+.done-ic svg.i { width: 64px; height: 64px; color: var(--good); stroke-width: 1.5; }
+.tile-em svg.i, .d-em svg.i { width: 26px; height: 26px; color: var(--accent); }
+.d-em svg.i { width: 36px; height: 36px; }
+.snd svg.i { width: 20px; height: 20px; color: var(--accent); }
+.kbd-toggle svg.i { width: 17px; height: 17px; vertical-align: -4px; }
+.rv-att { margin-right: 2px; }
+.sync-ind.s-idle { color: var(--good); }
+/* скорость ответа: цветная точка вместо смайлика */
+.chip .dot { display: inline-block; width: 8px; height: 8px; border-radius: 50%; background: currentColor; margin-right: 7px; vertical-align: 1px; }
+/* вкладки каталога */
+.br-tabs button { display: inline-flex; align-items: center; gap: 6px; }
+.br-tabs svg.i { width: 16px; height: 16px; }
+/* сообщество */
+.share-card { display: flex; align-items: center; gap: 14px; background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 14px 16px; margin: 4px 0 10px; }
+.share-ic { width: 44px; height: 44px; border-radius: 12px; display: grid; place-items: center; background: color-mix(in srgb, var(--accent) 14%, transparent); color: var(--accent); flex: none; }
+.share-main { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 3px; } .share-main span { font-size: 13px; color: var(--muted); line-height: 1.4; }
+/* медиа: видео, вложения, запись */
+.mvid { display: block; max-width: 100%; max-height: 42vh; margin: 8px auto; border-radius: 12px; background: #000; }
+.preview .mvid { max-height: 170px; }
+.atts { display: flex; gap: 8px; flex-wrap: wrap; }
+.att { display: inline-flex; align-items: center; gap: 6px; background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 4px 6px 4px 8px; font-size: 12px; }
+.att img.mimg { width: 34px; height: 34px; object-fit: cover; margin: 0; border-radius: 6px; max-height: none; }
+.att svg.i { color: var(--accent); }
+.att-x { width: 22px; height: 22px; border-radius: 50%; color: var(--muted); } .att-x:hover { background: var(--hover); color: var(--bad); }
+.att-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-top: 12px; }
+.att-btn { display: flex; flex-direction: column; align-items: center; gap: 4px; padding: 16px 8px; border-radius: 14px; background: var(--card); border: 1px solid var(--line); font-weight: 600; }
+.att-btn span svg.i { width: 26px; height: 26px; color: var(--accent); }
+.att-btn small { font-weight: 400; color: var(--muted); font-size: 11.5px; }
+.att-btn:hover { border-color: var(--accent); }
+.rec-box { display: flex; flex-direction: column; align-items: center; gap: 10px; padding: 18px 0 6px; }
+.rec-btn { width: 76px; height: 76px; border-radius: 50%; background: var(--bad); color: #fff; display: grid; place-items: center; box-shadow: var(--shadow); }
+.rec-btn svg.i { width: 30px; height: 30px; }
+.rec-btn.on { background: var(--card); color: var(--bad); border: 3px solid var(--bad); }
+.rec-btn:disabled { opacity: .4; }
+.rec-live { display: flex; align-items: center; gap: 8px; color: var(--bad); font-weight: 600; } .rec-live i { width: 10px; height: 10px; border-radius: 50%; background: var(--bad); animation: blink 1s infinite; }
+@keyframes blink { 50% { opacity: .2; } }
+.rec-box audio { width: 100%; }
+@media (max-width: 760px) {
+  .share-card { flex-wrap: wrap; } .share-card .btn { width: 100%; }
+  .br-tabs button span { font-size: 13px; }
+}
+.side-foot { padding-left: 4px; padding-right: 4px; }
+.side-foot button { font-size: 10.5px; padding: 7px 0; letter-spacing: -.1px; }
+
+/* узкая боковая колонка (планшет): только иконки, подписи — во всплывающей подсказке */
+@media (max-width: 1000px) and (min-width: 761px) { .side-foot button span:last-child { display: none; } .side-foot button { padding: 9px 0; } }

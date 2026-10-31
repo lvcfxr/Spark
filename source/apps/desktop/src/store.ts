@@ -18,8 +18,9 @@ export interface Settings {
   manualGrades: boolean;
   typedAll: boolean;
   lang?: "auto" | "ru" | "en";
+  autoAudio: boolean;
 }
-export const DEFAULT_SETTINGS: Settings = { theme: "auto", accent: "#3390ec", retention: 0.9, newPerDay: 20, typedDefault: false, manualGrades: false, typedAll: true };
+export const DEFAULT_SETTINGS: Settings = { theme: "auto", accent: "#3390ec", retention: 0.9, newPerDay: 20, typedDefault: false, manualGrades: false, typedAll: true, autoAudio: true };
 
 const uuid = () => crypto.randomUUID();
 

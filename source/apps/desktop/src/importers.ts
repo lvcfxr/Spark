@@ -16,7 +16,7 @@ export function htmlToText(h: string): string {
   return h
     // медиа превращаем в метки — их заменят на сохранённые файлы при импорте
     .replace(/<img\b[^>]*?\bsrc\s*=\s*(?:"([^"]*)"|'([^']*)'|([^\s>]+))[^>]*>/gi, (_m, a?: string, b?: string, c?: string) => `\n![](file:${decodeEnt(a ?? b ?? c ?? "").replace(/\)/g, "%29")})\n`)
-    .replace(/\[sound:([^\]]+)\]/g, (_m, f: string) => ` [audio](file:${f.replace(/\)/g, "%29")}) `)
+    .replace(/\[sound:([^\]]+)\]/g, (_m, f: string) => ` [${/\.(mp4|m4v|mov|ogv)$/i.test(f) ? "video" : "audio"}](file:${f.replace(/\)/g, "%29")}) `)
     .replace(/<br\s*\/?>/gi, "\n").replace(/<\/(div|p|li|tr|h[1-6])>/gi, "\n").replace(/<li[^>]*>/gi, "• ").replace(/<hr[^>]*>/gi, "\n")
     .replace(/<\/?(b|strong)>/gi, "**")
     .replace(/\[sound:[^\]]*\]/g, "").replace(/<[^>]+>/g, "")

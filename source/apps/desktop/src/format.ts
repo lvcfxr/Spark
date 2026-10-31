@@ -1,4 +1,5 @@
 import { t } from "./i18n";
+import { ic } from "./icons";
 export const esc = (s: string) => s.replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[c]!);
 
 function inline(s: string): string {
@@ -9,8 +10,9 @@ function inline(s: string): string {
     .replace(/==(.+?)==/g, "<mark>$1</mark>")
     .replace(/~~(.+?)~~/g, "<s>$1</s>")
     .replace(/!\[\]\(media:([0-9a-f]{16,64})\)/g, '<img class="mimg" data-media="$1" alt="">')
-    .replace(/\[audio\]\(media:([0-9a-f]{16,64})\)/g, '<button class="snd" data-a="play" data-media="$1">🔊</button>')
-    .replace(/!\[\]\(file:[^)]*\)|\[audio\]\(file:[^)]*\)/g, "");
+    .replace(/\[audio\]\(media:([0-9a-f]{16,64})\)/g, `<button class="snd" data-a="play" data-media="$1">${ic("sound")}</button>`)
+    .replace(/\[video\]\(media:([0-9a-f]{16,64})\)/g, '<video class="mvid" controls playsinline preload="metadata" data-media="$1"></video>')
+    .replace(/!\[\]\(file:[^)]*\)|\[(?:audio|video)\]\(file:[^)]*\)/g, "");
 }
 
 /**
@@ -70,7 +72,11 @@ export const norm = (t: string) =>
 
 /** Допустимые варианты ответа: вся обратная сторона и её части через «/», «;» или перенос строки. */
 /** Убрать из текста ссылки на медиа (для списков и проверки ввода). */
-export const stripMedia = (s: string, img = "", snd = "") => s.replace(/!\[\]\((?:media|file):[^)]*\)/g, img).replace(/\[audio\]\((?:media|file):[^)]*\)/g, snd);
+export const stripMedia = (s: string, img = "", snd = "", vid = img) => s.replace(/!\[\]\((?:media|file):[^)]*\)/g, img).replace(/\[audio\]\((?:media|file):[^)]*\)/g, snd).replace(/\[video\]\((?:media|file):[^)]*\)/g, vid);
+/** Медиа внутри текста поля: тип и ключ (для списка вложений в редакторе). */
+export function mediaRefs(s: string): { kind: "image" | "audio" | "video"; key: string; raw: string }[] {
+  return [...s.matchAll(/(!\[\]|\[audio\]|\[video\])\(media:([0-9a-f]{16,64})\)/g)].map((m) => ({ kind: m[1] === "![]" ? "image" : m[1] === "[audio]" ? "audio" : "video", key: m[2]!, raw: m[0] }));
+}
 export const answerVariants = (backIn: string): string[] => { const back = stripMedia(backIn).trim(); return [back, ...back.split(/[\n/;]/)].map((v) => v.trim()).filter(Boolean); };
 
 export function isCorrect(typed: string, answers: string[]): boolean {

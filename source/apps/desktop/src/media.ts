@@ -29,10 +29,13 @@ async function hex(buf: ArrayBuffer): Promise<string> {
 
 export const IMAGE_RE = /\.(png|jpe?g|gif|webp|bmp|svg)$/i;
 export const AUDIO_RE = /\.(mp3|ogg|oga|wav|m4a|aac|opus|webm|flac)$/i;
+export const VIDEO_RE = /\.(mp4|m4v|mov|webm|ogv)$/i;
+/** Ограничения: «короткое видео» и «звук произношения». */
+export const LIMITS = { videoBytes: 25 * 1024 * 1024, videoSeconds: 60, audioBytes: 10 * 1024 * 1024, recordSeconds: 20 };
 export function mimeOf(name: string): string {
   const e = (name.split(".").pop() ?? "").toLowerCase();
   return ({ png: "image/png", jpg: "image/jpeg", jpeg: "image/jpeg", gif: "image/gif", webp: "image/webp", bmp: "image/bmp", svg: "image/svg+xml",
-    mp3: "audio/mpeg", ogg: "audio/ogg", oga: "audio/ogg", opus: "audio/ogg", wav: "audio/wav", m4a: "audio/mp4", aac: "audio/aac", webm: "audio/webm", flac: "audio/flac" } as Record<string, string>)[e] ?? "application/octet-stream";
+    mp3: "audio/mpeg", ogg: "audio/ogg", oga: "audio/ogg", opus: "audio/ogg", wav: "audio/wav", m4a: "audio/mp4", aac: "audio/aac", webm: "audio/webm", flac: "audio/flac", mp4: "video/mp4", m4v: "video/mp4", mov: "video/quicktime", ogv: "video/ogg" } as Record<string, string>)[e] ?? "application/octet-stream";
 }
 
 /** Уменьшить большую картинку (до 1200 px, webp/jpeg), чтобы колоды не раздували память. GIF и SVG — как есть. */
@@ -94,7 +97,10 @@ export async function hydrateMedia(root: ParentNode, missingLabel: string): Prom
   for (const el of els) {
     el.dataset.ready = "1";
     const u = await mediaUrl(el.dataset.media!);
-    if (el instanceof HTMLImageElement) {
+    if (el instanceof HTMLVideoElement) {
+      if (u) el.src = u;
+      else el.replaceWith(Object.assign(document.createElement("span"), { className: "media-missing", textContent: "🎬 " + missingLabel }));
+    } else if (el instanceof HTMLImageElement) {
       if (u) el.src = u;
       else el.replaceWith(Object.assign(document.createElement("span"), { className: "media-missing", textContent: "🖼 " + missingLabel }));
     } else if (!u) { el.classList.add("missing"); el.title = missingLabel; }
@@ -107,4 +113,18 @@ export function playAudio(url: string) {
   current?.pause();
   current = new Audio(url);
   void current.play().catch(() => {});
+}
+
+/** Длительность видео/аудио в секундах (по метаданным; NaN, если браузер не смог прочитать). */
+export function mediaDuration(blob: Blob, kind: "video" | "audio"): Promise<number> {
+  return new Promise((res) => {
+    const el = document.createElement(kind);
+    const url = URL.createObjectURL(blob);
+    const done = (v: number) => { URL.revokeObjectURL(url); res(v); };
+    el.preload = "metadata";
+    el.onloadedmetadata = () => done(el.duration);
+    el.onerror = () => done(NaN);
+    setTimeout(() => done(NaN), 5000);
+    el.src = url;
+  });
 }

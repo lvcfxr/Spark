@@ -97,8 +97,8 @@ grant execute on function public.shared_deck_downloaded(uuid) to anon, authentic
 -- Медиа карточек (картинки, звук): приватное хранилище, у каждого своя папка <user_id>/
 -- =====================================================================
 insert into storage.buckets (id, name, public, file_size_limit)
-values ('media', 'media', false, 10485760)
-on conflict (id) do nothing;
+values ('media', 'media', false, 26214400)   -- до 25 МБ (короткие видео)
+on conflict (id) do update set file_size_limit = excluded.file_size_limit;
 drop policy if exists "media: read own"   on storage.objects;
 drop policy if exists "media: insert own" on storage.objects;
 drop policy if exists "media: update own" on storage.objects;
