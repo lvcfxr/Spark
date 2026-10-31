@@ -223,4 +223,13 @@ export const EN: Record<string, string> = {
   "произношение звучит при показе карточки и ответа": "pronunciation plays when the card and the answer appear",
   "Не удалось сохранить данные!": "Couldn't save your data!",
   "Колоды пользователей появятся, когда подключён сервер синхронизации.": "Community decks appear once a sync server is connected.",
+  "Сегодня: {n} повторов": "Today: {n} reviews",
+  "Позанимайтесь сегодня, чтобы не прервать серию": "Study today to keep your streak",
+  "Начните серию — позанимайтесь сегодня": "Start a streak — study today",
+  "{n} дн. подряд": "{n}-day streak",
+  "Серия правильных ответов подряд": "Correct answers in a row",
+  "Лучшая серия: {n} правильных подряд": "Best streak: {n} correct in a row",
+  "правильных подряд!": "in a row!",
+  "Советы": "Tips",
+  "Импорт файла (.apkg, .csv, .txt)": "Import a file (.apkg, .csv, .txt)",
 };
