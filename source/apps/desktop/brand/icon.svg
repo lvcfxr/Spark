@@ -1,14 +1,19 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
   <defs>
-    <linearGradient id="spkbg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#8b5cf6"/><stop offset=".6" stop-color="#6d28d9"/><stop offset="1" stop-color="#4c1d95"/></linearGradient>
-    <linearGradient id="spkfl" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#f59e0b"/><stop offset=".5" stop-color="#fbbf24"/><stop offset="1" stop-color="#fef3c7"/></linearGradient>
+    <radialGradient id="spkbg" cx="50%" cy="42%" r="78%"><stop offset="0" stop-color="#3b1d7a"/><stop offset=".55" stop-color="#170b33"/><stop offset="1" stop-color="#08060f"/></radialGradient>
+    <linearGradient id="spkfl" x1="0" y1="1" x2=".2" y2="0"><stop offset="0" stop-color="#6d28d9"/><stop offset=".55" stop-color="#8b5cf6"/><stop offset="1" stop-color="#d8b4fe"/></linearGradient>
+    <radialGradient id="spkgl" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#a78bfa" stop-opacity=".6"/><stop offset="1" stop-color="#a78bfa" stop-opacity="0"/></radialGradient>
+    <filter id="spksh" x="-30%" y="-30%" width="160%" height="160%"><feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#0b0716" flood-opacity=".55"/></filter>
   </defs>
   <rect width="512" height="512" rx="116" fill="url(#spkbg)"/>
-  <g transform="rotate(8 256 280)"><rect x="160" y="170" width="200" height="252" rx="30" fill="#0B0B0F" opacity=".35" transform="translate(10 14)"/>
-    <rect x="160" y="170" width="200" height="252" rx="30" fill="#fff"/>
-    <rect x="190" y="340" width="96" height="13" rx="6.5" fill="#6d28d9" opacity=".8"/><rect x="190" y="366" width="60" height="13" rx="6.5" fill="#6d28d9" opacity=".3"/></g>
-  <g transform="translate(262 236) scale(9.2) translate(-16 -20)">
-    <path d="M15.3 2.6C18 6.4 17.3 10.4 18.3 14.1C19.1 17 22.5 18.6 26.6 20C21.7 21.3 18.2 22.5 16.8 29.4C15.2 22.7 12.3 21.3 5.4 20C11.5 18.4 14.6 16.1 14.4 11.5C14.3 8.3 13.4 5.5 15.3 2.6Z" fill="url(#spkfl)" stroke="#fff" stroke-width=".9" stroke-linejoin="round"/>
-    <path d="M16 16.4l.9 2.7 2.7.9-2.7.9-.9 2.7-.9-2.7-2.7-.9 2.7-.9z" fill="#fff"/>
+  <g transform="translate(256 262) scale(1.1) translate(-256 -270)">
+  <circle cx="292" cy="280" r="200" fill="url(#spkgl)"/>
+  <g transform="rotate(-12 214 300)"><rect x="128" y="186" width="176" height="228" rx="30" fill="#fff"/><rect x="156" y="218" width="84" height="12" rx="6" fill="#4c1d95" opacity=".55"/><rect x="156" y="242" width="52" height="12" rx="6" fill="#4c1d95" opacity=".25"/></g>
+  <g filter="url(#spksh)" transform="translate(292 290) scale(10.4) translate(-16 -20)">
+    <path d="M15.3 2.6C18 6.4 17.3 10.4 18.3 14.1C19.1 17 22.5 18.6 26.6 20C21.7 21.3 18.2 22.5 16.8 29.4C15.2 22.7 12.3 21.3 5.4 20C11.5 18.4 14.6 16.1 14.4 11.5C14.3 8.3 13.4 5.5 15.3 2.6Z" fill="url(#spkfl)"/>
+    <path d="M15.3 2.6C18 6.4 17.3 10.4 18.3 14.1C19.1 17 22.5 18.6 26.6 20C21.7 21.3 18.2 22.5 16.8 29.4C15.2 22.7 12.3 21.3 5.4 20C11.5 18.4 14.6 16.1 14.4 11.5C14.3 8.3 13.4 5.5 15.3 2.6Z" fill="#ede9fe" opacity=".9" transform="translate(16 20.6) scale(.42) translate(-16 -20.6)"/>
+    <path d="M16 16.6l.85 2.55 2.55.85-2.55.85-.85 2.55-.85-2.55-2.55-.85 2.55-.85z" fill="#fff"/>
+  </g>
+  <g fill="#fff"><path transform="translate(400 150) scale(16)" d="M0 -1L.28 -.28 1 0 .28 .28 0 1-.28 .28-1 0-.28 -.28Z"/><path transform="translate(122 140) scale(10)" d="M0 -1L.28 -.28 1 0 .28 .28 0 1-.28 .28-1 0-.28 -.28Z" opacity=".75"/><path transform="translate(410 380) scale(9)" d="M0 -1L.28 -.28 1 0 .28 .28 0 1-.28 .28-1 0-.28 -.28Z" fill="#c4b5fd"/></g>
   </g>
 </svg>
