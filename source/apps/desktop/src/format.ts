@@ -80,7 +80,7 @@ export const stripMedia = (s: string, img = "", snd = "", vid = img) => s.replac
 export function mediaRefs(s: string): { kind: "image" | "audio" | "video"; key: string; raw: string }[] {
   return [...s.matchAll(/(!\[\]|\[audio\]|\[video\])\(media:([0-9a-f]{16,64})\)/g)].map((m) => ({ kind: m[1] === "![]" ? "image" : m[1] === "[audio]" ? "audio" : "video", key: m[2]!, raw: m[0] }));
 }
-const ARTICLE = /^(?:el|la|los|las|un|una|der|die|das|den|dem|ein|eine|einen|le|les|l'|une|des|the|a|an|to)\s*/i;
+const ARTICLE = /^(?:(?:el|la|los|las|un|una|der|die|das|den|dem|ein|eine|einen|le|les|une|des|the|a|an|to)\s+|l')/i;
 /** Допустимые варианты ответа: вся обратная сторона и её части через «;», «/», «,», «или» и перенос строки;
  *  без пояснений в скобках, без артикля и «to» у английских глаголов. */
 export const answerVariants = (backIn: string): string[] => {

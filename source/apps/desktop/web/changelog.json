@@ -1,6 +1,28 @@
 {
  "releases": [
   {
+   "version": "0.14",
+   "date": "01.11.2026",
+   "ru": [
+    "Опыт стал сбалансированнее: за ошибку XP снимается, уровни набираются медленнее; уровень никогда не понижается",
+    "Нажмите на уровень на главной: сколько XP осталось до следующего, награды за уровни и темы шапки (Океан, Рассвет, Лес, Закат, Аврора, Золото, Галактика)",
+    "Звания за уровни: от «Новичка» до «Легенды Spark»; бонусы XP за пройденный уровень курса",
+    "Статистика переделана: уровень и опыт, серия дней, XP за 7 дней, активность по месяцам, прогресс курсов, рекорды",
+    "Версия для компьютера: просторнее, с иконками у колод и подписями внизу",
+    "Каталог и курсы разделены: «Наборы» — свободные колоды, «Курсы» — путь по уровням",
+    "Исправлена проверка ответов: короткие слова вроде «a» не ломали ввод"
+   ],
+   "en": [
+    "Better XP balance: mistakes now cost XP, levels take longer; your level never goes down",
+    "Tap your level on the home screen: XP left to the next one, level rewards and home themes (Ocean, Dawn, Forest, Sunset, Aurora, Gold, Galaxy)",
+    "Titles for levels from “Newcomer” to “Spark Legend”; XP bonuses for finished course levels",
+    "Stats redesigned: level and XP, day streak, XP over 7 days, activity by month, course progress, records",
+    "Desktop layout: roomier, with deck icons and labels in the bottom bar",
+    "Catalog and courses separated: “Sets” are free-form decks, “Courses” are a path of levels",
+    "Fixed answer checking: short leading words like “a” no longer got in the way"
+   ]
+  },
+  {
    "version": "0.13.1",
    "date": "31.10.2026",
    "ru": [

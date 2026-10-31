@@ -14,7 +14,7 @@ import {
 } from "./tg";
 import { answerVariants, clozeFace, clozeNumbers, esc, fmt, fmtDur, isCorrect, mediaRefs, norm, stripMedia } from "./format";
 import { DAY_LEVELS, dayColor, dayLevel, dayMark, fillIcons, ic, sparkMark, streakLevel, streakMark } from "./icons";
-import { xpStats } from "./xp";
+import { DAILY_BONUS, THEMES, XP_RULES, rewardsList, themeById, titleOf, xpStats, type UnitMap } from "./xp";
 import { courseMediaId, embeddedCourses, loadCourseCards, loadCourses, type Course, type CourseCard } from "./courses";
 import { TIPS } from "./tips";
 import { detectLang, getLang, setLang, t, translateStatic, type Lang } from "./i18n";
@@ -57,6 +57,20 @@ function dayStreak() {
   return { streak, best, today: todayCount, studiedToday: days.has(today) };
 }
 /** Названия уровней серии дней (созвездие растёт): 1, 3, 5, 10, 15, 20, 25, 30, 40, 50, 75, 100, 150, 200, 300+. */
+/** Опыт: считается из истории ответов; бонусы за пройденные уровни курсов берём из карточек курсов. */
+function unitMap(): UnitMap {
+  const m: UnitMap = new Map(), courses = embeddedCourses();
+  if (!courses.length) return m;
+  const deckCourse = new Map<string, Course>();
+  for (const d of allDecks()) { const id = /^course:([^@]+)@/.exec(d.source)?.[1]; const c = id && courses.find((x) => x.id === id); if (c) deckCourse.set(d.id, c); }
+  for (const card of allCards()) {
+    const c = deckCourse.get(card.deckId), u = c && card.tags.split(/\s+/).find((x) => x.startsWith("unit-"))?.slice(5);
+    const cu = u && c ? c.units.find((x) => x.id === u) : null;
+    if (c && cu) m.set(card.id, { key: c.id + ":" + u, total: cu.count, course: c.id, courseTotal: c.units.length });
+  }
+  return m;
+}
+const xp = () => xpStats(store.reviews, Date.now(), unitMap());
 const DAY_NAMES = ["", "Первая звезда", "Пара звёзд", "Созвездие", "Ночное небо", "Комета", "Орбита", "Две луны", "Золотое созвездие", "Кольца", "Сияние", "Звездопад", "Звёздная корона", "Галактика", "Туманность", "Сверхновая"];
 const MILESTONES = [3, 5, 10, 15, 20, 25, 30, 40, 50, 75, 100, 150, 200, 300];
 
@@ -128,7 +142,7 @@ interface Browser {
   tab: "spark" | "community" | "web"; q: string; lang: string; loading: boolean; error: string;
   decks: CatalogDeck[]; open: CatalogDeck | null; cards: DeckCard[] | null; busy: boolean;
 }
-type ModalType = "share-pick" | "settings" | "stats" | "deck" | "import" | "importdecks" | "choose" | "paste" | "publish" | "attach" | "record";
+type ModalType = "share-pick" | "settings" | "level" | "stats" | "deck" | "import" | "importdecks" | "choose" | "paste" | "publish" | "attach" | "record";
 const S = {
   deckId: "all",
   sel: new Set<string>(),
@@ -140,6 +154,7 @@ const S = {
   review: null as Review | null,
   browser: null as Browser | null,
   tips: null as null | { tab: string },
+  stats: false,
   courses: null as null | { open: string | null; list: Course[]; cards: CourseCard[] | null; busy: boolean },
   /** куда добавлять медиа: карточка при повторении (сторона вопроса/ответа) или null — в редактор, в позицию курсора */
   attach: null as null | { cardId: string; side: "q" | "a" },
@@ -213,12 +228,12 @@ function applyLang() {
 
 function render() {
   applyLang(); applyTheme(); fillIcons();
-  renderDecks(); renderList(); renderEditor(); renderReview(); renderBrowser(); renderTips(); renderCourses(); renderModal(); updateChrome();
+  renderDecks(); renderList(); renderEditor(); renderReview(); renderBrowser(); renderTips(); renderCourses(); renderStats(); renderModal(); updateChrome();
 }
 
 function updateChrome() {
   $("app").dataset.pane = S.pane;
-  setBackButton(!!S.review || !!S.modal || !!S.browser || !!S.tips || !!S.courses || (isMobile() && S.pane !== "decks"));
+  setBackButton(!!S.review || !!S.modal || !!S.browser || !!S.tips || !!S.courses || S.stats || (isMobile() && S.pane !== "decks"));
   closingConfirmation(!!S.review);
   updateSyncInd();
 }
@@ -228,6 +243,7 @@ function goBack() {
   else if (S.browser?.open) { S.browser.open = null; S.browser.cards = null; renderBrowser(); updateChrome(); }
   else if (S.browser) { S.browser = null; render(); }
   else if (S.tips) { S.tips = null; render(); }
+  else if (S.stats) { S.stats = false; render(); }
   else if (S.courses?.open) { S.courses.open = null; renderCourses(); updateChrome(); }
   else if (S.courses) { S.courses = null; render(); }
   else if (S.pane === "editor") { S.pane = "cards"; render(); }
@@ -261,8 +277,8 @@ function renderDecks() {
   };
   const row = (id: string, label: string, c?: Counts) =>
     `<div class="row ${S.deckId === id ? "sel" : ""}" data-a="deck" data-id="${id}"><span class="name">${label}</span>${cnt(c)}</div>`;
-  $("decks").innerHTML = `<div class="sec-h"><span>${t("Мои колоды")}</span><button class="link" data-a="browser-open">${t("Каталог")} ${ic("chevron")}</button></div>` + row("all", ic("layers", "row-ic") + " " + t("Все карточки"), sum(counts)) +
-    decks.map((d) => row(d.id, (d.emoji ? d.emoji + " " : "") + esc(d.name) + (d.typedMode === "on" ? ' <span class="muted tiny-ic" title="' + t("Ввод ответа включён для всей колоды") + '">' + ic("keyboard") + "</span>" : ""), counts.get(d.id))).join("")
+  $("decks").innerHTML = `<div class="sec-h"><span>${t("Мои колоды")}</span><button class="link" data-a="browser-open">${t("Каталог")} ${ic("chevron")}</button></div>` + row("all", `<span class="row-em all">${ic("layers", "row-ic")}</span> ` + t("Все карточки"), sum(counts)) +
+    decks.map((d) => row(d.id, (d.emoji ? `<span class="row-em">${esc(d.emoji)}</span>` : ic(d.source.startsWith("course:") ? "cap" : "catalog", "row-ic")) + " " + esc(d.name) + (d.typedMode === "on" ? ' <span class="muted tiny-ic" title="' + t("Ввод ответа включён для всей колоды") + '">' + ic("keyboard") + "</span>" : ""), counts.get(d.id))).join("")
     + (decks.length ? "" : isMobile() ? welcomeHtml() : `<div class="hint" style="padding:10px">${t("Колод пока нет. Откройте «Каталог» — там готовые колоды.")}</div>`);
   renderStreak(decks.length > 0);
   $("deck-actions").innerHTML = decks.some((d) => d.id === S.deckId) ? `<button class="icon-btn" data-a="deck-edit" title="${t("Настройки колоды")}">${ic("more")}</button>` : "";
@@ -637,7 +653,7 @@ function renderReview() {
   const timer = manual ? "" : `<div class="tm"><div class="tm-bar"><i id="rv-bar"></i></div><span id="rv-time" class="muted"></span></div>`;
   const top = `<div class="rv-top"><button class="icon-btn" data-a="rv-close" title="${t("Закрыть")} (Esc)">${ic("close")}</button>
     <div class="t">${esc(r.unitTitle ?? deck?.name ?? t("Все карточки"))}<div class="muted" style="font-weight:400;font-size:12px"><span style="color:var(--accent)">${counts.n}</span> · <span style="color:var(--bad)">${counts.l}</span> · <span style="color:var(--good)">${counts.r}</span></div></div>
-    <div class="combo lv${streakLevel(r.combo)} ${r.bump ?? ""}" title="${t("Серия правильных ответов подряд")}">${streakMark(streakLevel(r.combo))}<b>${r.combo}</b>${r.xpGain && r.bump ? `<span class="xp-pop">+${r.xpGain} XP</span>` : ""}</div>
+    <div class="combo lv${streakLevel(r.combo)} ${r.bump ?? ""}" title="${t("Серия правильных ответов подряд")}">${streakMark(streakLevel(r.combo))}<b>${r.combo}</b>${r.xpGain && r.bump ? `<span class="xp-pop ${r.xpGain < 0 ? "neg" : ""}">${r.xpGain > 0 ? "+" : "−"}${Math.abs(r.xpGain)} XP</span>` : ""}</div>
     ${r.cardId ? `<button class="icon-btn rv-att" data-a="rv-attach" title="${t("Добавить к карточке картинку, видео или звук")}">${ic("clip")}</button>` : ""}
     <button class="kbd-toggle ${typedNow ? "on" : ""}" data-a="rv-typed" title="${t("Ввод ответа с клавиатуры: переход без Enter при верном слове")}">${ic("keyboard")}<span class="lbl"> ${t("Ввод")}: ${typedNow ? t("вкл") : t("выкл")}</span></button>
     <svg class="ring" viewBox="0 0 38 38"><circle class="bg" cx="19" cy="19" r="17"/><circle class="fg" cx="19" cy="19" r="17" stroke-dasharray="${C}" stroke-dashoffset="${C * (1 - frac)}"/></svg></div>`;
@@ -646,7 +662,8 @@ function renderReview() {
     el.innerHTML = top + `<div class="rv-body"><div class="rv-done"><div class="em done-ic">${ic("check-circle")}</div>
       <h2>${r.done ? t("Отличная работа!") : t("На сегодня всё")}</h2>
       <p class="muted">${r.done ? t("Повторено карточек: {n}", { n: r.done }) : r.unit ? t("Уровень пройден — все слова изучены.") : t("Нет карточек к повторению.")}</p>
-      ${r.done ? (() => { const x = xpStats(store.reviews); return `<p class="xp-sum">${ic("spark")} ${t("Опыт за занятие: +{n}", { n: x.total - r.xp0 })} · ${t("уровень {n}", { n: x.level })}</p>`; })() : ""}
+      ${r.unit && allCards().filter((c) => hasTag(c, r.unit) && c.deckId === (r.deckId === "all" ? c.deckId : r.deckId)).every((c) => store.stateOf(c.id).phase !== "new") ? `<p class="unit-done">${ic("trophy")} ${t("Уровень пройден! +{n} XP", { n: XP_RULES.unit })}</p>` : ""}
+      ${r.done ? (() => { const x = xp(); return `<p class="xp-sum">${ic("spark")} ${t("Опыт за занятие: +{n}", { n: x.total - r.xp0 })} · ${t("уровень {n}", { n: x.level })}</p>`; })() : ""}
       ${r.best >= 3 ? `<p class="best-combo lv${streakLevel(r.best)}">${ic("trophy")} ${t("Лучшая серия: {n} правильных подряд", { n: r.best })}</p>` : ""}
       ${r.unit ? "" : moreHtml(r.deckId)}
       <button class="btn big" data-a="rv-close">${t("Готово")}</button></div></div>`;
@@ -739,7 +756,7 @@ function learnMore(n: number) {
 function startReview(deckId: string, unit?: { tag: string; title: string }) {
   haptic("light");
   S.review = { deckId, cardId: null, show: false, typed: null, ok: null, done: 0, t0: 0, paused: 0, baseline: computeBaseline(), dur: 0, pending: null, locking: false, combo: 0, best: 0, bump: null, milestone: null,
-    unit: unit?.tag, unitTitle: unit?.title, xp0: xpStats(store.reviews).total, xpGain: 0 };
+    unit: unit?.tag, unitTitle: unit?.title, xp0: xp().total, xpGain: 0 };
   showNext();
 }
 function showNext() {
@@ -813,7 +830,7 @@ function applyPending(rating?: Rating) {
   if (!r?.cardId || !r.pending) return;
   store.answer(r.cardId, rating ?? r.pending.rating, r.pending.dur);
   bumpCombo(rating ?? r.pending.rating);
-  r.xpGain = xpStats(store.reviews).lastGain;
+  r.xpGain = xp().lastGain;
   haptic("select");
   r.done++;
   showNext();
@@ -823,7 +840,7 @@ function rateManual(g: Rating) {
   if (!r?.cardId || !r.show) return;
   store.answer(r.cardId, g, r.dur);
   bumpCombo(g);
-  r.xpGain = xpStats(store.reviews).lastGain;
+  r.xpGain = xp().lastGain;
   haptic("select");
   r.done++;
   showNext();
@@ -890,8 +907,8 @@ function renderBrowser() {
   el.classList.toggle("on", !!b);
   if (!b) { el.innerHTML = ""; return; }
   const tab = (k: string, icon: string, label: string) => `<button data-a="br-tab" data-k="${k}" class="${b.tab === k ? "on" : ""}">${ic(icon)}<span>${label}</span></button>`;
-  const tabs = `<div class="seg br-tabs">${tab("spark", "spark", APP)}${tab("community", "users", t("Сообщество"))}${tab("web", "globe", t("Браузер"))}</div>`;
-  const head = `<div class="br-top"><button class="icon-btn" data-a="br-close" title="${t("Закрыть")}">${ic("close")}</button><h1>${t("Каталог колод")}</h1><button class="icon-btn" data-a="import-decks" title="${t("Импорт файла (.apkg, .csv, .txt)")}">${ic("import")}</button>${tabs}</div>`;
+  const tabs = `<div class="seg br-tabs">${tab("spark", "catalog", t("Наборы"))}${tab("community", "users", t("Сообщество"))}${tab("web", "globe", t("Браузер"))}</div>`;
+  const head = `<div class="br-top"><button class="icon-btn" data-a="br-close" title="${t("Закрыть")}">${ic("close")}</button><h1>${t("Каталог")}</h1><button class="icon-btn" data-a="import-decks" title="${t("Импорт файла (.apkg, .csv, .txt)")}">${ic("import")}</button>${tabs}</div>`;
   if (b.open) { el.innerHTML = head + `<div class="br-body">${deckDetailHtml(b)}</div>`; media(el); return; }
   if (b.tab === "web") { el.innerHTML = head + `<div class="br-body">${webHtml()}</div>`; return; }
   const inst = installed();
@@ -914,7 +931,9 @@ function renderBrowser() {
     ${langs.length > 1 ? `<div class="fchips">${chip("", t("Все"))}${langs.map((l) => chip(l, langName(l))).join("")}</div>` : ""}`;
   const grid = b.loading ? `<div class="empty"><div class="em spin">${ic("sync")}</div>${t("Загружаю каталог…")}</div>`
     : list.length ? `<div class="tiles">${list.map(tile).join("")}</div>` : `<div class="empty"><div class="em">${ic("search")}</div>${b.tab === "community" && !pool.length ? t("Пока никто не опубликовал колоду — станьте первым!") : t("Ничего не найдено")}</div>`;
-  if (b.tab === "spark") { el.innerHTML = head + `<div class="br-body">${search}${grid}</div>`; return; }
+  const promo = `<div class="role-card"><div class="rc-col"><b>${ic("catalog")} ${t("Наборы")}</b><span>${t("Свободные колоды: добавляются целиком, учите в любом порядке, всё можно редактировать. Хороши для повторения и справочных тем.")}</span></div>
+    <button class="rc-col go" data-a="courses-open"><b>${ic("cap")} ${t("Курсы")}</b><span>${t("Путь по уровням: слова, примеры с озвучкой, открываются по очереди, опыт за уровни.")}</span><em>${t("Открыть курсы")} ${ic("chevron")}</em></button></div>`;
+  if (b.tab === "spark") { el.innerHTML = head + `<div class="br-body">${promo}${search}${grid}</div>`; return; }
   // Сообщество: заметная кнопка публикации + мои публикации + колоды пользователей
   const ses = getSession();
   const mine = published.map((p) => ({ p, d: allDecks().find((x) => x.id === p.local_deck_id) })).filter((x) => x.d);
@@ -1056,7 +1075,7 @@ function renderCourses() {
   if (!course) {
     const list = visibleCourses(cs.list);
     el.innerHTML = `<div class="br-top"><button class="icon-btn" data-a="crs-close" title="${t("Закрыть")}">${ic("close")}</button><h1>${t("Курсы")}</h1></div>
-      <div class="br-body"><p class="crs-intro">${t("Курсы — это путь по уровням: слова, произношение, озвучка и примеры. Уровни открываются по очереди. Колоды из каталога остаются отдельно.")}</p>
+      <div class="br-body"><p class="crs-intro">${t("Курсы — учебный путь: 8 уровней, слова с произношением, озвучкой и живыми примерами. Уровни открываются по очереди, за них даётся опыт. Нужен просто набор слов для повторения — загляните в «Каталог → Наборы».")}</p>
       <div class="ctiles">${list.map(courseTile).join("") || `<div class="muted">${t("Курсы загружаются…")}</div>`}</div></div>`;
     return;
   }
@@ -1112,9 +1131,72 @@ function courseNext(courseId: string) {
   else if (st.deck) startReview(st.deck.id);
 }
 
+
+// ================= Статистика (отдельная страница) =================
+function renderStats() {
+  const el = document.getElementById("statspage");
+  if (!el) return;
+  el.classList.toggle("on", S.stats);
+  if (!S.stats) { el.innerHTML = ""; return; }
+  const now = Date.now(), L = uiL(), x = xp(), st = dayStreak(), today = dayStart(now);
+  const n = (v: number) => v.toLocaleString(getLang() === "en" ? "en-US" : "ru-RU");
+  const per = new Map<number, number>(); let ms = 0, msToday = 0;
+  for (const r of store.reviews) { const d = dayStart(r.ts); per.set(d, (per.get(d) ?? 0) + 1); ms += r.durationMs ?? 0; if (d === today) msToday += r.durationMs ?? 0; }
+  const month = store.reviews.filter((r) => r.ts > now - 30 * DAY_MS), week = store.reviews.filter((r) => r.ts > now - 7 * DAY_MS);
+  const acc = (a: { rating: number }[]) => (a.length ? Math.round((a.filter((r) => r.rating > 1).length / a.length) * 100) : null);
+  const cards = allCards().filter((c) => !c.suspended);
+  let nNew = 0, nLearn = 0, nYoung = 0, nMature = 0;
+  const forecast = new Array(14).fill(0) as number[];
+  for (const c of cards) {
+    const s = store.stateOf(c.id);
+    if (s.phase === "new") nNew++; else if (s.phase !== "review") nLearn++; else if (s.stability >= 21) nMature++; else nYoung++;
+    if (s.phase === "review") { const d = Math.max(0, Math.floor((dayStart(s.due) - today) / DAY_MS)); if (d < 14) forecast[d]!++; }
+  }
+  const mins = (v: number) => (v < 60_000 ? t("<1 мин") : v < 3600_000 ? t("{n} мин", { n: Math.round(v / 60_000) }) : t("{n} ч", { n: (v / 3600_000).toFixed(1).replace(/\.0$/, "") }));
+  // XP за 7 дней
+  const days = Array.from({ length: 7 }, (_, i) => { const d = new Date(now - (6 - i) * DAY_MS); return { k: dayKey(d.getTime()), label: d.toLocaleDateString(getLang() === "en" ? "en-US" : "ru-RU", { weekday: "short" }) }; });
+  const xs = days.map((d) => x.byDay.get(d.k) ?? 0), xmax = Math.max(1, ...xs.map(Math.abs));
+  const bars = days.map((d, i) => `<div class="xb ${xs[i]! < 0 ? "neg" : ""} ${i === 6 ? "today" : ""}" title="${xs[i]} XP"><em>${xs[i] ? (xs[i]! > 0 ? "+" : "−") + n(Math.abs(xs[i]!)) : ""}</em><i style="height:${Math.max(3, Math.round((Math.abs(xs[i]!) / xmax) * 64))}px"></i><span>${esc(d.label)}</span></div>`).join("");
+  // тепловая карта с подписями месяцев
+  const weeks = isMobile() ? 17 : 26, dow = (new Date(today).getDay() + 6) % 7, first = today - ((weeks - 1) * 7 + dow) * DAY_MS, max = Math.max(1, ...per.values());
+  const cells: string[] = [], months: string[] = []; let lastM = -1;
+  for (let w = 0; w < weeks; w++) {
+    const d0 = new Date(first + w * 7 * DAY_MS), mo = d0.getMonth();
+    months.push(`<span>${mo !== lastM ? d0.toLocaleDateString(getLang() === "en" ? "en-US" : "ru-RU", { month: "short" }) : ""}</span>`); lastM = mo;
+    for (let dd = 0; dd < 7; dd++) {
+      const d = first + (w * 7 + dd) * DAY_MS, v = per.get(dayStart(d + 6 * 3600_000)) ?? 0;
+      cells.push(d > today ? `<i style="visibility:hidden"></i>` : `<i title="${new Date(d).toLocaleDateString()}: ${v}" style="${v ? `background:color-mix(in srgb,var(--accent) ${25 + 75 * v / max}%,transparent)` : ""}"></i>`);
+    }
+  }
+  const seg = (v: number, c: string, l: string) => v ? `<i style="flex:${v};background:${c}" title="${l}: ${v}"></i>` : "";
+  const fmax = Math.max(1, ...forecast);
+  const courses = embeddedCourses().filter((c) => courseDeck(c.id));
+  const cRows = courses.map((c) => { const cs = courseStats(c); return `<button class="mc" data-a="crs-home" data-id="${c.id}"><span class="mc-top"><span class="flag">${c.flag}</span><span class="mc-t">${esc(c.title[L])}</span></span><span class="pbar"><i style="width:${Math.max(cs.pct, 2)}%"></i><span>${t("{a}/{b} уровней", { a: cs.done, b: c.units.length })}</span><span>${t("{a}/{b} слов", { a: cs.studied, b: c.words })}</span></span></button>`; }).join("");
+  const lv = dayLevel(st.streak), pct = Math.min(100, Math.round(((x.total - x.levelFrom) / Math.max(1, x.levelTo - x.levelFrom)) * 100));
+  const tile = (icn: string, v: string, l: string, cls = "") => `<div class="stile ${cls}"><span class="st-ic">${ic(icn)}</span><b>${v}</b><span>${l}</span></div>`;
+  const a30 = acc(month), a7 = acc(week);
+  el.innerHTML = `<div class="br-top"><button class="icon-btn" data-a="stats-close" title="${t("Закрыть")}">${ic("close")}</button><h1>${t("Статистика")}</h1></div>
+    <div class="br-body st-body">
+      <div class="st-hero"><button class="st-lvl" data-a="level-open"><span class="lv-badge">${ic("spark")}<b>${x.level}</b></span><span class="st-lvl-t"><b>${esc(titleOf(x.level)[L])}</b><span>${t("{a} / {b} XP до уровня {l}", { a: n(Math.max(0, x.total - x.levelFrom)), b: n(x.levelTo - x.levelFrom), l: x.level + 1 })}</span><i class="lv-bar"><i style="width:${Math.max(pct, 2)}%"></i></i></span>${ic("chevron")}</button>
+        <div class="st-streak" style="--c:${dayColor(lv)}"><span>${dayMark(lv, "xl")}</span><div><b>${st.streak}</b><span>${t("дней подряд")}</span>${st.best > st.streak ? `<em>${ic("trophy", "tiny")} ${t("рекорд {n}", { n: st.best })}</em>` : ""}</div></div></div>
+      <div class="st-tiles">${tile("spark", (x.today >= 0 ? "+" : "−") + n(Math.abs(x.today)), t("XP сегодня"), "xp")}${tile("sync", n(per.get(today) ?? 0), t("повторений сегодня"))}${tile("clock", mins(msToday), t("времени сегодня"))}
+        ${tile("check-circle", a7 == null ? "—" : a7 + "%", t("верных за неделю"))}${tile("layers", n(nMature), t("зрелых карточек"))}${tile("cap", n(x.units), t("уровней курсов"))}</div>
+      <div class="sec-t">${t("Опыт за 7 дней")}</div><div class="xbars">${bars}</div>
+      <div class="sec-t">${t("Активность")}</div><div class="heat-wrap"><div class="heat-m" style="grid-template-columns:repeat(${weeks},1fr)">${months.join("")}</div><div class="heat" style="grid-template-columns:repeat(${weeks},1fr)">${cells.join("")}</div></div>
+      ${courses.length ? `<div class="sec-t">${t("Курсы")}</div>${cRows}` : ""}
+      <div class="sec-t">${t("Состав коллекции")} <span class="muted" style="font-weight:400">· ${t("{n} карточек", { n: n(cards.length) })}</span></div><div class="stack">${seg(nNew, "#8e8e93", t("Новые"))}${seg(nLearn, "#ff9500", t("Изучаются"))}${seg(nYoung, "#3390ec", t("Молодые"))}${seg(nMature, "#34c759", t("Зрелые"))}</div>
+      <div class="legend"><span><i style="background:#8e8e93"></i>${t("новые")} ${nNew}</span><span><i style="background:#ff9500"></i>${t("изучаются")} ${nLearn}</span><span><i style="background:#3390ec"></i>${t("молодые")} ${nYoung}</span><span><i style="background:#34c759"></i>${t("зрелые")} ${nMature}</span></div>
+      <div class="sec-t">${t("Прогноз на 14 дней")} <span class="muted" style="font-weight:400">(${t("повторения по дням")})</span></div>
+      <div class="fc">${forecast.map((v, i) => `<div title="${v}"><i style="height:${Math.round((v / fmax) * 56) + (v ? 3 : 1)}px"></i><span>${i === 0 ? t("сег") : i}</span></div>`).join("")}</div>
+      <div class="sec-t">${t("Рекорды")}</div>
+      <div class="st-tiles">${tile("trophy", n(st.best), t("лучшая серия дней"))}${tile("spark", n(x.bestDay), t("лучший день, XP"))}${tile("sync", n(Math.max(0, ...per.values())), t("повторений за день"))}
+        ${tile("layers", n(store.reviews.length), t("всего повторений"))}${tile("clock", mins(ms), t("всего времени"))}${tile("check-circle", a30 == null ? "—" : a30 + "%", t("удержание, 30 дн"))}</div></div>`;
+}
 // ================= Главная: шапка с серией, опытом и курсами =================
+/** Тема шапки: выбранная, если она уже открыта, иначе первая. */
+const unlockedTheme = (level: number) => { const id = store.settings.heroTheme; const th = THEMES.find((t) => t.id === id); return th && th.level <= level ? th.id : "night"; };
 function heroHtml(): string {
-  const st = dayStreak(), x = xpStats(store.reviews), u = tgUser(), lv = dayLevel(st.streak);
+  const st = dayStreak(), x = xp(), u = tgUser(), lv = dayLevel(st.streak);
   const learned = [...store.states.values()].filter((s) => s.phase !== "new").length;
   const name = u?.first_name || t("Мой Spark");
   const photo = (u as { photo_url?: string } | null)?.photo_url;
@@ -1123,9 +1205,9 @@ function heroHtml(): string {
   const sub = !st.studiedToday ? (st.streak > 0 ? t("Позанимайтесь сегодня, чтобы не прервать серию") : t("Начните серию — позанимайтесь сегодня"))
     : [lv ? t(DAY_NAMES[lv]!) : "", next ? t("дальше — «{name}» через {n} дн.", { name: t(DAY_NAMES[lv + 1]!), n: next - st.streak }) : ""].filter(Boolean).join(" · ");
   const n = (v: number) => v.toLocaleString(getLang() === "en" ? "en-US" : "ru-RU");
-  return `<div class="hero ${st.studiedToday ? "" : "pending"}" style="--c:${dayColor(lv)}">
+  return `<div class="hero ${st.studiedToday ? "" : "pending"}" style="--c:${dayColor(lv)};--hero-bg:${themeById(unlockedTheme(x.level)).css}">
     <div class="hero-top"><button class="hero-user" data-a="settings"><span class="av">${avatar}</span><span class="nm">${esc(name)}</span>${ic("chevron")}</button>
-      <button class="hero-lvl" data-a="stats" title="${t("{a} из {b} опыта до следующего уровня", { a: n(x.total - x.levelFrom), b: n(x.levelTo - x.levelFrom) })}">${ic("spark")}<span>${t("Ур. {n}", { n: x.level })}</span><i><b style="width:${pct}%"></b></i></button></div>
+      <button class="hero-lvl" data-a="level-open" title="${t("{a} из {b} опыта до следующего уровня", { a: n(x.total - x.levelFrom), b: n(x.levelTo - x.levelFrom) })}">${ic("spark")}<span>${t("Ур. {n}", { n: x.level })}</span><i><b style="width:${pct}%"></b></i></button></div>
     <button class="hero-streak" data-a="stats"><span class="hs-ic">${dayMark(lv, "xl")}</span><span class="hs-n">${st.streak}</span></button>
     <button class="hs-cap" data-a="stats">${t("дней подряд")} ${ic("chevron")}</button>
     <div class="hs-sub">${sub}</div>
@@ -1318,39 +1400,24 @@ function renderModal() {
         : `<span class="row-ctl"><button class="btn sec" data-a="export">${t("Сохранить")}</button><button class="btn sec" data-a="import-pick">${t("Загрузить")}</button></span>`}</div></div>
       <p class="hint">${t("Загрузка копии объединяется с текущими данными, ничего не затирается.")}<br>${APP} ${__VERSION__} · ID ${store.deviceId.slice(0, 8)}</p>
       <div style="text-align:right"><button class="btn" data-a="modal-close">${t("Готово")}</button></div></div>`;
-  } else if (m.type === "stats") {
-    const now = Date.now(), per = new Map<number, number>();
-    for (const r of store.reviews) per.set(dayStart(r.ts), (per.get(dayStart(r.ts)) ?? 0) + 1);
-    const today = dayStart(now);
-    const streak = dayStreak().streak;
-    const month = store.reviews.filter((r) => r.ts > now - 30 * DAY_MS);
-    const ret = month.length ? Math.round((month.filter((r) => r.rating > 1).length / month.length) * 100) : null;
-    const cards = allCards().filter((c) => !c.suspended);
-    let nNew = 0, nLearn = 0, nYoung = 0, nMature = 0;
-    const forecast = new Array(14).fill(0) as number[];
-    for (const c of cards) {
-      const st = store.stateOf(c.id);
-      if (st.phase === "new") nNew++; else if (st.phase !== "review") nLearn++; else if (st.stability >= 21) nMature++; else nYoung++;
-      if (st.phase === "review") { const d = Math.max(0, Math.floor((dayStart(st.due) - today) / DAY_MS)); if (d < 14) forecast[d]!++; }
-    }
-    const cells: string[] = [], weeks = isMobile() ? 15 : 20;
-    const dow = (new Date(today).getDay() + 6) % 7;
-    const first = today - ((weeks - 1) * 7 + dow) * DAY_MS;
-    const max = Math.max(1, ...per.values());
-    for (let i = 0; i < weeks * 7; i++) {
-      const d = first + i * DAY_MS, v = per.get(dayStart(d + 6 * 3600_000)) ?? 0;
-      cells.push(d > today ? `<i style="visibility:hidden"></i>` : `<i title="${new Date(d).toLocaleDateString()}: ${v}" style="${v ? `background:color-mix(in srgb,var(--accent) ${25 + 75 * v / max}%,transparent)` : ""}"></i>`);
-    }
-    const fmax = Math.max(1, ...forecast);
-    const seg = (n: number, c: string, l: string) => n ? `<i style="flex:${n};background:${c}" title="${l}: ${n}"></i>` : "";
-    el.innerHTML = `<div class="sheet"><h2>${t("Статистика")}</h2><div class="stats3">
-      <div><b>${per.get(today) ?? 0}</b><span>${t("сегодня")}</span></div><div class="stat-streak"><b>${streak} ${dayMark(dayLevel(streak), "inline")}</b><span>${t("дней подряд")}</span></div><div><b>${ret == null ? "—" : ret + "%"}</b><span>${t("удержание, 30 дн")}</span></div>
-      <div><b>${cards.length}</b><span>${t("карточек")}</span></div><div><b>${nMature}</b><span>${t("зрелых (21+ дн)")}</span></div><div><b>${store.reviews.length}</b><span>${t("всего повторов")}</span></div></div>
-      <div class="sec-t">${t("Активность")}</div><div class="heat">${cells.join("")}</div>
-      <div class="sec-t">${t("Состав коллекции")}</div><div class="stack">${seg(nNew, "#8e8e93", t("Новые"))}${seg(nLearn, "#ff9500", t("Изучаются"))}${seg(nYoung, "#3390ec", t("Молодые"))}${seg(nMature, "#34c759", t("Зрелые"))}</div>
-      <div class="legend"><span><i style="background:#8e8e93"></i>${t("новые")} ${nNew}</span><span><i style="background:#ff9500"></i>${t("изучаются")} ${nLearn}</span><span><i style="background:#3390ec"></i>${t("молодые")} ${nYoung}</span><span><i style="background:#34c759"></i>${t("зрелые")} ${nMature}</span></div>
-      <div class="sec-t">${t("Прогноз на 14 дней")} <span class="muted" style="font-weight:400">(${t("повторения по дням")})</span></div>
-      <div class="fc">${forecast.map((v, i) => `<div title="${v}"><i style="height:${Math.round((v / fmax) * 56) + (v ? 3 : 1)}px"></i><span>${i === 0 ? t("сег") : i}</span></div>`).join("")}</div>
+  } else if (m.type === "level") {
+    const x = xp(), L = uiL(), need = x.levelTo - x.levelFrom, have = Math.max(0, x.total - x.levelFrom), pct = Math.min(100, Math.round((have / need) * 100));
+    const n = (v: number) => v.toLocaleString(getLang() === "en" ? "en-US" : "ru-RU");
+    const rw = rewardsList(), nextRw = rw.find((r) => r.level > x.level);
+    const rows = rw.map((r) => `<div class="rw ${r.level <= x.level ? "got" : ""}"><span class="rw-ic">${r.level <= x.level ? ic("check") : ic("lock")}</span><span class="rw-t">${esc(r[L])}</span><span class="rw-l">${t("ур. {n}", { n: r.level })}</span></div>`).join("");
+    const themes = THEMES.map((th) => { const ok = th.level <= x.level, on = ok && unlockedTheme(x.level) === th.id;
+      return `<button class="th ${on ? "on" : ""} ${ok ? "" : "lock"}" ${ok ? `data-a="hero-theme" data-id="${th.id}"` : "disabled"} title="${esc(th.name[L])}${ok ? "" : " · " + t("ур. {n}", { n: th.level })}" style="background:${th.css}">${ok ? (on ? ic("check") : "") : ic("lock")}</button>`; }).join("");
+    el.innerHTML = `<div class="sheet lvl-sheet"><div class="lv-head"><div class="lv-badge">${ic("spark")}<b>${x.level}</b></div><div><h2>${t("Уровень {n}", { n: x.level })}</h2><div class="lv-title">${esc(titleOf(x.level)[L])}</div></div></div>
+      <div class="lv-bar"><i style="width:${Math.max(pct, 2)}%"></i></div>
+      <div class="lv-need"><b>${n(have)}</b> / ${n(need)} XP <span class="muted">· ${t("до уровня {l} осталось {n} XP", { l: x.level + 1, n: n(Math.max(0, x.levelTo - x.total)) })}</span></div>
+      <div class="lv-tiles"><div><b>${n(x.total)}</b><span>${t("всего XP")}</span></div><div><b>${x.today >= 0 ? "+" : "−"}${n(Math.abs(x.today))}</b><span>${t("сегодня")}</span></div><div><b>${n(x.bestDay)}</b><span>${t("лучший день")}</span></div></div>
+      ${nextRw ? `<div class="lv-next">${ic("trophy")} ${t("Следующая награда — на уровне {n}", { n: nextRw.level })}: <b>${esc(nextRw[L])}</b></div>` : ""}
+      <div class="sec-t">${t("Тема главной")}</div><div class="themes">${themes}</div>
+      <div class="sec-t">${t("Награды за уровни")}</div><div class="rws">${rows}</div>
+      <div class="sec-t">${t("Как начисляется опыт")}</div>
+      <ul class="xp-how"><li>${t("Верный ответ: +{n} XP, «трудно»: +{h} XP, ошибка: −{w} XP", { n: XP_RULES.good, h: XP_RULES.hard, w: Math.abs(XP_RULES.wrong) })}</li><li>${t("Новая карточка: ещё +{n} XP за первую встречу", { n: XP_RULES.first })}</li>
+        <li>${t("Серия правильных подряд и серия дней увеличивают награду за верные ответы")}</li><li>${t("За день: {list} ответов — бонус", { list: DAILY_BONUS.map(([c, b]) => `${c} (+${b})`).join(", ") })}</li>
+        <li>${t("Пройденный уровень курса: +{u} XP, весь курс: +{c} XP", { u: XP_RULES.unit, c: XP_RULES.course })}</li><li>${t("Опыт уменьшается за ошибки, но уровень не понижается")}</li></ul>
       <div style="text-align:right;margin-top:10px"><button class="btn" data-a="modal-close">${t("Закрыть")}</button></div></div>`;
   }
 }
@@ -1670,7 +1737,10 @@ document.addEventListener("click", (e) => {
       if (name && fsApi) fsApi.readBackup(name).then((txt) => { const r = store.importJSON(txt); toast(t("Копия загружена: +{c} изменений, +{r} повторов", { c: r.changes, r: r.reviews })); render(); }, (er) => toast(String(er)));
       break;
     }
-    case "stats": S.modal = { type: "stats" }; renderModal(); updateChrome(); break;
+    case "stats": S.stats = true; render(); $("statspage").scrollTop = 0; break;
+    case "stats-close": S.stats = false; render(); break;
+    case "level-open": S.modal = { type: "level" }; renderModal(); updateChrome(); break;
+    case "hero-theme": store.setSetting("heroTheme", id!); renderModal(); renderStreak(true); break;
     case "browser-open": void openBrowser("spark"); break;
     case "tips-open": S.tips = { tab: "spark" }; render(); break;
     case "courses-open": void openCourses(); break;
@@ -1816,7 +1886,7 @@ document.addEventListener("keydown", (e) => {
     else if (store.settings.manualGrades && ["1", "2", "3", "4"].includes(e.key)) rateManual(Number(e.key) as Rating);
     return;
   }
-  if (e.key === "Escape" && (S.modal || S.browser || S.tips || S.courses)) { goBack(); return; }
+  if (e.key === "Escape" && (S.modal || S.browser || S.tips || S.courses || S.stats)) { goBack(); return; }
   if (S.modal) {
     if (e.key === "Enter" && S.modal.type === "deck" && (e.target as HTMLElement).id === "m-name") (document.querySelector('[data-a="deck-save"]') as HTMLElement)?.click();
     return;

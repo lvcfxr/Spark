@@ -19,6 +19,8 @@ export interface Settings {
   typedAll: boolean;
   lang?: "auto" | "ru" | "en";
   autoAudio: boolean;
+  /** тема шапки главной (открывается с уровнем) */
+  heroTheme?: string;
   /** «Учить ещё»: сколько новых карточек сверх дневного лимита разрешено сегодня, по колодам. */
   extraNew?: { day: string; by: Record<string, number> };
 }
