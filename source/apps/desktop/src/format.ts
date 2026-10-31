@@ -67,9 +67,12 @@ export function clozeFace(text: string, n: number): { q: string; a: string; answ
 }
 
 // ---------- проверка ввода ----------
+/** Нормализация для сравнения ответа: регистр, ё = е, ударения и диакритика в латинице (é = e), кавычки, знаки препинания, дефисы. */
 export const norm = (t: string) =>
-  t.replace(/\*\*|`|==/g, "").trim().toLowerCase().replace(/\s+/g, " ").replace(/[.,!?¡¿;:]+$/g, "");
-
+  t.replace(/\*\*|`|==/g, "").toLowerCase().replace(/ё/g, "е").replace(/[\u0301]/g, "")
+    .normalize("NFD").replace(/([a-z])[\u0300-\u036f]+/g, "$1").normalize("NFC").replace(/ß/g, "ss")
+    .replace(/[’‘`´]/g, "'").replace(/[-‐–—_]/g, " ").replace(/[.,!?¡¿;:"«»“”„()[\]{}…]/g, " ")
+    .replace(/\s+/g, " ").trim();
 /** Допустимые варианты ответа: вся обратная сторона и её части через «/», «;» или перенос строки. */
 /** Убрать из текста ссылки на медиа (для списков и проверки ввода). */
 export const stripMedia = (s: string, img = "", snd = "", vid = img) => s.replace(/!\[\]\((?:media|file):[^)]*\)/g, img).replace(/\[audio\]\((?:media|file):[^)]*\)/g, snd).replace(/\[video\]\((?:media|file):[^)]*\)/g, vid);
@@ -77,11 +80,26 @@ export const stripMedia = (s: string, img = "", snd = "", vid = img) => s.replac
 export function mediaRefs(s: string): { kind: "image" | "audio" | "video"; key: string; raw: string }[] {
   return [...s.matchAll(/(!\[\]|\[audio\]|\[video\])\(media:([0-9a-f]{16,64})\)/g)].map((m) => ({ kind: m[1] === "![]" ? "image" : m[1] === "[audio]" ? "audio" : "video", key: m[2]!, raw: m[0] }));
 }
-export const answerVariants = (backIn: string): string[] => { const back = stripMedia(backIn).trim(); return [back, ...back.split(/[\n/;]/)].map((v) => v.trim()).filter(Boolean); };
+const ARTICLE = /^(?:el|la|los|las|un|una|der|die|das|den|dem|ein|eine|einen|le|les|l'|une|des|the|a|an|to)\s*/i;
+/** Допустимые варианты ответа: вся обратная сторона и её части через «;», «/», «,», «или» и перенос строки;
+ *  без пояснений в скобках, без артикля и «to» у английских глаголов. */
+export const answerVariants = (backIn: string): string[] => {
+  const back = stripMedia(backIn).replace(/\*\*|==|`/g, "").trim();
+  const parts = [back, ...back.split(/[\n/;,]|\s+(?:или|or|oder|ou|o)\s+/)].map((v) => v.trim()).filter(Boolean);
+  const out = new Set<string>();
+  for (const p of parts) {
+    out.add(p);
+    const noParen = p.replace(/\s*\([^)]*\)\s*/g, " ").trim();
+    if (noParen) out.add(noParen);
+    for (const v of [p, noParen]) { const na = v.replace(ARTICLE, "").trim(); if (na && na !== v) out.add(na); }
+  }
+  return [...out];
+};
 
 export function isCorrect(typed: string, answers: string[]): boolean {
   const t = norm(typed);
   if (!t) return false;
-  if (answers.some((a) => norm(a) === t)) return true;
+  const tn = t.replace(ARTICLE, "");
+  if (answers.some((a) => { const n = norm(a); return n === t || (tn && n === tn) || n.replace(/ /g, "") === t.replace(/ /g, ""); })) return true;
   return answers.length > 1 && (norm(answers.join(", ")) === t || norm(answers.join(" ")) === t);
 }

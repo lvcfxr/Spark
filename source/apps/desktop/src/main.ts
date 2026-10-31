@@ -796,7 +796,9 @@ function checkTyped(valueIn?: string) {
   }
   x.r.show = true;
   haptic(ok ? "success" : "error");
-  if (ok && x.live) { x.r.locking = true; renderReview(); setTimeout(() => applyPending(), 420); }
+  // новая карточка (первая встреча) не пролистывается сама: можно спокойно прочитать перевод, пример и пояснение
+  const firstTime = store.stateOf(x.card.id).phase === "new";
+  if (ok && x.live && !firstTime) { x.r.locking = true; renderReview(); setTimeout(() => applyPending(), 420); }
   else { renderReview(); void playFirst(".ans"); }
 }
 function bumpCombo(rating: Rating) {
