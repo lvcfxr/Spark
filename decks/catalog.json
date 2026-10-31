@@ -6,8 +6,8 @@
    "emoji": "🇬🇧",
    "title": "English: 60 базовых слов",
    "title_en": "English: 60 core words",
-   "description": "Самые частые английские слова: существительные, глаголы и прилагательные. Хорошее начало для изучения языка. Со звуком, транскрипцией и примерами.",
-   "description_en": "The most frequent English words — nouns, verbs and adjectives, with Russian translations. With audio, transcription and examples.",
+   "description": "Самые частые английские слова: существительные, глаголы и прилагательные. Хорошее начало для изучения языка.",
+   "description_en": "The most frequent English words — nouns, verbs and adjectives, with Russian translations.",
    "lang_front": "en",
    "lang_back": "ru",
    "tags": [
@@ -15,19 +15,17 @@
     "beginner"
    ],
    "count": 60,
-   "version": 2,
+   "version": 1,
    "author": "Spark",
-   "file": "en-basics.json",
-   "media": "en-basics.audio.mp3",
-   "audio": true
+   "file": "en-basics.json"
   },
   {
    "id": "en-irregular",
    "emoji": "🔁",
    "title": "Неправильные глаголы английского",
    "title_en": "English irregular verbs",
-   "description": "54 самых нужных неправильных глагола: три формы и перевод. Удобно учить с вводом ответа. Со звуком, транскрипцией и примерами.",
-   "description_en": "54 essential irregular verbs: base form → past simple — past participle, with Russian translation. With audio, transcription and examples.",
+   "description": "54 самых нужных неправильных глагола: три формы и перевод. Удобно учить с вводом ответа.",
+   "description_en": "54 essential irregular verbs: base form → past simple — past participle, with Russian translation.",
    "lang_front": "en",
    "lang_back": "ru",
    "tags": [
@@ -35,19 +33,17 @@
     "grammar"
    ],
    "count": 54,
-   "version": 2,
+   "version": 1,
    "author": "Spark",
-   "file": "en-irregular.json",
-   "media": "en-irregular.audio.mp3",
-   "audio": true
+   "file": "en-irregular.json"
   },
   {
    "id": "es-basics",
    "emoji": "🇪🇸",
    "title": "Español: первые 50 слов",
    "title_en": "Spanish: first 50 words",
-   "description": "Приветствия, предметы вокруг, цвета, частые глаголы и числа. Существительные — с артиклем. Со звуком, транскрипцией и примерами.",
-   "description_en": "Greetings, everyday objects, colours, common verbs and numbers — with Russian translations. With audio, transcription and examples.",
+   "description": "Приветствия, предметы вокруг, цвета, частые глаголы и числа. Существительные — с артиклем.",
+   "description_en": "Greetings, everyday objects, colours, common verbs and numbers — with Russian translations.",
    "lang_front": "es",
    "lang_back": "ru",
    "tags": [
@@ -55,19 +51,17 @@
     "beginner"
    ],
    "count": 50,
-   "version": 2,
+   "version": 1,
    "author": "Spark",
-   "file": "es-basics.json",
-   "media": "es-basics.audio.mp3",
-   "audio": true
+   "file": "es-basics.json"
   },
   {
    "id": "de-basics",
    "emoji": "🇩🇪",
    "title": "Deutsch: первые 50 слов",
    "title_en": "German: first 50 words",
-   "description": "Базовая лексика немецкого: приветствия, предметы, цвета, глаголы и числа. Существительные — с артиклем. Со звуком, транскрипцией и примерами.",
-   "description_en": "Core German vocabulary with articles: greetings, objects, colours, verbs and numbers. With audio, transcription and examples.",
+   "description": "Базовая лексика немецкого: приветствия, предметы, цвета, глаголы и числа. Существительные — с артиклем.",
+   "description_en": "Core German vocabulary with articles: greetings, objects, colours, verbs and numbers.",
    "lang_front": "de",
    "lang_back": "ru",
    "tags": [
@@ -75,19 +69,17 @@
     "beginner"
    ],
    "count": 50,
-   "version": 2,
+   "version": 1,
    "author": "Spark",
-   "file": "de-basics.json",
-   "media": "de-basics.audio.mp3",
-   "audio": true
+   "file": "de-basics.json"
   },
   {
    "id": "ru-basics",
    "emoji": "🇷🇺",
    "title": "Русский: 50 первых слов",
    "title_en": "Russian: first 50 words",
-   "description": "Базовые русские слова для англоязычных: с транслитерацией. Со звуком, транскрипцией и примерами.",
-   "description_en": "Core Russian words for English speakers, with transliteration hints. With audio, transcription and examples.",
+   "description": "Базовые русские слова для англоязычных: с транслитерацией.",
+   "description_en": "Core Russian words for English speakers, with transliteration hints.",
    "lang_front": "ru",
    "lang_back": "en",
    "tags": [
@@ -95,26 +87,24 @@
     "beginner"
    ],
    "count": 50,
-   "version": 2,
+   "version": 1,
    "author": "Spark",
-   "file": "ru-basics.json",
-   "media": "ru-basics.audio.mp3",
-   "audio": true
+   "file": "ru-basics.json"
   },
   {
    "id": "capitals",
    "emoji": "🌍",
    "title": "Столицы мира",
    "title_en": "World capitals (in Russian)",
-   "description": "60 стран и их столицы: Европа, Азия, Америка, Африка и Океания. С подсказками и короткими пояснениями.",
-   "description_en": "60 countries and their capitals, in Russian. With hints and short explanations.",
+   "description": "60 стран и их столицы: Европа, Азия, Америка, Африка и Океания.",
+   "description_en": "60 countries and their capitals, in Russian.",
    "lang_front": "ru",
    "lang_back": "ru",
    "tags": [
     "geography"
    ],
    "count": 60,
-   "version": 2,
+   "version": 1,
    "author": "Spark",
    "file": "capitals.json"
   },
@@ -123,8 +113,8 @@
    "emoji": "⚗️",
    "title": "Химические элементы 1–30",
    "title_en": "Chemical elements 1–30 (in Russian)",
-   "description": "Символы первых 30 элементов таблицы Менделеева и их названия. В подсказке — порядковый номер. С подсказками и короткими пояснениями.",
-   "description_en": "Symbols of the first 30 elements with their Russian names; atomic number as a hint. With hints and short explanations.",
+   "description": "Символы первых 30 элементов таблицы Менделеева и их названия. В подсказке — порядковый номер.",
+   "description_en": "Symbols of the first 30 elements with their Russian names; atomic number as a hint.",
    "lang_front": "ru",
    "lang_back": "ru",
    "tags": [
@@ -132,7 +122,7 @@
     "science"
    ],
    "count": 30,
-   "version": 2,
+   "version": 1,
    "author": "Spark",
    "file": "elements.json"
   }

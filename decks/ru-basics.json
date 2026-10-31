@@ -1,512 +1,256 @@
 {
- "id": "ru-basics",
- "version": 2,
- "cards": [
-  {
-   "front": "привет [audio](media:e7b1d6708af570be107d9b41)",
-   "back": "hi",
-   "hint": "privét · /prʲɪˈvʲet/",
-   "extra": "Informal hello — use with friends.\n> Привет, как дела? — *Hi, how are you?*"
-  },
-  {
-   "front": "спасибо [audio](media:aee9d8074e6434756b531e92)",
-   "back": "thank you",
-   "hint": "spasíbo · /spɐˈsʲibə/",
-   "extra": "Thank you very much — большое спасибо.\n> Спасибо за помощь. — *Thanks for the help.*"
-  },
-  {
-   "front": "пожалуйста [audio](media:0c95ad0bf2f48d1a94e5813d)",
-   "back": "please; you're welcome",
-   "hint": "pozháluysta · /pɐˈʐaləstə/",
-   "extra": "Both «please» and «you're welcome». In speech often sounds like pozhálsta.\n> Чай, пожалуйста. — *Tea, please.*"
-  },
-  {
-   "front": "да [audio](media:9a0e178dc0e284520ef4f4e0)",
-   "back": "yes",
-   "hint": "da · /da/",
-   "extra": "Also used as «well, yes» to agree in conversation.\n> Да, конечно. — *Yes, of course.*"
-  },
-  {
-   "front": "нет [audio](media:1d979552009b3cbe9dbb8700)",
-   "back": "no",
-   "hint": "nyet · /nʲet/",
-   "extra": "Also means «there is no»: нет времени — there's no time.\n> Нет, спасибо. — *No, thank you.*"
-  },
-  {
-   "front": "вода [audio](media:36c558a94da4abecc216c3bf)",
-   "back": "water",
-   "hint": "vodá · /vɐˈda/",
-   "extra": "Unstressed о sounds like a: va-DA.\n> Можно воды? — *Can I have some water?*"
-  },
-  {
-   "front": "дом [audio](media:f1133c24f85e57396e892f73)",
-   "back": "house; home",
-   "hint": "dom · /dom/",
-   "extra": "At home — дома; (to) home — домой.\n> Я иду домой. — *I'm going home.*"
-  },
-  {
-   "front": "кошка [audio](media:9428f91eae82b9f367ae2096)",
-   "back": "cat",
-   "hint": "kóshka · /ˈkoʂkə/",
-   "extra": "Feminine. A male cat is кот.\n> У меня есть кошка. — *I have a cat.*"
-  },
-  {
-   "front": "собака [audio](media:13fb401f9fc8d2714561169f)",
-   "back": "dog",
-   "hint": "sobáka · /sɐˈbakə/",
-   "extra": "Feminine, even for a male dog.\n> Собака любит гулять. — *The dog loves walks.*"
-  },
-  {
-   "front": "книга [audio](media:1f3dd6a905c36737e04a2f1c)",
-   "back": "book",
-   "hint": "kníga · /ˈknʲiɡə/",
-   "extra": "The к is pronounced: k-NEE-ga.\n> Это интересная книга. — *This is an interesting book.*"
-  },
-  {
-   "front": "стол [audio](media:6001b564d9dbd479d26ffe61)",
-   "back": "table",
-   "hint": "stol · /stol/",
-   "extra": "Masculine. On the table — на столе.\n> Книга на столе. — *The book is on the table.*"
-  },
-  {
-   "front": "город [audio](media:acdf1c9d7187e04b2012bd4d)",
-   "back": "city",
-   "hint": "górod · /ˈɡorət/",
-   "extra": "Final д sounds like т. Plural — города.\n> Москва — большой город. — *Moscow is a big city.*"
-  },
-  {
-   "front": "день [audio](media:1d74825d00df1914d58b9cde)",
-   "back": "day",
-   "hint": "den' · /dʲenʲ/",
-   "extra": "Good afternoon — добрый день.\n> Хорошего дня! — *Have a nice day!*"
-  },
-  {
-   "front": "ночь [audio](media:d7f93707c54d67119af04dc9)",
-   "back": "night",
-   "hint": "noch' · /notɕ/",
-   "extra": "Feminine. Good night — спокойной ночи.\n> Спокойной ночи! — *Good night!*"
-  },
-  {
-   "front": "время [audio](media:691abfaaaf5f7c8af91d3c5a)",
-   "back": "time",
-   "hint": "vrémya · /ˈvrʲemʲə/",
-   "extra": "Neuter despite the -я ending. What time is it? — Сколько времени?\n> У меня нет времени. — *I don't have time.*"
-  },
-  {
-   "front": "друг [audio](media:8c60ee7ca6073b3b8784078f)",
-   "back": "friend",
-   "hint": "drug · /druk/",
-   "extra": "Final г sounds like к. A female friend — подруга.\n> Он мой лучший друг. — *He's my best friend.*"
-  },
-  {
-   "front": "семья [audio](media:74c736ea553d3d36c2705f67)",
-   "back": "family",
-   "hint": "sem'yá · /sʲɪmʲˈja/",
-   "extra": "The soft sign separates м and я: sem-YA.\n> У меня большая семья. — *I have a big family.*"
-  },
-  {
-   "front": "работа [audio](media:d68f7c3beee43561f73ff0e4)",
-   "back": "work; job",
-   "hint": "rabóta · /rɐˈbotə/",
-   "extra": "To work — работать. At work — на работе.\n> Я иду на работу. — *I'm going to work.*"
-  },
-  {
-   "front": "школа [audio](media:905b35605b489e7ae6ec2d16)",
-   "back": "school",
-   "hint": "shkóla · /ˈʂkolə/",
-   "extra": "At school — в школе.\n> Дети в школе. — *The children are at school.*"
-  },
-  {
-   "front": "еда [audio](media:71994b8dfa5157a22b29cd5a)",
-   "back": "food",
-   "hint": "yedá · /jɪˈda/",
-   "extra": "Stress on the last syllable.\n> Еда очень вкусная. — *The food is very tasty.*"
-  },
-  {
-   "front": "хлеб [audio](media:7fda6a3b5e0b8c6731ba0fbf)",
-   "back": "bread",
-   "hint": "khleb · /xlʲep/",
-   "extra": "Final б sounds like п. х is a throaty h, as in Scottish loch.\n> Я покупаю хлеб. — *I'm buying bread.*"
-  },
-  {
-   "front": "молоко [audio](media:deae876bdb785ac61ae3ef63)",
-   "back": "milk",
-   "hint": "molokó · /məlɐˈko/",
-   "extra": "Three o's, only the last is stressed: ma-la-KO.\n> Кофе с молоком, пожалуйста. — *Coffee with milk, please.*"
-  },
-  {
-   "front": "красный [audio](media:1f83b7300ccab42b9e83ae7b)",
-   "back": "red",
-   "hint": "krásnyy · /ˈkrasnɨj/",
-   "extra": "Red Square — Красная площадь.\n> Мне нравится красный цвет. — *I like the color red.*"
-  },
-  {
-   "front": "синий [audio](media:5643b08c37bfa46842aaf824)",
-   "back": "(dark) blue",
-   "hint": "síniy · /ˈsʲinʲɪj/",
-   "extra": "Dark blue. Light blue is a separate word — голубой.\n> У неё синее платье. — *She has a dark blue dress.*"
-  },
-  {
-   "front": "зелёный [audio](media:e983a3fd2668a31a2a67ebd1)",
-   "back": "green",
-   "hint": "zelyónyy · /zʲɪˈlʲonɨj/",
-   "extra": "ё is always stressed.\n> Зелёный чай, пожалуйста. — *Green tea, please.*"
-  },
-  {
-   "front": "белый [audio](media:5e428faff55a84172e7bb922)",
-   "back": "white",
-   "hint": "bélyy · /ˈbʲelɨj/",
-   "extra": "ы has no English equivalent — say «i» with the tongue pulled back.\n> Снег белый. — *Snow is white.*"
-  },
-  {
-   "front": "чёрный [audio](media:38fe511e34ef4b53500e1580)",
-   "back": "black",
-   "hint": "chyórnyy · /ˈtɕornɨj/",
-   "extra": "Black coffee — чёрный кофе.\n> У меня чёрный кот. — *I have a black cat.*"
-  },
-  {
-   "front": "большой [audio](media:6542282931b2d06b9c8df8ad)",
-   "back": "big",
-   "hint": "bol'shóy · /bɐlʲˈʂoj/",
-   "extra": "Stress at the end. The Bolshoi Theatre — Большой театр.\n> Это большой дом. — *This is a big house.*"
-  },
-  {
-   "front": "маленький [audio](media:875d9c069520c293e5a55edf)",
-   "back": "small",
-   "hint": "málen'kiy · /ˈmalʲɪnʲkʲɪj/",
-   "extra": "Stress on the first syllable.\n> У нас маленькая квартира. — *We have a small flat.*"
-  },
-  {
-   "front": "хороший [audio](media:deca72074d8fa6d3c275e6de)",
-   "back": "good",
-   "hint": "khoróshiy · /xɐˈroʂɨj/",
-   "extra": "Adverb: хорошо — well, OK.\n> Это хороший фильм. — *This is a good film.*"
-  },
-  {
-   "front": "плохой [audio](media:632100949eebc2d532851337)",
-   "back": "bad",
-   "hint": "plokhóy · /plɐˈxoj/",
-   "extra": "Adverb: плохо — badly.\n> Сегодня плохая погода. — *The weather is bad today.*"
-  },
-  {
-   "front": "новый [audio](media:beb1e576e45ac6df9f77882c)",
-   "back": "new",
-   "hint": "nóvyy · /ˈnovɨj/",
-   "extra": "Happy New Year — С Новым годом!\n> У меня новый телефон. — *I have a new phone.*"
-  },
-  {
-   "front": "старый [audio](media:13fca894f07e4aebf26ecbca)",
-   "back": "old",
-   "hint": "stáryy · /ˈstarɨj/",
-   "extra": "Old about things and people.\n> Это старый город. — *This is an old town.*"
-  },
-  {
-   "front": "говорить [audio](media:b50380feb41efb2ab451cfb7)",
-   "back": "to speak; to talk",
-   "hint": "govorít' · /ɡəvɐˈrʲitʲ/",
-   "extra": "I speak — говорю, you speak — говоришь.\n> Вы говорите по-английски? — *Do you speak English?*"
-  },
-  {
-   "front": "есть [audio](media:f7f890b56063e18e4e105e9e)",
-   "back": "to eat",
-   "hint": "yest' · /jestʲ/",
-   "extra": "Also means «there is / have»: у меня есть — I have.\n> Я хочу есть. — *I'm hungry (I want to eat).*"
-  },
-  {
-   "front": "пить [audio](media:768e680c619ac1db83a97479)",
-   "back": "to drink",
-   "hint": "pit' · /pʲitʲ/",
-   "extra": "I drink — пью, you drink — пьёшь.\n> Что ты будешь пить? — *What will you drink?*"
-  },
-  {
-   "front": "жить [audio](media:239c9d18a4ec0a2ef49f6cca)",
-   "back": "to live",
-   "hint": "zhit' · /ʐɨtʲ/",
-   "extra": "I live — живу. ж is like s in «pleasure».\n> Я живу в Москве. — *I live in Moscow.*"
-  },
-  {
-   "front": "быть [audio](media:3115c4d7c9edc593401d0a1d)",
-   "back": "to be",
-   "hint": "byt' · /bɨtʲ/",
-   "extra": "Usually dropped in the present: Я студент — I am a student.\n> Я буду дома. — *I will be at home.*"
-  },
-  {
-   "front": "идти [audio](media:0a64f686cff3535141b95467)",
-   "back": "to go (on foot)",
-   "hint": "idtí · /ɪˈtʲtʲi/",
-   "extra": "To go on foot, right now. Sounds like it-TI.\n> Я иду в магазин. — *I'm going to the shop.*"
-  },
-  {
-   "front": "делать [audio](media:5ecf44907c8bca39dcfad705)",
-   "back": "to do; to make",
-   "hint": "délat' · /ˈdʲelətʲ/",
-   "extra": "What are you doing? — Что ты делаешь?\n> Что ты делаешь? — *What are you doing?*"
-  },
-  {
-   "front": "хотеть [audio](media:51a8d39455b0b2a7e30fd146)",
-   "back": "to want",
-   "hint": "khotét' · /xɐˈtʲetʲ/",
-   "extra": "Irregular: хочу, хочешь, хочет, хотим.\n> Я хочу чай. — *I want tea.*"
-  },
-  {
-   "front": "знать [audio](media:f398695a2765f6760caa0d1e)",
-   "back": "to know",
-   "hint": "znat' · /znatʲ/",
-   "extra": "I know — знаю; I don't know — не знаю.\n> Я не знаю. — *I don't know.*"
-  },
-  {
-   "front": "любить [audio](media:16fc39190eee562d36634b3a)",
-   "back": "to love; to like",
-   "hint": "lyubít' · /lʲʊˈbʲitʲ/",
-   "extra": "I love you — я тебя люблю. Also «to like».\n> Я люблю кофе. — *I love coffee.*"
-  },
-  {
-   "front": "один [audio](media:1de3a57119ea9bd266d276a0)",
-   "back": "one",
-   "hint": "odín · /ɐˈdʲin/",
-   "extra": "Also «alone». Feminine — одна, neuter — одно.\n> Один кофе, пожалуйста. — *One coffee, please.*"
-  },
-  {
-   "front": "два [audio](media:beee6e78387fbf4a80f8a2ac)",
-   "back": "two",
-   "hint": "dva · /dva/",
-   "extra": "Feminine — две.\n> Два билета, пожалуйста. — *Two tickets, please.*"
-  },
-  {
-   "front": "три [audio](media:f3ad2f277c6f015b6f4cbf83)",
-   "back": "three",
-   "hint": "tri · /trʲi/",
-   "extra": "Rolled р.\n> Сейчас три часа. — *It's three o'clock.*"
-  },
-  {
-   "front": "сегодня [audio](media:3568ff47635449a7cf2125d8)",
-   "back": "today",
-   "hint": "sevódnya · /sʲɪˈvodnʲə/",
-   "extra": "Written with г but pronounced like в: si-VOD-nya.\n> Сегодня хорошая погода. — *The weather is nice today.*"
-  },
-  {
-   "front": "завтра [audio](media:1c47853199a9e98244fe114f)",
-   "back": "tomorrow",
-   "hint": "závtra · /ˈzaftrə/",
-   "extra": "Also «breakfast» is завтрак.\n> До завтра! — *See you tomorrow!*"
-  },
-  {
-   "front": "вчера [audio](media:c3a89b4f15552864f5aec4e4)",
-   "back": "yesterday",
-   "hint": "vcherá · /ftɕɪˈra/",
-   "extra": "в before ч sounds like f: fche-RA.\n> Вчера был дождь. — *It rained yesterday.*"
-  },
-  {
-   "front": "здравствуйте [audio](media:76dbbdbfd04abd72c21be71c)",
-   "back": "hello (formal)",
-   "hint": "zdrávstvuyte · /ˈzdrastvʊjtʲe/",
-   "extra": "Formal hello. The first в is silent: ZDRAST-vuy-tye.\n> Здравствуйте, меня зовут Анна. — *Hello, my name is Anna.*"
-  }
- ],
- "media": {
-  "file": "ru-basics.audio.mp3",
-  "type": "audio/mpeg",
-  "index": {
-   "e7b1d6708af570be107d9b41": [
-    0,
-    3957
-   ],
-   "aee9d8074e6434756b531e92": [
-    3957,
-    5157
-   ],
-   "0c95ad0bf2f48d1a94e5813d": [
-    9114,
-    4917
-   ],
-   "9a0e178dc0e284520ef4f4e0": [
-    14031,
-    3837
-   ],
-   "1d979552009b3cbe9dbb8700": [
-    17868,
-    4077
-   ],
-   "36c558a94da4abecc216c3bf": [
-    21945,
-    4197
-   ],
-   "f1133c24f85e57396e892f73": [
-    26142,
-    3597
-   ],
-   "9428f91eae82b9f367ae2096": [
-    29739,
-    3717
-   ],
-   "13fb401f9fc8d2714561169f": [
-    33456,
-    4677
-   ],
-   "1f3dd6a905c36737e04a2f1c": [
-    38133,
-    3957
-   ],
-   "6001b564d9dbd479d26ffe61": [
-    42090,
-    3117
-   ],
-   "acdf1c9d7187e04b2012bd4d": [
-    45207,
-    4557
-   ],
-   "1d74825d00df1914d58b9cde": [
-    49764,
-    3717
-   ],
-   "d7f93707c54d67119af04dc9": [
-    53481,
-    4197
-   ],
-   "691abfaaaf5f7c8af91d3c5a": [
-    57678,
-    4077
-   ],
-   "8c60ee7ca6073b3b8784078f": [
-    61755,
-    4197
-   ],
-   "74c736ea553d3d36c2705f67": [
-    65952,
-    4557
-   ],
-   "d68f7c3beee43561f73ff0e4": [
-    70509,
-    5037
-   ],
-   "905b35605b489e7ae6ec2d16": [
-    75546,
-    4677
-   ],
-   "71994b8dfa5157a22b29cd5a": [
-    80223,
-    4197
-   ],
-   "7fda6a3b5e0b8c6731ba0fbf": [
-    84420,
-    4437
-   ],
-   "deae876bdb785ac61ae3ef63": [
-    88857,
-    4317
-   ],
-   "1f83b7300ccab42b9e83ae7b": [
-    93174,
-    4677
-   ],
-   "5643b08c37bfa46842aaf824": [
-    97851,
-    4797
-   ],
-   "e983a3fd2668a31a2a67ebd1": [
-    102648,
-    4797
-   ],
-   "5e428faff55a84172e7bb922": [
-    107445,
-    4557
-   ],
-   "38fe511e34ef4b53500e1580": [
-    112002,
-    4557
-   ],
-   "6542282931b2d06b9c8df8ad": [
-    116559,
-    5157
-   ],
-   "875d9c069520c293e5a55edf": [
-    121716,
-    4797
-   ],
-   "deca72074d8fa6d3c275e6de": [
-    126513,
-    4677
-   ],
-   "632100949eebc2d532851337": [
-    131190,
-    4077
-   ],
-   "beb1e576e45ac6df9f77882c": [
-    135267,
-    4317
-   ],
-   "13fca894f07e4aebf26ecbca": [
-    139584,
-    3597
-   ],
-   "b50380feb41efb2ab451cfb7": [
-    143181,
-    4437
-   ],
-   "f7f890b56063e18e4e105e9e": [
-    147618,
-    3717
-   ],
-   "768e680c619ac1db83a97479": [
-    151335,
-    3477
-   ],
-   "239c9d18a4ec0a2ef49f6cca": [
-    154812,
-    4197
-   ],
-   "3115c4d7c9edc593401d0a1d": [
-    159009,
-    3597
-   ],
-   "0a64f686cff3535141b95467": [
-    162606,
-    4077
-   ],
-   "5ecf44907c8bca39dcfad705": [
-    166683,
-    4197
-   ],
-   "51a8d39455b0b2a7e30fd146": [
-    170880,
-    3957
-   ],
-   "f398695a2765f6760caa0d1e": [
-    174837,
-    4437
-   ],
-   "16fc39190eee562d36634b3a": [
-    179274,
-    4197
-   ],
-   "1de3a57119ea9bd266d276a0": [
-    183471,
-    4197
-   ],
-   "beee6e78387fbf4a80f8a2ac": [
-    187668,
-    4317
-   ],
-   "f3ad2f277c6f015b6f4cbf83": [
-    191985,
-    3357
-   ],
-   "3568ff47635449a7cf2125d8": [
-    195342,
-    4917
-   ],
-   "1c47853199a9e98244fe114f": [
-    200259,
-    4677
-   ],
-   "c3a89b4f15552864f5aec4e4": [
-    204936,
-    3837
-   ],
-   "76dbbdbfd04abd72c21be71c": [
-    208773,
-    5757
-   ]
-  }
- }
+"id": "ru-basics",
+"version": 1,
+"cards": [
+{
+"front": "привет",
+"back": "hi",
+"hint": "privet"
+},
+{
+"front": "спасибо",
+"back": "thank you",
+"hint": "spasibo"
+},
+{
+"front": "пожалуйста",
+"back": "please; you're welcome",
+"hint": "pozhaluysta"
+},
+{
+"front": "да",
+"back": "yes",
+"hint": "da"
+},
+{
+"front": "нет",
+"back": "no",
+"hint": "net"
+},
+{
+"front": "вода",
+"back": "water",
+"hint": "voda"
+},
+{
+"front": "дом",
+"back": "house; home",
+"hint": "dom"
+},
+{
+"front": "кошка",
+"back": "cat",
+"hint": "koshka"
+},
+{
+"front": "собака",
+"back": "dog",
+"hint": "sobaka"
+},
+{
+"front": "книга",
+"back": "book",
+"hint": "kniga"
+},
+{
+"front": "стол",
+"back": "table",
+"hint": "stol"
+},
+{
+"front": "город",
+"back": "city",
+"hint": "gorod"
+},
+{
+"front": "день",
+"back": "day",
+"hint": "den'"
+},
+{
+"front": "ночь",
+"back": "night",
+"hint": "noch'"
+},
+{
+"front": "время",
+"back": "time",
+"hint": "vremya"
+},
+{
+"front": "друг",
+"back": "friend",
+"hint": "drug"
+},
+{
+"front": "семья",
+"back": "family",
+"hint": "sem'ya"
+},
+{
+"front": "работа",
+"back": "work; job",
+"hint": "rabota"
+},
+{
+"front": "школа",
+"back": "school",
+"hint": "shkola"
+},
+{
+"front": "еда",
+"back": "food",
+"hint": "yeda"
+},
+{
+"front": "хлеб",
+"back": "bread",
+"hint": "khleb"
+},
+{
+"front": "молоко",
+"back": "milk",
+"hint": "moloko"
+},
+{
+"front": "красный",
+"back": "red",
+"hint": "krasnyy"
+},
+{
+"front": "синий",
+"back": "(dark) blue",
+"hint": "siniy"
+},
+{
+"front": "зелёный",
+"back": "green",
+"hint": "zelyonyy"
+},
+{
+"front": "белый",
+"back": "white",
+"hint": "belyy"
+},
+{
+"front": "чёрный",
+"back": "black",
+"hint": "chyornyy"
+},
+{
+"front": "большой",
+"back": "big",
+"hint": "bol'shoy"
+},
+{
+"front": "маленький",
+"back": "small",
+"hint": "malen'kiy"
+},
+{
+"front": "хороший",
+"back": "good",
+"hint": "khoroshiy"
+},
+{
+"front": "плохой",
+"back": "bad",
+"hint": "plokhoy"
+},
+{
+"front": "новый",
+"back": "new",
+"hint": "novyy"
+},
+{
+"front": "старый",
+"back": "old",
+"hint": "staryy"
+},
+{
+"front": "говорить",
+"back": "to speak; to talk",
+"hint": "govorit'"
+},
+{
+"front": "есть",
+"back": "to eat",
+"hint": "yest'"
+},
+{
+"front": "пить",
+"back": "to drink",
+"hint": "pit'"
+},
+{
+"front": "жить",
+"back": "to live",
+"hint": "zhit'"
+},
+{
+"front": "быть",
+"back": "to be",
+"hint": "byt'"
+},
+{
+"front": "идти",
+"back": "to go (on foot)",
+"hint": "idti"
+},
+{
+"front": "делать",
+"back": "to do; to make",
+"hint": "delat'"
+},
+{
+"front": "хотеть",
+"back": "to want",
+"hint": "khotet'"
+},
+{
+"front": "знать",
+"back": "to know",
+"hint": "znat'"
+},
+{
+"front": "любить",
+"back": "to love; to like",
+"hint": "lyubit'"
+},
+{
+"front": "один",
+"back": "one",
+"hint": "odin"
+},
+{
+"front": "два",
+"back": "two",
+"hint": "dva"
+},
+{
+"front": "три",
+"back": "three",
+"hint": "tri"
+},
+{
+"front": "сегодня",
+"back": "today",
+"hint": "segodnya"
+},
+{
+"front": "завтра",
+"back": "tomorrow",
+"hint": "zavtra"
+},
+{
+"front": "вчера",
+"back": "yesterday",
+"hint": "vchera"
+},
+{
+"front": "здравствуйте",
+"back": "hello (formal)",
+"hint": "zdravstvuyte"
+}
+]
 }

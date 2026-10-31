@@ -40,29 +40,20 @@ export function initTelegram(onBack: () => void, onTheme: () => void): void {
   t.onEvent("themeChanged", onTheme);
 }
 
-/** Тёмная ли тема у Telegram (только для режима «Авто»). Цвета Telegram не используются — у Spark своя палитра. */
-export const tgColorScheme = (): "light" | "dark" | null => w()?.colorScheme ?? null;
-
-/** Шапка, фон и нижняя панель Telegram — в цвет Spark, чтобы не было «чужих» полос. */
-export function paintTelegramChrome(bg: string): void {
-  const t = w() as (TgWebApp & { setBottomBarColor?(c: string): void }) | undefined;
-  if (!t) return;
-  try { t.setHeaderColor?.(bg); t.setBackgroundColor?.(bg); t.setBottomBarColor?.(bg); } catch { /* старые клиенты */ }
+/** Цвета Telegram → переменные интерфейса. Возвращает true, если тема управляется Telegram. */
+export function applyTelegramTheme(userAccent: string, defaultAccent: string): { dark: boolean } | null {
+  const t = w();
+  if (!t) return null;
+  const p = t.themeParams, root = document.documentElement.style;
+  const set = (k: string, v?: string) => v && root.setProperty(k, v);
+  set("--bg", p.secondary_bg_color ?? p.bg_color);
+  set("--panel-solid", p.bg_color); set("--card", p.section_bg_color ?? p.bg_color);
+  set("--text", p.text_color); set("--muted", p.hint_color);
+  set("--accent", userAccent !== defaultAccent ? userAccent : p.button_color);
+  t.setHeaderColor?.(p.secondary_bg_color ?? p.bg_color ?? "#000000");
+  t.setBackgroundColor?.(p.secondary_bg_color ?? p.bg_color ?? "#000000");
+  return { dark: t.colorScheme === "dark" };
 }
-
-/** Ярлык Mini App на главный экран телефона (Bot API 8.0+). */
-type HomeStatus = "unsupported" | "unknown" | "added" | "missed";
-export function homeScreenSupported(): boolean { const t = w(); return !!t && t.isVersionAtLeast("8.0") && typeof (t as unknown as { addToHomeScreen?: unknown }).addToHomeScreen === "function"; }
-export function addToHomeScreen(): void { (w() as unknown as { addToHomeScreen?(): void })?.addToHomeScreen?.(); }
-export function checkHomeScreen(): Promise<HomeStatus> {
-  return new Promise((res) => {
-    const t = w() as unknown as { checkHomeScreenStatus?(cb: (s: HomeStatus) => void): void } | undefined;
-    if (!t?.checkHomeScreenStatus || !homeScreenSupported()) return res("unsupported");
-    t.checkHomeScreenStatus((s) => res(s));
-    setTimeout(() => res("unknown"), 2500);
-  });
-}
-export function onHomeScreenAdded(cb: () => void) { w()?.onEvent("homeScreenAdded", cb); }
 
 export function setBackButton(visible: boolean): void {
   const b = w()?.BackButton;
