@@ -10,15 +10,14 @@ import {
   signIn, signInTelegram, signOut, signUp,
 } from "./sync";
 import {
-  addToHomeScreen, checkHomeScreen, homeScreenSupported, onHomeScreenAdded, paintTelegramChrome, tgColorScheme, closingConfirmation, haptic, initTelegram, inTelegram, loadTelegram, openExternal, setBackButton, tgInitData, tgUser,
+  applyTelegramTheme, closingConfirmation, haptic, initTelegram, inTelegram, loadTelegram, openExternal, setBackButton, tgInitData, tgUser,
 } from "./tg";
-import { answerVariants, clozeFace, clozeNumbers, esc, fmt, fmtDur, isCorrect, mediaRefs, norm, stripMedia } from "./format";
-import { fillIcons, ic, sparkMark } from "./icons";
-import { TIPS } from "./tips";
+import { answerVariants, clozeFace, clozeNumbers, esc, fmt, fmtDur, isCorrect, mediaRefs, stripMedia } from "./format";
+import { fillIcons, ic } from "./icons";
 import { detectLang, getLang, setLang, t, translateStatic, type Lang } from "./i18n";
-import { AUDIO_RE, IMAGE_RE, LIMITS, VIDEO_RE, allMediaKeys, getMediaBlob, hydrateMedia, mediaDuration, mediaUrl, mimeOf, playAudio, putLocal, putMedia, setBundledMedia, setMediaSync, shrinkImage } from "./media";
+import { AUDIO_RE, IMAGE_RE, LIMITS, VIDEO_RE, allMediaKeys, getMediaBlob, hydrateMedia, mediaDuration, mediaUrl, mimeOf, playAudio, putMedia, setMediaSync, shrinkImage } from "./media";
 import {
-  LANGS, bundledDeckOf, communityAvailable, loadCommunity, loadCommunityCards, loadDeckMedia, loadSparkCards, loadSparkCatalog, myPublished, publishDeck, unpublishDeck,
+  LANGS, communityAvailable, loadCommunity, loadCommunityCards, loadSparkCards, loadSparkCatalog, myPublished, publishDeck, unpublishDeck,
   type CatalogDeck, type DeckCard, type MyPublished,
 } from "./catalog";
 
@@ -32,32 +31,6 @@ const $ = (id: string) => document.getElementById(id)!;
 const DAY_START_HOUR = 4;
 const LEARN_AHEAD = 20 * 60_000;
 const uid = () => crypto.randomUUID();
-
-/** Учебный день как строка (YYYY-MM-DD; день начинается в 4:00). Не ломается при переводе часов. */
-function dayKey(ts: number): string {
-  const d = new Date(ts - DAY_START_HOUR * 3600_000);
-  return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}-${String(d.getDate()).padStart(2, "0")}`;
-}
-function prevKey(key: string): string {
-  const [y, m, d] = key.split("-").map(Number) as [number, number, number];
-  const x = new Date(y, m - 1, d - 1);
-  return `${x.getFullYear()}-${String(x.getMonth() + 1).padStart(2, "0")}-${String(x.getDate()).padStart(2, "0")}`;
-}
-/** Серия дней подряд (сегодня или вчера — серия ещё жива), рекорд, сколько повторов сегодня. */
-function dayStreak() {
-  const days = new Set(store.reviews.map((r) => dayKey(r.ts)));
-  const today = dayKey(Date.now());
-  let streak = 0;
-  for (let k = days.has(today) ? today : prevKey(today); days.has(k); k = prevKey(k)) streak++;
-  let best = 0;
-  for (const k of days) { if (days.has(prevKey(k))) continue; let n = 0; for (let x = k; days.has(x); ) { n++; const [y, m, d] = x.split("-").map(Number) as [number, number, number]; const nx = new Date(y, m - 1, d + 1); x = `${nx.getFullYear()}-${String(nx.getMonth() + 1).padStart(2, "0")}-${String(nx.getDate()).padStart(2, "0")}`; } best = Math.max(best, n); }
-  const todayCount = store.reviews.filter((r) => dayKey(r.ts) === today).length;
-  return { streak, best, today: todayCount, studiedToday: days.has(today) };
-}
-const DAY_TIERS = [0, 1, 3, 7, 14, 30, 100];
-const COMBO_TIERS = [0, 3, 5, 10, 20, 30, 50];
-const MILESTONES = [5, 10, 20, 30, 50, 75, 100, 150, 200, 300];
-const tierOf = (n: number, tiers: number[]) => tiers.reduce((acc, v, i) => (n >= v ? i : acc), 0);
 
 function dayStart(ts: number): number {
   const d = new Date(ts - DAY_START_HOUR * 3600_000);
@@ -116,8 +89,6 @@ interface Review {
   deckId: string; cardId: string | null; show: boolean; typed: string | null; ok: boolean | null; done: number;
   t0: number; paused: number; baseline: number; dur: number;
   pending: { rating: Rating; speed: Speed; dur: number } | null; locking: boolean;
-  /** серия правильных ответов подряд в этой сессии */
-  combo: number; best: number; bump: "up" | "break" | null; milestone: number | null;
 }
 interface Browser {
   tab: "spark" | "community" | "web"; q: string; lang: string; loading: boolean; error: string;
@@ -134,7 +105,6 @@ const S = {
   pane: "decks" as "decks" | "cards" | "editor",
   review: null as Review | null,
   browser: null as Browser | null,
-  tips: null as null | { tab: string },
   /** куда добавлять медиа: карточка при повторении (сторона вопроса/ответа) или null — в редактор, в позицию курсора */
   attach: null as null | { cardId: string; side: "q" | "a" },
   modal: null as null | { type: ModalType; id?: string },
@@ -184,14 +154,12 @@ function pickNext(deckId: string, now: number): string | null {
 }
 
 // ---------- тема и язык ----------
-/** Палитра Spark своя; от Telegram берём только «светлая/тёмная» в режиме «Авто». */
 function applyTheme() {
-  const s = store.settings, root = document.documentElement;
-  const tgScheme = tgColorScheme();
-  const dark = s.theme === "dark" || (s.theme === "auto" && (tgScheme ? tgScheme === "dark" : matchMedia("(prefers-color-scheme: dark)").matches));
-  root.dataset.dark = dark ? "1" : "0";
-  root.style.setProperty("--accent", s.accent);
-  paintTelegramChrome(getComputedStyle(root).getPropertyValue("--bg").trim() || (dark ? "#0e0e10" : "#f4f4f7"));
+  const s = store.settings;
+  const tgTheme = applyTelegramTheme(s.accent, "#3390ec");
+  const dark = tgTheme ? tgTheme.dark : s.theme === "dark" || (s.theme === "auto" && matchMedia("(prefers-color-scheme: dark)").matches);
+  document.documentElement.dataset.dark = dark ? "1" : "0";
+  if (!tgTheme) document.documentElement.style.setProperty("--accent", s.accent);
 }
 matchMedia("(prefers-color-scheme: dark)").addEventListener("change", () => store && applyTheme());
 function applyLang() {
@@ -203,12 +171,12 @@ function applyLang() {
 
 function render() {
   applyLang(); applyTheme(); fillIcons();
-  renderDecks(); renderList(); renderEditor(); renderReview(); renderBrowser(); renderTips(); renderModal(); updateChrome();
+  renderDecks(); renderList(); renderEditor(); renderReview(); renderBrowser(); renderModal(); updateChrome();
 }
 
 function updateChrome() {
   $("app").dataset.pane = S.pane;
-  setBackButton(!!S.review || !!S.modal || !!S.browser || !!S.tips || (isMobile() && S.pane !== "decks"));
+  setBackButton(!!S.review || !!S.modal || !!S.browser || (isMobile() && S.pane !== "decks"));
   closingConfirmation(!!S.review);
   updateSyncInd();
 }
@@ -217,7 +185,6 @@ function goBack() {
   else if (S.modal) { S.modal = null; render(); }
   else if (S.browser?.open) { S.browser.open = null; S.browser.cards = null; renderBrowser(); updateChrome(); }
   else if (S.browser) { S.browser = null; render(); }
-  else if (S.tips) { S.tips = null; render(); }
   else if (S.pane === "editor") { S.pane = "cards"; render(); }
   else if (S.pane === "cards") { S.pane = "decks"; render(); }
 }
@@ -252,25 +219,7 @@ function renderDecks() {
   $("decks").innerHTML = row("all", ic("layers", "row-ic") + " " + t("Все карточки"), sum(counts)) +
     decks.map((d) => row(d.id, (d.emoji ? d.emoji + " " : "") + esc(d.name) + (d.typedMode === "on" ? ' <span class="muted tiny-ic" title="' + t("Ввод ответа включён для всей колоды") + '">' + ic("keyboard") + "</span>" : ""), counts.get(d.id))).join("")
     + (decks.length ? "" : isMobile() ? welcomeHtml() : `<div class="hint" style="padding:10px">${t("Колод пока нет. Откройте «Каталог» — там готовые колоды.")}</div>`);
-  renderStreak(decks.length > 0);
   $("deck-actions").innerHTML = decks.some((d) => d.id === S.deckId) ? `<button class="icon-btn" data-a="deck-edit" title="${t("Настройки колоды")}">${ic("more")}</button>` : "";
-}
-
-function renderStreak(show: boolean) {
-  const host = document.getElementById("streak");
-  if (!host) return;
-  const st = dayStreak();
-  if (!show && !st.best) { host.innerHTML = ""; return; }
-  const tier = tierOf(st.streak, DAY_TIERS);
-  const todayK = dayKey(Date.now());
-  let celebrate = "";
-  try { if (st.studiedToday && !S.review && localStorage.getItem("spark.streakSeen") !== todayK) { celebrate = "celebrate"; localStorage.setItem("spark.streakSeen", todayK); } } catch { /* без хранилища — без анимации */ }
-  const sub = st.studiedToday ? t("Повторений сегодня: {n}", { n: st.today })
-    : st.streak > 0 ? t("Позанимайтесь сегодня, чтобы не прервать серию") : t("Начните серию — позанимайтесь сегодня");
-  host.innerHTML = `<div class="streak-card d${tier} ${st.studiedToday ? "" : "pending"} ${celebrate}" data-a="stats" title="${t("Статистика")}">
-    <div class="sc-ic">${sparkMark("big")}</div>
-    <div class="sc-main"><b>${t("{n} дн. подряд", { n: st.streak })}</b><span>${sub}</span></div>
-    ${st.best > st.streak ? `<div class="sc-best">${ic("trophy", "tiny")} ${st.best}</div>` : ""}</div>`;
 }
 
 // ---------- список карточек ----------
@@ -320,12 +269,6 @@ function renderList() {
       <span class="st">${c.suspended ? ic("pause", "tiny") : ""}${c.typed ? ic("keyboard", "tiny") : ""}${statusOf(store.stateOf(c.id), now)}</span></div></div>`;
   }).join("") + (cards.length > shown.length ? `<div class="muted" style="padding:10px;text-align:center">${t("Показаны первые 500 — уточните поиск")}</div>` : "")
     + (!cards.length ? `<div class="empty"><div class="em">${ic("inbox")}</div>${S.search ? t("Ничего не найдено") : t("В этой колоде пока нет карточек.") + "<br>" + (isMobile() ? t("Нажмите ＋, чтобы создать первую.") : t("Создайте первую справа →"))}</div>` : "");
-}
-
-/** Строка с переключателем в стиле iOS: подпись слева, переключатель справа. */
-function switchRow(id: string, on: boolean, title: string, desc = "", plainRow = false): string {
-  const inner = `<span class="sw-txt"><span class="sw-t">${title}</span>${desc ? `<span class="sw-d">${desc}</span>` : ""}</span><input type="checkbox" class="switch" id="${id}" ${on ? "checked" : ""}>`;
-  return plainRow ? `<label class="sw-row">${inner}</label>` : `<label class="item sw-row">${inner}</label>`;
 }
 
 // ---------- редактор ----------
@@ -394,8 +337,8 @@ function renderEditor() {
     <label>${t("Пояснение")} <span class="opt">${t("вставкой под ответом: пример, заметка")}</span></label><textarea id="f-extra" class="fld short" placeholder="${esc(t("# Пример") + "\n> " + t("Hablo español."))}">${esc(v.extra ?? "")}</textarea>
     <label>${t("Теги")}</label><input type="text" id="f-tags" class="fld" placeholder="${t("через пробел: глаголы B1")}" value="${esc(v.tags ?? "")}">
     <div id="atts-box">${card ? attachmentsHtml(card) : ""}</div>
-    <div class="group sw-group">${switchRow("f-typed", !!v.typed, t("Ввод ответа с клавиатуры"), t("при повторении нужно набрать ответ"))}
-    ${card ? switchRow("f-susp", card.suspended, t("Приостановить карточку"), t("не показывать при повторении")) : ""}</div>
+    <label class="chk"><input type="checkbox" id="f-typed" ${v.typed ? "checked" : ""}> ${t("Ввод ответа с клавиатуры")} <span class="muted">— ${t("при повторении нужно набрать ответ")}</span></label>
+    ${card ? `<label class="chk"><input type="checkbox" id="f-susp" ${card.suspended ? "checked" : ""}> ${t("Приостановить карточку")} <span class="muted">— ${t("не показывать при повторении")}</span></label>` : ""}
     <div class="actions">${card
       ? `<button class="btn danger" data-a="card-del">${t("Удалить")}</button>${card.kind === "basic" && !card.group ? `<button class="btn sec" data-a="card-swap" title="${t("Лицевая ⇄ обратная")}">⇄ ${t("Поменять")}</button><button class="btn sec" data-a="card-mkrev" title="${t("Создать связанную обратную карточку")}">＋ ${t("Обратная")}</button>` : ""}<button class="btn sec" data-a="card-new">${t("Новая")}</button><span class="muted autosave">${t("Сохраняется автоматически")}</span>`
       : `<button class="btn" data-a="card-add">${t("Добавить")}</button><span class="muted d-only"><kbd>Ctrl</kbd>+<kbd>Enter</kbd> — ${t("добавить и продолжить")}</span>`}</div>
@@ -632,7 +575,6 @@ function renderReview() {
   const timer = manual ? "" : `<div class="tm"><div class="tm-bar"><i id="rv-bar"></i></div><span id="rv-time" class="muted"></span></div>`;
   const top = `<div class="rv-top"><button class="icon-btn" data-a="rv-close" title="${t("Закрыть")} (Esc)">${ic("close")}</button>
     <div class="t">${esc(deck?.name ?? t("Все карточки"))}<div class="muted" style="font-weight:400;font-size:12px"><span style="color:var(--accent)">${counts.n}</span> · <span style="color:var(--bad)">${counts.l}</span> · <span style="color:var(--good)">${counts.r}</span></div></div>
-    <div class="combo t${tierOf(r.combo, COMBO_TIERS)} ${r.bump ?? ""}" title="${t("Серия правильных ответов подряд")}">${sparkMark()}<b>${r.combo}</b></div>
     ${r.cardId ? `<button class="icon-btn rv-att" data-a="rv-attach" title="${t("Добавить к карточке картинку, видео или звук")}">${ic("clip")}</button>` : ""}
     <button class="kbd-toggle ${typedNow ? "on" : ""}" data-a="rv-typed" title="${t("Ввод ответа с клавиатуры: переход без Enter при верном слове")}">${ic("keyboard")}<span class="lbl"> ${t("Ввод")}: ${typedNow ? t("вкл") : t("выкл")}</span></button>
     <svg class="ring" viewBox="0 0 38 38"><circle class="bg" cx="19" cy="19" r="17"/><circle class="fg" cx="19" cy="19" r="17" stroke-dasharray="${C}" stroke-dashoffset="${C * (1 - frac)}"/></svg></div>`;
@@ -641,7 +583,6 @@ function renderReview() {
     el.innerHTML = top + `<div class="rv-body"><div class="rv-done"><div class="em done-ic">${ic("check-circle")}</div>
       <h2>${r.done ? t("Отличная работа!") : t("На сегодня всё")}</h2>
       <p class="muted">${r.done ? t("Повторено карточек: {n}", { n: r.done }) : t("Нет карточек к повторению.")}</p>
-      ${r.best >= 3 ? `<p class="best-combo t${tierOf(r.best, COMBO_TIERS)}">${ic("trophy")} ${t("Лучшая серия: {n} правильных подряд", { n: r.best })}</p>` : ""}
       <button class="btn big" data-a="rv-close">${t("Готово")}</button></div></div>`;
     return;
   }
@@ -671,23 +612,8 @@ function renderReview() {
     <div class="rv-q">${faceHtml(card, "q")}</div>${mid}</div></div>
     <div class="rv-foot">${timer}${foot}</div>`;
   media(el);
-  comboEffects(el, r);
   if (!r.show && typedMode) ($("rv-input") as HTMLInputElement).focus();
   if (r.locking) ($("rv-input") as HTMLInputElement | null)?.setAttribute("disabled", "");
-}
-
-/** Анимация серии: «пружинка» при росте, тряска при сбросе, салют на вехах (5, 10, 20…). */
-function comboEffects(el: HTMLElement, r: Review) {
-  r.bump = null;
-  if (!r.milestone) return;
-  const n = r.milestone, tier = tierOf(n, COMBO_TIERS);
-  r.milestone = null;
-  const parts = Array.from({ length: 18 }, (_, i) => `<i style="--a:${(i * 360) / 18 + (Math.random() * 14 - 7)}deg;--d:${70 + Math.random() * 70}px;--s:${0.6 + Math.random() * 0.7}"></i>`).join("");
-  const box = document.createElement("div");
-  box.className = `milestone t${tier}`;
-  box.innerHTML = `<div class="ms-burst">${parts}</div><div class="ms-n">${n}</div><div class="ms-t">${t("правильных подряд!")}</div>`;
-  el.appendChild(box);
-  setTimeout(() => box.remove(), 1700);
 }
 
 function toggleTyped() {
@@ -703,7 +629,7 @@ function toggleTyped() {
 }
 function startReview(deckId: string) {
   haptic("light");
-  S.review = { deckId, cardId: null, show: false, typed: null, ok: null, done: 0, t0: 0, paused: 0, baseline: computeBaseline(), dur: 0, pending: null, locking: false, combo: 0, best: 0, bump: null, milestone: null };
+  S.review = { deckId, cardId: null, show: false, typed: null, ok: null, done: 0, t0: 0, paused: 0, baseline: computeBaseline(), dur: 0, pending: null, locking: false };
   showNext();
 }
 function showNext() {
@@ -718,21 +644,7 @@ function showNext() {
 function closeReview() {
   const r = S.review;
   if (r?.show && r.pending && r.cardId && !r.locking) store.answer(r.cardId, r.pending.rating, r.pending.dur);
-  const studied = (r?.done ?? 0) > 0;
   S.review = null; render();
-  if (studied) void offerHomeScreen();
-}
-/** Один раз после занятия предложить ярлык на главный экран. */
-async function offerHomeScreen() {
-  try { if (!homeScreenSupported() || localStorage.getItem("spark.homeOffered")) return; } catch { return; }
-  const st = await checkHomeScreen();
-  homeStatus = st;
-  if (st === "added" || st === "unsupported") return;
-  localStorage.setItem("spark.homeOffered", "1");
-  const bar = document.getElementById("update-bar");
-  if (!bar) return;
-  bar.hidden = false;
-  bar.innerHTML = `${t("Открывайте Spark одним касанием — добавьте ярлык на главный экран")} <button data-a="home-add">${t("Добавить")}</button> <button class="bar-x" data-a="bar-close">${ic("close")}</button>`;
 }
 function reveal() {
   const x = ctx();
@@ -763,18 +675,10 @@ function checkTyped(valueIn?: string) {
   if (ok && x.live) { x.r.locking = true; renderReview(); setTimeout(() => applyPending(), 420); }
   else { renderReview(); void playFirst(".ans"); }
 }
-function bumpCombo(rating: Rating) {
-  const r = S.review!;
-  if (rating >= 2) {
-    r.combo++; r.best = Math.max(r.best, r.combo); r.bump = "up";
-    if (MILESTONES.includes(r.combo)) { r.milestone = r.combo; haptic("success"); }
-  } else { r.bump = r.combo > 0 ? "break" : null; r.combo = 0; }
-}
 function applyPending(rating?: Rating) {
   const r = S.review;
   if (!r?.cardId || !r.pending) return;
   store.answer(r.cardId, rating ?? r.pending.rating, r.pending.dur);
-  bumpCombo(rating ?? r.pending.rating);
   haptic("select");
   r.done++;
   showNext();
@@ -783,7 +687,6 @@ function rateManual(g: Rating) {
   const r = S.review;
   if (!r?.cardId || !r.show) return;
   store.answer(r.cardId, g, r.dur);
-  bumpCombo(g);
   haptic("select");
   r.done++;
   showNext();
@@ -835,23 +738,13 @@ async function reloadCatalog() {
   renderBrowser();
 }
 
-function renderTips() {
-  const el = $("tips"), tp = S.tips;
-  el.classList.toggle("on", !!tp);
-  if (!tp) { el.innerHTML = ""; return; }
-  const L = getLang(), sec = TIPS.find((x) => x.id === tp.tab) ?? TIPS[0]!;
-  const tabs = `<div class="seg br-tabs">${TIPS.map((x) => `<button data-a="tips-tab" data-k="${x.id}" class="${x.id === sec.id ? "on" : ""}">${ic(x.icon)}<span>${(x.tab || x.title)[L]}</span></button>`).join("")}</div>`;
-  el.innerHTML = `<div class="br-top"><button class="icon-btn" data-a="tips-close" title="${t("Закрыть")}">${ic("close")}</button><h1>${t("Советы")}</h1>${tabs}</div>
-    <div class="br-body"><div class="tips-h">${esc(sec.title[L])}</div><div class="tips-list">${sec.items.map((it, i) => `<div class="tip"><div class="tip-n">${i + 1}</div><div class="tip-main"><b>${esc(it.title[L])}</b><p>${esc(it.text[L])}</p></div></div>`).join("")}</div></div>`;
-}
-
 function renderBrowser() {
   const el = $("browser"), b = S.browser;
   el.classList.toggle("on", !!b);
   if (!b) { el.innerHTML = ""; return; }
   const tab = (k: string, icon: string, label: string) => `<button data-a="br-tab" data-k="${k}" class="${b.tab === k ? "on" : ""}">${ic(icon)}<span>${label}</span></button>`;
   const tabs = `<div class="seg br-tabs">${tab("spark", "spark", APP)}${tab("community", "users", t("Сообщество"))}${tab("web", "globe", t("Браузер"))}</div>`;
-  const head = `<div class="br-top"><button class="icon-btn" data-a="br-close" title="${t("Закрыть")}">${ic("close")}</button><h1>${t("Каталог колод")}</h1><button class="icon-btn" data-a="import-decks" title="${t("Импорт файла (.apkg, .csv, .txt)")}">${ic("import")}</button>${tabs}</div>`;
+  const head = `<div class="br-top"><button class="icon-btn" data-a="br-close" title="${t("Закрыть")}">${ic("close")}</button><h1>${t("Каталог колод")}</h1>${tabs}</div>`;
   if (b.open) { el.innerHTML = head + `<div class="br-body">${deckDetailHtml(b)}</div>`; media(el); return; }
   if (b.tab === "web") { el.innerHTML = head + `<div class="br-body">${webHtml()}</div>`; return; }
   const inst = installed();
@@ -868,7 +761,7 @@ function renderBrowser() {
       <div class="tile-main"><div class="tile-t">${esc(deckTitle(d))}</div>
         <div class="tile-d">${esc(deckDesc(d))}</div>
         <div class="tile-m"><span>${t("{n} карт.", { n: d.count })}</span>${d.lang_front ? `<span>${esc(langName(d.lang_front))}${d.lang_back && d.lang_back !== d.lang_front ? " → " + esc(langName(d.lang_back)) : ""}</span>` : ""}
-          ${d.audio ? `<span>${ic("sound", "tiny")} ${t("со звуком")}</span>` : ""}${d.source === "community" ? `<span>${esc(d.author || t("пользователь"))}</span>${d.downloads ? `<span>${ic("import", "tiny")} ${d.downloads}</span>` : ""}` : ""}${have ? `<span class="have">${ic("check", "tiny")} ${t("добавлена")}</span>` : ""}</div></div></button>`;
+          ${d.source === "community" ? `<span>${esc(d.author || t("пользователь"))}</span>${d.downloads ? `<span>${ic("import", "tiny")} ${d.downloads}</span>` : ""}` : ""}${have ? `<span class="have">${ic("check", "tiny")} ${t("добавлена")}</span>` : ""}</div></div></button>`;
   };
   const search = `<input type="search" id="br-q" class="br-search" placeholder="${t("Поиск колод: язык, тема, автор…")}" value="${esc(b.q)}">
     ${langs.length > 1 ? `<div class="fchips">${chip("", t("Все"))}${langs.map((l) => chip(l, langName(l))).join("")}</div>` : ""}`;
@@ -891,7 +784,7 @@ function renderBrowser() {
 function deckDetailHtml(b: Browser): string {
   const d = b.open!, have = installed().get(sourceKey(d));
   const cards = b.cards;
-  const sample = cards ? cards.slice(0, 12).map((c) => `<div class="sample"><div class="s-q">${fmt(c.front)}${c.hint ? `<div class="hint-line">${fmt(c.hint)}</div>` : ""}</div><div class="s-a">${fmt(c.back ?? "")}${c.extra ? `<div class="s-x">${fmt(c.extra)}</div>` : ""}</div></div>`).join("") : `<div class="muted">${t("Загружаю карточки…")}</div>`;
+  const sample = cards ? cards.slice(0, 12).map((c) => `<div class="sample"><div class="s-q">${fmt(c.front)}${c.hint ? `<div class="hint-line">${fmt(c.hint)}</div>` : ""}</div><div class="s-a">${fmt(c.back ?? "")}</div></div>`).join("") : `<div class="muted">${t("Загружаю карточки…")}</div>`;
   const outdated = have && d.source === "spark" && Number(have.source.split("@")[1] ?? 0) < d.version;
   return `<div class="detail">
     <button class="btn sec" data-a="br-back">${ic("back")} ${t("Назад к каталогу")}</button>
@@ -899,7 +792,7 @@ function deckDetailHtml(b: Browser): string {
       <div class="tile-m"><span>${t("{n} карт.", { n: d.count })}</span>${d.lang_front ? `<span>${esc(langName(d.lang_front))}${d.lang_back && d.lang_back !== d.lang_front ? " → " + esc(langName(d.lang_back)) : ""}</span>` : ""}<span>${d.source === "spark" ? APP : esc(d.author || t("пользователь"))}</span>${d.downloads ? `<span>${ic("import", "tiny")} ${d.downloads}</span>` : ""}</div></div></div>
     <p class="d-desc">${esc(deckDesc(d))}</p>
     <div class="d-actions">${have
-      ? `<button class="btn" data-a="br-goto" data-id="${have.id}">${t("Открыть в моих колодах")}</button>${outdated ? `<button class="btn sec" data-a="br-add" ${b.busy ? "disabled" : ""}>${b.busy ? t("Обновляю…") : t("Обновить колоду")}</button>` : ""}`
+      ? `<button class="btn" data-a="br-goto" data-id="${have.id}">${t("Открыть в моих колодах")}</button>${outdated ? `<button class="btn sec" data-a="br-add" ${b.busy ? "disabled" : ""}>${t("Добавить новые карточки")}</button>` : ""}`
       : `<button class="btn big" data-a="br-add" ${b.busy || !cards ? "disabled" : ""}>${b.busy ? t("Добавляю…") : t("Добавить в мои колоды")}</button>`}</div>
     <div class="sec-t">${t("Примеры карточек")}</div><div class="samples">${sample}</div></div>`;
 }
@@ -923,33 +816,18 @@ async function addCatalogDeck() {
   const deckId = have?.id ?? store.addDeck(deckTitle(d));
   if (!have && d.emoji) store.set("deck", deckId, "emoji", d.emoji);
   store.set("deck", deckId, "source", `${sourceKey(d)}@${d.version}`);
-  // звук произношения — заранее на устройство, чтобы работал и без сети
-  if (d.source === "spark") { const media = await loadDeckMedia(d.id); for (const [k, blob] of media) await putLocal(k, blob).catch(() => {}); }
-  // карточки сравниваем без медиа-меток: так обновление колоды не создаёт дубликатов
-  const same = (s: string) => norm(stripMedia(s ?? ""));
-  const existing = new Map(allCards().filter((c) => c.deckId === deckId).map((c) => [same(c.front) + "\u0000" + same(c.back), c]));
-  let added = 0, updated = 0;
+  const existing = new Set(allCards().filter((c) => c.deckId === deckId).map((c) => c.front + "\u0000" + c.back));
+  let added = 0;
   for (const c of b.cards) {
-    const cur = existing.get(same(c.front) + "\u0000" + same(c.back ?? ""));
-    if (cur) {
-      // дополнить уже добавленную карточку: звук, произношение, пояснение — правки пользователя не трогаем
-      let ch = false;
-      const up = (f: "front" | "back" | "hint" | "extra", v: string | undefined, ok: boolean) => { if (v && ok && cur[f] !== v) { store.set("card", cur.id, f, v); ch = true; } };
-      up("front", c.front, !mediaRefs(cur.front).length);
-      up("back", c.back, !mediaRefs(cur.back).length);
-      up("hint", c.hint, !cur.hint || (c.hint ?? "").includes(cur.hint));
-      up("extra", c.extra, !cur.extra);
-      if (ch) updated++;
-      continue;
-    }
+    if (existing.has(c.front + "\u0000" + (c.back ?? ""))) continue;
     store.addCardFull({ deckId, front: c.front, back: c.back ?? "", hint: c.hint, extra: c.extra, tags: c.tags,
       ...(c.kind === "cloze" ? { kind: "cloze", n: c.n ?? 1 } : {}) });
     if (++added % 200 === 0) await new Promise((r) => setTimeout(r));
   }
   haptic("success");
   b.busy = false;
-  toast(have ? t("Колода обновлена: новых {n}, дополнено {u}", { n: added, u: updated }) : t("Колода добавлена: {n} карточек", { n: added }));
-  renderBrowser(); renderDecks(); if (S.deckId === deckId) { renderList(); renderEditor(); }
+  toast(t("Колода добавлена: {n} карточек", { n: added }));
+  renderBrowser(); renderDecks();
 }
 
 function webHtml(): string {
@@ -985,7 +863,7 @@ function publishHtml(deckId: string): string {
   return `<div class="sheet"><h2>${t("Опубликовать в каталоге")}</h2>
     ${blocked ? `<p class="hint" style="margin-left:0">${blocked}</p><div style="text-align:right"><button class="btn" data-a="modal-close">${t("Понятно")}</button></div>` : !ses ? `<p class="hint" style="margin-left:0">${t("Чтобы публиковать колоды, включите синхронизацию (Настройки).")}</p><div style="text-align:right"><button class="btn" data-a="modal-close">${t("Понятно")}</button></div>` : `
     <p class="hint" style="margin-left:0">${t("Колоду увидят все пользователи {app}. Публикуйте только то, что сделали сами. Картинки и звук пока не публикуются — только текст.", { app: APP })}</p>
-    <div class="group"><div class="item name-row nowrap"><input type="text" id="p-emoji" value="${esc(d.emoji)}" placeholder="★" maxlength="4"><input type="text" id="p-title" value="${esc(d.name)}" maxlength="80"></div>
+    <div class="group"><div class="item"><input type="text" id="p-emoji" value="${esc(d.emoji)}" placeholder="★" style="width:56px;text-align:center" maxlength="4"><input type="text" id="p-title" value="${esc(d.name)}" maxlength="80"></div>
       <div class="item"><textarea id="p-desc" maxlength="1000" placeholder="${t("О чём колода, для кого, откуда материал")}" style="min-height:80px"></textarea></div>
       <div class="item"><span>${t("Язык вопросов")}</span><select id="p-lf" style="width:160px">${langOpts("")}</select></div>
       <div class="item"><span>${t("Язык ответов")}</span><select id="p-lb" style="width:160px">${langOpts("")}</select></div>
@@ -1025,7 +903,7 @@ function renderModal() {
       <div class="name-row"><input type="text" id="m-emoji" value="${esc(d?.emoji || "")}" placeholder="★" maxlength="4"><input type="text" id="m-name" placeholder="${t("Например, 🇪🇸 Испанский")}" value="${esc(d?.name ?? "")}" maxlength="80"></div>
       <div class="group" style="margin-top:14px">
         <div class="item"><span><b>${t("Ввод ответа с клавиатуры")}</b><br><span class="muted" style="font-size:12px">${t("при верном слове — сразу следующая карточка, без Enter")}</span></span>
-          <select id="m-typed" style="width:auto;max-width:100%;padding-right:30px">${([["inherit", t("Как в настройках")], ["on", t("Всегда вводить")], ["off", t("Не вводить")]] as [TypedMode, string][]).map(([v, n]) => `<option value="${v}" ${(d?.typedMode ?? "inherit") === v ? "selected" : ""}>${n}</option>`).join("")}</select></div>
+          <select id="m-typed" style="width:170px">${([["inherit", t("Как в настройках")], ["on", t("Всегда вводить")], ["off", t("Не вводить")]] as [TypedMode, string][]).map(([v, n]) => `<option value="${v}" ${(d?.typedMode ?? "inherit") === v ? "selected" : ""}>${n}</option>`).join("")}</select></div>
         <div class="item"><span>${t("Новых карточек в день")}<br><span class="muted" style="font-size:12px">${t("пусто — как в общих настройках ({n})", { n: s.newPerDay })}</span></span><input type="number" id="m-new" min="0" max="999" value="${d?.newPerDay ?? ""}" style="width:80px"></div></div>
       ${d ? `<div class="group"><div class="item"><span>${t("Поменять стороны")}<br><span class="muted" style="font-size:12px">${t("лицевая ⇄ обратная у всех карточек колоды")}</span></span><button class="btn sec" data-a="deck-swap">${t("Поменять")}</button></div>
         <div class="item"><span>${t("Обратные копии")}<br><span class="muted" style="font-size:12px">${t("добавить карточки «ответ → вопрос»")}</span></span><button class="btn sec" data-a="deck-rev">${t("Добавить")}</button></div>
@@ -1061,19 +939,19 @@ function renderModal() {
           : `<button class="rec-btn" data-a="rec-start" title="${t("Записать")}" ${canRecord() ? "" : "disabled"}>${ic("record")}</button><div class="muted">${canRecord() ? t("Нажмите, чтобы начать запись") : t("Запись недоступна на этом устройстве — выберите аудиофайл")}</div>`}
         <div id="rec-time" class="muted">${rec.state === "rec" ? `${sec} / ${LIMITS.recordSeconds} ${t("с")}` : ""}</div></div>
       <div style="display:flex;gap:8px;margin-top:14px;flex-wrap:wrap"><button class="btn sec" data-a="att-audio">${ic("sound")} ${t("Аудиофайл…")}</button><span style="flex:1"></span>
-        <button class="btn sec" data-a="modal-close">${t("Отмена")}</button>${rec.state === "done" ? `<button class="btn sec" data-a="rec-start">${t("Перезаписать")}</button><button class="btn" data-a="rec-save">${t("Сохранить")}</button>` : ""}</div></div>`;
+        ${rec.state === "done" ? `<button class="btn sec" data-a="rec-start">${t("Перезаписать")}</button><button class="btn" data-a="rec-save">${t("Сохранить")}</button>` : `<button class="btn sec" data-a="modal-close">${t("Отмена")}</button>`}</div></div>`;
   } else if (m.type === "publish") {
     el.innerHTML = publishHtml(m.id!);
   } else if (m.type === "importdecks" && pending) {
     const p = pending, total = p.result.decks.reduce((n, d, i) => n + (p.sel[i] ? d.cards.length : 0), 0);
     const firstSel = p.result.decks.find((_d, i) => p.sel[i])?.cards[0];
-    const list = p.result.decks.slice(0, 300).map((d, i) => `<div class="item"><input type="checkbox" class="check" data-sel="${i}" ${p.sel[i] ? "checked" : ""}>
+    const list = p.result.decks.slice(0, 300).map((d, i) => `<div class="item"><input type="checkbox" data-sel="${i}" ${p.sel[i] ? "checked" : ""} style="width:17px;height:17px;flex:none;accent-color:var(--accent)">
       <input type="text" data-name="${i}" value="${esc(p.names[i]!)}" style="flex:1"><span class="muted" style="white-space:nowrap">${d.cards.length}</span></div>`).join("");
     el.innerHTML = `<div class="sheet"><h2>${t("Импорт колод")}</h2>
       <p class="hint" style="margin-left:0">${p.result.source === "apkg" ? t("Файл Anki (.apkg)") : t("Текстовый файл")}: ${t("найдено колод — {n}. Отметьте нужные и при желании измените названия.", { n: p.result.decks.length })}</p>
       <div class="group" style="max-height:260px;overflow:auto">${list}</div>
-      <div class="group">${switchRow("i-merge", p.merge, t("Добавлять в существующую колоду с тем же названием"))}
-        ${switchRow("i-dup", p.skipDup, t("Пропускать дубликаты"))}</div>
+      <div class="group"><div class="item"><label class="lbl-row"><input type="checkbox" id="i-merge" ${p.merge ? "checked" : ""}> ${t("Добавлять в существующую колоду с тем же названием")}</label></div>
+        <div class="item"><label class="lbl-row"><input type="checkbox" id="i-dup" ${p.skipDup ? "checked" : ""}> ${t("Пропускать дубликаты")}</label></div></div>
       ${firstSel ? `<div class="preview" style="margin:10px 0;padding:12px 14px"><div class="pk">${t("Пример карточки")}</div><div>${fmt(firstSel.front.replace(/\(file:/g, "(x:")) || "…"}</div><div class="a" style="margin-top:8px;padding-top:8px;border-top:1px dashed var(--line)">${fmt(firstSel.back.replace(/\(file:/g, "(x:")) || "…"}</div></div>` : ""}
       ${p.result.media.size ? `<p class="hint">${t("Картинки и звук: {n} файлов — будут добавлены вместе с карточками.", { n: p.result.media.size })}</p>` : ""}
       ${p.result.skippedMedia ? `<p class="hint">${t("Не найдено в файле: {n} медиафайлов — они будут пропущены.", { n: p.result.skippedMedia })}</p>` : ""}
@@ -1105,17 +983,16 @@ function renderModal() {
       ${accountGroup()}
       <h3 class="grp-t">${t("Внешний вид")}</h3>
       <div class="group"><div class="item"><span>${t("Язык")}</span><span class="seg">${lg}</span></div>
-        <div class="item"><span>${t("Тема")}</span><span class="seg">${th}</span></div>
+        ${inTelegram() ? "" : `<div class="item"><span>${t("Тема")}</span><span class="seg">${th}</span></div>`}
         <div class="item"><span>${t("Цвет акцента")}</span><span class="sw">${sw}</span></div></div>
-      ${inTelegram() ? `<p class="hint">${t("«Авто» — светлая или тёмная, как в Telegram. Цвета у Spark свои.")}</p>` : ""}
-      ${launchGroup()}
+      ${inTelegram() ? `<p class="hint">${t("Светлая и тёмная тема берутся из Telegram.")}</p>` : ""}
       <h3 class="grp-t">${t("Повторение")}</h3>
       <div class="group"><div class="item"><span>${t("Желаемое удержание")}<br><span class="muted" style="font-size:12px">${Math.round(s.retention * 100)}%</span></span>
         <input type="range" min="0.7" max="0.97" step="0.01" value="${s.retention}" id="s-ret"></div>
         <div class="item"><span>${t("Новых карточек в день")}</span><input type="number" id="s-new" min="0" max="999" value="${s.newPerDay}" style="width:80px"></div>
-        ${switchRow("s-typed", s.typedAll, t("Вводить ответы с клавиатуры"), t("при верном слове — сразу следующая карточка, без Enter (можно переопределить для колоды)"))}
-        ${switchRow("s-autoaudio", s.autoAudio, t("Автоматически проигрывать звук"), t("произношение звучит при показе карточки и ответа"))}
-        ${switchRow("s-manual", s.manualGrades, t("Оценивать вручную (4 кнопки)"), t("по умолчанию выключено: сложность определяет умный таймер"))}</div>
+        <div class="item"><label class="chk" style="margin:0!important"><input type="checkbox" id="s-typed" ${s.typedAll ? "checked" : ""}> <span>${t("Вводить ответы с клавиатуры")}<br><span class="muted" style="font-weight:400">${t("при верном слове — сразу следующая карточка, без Enter (можно переопределить для колоды)")}</span></span></label></div>
+        <div class="item"><label class="chk" style="margin:0!important"><input type="checkbox" id="s-autoaudio" ${s.autoAudio ? "checked" : ""}> <span>${t("Автоматически проигрывать звук")}<br><span class="muted" style="font-weight:400">${t("произношение звучит при показе карточки и ответа")}</span></span></label></div>
+        <div class="item"><label class="chk" style="margin:0!important"><input type="checkbox" id="s-manual" ${s.manualGrades ? "checked" : ""}> <span>${t("Оценивать вручную (4 кнопки)")}<br><span class="muted" style="font-weight:400">${t("по умолчанию выключено: сложность определяет умный таймер")}</span></span></label></div></div>
       <p class="hint">${t("Умный таймер замеряет, сколько вы думали, и сравнивает с вашей нормой. Быстро — вернётся через дни, с раздумьем — завтра, долго или ошибка — через 5 минут. Не согласны — кнопка «Не помню».")}</p>
       ${filesGroup()}
       <h3 class="grp-t">${t("Резервная копия")}</h3>
@@ -1128,7 +1005,8 @@ function renderModal() {
     const now = Date.now(), per = new Map<number, number>();
     for (const r of store.reviews) per.set(dayStart(r.ts), (per.get(dayStart(r.ts)) ?? 0) + 1);
     const today = dayStart(now);
-    const streak = dayStreak().streak;
+    let streak = 0;
+    for (let d = per.has(today) ? today : today - DAY_MS; per.has(d); d -= DAY_MS) streak++;
     const month = store.reviews.filter((r) => r.ts > now - 30 * DAY_MS);
     const ret = month.length ? Math.round((month.filter((r) => r.rating > 1).length / month.length) * 100) : null;
     const cards = allCards().filter((c) => !c.suspended);
@@ -1150,7 +1028,7 @@ function renderModal() {
     const fmax = Math.max(1, ...forecast);
     const seg = (n: number, c: string, l: string) => n ? `<i style="flex:${n};background:${c}" title="${l}: ${n}"></i>` : "";
     el.innerHTML = `<div class="sheet"><h2>${t("Статистика")}</h2><div class="stats3">
-      <div><b>${per.get(today) ?? 0}</b><span>${t("сегодня")}</span></div><div class="stat-streak d${tierOf(streak, DAY_TIERS)}"><b>${streak} ${sparkMark("inline")}</b><span>${t("дней подряд")}</span></div><div><b>${ret == null ? "—" : ret + "%"}</b><span>${t("удержание, 30 дн")}</span></div>
+      <div><b>${per.get(today) ?? 0}</b><span>${t("сегодня")}</span></div><div><b>${streak} ${ic("flame", "inline")}</b><span>${t("дней подряд")}</span></div><div><b>${ret == null ? "—" : ret + "%"}</b><span>${t("удержание, 30 дн")}</span></div>
       <div><b>${cards.length}</b><span>${t("карточек")}</span></div><div><b>${nMature}</b><span>${t("зрелых (21+ дн)")}</span></div><div><b>${store.reviews.length}</b><span>${t("всего повторов")}</span></div></div>
       <div class="sec-t">${t("Активность")}</div><div class="heat">${cells.join("")}</div>
       <div class="sec-t">${t("Состав коллекции")}</div><div class="stack">${seg(nNew, "#8e8e93", t("Новые"))}${seg(nLearn, "#ff9500", t("Изучаются"))}${seg(nYoung, "#3390ec", t("Молодые"))}${seg(nMature, "#34c759", t("Зрелые"))}</div>
@@ -1161,28 +1039,11 @@ function renderModal() {
   }
 }
 
-/** Быстрый запуск: ярлык на главном экране и ссылка, которая открывает Spark сразу, без чата с ботом. */
-let homeStatus: string = "unknown";
-function botLink(): string {
-  const c = (window as unknown as { SPARK_CONFIG?: { botUsername?: string } }).SPARK_CONFIG;
-  const u = c?.botUsername?.replace(/^@/, "");
-  return u ? `https://t.me/${u}?startapp` : "";
-}
-function launchGroup(): string {
-  if (!inTelegram() && !botLink()) return "";
-  const home = homeScreenSupported()
-    ? `<div class="item"><span>${t("Ярлык на главном экране")}<br><span class="muted" style="font-size:12px">${homeStatus === "added" ? t("уже добавлен") : t("Spark откроется одним касанием, без чата с ботом")}</span></span>
-        <button class="btn ${homeStatus === "added" ? "sec" : ""}" data-a="home-add" ${homeStatus === "added" ? "disabled" : ""}>${homeStatus === "added" ? ic("check", "tiny") + " " + t("Добавлен") : t("Добавить")}</button></div>` : "";
-  const link = botLink() ? `<div class="item"><span>${t("Ссылка на Spark")}<br><span class="muted" style="font-size:12px">${esc(botLink().replace("https://", ""))}</span></span><button class="btn sec" data-a="copy-link">${t("Копировать")}</button></div>` : "";
-  if (!home && !link) return "";
-  return `<h3 class="grp-t">${t("Быстрый запуск")}</h3><div class="group">${home}${link}</div>`;
-}
-
 function accountGroup(): string {
   const cfg = getConfig(), ses = getSession(), preset = !!presetConfig();
   const cloud = store.syncOn || getChoice() === "cloud";
   const head = `<h3 class="grp-t">${t("Синхронизация")}</h3>`;
-  const toggle = switchRow("s-sync", cloud, t("Колоды и прогресс на всех устройствах"), `${cloud ? (ses && store.syncOn ? `${SYNC_LABEL()[sync.status] ?? ""}${sync.message ? " · " + esc(sync.message) : ""}${store.pendingCount ? " · " + t("ждут отправки: {n}", { n: store.pendingCount }) : ""}` : t("включается…")) : t("выключено: всё хранится только на этом устройстве")}`);
+  const toggle = `<div class="item"><label class="chk" style="margin:0!important"><input type="checkbox" id="s-sync" ${cloud ? "checked" : ""}> <span>${t("Колоды и прогресс на всех устройствах")}<br><span class="muted" style="font-weight:400">${cloud ? (ses && store.syncOn ? `${SYNC_LABEL()[sync.status] ?? ""}${sync.message ? " · " + esc(sync.message) : ""}${store.pendingCount ? " · " + t("ждут отправки: {n}", { n: store.pendingCount }) : ""}` : t("включается…")) : t("выключено: всё хранится только на этом устройстве")}</span></span></label></div>`;
   if (!cloud) return head + `<div class="group">${toggle}</div>`;
   if (!cfg) {
     return head + `<div class="group">${toggle}</div><p class="hint">${t("Сервер синхронизации не настроен. Владельцу приложения: см. инструкцию SETUP.md.")}</p>`
@@ -1206,7 +1067,7 @@ async function enableCloudAfterLogin(userId: string) {
   store.enableSync(userId);
   setChoice("cloud");
   setMediaSync((k) => queueMedia([k]), downloadMedia);
-  queueMedia((await allMediaKeys()).filter((k) => !bundledDeckOf(k)));
+  queueMedia(await allMediaKeys());
 }
 /** Telegram: вход сам, без пароля. */
 async function telegramLogin(silent: boolean) {
@@ -1436,9 +1297,7 @@ document.addEventListener("click", (e) => {
     } break;
     case "deck-del": if (S.modal?.id && confirm(t("Удалить колоду вместе с карточками?"))) { store.deleteDeck(S.modal.id); S.deckId = "all"; S.sel.clear(); S.modal = null; S.pane = "decks"; render(); } break;
     case "modal-close": S.modal = null; S.attach = null; render(); break;
-    case "settings": S.modal = { type: "settings" }; renderModal(); refreshFsInfo(); updateChrome();
-      if (homeScreenSupported()) void checkHomeScreen().then((st) => { homeStatus = st; if (S.modal?.type === "settings") renderModal(); });
-      break;
+    case "settings": S.modal = { type: "settings" }; renderModal(); refreshFsInfo(); updateChrome(); break;
     case "pub-remove-x": break;
     case "sync-open": S.modal = { type: "settings" }; renderModal(); updateChrome(); break;
     case "lang": store.setSetting("lang", el.dataset.k as "auto"); render(); break;
@@ -1454,8 +1313,6 @@ document.addEventListener("click", (e) => {
     }
     case "choose-local": setChoice("local"); S.modal = null; render(); break;
     case "choose-cloud": S.modal = null; render(); void setCloud(true).then(() => { if (!inTelegram()) { S.modal = { type: "settings" }; renderModal(); } }); break;
-    case "home-add": addToHomeScreen(); break;
-    case "copy-link": navigator.clipboard?.writeText(botLink()).then(() => toast(t("Ссылка скопирована")), () => toast(t("Не удалось скопировать"))); break;
     case "copy-backup": navigator.clipboard?.writeText(store.exportJSON()).then(() => toast(t("Копия данных скопирована в буфер обмена")), () => toast(t("Не удалось скопировать"))); break;
     case "paste-open": S.modal = { type: "paste" }; renderModal(); break;
     case "paste-run": {
@@ -1478,9 +1335,6 @@ document.addEventListener("click", (e) => {
     }
     case "stats": S.modal = { type: "stats" }; renderModal(); updateChrome(); break;
     case "browser-open": void openBrowser("spark"); break;
-    case "tips-open": S.tips = { tab: "spark" }; render(); break;
-    case "tips-close": S.tips = null; render(); break;
-    case "tips-tab": if (S.tips) { S.tips.tab = el.dataset.k!; renderTips(); } break;
     case "br-close": S.browser = null; render(); break;
     case "br-tab": if (S.browser) { S.browser.tab = el.dataset.k as "spark" | "community" | "web"; S.browser.open = null; S.browser.lang = ""; renderBrowser(); updateChrome(); } break;
     case "br-lang": if (S.browser) { S.browser.lang = el.dataset.k ?? ""; renderBrowser(); } break;
@@ -1491,7 +1345,6 @@ document.addEventListener("click", (e) => {
     case "ank-go": openExternal(ankiUrl(($("ank-q") as HTMLInputElement).value)); break;
     case "ank-cat": openExternal(ankiUrl(el.dataset.k!)); break;
     case "m-back": goBack(); break;
-    case "bar-close": { const bar = document.getElementById("update-bar"); if (bar) bar.hidden = true; break; }
     case "reload-app": store.flush(true); location.reload(); break;
     case "study": startReview(S.deckId); break;
     case "rv-close": closeReview(); break;
@@ -1613,12 +1466,12 @@ document.addEventListener("keydown", (e) => {
     else if (store.settings.manualGrades && ["1", "2", "3", "4"].includes(e.key)) rateManual(Number(e.key) as Rating);
     return;
   }
-  if (e.key === "Escape" && (S.modal || S.browser || S.tips)) { goBack(); return; }
+  if (e.key === "Escape" && (S.modal || S.browser)) { goBack(); return; }
   if (S.modal) {
     if (e.key === "Enter" && S.modal.type === "deck" && (e.target as HTMLElement).id === "m-name") (document.querySelector('[data-a="deck-save"]') as HTMLElement)?.click();
     return;
   }
-  if (S.browser || S.tips) return;
+  if (S.browser) return;
   const tag = (e.target as HTMLElement).tagName;
   if (mod && e.key === "Enter" && !activeId() && document.getElementById("f-front")) { e.preventDefault(); addCardFromForm(); }
   else if (mod && e.key.toLowerCase() === "n") { e.preventDefault(); S.sel.clear(); renderList(); renderEditor(); ($("f-front") as HTMLTextAreaElement | null)?.focus(); }
@@ -1666,19 +1519,11 @@ async function checkUpdate() {
 async function boot() {
   await loadTelegram();
   initTelegram(goBack, () => store && applyTheme());
-  onHomeScreenAdded(() => { homeStatus = "added"; const bar = document.getElementById("update-bar"); if (bar && bar.innerHTML.includes("home-add")) bar.hidden = true; toast(t("Ярлык добавлен")); if (S.modal?.type === "settings") renderModal(); });
   try { store = new Store(await backend.load()); }
   catch (e) { document.body.innerHTML = `<div class="empty"><div class="em">⚠️</div><h3>Error</h3>${esc((e as Error).message)}</div>`; return; }
   sync = new SyncService(() => store, updateSyncInd, onPulled, getMediaBlob);
   attachStore();
   if (store.syncOn) setMediaSync((k) => queueMedia([k]), downloadMedia);
-  setBundledMedia(async (k) => {
-    const id = bundledDeckOf(k);
-    if (!id) return null;
-    const all = await loadDeckMedia(id);
-    for (const [key, blob] of all) await putLocal(key, blob).catch(() => {});
-    return all.get(k) ?? null;
-  });
   (window as unknown as { __spark: unknown }).__spark = { store, S, render, sync, inTelegram, t };
   (window as unknown as { __recall: unknown }).__recall = (window as unknown as { __spark: unknown }).__spark;
   render();

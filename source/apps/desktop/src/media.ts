@@ -11,9 +11,6 @@ const urls = new Map<string, string>();
 /** Хуки синхронизации: новая медиа → в очередь отправки; нет локально → скачать из облака. */
 let onNew: ((key: string) => void) | null = null;
 let remote: ((key: string) => Promise<Blob | null>) | null = null;
-/** Звук встроенных колод Spark лежит рядом с приложением (decks/*.media) — в облако его не грузим. */
-let bundled: ((key: string) => Promise<Blob | null>) | null = null;
-export function setBundledMedia(fn: (key: string) => Promise<Blob | null>) { bundled = fn; }
 export function setMediaSync(onNewMedia: ((k: string) => void) | null, fetchRemote: ((k: string) => Promise<Blob | null>) | null) { onNew = onNewMedia; remote = fetchRemote; }
 
 function db(): Promise<IDBDatabase> {
@@ -64,7 +61,7 @@ export async function putMedia(blob: Blob): Promise<string> {
   return key;
 }
 
-export async function putLocal(key: string, blob: Blob) {
+async function putLocal(key: string, blob: Blob) {
   const d = await db();
   await new Promise<void>((res, rej) => { const tx = d.transaction(STORE, "readwrite"); tx.objectStore(STORE).put(blob, key); tx.oncomplete = () => res(); tx.onerror = () => rej(tx.error); });
 }
@@ -86,7 +83,6 @@ export async function mediaUrl(key: string): Promise<string | null> {
   if (hit) return hit;
   try {
     let blob = await getMediaBlob(key);
-    if (!blob && bundled) blob = await bundled(key).catch(() => null);
     if (!blob && remote) { blob = await remote(key).catch(() => null); if (blob) await putLocal(key, blob); }
     if (!blob) return null;
     const u = URL.createObjectURL(blob);
