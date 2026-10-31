@@ -1,0 +1,256 @@
+{
+"id": "ru-basics",
+"version": 1,
+"cards": [
+{
+"front": "привет",
+"back": "hi",
+"hint": "privet"
+},
+{
+"front": "спасибо",
+"back": "thank you",
+"hint": "spasibo"
+},
+{
+"front": "пожалуйста",
+"back": "please; you're welcome",
+"hint": "pozhaluysta"
+},
+{
+"front": "да",
+"back": "yes",
+"hint": "da"
+},
+{
+"front": "нет",
+"back": "no",
+"hint": "net"
+},
+{
+"front": "вода",
+"back": "water",
+"hint": "voda"
+},
+{
+"front": "дом",
+"back": "house; home",
+"hint": "dom"
+},
+{
+"front": "кошка",
+"back": "cat",
+"hint": "koshka"
+},
+{
+"front": "собака",
+"back": "dog",
+"hint": "sobaka"
+},
+{
+"front": "книга",
+"back": "book",
+"hint": "kniga"
+},
+{
+"front": "стол",
+"back": "table",
+"hint": "stol"
+},
+{
+"front": "город",
+"back": "city",
+"hint": "gorod"
+},
+{
+"front": "день",
+"back": "day",
+"hint": "den'"
+},
+{
+"front": "ночь",
+"back": "night",
+"hint": "noch'"
+},
+{
+"front": "время",
+"back": "time",
+"hint": "vremya"
+},
+{
+"front": "друг",
+"back": "friend",
+"hint": "drug"
+},
+{
+"front": "семья",
+"back": "family",
+"hint": "sem'ya"
+},
+{
+"front": "работа",
+"back": "work; job",
+"hint": "rabota"
+},
+{
+"front": "школа",
+"back": "school",
+"hint": "shkola"
+},
+{
+"front": "еда",
+"back": "food",
+"hint": "yeda"
+},
+{
+"front": "хлеб",
+"back": "bread",
+"hint": "khleb"
+},
+{
+"front": "молоко",
+"back": "milk",
+"hint": "moloko"
+},
+{
+"front": "красный",
+"back": "red",
+"hint": "krasnyy"
+},
+{
+"front": "синий",
+"back": "(dark) blue",
+"hint": "siniy"
+},
+{
+"front": "зелёный",
+"back": "green",
+"hint": "zelyonyy"
+},
+{
+"front": "белый",
+"back": "white",
+"hint": "belyy"
+},
+{
+"front": "чёрный",
+"back": "black",
+"hint": "chyornyy"
+},
+{
+"front": "большой",
+"back": "big",
+"hint": "bol'shoy"
+},
+{
+"front": "маленький",
+"back": "small",
+"hint": "malen'kiy"
+},
+{
+"front": "хороший",
+"back": "good",
+"hint": "khoroshiy"
+},
+{
+"front": "плохой",
+"back": "bad",
+"hint": "plokhoy"
+},
+{
+"front": "новый",
+"back": "new",
+"hint": "novyy"
+},
+{
+"front": "старый",
+"back": "old",
+"hint": "staryy"
+},
+{
+"front": "говорить",
+"back": "to speak; to talk",
+"hint": "govorit'"
+},
+{
+"front": "есть",
+"back": "to eat",
+"hint": "yest'"
+},
+{
+"front": "пить",
+"back": "to drink",
+"hint": "pit'"
+},
+{
+"front": "жить",
+"back": "to live",
+"hint": "zhit'"
+},
+{
+"front": "быть",
+"back": "to be",
+"hint": "byt'"
+},
+{
+"front": "идти",
+"back": "to go (on foot)",
+"hint": "idti"
+},
+{
+"front": "делать",
+"back": "to do; to make",
+"hint": "delat'"
+},
+{
+"front": "хотеть",
+"back": "to want",
+"hint": "khotet'"
+},
+{
+"front": "знать",
+"back": "to know",
+"hint": "znat'"
+},
+{
+"front": "любить",
+"back": "to love; to like",
+"hint": "lyubit'"
+},
+{
+"front": "один",
+"back": "one",
+"hint": "odin"
+},
+{
+"front": "два",
+"back": "two",
+"hint": "dva"
+},
+{
+"front": "три",
+"back": "three",
+"hint": "tri"
+},
+{
+"front": "сегодня",
+"back": "today",
+"hint": "segodnya"
+},
+{
+"front": "завтра",
+"back": "tomorrow",
+"hint": "zavtra"
+},
+{
+"front": "вчера",
+"back": "yesterday",
+"hint": "vchera"
+},
+{
+"front": "здравствуйте",
+"back": "hello (formal)",
+"hint": "zdravstvuyte"
+}
+]
+}

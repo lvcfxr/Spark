@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="ru" data-dark="0">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no">
+<meta name="theme-color" content="#0B0B0F">
+<link rel="icon" type="image/svg+xml" href="FAVICON_DATA_URI">
+<link rel="apple-touch-icon" href="icon-512.png">
+<title>Spark</title>
+<style>/*CSS*/</style>
+</head>
+<body>
+<div id="update-bar" class="update-bar" hidden></div>
+<div id="app">
+  <section class="col">
+    <div class="head"><h1 id="deck-title" data-i18n="Колоды">Колоды</h1><span id="deck-actions"></span><button class="icon-btn sync-ind" id="sync-ind" data-a="sync-open" hidden></button><button class="icon-btn" data-a="deck-new" data-i18n-title="Новая колода"><span data-ic="plus"></span></button></div>
+    <div class="scroll" id="decks"></div>
+    <nav class="side-foot">
+      <button data-a="browser-open" data-i18n-title="Каталог"><span class="ic" data-ic="catalog"></span><span data-i18n="Каталог">Каталог</span></button>
+      <button data-a="import-decks" data-i18n-title="Импорт"><span class="ic" data-ic="import"></span><span data-i18n="Импорт">Импорт</span></button>
+      <button data-a="stats" data-i18n-title="Статистика"><span class="ic" data-ic="stats"></span><span data-i18n="Статистика">Статистика</span></button>
+      <button data-a="settings" data-i18n-title="Настройки"><span class="ic" data-ic="settings"></span><span data-i18n="Настройки">Настройки</span></button>
+    </nav>
+  </section>
+  <section class="col">
+    <div class="head"><button class="icon-btn m-only" data-a="m-back" data-i18n-title="Назад"><span data-ic="back"></span></button><h1 id="list-title" class="one-line"></h1><span class="count-badge" id="list-count"></span>
+      <button class="icon-btn" data-a="card-new" data-i18n-title="Новая карточка"><span data-ic="plus"></span></button>
+      <button class="icon-btn" data-a="bulk" data-i18n-title="Добавить списком"><span data-ic="list"></span></button>
+      <button class="btn study-btn" data-a="study" data-i18n="Учить">Учить</button></div>
+    <input class="search" type="search" id="search" data-i18n-ph="Поиск · #тег · is:new" placeholder="Поиск">
+    <div class="scroll" id="cards"></div>
+  </section>
+  <section class="col" id="editor"></section>
+</div>
+<div id="browser"></div><div id="overlay"></div><div id="modal"></div>
+<div class="drop" id="drop" data-i18n="Отпустите файл, чтобы импортировать">Отпустите файл, чтобы импортировать</div>
+<input type="file" id="file" hidden accept=".apkg,.colpkg,.txt,.csv,.tsv,.json">
+<input type="file" id="img-file" hidden accept="image/*">
+<input type="file" id="vid-file" hidden accept="video/*">
+<input type="file" id="aud-file" hidden accept="audio/*">
+<script src="config.js"></script>
+<script>/*JS*/</script>
+</body>
+</html>

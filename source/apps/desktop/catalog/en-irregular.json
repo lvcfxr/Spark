@@ -1,0 +1,276 @@
+{
+"id": "en-irregular",
+"version": 1,
+"cards": [
+{
+"front": "be",
+"back": "was / were — been",
+"hint": "быть"
+},
+{
+"front": "become",
+"back": "became — become",
+"hint": "становиться"
+},
+{
+"front": "begin",
+"back": "began — begun",
+"hint": "начинать"
+},
+{
+"front": "break",
+"back": "broke — broken",
+"hint": "ломать"
+},
+{
+"front": "bring",
+"back": "brought — brought",
+"hint": "приносить"
+},
+{
+"front": "build",
+"back": "built — built",
+"hint": "строить"
+},
+{
+"front": "buy",
+"back": "bought — bought",
+"hint": "покупать"
+},
+{
+"front": "catch",
+"back": "caught — caught",
+"hint": "ловить"
+},
+{
+"front": "choose",
+"back": "chose — chosen",
+"hint": "выбирать"
+},
+{
+"front": "come",
+"back": "came — come",
+"hint": "приходить"
+},
+{
+"front": "cost",
+"back": "cost — cost",
+"hint": "стоить"
+},
+{
+"front": "cut",
+"back": "cut — cut",
+"hint": "резать"
+},
+{
+"front": "do",
+"back": "did — done",
+"hint": "делать"
+},
+{
+"front": "draw",
+"back": "drew — drawn",
+"hint": "рисовать"
+},
+{
+"front": "drink",
+"back": "drank — drunk",
+"hint": "пить"
+},
+{
+"front": "drive",
+"back": "drove — driven",
+"hint": "водить машину"
+},
+{
+"front": "eat",
+"back": "ate — eaten",
+"hint": "есть"
+},
+{
+"front": "fall",
+"back": "fell — fallen",
+"hint": "падать"
+},
+{
+"front": "feel",
+"back": "felt — felt",
+"hint": "чувствовать"
+},
+{
+"front": "find",
+"back": "found — found",
+"hint": "находить"
+},
+{
+"front": "fly",
+"back": "flew — flown",
+"hint": "летать"
+},
+{
+"front": "forget",
+"back": "forgot — forgotten",
+"hint": "забывать"
+},
+{
+"front": "get",
+"back": "got — got",
+"hint": "получать"
+},
+{
+"front": "give",
+"back": "gave — given",
+"hint": "давать"
+},
+{
+"front": "go",
+"back": "went — gone",
+"hint": "идти"
+},
+{
+"front": "grow",
+"back": "grew — grown",
+"hint": "расти"
+},
+{
+"front": "have",
+"back": "had — had",
+"hint": "иметь"
+},
+{
+"front": "hear",
+"back": "heard — heard",
+"hint": "слышать"
+},
+{
+"front": "keep",
+"back": "kept — kept",
+"hint": "держать; хранить"
+},
+{
+"front": "know",
+"back": "knew — known",
+"hint": "знать"
+},
+{
+"front": "leave",
+"back": "left — left",
+"hint": "оставлять; уходить"
+},
+{
+"front": "lose",
+"back": "lost — lost",
+"hint": "терять"
+},
+{
+"front": "make",
+"back": "made — made",
+"hint": "делать"
+},
+{
+"front": "meet",
+"back": "met — met",
+"hint": "встречать"
+},
+{
+"front": "pay",
+"back": "paid — paid",
+"hint": "платить"
+},
+{
+"front": "put",
+"back": "put — put",
+"hint": "класть"
+},
+{
+"front": "read",
+"back": "read — read",
+"hint": "читать"
+},
+{
+"front": "run",
+"back": "ran — run",
+"hint": "бежать"
+},
+{
+"front": "say",
+"back": "said — said",
+"hint": "сказать"
+},
+{
+"front": "see",
+"back": "saw — seen",
+"hint": "видеть"
+},
+{
+"front": "sell",
+"back": "sold — sold",
+"hint": "продавать"
+},
+{
+"front": "send",
+"back": "sent — sent",
+"hint": "отправлять"
+},
+{
+"front": "sit",
+"back": "sat — sat",
+"hint": "сидеть"
+},
+{
+"front": "sleep",
+"back": "slept — slept",
+"hint": "спать"
+},
+{
+"front": "speak",
+"back": "spoke — spoken",
+"hint": "говорить"
+},
+{
+"front": "spend",
+"back": "spent — spent",
+"hint": "тратить"
+},
+{
+"front": "stand",
+"back": "stood — stood",
+"hint": "стоять"
+},
+{
+"front": "swim",
+"back": "swam — swum",
+"hint": "плавать"
+},
+{
+"front": "take",
+"back": "took — taken",
+"hint": "брать"
+},
+{
+"front": "teach",
+"back": "taught — taught",
+"hint": "учить (кого-то)"
+},
+{
+"front": "tell",
+"back": "told — told",
+"hint": "рассказывать"
+},
+{
+"front": "think",
+"back": "thought — thought",
+"hint": "думать"
+},
+{
+"front": "understand",
+"back": "understood — understood",
+"hint": "понимать"
+},
+{
+"front": "write",
+"back": "wrote — written",
+"hint": "писать"
+}
+]
+}

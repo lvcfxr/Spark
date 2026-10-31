@@ -1,0 +1,306 @@
+{
+"id": "en-basics",
+"version": 1,
+"cards": [
+{
+"front": "time",
+"back": "время",
+"hint": "сущ."
+},
+{
+"front": "year",
+"back": "год",
+"hint": "сущ."
+},
+{
+"front": "people",
+"back": "люди",
+"hint": "сущ."
+},
+{
+"front": "day",
+"back": "день",
+"hint": "сущ."
+},
+{
+"front": "man",
+"back": "мужчина; человек",
+"hint": "сущ."
+},
+{
+"front": "woman",
+"back": "женщина",
+"hint": "сущ."
+},
+{
+"front": "child",
+"back": "ребёнок",
+"hint": "сущ."
+},
+{
+"front": "life",
+"back": "жизнь",
+"hint": "сущ."
+},
+{
+"front": "world",
+"back": "мир",
+"hint": "сущ."
+},
+{
+"front": "family",
+"back": "семья",
+"hint": "сущ."
+},
+{
+"front": "friend",
+"back": "друг",
+"hint": "сущ."
+},
+{
+"front": "school",
+"back": "школа",
+"hint": "сущ."
+},
+{
+"front": "country",
+"back": "страна",
+"hint": "сущ."
+},
+{
+"front": "city",
+"back": "город",
+"hint": "сущ."
+},
+{
+"front": "house",
+"back": "дом (здание)",
+"hint": "сущ."
+},
+{
+"front": "room",
+"back": "комната",
+"hint": "сущ."
+},
+{
+"front": "door",
+"back": "дверь",
+"hint": "сущ."
+},
+{
+"front": "water",
+"back": "вода",
+"hint": "сущ."
+},
+{
+"front": "money",
+"back": "деньги",
+"hint": "сущ."
+},
+{
+"front": "book",
+"back": "книга",
+"hint": "сущ."
+},
+{
+"front": "word",
+"back": "слово",
+"hint": "сущ."
+},
+{
+"front": "question",
+"back": "вопрос",
+"hint": "сущ."
+},
+{
+"front": "work",
+"back": "работа",
+"hint": "сущ."
+},
+{
+"front": "hour",
+"back": "час",
+"hint": "сущ."
+},
+{
+"front": "week",
+"back": "неделя",
+"hint": "сущ."
+},
+{
+"front": "month",
+"back": "месяц",
+"hint": "сущ."
+},
+{
+"front": "night",
+"back": "ночь",
+"hint": "сущ."
+},
+{
+"front": "name",
+"back": "имя",
+"hint": "сущ."
+},
+{
+"front": "idea",
+"back": "идея",
+"hint": "сущ."
+},
+{
+"front": "head",
+"back": "голова",
+"hint": "сущ."
+},
+{
+"front": "be",
+"back": "быть",
+"hint": "гл."
+},
+{
+"front": "have",
+"back": "иметь",
+"hint": "гл."
+},
+{
+"front": "do",
+"back": "делать",
+"hint": "гл."
+},
+{
+"front": "say",
+"back": "сказать",
+"hint": "гл."
+},
+{
+"front": "go",
+"back": "идти; ехать",
+"hint": "гл."
+},
+{
+"front": "get",
+"back": "получать",
+"hint": "гл."
+},
+{
+"front": "make",
+"back": "делать; создавать",
+"hint": "гл."
+},
+{
+"front": "know",
+"back": "знать",
+"hint": "гл."
+},
+{
+"front": "think",
+"back": "думать",
+"hint": "гл."
+},
+{
+"front": "take",
+"back": "брать",
+"hint": "гл."
+},
+{
+"front": "see",
+"back": "видеть",
+"hint": "гл."
+},
+{
+"front": "come",
+"back": "приходить",
+"hint": "гл."
+},
+{
+"front": "want",
+"back": "хотеть",
+"hint": "гл."
+},
+{
+"front": "look",
+"back": "смотреть",
+"hint": "гл."
+},
+{
+"front": "use",
+"back": "использовать",
+"hint": "гл."
+},
+{
+"front": "find",
+"back": "находить",
+"hint": "гл."
+},
+{
+"front": "give",
+"back": "давать",
+"hint": "гл."
+},
+{
+"front": "tell",
+"back": "рассказывать",
+"hint": "гл."
+},
+{
+"front": "good",
+"back": "хороший",
+"hint": "прил."
+},
+{
+"front": "new",
+"back": "новый",
+"hint": "прил."
+},
+{
+"front": "first",
+"back": "первый",
+"hint": "прил."
+},
+{
+"front": "last",
+"back": "последний",
+"hint": "прил."
+},
+{
+"front": "long",
+"back": "длинный",
+"hint": "прил."
+},
+{
+"front": "great",
+"back": "отличный; великий",
+"hint": "прил."
+},
+{
+"front": "little",
+"back": "маленький",
+"hint": "прил."
+},
+{
+"front": "old",
+"back": "старый",
+"hint": "прил."
+},
+{
+"front": "big",
+"back": "большой",
+"hint": "прил."
+},
+{
+"front": "young",
+"back": "молодой",
+"hint": "прил."
+},
+{
+"front": "important",
+"back": "важный",
+"hint": "прил."
+},
+{
+"front": "different",
+"back": "разный; другой",
+"hint": "прил."
+}
+]
+}

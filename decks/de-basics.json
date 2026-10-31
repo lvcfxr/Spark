@@ -1,0 +1,207 @@
+{
+"id": "de-basics",
+"version": 1,
+"cards": [
+{
+"front": "Hallo",
+"back": "привет"
+},
+{
+"front": "Tschüss",
+"back": "пока"
+},
+{
+"front": "Danke",
+"back": "спасибо"
+},
+{
+"front": "Bitte",
+"back": "пожалуйста; не за что"
+},
+{
+"front": "ja",
+"back": "да"
+},
+{
+"front": "nein",
+"back": "нет"
+},
+{
+"front": "das Wasser",
+"back": "вода"
+},
+{
+"front": "das Haus",
+"back": "дом"
+},
+{
+"front": "der Hund",
+"back": "собака"
+},
+{
+"front": "die Katze",
+"back": "кошка"
+},
+{
+"front": "das Buch",
+"back": "книга"
+},
+{
+"front": "der Tisch",
+"back": "стол"
+},
+{
+"front": "der Stuhl",
+"back": "стул"
+},
+{
+"front": "das Auto",
+"back": "машина"
+},
+{
+"front": "die Stadt",
+"back": "город"
+},
+{
+"front": "der Tag",
+"back": "день"
+},
+{
+"front": "die Nacht",
+"back": "ночь"
+},
+{
+"front": "die Zeit",
+"back": "время"
+},
+{
+"front": "der Freund",
+"back": "друг"
+},
+{
+"front": "die Familie",
+"back": "семья"
+},
+{
+"front": "die Arbeit",
+"back": "работа"
+},
+{
+"front": "die Schule",
+"back": "школа"
+},
+{
+"front": "das Essen",
+"back": "еда"
+},
+{
+"front": "das Brot",
+"back": "хлеб"
+},
+{
+"front": "die Milch",
+"back": "молоко"
+},
+{
+"front": "der Kaffee",
+"back": "кофе"
+},
+{
+"front": "rot",
+"back": "красный"
+},
+{
+"front": "blau",
+"back": "синий"
+},
+{
+"front": "grün",
+"back": "зелёный"
+},
+{
+"front": "weiß",
+"back": "белый"
+},
+{
+"front": "schwarz",
+"back": "чёрный"
+},
+{
+"front": "groß",
+"back": "большой"
+},
+{
+"front": "klein",
+"back": "маленький"
+},
+{
+"front": "gut",
+"back": "хороший"
+},
+{
+"front": "schlecht",
+"back": "плохой"
+},
+{
+"front": "neu",
+"back": "новый"
+},
+{
+"front": "alt",
+"back": "старый"
+},
+{
+"front": "sprechen",
+"back": "говорить"
+},
+{
+"front": "essen",
+"back": "есть"
+},
+{
+"front": "trinken",
+"back": "пить"
+},
+{
+"front": "wohnen",
+"back": "жить",
+"hint": "проживать где-то"
+},
+{
+"front": "sein",
+"back": "быть"
+},
+{
+"front": "haben",
+"back": "иметь"
+},
+{
+"front": "gehen",
+"back": "идти"
+},
+{
+"front": "machen",
+"back": "делать"
+},
+{
+"front": "wollen",
+"back": "хотеть"
+},
+{
+"front": "eins",
+"back": "один"
+},
+{
+"front": "zwei",
+"back": "два"
+},
+{
+"front": "drei",
+"back": "три"
+},
+{
+"front": "heute",
+"back": "сегодня"
+}
+]
+}

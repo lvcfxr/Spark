@@ -1,0 +1,209 @@
+{
+"id": "es-basics",
+"version": 1,
+"cards": [
+{
+"front": "hola",
+"back": "привет"
+},
+{
+"front": "adiós",
+"back": "до свидания"
+},
+{
+"front": "gracias",
+"back": "спасибо"
+},
+{
+"front": "por favor",
+"back": "пожалуйста"
+},
+{
+"front": "sí",
+"back": "да"
+},
+{
+"front": "no",
+"back": "нет"
+},
+{
+"front": "el agua",
+"back": "вода"
+},
+{
+"front": "la casa",
+"back": "дом"
+},
+{
+"front": "el perro",
+"back": "собака"
+},
+{
+"front": "el gato",
+"back": "кошка"
+},
+{
+"front": "el libro",
+"back": "книга"
+},
+{
+"front": "la mesa",
+"back": "стол"
+},
+{
+"front": "la silla",
+"back": "стул"
+},
+{
+"front": "el coche",
+"back": "машина",
+"hint": "в Испании"
+},
+{
+"front": "la ciudad",
+"back": "город"
+},
+{
+"front": "el día",
+"back": "день"
+},
+{
+"front": "la noche",
+"back": "ночь"
+},
+{
+"front": "el tiempo",
+"back": "время; погода"
+},
+{
+"front": "el amigo",
+"back": "друг"
+},
+{
+"front": "la familia",
+"back": "семья"
+},
+{
+"front": "el trabajo",
+"back": "работа"
+},
+{
+"front": "la escuela",
+"back": "школа"
+},
+{
+"front": "la comida",
+"back": "еда"
+},
+{
+"front": "el pan",
+"back": "хлеб"
+},
+{
+"front": "la leche",
+"back": "молоко"
+},
+{
+"front": "el café",
+"back": "кофе"
+},
+{
+"front": "rojo",
+"back": "красный"
+},
+{
+"front": "azul",
+"back": "синий"
+},
+{
+"front": "verde",
+"back": "зелёный"
+},
+{
+"front": "blanco",
+"back": "белый"
+},
+{
+"front": "negro",
+"back": "чёрный"
+},
+{
+"front": "grande",
+"back": "большой"
+},
+{
+"front": "pequeño",
+"back": "маленький"
+},
+{
+"front": "bueno",
+"back": "хороший"
+},
+{
+"front": "malo",
+"back": "плохой"
+},
+{
+"front": "nuevo",
+"back": "новый"
+},
+{
+"front": "viejo",
+"back": "старый"
+},
+{
+"front": "hablar",
+"back": "говорить"
+},
+{
+"front": "comer",
+"back": "есть"
+},
+{
+"front": "beber",
+"back": "пить"
+},
+{
+"front": "vivir",
+"back": "жить"
+},
+{
+"front": "ser",
+"back": "быть",
+"hint": "постоянное качество"
+},
+{
+"front": "estar",
+"back": "быть",
+"hint": "состояние, местоположение"
+},
+{
+"front": "tener",
+"back": "иметь"
+},
+{
+"front": "ir",
+"back": "идти; ехать"
+},
+{
+"front": "hacer",
+"back": "делать"
+},
+{
+"front": "querer",
+"back": "хотеть; любить"
+},
+{
+"front": "uno",
+"back": "один"
+},
+{
+"front": "dos",
+"back": "два"
+},
+{
+"front": "tres",
+"back": "три"
+}
+]
+}
