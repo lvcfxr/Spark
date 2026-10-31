@@ -21,7 +21,7 @@ mkdirSync("dist-web", { recursive: true });
 writeFileSync("dist-web/index.html", html);
 copyFileSync("web/config.js", "dist-web/config.js");
 copyFileSync("brand/icon-512.png", "dist-web/icon-512.png");
-const NOCACHE = "/*\n  Cache-Control: no-cache\n/icon-512.png\n  Cache-Control: public, max-age=86400\n/decks/*.media\n  Cache-Control: public, max-age=604800\n";
+const NOCACHE = "/*\n  Cache-Control: no-cache\n/icon-512.png\n  Cache-Control: public, max-age=86400\n/decks/*.audio.mp3\n  Cache-Control: public, max-age=604800\n";
 writeFileSync("dist-web/_headers", NOCACHE);                       // Netlify / Cloudflare Pages: страница всегда свежая
 writeFileSync("dist-web/version.json", JSON.stringify({ version: VERSION, built: new Date().toISOString() }));
 // каталог колод рядом с приложением (Mini App берёт обновления каталога отсюда без пересборки)

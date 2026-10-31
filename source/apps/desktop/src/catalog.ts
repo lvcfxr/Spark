@@ -6,7 +6,7 @@ export interface CatalogDeck {
   title: string; title_en?: string; description: string; description_en?: string;
   emoji: string; lang_front: string; lang_back: string; tags: string[]; count: number;
   version: number; author?: string; file?: string; downloads?: number; updated?: string;
-  /** Файл со звуком произношения рядом с колодой (decks/<id>.media). */
+  /** Файл со звуком произношения рядом с колодой (decks/<id>.audio.mp3). */
   media?: string; audio?: boolean;
 }
 /** Звук колоды: все mp3 одним файлом; index — ключ медиа → [смещение, длина]. */

@@ -1,5 +1,5 @@
 """Enrich Spark's built-in decks: written pronunciation (hint), explanation + example (extra),
-and pronunciation audio (piper TTS → mp3), packed into one <deck>.media file per deck.
+and pronunciation audio (piper TTS → mp3), packed into one <deck>.audio.mp3 file per deck.
 Usage: python3 gen.py <catalog_dir>"""
 import hashlib, json, os, subprocess, sys, tempfile
 sys.path.insert(0, os.path.dirname(__file__))
@@ -57,8 +57,8 @@ def build(deck_id: str, version: int, rows):
         cards.append(c)
     out = {"id": deck_id, "version": version, "cards": cards}
     if index:
-        open(f"{CAT}/{deck_id}.media", "wb").write(pack)
-        out["media"] = {"file": f"{deck_id}.media", "type": "audio/mpeg", "index": index}
+        open(f"{CAT}/{deck_id}.audio.mp3", "wb").write(pack)
+        out["media"] = {"file": f"{deck_id}.audio.mp3", "type": "audio/mpeg", "index": index}
     json.dump(out, open(f"{CAT}/{deck_id}.json", "w"), ensure_ascii=False, indent=1)
     print(f"{deck_id}: {len(cards)} cards, {len(index)} clips, {len(pack)//1024} KB")
     return len(cards)
@@ -118,9 +118,9 @@ build("elements", V, rows)
 cat = json.load(open(f"{CAT}/catalog.json"))
 for d in cat["decks"]:
     d["version"] = V
-    m = f"{CAT}/{d['id']}.media"
+    m = f"{CAT}/{d['id']}.audio.mp3"
     if os.path.exists(m):
-        d["media"] = d["id"] + ".media"; d["audio"] = True
+        d["media"] = d["id"] + ".audio.mp3"; d["audio"] = True
         for k, add in (("description", " Со звуком, транскрипцией и примерами."), ("description_en", " With audio, transcription and examples.")):
             if add.strip() not in d[k]: d[k] = d[k].rstrip() + add
     else:

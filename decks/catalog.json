@@ -18,7 +18,7 @@
    "version": 2,
    "author": "Spark",
    "file": "en-basics.json",
-   "media": "en-basics.media",
+   "media": "en-basics.audio.mp3",
    "audio": true
   },
   {
@@ -38,7 +38,7 @@
    "version": 2,
    "author": "Spark",
    "file": "en-irregular.json",
-   "media": "en-irregular.media",
+   "media": "en-irregular.audio.mp3",
    "audio": true
   },
   {
@@ -58,7 +58,7 @@
    "version": 2,
    "author": "Spark",
    "file": "es-basics.json",
-   "media": "es-basics.media",
+   "media": "es-basics.audio.mp3",
    "audio": true
   },
   {
@@ -78,7 +78,7 @@
    "version": 2,
    "author": "Spark",
    "file": "de-basics.json",
-   "media": "de-basics.media",
+   "media": "de-basics.audio.mp3",
    "audio": true
   },
   {
@@ -98,7 +98,7 @@
    "version": 2,
    "author": "Spark",
    "file": "ru-basics.json",
-   "media": "ru-basics.media",
+   "media": "ru-basics.audio.mp3",
    "audio": true
   },
   {

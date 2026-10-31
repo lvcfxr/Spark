@@ -601,3 +601,6 @@ input.switch { flex: none; margin: 0; }
 .extra { font-size: 15px; line-height: 1.45; }
 .extra > div:not(.inset):not(.sub):not(.gap) { font-size: 14.5px; color: var(--muted); margin: 2px 0; }
 .extra > .inset { font-size: 15px; }
+#browser, #tips { z-index: 75; }
+#modal { z-index: 80; } .toast { z-index: 90; }
+.drop { z-index: 85; }
