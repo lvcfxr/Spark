@@ -1,0 +1,156 @@
+{
+"id": "elements",
+"version": 1,
+"cards": [
+{
+"front": "H",
+"back": "Водород",
+"hint": "№ 1"
+},
+{
+"front": "He",
+"back": "Гелий",
+"hint": "№ 2"
+},
+{
+"front": "Li",
+"back": "Литий",
+"hint": "№ 3"
+},
+{
+"front": "Be",
+"back": "Бериллий",
+"hint": "№ 4"
+},
+{
+"front": "B",
+"back": "Бор",
+"hint": "№ 5"
+},
+{
+"front": "C",
+"back": "Углерод",
+"hint": "№ 6"
+},
+{
+"front": "N",
+"back": "Азот",
+"hint": "№ 7"
+},
+{
+"front": "O",
+"back": "Кислород",
+"hint": "№ 8"
+},
+{
+"front": "F",
+"back": "Фтор",
+"hint": "№ 9"
+},
+{
+"front": "Ne",
+"back": "Неон",
+"hint": "№ 10"
+},
+{
+"front": "Na",
+"back": "Натрий",
+"hint": "№ 11"
+},
+{
+"front": "Mg",
+"back": "Магний",
+"hint": "№ 12"
+},
+{
+"front": "Al",
+"back": "Алюминий",
+"hint": "№ 13"
+},
+{
+"front": "Si",
+"back": "Кремний",
+"hint": "№ 14"
+},
+{
+"front": "P",
+"back": "Фосфор",
+"hint": "№ 15"
+},
+{
+"front": "S",
+"back": "Сера",
+"hint": "№ 16"
+},
+{
+"front": "Cl",
+"back": "Хлор",
+"hint": "№ 17"
+},
+{
+"front": "Ar",
+"back": "Аргон",
+"hint": "№ 18"
+},
+{
+"front": "K",
+"back": "Калий",
+"hint": "№ 19"
+},
+{
+"front": "Ca",
+"back": "Кальций",
+"hint": "№ 20"
+},
+{
+"front": "Sc",
+"back": "Скандий",
+"hint": "№ 21"
+},
+{
+"front": "Ti",
+"back": "Титан",
+"hint": "№ 22"
+},
+{
+"front": "V",
+"back": "Ванадий",
+"hint": "№ 23"
+},
+{
+"front": "Cr",
+"back": "Хром",
+"hint": "№ 24"
+},
+{
+"front": "Mn",
+"back": "Марганец",
+"hint": "№ 25"
+},
+{
+"front": "Fe",
+"back": "Железо",
+"hint": "№ 26"
+},
+{
+"front": "Co",
+"back": "Кобальт",
+"hint": "№ 27"
+},
+{
+"front": "Ni",
+"back": "Никель",
+"hint": "№ 28"
+},
+{
+"front": "Cu",
+"back": "Медь",
+"hint": "№ 29"
+},
+{
+"front": "Zn",
+"back": "Цинк",
+"hint": "№ 30"
+}
+]
+}
