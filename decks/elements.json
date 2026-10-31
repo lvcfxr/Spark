@@ -1,186 +1,276 @@
 {
  "id": "elements",
- "version": 3,
+ "version": 4,
  "cards": [
   {
    "front": "H",
    "back": "Водород",
    "hint": "№ 1",
-   "extra": "*Hydrogenium*. Самый лёгкий и самый распространённый элемент во Вселенной."
+   "extra": "*Hydrogenium*. Самый лёгкий и самый распространённый элемент во Вселенной.",
+   "back_en": "Hydrogen",
+   "hint_en": "No. 1",
+   "extra_en": "*Hydrogenium*. The lightest and most abundant element in the Universe."
   },
   {
    "front": "He",
    "back": "Гелий",
    "hint": "№ 2",
-   "extra": "*Helium*. Инертный газ; им наполняют воздушные шары. Открыт в спектре Солнца."
+   "extra": "*Helium*. Инертный газ; им наполняют воздушные шары. Открыт в спектре Солнца.",
+   "back_en": "Helium",
+   "hint_en": "No. 2",
+   "extra_en": "*Helium*. A noble gas used in balloons. Discovered in the Sun's spectrum."
   },
   {
    "front": "Li",
    "back": "Литий",
    "hint": "№ 3",
-   "extra": "*Lithium*. Самый лёгкий металл; основа аккумуляторов телефонов."
+   "extra": "*Lithium*. Самый лёгкий металл; основа аккумуляторов телефонов.",
+   "back_en": "Lithium",
+   "hint_en": "No. 3",
+   "extra_en": "*Lithium*. The lightest metal; the basis of phone batteries."
   },
   {
    "front": "Be",
    "back": "Бериллий",
    "hint": "№ 4",
-   "extra": "*Beryllium*. Лёгкий прочный металл; входит в состав изумруда."
+   "extra": "*Beryllium*. Лёгкий прочный металл; входит в состав изумруда.",
+   "back_en": "Beryllium",
+   "hint_en": "No. 4",
+   "extra_en": "*Beryllium*. A light, strong metal; found in emeralds."
   },
   {
    "front": "B",
    "back": "Бор",
    "hint": "№ 5",
-   "extra": "*Borum*. Полуметалл; борная кислота — антисептик."
+   "extra": "*Borum*. Полуметалл; борная кислота — антисептик.",
+   "back_en": "Boron",
+   "hint_en": "No. 5",
+   "extra_en": "*Borum*. A metalloid; boric acid is an antiseptic."
   },
   {
    "front": "C",
    "back": "Углерод",
    "hint": "№ 6",
-   "extra": "*Carboneum*. Основа жизни. Алмаз и графит — это чистый углерод."
+   "extra": "*Carboneum*. Основа жизни. Алмаз и графит — это чистый углерод.",
+   "back_en": "Carbon",
+   "hint_en": "No. 6",
+   "extra_en": "*Carboneum*. The basis of life. Diamond and graphite are pure carbon."
   },
   {
    "front": "N",
    "back": "Азот",
    "hint": "№ 7",
-   "extra": "*Nitrogenium*. Около 78% воздуха — азот."
+   "extra": "*Nitrogenium*. Около 78% воздуха — азот.",
+   "back_en": "Nitrogen",
+   "hint_en": "No. 7",
+   "extra_en": "*Nitrogenium*. About 78% of the air is nitrogen."
   },
   {
    "front": "O",
    "back": "Кислород",
    "hint": "№ 8",
-   "extra": "*Oxygenium*. Около 21% воздуха; нужен для дыхания и горения."
+   "extra": "*Oxygenium*. Около 21% воздуха; нужен для дыхания и горения.",
+   "back_en": "Oxygen",
+   "hint_en": "No. 8",
+   "extra_en": "*Oxygenium*. About 21% of the air; needed for breathing and burning."
   },
   {
    "front": "F",
    "back": "Фтор",
    "hint": "№ 9",
-   "extra": "*Fluorum*. Самый активный неметалл; фториды есть в зубной пасте."
+   "extra": "*Fluorum*. Самый активный неметалл; фториды есть в зубной пасте.",
+   "back_en": "Fluorine",
+   "hint_en": "No. 9",
+   "extra_en": "*Fluorum*. The most reactive non-metal; fluorides are in toothpaste."
   },
   {
    "front": "Ne",
    "back": "Неон",
    "hint": "№ 10",
-   "extra": "*Neon*. Инертный газ; светится красным в рекламных трубках."
+   "extra": "*Neon*. Инертный газ; светится красным в рекламных трубках.",
+   "back_en": "Neon",
+   "hint_en": "No. 10",
+   "extra_en": "*Neon*. A noble gas; glows red in advertising tubes."
   },
   {
    "front": "Na",
    "back": "Натрий",
    "hint": "№ 11",
-   "extra": "*Natrium*. Мягкий металл; поваренная соль — хлорид натрия NaCl."
+   "extra": "*Natrium*. Мягкий металл; поваренная соль — хлорид натрия NaCl.",
+   "back_en": "Sodium",
+   "hint_en": "No. 11",
+   "extra_en": "*Natrium*. A soft metal; table salt is sodium chloride, NaCl."
   },
   {
    "front": "Mg",
    "back": "Магний",
    "hint": "№ 12",
-   "extra": "*Magnesium*. Горит ослепительно белым пламенем; есть в хлорофилле."
+   "extra": "*Magnesium*. Горит ослепительно белым пламенем; есть в хлорофилле.",
+   "back_en": "Magnesium",
+   "hint_en": "No. 12",
+   "extra_en": "*Magnesium*. Burns with a blinding white flame; found in chlorophyll."
   },
   {
    "front": "Al",
    "back": "Алюминий",
    "hint": "№ 13",
-   "extra": "*Aluminium*. Самый распространённый металл в земной коре."
+   "extra": "*Aluminium*. Самый распространённый металл в земной коре.",
+   "back_en": "Aluminium",
+   "hint_en": "No. 13",
+   "extra_en": "*Aluminium*. The most abundant metal in the Earth's crust."
   },
   {
    "front": "Si",
    "back": "Кремний",
    "hint": "№ 14",
-   "extra": "*Silicium*. Основа песка и микросхем."
+   "extra": "*Silicium*. Основа песка и микросхем.",
+   "back_en": "Silicon",
+   "hint_en": "No. 14",
+   "extra_en": "*Silicium*. The basis of sand and microchips."
   },
   {
    "front": "P",
    "back": "Фосфор",
    "hint": "№ 15",
-   "extra": "*Phosphorus*. Белый фосфор светится в темноте; есть в костях и ДНК."
+   "extra": "*Phosphorus*. Белый фосфор светится в темноте; есть в костях и ДНК.",
+   "back_en": "Phosphorus",
+   "hint_en": "No. 15",
+   "extra_en": "*Phosphorus*. White phosphorus glows in the dark; found in bones and DNA."
   },
   {
    "front": "S",
    "back": "Сера",
    "hint": "№ 16",
-   "extra": "*Sulfur*. Жёлтое вещество; запах тухлых яиц — от сероводорода."
+   "extra": "*Sulfur*. Жёлтое вещество; запах тухлых яиц — от сероводорода.",
+   "back_en": "Sulfur",
+   "hint_en": "No. 16",
+   "extra_en": "*Sulfur*. A yellow substance; the rotten-egg smell comes from hydrogen sulfide."
   },
   {
    "front": "Cl",
    "back": "Хлор",
    "hint": "№ 17",
-   "extra": "*Chlorum*. Ядовитый жёлто-зелёный газ; им обеззараживают воду."
+   "extra": "*Chlorum*. Ядовитый жёлто-зелёный газ; им обеззараживают воду.",
+   "back_en": "Chlorine",
+   "hint_en": "No. 17",
+   "extra_en": "*Chlorum*. A poisonous yellow-green gas used to disinfect water."
   },
   {
    "front": "Ar",
    "back": "Аргон",
    "hint": "№ 18",
-   "extra": "*Argon*. Инертный газ; около 1% воздуха."
+   "extra": "*Argon*. Инертный газ; около 1% воздуха.",
+   "back_en": "Argon",
+   "hint_en": "No. 18",
+   "extra_en": "*Argon*. A noble gas; about 1% of the air."
   },
   {
    "front": "K",
    "back": "Калий",
    "hint": "№ 19",
-   "extra": "*Kalium*. Мягкий активный металл; много калия в бананах."
+   "extra": "*Kalium*. Мягкий активный металл; много калия в бананах.",
+   "back_en": "Potassium",
+   "hint_en": "No. 19",
+   "extra_en": "*Kalium*. A soft, reactive metal; bananas are rich in potassium."
   },
   {
    "front": "Ca",
    "back": "Кальций",
    "hint": "№ 20",
-   "extra": "*Calcium*. Основа костей, зубов, мела и мрамора."
+   "extra": "*Calcium*. Основа костей, зубов, мела и мрамора.",
+   "back_en": "Calcium",
+   "hint_en": "No. 20",
+   "extra_en": "*Calcium*. The basis of bones, teeth, chalk and marble."
   },
   {
    "front": "Sc",
    "back": "Скандий",
    "hint": "№ 21",
-   "extra": "*Scandium*. Назван в честь Скандинавии."
+   "extra": "*Scandium*. Назван в честь Скандинавии.",
+   "back_en": "Scandium",
+   "hint_en": "No. 21",
+   "extra_en": "*Scandium*. Named after Scandinavia."
   },
   {
    "front": "Ti",
    "back": "Титан",
    "hint": "№ 22",
-   "extra": "*Titanium*. Прочный и лёгкий; из него делают имплантаты и детали самолётов."
+   "extra": "*Titanium*. Прочный и лёгкий; из него делают имплантаты и детали самолётов.",
+   "back_en": "Titanium",
+   "hint_en": "No. 22",
+   "extra_en": "*Titanium*. Strong and light; used for implants and aircraft parts."
   },
   {
    "front": "V",
    "back": "Ванадий",
    "hint": "№ 23",
-   "extra": "*Vanadium*. Добавка, делающая сталь прочнее."
+   "extra": "*Vanadium*. Добавка, делающая сталь прочнее.",
+   "back_en": "Vanadium",
+   "hint_en": "No. 23",
+   "extra_en": "*Vanadium*. An additive that makes steel stronger."
   },
   {
    "front": "Cr",
    "back": "Хром",
    "hint": "№ 24",
-   "extra": "*Chromium*. Им покрывают детали для блеска; делает сталь нержавеющей."
+   "extra": "*Chromium*. Им покрывают детали для блеска; делает сталь нержавеющей.",
+   "back_en": "Chromium",
+   "hint_en": "No. 24",
+   "extra_en": "*Chromium*. Used for shiny plating; makes steel stainless."
   },
   {
    "front": "Mn",
    "back": "Марганец",
    "hint": "№ 25",
-   "extra": "*Manganum*. Важная добавка в стали."
+   "extra": "*Manganum*. Важная добавка в стали.",
+   "back_en": "Manganese",
+   "hint_en": "No. 25",
+   "extra_en": "*Manganum*. An important additive in steel."
   },
   {
    "front": "Fe",
    "back": "Железо",
    "hint": "№ 26",
-   "extra": "*Ferrum*. Основа стали; гемоглобин в крови содержит железо."
+   "extra": "*Ferrum*. Основа стали; гемоглобин в крови содержит железо.",
+   "back_en": "Iron",
+   "hint_en": "No. 26",
+   "extra_en": "*Ferrum*. The basis of steel; haemoglobin in blood contains iron."
   },
   {
    "front": "Co",
    "back": "Кобальт",
    "hint": "№ 27",
-   "extra": "*Cobaltum*. Даёт стеклу синий цвет; нужен для аккумуляторов."
+   "extra": "*Cobaltum*. Даёт стеклу синий цвет; нужен для аккумуляторов.",
+   "back_en": "Cobalt",
+   "hint_en": "No. 27",
+   "extra_en": "*Cobaltum*. Gives glass a blue colour; needed for batteries."
   },
   {
    "front": "Ni",
    "back": "Никель",
    "hint": "№ 28",
-   "extra": "*Niccolum*. Устойчив к ржавчине; используется в монетах."
+   "extra": "*Niccolum*. Устойчив к ржавчине; используется в монетах.",
+   "back_en": "Nickel",
+   "hint_en": "No. 28",
+   "extra_en": "*Niccolum*. Resists rust; used in coins."
   },
   {
    "front": "Cu",
    "back": "Медь",
    "hint": "№ 29",
-   "extra": "*Cuprum*. Отлично проводит ток — из меди делают провода."
+   "extra": "*Cuprum*. Отлично проводит ток — из меди делают провода.",
+   "back_en": "Copper",
+   "hint_en": "No. 29",
+   "extra_en": "*Cuprum*. Conducts electricity very well — used for wires."
   },
   {
    "front": "Zn",
    "back": "Цинк",
    "hint": "№ 30",
-   "extra": "*Zincum*. Им покрывают железо от ржавчины (оцинковка)."
+   "extra": "*Zincum*. Им покрывают железо от ржавчины (оцинковка).",
+   "back_en": "Zinc",
+   "hint_en": "No. 30",
+   "extra_en": "*Zincum*. Used to coat iron against rust (galvanising)."
   }
  ]
 }

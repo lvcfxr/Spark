@@ -1,6 +1,22 @@
 {
  "releases": [
   {
+   "version": "0.13",
+   "date": "31.10.2026",
+   "ru": [
+    "Курсы: испанский, английский, французский, немецкий, японский и русский — по 8 уровней, с произношением, озвучкой слов и примеров",
+    "Новая главная: серия дней, уровень и опыт, ваши курсы и колоды",
+    "Опыт (XP): начисляется за ответы и растёт вместе с сериями и количеством повторений за день",
+    "Встроенные колоды и курсы — на русском и английском"
+   ],
+   "en": [
+    "Courses: Spanish, English, French, German, Japanese and Russian — 8 levels each, with pronunciation, audio for words and examples",
+    "New home screen: day streak, level and XP, your courses and decks",
+    "XP: earned for answers and boosted by streaks and the number of reviews per day",
+    "Built-in decks and courses in Russian and English"
+   ]
+  },
+  {
    "version": "0.12",
    "date": "31.10.2026",
    "ru": [

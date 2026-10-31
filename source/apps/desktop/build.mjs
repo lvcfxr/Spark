@@ -1,13 +1,17 @@
 import { build } from "esbuild";
-import { readFileSync, writeFileSync, mkdirSync, copyFileSync, readdirSync } from "node:fs";
+import { readFileSync, writeFileSync, mkdirSync, copyFileSync, readdirSync, existsSync } from "node:fs";
 const VERSION = JSON.parse(readFileSync("package.json", "utf8")).version;
 const cat = JSON.parse(readFileSync("catalog/catalog.json", "utf8"));
 const deckJson = (d) => JSON.parse(readFileSync("catalog/" + d.file, "utf8"));
 const CATALOG = { catalog: cat, cards: Object.fromEntries(cat.decks.map((d) => [d.id, deckJson(d).cards])),
   media: Object.fromEntries(cat.decks.filter((d) => deckJson(d).media).map((d) => [d.id, deckJson(d).media])) };
 const deckFiles = ["catalog.json", ...cat.decks.flatMap((d) => [d.file, ...(d.media ? [d.media] : [])])];
+// курсы: список и индекс звука встраиваем (карточки грузятся по сети)
+const CDIR = "web/courses";
+const courseIndex = existsSync(CDIR + "/courses.json") ? JSON.parse(readFileSync(CDIR + "/courses.json", "utf8")) : null;
+const COURSES = { index: courseIndex, media: Object.fromEntries((courseIndex?.courses ?? []).map((c) => [c.id, JSON.parse(readFileSync(CDIR + "/" + c.file, "utf8")).media]).filter(([, m]) => m)) };
 const LOGO = readFileSync("brand/icon.svg", "utf8").replace(/\n\s*/g, "").replace(/<!--.*?-->/g, "").replace('width="512" height="512"', 'width="72" height="72"');
-const r = await build({ entryPoints: ["src/main.ts"], bundle: true, minify: true, format: "iife", target: "es2020", write: false, loader: { ".wasm": "binary" }, define: { "process.env.NODE_ENV": "\"production\"", __VERSION__: JSON.stringify(VERSION), __CATALOG__: JSON.stringify(CATALOG), __LOGO__: JSON.stringify(LOGO) } });
+const r = await build({ entryPoints: ["src/main.ts"], bundle: true, minify: true, format: "iife", target: "es2020", write: false, loader: { ".wasm": "binary" }, define: { "process.env.NODE_ENV": "\"production\"", __VERSION__: JSON.stringify(VERSION), __CATALOG__: JSON.stringify(CATALOG), __LOGO__: JSON.stringify(LOGO), __COURSES__: JSON.stringify(COURSES) } });
 const js = r.outputFiles[0].text.replace(/<\/script/g, "<\\/script");
 const css = readFileSync("src/style.css", "utf8");
 const FAVICON = "data:image/svg+xml;base64," + Buffer.from(readFileSync("brand/icon.svg")).toString("base64");
@@ -31,6 +35,7 @@ for (const f of deckFiles) copyFileSync("catalog/" + f, "dist-web/decks/" + f);
 copyFileSync("web/changelog.json", "dist-web/changelog.json");
 mkdirSync("dist-web/bot", { recursive: true });
 for (const f of readdirSync("web/bot")) copyFileSync("web/bot/" + f, "dist-web/bot/" + f);
+for (const dir of ["dist-web/courses", "dist-web-update/courses"]) { mkdirSync(dir, { recursive: true }); if (existsSync(CDIR)) for (const f of readdirSync(CDIR)) copyFileSync(CDIR + "/" + f, dir + "/" + f); }
 // Патч для уже развёрнутого Mini App: всё, кроме config.js (ваши адрес и ключ не затираются)
 mkdirSync("dist-web-update", { recursive: true });
 for (const f of ["index.html", "icon-512.png", "_headers", "version.json", "changelog.json"]) copyFileSync("dist-web/" + f, "dist-web-update/" + f);

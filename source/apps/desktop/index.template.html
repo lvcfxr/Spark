@@ -14,10 +14,10 @@
 <div id="app">
   <section class="col">
     <div class="head"><h1 id="deck-title" data-i18n="Колоды">Колоды</h1><span id="deck-actions"></span><button class="icon-btn sync-ind" id="sync-ind" data-a="sync-open" hidden></button><button class="icon-btn" data-a="deck-new" data-i18n-title="Новая колода"><span data-ic="plus"></span></button></div>
-    <div id="streak"></div>
-    <div class="scroll" id="decks"></div>
+    <div class="scroll home-scroll"><div id="streak"></div><div id="mycourses"></div><div id="decks"></div></div>
     <nav class="side-foot">
       <button data-a="browser-open" data-i18n-title="Каталог"><span class="ic" data-ic="catalog"></span><span data-i18n="Каталог">Каталог</span></button>
+      <button data-a="courses-open" data-i18n-title="Курсы"><span class="ic" data-ic="cap"></span><span data-i18n="Курсы">Курсы</span></button>
       <button data-a="stats" data-i18n-title="Статистика"><span class="ic" data-ic="stats"></span><span data-i18n="Статистика">Статистика</span></button>
       <button data-a="tips-open" data-i18n-title="Советы"><span class="ic" data-ic="bulb"></span><span data-i18n="Советы">Советы</span></button>
       <button data-a="settings" data-i18n-title="Настройки"><span class="ic" data-ic="settings"></span><span data-i18n="Настройки">Настройки</span></button>
@@ -33,7 +33,7 @@
   </section>
   <section class="col" id="editor"></section>
 </div>
-<div id="browser"></div><div id="tips"></div><div id="overlay"></div><div id="modal"></div>
+<div id="browser"></div><div id="tips"></div><div id="courses"></div><div id="overlay"></div><div id="modal"></div>
 <div class="drop" id="drop" data-i18n="Отпустите файл, чтобы импортировать">Отпустите файл, чтобы импортировать</div>
 <input type="file" id="file" hidden accept=".apkg,.colpkg,.txt,.csv,.tsv,.json">
 <input type="file" id="img-file" hidden accept="image/*">

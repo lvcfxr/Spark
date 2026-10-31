@@ -15,11 +15,14 @@
     "beginner"
    ],
    "count": 60,
-   "version": 3,
+   "version": 4,
    "author": "Spark",
    "file": "en-basics.json",
    "media": "en-basics.audio.mp3",
-   "audio": true
+   "audio": true,
+   "natives": [
+    "ru"
+   ]
   },
   {
    "id": "en-irregular",
@@ -35,11 +38,14 @@
     "grammar"
    ],
    "count": 54,
-   "version": 3,
+   "version": 4,
    "author": "Spark",
    "file": "en-irregular.json",
    "media": "en-irregular.audio.mp3",
-   "audio": true
+   "audio": true,
+   "natives": [
+    "ru"
+   ]
   },
   {
    "id": "es-basics",
@@ -55,11 +61,15 @@
     "beginner"
    ],
    "count": 50,
-   "version": 3,
+   "version": 4,
    "author": "Spark",
    "file": "es-basics.json",
    "media": "es-basics.audio.mp3",
-   "audio": true
+   "audio": true,
+   "natives": [
+    "ru",
+    "en"
+   ]
   },
   {
    "id": "de-basics",
@@ -75,11 +85,15 @@
     "beginner"
    ],
    "count": 50,
-   "version": 3,
+   "version": 4,
    "author": "Spark",
    "file": "de-basics.json",
    "media": "de-basics.audio.mp3",
-   "audio": true
+   "audio": true,
+   "natives": [
+    "ru",
+    "en"
+   ]
   },
   {
    "id": "ru-basics",
@@ -95,36 +109,43 @@
     "beginner"
    ],
    "count": 50,
-   "version": 3,
+   "version": 4,
    "author": "Spark",
    "file": "ru-basics.json",
    "media": "ru-basics.audio.mp3",
-   "audio": true
+   "audio": true,
+   "natives": [
+    "en"
+   ]
   },
   {
    "id": "capitals",
    "emoji": "🌍",
    "title": "Столицы мира",
-   "title_en": "World capitals (in Russian)",
+   "title_en": "World capitals",
    "description": "60 стран и их столицы: Европа, Азия, Америка, Африка и Океания. С подсказками и короткими пояснениями.",
-   "description_en": "60 countries and their capitals, in Russian. With hints and short explanations.",
+   "description_en": "60 countries and their capitals: Europe, Asia, the Americas, Africa and Oceania. With hints and short explanations.",
    "lang_front": "ru",
    "lang_back": "ru",
    "tags": [
     "geography"
    ],
    "count": 60,
-   "version": 3,
+   "version": 4,
    "author": "Spark",
-   "file": "capitals.json"
+   "file": "capitals.json",
+   "natives": [
+    "ru",
+    "en"
+   ]
   },
   {
    "id": "elements",
    "emoji": "⚗️",
    "title": "Химические элементы 1–30",
-   "title_en": "Chemical elements 1–30 (in Russian)",
+   "title_en": "Chemical elements 1–30",
    "description": "Символы первых 30 элементов таблицы Менделеева и их названия. В подсказке — порядковый номер. С подсказками и короткими пояснениями.",
-   "description_en": "Symbols of the first 30 elements with their Russian names; atomic number as a hint. With hints and short explanations.",
+   "description_en": "Symbols of the first 30 elements of the periodic table and their names. The hint shows the atomic number. With short explanations. With hints and short explanations.",
    "lang_front": "ru",
    "lang_back": "ru",
    "tags": [
@@ -132,9 +153,13 @@
     "science"
    ],
    "count": 30,
-   "version": 3,
+   "version": 4,
    "author": "Spark",
-   "file": "elements.json"
+   "file": "elements.json",
+   "natives": [
+    "ru",
+    "en"
+   ]
   }
  ]
 }

@@ -8,10 +8,18 @@ export interface CatalogDeck {
   version: number; author?: string; file?: string; downloads?: number; updated?: string;
   /** Файл со звуком произношения рядом с колодой (decks/<id>.audio.mp3). */
   media?: string; audio?: boolean;
+  /** Для кого колода: на каком языке перевод и пояснения (ru / en). */
+  natives?: string[];
 }
 /** Звук колоды: все mp3 одним файлом; index — ключ медиа → [смещение, длина]. */
-export interface DeckMedia { file: string; type: string; index: Record<string, [number, number]> }
-export interface DeckCard { front: string; back?: string; hint?: string; extra?: string; tags?: string; kind?: string; n?: number }
+export interface DeckMedia { file: string; type: string; index: Record<string, [number, number]>; base?: string }
+export interface DeckCard { front: string; back?: string; hint?: string; extra?: string; tags?: string; kind?: string; n?: number;
+  front_en?: string; back_en?: string; hint_en?: string; extra_en?: string }
+/** Карточка на нужном языке: у встроенных колод есть английская сторона (front_en, back_en…). */
+export function localizeCard(c: DeckCard, lang: string): DeckCard {
+  if (lang !== "en") return c;
+  return { ...c, front: c.front_en ?? c.front, back: c.back_en ?? c.back, hint: c.hint_en ?? c.hint, extra: c.extra_en ?? c.extra };
+}
 
 interface Embedded { catalog: { decks: Omit<CatalogDeck, "source">[] }; cards: Record<string, DeckCard[]>; media?: Record<string, DeckMedia> }
 declare const __CATALOG__: Embedded;
@@ -46,6 +54,8 @@ export async function loadSparkCatalog(): Promise<CatalogDeck[]> {
 }
 
 const mediaIndex = new Map<string, DeckMedia>(Object.entries(__CATALOG__.media ?? {}));
+/** Зарегистрировать звук ещё одного набора (курса) — со своим адресом. */
+export function registerMedia(id: string, m: DeckMedia) { mediaIndex.set(id, m); }
 export async function loadSparkCards(d: CatalogDeck): Promise<DeckCard[]> {
   const local = __CATALOG__.cards[d.id];
   const embeddedVersion = __CATALOG__.catalog.decks.find((x) => x.id === d.id)?.version ?? 0;
@@ -67,7 +77,7 @@ export function loadDeckMedia(deckId: string): Promise<Map<string, Blob>> {
     p = (async () => {
       const out = new Map<string, Blob>();
       try {
-        const r = await fetch(remoteBase() + m.file);
+        const r = await fetch((m.base ?? remoteBase()) + m.file);
         if (!r.ok) throw new Error(String(r.status));
         const buf = await r.arrayBuffer();
         for (const [k, [o, n]] of Object.entries(m.index)) out.set(k, new Blob([buf.slice(o, o + n)], { type: m.type }));
