@@ -1,14 +1,14 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
   <defs>
-    <radialGradient id="p" cx="35%" cy="30%" r="80%"><stop offset="0" stop-color="#B79CFF"/><stop offset="1" stop-color="#7C3AED"/></radialGradient>
+    <linearGradient id="spkbg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#8b5cf6"/><stop offset=".6" stop-color="#6d28d9"/><stop offset="1" stop-color="#4c1d95"/></linearGradient>
+    <linearGradient id="spkfl" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#f59e0b"/><stop offset=".5" stop-color="#fbbf24"/><stop offset="1" stop-color="#fef3c7"/></linearGradient>
   </defs>
-  <rect width="512" height="512" rx="116" fill="#0B0B0F"/>
-  <!-- задняя карточка: белая -->
-  <g transform="rotate(-11 256 256)"><rect x="108" y="112" width="236" height="296" rx="34" fill="#FFFFFF"/>
-    <rect x="144" y="150" width="104" height="14" rx="7" fill="#0B0B0F" opacity=".85"/><rect x="144" y="180" width="64" height="14" rx="7" fill="#0B0B0F" opacity=".35"/></g>
-  <!-- передняя карточка: чёрная с белым контуром -->
-  <g transform="rotate(9 256 256)"><rect x="170" y="104" width="236" height="296" rx="34" fill="#0B0B0F" stroke="#FFFFFF" stroke-width="16"/></g>
-  <!-- фиолетовый центр -->
-  <circle cx="288" cy="252" r="58" fill="url(#p)"/>
-  <path d="M288 218 L296 244 L322 252 L296 260 L288 286 L280 260 L254 252 L280 244 Z" fill="#FFFFFF"/>
+  <rect width="512" height="512" rx="116" fill="url(#spkbg)"/>
+  <g transform="rotate(8 256 280)"><rect x="160" y="170" width="200" height="252" rx="30" fill="#0B0B0F" opacity=".35" transform="translate(10 14)"/>
+    <rect x="160" y="170" width="200" height="252" rx="30" fill="#fff"/>
+    <rect x="190" y="340" width="96" height="13" rx="6.5" fill="#6d28d9" opacity=".8"/><rect x="190" y="366" width="60" height="13" rx="6.5" fill="#6d28d9" opacity=".3"/></g>
+  <g transform="translate(262 236) scale(9.2) translate(-16 -20)">
+    <path d="M15.3 2.6C18 6.4 17.3 10.4 18.3 14.1C19.1 17 22.5 18.6 26.6 20C21.7 21.3 18.2 22.5 16.8 29.4C15.2 22.7 12.3 21.3 5.4 20C11.5 18.4 14.6 16.1 14.4 11.5C14.3 8.3 13.4 5.5 15.3 2.6Z" fill="url(#spkfl)" stroke="#fff" stroke-width=".9" stroke-linejoin="round"/>
+    <path d="M16 16.4l.9 2.7 2.7.9-2.7.9-.9 2.7-.9-2.7-2.7-.9 2.7-.9z" fill="#fff"/>
+  </g>
 </svg>

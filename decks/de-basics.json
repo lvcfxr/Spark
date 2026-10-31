@@ -1,207 +1,512 @@
 {
-"id": "de-basics",
-"version": 1,
-"cards": [
-{
-"front": "Hallo",
-"back": "привет"
-},
-{
-"front": "Tschüss",
-"back": "пока"
-},
-{
-"front": "Danke",
-"back": "спасибо"
-},
-{
-"front": "Bitte",
-"back": "пожалуйста; не за что"
-},
-{
-"front": "ja",
-"back": "да"
-},
-{
-"front": "nein",
-"back": "нет"
-},
-{
-"front": "das Wasser",
-"back": "вода"
-},
-{
-"front": "das Haus",
-"back": "дом"
-},
-{
-"front": "der Hund",
-"back": "собака"
-},
-{
-"front": "die Katze",
-"back": "кошка"
-},
-{
-"front": "das Buch",
-"back": "книга"
-},
-{
-"front": "der Tisch",
-"back": "стол"
-},
-{
-"front": "der Stuhl",
-"back": "стул"
-},
-{
-"front": "das Auto",
-"back": "машина"
-},
-{
-"front": "die Stadt",
-"back": "город"
-},
-{
-"front": "der Tag",
-"back": "день"
-},
-{
-"front": "die Nacht",
-"back": "ночь"
-},
-{
-"front": "die Zeit",
-"back": "время"
-},
-{
-"front": "der Freund",
-"back": "друг"
-},
-{
-"front": "die Familie",
-"back": "семья"
-},
-{
-"front": "die Arbeit",
-"back": "работа"
-},
-{
-"front": "die Schule",
-"back": "школа"
-},
-{
-"front": "das Essen",
-"back": "еда"
-},
-{
-"front": "das Brot",
-"back": "хлеб"
-},
-{
-"front": "die Milch",
-"back": "молоко"
-},
-{
-"front": "der Kaffee",
-"back": "кофе"
-},
-{
-"front": "rot",
-"back": "красный"
-},
-{
-"front": "blau",
-"back": "синий"
-},
-{
-"front": "grün",
-"back": "зелёный"
-},
-{
-"front": "weiß",
-"back": "белый"
-},
-{
-"front": "schwarz",
-"back": "чёрный"
-},
-{
-"front": "groß",
-"back": "большой"
-},
-{
-"front": "klein",
-"back": "маленький"
-},
-{
-"front": "gut",
-"back": "хороший"
-},
-{
-"front": "schlecht",
-"back": "плохой"
-},
-{
-"front": "neu",
-"back": "новый"
-},
-{
-"front": "alt",
-"back": "старый"
-},
-{
-"front": "sprechen",
-"back": "говорить"
-},
-{
-"front": "essen",
-"back": "есть"
-},
-{
-"front": "trinken",
-"back": "пить"
-},
-{
-"front": "wohnen",
-"back": "жить",
-"hint": "проживать где-то"
-},
-{
-"front": "sein",
-"back": "быть"
-},
-{
-"front": "haben",
-"back": "иметь"
-},
-{
-"front": "gehen",
-"back": "идти"
-},
-{
-"front": "machen",
-"back": "делать"
-},
-{
-"front": "wollen",
-"back": "хотеть"
-},
-{
-"front": "eins",
-"back": "один"
-},
-{
-"front": "zwei",
-"back": "два"
-},
-{
-"front": "drei",
-"back": "три"
-},
-{
-"front": "heute",
-"back": "сегодня"
-}
-]
+ "id": "de-basics",
+ "version": 3,
+ "cards": [
+  {
+   "front": "Hallo [audio](media:7ec2b7b9c349b3b8a6486fab)",
+   "back": "привет",
+   "hint": "/haˈloː/",
+   "extra": "Универсальное приветствие в любое время дня.\n> Hallo, wie geht's? — *Привет, как дела?*"
+  },
+  {
+   "front": "Tschüss [audio](media:b49c06bc749ca23be3ec782f)",
+   "back": "пока",
+   "hint": "/tʃʏs/",
+   "extra": "Неформальное «пока». Официально — Auf Wiedersehen.\n> Tschüss, bis morgen! — *Пока, до завтра!*"
+  },
+  {
+   "front": "Danke [audio](media:9f48707f4a247ccc061760f1)",
+   "back": "спасибо",
+   "hint": "/ˈdaŋkə/",
+   "extra": "Большое спасибо — Danke schön или Vielen Dank.\n> Danke für die Hilfe. — *Спасибо за помощь.*"
+  },
+  {
+   "front": "Bitte [audio](media:6fa9beead3a2f260d881d1ee)",
+   "back": "пожалуйста; не за что",
+   "hint": "/ˈbɪtə/",
+   "extra": "И «пожалуйста» в просьбе, и «не за что» в ответ на спасибо.\n> Ein Wasser, bitte. — *Воды, пожалуйста.*"
+  },
+  {
+   "front": "ja [audio](media:611fdfe28648403d375dbfe0)",
+   "back": "да",
+   "hint": "/jaː/",
+   "extra": "j читается как й.\n> Ja, gern. — *Да, с удовольствием.*"
+  },
+  {
+   "front": "nein [audio](media:65c3e6bcfa528819f1b3de20)",
+   "back": "нет",
+   "hint": "/naɪ̯n/",
+   "extra": "ei читается как ай.\n> Nein, danke. — *Нет, спасибо.*"
+  },
+  {
+   "front": "das Wasser [audio](media:9bdb25cddfd31ee0899584fc)",
+   "back": "вода",
+   "hint": "/das ˈvasɐ/",
+   "extra": "w читается как в. Средний род.\n> Ich trinke Wasser. — *Я пью воду.*"
+  },
+  {
+   "front": "das Haus [audio](media:237b1b7f31d05f6e6d73c97f)",
+   "back": "дом",
+   "hint": "/das haʊ̯s/",
+   "extra": "Мн. ч. — die Häuser. Домой — nach Hause, дома — zu Hause.\n> Das Haus ist groß. — *Дом большой.*"
+  },
+  {
+   "front": "der Hund [audio](media:3dd336e0f556de71d6b46823)",
+   "back": "собака",
+   "hint": "/deːɐ̯ hʊnt/",
+   "extra": "Мн. ч. — die Hunde. Конечное d оглушается: /t/.\n> Der Hund spielt im Garten. — *Собака играет в саду.*"
+  },
+  {
+   "front": "die Katze [audio](media:7af8af84686b7e3f13a15bb8)",
+   "back": "кошка",
+   "hint": "/diː ˈkatsə/",
+   "extra": "Мн. ч. — die Katzen. z читается как ц.\n> Die Katze schläft. — *Кошка спит.*"
+  },
+  {
+   "front": "das Buch [audio](media:1c971aa7cd9c26ee9c691798)",
+   "back": "книга",
+   "hint": "/das buːx/",
+   "extra": "Мн. ч. — die Bücher. ch после u — как русское х.\n> Ich lese ein Buch. — *Я читаю книгу.*"
+  },
+  {
+   "front": "der Tisch [audio](media:5f2b808273d744967f641f79)",
+   "back": "стол",
+   "hint": "/deːɐ̯ tɪʃ/",
+   "extra": "Мн. ч. — die Tische. sch — ш.\n> Das Essen steht auf dem Tisch. — *Еда на столе.*"
+  },
+  {
+   "front": "der Stuhl [audio](media:77208f4e0bb9139c9983ed46)",
+   "back": "стул",
+   "hint": "/deːɐ̯ ʃtuːl/",
+   "extra": "Мн. ч. — die Stühle. st в начале — шт.\n> Der Stuhl ist bequem. — *Стул удобный.*"
+  },
+  {
+   "front": "das Auto [audio](media:6acf49ee3063754bdc33c565)",
+   "back": "машина",
+   "hint": "/das ˈaʊ̯to/",
+   "extra": "Мн. ч. — die Autos. au — ау.\n> Ich fahre mit dem Auto. — *Я еду на машине.*"
+  },
+  {
+   "front": "die Stadt [audio](media:8a5554eb1fce8d5079aefaf6)",
+   "back": "город",
+   "hint": "/diː ʃtat/",
+   "extra": "Мн. ч. — die Städte. dt читается как т.\n> Berlin ist eine große Stadt. — *Берлин — большой город.*"
+  },
+  {
+   "front": "der Tag [audio](media:e82099860c5de291f7d45383)",
+   "back": "день",
+   "hint": "/deːɐ̯ taːk/",
+   "extra": "Мн. ч. — die Tage. Добрый день — Guten Tag.\n> Guten Tag! — *Добрый день!*"
+  },
+  {
+   "front": "die Nacht [audio](media:d90d2659e8f6172e723c6bf9)",
+   "back": "ночь",
+   "hint": "/diː naxt/",
+   "extra": "Мн. ч. — die Nächte. Спокойной ночи — Gute Nacht.\n> Gute Nacht! — *Спокойной ночи!*"
+  },
+  {
+   "front": "die Zeit [audio](media:fc9dbcaa3e6159254139c2c6)",
+   "back": "время",
+   "hint": "/diː tsaɪ̯t/",
+   "extra": "Мн. ч. — die Zeiten. z — ц, ei — ай.\n> Ich habe keine Zeit. — *У меня нет времени.*"
+  },
+  {
+   "front": "der Freund [audio](media:472e376cb0568bc873baafe9)",
+   "back": "друг",
+   "hint": "/deːɐ̯ fʁɔʏ̯nt/",
+   "extra": "Мн. ч. — die Freunde. eu — ой. Ещё значит «парень».\n> Das ist mein Freund. — *Это мой друг.*"
+  },
+  {
+   "front": "die Familie [audio](media:48d9f3b588ca1f7060d929ed)",
+   "back": "семья",
+   "hint": "/diː faˈmiːli̯ə/",
+   "extra": "Мн. ч. — die Familien. Ударение на -mi-.\n> Meine Familie wohnt in Wien. — *Моя семья живёт в Вене.*"
+  },
+  {
+   "front": "die Arbeit [audio](media:d5494eeb3fc272b39ed5e726)",
+   "back": "работа",
+   "hint": "/diː ˈaʁbaɪ̯t/",
+   "extra": "Мн. ч. — die Arbeiten. Работать — arbeiten.\n> Ich gehe zur Arbeit. — *Я иду на работу.*"
+  },
+  {
+   "front": "die Schule [audio](media:69f4ec8dbd36ecbd727f74f5)",
+   "back": "школа",
+   "hint": "/diː ˈʃuːlə/",
+   "extra": "Мн. ч. — die Schulen. В школе — in der Schule.\n> Die Kinder sind in der Schule. — *Дети в школе.*"
+  },
+  {
+   "front": "das Essen [audio](media:e8392687c5d5588f8076477e)",
+   "back": "еда",
+   "hint": "/das ˈɛsn̩/",
+   "extra": "Существительное от глагола essen — есть.\n> Das Essen ist lecker. — *Еда вкусная.*"
+  },
+  {
+   "front": "das Brot [audio](media:356c54f9652b8191a99db7e6)",
+   "back": "хлеб",
+   "hint": "/das bʁoːt/",
+   "extra": "Мн. ч. — die Brote. Булочка — das Brötchen.\n> Ich kaufe Brot. — *Я покупаю хлеб.*"
+  },
+  {
+   "front": "die Milch [audio](media:f4ba3e54cfe01a172e55e6b5)",
+   "back": "молоко",
+   "hint": "/diː mɪlç/",
+   "extra": "ch после i — мягкий звук, между х и щ.\n> Kaffee mit Milch, bitte. — *Кофе с молоком, пожалуйста.*"
+  },
+  {
+   "front": "der Kaffee [audio](media:00cee84ec2868de3f4eb6305)",
+   "back": "кофе",
+   "hint": "/deːɐ̯ ˈkafe/",
+   "extra": "В Австрии ударение на конце: /kaˈfeː/.\n> Ich trinke gern Kaffee. — *Я люблю пить кофе.*"
+  },
+  {
+   "front": "rot [audio](media:6c170a78528422fe093faccf)",
+   "back": "красный",
+   "hint": "/ʁoːt/",
+   "extra": "Немецкое r — гортанное, ближе к французскому.\n> Die Rose ist rot. — *Роза красная.*"
+  },
+  {
+   "front": "blau [audio](media:ec243748e2aa1bfce06f318e)",
+   "back": "синий",
+   "hint": "/blaʊ̯/",
+   "extra": "Blau sein — разг. «быть пьяным».\n> Der Himmel ist blau. — *Небо голубое.*"
+  },
+  {
+   "front": "grün [audio](media:edfeebf686f5fb10c8dc4bff)",
+   "back": "зелёный",
+   "hint": "/ɡʁyːn/",
+   "extra": "ü — как ю без й: губы для у, язык для и.\n> Das Gras ist grün. — *Трава зелёная.*"
+  },
+  {
+   "front": "weiß [audio](media:bd35e850773c6a3c8ec11502)",
+   "back": "белый",
+   "hint": "/vaɪ̯s/",
+   "extra": "ß — долгое с. Ещё — «знаю»: ich weiß.\n> Der Schnee ist weiß. — *Снег белый.*"
+  },
+  {
+   "front": "schwarz [audio](media:d97ced7f1b084e8cef299e6d)",
+   "back": "чёрный",
+   "hint": "/ʃvaʁts/",
+   "extra": "tz и z — ц.\n> Ich trinke den Kaffee schwarz. — *Я пью кофе чёрным.*"
+  },
+  {
+   "front": "groß [audio](media:88d09444f833df283645201a)",
+   "back": "большой",
+   "hint": "/ɡʁoːs/",
+   "extra": "Ещё «высокий» о человеке.\n> Mein Bruder ist groß. — *Мой брат высокий.*"
+  },
+  {
+   "front": "klein [audio](media:3631e4831178b0c93c73b955)",
+   "back": "маленький",
+   "hint": "/klaɪ̯n/",
+   "extra": "Ещё «невысокий» о человеке.\n> Die Wohnung ist klein. — *Квартира маленькая.*"
+  },
+  {
+   "front": "gut [audio](media:a0beb4fec570687eddc8bf28)",
+   "back": "хороший",
+   "hint": "/ɡuːt/",
+   "extra": "И «хороший», и «хорошо».\n> Das Essen ist gut. — *Еда хорошая.*"
+  },
+  {
+   "front": "schlecht [audio](media:53310f764844c2d9b04ae263)",
+   "back": "плохой",
+   "hint": "/ʃlɛçt/",
+   "extra": "Мне плохо — mir ist schlecht.\n> Das Wetter ist schlecht. — *Погода плохая.*"
+  },
+  {
+   "front": "neu [audio](media:0046705bff64e97fc39326f6)",
+   "back": "новый",
+   "hint": "/nɔʏ̯/",
+   "extra": "eu — ой.\n> Ich habe ein neues Handy. — *У меня новый телефон.*"
+  },
+  {
+   "front": "alt [audio](media:68e5d4714d0983bbe31a5e55)",
+   "back": "старый",
+   "hint": "/alt/",
+   "extra": "Возраст: Wie alt bist du? — Сколько тебе лет?\n> Das Haus ist sehr alt. — *Дом очень старый.*"
+  },
+  {
+   "front": "sprechen [audio](media:c0793ed136ad3d7701c4f75b)",
+   "back": "говорить",
+   "hint": "/ˈʃpʁɛçn̩/",
+   "extra": "Сильный глагол: du sprichst, er spricht.\n> Sprichst du Deutsch? — *Ты говоришь по-немецки?*"
+  },
+  {
+   "front": "essen [audio](media:53047fe5a388d386f3039709)",
+   "back": "есть",
+   "hint": "/ˈɛsn̩/",
+   "extra": "Сильный глагол: du isst, er isst.\n> Wir essen um zwölf. — *Мы обедаем в двенадцать.*"
+  },
+  {
+   "front": "trinken [audio](media:8359e374d5e56c3307874261)",
+   "back": "пить",
+   "hint": "/ˈtʁɪŋkn̩/",
+   "extra": "Правильный в настоящем: ich trinke, du trinkst.\n> Was trinkst du? — *Что ты пьёшь?*"
+  },
+  {
+   "front": "wohnen [audio](media:b1fa006c824048dcac5dbd4c)",
+   "back": "жить",
+   "hint": "/ˈvoːnən/ · проживать где-то",
+   "extra": "Жить где-то. Жить вообще — leben.\n> Ich wohne in Berlin. — *Я живу в Берлине.*"
+  },
+  {
+   "front": "sein [audio](media:7e4d1265689f821211bba96f)",
+   "back": "быть",
+   "hint": "/zaɪ̯n/",
+   "extra": "Неправильный: ich bin, du bist, er ist, wir sind.\n> Ich bin müde. — *Я устал.*"
+  },
+  {
+   "front": "haben [audio](media:2da0bcadfc11b38f4f04aced)",
+   "back": "иметь",
+   "hint": "/ˈhaːbn̩/",
+   "extra": "ich habe, du hast, er hat.\n> Ich habe einen Hund. — *У меня есть собака.*"
+  },
+  {
+   "front": "gehen [audio](media:854e6dda24bb87acdcc1a4b9)",
+   "back": "идти",
+   "hint": "/ˈɡeːən/",
+   "extra": "Идти пешком. Ехать — fahren.\n> Wir gehen nach Hause. — *Мы идём домой.*"
+  },
+  {
+   "front": "machen [audio](media:b89c05d3fc1b2e4459016ca4)",
+   "back": "делать",
+   "hint": "/ˈmaxn̩/",
+   "extra": "Was machst du? — Что делаешь?\n> Ich mache Hausaufgaben. — *Я делаю домашнее задание.*"
+  },
+  {
+   "front": "wollen [audio](media:85bd7d605dc700c20a006a10)",
+   "back": "хотеть",
+   "hint": "/ˈvɔlən/",
+   "extra": "Модальный: ich will, du willst, er will.\n> Ich will nach Hause. — *Я хочу домой.*"
+  },
+  {
+   "front": "eins [audio](media:4039408350053abbb0f4b650)",
+   "back": "один",
+   "hint": "/aɪ̯ns/",
+   "extra": "При счёте — eins, перед существительным — ein / eine.\n> Eins, zwei, drei! — *Раз, два, три!*"
+  },
+  {
+   "front": "zwei [audio](media:1284cc1db3c537e35b345eec)",
+   "back": "два",
+   "hint": "/tsvaɪ̯/",
+   "extra": "По телефону часто говорят zwo, чтобы не спутать с drei.\n> Zwei Kaffee, bitte. — *Два кофе, пожалуйста.*"
+  },
+  {
+   "front": "drei [audio](media:7d18b9691bc3d5f5736a4761)",
+   "back": "три",
+   "hint": "/dʁaɪ̯/",
+   "extra": "ei — ай.\n> Es ist drei Uhr. — *Сейчас три часа.*"
+  },
+  {
+   "front": "heute [audio](media:5dfab8d5f8b8013d13eaac88)",
+   "back": "сегодня",
+   "hint": "/ˈhɔʏ̯tə/",
+   "extra": "Сегодня вечером — heute Abend.\n> Heute ist Montag. — *Сегодня понедельник.*"
+  }
+ ],
+ "media": {
+  "file": "de-basics.audio.mp3",
+  "type": "audio/mpeg",
+  "index": {
+   "7ec2b7b9c349b3b8a6486fab": [
+    0,
+    4077
+   ],
+   "b49c06bc749ca23be3ec782f": [
+    4077,
+    4197
+   ],
+   "9f48707f4a247ccc061760f1": [
+    8274,
+    4197
+   ],
+   "6fa9beead3a2f260d881d1ee": [
+    12471,
+    3717
+   ],
+   "611fdfe28648403d375dbfe0": [
+    16188,
+    3717
+   ],
+   "65c3e6bcfa528819f1b3de20": [
+    19905,
+    4317
+   ],
+   "9bdb25cddfd31ee0899584fc": [
+    24222,
+    4557
+   ],
+   "237b1b7f31d05f6e6d73c97f": [
+    28779,
+    4437
+   ],
+   "3dd336e0f556de71d6b46823": [
+    33216,
+    4797
+   ],
+   "7af8af84686b7e3f13a15bb8": [
+    38013,
+    5037
+   ],
+   "1c971aa7cd9c26ee9c691798": [
+    43050,
+    4797
+   ],
+   "5f2b808273d744967f641f79": [
+    47847,
+    4317
+   ],
+   "77208f4e0bb9139c9983ed46": [
+    52164,
+    5037
+   ],
+   "6acf49ee3063754bdc33c565": [
+    57201,
+    4917
+   ],
+   "8a5554eb1fce8d5079aefaf6": [
+    62118,
+    4557
+   ],
+   "e82099860c5de291f7d45383": [
+    66675,
+    4677
+   ],
+   "d90d2659e8f6172e723c6bf9": [
+    71352,
+    4437
+   ],
+   "fc9dbcaa3e6159254139c2c6": [
+    75789,
+    4797
+   ],
+   "472e376cb0568bc873baafe9": [
+    80586,
+    5037
+   ],
+   "48d9f3b588ca1f7060d929ed": [
+    85623,
+    5637
+   ],
+   "d5494eeb3fc272b39ed5e726": [
+    91260,
+    5277
+   ],
+   "69f4ec8dbd36ecbd727f74f5": [
+    96537,
+    5157
+   ],
+   "e8392687c5d5588f8076477e": [
+    101694,
+    5037
+   ],
+   "356c54f9652b8191a99db7e6": [
+    106731,
+    5397
+   ],
+   "f4ba3e54cfe01a172e55e6b5": [
+    112128,
+    4797
+   ],
+   "00cee84ec2868de3f4eb6305": [
+    116925,
+    4677
+   ],
+   "6c170a78528422fe093faccf": [
+    121602,
+    3957
+   ],
+   "ec243748e2aa1bfce06f318e": [
+    125559,
+    3957
+   ],
+   "edfeebf686f5fb10c8dc4bff": [
+    129516,
+    4677
+   ],
+   "bd35e850773c6a3c8ec11502": [
+    134193,
+    4317
+   ],
+   "d97ced7f1b084e8cef299e6d": [
+    138510,
+    4437
+   ],
+   "88d09444f833df283645201a": [
+    142947,
+    3597
+   ],
+   "3631e4831178b0c93c73b955": [
+    146544,
+    4437
+   ],
+   "a0beb4fec570687eddc8bf28": [
+    150981,
+    3597
+   ],
+   "53310f764844c2d9b04ae263": [
+    154578,
+    4557
+   ],
+   "0046705bff64e97fc39326f6": [
+    159135,
+    4317
+   ],
+   "68e5d4714d0983bbe31a5e55": [
+    163452,
+    3477
+   ],
+   "c0793ed136ad3d7701c4f75b": [
+    166929,
+    4797
+   ],
+   "53047fe5a388d386f3039709": [
+    171726,
+    4077
+   ],
+   "8359e374d5e56c3307874261": [
+    175803,
+    5037
+   ],
+   "b1fa006c824048dcac5dbd4c": [
+    180840,
+    4197
+   ],
+   "7e4d1265689f821211bba96f": [
+    185037,
+    4317
+   ],
+   "2da0bcadfc11b38f4f04aced": [
+    189354,
+    4077
+   ],
+   "854e6dda24bb87acdcc1a4b9": [
+    193431,
+    3837
+   ],
+   "b89c05d3fc1b2e4459016ca4": [
+    197268,
+    4317
+   ],
+   "85bd7d605dc700c20a006a10": [
+    201585,
+    4437
+   ],
+   "4039408350053abbb0f4b650": [
+    206022,
+    4077
+   ],
+   "1284cc1db3c537e35b345eec": [
+    210099,
+    4077
+   ],
+   "7d18b9691bc3d5f5736a4761": [
+    214176,
+    4317
+   ],
+   "5dfab8d5f8b8013d13eaac88": [
+    218493,
+    4197
+   ]
+  }
+ }
 }

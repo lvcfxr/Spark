@@ -1,0 +1,65 @@
+/** Раздел «Советы»: короткие практические рекомендации (RU/EN). Только общепринятые приёмы, без выдуманных цифр. */
+type L = { ru: string; en: string };
+export interface TipSection { id: string; icon: string; title: L; tab?: L; items: { title: L; text: L }[] }
+
+export const TIPS: TipSection[] = [
+  {
+    id: "spark", icon: "spark", tab: { ru: "Spark", en: "Spark" }, title: { ru: "Как заниматься в Spark", en: "Getting the most out of Spark" },
+    items: [
+      { title: { ru: "Каждый день понемногу", en: "A little every day" },
+        text: { ru: "15–20 минут в день работают лучше, чем два часа раз в неделю: повторения не копятся, а серия дней помогает не бросить.", en: "15–20 minutes a day beats two hours once a week: reviews don't pile up and the day streak keeps you going." } },
+      { title: { ru: "Сначала повторения, потом новые", en: "Reviews first, new cards second" },
+        text: { ru: "Если повторений стало слишком много, уменьшите «Новых карточек в день» в настройках — за несколько дней нагрузка выровняется.", en: "If reviews pile up, lower “New cards per day” in settings — the load evens out within a few days." } },
+      { title: { ru: "Отвечайте честно", en: "Be honest with yourself" },
+        text: { ru: "Умный таймер выбирает интервал по тому, как быстро вы вспомнили. Подсмотрели или сомневаетесь — нажмите «Не помню»: карточка вернётся через 5 минут и закрепится лучше.", en: "The smart timer sets the interval from how fast you remembered. Peeked or unsure? Tap “Forgot” — the card comes back in 5 minutes and sticks better." } },
+      { title: { ru: "Одна карточка — одна мысль", en: "One card, one idea" },
+        text: { ru: "Короткие карточки запоминаются быстрее. Длинный ответ разбейте на несколько карточек или сделайте карточку с пропусками.", en: "Short cards are learned faster. Split a long answer into several cards or use a cloze card." } },
+      { title: { ru: "Добавляйте контекст", en: "Add context" },
+        text: { ru: "Пример в «Пояснении», картинка и запись произношения делают карточку запоминающейся: памяти есть за что зацепиться.", en: "An example in the Note, an image and a pronunciation recording make a card memorable — memory has something to hold on to." } },
+      { title: { ru: "Вводите ответ для активного словаря", en: "Type answers for active vocabulary" },
+        text: { ru: "Узнать слово и вспомнить его самому — разные навыки. Ввод с клавиатуры тренирует второй: включайте его для слов, которые хотите использовать в речи.", en: "Recognising a word and producing it yourself are different skills. Typing trains the second one — turn it on for words you want to actually use." } },
+      { title: { ru: "Переписывайте «трудные» карточки", en: "Rewrite the stubborn cards" },
+        text: { ru: "Если на карточке вы ошибаетесь снова и снова (поиск is:hard), перепишите её: добавьте пример или картинку, разбейте на две.", en: "If you keep failing a card (search is:hard), rewrite it: add an example or an image, or split it in two." } },
+      { title: { ru: "Удержание 90% — разумный баланс", en: "90% retention is a sensible balance" },
+        text: { ru: "Выше — чаще повторения и больше нагрузка; ниже — меньше работы, но больше забываний. Меняйте, только если есть причина, например экзамен.", en: "Higher means more frequent reviews and more work; lower means less work but more forgetting. Change it only with a reason, such as an exam." } },
+    ],
+  },
+  {
+    id: "lang", icon: "globe", tab: { ru: "Языки", en: "Languages" }, title: { ru: "Изучение языков", en: "Learning languages" },
+    items: [
+      { title: { ru: "Начните с самых частых слов", en: "Start with the most frequent words" },
+        text: { ru: "Небольшое число самых частых слов покрывает большую часть обычной речи и текстов. Базовые колоды в каталоге — хороший старт.", en: "A small set of the most frequent words covers most everyday speech and text. The core decks in the catalog are a good start." } },
+      { title: { ru: "Учите слова во фразах", en: "Learn words in phrases" },
+        text: { ru: "«Hablo español» запоминается лучше, чем «hablar — говорить». Добавляйте пример в «Пояснение» или делайте карточки с пропусками.", en: "“Hablo español” sticks better than “hablar — to speak”. Add an example to the Note or make cloze cards." } },
+      { title: { ru: "Слушайте и повторяйте вслух", en: "Listen and repeat aloud" },
+        text: { ru: "Добавьте к слову запись произношения и повторяйте за ней. Если говорить одновременно с диктором (shadowing), быстрее ставится ритм и интонация.", en: "Attach a pronunciation recording and repeat after it. Speaking along with the speaker (shadowing) helps with rhythm and intonation." } },
+      { title: { ru: "Записывайте себя", en: "Record yourself" },
+        text: { ru: "Запишите своё произношение и сравните с оригиналом — так легче услышать, где ошибка.", en: "Record your own pronunciation and compare it with the original — it's easier to hear where you go wrong." } },
+      { title: { ru: "Картинка вместо перевода", en: "A picture instead of a translation" },
+        text: { ru: "Для предметов и действий картинка на лицевой стороне связывает слово с образом напрямую, без родного языка.", en: "For objects and actions, a picture on the front links the word to the image directly, without your native language." } },
+      { title: { ru: "Грамматику — вместе со словом", en: "Learn grammar with the word" },
+        text: { ru: "Существительное учите с артиклем или родом (das Haus), глагол — с неправильными формами. Иначе потом придётся переучивать.", en: "Learn nouns with their article or gender (das Haus) and verbs with their irregular forms — otherwise you'll have to relearn them later." } },
+      { title: { ru: "Карточки из своего контента", en: "Make cards from your own content" },
+        text: { ru: "Слова из любимых сериалов, песен и статей запоминаются лучше чужих списков: у них есть контекст и эмоция.", en: "Words from shows, songs and articles you like stick better than someone else's list — they come with context and emotion." } },
+      { title: { ru: "Не учите похожие слова одновременно", en: "Don't learn look-alikes together" },
+        text: { ru: "Созвучные слова и пары вроде «правый/левый» легко путаются. Добавляйте второе, когда первое уже закрепилось.", en: "Similar-sounding words and pairs like left/right get mixed up easily. Add the second one once the first has settled." } },
+      { title: { ru: "Карточки — не весь язык", en: "Flashcards aren't the whole language" },
+        text: { ru: "Spark держит словарь в памяти, а навык приходит из чтения, слушания и разговора. Хотя бы немного читайте, слушайте и говорите каждый день.", en: "Spark keeps vocabulary in memory; the skill itself comes from reading, listening and speaking. Do a little of each every day." } },
+    ],
+  },
+  {
+    id: "memory", icon: "layers", tab: { ru: "Память", en: "Memory" }, title: { ru: "Как работает память", en: "How memory works" },
+    items: [
+      { title: { ru: "Интервальные повторения", en: "Spaced repetition" },
+        text: { ru: "Повтор незадолго до того, как вы забудете, укрепляет память сильнее всего. Spark (алгоритм FSRS) рассчитывает этот момент для каждой карточки.", en: "Reviewing just before you'd forget strengthens memory the most. Spark (the FSRS algorithm) works out that moment for every card." } },
+      { title: { ru: "Вспоминать, а не перечитывать", en: "Recall, don't reread" },
+        text: { ru: "Попытка вспомнить — даже неудачная — работает лучше, чем перечитывание. Сначала подумайте, потом открывайте ответ.", en: "Trying to recall — even unsuccessfully — works better than rereading. Think first, then reveal the answer." } },
+      { title: { ru: "Сон закрепляет выученное", en: "Sleep consolidates learning" },
+        text: { ru: "Занятие вечером и повторение утром — хорошая связка. Недосып заметно ухудшает запоминание.", en: "Studying in the evening and reviewing in the morning works well together. Lack of sleep noticeably hurts memory." } },
+      { title: { ru: "Перемешивайте темы", en: "Mix topics" },
+        text: { ru: "Чередовать колоды и темы сложнее, чем зубрить одну, но знания получаются прочнее.", en: "Alternating decks and topics feels harder than drilling one, but the knowledge lasts longer." } },
+      { title: { ru: "Короткие сессии и паузы", en: "Short sessions and breaks" },
+        text: { ru: "Если ответы стали медленными и полоска таймера краснеет — сделайте перерыв на 5–10 минут.", en: "If answers slow down and the timer bar turns red, take a 5–10 minute break." } },
+    ],
+  },
+];

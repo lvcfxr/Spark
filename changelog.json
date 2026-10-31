@@ -1,0 +1,44 @@
+{
+ "releases": [
+  {
+   "version": "0.11",
+   "date": "31.10.2026",
+   "ru": [
+    "Новая серия дней — «Созвездие»: 15 уровней от «Первой звезды» до «Сверхновой» (1, 3, 5 … 200, 300+ дней), у каждого свои звёзды, луны, кометы, кольца и сияние",
+    "Новый значок серии правильных ответов — искра Spark с эффектами, которые растут на 1, 3, 5, 10, 15, 20, 25 и 30+",
+    "Новая иконка Spark",
+    "Испанская и немецкая озвучка перезаписана — короткие слова вроде «sí» звучат чисто",
+    "Бот: приветствие с кнопкой «Открыть Spark», /news — что нового, уведомления об обновлениях"
+   ],
+   "en": [
+    "New day streak — “Constellation”: 15 levels from “First star” to “Supernova” (1, 3, 5 … 200, 300+ days), each with its own stars, moons, comets, rings and aurora",
+    "New correct-answer streak mark — the Spark spark with effects that grow at 1, 3, 5, 10, 15, 20, 25 and 30+",
+    "New Spark icon",
+    "Spanish and German audio re-recorded — short words like “sí” sound clean",
+    "Bot: welcome card with an “Open Spark” button, /news, update notifications"
+   ]
+  },
+  {
+   "version": "0.10",
+   "date": "31.10.2026",
+   "ru": [
+    "У Spark свои цвета — больше не зависят от темы Telegram",
+    "Ярлык Spark на главный экран и ссылка t.me/Sparkling_app?startapp — без захода в чат",
+    "Встроенные колоды: транскрипция, пояснения с примерами и озвучка слов",
+    "Аккуратные переключатели и исправления вёрстки"
+   ],
+   "en": [
+    "Spark has its own colours — no longer tied to the Telegram theme",
+    "Home-screen shortcut and t.me/Sparkling_app?startapp link — no need to open the chat",
+    "Built-in decks: transcription, explanations with examples and word audio",
+    "Neat switches and layout fixes"
+   ]
+  },
+  {
+   "version": "0.9",
+   "date": "31.10.2026",
+   "ru": ["Серия правильных ответов в углу при повторении", "Серия дней на главной", "Раздел «Советы»"],
+   "en": ["Correct-answer streak in the review corner", "Day streak on the home screen", "Tips section"]
+  }
+ ]
+}

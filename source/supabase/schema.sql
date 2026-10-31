@@ -105,3 +105,17 @@ drop policy if exists "media: update own" on storage.objects;
 create policy "media: read own"   on storage.objects for select to authenticated using (bucket_id = 'media' and (storage.foldername(name))[1] = auth.uid()::text);
 create policy "media: insert own" on storage.objects for insert to authenticated with check (bucket_id = 'media' and (storage.foldername(name))[1] = auth.uid()::text);
 create policy "media: update own" on storage.objects for update to authenticated using (bucket_id = 'media' and (storage.foldername(name))[1] = auth.uid()::text);
+
+-- ---------- бот Spark: кто запускал бота и хочет получать новости об обновлениях ----------
+create table if not exists public.bot_chats (
+  chat_id bigint primary key,
+  first_name text default '',
+  lang text default 'ru',
+  notify boolean not null default true,
+  created_at timestamptz not null default now(),
+  last_seen timestamptz not null default now()
+);
+create table if not exists public.bot_state (key text primary key, value text);
+-- доступ только у функции telegram-bot (ключ service_role); приложению и посторонним — ничего
+alter table public.bot_chats enable row level security;
+alter table public.bot_state enable row level security;

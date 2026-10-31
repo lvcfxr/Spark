@@ -33,6 +33,8 @@ const P: Record<string, string> = {
   layers: '<path d="m12 3 9 5-9 5-9-5z"/><path d="m3 13 9 5 9-5"/>',
   external: '<path d="M14 4h6v6"/><path d="m20 4-9 9"/><path d="M18 14v4.5A1.5 1.5 0 0 1 16.5 20h-11A1.5 1.5 0 0 1 4 18.5v-11A1.5 1.5 0 0 1 5.5 6H10"/>',
   trash: '<path d="M4 7h16"/><path d="M9.5 7V4.5h5V7"/><path d="M6.5 7l1 13h9l1-13"/>',
+  bulb: '<path d="M9 18h6"/><path d="M10 21h4"/><path d="M12 3a6 6 0 0 0-3.6 10.8c.6.5 1 1.2 1.1 2V16h5v-.2c.1-.8.5-1.5 1.1-2A6 6 0 0 0 12 3z"/>',
+  trophy: '<path d="M8 4h8v5a4 4 0 0 1-8 0z"/><path d="M8 6H5a3 3 0 0 0 3 4"/><path d="M16 6h3a3 3 0 0 1-3 4"/><path d="M12 13v4"/><path d="M8.5 20.5h7"/><path d="M10 17h4v3.5h-4z"/>',
   pause: '<rect x="7" y="5.5" width="3.5" height="13" rx="1"/><rect x="13.5" y="5.5" width="3.5" height="13" rx="1"/>',
   record: '<circle cx="12" cy="12" r="6" fill="currentColor" stroke="none"/>',
   stop: '<rect x="7" y="7" width="10" height="10" rx="1.5" fill="currentColor" stroke="none"/>',
@@ -45,4 +47,76 @@ export function ic(name: string, cls = ""): string {
 /** Иконки в статичной разметке: <span data-ic="stats"></span>. */
 export function fillIcons(root: ParentNode = document) {
   root.querySelectorAll<HTMLElement>("[data-ic]").forEach((el) => { if (!el.dataset.icDone) { el.innerHTML = ic(el.dataset.ic!); el.dataset.icDone = "1"; } });
+}
+
+/**
+ * Знак серии Spark — живая мини-версия логотипа: две карточки «дышат», сфера пульсирует,
+ * звезда-искра вращается и мерцает, вокруг летают искры (их больше на высоких уровнях). Анимация постоянная.
+ * Цвет уровня задаёт родитель через --c1 (сфера) и --c3 (задняя карточка).
+ */
+export function sparkMark(cls = ""): string {
+  const ph = `--ph:-${((performance.now() % 6000) / 1000).toFixed(2)}s`; // фаза продолжается между перерисовками — без рывков
+  // «Искра» Spark: четырёхлучевая звезда из логотипа, вытянутая вверх языком пламени; ядро мерцает, искры улетают вверх
+  const star = "M15.3 2.6C18 6.4 17.3 10.4 18.3 14.1C19.1 17 22.5 18.6 26.6 20C21.7 21.3 18.2 22.5 16.8 29.4C15.2 22.7 12.3 21.3 5.4 20C11.5 18.4 14.6 16.1 14.4 11.5C14.3 8.3 13.4 5.5 15.3 2.6Z";
+  return `<svg class="smark ${cls}" style="${ph}" viewBox="0 0 32 32" aria-hidden="true">
+    <circle class="sk-halo" cx="16" cy="19.5" r="10.5"/>
+    <g class="sk-out"><path d="${star}"/></g>
+    <g class="sk-mid"><path d="${star}"/></g>
+    <path class="sk-core" d="M16 16.4l.9 2.7 2.7.9-2.7.9-.9 2.7-.9-2.7-2.7-.9 2.7-.9z"/>
+    <circle class="sk-em e1" cx="19.5" cy="6" r="1.1"/><circle class="sk-em e2" cx="22.5" cy="12" r=".9"/><circle class="sk-em e3" cx="10" cy="12.5" r=".85"/></svg>`;
+}
+
+/** Уровни серии: 1, 3, 5, 10, 15, 20, 25, 30+ — с каждым уровнем эффекты вокруг искры сильнее и разнообразнее. */
+export const STREAK_LEVELS = [0, 1, 3, 5, 10, 15, 20, 25, 30];
+export const streakLevel = (n: number) => STREAK_LEVELS.reduce((acc, v, i) => (n >= v ? i : acc), 0);
+/** Искра + эффекты вокруг неё (свечение, волны, орбиты искр, мерцающие звёзды, созвездие, карточки, лучи). */
+export function streakMark(level: number, cls = ""): string {
+  const ph = `--ph:-${((performance.now() % 6000) / 1000).toFixed(2)}s`;
+  const many = (n: number, f: (i: number) => string) => Array.from({ length: n }, (_, i) => f(i)).join("");
+  return `<span class="spk lv${level}" style="${ph}"><span class="spk-fx" aria-hidden="true">
+    <i class="fx-rays"></i><i class="fx-glow"></i><i class="fx-ring r1"></i><i class="fx-ring r2"></i>
+    <svg class="fx-const" viewBox="0 0 100 100"><circle cx="50" cy="50" r="44"/>${[0, 72, 144, 216, 288].map((a) => `<path transform="rotate(${a} 50 50)" d="M50 2.5l1.6 3.9 3.9 1.6-3.9 1.6-1.6 3.9-1.6-3.9-3.9-1.6 3.9-1.6z"/>`).join("")}</svg>
+    ${many(3, (i) => `<span class="fx-orbit o${i + 1}"><i></i></span>`)}
+    ${many(2, (i) => `<span class="fx-orbit fx-card c${i + 1}"><i></i></span>`)}
+    ${many(4, (i) => `<i class="fx-tw w${i + 1}"></i>`)}
+    ${many(5, (i) => `<i class="fx-up u${i + 1}"></i>`)}
+  </span>${sparkMark(cls)}</span>`;
+}
+
+/** Серия дней — «созвездие»: значок ночного неба, где с каждым уровнем зажигаются звёзды,
+ *  а вокруг появляются луны, кометы, кольца, сияние, галактика… 15 уровней. */
+export const DAY_LEVELS = [0, 1, 3, 5, 10, 15, 20, 25, 30, 40, 50, 75, 100, 150, 200, 300];
+export const dayLevel = (n: number) => DAY_LEVELS.reduce((acc, v, i) => (n >= v ? i : acc), 0);
+const RIM = ["#8e8e93", "#c4b5fd", "#a78bfa", "#8b5cf6", "#d08c4a", "#d08c4a", "#cbd5e1", "#cbd5e1", "#fbbf24", "#fbbf24", "#34d399", "#38bdf8", "#e0f2fe", "#c084fc", "#f472b6", "#fde68a"];
+export const dayColor = (level: number) => RIM[Math.max(0, Math.min(15, level))]!;
+const SKY = [["#3a3a40", "#1c1c20"], ["#3b2a6b", "#140d2b"], ["#3b2a6b", "#140d2b"], ["#41247d", "#120a2e"], ["#3a2160", "#120a26"], ["#3a2160", "#120a26"],
+  ["#1e2a5c", "#0b1024"], ["#1e2a5c", "#0b1024"], ["#3b2470", "#120a26"], ["#3b2470", "#120a26"], ["#0f3b4a", "#071a24"], ["#13305e", "#08122a"],
+  ["#1d3a6e", "#0a1430"], ["#3b1a6e", "#0d0620"], ["#5a1a5e", "#14061c"], ["#4a1d7a", "#0d0620"]];
+const PTS: [number, number][] = [[13.5, 14], [19.5, 10.8], [26.2, 13.2], [28.6, 20.2], [24, 26.6], [15.8, 27.6], [11.2, 21.4]];
+export function dayMark(level: number, cls = ""): string {
+  const L = Math.max(0, Math.min(15, level)), ph = `--ph:-${((performance.now() % 8000) / 1000).toFixed(2)}s`;
+  const [s1, s2] = SKY[L]!, rim = RIM[L]!, n = L >= 7 ? 7 : L, id = `ds${L}`;
+  const at = (lv: number) => L >= lv;
+  const line = n >= 2 ? `<path class="dm-line" d="M${PTS.slice(0, n).map((p) => p.join(" ")).join("L")}${L >= 8 ? "Z" : ""}"/>` : "";
+  const stars = PTS.slice(0, Math.max(n, 0)).map((p, i) => `<circle class="dm-st" style="animation-delay:calc(var(--ph) - ${(i * 0.37).toFixed(2)}s)" cx="${p[0]}" cy="${p[1]}" r="${i === n - 1 ? 1.35 : 1.05}"/>`).join("");
+  const field = at(11) ? [[-3, 4], [43, 8], [41, 34], [-1, 36], [20, -5], [20, 45]].map(([x, y], i) => `<path class="dm-tw" style="animation-delay:calc(var(--ph) - ${(i * 0.45).toFixed(2)}s)" transform="translate(${x} ${y})" d="M0 -2.2L.55 -.55 2.2 0 .55 .55 0 2.2-.55 .55-2.2 0-.55 -.55Z"/>`).join("") : "";
+  return `<svg class="dmark dl${L} ${cls}" style="${ph};--rim:${rim}" viewBox="0 0 40 40" aria-hidden="true"><defs>
+      <radialGradient id="${id}s" cx="40%" cy="35%" r="75%"><stop offset="0" stop-color="${s1}"/><stop offset="1" stop-color="${s2}"/></radialGradient>
+      ${at(10) ? `<filter id="${id}b" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="2.4"/></filter>` : ""}</defs>
+    ${at(13) ? `<g class="dm-gal"><path d="M20 20c6-9 17-6 18 2M20 20c-6 9-17 6-18-2M20 20c9 6 6 17-2 18M20 20c-9-6-6-17 2-18"/></g>` : ""}
+    ${at(12) ? `<g class="dm-rays">${Array.from({ length: 12 }, (_, i) => `<path transform="rotate(${i * 30} 20 20)" d="M19.2 1.5L20 -3.5 20.8 1.5Z"/>`).join("")}</g>` : ""}
+    ${at(10) ? `<g class="dm-aur" filter="url(#${id}b)"><ellipse cx="11" cy="15" rx="10" ry="6"/><ellipse class="a2" cx="29" cy="25" rx="10" ry="6"/></g>` : ""}
+    ${at(1) ? `<circle class="dm-halo" cx="20" cy="20" r="17.5"/>` : ""}
+    ${at(9) ? `<ellipse class="dm-ring back" cx="20" cy="20" rx="25" ry="7.5" transform="rotate(-18 20 20)"/>` : ""}
+    ${at(6) ? `<circle class="dm-orbit" cx="20" cy="20" r="20.5"/>` : ""}
+    ${at(8) ? `<circle class="dm-wave" cx="20" cy="20" r="16"/>${at(15) ? `<circle class="dm-wave w2" cx="20" cy="20" r="16"/>` : ""}` : ""}
+    <circle class="dm-sky" cx="20" cy="20" r="15" fill="url(#${id}s)"/>
+    <circle class="dm-rim" cx="20" cy="20" r="15.4"/>
+    ${at(8) ? `<circle class="dm-shine" cx="20" cy="20" r="15.4"/>` : ""}
+    ${line}${stars}
+    <path class="dm-core" d="M20 16.6l.9 2.5 2.5.9-2.5.9-.9 2.5-.9-2.5-2.5-.9 2.5-.9z"/>
+    ${at(9) ? `<path class="dm-ring front" d="M-3.78 27.73A25 7.5 -18 0 0 43.78 12.27"/>` : ""}
+    ${at(3) ? `<g class="dm-moon m1"><circle cx="20" cy="-0.5" r="2.1"/></g>` : ""}${at(7) ? `<g class="dm-moon m2"><circle cx="20" cy="41" r="1.5"/></g>` : ""}${at(14) ? `<g class="dm-moon m3"><circle cx="-1.5" cy="20" r="1.3"/></g>` : ""}
+    ${at(5) ? `<g class="dm-comet"><path d="M0 0L-9 3.2-8.6 1.2Z"/><circle r="1.25"/></g>${at(11) ? `<g class="dm-comet c2"><path d="M0 0L-7 2.6-6.7 1Z"/><circle r="1"/></g>` : ""}` : ""}
+    ${field}</svg>`;
 }
