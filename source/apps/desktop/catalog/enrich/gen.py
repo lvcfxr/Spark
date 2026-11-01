@@ -1,7 +1,7 @@
 """Enrich Spark's built-in decks: written pronunciation (hint), explanation + example (extra),
 and pronunciation audio (piper TTS → mp3), packed into one <deck>.audio.mp3 file per deck.
 Usage: python3 gen.py <catalog_dir>"""
-import hashlib, json, os, subprocess, sys, tempfile
+import hashlib, json, os, re, subprocess, sys, tempfile
 sys.path.insert(0, os.path.dirname(__file__))
 from data_en import EN, IRR
 from data_es_de import ES, DE
@@ -22,9 +22,7 @@ VITS_PY = os.environ.get("VITS_PY", "/home/claude/ctts/bin/python")
 CACHE = f"{HERE}/cache"; os.makedirs(CACHE, exist_ok=True)
 
 # тишину срезаем осторожно (-60 dB и запас 60 мс), иначе тихие «с», «ш», «ф» в начале слова пропадают
-AF = ("silenceremove=start_periods=1:start_threshold=-60dB:start_silence=0.06,areverse,"
-      "silenceremove=start_periods=1:start_threshold=-60dB:start_silence=0.1,areverse,"
-      "apad=pad_dur=0.1,loudnorm=I=-16:TP=-1.5")
+AF = "apad=pad_dur=0.1,loudnorm=I=-16:TP=-1.5"   # тишину по краям уже срезал speech_cli; цепочка silenceremove+areverse у ffmpeg иногда зависает
 
 def sentence(text: str) -> str:  # VITS обучен на предложениях: заглавная буква и точка дают чистое произношение
     t = text.strip()
@@ -37,7 +35,7 @@ def cache_path(lang, text):
     return f"{CACHE}/{tag}.wav"
 
 def to_mp3(wav, mp3):
-    subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", wav, "-af", AF, "-ac", "1", "-ar", "24000",
+    subprocess.run(["ffmpeg", "-nostdin", "-v", "error", "-y", "-i", wav, "-af", AF, "-ac", "1", "-ar", "24000",
                     "-c:a", "libmp3lame", "-b:a", "40k", mp3], check=True)
 
 def prefetch(items):
@@ -54,16 +52,16 @@ def prefetch(items):
             for t, w in jobs: os.replace(w, cache_path(lang, t))
         print(f"vits {lang}: {len(texts)} clips")
 
+sys.path.insert(0, HERE)
+from voice import batch as vb
+DRY = os.environ.get("GEN_DRY") == "1"
+NEEDED: list = []
+EXPECT = lambda t: re.sub(r"[.,—-]+", " ", t).strip()
 def tts(lang: str, text: str) -> bytes:
-    eng, model, speed = VOICES[lang]
-    wav = cache_path(lang, text)
-    if not os.path.exists(wav):
-        if eng == "vits": prefetch([(lang, text)])
-        else:
-            subprocess.run([PIPER, "-m", model, "-f", wav, "--length_scale", str(speed), "--sentence_silence", "0.25"],
-                           input=text.encode(), check=True, capture_output=True)
+    """Женский голос (Kokoro / Piper) с проверкой на слух: в кеше лежит вариант, который распознаватель услышал ближе всего к слову."""
+    if DRY: NEEDED.append((lang, text, EXPECT(text))); return b"dry" + text.encode()
     with tempfile.TemporaryDirectory() as td:
-        to_mp3(wav, f"{td}/a.mp3")
+        to_mp3(vb.wav(lang, text), f"{td}/a.mp3")
         return open(f"{td}/a.mp3", "rb").read()
 
 def key(b: bytes) -> str:  # same as media.ts: SHA-256 hex, first 24 chars
@@ -87,6 +85,7 @@ def build(deck_id: str, version: int, rows):
             c[side] = f"{c[side]} [audio](media:{k})"
         cards.append(c)
     out = {"id": deck_id, "version": version, "cards": cards}
+    if DRY: return len(cards)
     if index:
         open(f"{CAT}/{deck_id}.audio.mp3", "wb").write(pack)
         out["media"] = {"file": f"{deck_id}.audio.mp3", "type": "audio/mpeg", "index": index}
@@ -101,6 +100,9 @@ def plain(s):  # strip earlier audio markers if the script is re-run
     import re
     return re.sub(r"\s*\[audio\]\(media:[0-9a-f]+\)", "", s or "").strip()
 
+if not DRY and os.environ.get("GEN_SKIP_DRY") != "1":
+    subprocess.run([sys.executable, os.path.abspath(__file__), CAT], env={**os.environ, "GEN_DRY": "1"}, check=True)
+    vb.run([tuple(x) for x in json.load(open("/tmp/gen_needed.json"))], "decks")
 V = 4
 rows = []
 for c in load("en-basics"):
@@ -117,7 +119,6 @@ for c in load("en-irregular"):
                  "front_tts": ("en", w), "back_tts": ("en", say)})
 build("en-irregular", V, rows)
 
-prefetch([("es", w) for w in ES] + [("de", w) for w in DE])
 for deck_id, data, lang in (("es-basics", ES, "es"), ("de-basics", DE, "de")):
     rows = []
     for c in load(deck_id):
@@ -151,11 +152,14 @@ for c in load("elements"):
     rows.append({"front": w, "back": c["back"], "hint": num, "extra": f"*{latin}*. {fact}", "back_en": nen, "hint_en": num.replace("№", "No."), "extra_en": f"*{latin}*. {fen}"})
 build("elements", V, rows)
 
+if DRY:
+    json.dump(NEEDED, open("/tmp/gen_needed.json", "w"), ensure_ascii=False); sys.exit(0)
 cat = json.load(open(f"{CAT}/catalog.json"))
 NATIVES = {"en-basics": ["ru"], "en-irregular": ["ru"], "ru-basics": ["en"]}
 for d in cat["decks"]:
     d["version"] = V
     d["natives"] = NATIVES.get(d["id"], ["ru", "en"])
+    d["level"] = {"en-basics": "A1", "es-basics": "A1", "de-basics": "A1", "ru-basics": "A1", "en-irregular": "A2"}.get(d["id"], "")
     if d["id"] == "capitals": d["title_en"] = "World capitals"; d["description_en"] = "60 countries and their capitals: Europe, Asia, the Americas, Africa and Oceania. With hints and short explanations."
     if d["id"] == "elements": d["title_en"] = "Chemical elements 1–30"; d["description_en"] = "Symbols of the first 30 elements of the periodic table and their names. The hint shows the atomic number. With short explanations."
     m = f"{CAT}/{d['id']}.audio.mp3"

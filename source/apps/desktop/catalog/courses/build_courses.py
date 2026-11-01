@@ -64,39 +64,20 @@ def romaji_to_kana(r: str) -> str:
         else: raise ValueError(f"romaji: {r} @ {s[i:]}")
     return out
 
-# ---------- звук ----------
-CACHE = os.path.join(TTS, "cache-courses"); os.makedirs(CACHE, exist_ok=True)
-PIPER = {"en": f"{TTS}/voice-en-us-lessac-medium/en-us-lessac-medium.onnx", "ru": f"{TTS}/voice-ru-irinia-medium/ru-irinia-medium.onnx"}
-COQUI = {"es": (f"{TTS}/es-css10/tts_models--es--css10--vits", "-", ""), "de": (f"{TTS}/de-vits/tts_models--de--thorsten--vits", "-", ""),
-         "fr": (f"{TTS}/tts_models--fr--css10--vits/tts_models--fr--css10--vits", "-", ""),
-         "ja": (f"{TTS}/tts_models--ja--kokoro--tacotron2-DDC/tts_models--ja--kokoro--tacotron2-DDC", f"{TTS}/vocoder_models--ja--kokoro--hifigan_v1/vocoder_models--ja--kokoro--hifigan_v1", "ja")}
-AF = ("silenceremove=start_periods=1:start_threshold=-60dB:start_silence=0.06,areverse,"
-      "silenceremove=start_periods=1:start_threshold=-60dB:start_silence=0.1,areverse,apad=pad_dur=0.1,loudnorm=I=-16:TP=-1.5")
-def wav_path(lang, text): return os.path.join(CACHE, hashlib.sha1(f"{lang}|v1|{text}".encode()).hexdigest()[:16] + ".wav")
-
-def synth_all(jobs):
-    """jobs: (lang, text, expected_sec). Coqui — пакетом на язык, piper — по одной."""
-    by = {}
-    for lang, text, exp in jobs:
-        if not os.path.exists(wav_path(lang, text)): by.setdefault(lang, {})[text] = exp
-    for lang, items in by.items():
-        if lang in PIPER:
-            for text in items:
-                subprocess.run([f"{TTS}/piper_amd64/piper/piper", "-m", PIPER[lang], "-f", wav_path(lang, text), "--length_scale", "1.08", "--sentence_silence", "0.2"],
-                               input=text.encode(), check=True, capture_output=True)
-        else:
-            model, voc, flag = COQUI[lang]
-            inp = "".join(f"{t}\t{wav_path(lang, t)}\t{e:.2f}\n" for t, e in items.items())
-            r = subprocess.run([VITS_PY, f"{TTS}/synth.py", model, voc] + ([flag] if flag else []), input=inp.encode(), capture_output=True)
-            open(os.path.join(CACHE, f"log-{lang}.txt"), "a").write(r.stdout.decode())
-            if r.returncode: raise RuntimeError(r.stderr.decode()[-2000:])
-        print(f"  {lang}: {len(items)} clips", flush=True)
-
+# ---------- звук: женские голоса (Kokoro / Piper) с проверкой на слух, см. ../enrich/voice ----------
+sys.path.insert(0, os.path.join(HERE, "..", "enrich"))
+from voice import batch as vb
+AF = "apad=pad_dur=0.1,loudnorm=I=-16:TP=-1.5"   # тишину по краям уже срезал speech_cli; цепочка silenceremove+areverse у ffmpeg иногда зависает
 def mp3(lang, text) -> bytes:
     with tempfile.TemporaryDirectory() as td:
-        subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", wav_path(lang, text), "-af", AF, "-ac", "1", "-ar", "24000", "-c:a", "libmp3lame", "-b:a", "40k", f"{td}/a.mp3"], check=True)
+        subprocess.run(["ffmpeg", "-nostdin", "-v", "error", "-y", "-i", vb.wav(lang, text), "-af", AF, "-ac", "1", "-ar", "24000", "-c:a", "libmp3lame", "-b:a", "40k", f"{td}/a.mp3"], check=True, timeout=60)
         return open(f"{td}/a.mp3", "rb").read()
 
+def speak_ex(lang, d):  # японские примеры озвучиваем по каной (из ромадзи): иероглифы синтезатор читает с «галлюцинациями»
+    if lang != "ja": return d["ex"]
+    r = re.sub(r"[^A-Za-zāīūēōĀĪŪĒŌ' ]+", " ", d["exr"]).strip()
+    r = re.sub(r"\s+", " ", r)
+    return " ".join(romaji_to_kana(w) for w in r.split()) + "。"
 def speak_word(lang, d):  # что отдаём синтезатору для отдельного слова
     return romaji_to_kana(d["pron"]) if lang == "ja" else d["word"]
 
@@ -107,10 +88,9 @@ if AUDIO:
     for cid, lang, *_ in COURSES:
         for c in C:
             d = DATA[lang][c[0]]
-            ex_len = len(d["exr"] or d["ex"])
-            jobs.append((lang, speak_word(lang, d), 0.12 + 0.07 * len((d["pron"] if lang == "ja" else d["word"]).replace(" ", ""))))
-            jobs.append((lang, d["ex"], 0.2 + 0.062 * ex_len))
-    synth_all(jobs)
+            jobs.append((lang, speak_word(lang, d), d["word"] if lang != "ja" else None))
+            jobs.append((lang, speak_ex(lang, d), None))
+    vb.run(jobs, "courses")
 
 index = []
 for cid, lang, flag, natives, title_ru, title_en in COURSES:
@@ -123,7 +103,7 @@ for cid, lang, flag, natives, title_ru, title_en in COURSES:
     for c in C:
         concept, unit, ru, en, exru, exen = c
         d = DATA[lang][concept]
-        a_word, a_ex = put(speak_word(lang, d)), put(d["ex"])
+        a_word, a_ex = put(speak_word(lang, d)), put(speak_ex(lang, d))
         meaning = {"ru": ru, "en": en}
         if lang == "ru": meaning["en"] = en
         extra = {}
@@ -139,7 +119,7 @@ for cid, lang, flag, natives, title_ru, title_en in COURSES:
         out["media"] = {"file": f"{cid}.audio.mp3", "type": "audio/mpeg", "index": media}
     json.dump(out, open(os.path.join(OUT, f"{cid}.json"), "w"), ensure_ascii=False, indent=0)
     units = [{"id": u, "title": {"ru": tr, "en": te}, "count": sum(1 for c in C if c[1] == u)} for u, tr, te in UNITS]
-    index.append({"id": cid, "lang": lang, "flag": flag, "natives": natives, "title": {"ru": title_ru, "en": title_en},
+    index.append({"id": cid, "lang": lang, "flag": flag, "natives": natives, "cefr": "N5" if lang == "ja" else "A1", "exam": "JLPT N5" if lang == "ja" else "A1", "title": {"ru": title_ru, "en": title_en},
                   "level": {"ru": "Начинающий", "en": "Beginner"}, "description": DESC, "author": "Spark",
                   "words": len(cards), "minutes": round(len(cards) * 1.5 / 5) * 5, "units": units, "version": VERSION,
                   "file": f"{cid}.json", "audio": bool(media)})

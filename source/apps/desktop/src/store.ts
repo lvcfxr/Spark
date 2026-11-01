@@ -21,6 +21,11 @@ export interface Settings {
   autoAudio: boolean;
   /** тема шапки главной (открывается с уровнем) */
   heroTheme?: string;
+  botRemind?: boolean;
+  /** перемешивать порядок карточек (по умолчанию да) */
+  shuffle?: boolean;
+  /** режим «Только слова»: без опыта, серий, курсов, наград */
+  focus?: boolean;
   /** «Учить ещё»: сколько новых карточек сверх дневного лимита разрешено сегодня, по колодам. */
   extraNew?: { day: string; by: Record<string, number> };
 }

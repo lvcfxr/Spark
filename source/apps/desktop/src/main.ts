@@ -6,7 +6,7 @@ import { Store } from "./store";
 import { backend, fsApi, type FsInfo } from "./backend";
 import { parseApkg, parseLines, parseTable, type ImportResult } from "./importers";
 import {
-  SyncService, downloadMedia, getChoice, getConfig, getSession, presetConfig, queueMedia, saveConfig, setChoice,
+  SyncService, authToken, downloadMedia, getChoice, getConfig, getSession, presetConfig, queueMedia, saveConfig, setChoice,
   signIn, signInTelegram, signOut, signUp,
 } from "./sync";
 import {
@@ -14,13 +14,14 @@ import {
 } from "./tg";
 import { answerVariants, clozeFace, clozeNumbers, esc, fmt, fmtDur, isCorrect, mediaRefs, norm, stripMedia } from "./format";
 import { DAY_LEVELS, dayColor, dayLevel, dayMark, fillIcons, ic, sparkMark, streakLevel, streakMark } from "./icons";
+import { emo } from "./flags";
 import { DAILY_BONUS, THEMES, XP_RULES, rewardsList, themeById, titleOf, xpStats, type UnitMap } from "./xp";
 import { courseMediaId, embeddedCourses, loadCourseCards, loadCourses, type Course, type CourseCard } from "./courses";
 import { TIPS } from "./tips";
 import { detectLang, getLang, setLang, t, translateStatic, type Lang } from "./i18n";
 import { AUDIO_RE, IMAGE_RE, LIMITS, VIDEO_RE, allMediaKeys, getMediaBlob, hydrateMedia, mediaDuration, mediaUrl, mimeOf, playAudio, putLocal, putMedia, setBundledMedia, setMediaSync, shrinkImage } from "./media";
 import {
-  LANGS, bundledDeckOf, localizeCard, communityAvailable, loadCommunity, loadCommunityCards, loadDeckMedia, loadSparkCards, loadSparkCatalog, myPublished, publishDeck, unpublishDeck,
+  LANGS, LEVELS, LEVEL_NAMES, bundledDeckOf, localizeCard, communityAvailable, loadCommunity, loadCommunityCards, loadDeckMedia, loadSparkCards, loadSparkCatalog, myPublished, publishDeck, unpublishDeck,
   type CatalogDeck, type DeckCard, type MyPublished,
 } from "./catalog";
 
@@ -93,7 +94,7 @@ interface CardView {
   typed: boolean; kind: "basic" | "cloze"; n: number; group: string; rev: boolean; suspended: boolean; created: number;
 }
 type TypedMode = "inherit" | "on" | "off";
-interface DeckView { id: string; name: string; created: number; typedMode: TypedMode; newPerDay: number | null; source: string; emoji: string }
+interface DeckView { id: string; name: string; created: number; typedMode: TypedMode; newPerDay: number | null; source: string; emoji: string; icon: string }
 
 const str = (v: unknown) => (typeof v === "string" ? v : v == null ? "" : String(v));
 function allCards(): CardView[] {
@@ -107,7 +108,7 @@ function allDecks(): DeckView[] {
   return store.replica.list("deck").map((d) => ({
     id: d.id, name: str(d.fields.name) || t("Без названия"), created: Number(d.fields.created ?? 0),
     typedMode: (d.fields.typedMode === "on" || d.fields.typedMode === "off" ? d.fields.typedMode : d.fields.auto === true ? "on" : "inherit") as TypedMode,
-    newPerDay: typeof d.fields.newPerDay === "number" ? d.fields.newPerDay : null, source: str(d.fields.source), emoji: str(d.fields.emoji),
+    newPerDay: typeof d.fields.newPerDay === "number" ? d.fields.newPerDay : null, source: str(d.fields.source), emoji: str(d.fields.emoji), icon: str(d.fields.icon),
   })).sort((a, b) => a.created - b.created);
 }
 
@@ -139,7 +140,7 @@ interface Review {
   xp0: number; xpGain: number;
 }
 interface Browser {
-  tab: "spark" | "community" | "web"; q: string; lang: string; loading: boolean; error: string;
+  tab: "spark" | "community" | "web"; q: string; lang: string; level?: string; loading: boolean; error: string;
   decks: CatalogDeck[]; open: CatalogDeck | null; cards: DeckCard[] | null; busy: boolean;
 }
 type ModalType = "share-pick" | "settings" | "level" | "stats" | "deck" | "import" | "importdecks" | "choose" | "paste" | "publish" | "attach" | "record";
@@ -155,7 +156,7 @@ const S = {
   browser: null as Browser | null,
   tips: null as null | { tab: string },
   stats: false,
-  courses: null as null | { open: string | null; list: Course[]; cards: CourseCard[] | null; busy: boolean },
+  courses: null as null | { open: string | null; list: Course[]; cards: CourseCard[] | null; busy: boolean; q?: string; lang?: string; lvl?: string },
   /** куда добавлять медиа: карточка при повторении (сторона вопроса/ответа) или null — в редактор, в позицию курсора */
   attach: null as null | { cardId: string; side: "q" | "a" },
   modal: null as null | { type: ModalType; id?: string },
@@ -190,21 +191,25 @@ function scan(now: number, cards: CardView[], decks: DeckView[], unlimited = fal
 const sum = (m: Map<string, Counts>): Counts => [...m.values()].reduce((a, c) => ({ n: a.n + c.n, l: a.l + c.l, r: a.r + c.r }), { n: 0, l: 0, r: 0 });
 
 const hasTag = (c: CardView, tag?: string) => !tag || c.tags.split(/\s+/).includes(tag);
-function pickNext(deckId: string, now: number, unit?: string): string | null {
+function pickNext(deckId: string, now: number, unit?: string, avoid?: string | null): string | null {
   const decks = allDecks();
   const cards = allCards().filter((c) => (deckId === "all" || c.deckId === deckId) && !c.suspended && hasTag(c, unit));
   const counts = scan(now, cards, decks, !!unit);
   const newLeft = new Map([...counts].map(([k, v]) => [k, v.n]));
   let lNow: CardView | null = null, lAhead: CardView | null = null, rev: CardView | null = null, nw: CardView | null = null;
   const due = (c: CardView) => store.stateOf(c.id).due;
+  // перемешивание: новые и «созревшие» повторения берутся в случайном порядке, чтобы не запоминать последовательность
+  const shuffle = store.settings.shuffle !== false, newPool: CardView[] = [], revPool: CardView[] = [];
   for (const c of cards.sort((a, b) => a.created - b.created)) {
     const st = store.states.get(c.id);
-    if (!st || st.phase === "new") { if (!nw && (newLeft.get(c.deckId) ?? 0) > 0) nw = c; }
+    if (!st || st.phase === "new") { if ((newLeft.get(c.deckId) ?? 0) > 0) { if (shuffle) newPool.push(c); else if (!nw) nw = c; } }
     else if (st.phase === "learning" || st.phase === "relearning") {
       if (st.due <= now) { if (!lNow || st.due < due(lNow)) lNow = c; }
       else if (st.due <= now + LEARN_AHEAD && (!lAhead || st.due < due(lAhead))) lAhead = c;
-    } else if (st.due <= now && (!rev || st.due < due(rev))) rev = c;
+    } else if (st.due <= now) { if (shuffle) revPool.push(c); else if (!rev || st.due < due(rev)) rev = c; }
   }
+  const pick = (a: CardView[]) => { const pool = avoid && a.length > 1 ? a.filter((c) => c.id !== avoid) : a; return pool[Math.floor(Math.random() * pool.length)] ?? null; };
+  if (shuffle) { rev = pick(revPool); nw = pick(newPool); }
   return (lNow ?? rev ?? nw ?? lAhead)?.id ?? null;
 }
 
@@ -215,7 +220,12 @@ function applyTheme() {
   const tgScheme = tgColorScheme();
   const dark = s.theme === "dark" || (s.theme === "auto" && (tgScheme ? tgScheme === "dark" : matchMedia("(prefers-color-scheme: dark)").matches));
   root.dataset.dark = dark ? "1" : "0";
-  root.style.setProperty("--accent", s.accent);
+  // оформление: акцент и шапка главной всегда одного цвета
+  const th = THEMES.find((x) => x.id === s.heroTheme && x.accent && x.level <= xp().level);
+  const accent = th ? th.accent : s.accent;
+  root.style.setProperty("--accent", accent);
+  root.style.setProperty("--hero-bg-custom", `linear-gradient(165deg, ${s.accent}, color-mix(in srgb, ${s.accent} 50%, #000))`);
+  root.style.setProperty("--hero-bg", th ? th.css : `radial-gradient(120% 80% at 50% 0%, color-mix(in srgb, ${accent} 55%, #fff) 0%, transparent 60%), linear-gradient(165deg, ${accent} 0%, color-mix(in srgb, ${accent} 62%, #000) 50%, color-mix(in srgb, ${accent} 22%, #05030a) 100%)`);
   paintTelegramChrome(getComputedStyle(root).getPropertyValue("--bg").trim() || (dark ? "#0e0e10" : "#f4f4f7"));
 }
 matchMedia("(prefers-color-scheme: dark)").addEventListener("change", () => store && applyTheme());
@@ -277,18 +287,40 @@ function renderDecks() {
   };
   const row = (id: string, label: string, c?: Counts) =>
     `<div class="row ${S.deckId === id ? "sel" : ""}" data-a="deck" data-id="${id}"><span class="name">${label}</span>${cnt(c)}</div>`;
-  $("decks").innerHTML = `<div class="sec-h"><span>${t("Мои колоды")}</span><button class="link" data-a="browser-open">${t("Каталог")} ${ic("chevron")}</button></div>` + row("all", `<span class="row-em all">${ic("layers", "row-ic")}</span> ` + t("Все карточки"), sum(counts)) +
-    decks.map((d) => row(d.id, (d.emoji ? `<span class="row-em">${esc(d.emoji)}</span>` : ic(d.source.startsWith("course:") ? "cap" : "catalog", "row-ic")) + " " + esc(d.name) + (d.typedMode === "on" ? ' <span class="muted tiny-ic" title="' + t("Ввод ответа включён для всей колоды") + '">' + ic("keyboard") + "</span>" : ""), counts.get(d.id))).join("")
+  $("decks").innerHTML = `<div class="sec-h"><span>${t("Мои колоды")}</span></div>` + row("all", `<span class="row-em all">${ic("layers", "row-ic")}</span> ` + t("Все карточки"), sum(counts)) +
+    decks.filter((d) => focusMode() || !d.source.startsWith("course:")).map((d) => row(d.id, (d.icon ? `<span class="row-em img"><img class="mimg deck-img" data-media="${esc(d.icon)}" alt=""></span>` : d.emoji ? `<span class="row-em">${emo(d.emoji)}</span>` : ic(d.source.startsWith("course:") ? "cap" : "catalog", "row-ic")) + " " + emo(d.name) + (d.typedMode === "on" ? ' <span class="muted tiny-ic" title="' + t("Ввод ответа включён для всей колоды") + '">' + ic("keyboard") + "</span>" : ""), counts.get(d.id))).join("")
     + (decks.length ? "" : isMobile() ? welcomeHtml() : `<div class="hint" style="padding:10px">${t("Колод пока нет. Откройте «Каталог» — там готовые колоды.")}</div>`);
   renderStreak(decks.length > 0);
+  media($("decks"));
   $("deck-actions").innerHTML = decks.some((d) => d.id === S.deckId) ? `<button class="icon-btn" data-a="deck-edit" title="${t("Настройки колоды")}">${ic("more")}</button>` : "";
 }
 
+/** Режим «Только слова»: без опыта, серий, курсов и наград — только карточки. */
+const focusMode = () => store.settings.focus === true;
+/** Что учили последним: колода (и уровень курса) — предложить продолжить с того же места. */
+function continueHtml(): string {
+  let last: ReviewEventLike | null = null;
+  for (const r of store.reviews) if (!last || r.ts > last.ts) last = r;
+  if (!last) return "";
+  const card = allCards().find((c) => c.id === last!.cardId), deck = card && allDecks().find((d) => d.id === card.deckId);
+  if (!card || !deck) return "";
+  const unitTag2 = deck.source.startsWith("course:") ? card.tags.split(/\s+/).find((x) => x.startsWith("unit-")) : undefined;
+  const cs = embeddedCourses().find((c) => deck.source.startsWith(`course:${c.id}@`)), L = uiL();
+  const unit = cs && unitTag2 ? cs.units.find((u) => "unit-" + u.id === unitTag2) : null;
+  const scope = allCards().filter((c) => c.deckId === deck.id && hasTag(c, unitTag2));
+  const c = sum(scan(Date.now(), scope, allDecks(), !!unitTag2)), left = c.n + c.l + c.r;
+  const title = unit && cs ? `${cs.flag} ${unit.title[L]}` : `${deck.emoji ? deck.emoji + " " : ""}${deck.name}`;
+  return `<button class="cont ${left ? "" : "idle"}" data-a="continue" data-id="${deck.id}" data-u="${unitTag2 ?? ""}" data-t="${esc(title)}"><span class="cont-ic">${ic(left ? "play" : "check-circle")}</span>
+    <span class="cont-main"><span class="cont-l">${left ? t("Продолжить") : t("На сегодня всё")}</span><span class="cont-t">${emo(title)}</span></span>
+    <span class="cont-n">${left ? t("{n} карт.", { n: left }) : ""}</span></button>`;
+}
+interface ReviewEventLike { cardId: string; ts: number }
 function renderStreak(_show: boolean) {
   const host = document.getElementById("streak");
   if (!host) return;
   const todayK = dayKey(Date.now()), st = dayStreak();
-  host.innerHTML = heroHtml();
+  if (focusMode()) { host.innerHTML = continueHtml(); const mc0 = document.getElementById("mycourses"); if (mc0) mc0.innerHTML = ""; return; }
+  host.innerHTML = heroHtml() + continueHtml();
   try { if (st.studiedToday && !S.review && localStorage.getItem("spark.streakSeen") !== todayK) { host.firstElementChild?.classList.add("celebrate"); localStorage.setItem("spark.streakSeen", todayK); } } catch { /* без хранилища — без анимации */ }
   const mc = document.getElementById("mycourses");
   if (mc) mc.innerHTML = myCoursesHtml();
@@ -331,7 +363,7 @@ function filteredCards(): CardView[] {
 function renderList() {
   const now = Date.now(), cards = filteredCards(), shown = cards.slice(0, 500);
   const deck = allDecks().find((d) => d.id === S.deckId);
-  $("list-title").textContent = deck ? (deck.emoji ? deck.emoji + " " : "") + deck.name : t("Все карточки");
+  $("list-title").innerHTML = deck ? (deck.emoji ? emo(deck.emoji) + " " : "") + emo(deck.name) : t("Все карточки");
   $("list-count").textContent = String(cards.length);
   $("cards").innerHTML = shown.map((c) => {
     const f = face(c), tags = c.tags.trim() ? c.tags.trim().split(/\s+/).slice(0, 3).map((x) => `<span class="tag">#${esc(x)}</span>`).join("") : "";
@@ -344,8 +376,8 @@ function renderList() {
 }
 
 /** Строка с переключателем в стиле iOS: подпись слева, переключатель справа. */
-function switchRow(id: string, on: boolean, title: string, desc = "", plainRow = false): string {
-  const inner = `<span class="sw-txt"><span class="sw-t">${title}</span>${desc ? `<span class="sw-d">${desc}</span>` : ""}</span><input type="checkbox" class="switch" id="${id}" ${on ? "checked" : ""}>`;
+function switchRow(id: string, on: boolean, title: string, desc = "", plainRow = false, icon = ""): string {
+  const inner = `${icon ? `<span class="sr-ic c${(id.length % 5) + 1}">${ic(icon)}</span>` : ""}<span class="sw-txt"><span class="sw-t">${title}</span>${desc ? `<span class="sw-d">${desc}</span>` : ""}</span><input type="checkbox" class="switch" id="${id}" ${on ? "checked" : ""}>`;
   return plainRow ? `<label class="sw-row">${inner}</label>` : `<label class="item sw-row">${inner}</label>`;
 }
 
@@ -652,9 +684,9 @@ function renderReview() {
   const typedNow = (() => { const c = r.cardId ? allCards().find((k) => k.id === r.cardId) : null; return c ? isTyped(c, decks.find((d) => d.id === c.deckId)) : store.settings.typedAll; })();
   const timer = manual ? "" : `<div class="tm"><div class="tm-bar"><i id="rv-bar"></i></div><span id="rv-time" class="muted"></span></div>`;
   const top = `<div class="rv-top"><button class="icon-btn" data-a="rv-close" title="${t("Закрыть")} (Esc)">${ic("close")}</button>
-    <div class="t">${esc(r.unitTitle ?? deck?.name ?? t("Все карточки"))}<div class="muted" style="font-weight:400;font-size:12px"><span style="color:var(--accent)">${counts.n}</span> · <span style="color:var(--bad)">${counts.l}</span> · <span style="color:var(--good)">${counts.r}</span></div></div>
-    <div class="combo lv${streakLevel(r.combo)} ${r.bump ?? ""}" title="${t("Серия правильных ответов подряд")}">${streakMark(streakLevel(r.combo))}<b>${r.combo}</b>${r.xpGain && r.bump ? `<span class="xp-pop ${r.xpGain < 0 ? "neg" : ""}">${r.xpGain > 0 ? "+" : "−"}${Math.abs(r.xpGain)} XP</span>` : ""}</div>
-    ${r.cardId ? `<button class="icon-btn rv-att" data-a="rv-attach" title="${t("Добавить к карточке картинку, видео или звук")}">${ic("clip")}</button>` : ""}
+    <div class="t">${emo(r.unitTitle ?? deck?.name ?? t("Все карточки"))}<div class="muted" style="font-weight:400;font-size:12px"><span style="color:var(--accent)">${counts.n}</span> · <span style="color:var(--bad)">${counts.l}</span> · <span style="color:var(--good)">${counts.r}</span></div></div>
+    ${focusMode() ? "" : `<div class="combo lv${streakLevel(r.combo)} ${r.bump ?? ""}" title="${t("Серия правильных ответов подряд")}">${streakMark(streakLevel(r.combo))}<b>${r.combo}</b>${r.xpGain && r.bump ? `<span class="xp-pop ${r.xpGain < 0 ? "neg" : ""}">${r.xpGain > 0 ? "+" : "−"}${Math.abs(r.xpGain)} XP</span>` : ""}</div>`}
+    ${r.cardId && r.show ? `<button class="icon-btn rv-att" data-a="rv-attach" title="${t("Добавить к карточке картинку, видео или звук")}">${ic("clip")}</button>` : ""}
     <button class="kbd-toggle ${typedNow ? "on" : ""}" data-a="rv-typed" title="${t("Ввод ответа с клавиатуры: переход без Enter при верном слове")}">${ic("keyboard")}<span class="lbl"> ${t("Ввод")}: ${typedNow ? t("вкл") : t("выкл")}</span></button>
     <svg class="ring" viewBox="0 0 38 38"><circle class="bg" cx="19" cy="19" r="17"/><circle class="fg" cx="19" cy="19" r="17" stroke-dasharray="${C}" stroke-dashoffset="${C * (1 - frac)}"/></svg></div>`;
   const x = ctx();
@@ -663,8 +695,8 @@ function renderReview() {
       <h2>${r.done ? t("Отличная работа!") : t("На сегодня всё")}</h2>
       <p class="muted">${r.done ? t("Повторено карточек: {n}", { n: r.done }) : r.unit ? t("Уровень пройден — все слова изучены.") : t("Нет карточек к повторению.")}</p>
       ${r.unit && allCards().filter((c) => hasTag(c, r.unit) && c.deckId === (r.deckId === "all" ? c.deckId : r.deckId)).every((c) => store.stateOf(c.id).phase !== "new") ? `<p class="unit-done">${ic("trophy")} ${t("Уровень пройден! +{n} XP", { n: XP_RULES.unit })}</p>` : ""}
-      ${r.done ? (() => { const x = xp(); return `<p class="xp-sum">${ic("spark")} ${t("Опыт за занятие: +{n}", { n: x.total - r.xp0 })} · ${t("уровень {n}", { n: x.level })}</p>`; })() : ""}
-      ${r.best >= 3 ? `<p class="best-combo lv${streakLevel(r.best)}">${ic("trophy")} ${t("Лучшая серия: {n} правильных подряд", { n: r.best })}</p>` : ""}
+      ${r.done && !focusMode() ? (() => { const x = xp(); return `<p class="xp-sum">${ic("spark")} ${t("Опыт за занятие: +{n}", { n: x.total - r.xp0 })} · ${t("уровень {n}", { n: x.level })}</p>`; })() : ""}
+      ${r.best >= 3 && !focusMode() ? `<p class="best-combo lv${streakLevel(r.best)}">${ic("trophy")} ${t("Лучшая серия: {n} правильных подряд", { n: r.best })}</p>` : ""}
       ${r.unit ? "" : moreHtml(r.deckId)}
       <button class="btn big" data-a="rv-close">${t("Готово")}</button></div></div>`;
     return;
@@ -761,7 +793,7 @@ function startReview(deckId: string, unit?: { tag: string; title: string }) {
 }
 function showNext() {
   const r = S.review!;
-  r.cardId = pickNext(r.deckId, Date.now(), r.unit);
+  r.cardId = pickNext(r.deckId, Date.now(), r.unit, r.cardId);
   Object.assign(r, { show: false, typed: null, ok: null, pending: null, locking: false, t0: Date.now(), paused: 0, dur: 0 });
   if (r.done > 0 && r.done % 10 === 0) r.baseline = computeBaseline();
   hiddenAt = document.hidden ? Date.now() : null;
@@ -800,10 +832,63 @@ function reveal() {
   renderReview();
   void playFirst(".ans");
 }
+/** Картинка колоды: обрезаем до квадрата, проверяем на 18+ на устройстве (нейросеть nsfw.js грузится только сейчас), только потом сохраняем. */
+function loadScript(src: string): Promise<void> {
+  return new Promise((res, rej) => { const el = document.createElement("script"); el.src = src; el.onload = () => res(); el.onerror = () => rej(new Error("load")); document.head.appendChild(el); });
+}
+async function setDeckIcon(deckId: string, file: File) {
+  if (!file.type.startsWith("image/")) return toast(t("Это не картинка"));
+  if (file.size > 12 * 1024 * 1024) return toast(t("Картинка слишком большая"));
+  toast(t("Проверяю изображение…"));
+  try {
+    const bmp = await createImageBitmap(file), side = Math.min(bmp.width, bmp.height);
+    const mk = (n: number) => { const c = document.createElement("canvas"); c.width = c.height = n; c.getContext("2d")!.drawImage(bmp, (bmp.width - side) / 2, (bmp.height - side) / 2, side, side, 0, 0, n, n); return c; };
+    const big = mk(224), small = mk(112);
+    if (!(window as unknown as { __sparkNsfw?: unknown }).__sparkNsfw) await loadScript(/^https?:/.test(location.protocol) ? new URL("nsfw.js", location.href).href : "https://lvcfxr.github.io/Spark/nsfw.js");
+    const res = await (window as unknown as { __sparkNsfw: (c: HTMLCanvasElement) => Promise<{ ok: boolean }> }).__sparkNsfw(big);
+    if (!res.ok) { haptic("error"); return toast(t("Эта картинка не подходит: похоже на контент 18+")); }
+    const blob = await new Promise<Blob>((r, j) => small.toBlob((b) => (b ? r(b) : j(new Error("blob"))), "image/webp", 0.85));
+    const key = await putMedia(blob);
+    store.set("deck", deckId, "icon", key);
+    haptic("success"); toast(t("Картинка колоды обновлена"));
+    render();
+  } catch { toast(t("Не удалось проверить картинку — попробуйте ещё раз при подключении к сети")); }  // без проверки не сохраняем
+}
+/** Пасхалки: коды как в играх, можно вводить в ответ на любую карточку. */
+function easterEgg(raw: string): boolean {
+  const code = raw.toLowerCase().replace(/[^a-z0-9 ]+/g, "").replace(/\s+/g, " ").trim();
+  const kind = code === "hesoyam" ? "hesoyam" : code === "gamemode 1" ? "creative" : code === "gamemode 0" ? "survival" : null;
+  if (!kind) return false;
+  const host = document.body;
+  haptic("success");
+  const box = document.createElement("div"); box.className = `egg egg-${kind}`;
+  const en = getLang() === "en";
+  if (kind === "hesoyam") {
+    const bills = Array.from({ length: 26 }, (_, i) => `<i style="left:${(i * 37) % 100}%;--d:${(i % 7) * 0.18}s;--s:${0.8 + (i % 5) * 0.12};--r:${(i * 53) % 90 - 45}deg"><b>$</b></i>`).join("");
+    box.innerHTML = `<div class="egg-bills">${bills}</div>
+      <div class="egg-hud"><div class="egg-money">$<em>0</em></div><div class="egg-bar hp"><i></i></div><div class="egg-bar ar"><i></i></div></div>
+      <div class="egg-msg">${en ? "CHEAT ACTIVATED" : "ЧИТ АКТИВИРОВАН"}</div>`;
+    host.appendChild(box);
+    const m = box.querySelector(".egg-money em") as HTMLElement, t0 = performance.now();
+    const tick = (now: number) => { const k = Math.min(1, (now - t0) / 900); m.textContent = Math.round(250000 * (1 - Math.pow(1 - k, 3))).toLocaleString("en-US"); if (k < 1) requestAnimationFrame(tick); };
+    requestAnimationFrame(tick);
+    setTimeout(() => box.remove(), 4200);
+  } else {
+    const cols = ["#8b5cf6", "#22c55e", "#3b82f6", "#f59e0b", "#ef4444", "#ec4899", "#14b8a6"];
+    const cubes = Array.from({ length: 30 }, (_, i) => `<i style="left:${(i * 29) % 100}%;--d:${(i % 9) * 0.12}s;--c:${cols[i % cols.length]};--z:${10 + (i % 4) * 6}px"></i>`).join("");
+    box.innerHTML = `<div class="egg-cubes">${cubes}</div><div class="egg-chat">${kind === "creative" ? (en ? "Set own game mode to Creative Mode" : "Ваш игровой режим изменён на творческий") : (en ? "Set own game mode to Survival Mode" : "Ваш игровой режим изменён на выживание")}</div>`;
+    host.appendChild(box);
+    const card = document.querySelector("#overlay .rv-card") as HTMLElement | null;
+    if (kind === "creative") { card?.classList.add("creative"); setTimeout(() => card?.classList.remove("creative"), 5200); }
+    setTimeout(() => box.remove(), 4800);
+  }
+  return true;
+}
 function checkTyped(valueIn?: string) {
   const x = ctx();
   if (!x || x.r.show) return;
   const value = (valueIn ?? ($("rv-input") as HTMLInputElement | null)?.value ?? "").trim();
+  if (easterEgg(value)) { const i = $("rv-input") as HTMLInputElement | null; if (i) i.value = ""; return; }
   const ok = !!value && isCorrect(value, x.f.answers);
   const think = thinkMs(x.r);
   x.r.typed = value; x.r.ok = value ? ok : false; x.r.dur = think;
@@ -822,7 +907,7 @@ function bumpCombo(rating: Rating) {
   const r = S.review!;
   if (rating >= 2) {
     r.combo++; r.best = Math.max(r.best, r.combo); r.bump = "up";
-    if (MILESTONES.includes(r.combo)) { r.milestone = r.combo; haptic("success"); }
+    if (MILESTONES.includes(r.combo) && !focusMode()) { r.milestone = r.combo; haptic("success"); }
   } else { r.bump = r.combo > 0 ? "break" : null; r.combo = 0; }
 }
 function applyPending(rating?: Rating) {
@@ -915,20 +1000,22 @@ function renderBrowser() {
   const pool = b.decks.filter((d) => (b.tab === "spark" ? d.source === "spark" && (!d.natives || d.natives.includes(getLang())) : d.source === "community"));
   const langs = [...new Set(pool.flatMap((d) => [d.lang_front, d.lang_back]).filter(Boolean))].sort();
   const q = b.q.trim().toLowerCase();
-  const list = pool.filter((d) => (!b.lang || d.lang_front === b.lang || d.lang_back === b.lang)
-    && (!q || `${d.title} ${d.title_en ?? ""} ${d.description} ${d.description_en ?? ""} ${d.tags.join(" ")} ${d.author ?? ""}`.toLowerCase().includes(q)));
+  const levels = LEVELS.filter((l) => pool.some((d) => d.level === l));
+  const list = pool.filter((d) => (!b.lang || d.lang_front === b.lang || d.lang_back === b.lang) && (!b.level || d.level === b.level)
+    && (!q || `${d.title} ${d.title_en ?? ""} ${d.description} ${d.description_en ?? ""} ${d.tags.join(" ")} ${d.author ?? ""} ${d.level ?? ""}`.toLowerCase().includes(q)));
   const chip = (code: string, label: string) => `<button class="fchip ${b.lang === code ? "on" : ""}" data-a="br-lang" data-k="${code}">${label}</button>`;
   const tile = (d: CatalogDeck) => {
     const have = inst.get(sourceKey(d));
     return `<button class="tile" data-a="br-open" data-id="${esc(sourceKey(d))}">
-      <div class="tile-em">${d.emoji ? esc(d.emoji) : ic("catalog")}</div>
+      <div class="tile-em">${d.emoji ? emo(d.emoji) : ic("catalog")}</div>
       <div class="tile-main"><div class="tile-t">${esc(deckTitle(d))}</div>
         <div class="tile-d">${esc(deckDesc(d))}</div>
-        <div class="tile-m"><span>${t("{n} карт.", { n: d.count })}</span>${d.lang_front ? `<span>${esc(langName(d.lang_front))}${d.lang_back && d.lang_back !== d.lang_front ? " → " + esc(langName(d.lang_back)) : ""}</span>` : ""}
+        <div class="tile-m">${d.level ? `<span class="lvtag">${esc(d.level)}</span>` : ""}<span>${t("{n} карт.", { n: d.count })}</span>${d.lang_front ? `<span>${esc(langName(d.lang_front))}${d.lang_back && d.lang_back !== d.lang_front ? " → " + esc(langName(d.lang_back)) : ""}</span>` : ""}
           ${d.audio ? `<span>${ic("sound", "tiny")} ${t("со звуком")}</span>` : ""}${d.source === "community" ? `<span>${esc(d.author || t("пользователь"))}</span>${d.downloads ? `<span>${ic("import", "tiny")} ${d.downloads}</span>` : ""}` : ""}${have ? `<span class="have">${ic("check", "tiny")} ${t("добавлена")}</span>` : ""}</div></div></button>`;
   };
   const search = `<input type="search" id="br-q" class="br-search" placeholder="${t("Поиск колод: язык, тема, автор…")}" value="${esc(b.q)}">
-    ${langs.length > 1 ? `<div class="fchips">${chip("", t("Все"))}${langs.map((l) => chip(l, langName(l))).join("")}</div>` : ""}`;
+    ${langs.length > 1 ? `<div class="fchips">${chip("", t("Все"))}${langs.map((l) => chip(l, langName(l))).join("")}</div>` : ""}
+    ${levels.length ? `<div class="fchips lv">${levels.map((l) => `<button class="fchip ${b.level === l ? "on" : ""}" data-a="br-level" data-k="${l}">${l}</button>`).join("")}</div>` : ""}`;
   const grid = b.loading ? `<div class="empty"><div class="em spin">${ic("sync")}</div>${t("Загружаю каталог…")}</div>`
     : list.length ? `<div class="tiles">${list.map(tile).join("")}</div>` : `<div class="empty"><div class="em">${ic("search")}</div>${b.tab === "community" && !pool.length ? t("Пока никто не опубликовал колоду — станьте первым!") : t("Ничего не найдено")}</div>`;
   const promo = `<div class="role-card"><div class="rc-col"><b>${ic("catalog")} ${t("Наборы")}</b><span>${t("Свободные колоды: добавляются целиком, учите в любом порядке, всё можно редактировать. Хороши для повторения и справочных тем.")}</span></div>
@@ -942,7 +1029,7 @@ function renderBrowser() {
         : !ses || !store.syncOn ? t("Чтобы публиковать, включите синхронизацию в Настройках — в Telegram вход автоматический.")
         : t("Выберите колоду — её смогут найти и добавить себе все пользователи {app}.", { app: APP })}</span></div>
       <button class="btn" data-a="share-pick" ${communityAvailable() && ses && store.syncOn ? "" : "disabled"}>${t("Опубликовать колоду")}</button></div>
-    ${mine.length ? `<div class="sec-t">${t("Мои публикации")}</div><div class="group">${mine.map(({ p, d }) => `<div class="item"><span>${d!.emoji ? esc(d!.emoji) + " " : ""}${esc(d!.name)}<br><span class="muted" style="font-size:12px">${t("скачиваний: {n}", { n: p.downloads })}</span></span><span class="row-ctl"><button class="btn sec" data-a="pub-edit" data-id="${d!.id}">${t("Обновить")}</button></span></div>`).join("")}</div>` : ""}`;
+    ${mine.length ? `<div class="sec-t">${t("Мои публикации")}</div><div class="group">${mine.map(({ p, d }) => `<div class="item"><span>${d!.emoji ? emo(d!.emoji) + " " : ""}${esc(d!.name)}<br><span class="muted" style="font-size:12px">${t("скачиваний: {n}", { n: p.downloads })}</span></span><span class="row-ctl"><button class="btn sec" data-a="pub-edit" data-id="${d!.id}">${t("Обновить")}</button></span></div>`).join("")}</div>` : ""}`;
   const err = b.error ? `<p class="hint">${ic("alert", "tiny")} ${t("Не удалось загрузить колоды пользователей")}: ${esc(b.error)}</p>` : "";
   el.innerHTML = head + `<div class="br-body">${shareCard}<div class="sec-t">${t("Колоды пользователей")}</div>${communityAvailable() ? search + grid : `<div class="empty"><div class="em">${ic("users")}</div>${t("Колоды пользователей появятся, когда подключён сервер синхронизации.")}</div>`}${err}</div>`;
 }
@@ -954,7 +1041,7 @@ function deckDetailHtml(b: Browser): string {
   const outdated = have && d.source === "spark" && Number(have.source.split("@")[1] ?? 0) < d.version;
   return `<div class="detail">
     <button class="btn sec" data-a="br-back">${ic("back")} ${t("Назад к каталогу")}</button>
-    <div class="d-hero"><div class="d-em">${d.emoji ? esc(d.emoji) : ic("catalog")}</div><div><h2>${esc(deckTitle(d))}</h2>
+    <div class="d-hero"><div class="d-em">${d.emoji ? emo(d.emoji) : ic("catalog")}</div><div><h2>${esc(deckTitle(d))}</h2>
       <div class="tile-m"><span>${t("{n} карт.", { n: d.count })}</span>${d.lang_front ? `<span>${esc(langName(d.lang_front))}${d.lang_back && d.lang_back !== d.lang_front ? " → " + esc(langName(d.lang_back)) : ""}</span>` : ""}<span>${d.source === "spark" ? APP : esc(d.author || t("пользователь"))}</span>${d.downloads ? `<span>${ic("import", "tiny")} ${d.downloads}</span>` : ""}</div></div></div>
     <p class="d-desc">${esc(deckDesc(d))}</p>
     <div class="d-actions">${have
@@ -1059,7 +1146,7 @@ async function openCourses(id: string | null = null) {
 function courseTile(c: Course): string {
   const L = uiL(), st = courseStats(c);
   return `<button class="ctile" data-a="crs-open" data-id="${c.id}">
-    <div class="ct-top"><span class="flag">${c.flag}</span><span class="lvl-badge">${esc(c.level[L])}</span>${c.audio ? `<span class="ct-snd">${ic("sound", "tiny")}</span>` : ""}</div>
+    <div class="ct-top"><span class="flag">${emo(c.flag)}</span><span class="lvl-badge">${esc(c.level[L])}</span>${c.cefr ? `<span class="lvtag">${esc(c.exam ?? c.cefr)}</span>` : ""}${c.audio ? `<span class="ct-snd">${ic("sound", "tiny")}</span>` : ""}</div>
     <div class="ct-t">${esc(c.title[L])}</div>
     <div class="ct-m">${t("{n} уровней", { n: c.units.length })} · ${t("{n} слов", { n: c.words })} · ${hours(c.minutes)}</div>
     ${st.deck ? `<div class="pbar"><i style="width:${Math.max(st.pct, 2)}%"></i><span>${t("{a}/{b} уровней", { a: st.done, b: c.units.length })}</span><span>${t("{a}/{b} слов", { a: st.studied, b: c.words })}</span></div>` : ""}
@@ -1073,10 +1160,15 @@ function renderCourses() {
   if (!cs) { el.innerHTML = ""; return; }
   const L = uiL(), course = cs.open ? cs.list.find((c) => c.id === cs.open) : null;
   if (!course) {
-    const list = visibleCourses(cs.list);
+    const all = visibleCourses(cs.list), q = (cs.q ?? "").trim().toLowerCase();
+    const langs = [...new Set(all.map((c) => c.lang))], lvls = LEVELS.filter((l) => all.some((c) => c.cefr === l));
+    const list = all.filter((c) => (!cs.lang || c.lang === cs.lang) && (!cs.lvl || c.cefr === cs.lvl) && (!q || `${c.title.ru} ${c.title.en} ${c.cefr ?? ""} ${c.exam ?? ""} ${c.level.ru} ${c.level.en}`.toLowerCase().includes(q)));
+    const chips = `<div class="fchips">${langs.map((l) => `<button class="fchip ${cs.lang === l ? "on" : ""}" data-a="crs-lang" data-k="${l}">${esc(langName(l))}</button>`).join("")}</div>
+      ${lvls.length > 1 || lvls.length === 1 && all.length > 1 ? `<div class="fchips lv">${lvls.map((l) => `<button class="fchip ${cs.lvl === l ? "on" : ""}" data-a="crs-lvl" data-k="${l}">${l}</button>`).join("")}</div>` : ""}`;
     el.innerHTML = `<div class="br-top"><button class="icon-btn" data-a="crs-close" title="${t("Закрыть")}">${ic("close")}</button><h1>${t("Курсы")}</h1></div>
-      <div class="br-body"><p class="crs-intro">${t("Курсы — учебный путь: 8 уровней, слова с произношением, озвучкой и живыми примерами. Уровни открываются по очереди, за них даётся опыт. Нужен просто набор слов для повторения — загляните в «Каталог → Наборы».")}</p>
-      <div class="ctiles">${list.map(courseTile).join("") || `<div class="muted">${t("Курсы загружаются…")}</div>`}</div></div>`;
+      <div class="br-body"><input type="search" id="crs-q" class="br-search" placeholder="${t("Поиск курса: язык, уровень (A1, N5)…")}" value="${esc(cs.q ?? "")}">${chips}<p class="crs-intro">${t("Курсы — учебный путь: 8 уровней, слова с произношением, озвучкой и живыми примерами. Уровни открываются по очереди, за них даётся опыт. Нужен просто набор слов для повторения — загляните в «Каталог → Наборы».")}</p>
+      <div class="ctiles">${list.map(courseTile).join("") || `<div class="muted">${all.length ? t("Ничего не найдено") : t("Курсы загружаются…")}</div>`}</div></div>`;
+    if (document.activeElement?.id === "crs-q") { /* фокус не теряем при перерисовке */ }
     return;
   }
   const st = courseStats(course), N = courseNative(course);
@@ -1089,7 +1181,7 @@ function renderCourses() {
       ${us.status === "locked" ? "" : ic("chevron", "u-chev")}</button>`;
   }).join("");
   const dueCount = st.deck ? sum(scan(Date.now(), allCards().filter((c) => c.deckId === st.deck!.id), allDecks())).r : 0;
-  el.innerHTML = `<div class="c-hero"><div class="c-hero-top"><button class="icon-btn" data-a="crs-back" title="${t("Назад")}">${ic("back")}</button><span class="flag big">${course.flag}</span><button class="icon-btn" data-a="crs-close" title="${t("Закрыть")}">${ic("close")}</button></div>
+  el.innerHTML = `<div class="c-hero"><div class="c-hero-top"><button class="icon-btn" data-a="crs-back" title="${t("Назад")}">${ic("back")}</button><span class="flag big">${emo(course.flag)}</span><button class="icon-btn" data-a="crs-close" title="${t("Закрыть")}">${ic("close")}</button></div>
       <h1>${esc(course.title[L])}</h1><div class="c-sub"><span class="lvl-badge">${esc(course.level[L])}</span> · ${t("{n} уровней", { n: course.units.length })}</div>
       <div class="pbar big"><i style="width:${Math.max(st.pct, 2)}%"></i><span>${st.pct}%</span></div>
       <div class="c-acts"><button class="btn" data-a="crs-next" ${cs.busy ? "disabled" : ""}>${ic("play")} ${cs.busy ? t("Загружаю…") : st.deck ? t("Продолжить") : t("Начать курс")}</button>
@@ -1171,7 +1263,7 @@ function renderStats() {
   const seg = (v: number, c: string, l: string) => v ? `<i style="flex:${v};background:${c}" title="${l}: ${v}"></i>` : "";
   const fmax = Math.max(1, ...forecast);
   const courses = embeddedCourses().filter((c) => courseDeck(c.id));
-  const cRows = courses.map((c) => { const cs = courseStats(c); return `<button class="mc" data-a="crs-home" data-id="${c.id}"><span class="mc-top"><span class="flag">${c.flag}</span><span class="mc-t">${esc(c.title[L])}</span></span><span class="pbar"><i style="width:${Math.max(cs.pct, 2)}%"></i><span>${t("{a}/{b} уровней", { a: cs.done, b: c.units.length })}</span><span>${t("{a}/{b} слов", { a: cs.studied, b: c.words })}</span></span></button>`; }).join("");
+  const cRows = courses.map((c) => { const cs = courseStats(c); return `<button class="mc" data-a="crs-home" data-id="${c.id}"><span class="mc-top"><span class="flag">${emo(c.flag)}</span><span class="mc-t">${esc(c.title[L])}</span></span><span class="pbar"><i style="width:${Math.max(cs.pct, 2)}%"></i><span>${t("{a}/{b} уровней", { a: cs.done, b: c.units.length })}</span><span>${t("{a}/{b} слов", { a: cs.studied, b: c.words })}</span></span></button>`; }).join("");
   const lv = dayLevel(st.streak), pct = Math.min(100, Math.round(((x.total - x.levelFrom) / Math.max(1, x.levelTo - x.levelFrom)) * 100));
   const tile = (icn: string, v: string, l: string, cls = "") => `<div class="stile ${cls}"><span class="st-ic">${ic(icn)}</span><b>${v}</b><span>${l}</span></div>`;
   const a30 = acc(month), a7 = acc(week);
@@ -1205,7 +1297,7 @@ function heroHtml(): string {
   const sub = !st.studiedToday ? (st.streak > 0 ? t("Позанимайтесь сегодня, чтобы не прервать серию") : t("Начните серию — позанимайтесь сегодня"))
     : [lv ? t(DAY_NAMES[lv]!) : "", next ? t("дальше — «{name}» через {n} дн.", { name: t(DAY_NAMES[lv + 1]!), n: next - st.streak }) : ""].filter(Boolean).join(" · ");
   const n = (v: number) => v.toLocaleString(getLang() === "en" ? "en-US" : "ru-RU");
-  return `<div class="hero ${st.studiedToday ? "" : "pending"}" style="--c:${dayColor(lv)};--hero-bg:${themeById(unlockedTheme(x.level)).css}">
+  return `<div class="hero ${st.studiedToday ? "" : "pending"}" style="--c:${dayColor(lv)}">
     <div class="hero-top"><button class="hero-user" data-a="settings"><span class="av">${avatar}</span><span class="nm">${esc(name)}</span>${ic("chevron")}</button>
       <button class="hero-lvl" data-a="level-open" title="${t("{a} из {b} опыта до следующего уровня", { a: n(x.total - x.levelFrom), b: n(x.levelTo - x.levelFrom) })}">${ic("spark")}<span>${t("Ур. {n}", { n: x.level })}</span><i><b style="width:${pct}%"></b></i></button></div>
     <button class="hero-streak" data-a="stats"><span class="hs-ic">${dayMark(lv, "xl")}</span><span class="hs-n">${st.streak}</span></button>
@@ -1219,12 +1311,12 @@ function myCoursesHtml(): string {
   const L = uiL();
   const head = `<div class="sec-h"><span>${t("Мои курсы")}</span><button class="link" data-a="courses-open">${t("Все курсы")} ${ic("chevron")}</button></div>`;
   if (!mine.length) {
-    const flags = visibleCourses(all).map((c) => c.flag).join(" ");
+    const flags = visibleCourses(all).map((c) => `<span class="flag">${emo(c.flag)}</span>`).join("");
     return head + `<button class="mc promo" data-a="courses-open"><span class="mc-flags">${flags}</span><span class="mc-t">${t("Курсы по уровням")}</span>
       <span class="mc-d">${t("Слова, произношение, озвучка и примеры — шаг за шагом")}</span><span class="mc-go">${t("Выбрать курс")} ${ic("chevron")}</span></button>`;
   }
   return head + mine.map((c) => { const st = courseStats(c); return `<button class="mc" data-a="crs-home" data-id="${c.id}">
-    <span class="mc-top"><span class="flag">${c.flag}</span><span class="lvl-badge">${esc(c.level[L])}</span></span><span class="mc-t">${esc(c.title[L])}</span>
+    <span class="mc-top"><span class="flag">${emo(c.flag)}</span><span class="lvl-badge">${esc(c.level[L])}</span></span><span class="mc-t">${esc(c.title[L])}</span>
     <span class="pbar"><i style="width:${Math.max(st.pct, 2)}%"></i><span>${t("{a}/{b} уровней", { a: st.done, b: c.units.length })}</span><span>${t("{a}/{b} слов", { a: st.studied, b: c.words })}</span></span></button>`; }).join("");
 }
 
@@ -1265,6 +1357,7 @@ function publishHtml(deckId: string): string {
       <div class="item"><textarea id="p-desc" maxlength="1000" placeholder="${t("О чём колода, для кого, откуда материал")}" style="min-height:80px"></textarea></div>
       <div class="item"><span>${t("Язык вопросов")}</span><select id="p-lf" style="width:160px">${langOpts("")}</select></div>
       <div class="item"><span>${t("Язык ответов")}</span><select id="p-lb" style="width:160px">${langOpts("")}</select></div>
+      <div class="item"><span>${t("Уровень")}</span><select id="p-lvl" style="width:160px"><option value="">—</option>${LEVELS.map((l) => `<option value="${l}">${LEVEL_NAMES[l]![getLang() === "en" ? 1 : 0]}</option>`).join("")}</select></div>
       <div class="item"><input type="text" id="p-tags" placeholder="${t("теги через пробел")}"></div>
       <div class="item"><span>${t("Автор")}</span><input type="text" id="p-author" value="${esc(author)}" maxlength="40" style="width:180px"></div></div>
     <p class="hint">${t("Карточек: {n}", { n: cards.length })}${pub ? " · " + t("уже опубликована, скачиваний: {n}", { n: pub.downloads }) : ""}</p>
@@ -1279,7 +1372,7 @@ async function doPublish(deckId: string) {
   })).filter((c) => c.front || c.back);
   if (!g("p-title")) return toast(t("Введите название"));
   try {
-    await publishDeck({ local_deck_id: deckId, title: g("p-title"), description: g("p-desc"), emoji: g("p-emoji"), lang_front: g("p-lf"), lang_back: g("p-lb"),
+    await publishDeck({ local_deck_id: deckId, title: g("p-title"), description: g("p-desc"), emoji: g("p-emoji"), lang_front: g("p-lf"), lang_back: g("p-lb"), level: g("p-lvl"),
       tags: g("p-tags").split(/\s+/).filter(Boolean).slice(0, 10), author_name: g("p-author"), cards });
     haptic("success"); toast(t("Колода опубликована")); S.modal = null; render();
     if (S.browser) void reloadCatalog();
@@ -1290,6 +1383,7 @@ async function doPublish(deckId: string) {
 const SYNC_LABEL = (): Record<string, string> => ({ off: t("выключена"), idle: t("синхронизировано"), syncing: t("идёт обмен…"), error: t("ошибка"), offline: t("нет связи"), auth: t("нужно войти") });
 
 function renderModal() {
+  document.getElementById("modal")?.classList.toggle("page", S.modal?.type === "settings");
   const el = $("modal"), m = S.modal;
   el.classList.toggle("on", !!m);
   if (m?.type !== "record" && rec.state !== "idle") resetRec();
@@ -1299,6 +1393,7 @@ function renderModal() {
     const d = allDecks().find((x) => x.id === m.id);
     el.innerHTML = `<div class="sheet"><h2>${d ? t("Настройки колоды") : t("Новая колода")}</h2>
       <div class="name-row"><input type="text" id="m-emoji" value="${esc(d?.emoji || "")}" placeholder="★" maxlength="4"><input type="text" id="m-name" placeholder="${t("Например, 🇪🇸 Испанский")}" value="${esc(d?.name ?? "")}" maxlength="80"></div>
+      ${d ? `<div class="group" style="margin-top:14px"><div class="item"><span class="deck-ico-prev">${d.icon ? `<img class="mimg deck-img" data-media="${esc(d.icon)}" alt="">` : `<span class="dip-ph">${d.emoji ? emo(d.emoji) : ic("catalog")}</span>`}<span><b>${t("Картинка колоды")}</b><br><span class="muted" style="font-size:12px">${t("своя картинка вместо значка; проверяется на 18+ прямо на устройстве")}</span></span></span><span class="row-ctl"><button class="btn sec" data-a="deck-icon">${t("Выбрать")}</button>${d.icon ? `<button class="btn sec" data-a="deck-icon-del">${t("Убрать")}</button>` : ""}</span></div></div>` : ""}
       <div class="group" style="margin-top:14px">
         <div class="item"><span><b>${t("Ввод ответа с клавиатуры")}</b><br><span class="muted" style="font-size:12px">${t("при верном слове — сразу следующая карточка, без Enter")}</span></span>
           <select id="m-typed" style="width:auto;max-width:100%;padding-right:30px">${([["inherit", t("Как в настройках")], ["on", t("Всегда вводить")], ["off", t("Не вводить")]] as [TypedMode, string][]).map(([v, n]) => `<option value="${v}" ${(d?.typedMode ?? "inherit") === v ? "selected" : ""}>${n}</option>`).join("")}</select></div>
@@ -1309,12 +1404,13 @@ function renderModal() {
       <div class="actions" style="display:flex;gap:8px;margin-top:16px">
         ${d ? `<button class="btn danger" data-a="deck-del">${t("Удалить")}</button>` : ""}<span style="flex:1"></span>
         <button class="btn sec" data-a="modal-close">${t("Отмена")}</button><button class="btn" data-a="deck-save">${t("Сохранить")}</button></div></div>`;
+    media(el);
     if (!isMobile()) $("m-name").focus();
   } else if (m.type === "share-pick") {
     const decks = allDecks();
     const ok = (d: DeckView) => !d.source.startsWith("apkg") && !d.source.startsWith("spark:") && !d.source.startsWith("community:");
     el.innerHTML = `<div class="sheet"><h2>${t("Какую колоду опубликовать?")}</h2>
-      <div class="group">${decks.map((d) => { const n = allCards().filter((c) => c.deckId === d.id).length; return `<div class="item"><span>${d.emoji ? esc(d.emoji) + " " : ""}${esc(d.name)}<br><span class="muted" style="font-size:12px">${ok(d) ? t("Карточек: {n}", { n }) : d.source.startsWith("apkg") ? t("из Anki — публиковать нельзя") : t("из каталога")}</span></span>
+      <div class="group">${decks.map((d) => { const n = allCards().filter((c) => c.deckId === d.id).length; return `<div class="item"><span>${d.emoji ? emo(d.emoji) + " " : ""}${esc(d.name)}<br><span class="muted" style="font-size:12px">${ok(d) ? t("Карточек: {n}", { n }) : d.source.startsWith("apkg") ? t("из Anki — публиковать нельзя") : t("из каталога")}</span></span>
         <button class="btn sec" data-a="pub-edit" data-id="${d.id}" ${ok(d) && n ? "" : "disabled"}>${t("Выбрать")}</button></div>`; }).join("") || `<div class="item muted">${t("У вас пока нет своих колод")}</div>`}</div>
       <div style="text-align:right;margin-top:10px"><button class="btn sec" data-a="modal-close">${t("Отмена")}</button></div></div>`;
   } else if (m.type === "attach") {
@@ -1374,45 +1470,51 @@ function renderModal() {
       <button class="btn sec" data-a="modal-close">${t("Отмена")}</button><button class="btn" data-a="bulk-add">${t("Добавить")}</button></div></div>`;
     if (!isMobile()) $("m-bulk").focus();
   } else if (m.type === "settings") {
-    const sw = ["#3390ec", "#34c759", "#af52de", "#7c3aed", "#ff9500", "#ff2d55"].map((c) => `<button data-a="accent" data-c="${c}" class="${s.accent === c ? "on" : ""}" style="background:${c}"></button>`).join("");
+    const sw = ["#3390ec", "#34c759", "#af52de", "#7c3aed", "#ff9500", "#ff2d55", "#14b8a6", "#f43f5e"].map((c) => `<button data-a="accent" data-c="${c}" class="${s.accent === c && !(THEMES.some((x) => x.id === s.heroTheme && x.accent)) ? "on" : ""}" style="background:${c}" title="${c}"></button>`).join("");
     const th = (["auto", "light", "dark"] as const).map((x, i) => `<button data-a="theme" data-t="${x}" class="${s.theme === x ? "on" : ""}">${[t("Авто"), t("Светлая"), t("Тёмная")][i]}</button>`).join("");
-    const lg = ([["auto", t("Авто")], ["ru", "Русский"], ["en", "English"]] as [string, string][]).map(([v, n]) => `<button data-a="lang" data-k="${v}" class="${(s.lang ?? "auto") === v ? "on" : ""}">${n}</button>`).join("");
-    el.innerHTML = `<div class="sheet"><h2>${t("Настройки")}</h2>
+    const lg = ([["auto", t("Авто")], ["ru", "RU"], ["en", "EN"]] as [string, string][]).map(([v, n]) => `<button data-a="lang" data-k="${v}" class="${(s.lang ?? "auto") === v ? "on" : ""}">${n}</button>`).join("");
+    const u = tgUser(), x = xp(), L = uiL(), photo = (u as { photo_url?: string } | null)?.photo_url;
+    const avatar = photo ? `<img src="${esc(photo)}" alt="">` : `<span>${esc((u?.first_name ?? "S").slice(0, 1).toUpperCase())}</span>`;
+    const row = (icn: string, title: string, desc: string, ctl: string, col = "") => `<div class="item srow"><span class="sr-ic ${col}">${ic(icn)}</span><span class="sw-txt"><span class="sw-t">${title}</span>${desc ? `<span class="sw-d">${desc}</span>` : ""}</span>${ctl}</div>`;
+    const sec = (icn: string, title: string, body: string, hint = "") => `<section class="s-sec"><h3 class="s-h">${ic(icn)}<span>${title}</span></h3><div class="group">${body}</div>${hint ? `<p class="hint">${hint}</p>` : ""}</section>`;
+    el.innerHTML = `<div class="sheet settings-sheet"><div class="s-top"><button class="icon-btn" data-a="modal-close" title="${t("Закрыть")}">${ic("back")}</button><h2>${t("Настройки")}</h2></div>
+      <button class="s-prof" data-a="level-open"><span class="av">${avatar}</span><span class="sp-main"><b>${esc(u?.first_name || t("Мой Spark"))}</b><span>${esc(titleOf(x.level)[L])} · ${t("Ур. {n}", { n: x.level })}</span></span>${ic("chevron")}</button>
       ${accountGroup()}
-      <h3 class="grp-t">${t("Внешний вид")}</h3>
-      <div class="group"><div class="item"><span>${t("Язык")}</span><span class="seg">${lg}</span></div>
-        <div class="item"><span>${t("Тема")}</span><span class="seg">${th}</span></div>
-        <div class="item"><span>${t("Цвет акцента")}</span><span class="sw">${sw}</span></div></div>
-      ${inTelegram() ? `<p class="hint">${t("«Авто» — светлая или тёмная, как в Telegram. Цвета у Spark свои.")}</p>` : ""}
+      ${sec("palette", t("Внешний вид"),
+        row("globe", t("Язык"), "", `<span class="seg">${lg}</span>`, "c1") + row("moon", t("Тема"), "", `<span class="seg">${th}</span>`, "c2") + row("palette", t("Цвет акцента"), t("цвет кнопок и шапки главной"), `<span class="sw">${sw}</span>`, "c3"),
+        inTelegram() ? t("«Авто» — светлая или тёмная, как в Telegram. Цвета у Spark свои. Оформления за уровни — в окне уровня.") : t("Оформления за уровни выбираются в окне уровня (нажмите на уровень на главной)."))}
+      ${sec("target", t("Обучение"),
+        row("target", t("Желаемое удержание"), `${Math.round(s.retention * 100)}%`, `<input type="range" min="0.7" max="0.97" step="0.01" value="${s.retention}" id="s-ret">`, "c4") +
+        row("layers", t("Новых карточек в день"), t("лимит новых слов; «Учить ещё» добавляет сверх него"), `<input type="number" id="s-new" min="0" max="999" value="${s.newPerDay}" style="width:80px">`, "c1") +
+        switchRow("s-typed", s.typedAll, t("Вводить ответы с клавиатуры"), t("при верном слове — сразу следующая карточка, без Enter (можно переопределить для колоды)"), false, "keyboard") +
+        switchRow("s-shuffle", s.shuffle !== false, t("Перемешивать карточки"), t("новые и повторения идут в случайном порядке — не запоминается последовательность"), false, "shuffle") +
+        switchRow("s-manual", s.manualGrades, t("Оценивать вручную (4 кнопки)"), t("по умолчанию выключено: сложность определяет умный таймер"), false, "sync"),
+        t("Умный таймер замеряет, сколько вы думали, и сравнивает с вашей нормой. Быстро — вернётся через дни, с раздумьем — завтра, долго или с подсказкой — через несколько минут. Не согласны — кнопка «Не помню»."))}
+      ${sec("headphones", t("Звук и режимы"),
+        switchRow("s-autoaudio", s.autoAudio, t("Автоматически проигрывать звук"), t("произношение звучит при показе карточки и ответа"), false, "sound") +
+        (getSession()?.user.telegram ? switchRow("s-remind", s.botRemind !== false, t("Напоминания в чате с ботом"), t("не чаще раза в неделю, а потом раз в месяц, если вы не заходите; бот получает только итоги: число слов, уровень и серию"), false, "bolt") : "") +
+        switchRow("s-focus", s.focus === true, t("Только слова"), t("прячет опыт, серии, курсы и награды — остаются одни карточки"), false, "bolt"))}
       ${launchGroup()}
-      <h3 class="grp-t">${t("Повторение")}</h3>
-      <div class="group"><div class="item"><span>${t("Желаемое удержание")}<br><span class="muted" style="font-size:12px">${Math.round(s.retention * 100)}%</span></span>
-        <input type="range" min="0.7" max="0.97" step="0.01" value="${s.retention}" id="s-ret"></div>
-        <div class="item"><span>${t("Новых карточек в день")}</span><input type="number" id="s-new" min="0" max="999" value="${s.newPerDay}" style="width:80px"></div>
-        ${switchRow("s-typed", s.typedAll, t("Вводить ответы с клавиатуры"), t("при верном слове — сразу следующая карточка, без Enter (можно переопределить для колоды)"))}
-        ${switchRow("s-autoaudio", s.autoAudio, t("Автоматически проигрывать звук"), t("произношение звучит при показе карточки и ответа"))}
-        ${switchRow("s-manual", s.manualGrades, t("Оценивать вручную (4 кнопки)"), t("по умолчанию выключено: сложность определяет умный таймер"))}</div>
-      <p class="hint">${t("Умный таймер замеряет, сколько вы думали, и сравнивает с вашей нормой. Быстро — вернётся через дни, с раздумьем — завтра, долго или ошибка — через 5 минут. Не согласны — кнопка «Не помню».")}</p>
       ${filesGroup()}
-      <h3 class="grp-t">${t("Резервная копия")}</h3>
-      <div class="group"><div class="item"><span>${t("Все колоды и прогресс одним файлом")}</span>${inTelegram()
+      ${sec("database", t("Резервная копия"), row("database", t("Все колоды и прогресс одним файлом"), "", inTelegram()
         ? `<span class="row-ctl"><button class="btn sec" data-a="copy-backup">${t("Копировать")}</button><button class="btn sec" data-a="paste-open">${t("Вставить")}</button></span>`
-        : `<span class="row-ctl"><button class="btn sec" data-a="export">${t("Сохранить")}</button><button class="btn sec" data-a="import-pick">${t("Загрузить")}</button></span>`}</div></div>
-      <p class="hint">${t("Загрузка копии объединяется с текущими данными, ничего не затирается.")}<br>${APP} ${__VERSION__} · ID ${store.deviceId.slice(0, 8)}</p>
-      <div style="text-align:right"><button class="btn" data-a="modal-close">${t("Готово")}</button></div></div>`;
+        : `<span class="row-ctl"><button class="btn sec" data-a="export">${t("Сохранить")}</button><button class="btn sec" data-a="import-pick">${t("Загрузить")}</button></span>`, "c5"), t("Загрузка копии объединяется с текущими данными, ничего не затирается."))}
+      ${sec("info", t("О приложении"), `<button class="item srow linkrow" data-a="tips-open"><span class="sr-ic c6">${ic("bulb")}</span><span class="sw-txt"><span class="sw-t">${t("Советы по изучению")}</span><span class="sw-d">${t("как учить эффективнее: Spark, языки, память")}</span></span>${ic("chevron")}</button>
+        ${row("info", `${APP} ${__VERSION__}`, `ID ${store.deviceId.slice(0, 8)}`, "", "c6")}`)}
+      </div>`;
   } else if (m.type === "level") {
     const x = xp(), L = uiL(), need = x.levelTo - x.levelFrom, have = Math.max(0, x.total - x.levelFrom), pct = Math.min(100, Math.round((have / need) * 100));
     const n = (v: number) => v.toLocaleString(getLang() === "en" ? "en-US" : "ru-RU");
     const rw = rewardsList(), nextRw = rw.find((r) => r.level > x.level);
     const rows = rw.map((r) => `<div class="rw ${r.level <= x.level ? "got" : ""}"><span class="rw-ic">${r.level <= x.level ? ic("check") : ic("lock")}</span><span class="rw-t">${esc(r[L])}</span><span class="rw-l">${t("ур. {n}", { n: r.level })}</span></div>`).join("");
     const themes = THEMES.map((th) => { const ok = th.level <= x.level, on = ok && unlockedTheme(x.level) === th.id;
-      return `<button class="th ${on ? "on" : ""} ${ok ? "" : "lock"}" ${ok ? `data-a="hero-theme" data-id="${th.id}"` : "disabled"} title="${esc(th.name[L])}${ok ? "" : " · " + t("ур. {n}", { n: th.level })}" style="background:${th.css}">${ok ? (on ? ic("check") : "") : ic("lock")}</button>`; }).join("");
+      return `<button class="th ${on ? "on" : ""} ${ok ? "" : "lock"}" ${ok ? `data-a="hero-theme" data-id="${th.id}"` : "disabled"} title="${esc(th.name[L])}${ok ? "" : " · " + t("ур. {n}", { n: th.level })}" style="background:${th.css || "var(--hero-bg-custom)"}">${ok ? (on ? ic("check") : "") : ic("lock")}</button>`; }).join("");
     el.innerHTML = `<div class="sheet lvl-sheet"><div class="lv-head"><div class="lv-badge">${ic("spark")}<b>${x.level}</b></div><div><h2>${t("Уровень {n}", { n: x.level })}</h2><div class="lv-title">${esc(titleOf(x.level)[L])}</div></div></div>
       <div class="lv-bar"><i style="width:${Math.max(pct, 2)}%"></i></div>
       <div class="lv-need"><b>${n(have)}</b> / ${n(need)} XP <span class="muted">· ${t("до уровня {l} осталось {n} XP", { l: x.level + 1, n: n(Math.max(0, x.levelTo - x.total)) })}</span></div>
       <div class="lv-tiles"><div><b>${n(x.total)}</b><span>${t("всего XP")}</span></div><div><b>${x.today >= 0 ? "+" : "−"}${n(Math.abs(x.today))}</b><span>${t("сегодня")}</span></div><div><b>${n(x.bestDay)}</b><span>${t("лучший день")}</span></div></div>
       ${nextRw ? `<div class="lv-next">${ic("trophy")} ${t("Следующая награда — на уровне {n}", { n: nextRw.level })}: <b>${esc(nextRw[L])}</b></div>` : ""}
-      <div class="sec-t">${t("Тема главной")}</div><div class="themes">${themes}</div>
+      <div class="sec-t">${t("Оформление")} <span class="muted" style="font-weight:400">· ${t("цвет приложения и шапка главной")}</span></div><div class="themes">${themes}</div>
       <div class="sec-t">${t("Награды за уровни")}</div><div class="rws">${rows}</div>
       <div class="sec-t">${t("Как начисляется опыт")}</div>
       <ul class="xp-how"><li>${t("Верный ответ: +{n} XP, «трудно»: +{h} XP, ошибка: −{w} XP", { n: XP_RULES.good, h: XP_RULES.hard, w: Math.abs(XP_RULES.wrong) })}</li><li>${t("Новая карточка: ещё +{n} XP за первую встречу", { n: XP_RULES.first })}</li>
@@ -1586,7 +1688,7 @@ async function runImport() {
     const d = p.result.decks[i]!, name = p.names[i]!.trim() || d.name;
     const found = p.merge ? existing.find((x) => x.name.toLowerCase() === name.toLowerCase()) : undefined;
     const id = found?.id ?? store.addDeck(name);
-    if (!found) { existing.push({ id, name, created: Date.now(), typedMode: "inherit", newPerDay: null, source: "", emoji: "" }); if (p.result.source === "apkg") store.set("deck", id, "source", "apkg"); }
+    if (!found) { existing.push({ id, name, created: Date.now(), typedMode: "inherit", newPerDay: null, source: "", emoji: "", icon: "" }); if (p.result.source === "apkg") store.set("deck", id, "source", "apkg"); }
     lastId = id;
     const seen = new Set(p.skipDup ? snapshot.filter((c) => c.deckId === id).map((c) => c.front + "\u0000" + c.back) : []);
     for (const c of d.cards) {
@@ -1740,9 +1842,12 @@ document.addEventListener("click", (e) => {
     case "stats": S.stats = true; render(); $("statspage").scrollTop = 0; break;
     case "stats-close": S.stats = false; render(); break;
     case "level-open": S.modal = { type: "level" }; renderModal(); updateChrome(); break;
-    case "hero-theme": store.setSetting("heroTheme", id!); renderModal(); renderStreak(true); break;
+    case "hero-theme": store.setSetting("heroTheme", id!); applyTheme(); renderModal(); renderStreak(true); break;
     case "browser-open": void openBrowser("spark"); break;
-    case "tips-open": S.tips = { tab: "spark" }; render(); break;
+    case "tips-open": S.tips = { tab: "spark" }; S.modal = null; render(); break;
+    case "deck-icon": ($("icon-file") as HTMLInputElement).click(); break;
+    case "deck-icon-del": if (S.modal?.id) { store.set("deck", S.modal.id, "icon", ""); renderModal(); render(); } break;
+    case "continue": { const tag = el.dataset.u; startReview(id!, tag ? { tag, title: el.dataset.t ?? "" } : undefined); break; }
     case "courses-open": void openCourses(); break;
     case "crs-home": void openCourses(id!); break;
     case "crs-open": if (S.courses) { S.courses.open = id!; renderCourses(); updateChrome(); $("courses").scrollTop = 0; } break;
@@ -1755,6 +1860,9 @@ document.addEventListener("click", (e) => {
     case "tips-tab": if (S.tips) { S.tips.tab = el.dataset.k!; renderTips(); } break;
     case "br-close": S.browser = null; render(); break;
     case "br-tab": if (S.browser) { S.browser.tab = el.dataset.k as "spark" | "community" | "web"; S.browser.open = null; S.browser.lang = ""; renderBrowser(); updateChrome(); } break;
+    case "br-level": if (S.browser) { S.browser.level = S.browser.level === el.dataset.k ? "" : el.dataset.k; renderBrowser(); } break;
+    case "crs-lang": if (S.courses) { S.courses.lang = S.courses.lang === el.dataset.k ? "" : el.dataset.k!; renderCourses(); } break;
+    case "crs-lvl": if (S.courses) { S.courses.lvl = S.courses.lvl === el.dataset.k ? "" : el.dataset.k!; renderCourses(); } break;
     case "br-lang": if (S.browser) { S.browser.lang = el.dataset.k ?? ""; renderBrowser(); } break;
     case "br-open": void openCatalogDeck(id!); break;
     case "br-back": if (S.browser) { S.browser.open = null; S.browser.cards = null; renderBrowser(); updateChrome(); } break;
@@ -1791,7 +1899,7 @@ document.addEventListener("click", (e) => {
     case "rv-forgot": applyPending(1); break;
     case "rv-right": markRight(); break;
     case "rate": rateManual(Number(el.dataset.g) as Rating); break;
-    case "accent": store.setSetting("accent", el.dataset.c!); applyTheme(); renderModal(); break;
+    case "accent": store.setSetting("accent", el.dataset.c!); store.setSetting("heroTheme", "night"); applyTheme(); renderModal(); renderStreak(true); break;
     case "theme": store.setSetting("theme", el.dataset.t as "auto"); applyTheme(); renderModal(); break;
     case "export": {
       if (fsApi) { fsApi.exportDialog(store.exportJSON(), `spark-backup-${new Date().toISOString().slice(0, 10)}.json`).then((p) => p && toast(t("Сохранено") + ": " + p)); break; }
@@ -1821,9 +1929,14 @@ document.addEventListener("input", (e) => {
     S.browser.q = el.value;
     const pos = el.selectionStart; renderBrowser();
     const nq = $("br-q") as HTMLInputElement; nq.focus(); nq.setSelectionRange(pos, pos);
+  } else if (el.id === "icon-file") {
+    const f = (el as HTMLInputElement).files?.[0]; (el as HTMLInputElement).value = ""; if (f && S.modal?.id) void setDeckIcon(S.modal.id, f);
+  } else if (el.id === "crs-q" && S.courses) {
+    S.courses.q = el.value; const pos = el.selectionStart ?? el.value.length; renderCourses(); const nq = $("crs-q") as HTMLInputElement; nq.focus(); nq.setSelectionRange(pos, pos);
   } else if (el.id === "rv-input") {
     const x = ctx();
-    if (x?.live && !x.r.show && isCorrect(el.value, x.f.answers)) checkTyped(el.value);
+    if (x && !x.r.show && /^(hesoyam|gamemode ?[01])$/i.test(el.value.trim())) { easterEgg(el.value); el.value = ""; }
+    else if (x?.live && !x.r.show && isCorrect(el.value, x.f.answers)) checkTyped(el.value);
   } else if (FIELD_MAP[el.id]) {
     const id = activeId();
     if (id) {
@@ -1844,8 +1957,11 @@ document.addEventListener("change", (e) => {
   else if (el.id === "f-typed") { if (activeId()) { store.set("card", activeId()!, "typed", (el as HTMLInputElement).checked); renderList(); } else store.setSetting("typedDefault", (el as HTMLInputElement).checked); }
   else if (el.id === "f-susp" && activeId()) { store.set("card", activeId()!, "suspended", (el as HTMLInputElement).checked); renderList(); }
   else if (el.id === "s-typed") store.setSetting("typedAll", (el as HTMLInputElement).checked);
+  else if (el.id === "s-focus") { store.setSetting("focus", (el as HTMLInputElement).checked); render(); }
+  else if (el.id === "s-shuffle") store.setSetting("shuffle", (el as HTMLInputElement).checked);
   else if (el.id === "s-manual") store.setSetting("manualGrades", (el as HTMLInputElement).checked);
   else if (el.id === "s-autoaudio") store.setSetting("autoAudio", (el as HTMLInputElement).checked);
+  else if (el.id === "s-remind") { store.setSetting("botRemind", (el as HTMLInputElement).checked); lastReport = ""; void reportProgress(); }
   else if (el.id === "s-sync") void setCloud((el as HTMLInputElement).checked);
   else if (el.dataset.sel !== undefined && pending) { pending.sel[Number(el.dataset.sel)] = (el as HTMLInputElement).checked; renderModal(); }
   else if (el.id === "i-merge" && pending) pending.merge = (el as HTMLInputElement).checked;
@@ -1936,6 +2052,13 @@ async function checkUpdate() {
   } catch { /* нет сети или version.json */ }
 }
 
+/** Заставка при запуске: показывается минимум ~1.3 с, потом плавно растворяется. */
+function hideSplash() {
+  const sp = document.getElementById("splash");
+  if (!sp) return;
+  const wait = Math.max(0, (matchMedia("(prefers-reduced-motion: reduce)").matches ? 250 : 1350) - performance.now());
+  setTimeout(() => { sp.classList.add("out"); setTimeout(() => sp.remove(), 700); }, wait);
+}
 async function boot() {
   await loadTelegram();
   initTelegram(goBack, () => store && applyTheme());
@@ -1956,6 +2079,7 @@ async function boot() {
   (window as unknown as { __recall: unknown }).__recall = (window as unknown as { __spark: unknown }).__spark;
   render();
   sync.startBackground();
+  hideSplash();
   void checkUpdate(); setInterval(() => void checkUpdate(), 30 * 60_000);
   document.addEventListener("visibilitychange", () => { if (document.visibilityState === "visible") void checkUpdate(); });
   // Первый запуск. В Telegram с настроенным сервером — сразу «на всех устройствах», вход сам.
@@ -1968,5 +2092,26 @@ async function boot() {
   } else if (choice === "cloud" && inTelegram() && getConfig() && !getSession()) void telegramLogin(true);
   else if (sync.enabled) void sync.runNow();
 }
+// Итоги для напоминаний бота: только числа (слова, уровень, серия, сколько карточек ждёт) и время последнего занятия.
+let lastReport = "";
+async function reportProgress() {
+  const cfg = getConfig(), ses = getSession();
+  if (!cfg || !ses?.user.telegram || getChoice() !== "cloud") return;
+  const now = Date.now(), x = xp(), st = dayStreak();
+  let learned = 0, due = 0;
+  for (const s of store.states.values()) if (s.phase !== "new") { learned++; if (s.due <= now) due++; }
+  const last = store.reviews.reduce((a, r) => Math.max(a, r.ts), 0);
+  const row = { words: learned, due, level: x.level, xp_left: Math.max(0, x.levelTo - x.total), streak: st.streak, best_streak: st.best, last_study: last ? new Date(last).toISOString() : null, remind: store.settings.botRemind !== false };
+  const sig = JSON.stringify(row);
+  if (sig === lastReport) return;
+  try {
+    const tok = await authToken(cfg);
+    const r = await fetch(`${cfg.url}/rest/v1/bot_progress?on_conflict=user_id`, { method: "POST", headers: { apikey: cfg.key, Authorization: `Bearer ${tok}`, "Content-Type": "application/json", Prefer: "resolution=merge-duplicates,return=minimal" }, body: JSON.stringify(row) });
+    if (r.ok) lastReport = sig;
+  } catch { /* нет сети или таблицы — не мешаем */ }
+}
+setTimeout(() => void reportProgress(), 8000);
+setInterval(() => void reportProgress(), 90000);
+document.addEventListener("visibilitychange", () => { if (document.visibilityState === "hidden") void reportProgress(); });
 void boot();
 export type { Lang };

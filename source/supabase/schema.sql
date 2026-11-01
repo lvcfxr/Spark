@@ -119,3 +119,41 @@ create table if not exists public.bot_state (key text primary key, value text);
 -- доступ только у функции telegram-bot (ключ service_role); приложению и посторонним — ничего
 alter table public.bot_chats enable row level security;
 alter table public.bot_state enable row level security;
+
+-- уровень колоды (A1–C2, N5–N1) для поиска и фильтров в сообществе
+alter table public.shared_decks add column if not exists level text not null default '';
+
+-- итоги для напоминаний бота (через неделю и через месяц без занятий): только числа, без карточек
+create table if not exists public.bot_progress (
+  user_id uuid primary key references auth.users(id) on delete cascade,
+  tg_id bigint,
+  words int not null default 0,
+  due int not null default 0,
+  level int not null default 1,
+  xp_left int not null default 0,
+  streak int not null default 0,
+  best_streak int not null default 0,
+  last_study timestamptz,
+  remind boolean not null default true,
+  stage int not null default 0,          -- 0 — ничего не слали, 1 — недельное, 2 — месячное
+  updated_at timestamptz not null default now()
+);
+alter table public.bot_progress enable row level security;
+drop policy if exists bot_progress_own on public.bot_progress;
+create policy bot_progress_own on public.bot_progress for all to authenticated
+  using (user_id = auth.uid()) with check (user_id = auth.uid());
+-- номер в Telegram берём из аккаунта, а не из запроса: нельзя подставить чужой; новое занятие сбрасывает счётчик напоминаний
+create or replace function public.bot_progress_guard() returns trigger language plpgsql security definer set search_path = public, auth as $$
+begin
+  new.user_id := auth.uid();
+  new.tg_id := (select (raw_user_meta_data->>'telegram_id')::bigint from auth.users where id = auth.uid());
+  new.updated_at := now();
+  if tg_op = 'INSERT' then new.stage := 0;
+  else
+    new.stage := old.stage;
+    if new.last_study is not null and (old.last_study is null or new.last_study > old.last_study) then new.stage := 0; end if;
+  end if;
+  return new;
+end $$;
+drop trigger if exists bot_progress_guard on public.bot_progress;
+create trigger bot_progress_guard before insert or update on public.bot_progress for each row execute function public.bot_progress_guard();

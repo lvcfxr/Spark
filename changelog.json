@@ -1,6 +1,32 @@
 {
  "releases": [
   {
+   "version": "0.15",
+   "date": "01.11.2026",
+   "ru": [
+    "Озвучка заново: женские голоса, слова проверялись автоматическим распознаванием речи",
+    "Флаги теперь картинками (на Windows они были буквами «ES», «GB»), своя картинка для колоды с проверкой на 18+ прямо на устройстве",
+    "Заставка при запуске, кнопка «Продолжить» с последнего места и режим «Только слова» без опыта и серий",
+    "Карточки перемешиваются, чтобы не запоминалась последовательность (можно выключить в настройках)",
+    "Цвет акцента и шапка главной теперь одного цвета; оформления за уровни меняют и то и другое",
+    "Настройки переделаны: разделы, иконки, профиль наверху",
+    "Теги уровней (A1–C2, N5–N1): поиск и фильтры в курсах, наборах и сообществе",
+    "Анимация серии сдвинута в угол и не закрывает карточку; в ответе на карточку можно найти пару секретов",
+    "Бот напомнит о себе через неделю и через месяц без занятий — с вашими цифрами, один раз на срок; отключается в настройках и командой /remind"
+   ],
+   "en": [
+    "Audio redone with female voices, words checked by automatic speech recognition",
+    "Flags are now pictures (on Windows they showed as “ES”, “GB”), your own picture for a deck with an on-device 18+ check",
+    "Launch splash, a “Continue” button where you left off, and a “Words only” mode without XP and streaks",
+    "Cards are shuffled so you don't memorise the order (can be turned off in settings)",
+    "Accent colour and the home header now match; level looks change both",
+    "Settings redesigned: sections, icons, profile on top",
+    "Level tags (A1–C2, N5–N1): search and filters in courses, sets and community",
+    "The streak milestone moved to the corner and no longer covers the card; a couple of secrets hide in the answer box",
+    "The bot nudges you after a week and after a month away, using your own numbers, once per interval; turn off in Settings or with /remind"
+   ]
+  },
+  {
    "version": "0.14",
    "date": "01.11.2026",
    "ru": [

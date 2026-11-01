@@ -22,7 +22,8 @@
    "audio": true,
    "natives": [
     "ru"
-   ]
+   ],
+   "level": "A1"
   },
   {
    "id": "en-irregular",
@@ -45,7 +46,8 @@
    "audio": true,
    "natives": [
     "ru"
-   ]
+   ],
+   "level": "A2"
   },
   {
    "id": "es-basics",
@@ -69,7 +71,8 @@
    "natives": [
     "ru",
     "en"
-   ]
+   ],
+   "level": "A1"
   },
   {
    "id": "de-basics",
@@ -93,7 +96,8 @@
    "natives": [
     "ru",
     "en"
-   ]
+   ],
+   "level": "A1"
   },
   {
    "id": "ru-basics",
@@ -116,7 +120,8 @@
    "audio": true,
    "natives": [
     "en"
-   ]
+   ],
+   "level": "A1"
   },
   {
    "id": "capitals",
@@ -137,7 +142,8 @@
    "natives": [
     "ru",
     "en"
-   ]
+   ],
+   "level": ""
   },
   {
    "id": "elements",
@@ -159,7 +165,8 @@
    "natives": [
     "ru",
     "en"
-   ]
+   ],
+   "level": ""
   }
  ]
 }

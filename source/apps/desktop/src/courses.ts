@@ -9,6 +9,8 @@ export type L2 = { ru: string; en: string };
 export interface CourseUnit { id: string; title: L2; count: number }
 export interface Course {
   id: string; lang: string; flag: string; natives: string[]; title: L2; level: L2; description: L2; author: string;
+  /** CEFR (A1–C2) или JLPT (N5–N1): для поиска и фильтров */
+  cefr?: string; exam?: string;
   words: number; minutes: number; units: CourseUnit[]; version: number; file: string; audio: boolean;
 }
 export interface CourseCard { id: string; unit: string; front: string; hint: string; back: L2; extra: L2 }

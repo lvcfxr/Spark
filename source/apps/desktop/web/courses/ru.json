@@ -5,1121 +5,1121 @@
 {
 "id": "hello",
 "unit": "greet",
-"front": "привет [audio](media:7b5bc98941c1769e09cda430)",
+"front": "привет [audio](media:71f35dee7295b829c9ffc390)",
 "hint": "privét",
 "back": {
 "ru": "привет; здравствуйте",
 "en": "hello"
 },
 "extra": {
-"ru": "> Привет! Рад тебя видеть. [audio](media:ecdf1be13f4edc117f5174a6)\n> — Привет! Рад тебя видеть.",
-"en": "Formal: здравствуйте (zdrávstvuyte).\n> Привет! Рад тебя видеть. [audio](media:ecdf1be13f4edc117f5174a6)\n> — Hello! Nice to see you."
+"ru": "> Привет! Рад тебя видеть. [audio](media:149790111ddfc36ed23e8032)\n> — Привет! Рад тебя видеть.",
+"en": "Formal: здравствуйте (zdrávstvuyte).\n> Привет! Рад тебя видеть. [audio](media:149790111ddfc36ed23e8032)\n> — Hello! Nice to see you."
 }
 },
 {
 "id": "bye",
 "unit": "greet",
-"front": "до свидания [audio](media:43c0ae69c4cef6f7539a3a06)",
+"front": "до свидания [audio](media:396cbe948176cc1807932659)",
 "hint": "do svidániya",
 "back": {
 "ru": "до свидания",
 "en": "goodbye"
 },
 "extra": {
-"ru": "> До свидания, до завтра! [audio](media:6e02c3e86829a3310b457313)\n> — До свидания, до завтра!",
-"en": "Informal: пока (poká).\n> До свидания, до завтра! [audio](media:6e02c3e86829a3310b457313)\n> — Goodbye, see you tomorrow!"
+"ru": "> До свидания, до завтра! [audio](media:f2103bad17c1de43baa34568)\n> — До свидания, до завтра!",
+"en": "Informal: пока (poká).\n> До свидания, до завтра! [audio](media:f2103bad17c1de43baa34568)\n> — Goodbye, see you tomorrow!"
 }
 },
 {
 "id": "thanks",
 "unit": "greet",
-"front": "спасибо [audio](media:5d856bded7c71cd18447b105)",
+"front": "спасибо [audio](media:f2c740e3bf2ac1eb457ff219)",
 "hint": "spasíbo",
 "back": {
 "ru": "спасибо",
 "en": "thank you"
 },
 "extra": {
-"ru": "> Спасибо за помощь. [audio](media:6efe0dfdf1cd643b39c1f9da)\n> — Спасибо за помощь.",
-"en": "> Спасибо за помощь. [audio](media:6efe0dfdf1cd643b39c1f9da)\n> — Thank you for the help."
+"ru": "> Спасибо за помощь. [audio](media:fa815fdb6a3ca5c152805105)\n> — Спасибо за помощь.",
+"en": "> Спасибо за помощь. [audio](media:fa815fdb6a3ca5c152805105)\n> — Thank you for the help."
 }
 },
 {
 "id": "please",
 "unit": "greet",
-"front": "пожалуйста [audio](media:11569456d51c625da7f801c9)",
+"front": "пожалуйста [audio](media:e1eee84178be192fad08ed59)",
 "hint": "pozhálusta",
 "back": {
 "ru": "пожалуйста (просьба)",
 "en": "please"
 },
 "extra": {
-"ru": "> Кофе, пожалуйста. [audio](media:9be723c8a0609d7f4a05ad41)\n> — Кофе, пожалуйста.",
-"en": "Also “you're welcome”.\n> Кофе, пожалуйста. [audio](media:9be723c8a0609d7f4a05ad41)\n> — A coffee, please."
+"ru": "> Кофе, пожалуйста. [audio](media:954ec98b0751b78df6069b7c)\n> — Кофе, пожалуйста.",
+"en": "Also “you're welcome”.\n> Кофе, пожалуйста. [audio](media:954ec98b0751b78df6069b7c)\n> — A coffee, please."
 }
 },
 {
 "id": "yes",
 "unit": "greet",
-"front": "да [audio](media:85807df853d2c1b3c8afeb13)",
+"front": "да [audio](media:4e55aa7fb1ecab210f746bd9)",
 "hint": "da",
 "back": {
 "ru": "да",
 "en": "yes"
 },
 "extra": {
-"ru": "> Да, конечно. [audio](media:5b300e81ffe9d12c2431750f)\n> — Да, конечно.",
-"en": "> Да, конечно. [audio](media:5b300e81ffe9d12c2431750f)\n> — Yes, of course."
+"ru": "> Да, конечно. [audio](media:4ce7338d0f7f19cffec054ef)\n> — Да, конечно.",
+"en": "> Да, конечно. [audio](media:4ce7338d0f7f19cffec054ef)\n> — Yes, of course."
 }
 },
 {
 "id": "no",
 "unit": "greet",
-"front": "нет [audio](media:a0d8f3808b8ef16eddaa27d7)",
+"front": "нет [audio](media:cb7b98feddc5d73309df58d0)",
 "hint": "nyet",
 "back": {
 "ru": "нет",
 "en": "no"
 },
 "extra": {
-"ru": "> Нет, спасибо. [audio](media:de94453d3263f8e5104e402a)\n> — Нет, спасибо.",
-"en": "Also “there is no…”.\n> Нет, спасибо. [audio](media:de94453d3263f8e5104e402a)\n> — No, thank you."
+"ru": "> Нет, спасибо. [audio](media:aaa11b44efe4754721d0756e)\n> — Нет, спасибо.",
+"en": "Also “there is no…”.\n> Нет, спасибо. [audio](media:aaa11b44efe4754721d0756e)\n> — No, thank you."
 }
 },
 {
 "id": "sorry",
 "unit": "greet",
-"front": "извините [audio](media:8002dfec918b8b6d0d62b781)",
+"front": "извините [audio](media:44b5d54f644f232f9b01d896)",
 "hint": "izviníte",
 "back": {
 "ru": "извините",
 "en": "sorry; excuse me"
 },
 "extra": {
-"ru": "> Извините, я опоздал. [audio](media:e1e211908bcee17ee38ded1c)\n> — Извините, я опоздал.",
-"en": "Informal: извини.\n> Извините, я опоздал. [audio](media:e1e211908bcee17ee38ded1c)\n> — Sorry, I'm late."
+"ru": "> Извините, я опоздал. [audio](media:94060ff3de88abae77e79902)\n> — Извините, я опоздал.",
+"en": "Informal: извини.\n> Извините, я опоздал. [audio](media:94060ff3de88abae77e79902)\n> — Sorry, I'm late."
 }
 },
 {
 "id": "morning",
 "unit": "greet",
-"front": "доброе утро [audio](media:6c1e0fe242bbe03632e9c0d5)",
+"front": "доброе утро [audio](media:15e8eb0da6f24212dc29ceba)",
 "hint": "dóbroye útro",
 "back": {
 "ru": "доброе утро",
 "en": "good morning"
 },
 "extra": {
-"ru": "> Доброе утро, мама! [audio](media:ffc13bd620caaf96f3ed9501)\n> — Доброе утро, мама!",
-"en": "> Доброе утро, мама! [audio](media:ffc13bd620caaf96f3ed9501)\n> — Good morning, Mom!"
+"ru": "> Доброе утро, мама! [audio](media:8212d5a67ec5e4fb4e9f221f)\n> — Доброе утро, мама!",
+"en": "> Доброе утро, мама! [audio](media:8212d5a67ec5e4fb4e9f221f)\n> — Good morning, Mom!"
 }
 },
 {
 "id": "night",
 "unit": "greet",
-"front": "спокойной ночи [audio](media:d5e032927c665a00dbb579b6)",
+"front": "спокойной ночи [audio](media:b51a11311aca5233a3be8e54)",
 "hint": "spokóynoy nóchi",
 "back": {
 "ru": "спокойной ночи",
 "en": "good night"
 },
 "extra": {
-"ru": "> Спокойной ночи, до завтра. [audio](media:90d65440d0a9703fddbc5f44)\n> — Спокойной ночи, до завтра.",
-"en": "> Спокойной ночи, до завтра. [audio](media:90d65440d0a9703fddbc5f44)\n> — Good night, see you tomorrow."
+"ru": "> Спокойной ночи, до завтра. [audio](media:7210ccb7e183085add6d33f9)\n> — Спокойной ночи, до завтра.",
+"en": "> Спокойной ночи, до завтра. [audio](media:7210ccb7e183085add6d33f9)\n> — Good night, see you tomorrow."
 }
 },
 {
 "id": "howru",
 "unit": "greet",
-"front": "как дела? [audio](media:6ce19432a317ebd56ef19876)",
+"front": "как дела? [audio](media:41f2e60c45a2b44d9b216946)",
 "hint": "kak delá",
 "back": {
 "ru": "как дела?",
 "en": "how are you?"
 },
 "extra": {
-"ru": "> Как дела? — Хорошо, спасибо. [audio](media:f3d2c1feacf9f19ac47dde8e)\n> — Как дела? — Хорошо, спасибо.",
-"en": "> Как дела? — Хорошо, спасибо. [audio](media:f3d2c1feacf9f19ac47dde8e)\n> — How are you? — Fine, thanks."
+"ru": "> Как дела? — Хорошо, спасибо. [audio](media:f1d618a9e9e0c00a6794d0c1)\n> — Как дела? — Хорошо, спасибо.",
+"en": "> Как дела? — Хорошо, спасибо. [audio](media:f1d618a9e9e0c00a6794d0c1)\n> — How are you? — Fine, thanks."
 }
 },
 {
 "id": "man",
 "unit": "people",
-"front": "мужчина [audio](media:b1c3482ed7cbc1ae0c8d0b02)",
+"front": "мужчина [audio](media:634bb57376523bfcfb2e23f5)",
 "hint": "muzhchína",
 "back": {
 "ru": "мужчина",
 "en": "man"
 },
 "extra": {
-"ru": "> Этот мужчина — мой учитель. [audio](media:ccd4a9cd21c5562c7d2d9fea)\n> — Этот мужчина — мой учитель.",
-"en": "Grammatically masculine although it ends in -а.\n> Этот мужчина — мой учитель. [audio](media:ccd4a9cd21c5562c7d2d9fea)\n> — This man is my teacher."
+"ru": "> Этот мужчина — мой учитель. [audio](media:1d2fd6c501662730fc65e6a1)\n> — Этот мужчина — мой учитель.",
+"en": "Grammatically masculine although it ends in -а.\n> Этот мужчина — мой учитель. [audio](media:1d2fd6c501662730fc65e6a1)\n> — This man is my teacher."
 }
 },
 {
 "id": "woman",
 "unit": "people",
-"front": "женщина [audio](media:b594d5e7cc5d3d532aad0921)",
+"front": "женщина [audio](media:d405534908ff8a469245c9e3)",
 "hint": "zhénshchina",
 "back": {
 "ru": "женщина",
 "en": "woman"
 },
 "extra": {
-"ru": "> Эта женщина — врач. [audio](media:1133d63c6f95dee473cb4308)\n> — Эта женщина — врач.",
-"en": "> Эта женщина — врач. [audio](media:1133d63c6f95dee473cb4308)\n> — This woman is a doctor."
+"ru": "> Эта женщина — врач. [audio](media:03fa950ed6e19f02ac45af36)\n> — Эта женщина — врач.",
+"en": "> Эта женщина — врач. [audio](media:03fa950ed6e19f02ac45af36)\n> — This woman is a doctor."
 }
 },
 {
 "id": "child",
 "unit": "people",
-"front": "ребёнок [audio](media:0bcf642a3bf3ebb055262546)",
+"front": "ребёнок [audio](media:23f33f9358a7bd87da4563f4)",
 "hint": "rebyónok",
 "back": {
 "ru": "ребёнок",
 "en": "child"
 },
 "extra": {
-"ru": "> Ребёнок спит. [audio](media:17a63ae93e538f6d02bcbbc7)\n> — Ребёнок спит.",
-"en": "Plural: дети.\n> Ребёнок спит. [audio](media:17a63ae93e538f6d02bcbbc7)\n> — The child is sleeping."
+"ru": "> Ребёнок спит. [audio](media:d1654b9d13a4a5766d70d05e)\n> — Ребёнок спит.",
+"en": "Plural: дети.\n> Ребёнок спит. [audio](media:d1654b9d13a4a5766d70d05e)\n> — The child is sleeping."
 }
 },
 {
 "id": "friend",
 "unit": "people",
-"front": "друг [audio](media:894deb3376d556e0c8308f14)",
+"front": "друг [audio](media:f710e30e5937d256b0a9bb0e)",
 "hint": "drug",
 "back": {
 "ru": "друг",
 "en": "friend"
 },
 "extra": {
-"ru": "> Он мой лучший друг. [audio](media:d4cf3ec299084ed4ad23a672)\n> — Он мой лучший друг.",
-"en": "Female friend: подруга.\n> Он мой лучший друг. [audio](media:d4cf3ec299084ed4ad23a672)\n> — He is my best friend."
+"ru": "> Он мой лучший друг. [audio](media:6fd652a781394431a26166ae)\n> — Он мой лучший друг.",
+"en": "Female friend: подруга.\n> Он мой лучший друг. [audio](media:6fd652a781394431a26166ae)\n> — He is my best friend."
 }
 },
 {
 "id": "mother",
 "unit": "people",
-"front": "мама [audio](media:7096412167f1d47bfed3bf61)",
+"front": "мама [audio](media:b2a5ed71fae3276c43074041)",
 "hint": "máma",
 "back": {
 "ru": "мать; мама",
 "en": "mother"
 },
 "extra": {
-"ru": "> Моя мама — учитель. [audio](media:ff6f7f53ad220f2bd2f82b55)\n> — Моя мама — учитель.",
-"en": "Formal: мать.\n> Моя мама — учитель. [audio](media:ff6f7f53ad220f2bd2f82b55)\n> — My mother is a teacher."
+"ru": "> Моя мама — учитель. [audio](media:7b62e8e12a4f1930752fd45d)\n> — Моя мама — учитель.",
+"en": "Formal: мать.\n> Моя мама — учитель. [audio](media:7b62e8e12a4f1930752fd45d)\n> — My mother is a teacher."
 }
 },
 {
 "id": "father",
 "unit": "people",
-"front": "папа [audio](media:5b27a4c809ee4e0c477e0f6d)",
+"front": "папа [audio](media:b928b4f0f013567e9e3c739e)",
 "hint": "pápa",
 "back": {
 "ru": "отец; папа",
 "en": "father"
 },
 "extra": {
-"ru": "> Мой папа работает в банке. [audio](media:9999cb386be9d3b4a1e3d17b)\n> — Мой папа работает в банке.",
-"en": "Formal: отец.\n> Мой папа работает в банке. [audio](media:9999cb386be9d3b4a1e3d17b)\n> — My father works at a bank."
+"ru": "> Мой папа работает в банке. [audio](media:516f256a7518be85ceb24420)\n> — Мой папа работает в банке.",
+"en": "Formal: отец.\n> Мой папа работает в банке. [audio](media:516f256a7518be85ceb24420)\n> — My father works at a bank."
 }
 },
 {
 "id": "brother",
 "unit": "people",
-"front": "брат [audio](media:85ba2e1168a1419f8508ea28)",
+"front": "брат [audio](media:dce84745b8988085a1ce197a)",
 "hint": "brat",
 "back": {
 "ru": "брат",
 "en": "brother"
 },
 "extra": {
-"ru": "> У меня есть брат. [audio](media:76eb9501bda6558733a6b9a6)\n> — У меня есть брат.",
-"en": "> У меня есть брат. [audio](media:76eb9501bda6558733a6b9a6)\n> — I have a brother."
+"ru": "> У меня есть брат. [audio](media:ba397dd44a4604e0f9566a52)\n> — У меня есть брат.",
+"en": "> У меня есть брат. [audio](media:ba397dd44a4604e0f9566a52)\n> — I have a brother."
 }
 },
 {
 "id": "sister",
 "unit": "people",
-"front": "сестра [audio](media:e3340edc1872f1020f926f47)",
+"front": "сестра [audio](media:e74df2402ef4b65368628a5a)",
 "hint": "sestrá",
 "back": {
 "ru": "сестра",
 "en": "sister"
 },
 "extra": {
-"ru": "> Моя сестра любит музыку. [audio](media:41e2d03607aa6ef9acf7d104)\n> — Моя сестра любит музыку.",
-"en": "> Моя сестра любит музыку. [audio](media:41e2d03607aa6ef9acf7d104)\n> — My sister loves music."
+"ru": "> Моя сестра любит музыку. [audio](media:6e447302054ecd7dac669dda)\n> — Моя сестра любит музыку.",
+"en": "> Моя сестра любит музыку. [audio](media:6e447302054ecd7dac669dda)\n> — My sister loves music."
 }
 },
 {
 "id": "family",
 "unit": "people",
-"front": "семья [audio](media:73803686cdb8530b5cf85aa8)",
+"front": "семья [audio](media:bc9658d6116868788df47d4e)",
 "hint": "sem'yá",
 "back": {
 "ru": "семья",
 "en": "family"
 },
 "extra": {
-"ru": "> У меня большая семья. [audio](media:7309bf81861909153008d4f2)\n> — У меня большая семья.",
-"en": "> У меня большая семья. [audio](media:7309bf81861909153008d4f2)\n> — I have a big family."
+"ru": "> У меня большая семья. [audio](media:f67b169306bcdb6392b494b1)\n> — У меня большая семья.",
+"en": "> У меня большая семья. [audio](media:f67b169306bcdb6392b494b1)\n> — I have a big family."
 }
 },
 {
 "id": "name",
 "unit": "people",
-"front": "имя [audio](media:d7ba11b9bcd569b8ccdbeed5)",
+"front": "имя [audio](media:5a32a57ee5da1aefd6e4b1b4)",
 "hint": "ímya",
 "back": {
 "ru": "имя",
 "en": "name"
 },
 "extra": {
-"ru": "> Меня зовут Анна. [audio](media:448cfc45de4e9c2e91693b9f)\n> — Меня зовут Анна.",
-"en": "What's your name? — Как тебя зовут?\n> Меня зовут Анна. [audio](media:448cfc45de4e9c2e91693b9f)\n> — My name is Anna."
+"ru": "> Меня зовут Анна. [audio](media:9dcf9b7cea2d9d132f25054f)\n> — Меня зовут Анна.",
+"en": "What's your name? — Как тебя зовут?\n> Меня зовут Анна. [audio](media:9dcf9b7cea2d9d132f25054f)\n> — My name is Anna."
 }
 },
 {
 "id": "one",
 "unit": "numbers",
-"front": "один [audio](media:b2e848546d7247567879e5b8)",
+"front": "один [audio](media:08dba1b447cc16bd16bacc4b)",
 "hint": "odín",
 "back": {
 "ru": "один",
 "en": "one"
 },
 "extra": {
-"ru": "> Одно яблоко, пожалуйста. [audio](media:a90d8bbe64a4df81d62357ef)\n> — Одно яблоко, пожалуйста.",
-"en": "Changes with gender: одна, одно.\n> Одно яблоко, пожалуйста. [audio](media:a90d8bbe64a4df81d62357ef)\n> — One apple, please."
+"ru": "> Одно яблоко, пожалуйста. [audio](media:dddbd429b7df8034799c4b63)\n> — Одно яблоко, пожалуйста.",
+"en": "Changes with gender: одна, одно.\n> Одно яблоко, пожалуйста. [audio](media:dddbd429b7df8034799c4b63)\n> — One apple, please."
 }
 },
 {
 "id": "two",
 "unit": "numbers",
-"front": "два [audio](media:c23cb17c79cdfa949c2d6c2b)",
+"front": "два [audio](media:f3a225c913de05cb879cdb59)",
 "hint": "dva",
 "back": {
 "ru": "два",
 "en": "two"
 },
 "extra": {
-"ru": "> Два кофе, пожалуйста. [audio](media:457965cf6789887c911daf88)\n> — Два кофе, пожалуйста.",
-"en": "Feminine: две.\n> Два кофе, пожалуйста. [audio](media:457965cf6789887c911daf88)\n> — Two coffees, please."
+"ru": "> Два кофе, пожалуйста. [audio](media:50f60a81ac08a167063e9a80)\n> — Два кофе, пожалуйста.",
+"en": "Feminine: две.\n> Два кофе, пожалуйста. [audio](media:50f60a81ac08a167063e9a80)\n> — Two coffees, please."
 }
 },
 {
 "id": "three",
 "unit": "numbers",
-"front": "три [audio](media:ff1a6fc2d62a936cfdb501b5)",
+"front": "три [audio](media:0239dbc2543efba63886056e)",
 "hint": "tri",
 "back": {
 "ru": "три",
 "en": "three"
 },
 "extra": {
-"ru": "> Сейчас три часа. [audio](media:7e8345f8a1b50e6d50a964e3)\n> — Сейчас три часа.",
-"en": "> Сейчас три часа. [audio](media:7e8345f8a1b50e6d50a964e3)\n> — It's three o'clock."
+"ru": "> Сейчас три часа. [audio](media:19ffe242ba6b4c9b7d4fd2eb)\n> — Сейчас три часа.",
+"en": "> Сейчас три часа. [audio](media:19ffe242ba6b4c9b7d4fd2eb)\n> — It's three o'clock."
 }
 },
 {
 "id": "ten",
 "unit": "numbers",
-"front": "десять [audio](media:c7c5c62aa4fea29649eca58c)",
+"front": "десять [audio](media:a5b88f214d3b205e93584fa7)",
 "hint": "désyat'",
 "back": {
 "ru": "десять",
 "en": "ten"
 },
 "extra": {
-"ru": "> Подождите десять минут. [audio](media:3eb61127db7c54d85a56141e)\n> — Подождите десять минут.",
-"en": "> Подождите десять минут. [audio](media:3eb61127db7c54d85a56141e)\n> — Please wait ten minutes."
+"ru": "> Подождите десять минут. [audio](media:f25b5bbd79fde3ad62e60122)\n> — Подождите десять минут.",
+"en": "> Подождите десять минут. [audio](media:f25b5bbd79fde3ad62e60122)\n> — Please wait ten minutes."
 }
 },
 {
 "id": "hundred",
 "unit": "numbers",
-"front": "сто [audio](media:01176030eafd15045baa081a)",
+"front": "сто [audio](media:37b32c7bc085d9d7f2224ce9)",
 "hint": "sto",
 "back": {
 "ru": "сто",
 "en": "a hundred"
 },
 "extra": {
-"ru": "> Это стоит сто евро. [audio](media:c26da18abb8151914b4ee8a7)\n> — Это стоит сто евро.",
-"en": "> Это стоит сто евро. [audio](media:c26da18abb8151914b4ee8a7)\n> — It costs a hundred euros."
+"ru": "> Это стоит сто евро. [audio](media:aefa303cf52861480e7989b4)\n> — Это стоит сто евро.",
+"en": "> Это стоит сто евро. [audio](media:aefa303cf52861480e7989b4)\n> — It costs a hundred euros."
 }
 },
 {
 "id": "day",
 "unit": "numbers",
-"front": "день [audio](media:17f2620bdcbc7e5bb81f968a)",
+"front": "день [audio](media:185a69b0b6f66876ba107954)",
 "hint": "den'",
 "back": {
 "ru": "день",
 "en": "day"
 },
 "extra": {
-"ru": "> Хорошего дня! [audio](media:3a0fc33a20a9f8fe0727be34)\n> — Хорошего дня!",
-"en": "> Хорошего дня! [audio](media:3a0fc33a20a9f8fe0727be34)\n> — Have a nice day!"
+"ru": "> Хорошего дня! [audio](media:85956596450cd5d995159280)\n> — Хорошего дня!",
+"en": "> Хорошего дня! [audio](media:85956596450cd5d995159280)\n> — Have a nice day!"
 }
 },
 {
 "id": "week",
 "unit": "numbers",
-"front": "неделя [audio](media:6bad61bdd6f8f1e51d1d1c36)",
+"front": "неделя [audio](media:06a74db0b81a6bc6014bd4d8)",
 "hint": "nedélya",
 "back": {
 "ru": "неделя",
 "en": "week"
 },
 "extra": {
-"ru": "> Увидимся на следующей неделе. [audio](media:b34692c5134576da648105a8)\n> — Увидимся на следующей неделе.",
-"en": "> Увидимся на следующей неделе. [audio](media:b34692c5134576da648105a8)\n> — See you next week."
+"ru": "> Увидимся на следующей неделе. [audio](media:2344f6568a39db6fbbd03a88)\n> — Увидимся на следующей неделе.",
+"en": "> Увидимся на следующей неделе. [audio](media:2344f6568a39db6fbbd03a88)\n> — See you next week."
 }
 },
 {
 "id": "today",
 "unit": "numbers",
-"front": "сегодня [audio](media:4bf15815c78eeaaee61ccfb4)",
+"front": "сегодня [audio](media:41177c23d7e19102fc8918f9)",
 "hint": "sevódnya",
 "back": {
 "ru": "сегодня",
 "en": "today"
 },
 "extra": {
-"ru": "> Сегодня холодно. [audio](media:07b344f1417ef37c0dfe2cff)\n> — Сегодня холодно.",
-"en": "Written with г, said with в.\n> Сегодня холодно. [audio](media:07b344f1417ef37c0dfe2cff)\n> — It's cold today."
+"ru": "> Сегодня холодно. [audio](media:677a34a2fcef607ee18cf871)\n> — Сегодня холодно.",
+"en": "Written with г, said with в.\n> Сегодня холодно. [audio](media:677a34a2fcef607ee18cf871)\n> — It's cold today."
 }
 },
 {
 "id": "tomorrow",
 "unit": "numbers",
-"front": "завтра [audio](media:8910353e0ef07e4c687a7432)",
+"front": "завтра [audio](media:8b10aedc38be4965ab6d5b80)",
 "hint": "záftra",
 "back": {
 "ru": "завтра",
 "en": "tomorrow"
 },
 "extra": {
-"ru": "> Завтра я работаю. [audio](media:4b0c5d73e5fa2d11e735cbd1)\n> — Завтра я работаю.",
-"en": "> Завтра я работаю. [audio](media:4b0c5d73e5fa2d11e735cbd1)\n> — I'm working tomorrow."
+"ru": "> Завтра я работаю. [audio](media:6ec6ba9c2977ee2d8c8a7f0b)\n> — Завтра я работаю.",
+"en": "> Завтра я работаю. [audio](media:6ec6ba9c2977ee2d8c8a7f0b)\n> — I'm working tomorrow."
 }
 },
 {
 "id": "yesterday",
 "unit": "numbers",
-"front": "вчера [audio](media:d19e206aa419fee4a6cd5d4f)",
+"front": "вчера [audio](media:ea9efb9eb0ceaa3af983eaae)",
 "hint": "fcherá",
 "back": {
 "ru": "вчера",
 "en": "yesterday"
 },
 "extra": {
-"ru": "> Вчера был дождь. [audio](media:fa971a054e1ef92216ca14ec)\n> — Вчера был дождь.",
-"en": "> Вчера был дождь. [audio](media:fa971a054e1ef92216ca14ec)\n> — It rained yesterday."
+"ru": "> Вчера был дождь. [audio](media:460c161db89f959147b60b8e)\n> — Вчера был дождь.",
+"en": "> Вчера был дождь. [audio](media:460c161db89f959147b60b8e)\n> — It rained yesterday."
 }
 },
 {
 "id": "water",
 "unit": "food",
-"front": "вода [audio](media:63d85ccfb6dd5a8f41878f01)",
+"front": "вода [audio](media:5c006cf4527500688c0c377f)",
 "hint": "vadá",
 "back": {
 "ru": "вода",
 "en": "water"
 },
 "extra": {
-"ru": "> Стакан воды, пожалуйста. [audio](media:38023a24a24d0386aa31c467)\n> — Стакан воды, пожалуйста.",
-"en": "Unstressed о sounds like а.\n> Стакан воды, пожалуйста. [audio](media:38023a24a24d0386aa31c467)\n> — A glass of water, please."
+"ru": "> Стакан воды, пожалуйста. [audio](media:e922931a8a5260178987651d)\n> — Стакан воды, пожалуйста.",
+"en": "Unstressed о sounds like а.\n> Стакан воды, пожалуйста. [audio](media:e922931a8a5260178987651d)\n> — A glass of water, please."
 }
 },
 {
 "id": "bread",
 "unit": "food",
-"front": "хлеб [audio](media:3d9b2ad93b98643b8876bda4)",
+"front": "хлеб [audio](media:3f2382d29672b75d8b719d23)",
 "hint": "khlep",
 "back": {
 "ru": "хлеб",
 "en": "bread"
 },
 "extra": {
-"ru": "> Я покупаю хлеб. [audio](media:25ae5ceec24227ee854e08e4)\n> — Я покупаю хлеб.",
-"en": "> Я покупаю хлеб. [audio](media:25ae5ceec24227ee854e08e4)\n> — I'm buying bread."
+"ru": "> Я покупаю хлеб. [audio](media:8ba66318287e3c442b244a03)\n> — Я покупаю хлеб.",
+"en": "> Я покупаю хлеб. [audio](media:8ba66318287e3c442b244a03)\n> — I'm buying bread."
 }
 },
 {
 "id": "coffee",
 "unit": "food",
-"front": "кофе [audio](media:ff600321d8e590464d8e415e)",
+"front": "кофе [audio](media:a9054a8445fc56ee41a2c694)",
 "hint": "kófe",
 "back": {
 "ru": "кофе",
 "en": "coffee"
 },
 "extra": {
-"ru": "> Я пью кофе каждое утро. [audio](media:73208e40d002bae2beab9c10)\n> — Я пью кофе каждое утро.",
-"en": "Masculine, doesn't change.\n> Я пью кофе каждое утро. [audio](media:73208e40d002bae2beab9c10)\n> — I drink coffee every morning."
+"ru": "> Я пью кофе каждое утро. [audio](media:d3e941ed7b1ee0f55500edd9)\n> — Я пью кофе каждое утро.",
+"en": "Masculine, doesn't change.\n> Я пью кофе каждое утро. [audio](media:d3e941ed7b1ee0f55500edd9)\n> — I drink coffee every morning."
 }
 },
 {
 "id": "tea",
 "unit": "food",
-"front": "чай [audio](media:3cb3304778377d2639bad5bb)",
+"front": "чай [audio](media:966185c95a1d885ae8728cd6)",
 "hint": "chay",
 "back": {
 "ru": "чай",
 "en": "tea"
 },
 "extra": {
-"ru": "> Хочешь чаю? [audio](media:2bfbf7d968d58902839d0c4d)\n> — Хочешь чаю?",
-"en": "> Хочешь чаю? [audio](media:2bfbf7d968d58902839d0c4d)\n> — Would you like some tea?"
+"ru": "> Хочешь чаю? [audio](media:3faffa49838e88f2c49fa380)\n> — Хочешь чаю?",
+"en": "> Хочешь чаю? [audio](media:3faffa49838e88f2c49fa380)\n> — Would you like some tea?"
 }
 },
 {
 "id": "milk",
 "unit": "food",
-"front": "молоко [audio](media:26252b2dc58ed93201237696)",
+"front": "молоко [audio](media:68f5212893e72f1bdf34e9c6)",
 "hint": "malakó",
 "back": {
 "ru": "молоко",
 "en": "milk"
 },
 "extra": {
-"ru": "> Кофе с молоком. [audio](media:17ab56275f208fd21fbdaff9)\n> — Кофе с молоком.",
-"en": "> Кофе с молоком. [audio](media:17ab56275f208fd21fbdaff9)\n> — Coffee with milk."
+"ru": "> Кофе с молоком. [audio](media:8c56722812ca216a17259289)\n> — Кофе с молоком.",
+"en": "> Кофе с молоком. [audio](media:8c56722812ca216a17259289)\n> — Coffee with milk."
 }
 },
 {
 "id": "apple",
 "unit": "food",
-"front": "яблоко [audio](media:3b6271455caa22c11a9d5f1d)",
+"front": "яблоко [audio](media:26e75c46c03b0d7b5058ec1a)",
 "hint": "yábloko",
 "back": {
 "ru": "яблоко",
 "en": "apple"
 },
 "extra": {
-"ru": "> Это зелёное яблоко. [audio](media:5f80dcc04da846304003a273)\n> — Это зелёное яблоко.",
-"en": "> Это зелёное яблоко. [audio](media:5f80dcc04da846304003a273)\n> — This is a green apple."
+"ru": "> Это зелёное яблоко. [audio](media:9d10c972d01d4981a3f85d55)\n> — Это зелёное яблоко.",
+"en": "> Это зелёное яблоко. [audio](media:9d10c972d01d4981a3f85d55)\n> — This is a green apple."
 }
 },
 {
 "id": "meat",
 "unit": "food",
-"front": "мясо [audio](media:75867f9796e4b42b6d76ddfd)",
+"front": "мясо [audio](media:20f9eff509f554f75b256374)",
 "hint": "myáso",
 "back": {
 "ru": "мясо",
 "en": "meat"
 },
 "extra": {
-"ru": "> Я не ем мясо. [audio](media:cdec8a12d80780844b609bce)\n> — Я не ем мясо.",
-"en": "> Я не ем мясо. [audio](media:cdec8a12d80780844b609bce)\n> — I don't eat meat."
+"ru": "> Я не ем мясо. [audio](media:48d6b08d1123bf0c62921bdb)\n> — Я не ем мясо.",
+"en": "> Я не ем мясо. [audio](media:48d6b08d1123bf0c62921bdb)\n> — I don't eat meat."
 }
 },
 {
 "id": "fish",
 "unit": "food",
-"front": "рыба [audio](media:8093bcb6f33046f26aca4b67)",
+"front": "рыба [audio](media:7231c72c6042abaac4bd2135)",
 "hint": "rýba",
 "back": {
 "ru": "рыба",
 "en": "fish"
 },
 "extra": {
-"ru": "> Сегодня на ужин рыба. [audio](media:087bd48748c43aeca54e6aab)\n> — Сегодня на ужин рыба.",
-"en": "> Сегодня на ужин рыба. [audio](media:087bd48748c43aeca54e6aab)\n> — We're having fish for dinner today."
+"ru": "> Сегодня на ужин рыба. [audio](media:646dbb931e53522951f82b98)\n> — Сегодня на ужин рыба.",
+"en": "> Сегодня на ужин рыба. [audio](media:646dbb931e53522951f82b98)\n> — We're having fish for dinner today."
 }
 },
 {
 "id": "eat",
 "unit": "food",
-"front": "есть [audio](media:960ee6e8699d03cfff796dd6)",
+"front": "есть [audio](media:eedb251bb9ecd794e57a7cd5)",
 "hint": "yest'",
 "back": {
 "ru": "есть, кушать",
 "en": "to eat"
 },
 "extra": {
-"ru": "> Мы едим в семь. [audio](media:dbf1aebef8fdaaa57b61db07)\n> — Мы едим в семь.",
-"en": "I eat — я ем.\n> Мы едим в семь. [audio](media:dbf1aebef8fdaaa57b61db07)\n> — We eat at seven."
+"ru": "> Мы едим в семь. [audio](media:5ad22eb48f205e041ec7876f)\n> — Мы едим в семь.",
+"en": "I eat — я ем.\n> Мы едим в семь. [audio](media:5ad22eb48f205e041ec7876f)\n> — We eat at seven."
 }
 },
 {
 "id": "drink",
 "unit": "food",
-"front": "пить [audio](media:4a316b4e81410b75239dca3f)",
+"front": "пить [audio](media:e578dd9d0cb5b02d3997f353)",
 "hint": "pit'",
 "back": {
 "ru": "пить",
 "en": "to drink"
 },
 "extra": {
-"ru": "> Что ты будешь пить? [audio](media:8f8b6592bef6a20b010986ca)\n> — Что ты будешь пить?",
-"en": "I drink — я пью.\n> Что ты будешь пить? [audio](media:8f8b6592bef6a20b010986ca)\n> — What will you drink?"
+"ru": "> Что ты будешь пить? [audio](media:1fe8c42821c02500bcdf368b)\n> — Что ты будешь пить?",
+"en": "I drink — я пью.\n> Что ты будешь пить? [audio](media:1fe8c42821c02500bcdf368b)\n> — What will you drink?"
 }
 },
 {
 "id": "house",
 "unit": "city",
-"front": "дом [audio](media:890deb6167a51774feb2359a)",
+"front": "дом [audio](media:a2903c0ffa3bcffb9a1fc5c4)",
 "hint": "dom",
 "back": {
 "ru": "дом",
 "en": "house; home"
 },
 "extra": {
-"ru": "> Это мой дом. [audio](media:a71865791126eeaced4cff9f)\n> — Это мой дом.",
-"en": "At home — дома; home (direction) — домой.\n> Это мой дом. [audio](media:a71865791126eeaced4cff9f)\n> — This is my house."
+"ru": "> Это мой дом. [audio](media:b16b28ca904bb2fd819d6c5c)\n> — Это мой дом.",
+"en": "At home — дома; home (direction) — домой.\n> Это мой дом. [audio](media:b16b28ca904bb2fd819d6c5c)\n> — This is my house."
 }
 },
 {
 "id": "room",
 "unit": "city",
-"front": "комната [audio](media:2d9e8a8aee72fd0f44069d17)",
+"front": "комната [audio](media:aba8ab61e78b24b565a36abd)",
 "hint": "kómnata",
 "back": {
 "ru": "комната",
 "en": "room"
 },
 "extra": {
-"ru": "> Моя комната маленькая. [audio](media:08e8e6e255dd29f1a8628705)\n> — Моя комната маленькая.",
-"en": "> Моя комната маленькая. [audio](media:08e8e6e255dd29f1a8628705)\n> — My room is small."
+"ru": "> Моя комната маленькая. [audio](media:901afc8a4f729d23cc0970bc)\n> — Моя комната маленькая.",
+"en": "> Моя комната маленькая. [audio](media:901afc8a4f729d23cc0970bc)\n> — My room is small."
 }
 },
 {
 "id": "door",
 "unit": "city",
-"front": "дверь [audio](media:cee1230336675de87bc6dcc0)",
+"front": "дверь [audio](media:0f87a4e6472bcb27c3992033)",
 "hint": "dver'",
 "back": {
 "ru": "дверь",
 "en": "door"
 },
 "extra": {
-"ru": "> Закрой дверь, пожалуйста. [audio](media:83e4012bdd86330592017644)\n> — Закрой дверь, пожалуйста.",
-"en": "Feminine.\n> Закрой дверь, пожалуйста. [audio](media:83e4012bdd86330592017644)\n> — Close the door, please."
+"ru": "> Закрой дверь, пожалуйста. [audio](media:82aac143ec88bfc85f9807c0)\n> — Закрой дверь, пожалуйста.",
+"en": "Feminine.\n> Закрой дверь, пожалуйста. [audio](media:82aac143ec88bfc85f9807c0)\n> — Close the door, please."
 }
 },
 {
 "id": "street",
 "unit": "city",
-"front": "улица [audio](media:e3515b3658f3f556ca3bc462)",
+"front": "улица [audio](media:3351c1d60d085a815e1fd54f)",
 "hint": "úlitsa",
 "back": {
 "ru": "улица",
 "en": "street"
 },
 "extra": {
-"ru": "> Я живу на этой улице. [audio](media:73110eba5112ad3c4e5c950d)\n> — Я живу на этой улице.",
-"en": "> Я живу на этой улице. [audio](media:73110eba5112ad3c4e5c950d)\n> — I live on this street."
+"ru": "> Я живу на этой улице. [audio](media:850504d7bab43ba5cb90f6b8)\n> — Я живу на этой улице.",
+"en": "> Я живу на этой улице. [audio](media:850504d7bab43ba5cb90f6b8)\n> — I live on this street."
 }
 },
 {
 "id": "town",
 "unit": "city",
-"front": "город [audio](media:2d9d6cd4ceff987076137c0a)",
+"front": "город [audio](media:6fc5c2c584ecd171c249cf81)",
 "hint": "górat",
 "back": {
 "ru": "город",
 "en": "city; town"
 },
 "extra": {
-"ru": "> Это красивый город. [audio](media:af6235ea5b43c48c94ab7e04)\n> — Это красивый город.",
-"en": "> Это красивый город. [audio](media:af6235ea5b43c48c94ab7e04)\n> — It's a beautiful city."
+"ru": "> Это красивый город. [audio](media:3b4e9bdb088db1a0a3f9bf55)\n> — Это красивый город.",
+"en": "> Это красивый город. [audio](media:3b4e9bdb088db1a0a3f9bf55)\n> — It's a beautiful city."
 }
 },
 {
 "id": "shop",
 "unit": "city",
-"front": "магазин [audio](media:24e9c74c150586224ad623d7)",
+"front": "магазин [audio](media:fdeaac0aa88a81dd1ff0c64f)",
 "hint": "magazín",
 "back": {
 "ru": "магазин",
 "en": "shop; store"
 },
 "extra": {
-"ru": "> Магазин закрыт. [audio](media:003db53fb52dc48ba62e815b)\n> — Магазин закрыт.",
-"en": "> Магазин закрыт. [audio](media:003db53fb52dc48ba62e815b)\n> — The shop is closed."
+"ru": "> Магазин закрыт. [audio](media:bdd2918db07ae0e3d01ac7cc)\n> — Магазин закрыт.",
+"en": "> Магазин закрыт. [audio](media:bdd2918db07ae0e3d01ac7cc)\n> — The shop is closed."
 }
 },
 {
 "id": "school",
 "unit": "city",
-"front": "школа [audio](media:0fa5b9528cbb51299773199b)",
+"front": "школа [audio](media:610f25cbf8439a82dce1e4af)",
 "hint": "shkóla",
 "back": {
 "ru": "школа",
 "en": "school"
 },
 "extra": {
-"ru": "> Дети в школе. [audio](media:4188c500a193ba6b516f1a30)\n> — Дети в школе.",
-"en": "> Дети в школе. [audio](media:4188c500a193ba6b516f1a30)\n> — The children are at school."
+"ru": "> Дети в школе. [audio](media:78c52f7dd4bb7b0c3e9b0073)\n> — Дети в школе.",
+"en": "> Дети в школе. [audio](media:78c52f7dd4bb7b0c3e9b0073)\n> — The children are at school."
 }
 },
 {
 "id": "hospital",
 "unit": "city",
-"front": "больница [audio](media:ea366b83bc2c920cfd0eee8e)",
+"front": "больница [audio](media:9ac464065994f9ab5bff0f33)",
 "hint": "bal'nítsa",
 "back": {
 "ru": "больница",
 "en": "hospital"
 },
 "extra": {
-"ru": "> Где больница? [audio](media:0e116c4b2f1db3c2f4829bfb)\n> — Где больница?",
-"en": "> Где больница? [audio](media:0e116c4b2f1db3c2f4829bfb)\n> — Where is the hospital?"
+"ru": "> Где больница? [audio](media:62ee93ca3d6c63c32bd3421c)\n> — Где больница?",
+"en": "> Где больница? [audio](media:62ee93ca3d6c63c32bd3421c)\n> — Where is the hospital?"
 }
 },
 {
 "id": "station",
 "unit": "city",
-"front": "вокзал [audio](media:228a9f75603e373a4f77992c)",
+"front": "вокзал [audio](media:678ca13bb23d551d7e6e484e)",
 "hint": "vakzál",
 "back": {
 "ru": "вокзал; станция",
 "en": "station"
 },
 "extra": {
-"ru": "> Вокзал рядом. [audio](media:f5cebd49289d3f4e967495fd)\n> — Вокзал рядом.",
-"en": "Metro station — станция.\n> Вокзал рядом. [audio](media:f5cebd49289d3f4e967495fd)\n> — The station is nearby."
+"ru": "> Вокзал рядом. [audio](media:58eaa79436a38bc5969ef2a6)\n> — Вокзал рядом.",
+"en": "Metro station — станция.\n> Вокзал рядом. [audio](media:58eaa79436a38bc5969ef2a6)\n> — The station is nearby."
 }
 },
 {
 "id": "park",
 "unit": "city",
-"front": "парк [audio](media:edf80e5f18011997c5520e50)",
+"front": "парк [audio](media:2ca0f772ac1d1800cba93466)",
 "hint": "park",
 "back": {
 "ru": "парк",
 "en": "park"
 },
 "extra": {
-"ru": "> Пойдём в парк. [audio](media:662d3de67a00f21b1a21ce64)\n> — Пойдём в парк.",
-"en": "> Пойдём в парк. [audio](media:662d3de67a00f21b1a21ce64)\n> — Let's go to the park."
+"ru": "> Пойдём в парк. [audio](media:d81d7111fbddf925237db96a)\n> — Пойдём в парк.",
+"en": "> Пойдём в парк. [audio](media:d81d7111fbddf925237db96a)\n> — Let's go to the park."
 }
 },
 {
 "id": "be",
 "unit": "verbs",
-"front": "быть [audio](media:e3f26237b1e4c25274781348)",
+"front": "быть [audio](media:802876a8df418a36eb227900)",
 "hint": "byt'",
 "back": {
 "ru": "быть",
 "en": "to be"
 },
 "extra": {
-"ru": "> Я студент. [audio](media:9e09637cd1ff0dda1aa96e89)\n> — Я студент.",
-"en": "In the present tense “to be” is usually dropped.\n> Я студент. [audio](media:9e09637cd1ff0dda1aa96e89)\n> — I am a student."
+"ru": "> Я студент. [audio](media:ecafe43debf1794ac3e6a510)\n> — Я студент.",
+"en": "In the present tense “to be” is usually dropped.\n> Я студент. [audio](media:ecafe43debf1794ac3e6a510)\n> — I am a student."
 }
 },
 {
 "id": "have",
 "unit": "verbs",
-"front": "иметь [audio](media:ab8e4035841790b4ca805b63)",
+"front": "иметь [audio](media:fb8b2a9db26f6a4a350dbb5c)",
 "hint": "imét'",
 "back": {
 "ru": "иметь",
 "en": "to have"
 },
 "extra": {
-"ru": "> У меня есть машина. [audio](media:0991388d8baaea8c157eaea8)\n> — У меня есть машина.",
-"en": "“I have” is said as у меня есть.\n> У меня есть машина. [audio](media:0991388d8baaea8c157eaea8)\n> — I have a car."
+"ru": "> У меня есть машина. [audio](media:2dc0c82a9f8b2a236291d5ce)\n> — У меня есть машина.",
+"en": "“I have” is said as у меня есть.\n> У меня есть машина. [audio](media:2dc0c82a9f8b2a236291d5ce)\n> — I have a car."
 }
 },
 {
 "id": "go",
 "unit": "verbs",
-"front": "идти [audio](media:186f6db758aa5dd337a73bd0)",
+"front": "идти [audio](media:049a78ec7aeb16a37b511241)",
 "hint": "itti",
 "back": {
 "ru": "идти; ехать",
 "en": "to go"
 },
 "extra": {
-"ru": "> Я иду в школу. [audio](media:bcce9784c93a03c446fa07c7)\n> — Я иду в школу.",
-"en": "On foot; by vehicle — ехать.\n> Я иду в школу. [audio](media:bcce9784c93a03c446fa07c7)\n> — I'm going to school."
+"ru": "> Я иду в школу. [audio](media:6bf539cdac19cc2b496c683b)\n> — Я иду в школу.",
+"en": "On foot; by vehicle — ехать.\n> Я иду в школу. [audio](media:6bf539cdac19cc2b496c683b)\n> — I'm going to school."
 }
 },
 {
 "id": "come",
 "unit": "verbs",
-"front": "приходить [audio](media:fe747040c9f25a4a5c7333d3)",
+"front": "приходить [audio](media:81d48bb1d1860af52adb38f6)",
 "hint": "prikhadít'",
 "back": {
 "ru": "приходить",
 "en": "to come"
 },
 "extra": {
-"ru": "> Приходи завтра. [audio](media:1e5acc87c7fa88edb7e0684e)\n> — Приходи завтра.",
-"en": "> Приходи завтра. [audio](media:1e5acc87c7fa88edb7e0684e)\n> — Come tomorrow."
+"ru": "> Приходи завтра. [audio](media:cc545373b6614053af0cb7eb)\n> — Приходи завтра.",
+"en": "> Приходи завтра. [audio](media:cc545373b6614053af0cb7eb)\n> — Come tomorrow."
 }
 },
 {
 "id": "see",
 "unit": "verbs",
-"front": "видеть [audio](media:ccd7fc065f47136c2402e102)",
+"front": "видеть [audio](media:a76e91a5b96074ea3f1dee46)",
 "hint": "vídet'",
 "back": {
 "ru": "видеть; смотреть",
 "en": "to see"
 },
 "extra": {
-"ru": "> Я смотрю телевизор. [audio](media:fc6bacd45cc363fa5ce42be9)\n> — Я смотрю телевизор.",
-"en": "To watch — смотреть.\n> Я смотрю телевизор. [audio](media:fc6bacd45cc363fa5ce42be9)\n> — I'm watching TV."
+"ru": "> Я смотрю телевизор. [audio](media:455d1b87e4d697276454da88)\n> — Я смотрю телевизор.",
+"en": "To watch — смотреть.\n> Я смотрю телевизор. [audio](media:455d1b87e4d697276454da88)\n> — I'm watching TV."
 }
 },
 {
 "id": "speak",
 "unit": "verbs",
-"front": "говорить [audio](media:0d3afc8eebbc88f1f6d55f9a)",
+"front": "говорить [audio](media:08c7f4188e0987a93c1c1780)",
 "hint": "gavarít'",
 "back": {
 "ru": "говорить",
 "en": "to speak"
 },
 "extra": {
-"ru": "> Говорите медленнее, пожалуйста. [audio](media:4df1f0e36212dfae3ac75dea)\n> — Говорите медленнее, пожалуйста.",
-"en": "> Говорите медленнее, пожалуйста. [audio](media:4df1f0e36212dfae3ac75dea)\n> — Speak more slowly, please."
+"ru": "> Говорите медленнее, пожалуйста. [audio](media:ee9e04bd7b0f27c6967fd0d6)\n> — Говорите медленнее, пожалуйста.",
+"en": "> Говорите медленнее, пожалуйста. [audio](media:ee9e04bd7b0f27c6967fd0d6)\n> — Speak more slowly, please."
 }
 },
 {
 "id": "know",
 "unit": "verbs",
-"front": "знать [audio](media:4db1b2c8334f382a97ac0ad0)",
+"front": "знать [audio](media:99d7822fb47f3024c910dd00)",
 "hint": "znat'",
 "back": {
 "ru": "знать",
 "en": "to know"
 },
 "extra": {
-"ru": "> Я не знаю. [audio](media:43a7b4e3bc8277b27bee9b94)\n> — Я не знаю.",
-"en": "> Я не знаю. [audio](media:43a7b4e3bc8277b27bee9b94)\n> — I don't know."
+"ru": "> Я не знаю. [audio](media:585cc434b5de90d164e47bcd)\n> — Я не знаю.",
+"en": "> Я не знаю. [audio](media:585cc434b5de90d164e47bcd)\n> — I don't know."
 }
 },
 {
 "id": "want",
 "unit": "verbs",
-"front": "хотеть [audio](media:6eca0f9d8bd6df0702f1a9cf)",
+"front": "хотеть [audio](media:0c76efc73a26aff3fa70692a)",
 "hint": "khatét'",
 "back": {
 "ru": "хотеть",
 "en": "to want"
 },
 "extra": {
-"ru": "> Я хочу кофе. [audio](media:3c7c372bfd8b80cf756997ed)\n> — Я хочу кофе.",
-"en": "я хочу, ты хочешь.\n> Я хочу кофе. [audio](media:3c7c372bfd8b80cf756997ed)\n> — I want coffee."
+"ru": "> Я хочу кофе. [audio](media:629eb4f9f10d50a28b00b48c)\n> — Я хочу кофе.",
+"en": "я хочу, ты хочешь.\n> Я хочу кофе. [audio](media:629eb4f9f10d50a28b00b48c)\n> — I want coffee."
 }
 },
 {
 "id": "can",
 "unit": "verbs",
-"front": "мочь [audio](media:8a882962c2616ee3a629667f)",
+"front": "мочь [audio](media:5914c98854f94b9229e3450b)",
 "hint": "moch",
 "back": {
 "ru": "мочь",
 "en": "can; to be able"
 },
 "extra": {
-"ru": "> Я могу помочь. [audio](media:9dc1a37ef484ee736d8d0b5b)\n> — Я могу помочь.",
-"en": "я могу, ты можешь.\n> Я могу помочь. [audio](media:9dc1a37ef484ee736d8d0b5b)\n> — I can help."
+"ru": "> Я могу помочь. [audio](media:9cbccfb0f1eca23414c76019)\n> — Я могу помочь.",
+"en": "я могу, ты можешь.\n> Я могу помочь. [audio](media:9cbccfb0f1eca23414c76019)\n> — I can help."
 }
 },
 {
 "id": "live",
 "unit": "verbs",
-"front": "жить [audio](media:23133c5d5701024aa1aaca39)",
+"front": "жить [audio](media:4fb72a0d4abb102436bb73c2)",
 "hint": "zhit'",
 "back": {
 "ru": "жить",
 "en": "to live"
 },
 "extra": {
-"ru": "> Где ты живёшь? [audio](media:c7f01cc8e8160c8959b61bdc)\n> — Где ты живёшь?",
-"en": "> Где ты живёшь? [audio](media:c7f01cc8e8160c8959b61bdc)\n> — Where do you live?"
+"ru": "> Где ты живёшь? [audio](media:bca5a623ccc8a069b2966aad)\n> — Где ты живёшь?",
+"en": "> Где ты живёшь? [audio](media:bca5a623ccc8a069b2966aad)\n> — Where do you live?"
 }
 },
 {
 "id": "big",
 "unit": "describe",
-"front": "большой [audio](media:f5f93a0682a012f2ae583c49)",
+"front": "большой [audio](media:7a644fbead4dfce47deb6316)",
 "hint": "bal'shóy",
 "back": {
 "ru": "большой",
 "en": "big"
 },
 "extra": {
-"ru": "> У них большой дом. [audio](media:1866d9bbcdd8e4685c9f99f1)\n> — У них большой дом.",
-"en": "> У них большой дом. [audio](media:1866d9bbcdd8e4685c9f99f1)\n> — They have a big house."
+"ru": "> У них большой дом. [audio](media:a39a60b2f04a42fd0bef2ccb)\n> — У них большой дом.",
+"en": "> У них большой дом. [audio](media:a39a60b2f04a42fd0bef2ccb)\n> — They have a big house."
 }
 },
 {
 "id": "small",
 "unit": "describe",
-"front": "маленький [audio](media:097e94011353287241f72dbd)",
+"front": "маленький [audio](media:75f14214478c7fd31075b0e9)",
 "hint": "málen'kiy",
 "back": {
 "ru": "маленький",
 "en": "small"
 },
 "extra": {
-"ru": "> Это маленькая собака. [audio](media:33701a95d8bd96024d303594)\n> — Это маленькая собака.",
-"en": "> Это маленькая собака. [audio](media:33701a95d8bd96024d303594)\n> — It's a small dog."
+"ru": "> Это маленькая собака. [audio](media:42dd2aef0c71fb008baf2c21)\n> — Это маленькая собака.",
+"en": "> Это маленькая собака. [audio](media:42dd2aef0c71fb008baf2c21)\n> — It's a small dog."
 }
 },
 {
 "id": "good",
 "unit": "describe",
-"front": "хороший [audio](media:ff08307f6dd787b915da8f68)",
+"front": "хороший [audio](media:8d7970850b3b07ade21cd9ac)",
 "hint": "kharóshiy",
 "back": {
 "ru": "хороший",
 "en": "good"
 },
 "extra": {
-"ru": "> Это хорошая идея. [audio](media:f6bea2e9ceec971a99760bb7)\n> — Это хорошая идея.",
-"en": "Adverb: хорошо.\n> Это хорошая идея. [audio](media:f6bea2e9ceec971a99760bb7)\n> — That's a good idea."
+"ru": "> Это хорошая идея. [audio](media:bff990c9c68f27d522f58a3e)\n> — Это хорошая идея.",
+"en": "Adverb: хорошо.\n> Это хорошая идея. [audio](media:bff990c9c68f27d522f58a3e)\n> — That's a good idea."
 }
 },
 {
 "id": "bad",
 "unit": "describe",
-"front": "плохой [audio](media:cd3413a6c8147ee40324769b)",
+"front": "плохой [audio](media:032f50b4776950993780e05c)",
 "hint": "plakhóy",
 "back": {
 "ru": "плохой",
 "en": "bad"
 },
 "extra": {
-"ru": "> Сегодня плохая погода. [audio](media:4ef8647a9d06b285dc8c8958)\n> — Сегодня плохая погода.",
-"en": "> Сегодня плохая погода. [audio](media:4ef8647a9d06b285dc8c8958)\n> — The weather is bad today."
+"ru": "> Сегодня плохая погода. [audio](media:11677767e742b40a21650fef)\n> — Сегодня плохая погода.",
+"en": "> Сегодня плохая погода. [audio](media:11677767e742b40a21650fef)\n> — The weather is bad today."
 }
 },
 {
 "id": "new",
 "unit": "describe",
-"front": "новый [audio](media:d6e7c459aa52fc5a26804fee)",
+"front": "новый [audio](media:2ba37dad862df80e6d2255ac)",
 "hint": "nóvyy",
 "back": {
 "ru": "новый",
 "en": "new"
 },
 "extra": {
-"ru": "> У меня новый телефон. [audio](media:d6f2d1c9f8c37a77862eff15)\n> — У меня новый телефон.",
-"en": "> У меня новый телефон. [audio](media:d6f2d1c9f8c37a77862eff15)\n> — I have a new phone."
+"ru": "> У меня новый телефон. [audio](media:ebbd528ac9dafa6847d63f83)\n> — У меня новый телефон.",
+"en": "> У меня новый телефон. [audio](media:ebbd528ac9dafa6847d63f83)\n> — I have a new phone."
 }
 },
 {
 "id": "old",
 "unit": "describe",
-"front": "старый [audio](media:fec164f7890c6c524c59b6d1)",
+"front": "старый [audio](media:e198e9f74eb197c63785ba35)",
 "hint": "stáryy",
 "back": {
 "ru": "старый",
 "en": "old"
 },
 "extra": {
-"ru": "> Это старый город. [audio](media:fe112a68e76dad675762496a)\n> — Это старый город.",
-"en": "> Это старый город. [audio](media:fe112a68e76dad675762496a)\n> — It's an old town."
+"ru": "> Это старый город. [audio](media:475dbd51d3de428eb91ee331)\n> — Это старый город.",
+"en": "> Это старый город. [audio](media:475dbd51d3de428eb91ee331)\n> — It's an old town."
 }
 },
 {
 "id": "hot",
 "unit": "describe",
-"front": "горячий [audio](media:2dc887f7cb99aed5850468ab)",
+"front": "горячий [audio](media:d151c7e2475072aa12824afe)",
 "hint": "garyáchiy",
 "back": {
 "ru": "горячий",
 "en": "hot"
 },
 "extra": {
-"ru": "> Чай горячий. [audio](media:651508e11fdce03a4c1b17b8)\n> — Чай горячий.",
-"en": "Hot weather: жарко.\n> Чай горячий. [audio](media:651508e11fdce03a4c1b17b8)\n> — The tea is hot."
+"ru": "> Чай горячий. [audio](media:7999ce20d34f4f40aea80418)\n> — Чай горячий.",
+"en": "Hot weather: жарко.\n> Чай горячий. [audio](media:7999ce20d34f4f40aea80418)\n> — The tea is hot."
 }
 },
 {
 "id": "cold",
 "unit": "describe",
-"front": "холодный [audio](media:5f50bd9d61325de7cce9804c)",
+"front": "холодный [audio](media:f44c4811527566822980ebd5)",
 "hint": "khalódnyy",
 "back": {
 "ru": "холодный",
 "en": "cold"
 },
 "extra": {
-"ru": "> Вода холодная. [audio](media:70194ed6357316307d5c9ec8)\n> — Вода холодная.",
-"en": "> Вода холодная. [audio](media:70194ed6357316307d5c9ec8)\n> — The water is cold."
+"ru": "> Вода холодная. [audio](media:17fc4d4d808237659464dd3c)\n> — Вода холодная.",
+"en": "> Вода холодная. [audio](media:17fc4d4d808237659464dd3c)\n> — The water is cold."
 }
 },
 {
 "id": "beautiful",
 "unit": "describe",
-"front": "красивый [audio](media:e76b6bf66e97291bf47b3694)",
+"front": "красивый [audio](media:35027030100297580f34be95)",
 "hint": "krasívyy",
 "back": {
 "ru": "красивый",
 "en": "beautiful"
 },
 "extra": {
-"ru": "> Какой красивый вид! [audio](media:f0a0de2f556264e2ac3e99f6)\n> — Какой красивый вид!",
-"en": "> Какой красивый вид! [audio](media:f0a0de2f556264e2ac3e99f6)\n> — What a beautiful view!"
+"ru": "> Какой красивый вид! [audio](media:5d05131ca051747a733880d6)\n> — Какой красивый вид!",
+"en": "> Какой красивый вид! [audio](media:5d05131ca051747a733880d6)\n> — What a beautiful view!"
 }
 },
 {
 "id": "red",
 "unit": "describe",
-"front": "красный [audio](media:a5c48cc9266bb90336cdce6d)",
+"front": "красный [audio](media:e55c85680446ed5848fbcfff)",
 "hint": "krásnyy",
 "back": {
 "ru": "красный",
 "en": "red"
 },
 "extra": {
-"ru": "> Мне нравится красный цвет. [audio](media:f9b3874c59567cbaae31c333)\n> — Мне нравится красный цвет.",
-"en": "> Мне нравится красный цвет. [audio](media:f9b3874c59567cbaae31c333)\n> — I like the colour red."
+"ru": "> Мне нравится красный цвет. [audio](media:52b1ee8567c3a90d1ffdc937)\n> — Мне нравится красный цвет.",
+"en": "> Мне нравится красный цвет. [audio](media:52b1ee8567c3a90d1ffdc937)\n> — I like the colour red."
 }
 },
 {
 "id": "car",
 "unit": "travel",
-"front": "машина [audio](media:4896e4699a1e7a3a70b74fda)",
+"front": "машина [audio](media:1fce2df5da19e4defd1b5d29)",
 "hint": "mashína",
 "back": {
 "ru": "машина",
 "en": "car"
 },
 "extra": {
-"ru": "> Это моя машина. [audio](media:dba167917d733094c6e22734)\n> — Это моя машина.",
-"en": "> Это моя машина. [audio](media:dba167917d733094c6e22734)\n> — This is my car."
+"ru": "> Это моя машина. [audio](media:4a741f3fbd57a593e400cca2)\n> — Это моя машина.",
+"en": "> Это моя машина. [audio](media:4a741f3fbd57a593e400cca2)\n> — This is my car."
 }
 },
 {
 "id": "bus",
 "unit": "travel",
-"front": "автобус [audio](media:5a82ba040953a7aeb66bdaee)",
+"front": "автобус [audio](media:b9b750d32f409c045ff4c8ca)",
 "hint": "aftóbus",
 "back": {
 "ru": "автобус",
 "en": "bus"
 },
 "extra": {
-"ru": "> Автобус опаздывает. [audio](media:13119483db867f3dbc05656f)\n> — Автобус опаздывает.",
-"en": "> Автобус опаздывает. [audio](media:13119483db867f3dbc05656f)\n> — The bus is late."
+"ru": "> Автобус опаздывает. [audio](media:96690e586352d227ce6256d8)\n> — Автобус опаздывает.",
+"en": "> Автобус опаздывает. [audio](media:96690e586352d227ce6256d8)\n> — The bus is late."
 }
 },
 {
 "id": "train",
 "unit": "travel",
-"front": "поезд [audio](media:da283b6ffe3008ff97f1fd4e)",
+"front": "поезд [audio](media:9fcdda14931faefaea0b75ed)",
 "hint": "póyezd",
 "back": {
 "ru": "поезд",
 "en": "train"
 },
 "extra": {
-"ru": "> Поезд уходит в шесть. [audio](media:0c17ffa811da5ca691b31445)\n> — Поезд уходит в шесть.",
-"en": "> Поезд уходит в шесть. [audio](media:0c17ffa811da5ca691b31445)\n> — The train leaves at six."
+"ru": "> Поезд уходит в шесть. [audio](media:e8b16696bdacc80184375e6a)\n> — Поезд уходит в шесть.",
+"en": "> Поезд уходит в шесть. [audio](media:e8b16696bdacc80184375e6a)\n> — The train leaves at six."
 }
 },
 {
 "id": "plane",
 "unit": "travel",
-"front": "самолёт [audio](media:f583ef7063178292e06243ed)",
+"front": "самолёт [audio](media:0b749a49d6898d6a2bde3ee3)",
 "hint": "samalyót",
 "back": {
 "ru": "самолёт",
 "en": "plane"
 },
 "extra": {
-"ru": "> Самолёт летит в Рим. [audio](media:328ed5347148a8e3f9026688)\n> — Самолёт летит в Рим.",
-"en": "> Самолёт летит в Рим. [audio](media:328ed5347148a8e3f9026688)\n> — The plane is flying to Rome."
+"ru": "> Самолёт летит в Рим. [audio](media:ad19196d2306f0664dee5380)\n> — Самолёт летит в Рим.",
+"en": "> Самолёт летит в Рим. [audio](media:ad19196d2306f0664dee5380)\n> — The plane is flying to Rome."
 }
 },
 {
 "id": "ticket",
 "unit": "travel",
-"front": "билет [audio](media:ae53543b13f0578faff125c1)",
+"front": "билет [audio](media:8488aea160adac3ab49d3985)",
 "hint": "bilyét",
 "back": {
 "ru": "билет",
 "en": "ticket"
 },
 "extra": {
-"ru": "> Один билет, пожалуйста. [audio](media:b446d092884d40cee7624aa1)\n> — Один билет, пожалуйста.",
-"en": "> Один билет, пожалуйста. [audio](media:b446d092884d40cee7624aa1)\n> — One ticket, please."
+"ru": "> Один билет, пожалуйста. [audio](media:277e6963628d38a619d85bc3)\n> — Один билет, пожалуйста.",
+"en": "> Один билет, пожалуйста. [audio](media:277e6963628d38a619d85bc3)\n> — One ticket, please."
 }
 },
 {
 "id": "hotel",
 "unit": "travel",
-"front": "гостиница [audio](media:43219026c5cd7e5eb9e65dfb)",
+"front": "гостиница [audio](media:cc64e20f6d27c35595524540)",
 "hint": "gastínitsa",
 "back": {
 "ru": "гостиница, отель",
 "en": "hotel"
 },
 "extra": {
-"ru": "> Отель в центре. [audio](media:11a4bf180aba1aebc998f3e4)\n> — Отель в центре.",
-"en": "Also: отель.\n> Отель в центре. [audio](media:11a4bf180aba1aebc998f3e4)\n> — The hotel is in the centre."
+"ru": "> Отель в центре. [audio](media:fb1f609ee6eb375a316db9bf)\n> — Отель в центре.",
+"en": "Also: отель.\n> Отель в центре. [audio](media:fb1f609ee6eb375a316db9bf)\n> — The hotel is in the centre."
 }
 },
 {
 "id": "map",
 "unit": "travel",
-"front": "карта [audio](media:3a7e53f1083e7269dbf66a39)",
+"front": "карта [audio](media:030c1d7d97c83168e645a4f8)",
 "hint": "kárta",
 "back": {
 "ru": "карта",
 "en": "map"
 },
 "extra": {
-"ru": "> У тебя есть карта? [audio](media:dd9f21de96c4a5e6dc8b083e)\n> — У тебя есть карта?",
-"en": "> У тебя есть карта? [audio](media:dd9f21de96c4a5e6dc8b083e)\n> — Do you have a map?"
+"ru": "> У тебя есть карта? [audio](media:cd512ac9b7ac52f8973591a4)\n> — У тебя есть карта?",
+"en": "> У тебя есть карта? [audio](media:cd512ac9b7ac52f8973591a4)\n> — Do you have a map?"
 }
 },
 {
 "id": "left",
 "unit": "travel",
-"front": "налево [audio](media:5907a9db5204759ffbe71da3)",
+"front": "налево [audio](media:9bdcd116ac72cfcb716da746)",
 "hint": "nalyéva",
 "back": {
 "ru": "налево; левый",
 "en": "left"
 },
 "extra": {
-"ru": "> Поверните налево. [audio](media:dd67ca4cc4bb2fe02b288370)\n> — Поверните налево.",
-"en": "> Поверните налево. [audio](media:dd67ca4cc4bb2fe02b288370)\n> — Turn left."
+"ru": "> Поверните налево. [audio](media:f1b3c6f3268501919226d745)\n> — Поверните налево.",
+"en": "> Поверните налево. [audio](media:f1b3c6f3268501919226d745)\n> — Turn left."
 }
 },
 {
 "id": "right",
 "unit": "travel",
-"front": "направо [audio](media:331ffd0e3d1318c25f197754)",
+"front": "направо [audio](media:47ae0836e32f6edc093259a5)",
 "hint": "naprávo",
 "back": {
 "ru": "направо; правый",
 "en": "right"
 },
 "extra": {
-"ru": "> Поверните направо. [audio](media:03c5b602bc17eaf72185b669)\n> — Поверните направо.",
-"en": "> Поверните направо. [audio](media:03c5b602bc17eaf72185b669)\n> — Turn right."
+"ru": "> Поверните направо. [audio](media:b8d4f5a61bbfe9785bcac468)\n> — Поверните направо.",
+"en": "> Поверните направо. [audio](media:b8d4f5a61bbfe9785bcac468)\n> — Turn right."
 }
 },
 {
 "id": "where",
 "unit": "travel",
-"front": "где [audio](media:91f53288bfb59b64324e8529)",
+"front": "где [audio](media:bdc5ca84a5cd7ade5d581f29)",
 "hint": "gde",
 "back": {
 "ru": "где",
 "en": "where"
 },
 "extra": {
-"ru": "> Где метро? [audio](media:5725389090aad48d446867a3)\n> — Где метро?",
-"en": "Where to — куда.\n> Где метро? [audio](media:5725389090aad48d446867a3)\n> — Where is the metro?"
+"ru": "> Где метро? [audio](media:9f7f0a4994972e33cdd3fe7a)\n> — Где метро?",
+"en": "Where to — куда.\n> Где метро? [audio](media:9f7f0a4994972e33cdd3fe7a)\n> — Where is the metro?"
 }
 }
 ],
@@ -1127,645 +1127,645 @@
 "file": "ru.audio.mp3",
 "type": "audio/mpeg",
 "index": {
-"7b5bc98941c1769e09cda430": [
+"71f35dee7295b829c9ffc390": [
 0,
-4317
+3717
 ],
-"ecdf1be13f4edc117f5174a6": [
-4317,
-11757
+"149790111ddfc36ed23e8032": [
+3717,
+13317
 ],
-"43c0ae69c4cef6f7539a3a06": [
-16074,
-6357
-],
-"6e02c3e86829a3310b457313": [
-22431,
-11037
-],
-"5d856bded7c71cd18447b105": [
-33468,
-5157
-],
-"6efe0dfdf1cd643b39c1f9da": [
-38625,
-7317
-],
-"11569456d51c625da7f801c9": [
-45942,
-5637
-],
-"9be723c8a0609d7f4a05ad41": [
-51579,
-8997
-],
-"85807df853d2c1b3c8afeb13": [
-60576,
-4557
-],
-"5b300e81ffe9d12c2431750f": [
-65133,
-7197
-],
-"a0d8f3808b8ef16eddaa27d7": [
-72330,
-4437
-],
-"de94453d3263f8e5104e402a": [
-76767,
-10437
-],
-"8002dfec918b8b6d0d62b781": [
-87204,
-5517
-],
-"e1e211908bcee17ee38ded1c": [
-92721,
-10437
-],
-"6c1e0fe242bbe03632e9c0d5": [
-103158,
-7197
-],
-"ffc13bd620caaf96f3ed9501": [
-110355,
-10077
-],
-"d5e032927c665a00dbb579b6": [
-120432,
-6957
-],
-"90d65440d0a9703fddbc5f44": [
-127389,
-10797
-],
-"6ce19432a317ebd56ef19876": [
-138186,
-5037
-],
-"f3d2c1feacf9f19ac47dde8e": [
-143223,
-12837
-],
-"b1c3482ed7cbc1ae0c8d0b02": [
-156060,
-5397
-],
-"ccd4a9cd21c5562c7d2d9fea": [
-161457,
-12237
-],
-"b594d5e7cc5d3d532aad0921": [
-173694,
-6477
-],
-"1133d63c6f95dee473cb4308": [
-180171,
-12957
-],
-"0bcf642a3bf3ebb055262546": [
-193128,
-5277
-],
-"17a63ae93e538f6d02bcbbc7": [
-198405,
-6957
-],
-"894deb3376d556e0c8308f14": [
-205362,
-4437
-],
-"d4cf3ec299084ed4ad23a672": [
-209799,
-9237
-],
-"7096412167f1d47bfed3bf61": [
-219036,
-4317
-],
-"ff6f7f53ad220f2bd2f82b55": [
-223353,
-8157
-],
-"5b27a4c809ee4e0c477e0f6d": [
-231510,
-4317
-],
-"9999cb386be9d3b4a1e3d17b": [
-235827,
-11157
-],
-"85ba2e1168a1419f8508ea28": [
-246984,
-4437
-],
-"76eb9501bda6558733a6b9a6": [
-251421,
-8037
-],
-"e3340edc1872f1020f926f47": [
-259458,
-4917
-],
-"41e2d03607aa6ef9acf7d104": [
-264375,
-11037
-],
-"73803686cdb8530b5cf85aa8": [
-275412,
-5637
-],
-"7309bf81861909153008d4f2": [
-281049,
-8877
-],
-"d7ba11b9bcd569b8ccdbeed5": [
-289926,
-4797
-],
-"448cfc45de4e9c2e91693b9f": [
-294723,
-7557
-],
-"b2e848546d7247567879e5b8": [
-302280,
-4797
-],
-"a90d8bbe64a4df81d62357ef": [
-307077,
-9957
-],
-"c23cb17c79cdfa949c2d6c2b": [
-317034,
-4677
-],
-"457965cf6789887c911daf88": [
-321711,
-9117
-],
-"ff1a6fc2d62a936cfdb501b5": [
-330828,
-4557
-],
-"7e8345f8a1b50e6d50a964e3": [
-335385,
-7797
-],
-"c7c5c62aa4fea29649eca58c": [
-343182,
-4797
-],
-"3eb61127db7c54d85a56141e": [
-347979,
-8397
-],
-"01176030eafd15045baa081a": [
-356376,
-3597
-],
-"c26da18abb8151914b4ee8a7": [
-359973,
-8037
-],
-"17f2620bdcbc7e5bb81f968a": [
-368010,
-3957
-],
-"3a0fc33a20a9f8fe0727be34": [
-371967,
-6357
-],
-"6bad61bdd6f8f1e51d1d1c36": [
-378324,
-5757
-],
-"b34692c5134576da648105a8": [
-384081,
-10197
-],
-"4bf15815c78eeaaee61ccfb4": [
-394278,
-4677
-],
-"07b344f1417ef37c0dfe2cff": [
-398955,
-7437
-],
-"8910353e0ef07e4c687a7432": [
-406392,
-4797
-],
-"4b0c5d73e5fa2d11e735cbd1": [
-411189,
-9477
-],
-"d19e206aa419fee4a6cd5d4f": [
-420666,
-4077
-],
-"fa971a054e1ef92216ca14ec": [
-424743,
-7197
-],
-"63d85ccfb6dd5a8f41878f01": [
-431940,
-4797
-],
-"38023a24a24d0386aa31c467": [
-436737,
-8757
-],
-"3d9b2ad93b98643b8876bda4": [
-445494,
-4557
-],
-"25ae5ceec24227ee854e08e4": [
-450051,
-8397
-],
-"ff600321d8e590464d8e415e": [
-458448,
-3837
-],
-"73208e40d002bae2beab9c10": [
-462285,
-11757
-],
-"3cb3304778377d2639bad5bb": [
-474042,
-4077
-],
-"2bfbf7d968d58902839d0c4d": [
-478119,
-6717
-],
-"26252b2dc58ed93201237696": [
-484836,
-4797
-],
-"17ab56275f208fd21fbdaff9": [
-489633,
+"396cbe948176cc1807932659": [
+17034,
 6597
 ],
-"3b6271455caa22c11a9d5f1d": [
-496230,
-5037
+"f2103bad17c1de43baa34568": [
+23631,
+13557
 ],
-"5f80dcc04da846304003a273": [
-501267,
-11637
+"f2c740e3bf2ac1eb457ff219": [
+37188,
+5397
 ],
-"75867f9796e4b42b6d76ddfd": [
-512904,
-4557
+"fa815fdb6a3ca5c152805105": [
+42585,
+7557
 ],
-"cdec8a12d80780844b609bce": [
-517461,
-7317
+"e1eee84178be192fad08ed59": [
+50142,
+5397
 ],
-"8093bcb6f33046f26aca4b67": [
-524778,
-4677
+"954ec98b0751b78df6069b7c": [
+55539,
+12477
 ],
-"087bd48748c43aeca54e6aab": [
-529455,
-11157
+"4e55aa7fb1ecab210f746bd9": [
+68016,
+3237
 ],
-"960ee6e8699d03cfff796dd6": [
-540612,
-4437
-],
-"dbf1aebef8fdaaa57b61db07": [
-545049,
-7437
-],
-"4a316b4e81410b75239dca3f": [
-552486,
-4677
-],
-"8f8b6592bef6a20b010986ca": [
-557163,
-6237
-],
-"890deb6167a51774feb2359a": [
-563400,
-4317
-],
-"a71865791126eeaced4cff9f": [
-567717,
-6477
-],
-"2d9e8a8aee72fd0f44069d17": [
-574194,
-4917
-],
-"08e8e6e255dd29f1a8628705": [
-579111,
-10677
-],
-"cee1230336675de87bc6dcc0": [
-589788,
-4557
-],
-"83e4012bdd86330592017644": [
-594345,
-11637
-],
-"e3515b3658f3f556ca3bc462": [
-605982,
-4677
-],
-"73110eba5112ad3c4e5c950d": [
-610659,
-9957
-],
-"2d9d6cd4ceff987076137c0a": [
-620616,
-4917
-],
-"af6235ea5b43c48c94ab7e04": [
-625533,
+"4ce7338d0f7f19cffec054ef": [
+71253,
 8157
 ],
-"24e9c74c150586224ad623d7": [
-633690,
+"cb7b98feddc5d73309df58d0": [
+79410,
+3717
+],
+"aaa11b44efe4754721d0756e": [
+83127,
+11877
+],
+"44b5d54f644f232f9b01d896": [
+95004,
 5517
 ],
-"003db53fb52dc48ba62e815b": [
-639207,
-8517
+"94060ff3de88abae77e79902": [
+100521,
+12117
 ],
-"0fa5b9528cbb51299773199b": [
-647724,
-5037
-],
-"4188c500a193ba6b516f1a30": [
-652761,
-6117
-],
-"ea366b83bc2c920cfd0eee8e": [
-658878,
-5517
-],
-"0e116c4b2f1db3c2f4829bfb": [
-664395,
-6477
-],
-"228a9f75603e373a4f77992c": [
-670872,
-5037
-],
-"f5cebd49289d3f4e967495fd": [
-675909,
-6717
-],
-"edf80e5f18011997c5520e50": [
-682626,
-3957
-],
-"662d3de67a00f21b1a21ce64": [
-686583,
-7317
-],
-"e3f26237b1e4c25274781348": [
-693900,
-3837
-],
-"9e09637cd1ff0dda1aa96e89": [
-697737,
-6357
-],
-"ab8e4035841790b4ca805b63": [
-704094,
-4677
-],
-"0991388d8baaea8c157eaea8": [
-708771,
-8757
-],
-"186f6db758aa5dd337a73bd0": [
-717528,
-5037
-],
-"bcce9784c93a03c446fa07c7": [
-722565,
+"15e8eb0da6f24212dc29ceba": [
+112638,
 6957
 ],
-"fe747040c9f25a4a5c7333d3": [
-729522,
-4917
+"8212d5a67ec5e4fb4e9f221f": [
+119595,
+12117
 ],
-"1e5acc87c7fa88edb7e0684e": [
-734439,
-8157
-],
-"ccd7fc065f47136c2402e102": [
-742596,
-4677
-],
-"fc6bacd45cc363fa5ce42be9": [
-747273,
-9117
-],
-"0d3afc8eebbc88f1f6d55f9a": [
-756390,
-4917
-],
-"4df1f0e36212dfae3ac75dea": [
-761307,
-11757
-],
-"4db1b2c8334f382a97ac0ad0": [
-773064,
-5397
-],
-"43a7b4e3bc8277b27bee9b94": [
-778461,
+"b51a11311aca5233a3be8e54": [
+131712,
 6717
 ],
-"6eca0f9d8bd6df0702f1a9cf": [
-785178,
-4437
+"7210ccb7e183085add6d33f9": [
+138429,
+13797
 ],
-"3c7c372bfd8b80cf756997ed": [
-789615,
-7197
+"41f2e60c45a2b44d9b216946": [
+152226,
+4797
 ],
-"8a882962c2616ee3a629667f": [
-796812,
-3837
+"f1d618a9e9e0c00a6794d0c1": [
+157023,
+14637
 ],
-"9dc1a37ef484ee736d8d0b5b": [
-800649,
-7317
+"634bb57376523bfcfb2e23f5": [
+171660,
+4917
 ],
-"23133c5d5701024aa1aaca39": [
-807966,
-5397
+"1d2fd6c501662730fc65e6a1": [
+176577,
+14757
 ],
-"c7f01cc8e8160c8959b61bdc": [
-813363,
-8157
-],
-"f5f93a0682a012f2ae583c49": [
-821520,
-5037
-],
-"1866d9bbcdd8e4685c9f99f1": [
-826557,
-7557
-],
-"097e94011353287241f72dbd": [
-834114,
+"d405534908ff8a469245c9e3": [
+191334,
 5157
 ],
-"33701a95d8bd96024d303594": [
-839271,
-10557
+"03fa950ed6e19f02ac45af36": [
+196491,
+13437
 ],
-"ff08307f6dd787b915da8f68": [
-849828,
+"23f33f9358a7bd87da4563f4": [
+209928,
 5037
 ],
-"f6bea2e9ceec971a99760bb7": [
-854865,
-8757
+"d1654b9d13a4a5766d70d05e": [
+214965,
+6717
 ],
-"cd3413a6c8147ee40324769b": [
-863622,
-4317
+"f710e30e5937d256b0a9bb0e": [
+221682,
+3957
 ],
-"4ef8647a9d06b285dc8c8958": [
-867939,
-9237
+"6fd652a781394431a26166ae": [
+225639,
+9957
 ],
-"d6e7c459aa52fc5a26804fee": [
-877176,
-5037
+"b2a5ed71fae3276c43074041": [
+235596,
+4197
 ],
-"d6f2d1c9f8c37a77862eff15": [
-882213,
-9117
+"7b62e8e12a4f1930752fd45d": [
+239793,
+9357
 ],
-"fec164f7890c6c524c59b6d1": [
-891330,
+"b928b4f0f013567e9e3c739e": [
+249150,
+3597
+],
+"516f256a7518be85ceb24420": [
+252747,
+12357
+],
+"dce84745b8988085a1ce197a": [
+265104,
 3837
 ],
-"fe112a68e76dad675762496a": [
-895167,
-7557
+"ba397dd44a4604e0f9566a52": [
+268941,
+7797
 ],
-"2dc887f7cb99aed5850468ab": [
-902724,
-5037
+"e74df2402ef4b65368628a5a": [
+276738,
+4557
 ],
-"651508e11fdce03a4c1b17b8": [
-907761,
-5997
-],
-"5f50bd9d61325de7cce9804c": [
-913758,
-4917
-],
-"70194ed6357316307d5c9ec8": [
-918675,
-7677
-],
-"e76b6bf66e97291bf47b3694": [
-926352,
-5037
-],
-"f0a0de2f556264e2ac3e99f6": [
-931389,
-7197
-],
-"a5c48cc9266bb90336cdce6d": [
-938586,
-4797
-],
-"f9b3874c59567cbaae31c333": [
-943383,
+"6e447302054ecd7dac669dda": [
+281295,
 10197
 ],
-"4896e4699a1e7a3a70b74fda": [
-953580,
-5397
-],
-"dba167917d733094c6e22734": [
-958977,
-7317
-],
-"5a82ba040953a7aeb66bdaee": [
-966294,
-5637
-],
-"13119483db867f3dbc05656f": [
-971931,
-8277
-],
-"da283b6ffe3008ff97f1fd4e": [
-980208,
-4917
-],
-"0c17ffa811da5ca691b31445": [
-985125,
-8037
-],
-"f583ef7063178292e06243ed": [
-993162,
-5637
-],
-"328ed5347148a8e3f9026688": [
-998799,
-9477
-],
-"ae53543b13f0578faff125c1": [
-1008276,
-4797
-],
-"b446d092884d40cee7624aa1": [
-1013073,
-13917
-],
-"43219026c5cd7e5eb9e65dfb": [
-1026990,
-6357
-],
-"11a4bf180aba1aebc998f3e4": [
-1033347,
-6357
-],
-"3a7e53f1083e7269dbf66a39": [
-1039704,
-4317
-],
-"dd9f21de96c4a5e6dc8b083e": [
-1044021,
-7917
-],
-"5907a9db5204759ffbe71da3": [
-1051938,
-4797
-],
-"dd67ca4cc4bb2fe02b288370": [
-1056735,
-7197
-],
-"331ffd0e3d1318c25f197754": [
-1063932,
-5277
-],
-"03c5b602bc17eaf72185b669": [
-1069209,
-9117
-],
-"91f53288bfb59b64324e8529": [
-1078326,
+"bc9658d6116868788df47d4e": [
+291492,
 4077
 ],
-"5725389090aad48d446867a3": [
-1082403,
-5757
+"f67b169306bcdb6392b494b1": [
+295569,
+9117
+],
+"5a32a57ee5da1aefd6e4b1b4": [
+304686,
+3477
+],
+"9dcf9b7cea2d9d132f25054f": [
+308163,
+9357
+],
+"08dba1b447cc16bd16bacc4b": [
+317520,
+4317
+],
+"dddbd429b7df8034799c4b63": [
+321837,
+11157
+],
+"f3a225c913de05cb879cdb59": [
+332994,
+3957
+],
+"50f60a81ac08a167063e9a80": [
+336951,
+12837
+],
+"0239dbc2543efba63886056e": [
+349788,
+3477
+],
+"19ffe242ba6b4c9b7d4fd2eb": [
+353265,
+7557
+],
+"a5b88f214d3b205e93584fa7": [
+360822,
+4077
+],
+"f25b5bbd79fde3ad62e60122": [
+364899,
+8637
+],
+"37b32c7bc085d9d7f2224ce9": [
+373536,
+3357
+],
+"aefa303cf52861480e7989b4": [
+376893,
+8637
+],
+"185a69b0b6f66876ba107954": [
+385530,
+3837
+],
+"85956596450cd5d995159280": [
+389367,
+6357
+],
+"06a74db0b81a6bc6014bd4d8": [
+395724,
+4077
+],
+"2344f6568a39db6fbbd03a88": [
+399801,
+10077
+],
+"41177c23d7e19102fc8918f9": [
+409878,
+5397
+],
+"677a34a2fcef607ee18cf871": [
+415275,
+7197
+],
+"8b10aedc38be4965ab6d5b80": [
+422472,
+4677
+],
+"6ec6ba9c2977ee2d8c8a7f0b": [
+427149,
+9477
+],
+"ea9efb9eb0ceaa3af983eaae": [
+436626,
+4437
+],
+"460c161db89f959147b60b8e": [
+441063,
+6957
+],
+"5c006cf4527500688c0c377f": [
+448020,
+3837
+],
+"e922931a8a5260178987651d": [
+451857,
+14037
+],
+"3f2382d29672b75d8b719d23": [
+465894,
+3597
+],
+"8ba66318287e3c442b244a03": [
+469491,
+8637
+],
+"a9054a8445fc56ee41a2c694": [
+478128,
+3837
+],
+"d3e941ed7b1ee0f55500edd9": [
+481965,
+12117
+],
+"966185c95a1d885ae8728cd6": [
+494082,
+3477
+],
+"3faffa49838e88f2c49fa380": [
+497559,
+6717
+],
+"68f5212893e72f1bdf34e9c6": [
+504276,
+4677
+],
+"8c56722812ca216a17259289": [
+508953,
+6957
+],
+"26e75c46c03b0d7b5058ec1a": [
+515910,
+4917
+],
+"9d10c972d01d4981a3f85d55": [
+520827,
+12357
+],
+"20f9eff509f554f75b256374": [
+533184,
+4677
+],
+"48d6b08d1123bf0c62921bdb": [
+537861,
+7677
+],
+"7231c72c6042abaac4bd2135": [
+545538,
+4197
+],
+"646dbb931e53522951f82b98": [
+549735,
+11277
+],
+"eedb251bb9ecd794e57a7cd5": [
+561012,
+3597
+],
+"5ad22eb48f205e041ec7876f": [
+564609,
+7077
+],
+"e578dd9d0cb5b02d3997f353": [
+571686,
+3477
+],
+"1fe8c42821c02500bcdf368b": [
+575163,
+6477
+],
+"a2903c0ffa3bcffb9a1fc5c4": [
+581640,
+3477
+],
+"b16b28ca904bb2fd819d6c5c": [
+585117,
+6477
+],
+"aba8ab61e78b24b565a36abd": [
+591594,
+4797
+],
+"901afc8a4f729d23cc0970bc": [
+596391,
+10317
+],
+"0f87a4e6472bcb27c3992033": [
+606708,
+3717
+],
+"82aac143ec88bfc85f9807c0": [
+610425,
+11757
+],
+"3351c1d60d085a815e1fd54f": [
+622182,
+4797
+],
+"850504d7bab43ba5cb90f6b8": [
+626979,
+10677
+],
+"6fc5c2c584ecd171c249cf81": [
+637656,
+3597
+],
+"3b4e9bdb088db1a0a3f9bf55": [
+641253,
+8397
+],
+"fdeaac0aa88a81dd1ff0c64f": [
+649650,
+5277
+],
+"bdd2918db07ae0e3d01ac7cc": [
+654927,
+8757
+],
+"610f25cbf8439a82dce1e4af": [
+663684,
+4557
+],
+"78c52f7dd4bb7b0c3e9b0073": [
+668241,
+6237
+],
+"9ac464065994f9ab5bff0f33": [
+674478,
+5397
+],
+"62ee93ca3d6c63c32bd3421c": [
+679875,
+6597
+],
+"678ca13bb23d551d7e6e484e": [
+686472,
+4677
+],
+"58eaa79436a38bc5969ef2a6": [
+691149,
+6237
+],
+"2ca0f772ac1d1800cba93466": [
+697386,
+4197
+],
+"d81d7111fbddf925237db96a": [
+701583,
+7797
+],
+"802876a8df418a36eb227900": [
+709380,
+2997
+],
+"ecafe43debf1794ac3e6a510": [
+712377,
+6597
+],
+"fb8b2a9db26f6a4a350dbb5c": [
+718974,
+4197
+],
+"2dc0c82a9f8b2a236291d5ce": [
+723171,
+8757
+],
+"049a78ec7aeb16a37b511241": [
+731928,
+4077
+],
+"6bf539cdac19cc2b496c683b": [
+736005,
+7437
+],
+"81d48bb1d1860af52adb38f6": [
+743442,
+4557
+],
+"cc545373b6614053af0cb7eb": [
+747999,
+8397
+],
+"a76e91a5b96074ea3f1dee46": [
+756396,
+4437
+],
+"455d1b87e4d697276454da88": [
+760833,
+8517
+],
+"08c7f4188e0987a93c1c1780": [
+769350,
+4437
+],
+"ee9e04bd7b0f27c6967fd0d6": [
+773787,
+12477
+],
+"99d7822fb47f3024c910dd00": [
+786264,
+4317
+],
+"585cc434b5de90d164e47bcd": [
+790581,
+6837
+],
+"0c76efc73a26aff3fa70692a": [
+797418,
+4437
+],
+"629eb4f9f10d50a28b00b48c": [
+801855,
+7797
+],
+"5914c98854f94b9229e3450b": [
+809652,
+3477
+],
+"9cbccfb0f1eca23414c76019": [
+813129,
+7677
+],
+"4fb72a0d4abb102436bb73c2": [
+820806,
+3597
+],
+"bca5a623ccc8a069b2966aad": [
+824403,
+7557
+],
+"7a644fbead4dfce47deb6316": [
+831960,
+4557
+],
+"a39a60b2f04a42fd0bef2ccb": [
+836517,
+7557
+],
+"75f14214478c7fd31075b0e9": [
+844074,
+5517
+],
+"42dd2aef0c71fb008baf2c21": [
+849591,
+10797
+],
+"8d7970850b3b07ade21cd9ac": [
+860388,
+4797
+],
+"bff990c9c68f27d522f58a3e": [
+865185,
+9477
+],
+"032f50b4776950993780e05c": [
+874662,
+4077
+],
+"11677767e742b40a21650fef": [
+878739,
+9477
+],
+"2ba37dad862df80e6d2255ac": [
+888216,
+4797
+],
+"ebbd528ac9dafa6847d63f83": [
+893013,
+8877
+],
+"e198e9f74eb197c63785ba35": [
+901890,
+4677
+],
+"475dbd51d3de428eb91ee331": [
+906567,
+7557
+],
+"d151c7e2475072aa12824afe": [
+914124,
+4437
+],
+"7999ce20d34f4f40aea80418": [
+918561,
+6237
+],
+"f44c4811527566822980ebd5": [
+924798,
+5517
+],
+"17fc4d4d808237659464dd3c": [
+930315,
+7197
+],
+"35027030100297580f34be95": [
+937512,
+5157
+],
+"5d05131ca051747a733880d6": [
+942669,
+7797
+],
+"e55c85680446ed5848fbcfff": [
+950466,
+4557
+],
+"52b1ee8567c3a90d1ffdc937": [
+955023,
+10557
+],
+"1fce2df5da19e4defd1b5d29": [
+965580,
+4677
+],
+"4a741f3fbd57a593e400cca2": [
+970257,
+7917
+],
+"b9b750d32f409c045ff4c8ca": [
+978174,
+5517
+],
+"96690e586352d227ce6256d8": [
+983691,
+7917
+],
+"9fcdda14931faefaea0b75ed": [
+991608,
+4797
+],
+"e8b16696bdacc80184375e6a": [
+996405,
+8397
+],
+"0b749a49d6898d6a2bde3ee3": [
+1004802,
+4677
+],
+"ad19196d2306f0664dee5380": [
+1009479,
+8877
+],
+"8488aea160adac3ab49d3985": [
+1018356,
+3957
+],
+"277e6963628d38a619d85bc3": [
+1022313,
+11757
+],
+"cc64e20f6d27c35595524540": [
+1034070,
+5997
+],
+"fb1f609ee6eb375a316db9bf": [
+1040067,
+6477
+],
+"030c1d7d97c83168e645a4f8": [
+1046544,
+4317
+],
+"cd512ac9b7ac52f8973591a4": [
+1050861,
+7677
+],
+"9bdcd116ac72cfcb716da746": [
+1058538,
+4077
+],
+"f1b3c6f3268501919226d745": [
+1062615,
+7197
+],
+"47ae0836e32f6edc093259a5": [
+1069812,
+4917
+],
+"b8d4f5a61bbfe9785bcac468": [
+1074729,
+9837
+],
+"bdc5ca84a5cd7ade5d581f29": [
+1084566,
+3477
+],
+"9f7f0a4994972e33cdd3fe7a": [
+1088043,
+5637
 ]
 }
 }

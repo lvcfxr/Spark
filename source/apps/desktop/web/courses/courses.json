@@ -9,6 +9,8 @@
     "ru",
     "en"
    ],
+   "cefr": "A1",
+   "exam": "A1",
    "title": {
     "ru": "Испанский: первые шаги",
     "en": "Spanish: first steps"
@@ -101,6 +103,8 @@
    "natives": [
     "ru"
    ],
+   "cefr": "A1",
+   "exam": "A1",
    "title": {
     "ru": "Английский: первые шаги",
     "en": "English: first steps"
@@ -194,6 +198,8 @@
     "ru",
     "en"
    ],
+   "cefr": "A1",
+   "exam": "A1",
    "title": {
     "ru": "Французский: первые шаги",
     "en": "French: first steps"
@@ -287,6 +293,8 @@
     "ru",
     "en"
    ],
+   "cefr": "A1",
+   "exam": "A1",
    "title": {
     "ru": "Немецкий: первые шаги",
     "en": "German: first steps"
@@ -380,6 +388,8 @@
     "ru",
     "en"
    ],
+   "cefr": "N5",
+   "exam": "JLPT N5",
    "title": {
     "ru": "Японский: первые шаги",
     "en": "Japanese: first steps"
@@ -472,6 +482,8 @@
    "natives": [
     "en"
    ],
+   "cefr": "A1",
+   "exam": "A1",
    "title": {
     "ru": "Русский: первые шаги",
     "en": "Russian: first steps"

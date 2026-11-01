@@ -90,17 +90,17 @@ export const TITLES: [number, L2][] = [
 ];
 export const titleOf = (level: number): L2 => [...TITLES].reverse().find(([l]) => level >= l)![1];
 
-export interface Theme { id: string; level: number; name: L2; css: string }
-/** Темы шапки на главной: открываются с уровнем. */
+export interface Theme { id: string; level: number; name: L2; css: string; accent: string }
+/** Оформления: цвет акцента и шапка главной вместе (поэтому не бывает «красная тема и фиолетовая шапка»). Открываются с уровнем; «Мой цвет» — по выбранному акценту. */
 export const THEMES: Theme[] = [
-  { id: "night", level: 1, name: { ru: "Фиолетовая ночь", en: "Violet night" }, css: "radial-gradient(120% 80% at 50% 0%, #a78bfa 0%, transparent 60%), linear-gradient(165deg, #7c3aed 0%, #5b21b6 48%, #1e1b4b 100%)" },
-  { id: "ocean", level: 3, name: { ru: "Океан", en: "Ocean" }, css: "radial-gradient(120% 80% at 50% 0%, #67e8f9 0%, transparent 60%), linear-gradient(165deg, #0ea5e9 0%, #1d4ed8 52%, #172554 100%)" },
-  { id: "dawn", level: 5, name: { ru: "Рассвет", en: "Dawn" }, css: "radial-gradient(120% 80% at 50% 0%, #fde68a 0%, transparent 60%), linear-gradient(165deg, #f472b6 0%, #c026d3 50%, #4c1d95 100%)" },
-  { id: "forest", level: 8, name: { ru: "Лес", en: "Forest" }, css: "radial-gradient(120% 80% at 50% 0%, #86efac 0%, transparent 60%), linear-gradient(165deg, #16a34a 0%, #047857 52%, #052e2b 100%)" },
-  { id: "sunset", level: 12, name: { ru: "Закат", en: "Sunset" }, css: "radial-gradient(120% 80% at 50% 0%, #fdba74 0%, transparent 60%), linear-gradient(165deg, #f97316 0%, #db2777 52%, #3b0764 100%)" },
-  { id: "aurora", level: 16, name: { ru: "Аврора", en: "Aurora" }, css: "radial-gradient(90% 60% at 20% 0%, #34d399 0%, transparent 60%), radial-gradient(90% 60% at 90% 20%, #a78bfa 0%, transparent 60%), linear-gradient(165deg, #0f766e 0%, #1e1b4b 100%)" },
-  { id: "gold", level: 20, name: { ru: "Золото", en: "Gold" }, css: "radial-gradient(120% 80% at 50% 0%, #fef3c7 0%, transparent 60%), linear-gradient(165deg, #f59e0b 0%, #b45309 52%, #451a03 100%)" },
-  { id: "galaxy", level: 25, name: { ru: "Галактика", en: "Galaxy" }, css: "radial-gradient(70% 50% at 25% 10%, #f0abfc 0%, transparent 60%), radial-gradient(70% 50% at 85% 30%, #67e8f9 0%, transparent 60%), linear-gradient(165deg, #3b0764 0%, #0b0718 100%)" },
+  { id: "night", level: 1, name: { ru: "Мой цвет", en: "My colour" }, css: "", accent: "" },
+  { id: "ocean", level: 3, name: { ru: "Океан", en: "Ocean" }, css: "radial-gradient(120% 80% at 50% 0%, #67e8f9 0%, transparent 60%), linear-gradient(165deg, #0ea5e9 0%, #1d4ed8 52%, #172554 100%)", accent: "#0ea5e9" },
+  { id: "dawn", level: 5, name: { ru: "Рассвет", en: "Dawn" }, css: "radial-gradient(120% 80% at 50% 0%, #fde68a 0%, transparent 60%), linear-gradient(165deg, #f472b6 0%, #c026d3 50%, #4c1d95 100%)", accent: "#db2777" },
+  { id: "forest", level: 8, name: { ru: "Лес", en: "Forest" }, css: "radial-gradient(120% 80% at 50% 0%, #86efac 0%, transparent 60%), linear-gradient(165deg, #16a34a 0%, #047857 52%, #052e2b 100%)", accent: "#16a34a" },
+  { id: "sunset", level: 12, name: { ru: "Закат", en: "Sunset" }, css: "radial-gradient(120% 80% at 50% 0%, #fdba74 0%, transparent 60%), linear-gradient(165deg, #f97316 0%, #db2777 52%, #3b0764 100%)", accent: "#f97316" },
+  { id: "aurora", level: 16, name: { ru: "Аврора", en: "Aurora" }, css: "radial-gradient(90% 60% at 20% 0%, #34d399 0%, transparent 60%), radial-gradient(90% 60% at 90% 20%, #a78bfa 0%, transparent 60%), linear-gradient(165deg, #0f766e 0%, #1e1b4b 100%)", accent: "#0d9488" },
+  { id: "gold", level: 20, name: { ru: "Золото", en: "Gold" }, css: "radial-gradient(120% 80% at 50% 0%, #fef3c7 0%, transparent 60%), linear-gradient(165deg, #f59e0b 0%, #b45309 52%, #451a03 100%)", accent: "#d97706" },
+  { id: "galaxy", level: 25, name: { ru: "Галактика", en: "Galaxy" }, css: "radial-gradient(70% 50% at 25% 10%, #f0abfc 0%, transparent 60%), radial-gradient(70% 50% at 85% 30%, #67e8f9 0%, transparent 60%), linear-gradient(165deg, #3b0764 0%, #0b0718 100%)", accent: "#a855f7" },
 ];
 export const themeById = (id: string | undefined): Theme => THEMES.find((t) => t.id === id) ?? THEMES[0]!;
 
