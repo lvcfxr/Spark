@@ -607,6 +607,248 @@
     249903,
     4917
    ]
+  },
+  "words": {
+   "d319c9522e65fd2ca1664ac5": [
+    "en",
+    "time"
+   ],
+   "3a3c4902256b9623817637e2": [
+    "en",
+    "year"
+   ],
+   "1e7776c6f2fb74f8f52a7eec": [
+    "en",
+    "people"
+   ],
+   "aca075abe118dc2849360a48": [
+    "en",
+    "day"
+   ],
+   "28945e67b2b85fbeb13f1b68": [
+    "en",
+    "man"
+   ],
+   "9a95986946359924b7eb5533": [
+    "en",
+    "woman"
+   ],
+   "207c6cc87a370b479ee7c4fe": [
+    "en",
+    "child"
+   ],
+   "3711b38eb89fa79cb61deb98": [
+    "en",
+    "life"
+   ],
+   "3b21a3e4b69ea9fb31032652": [
+    "en",
+    "world"
+   ],
+   "fe6a73fdaf339f33d2631f3a": [
+    "en",
+    "family"
+   ],
+   "217cc56ac25338fb82039eb6": [
+    "en",
+    "friend"
+   ],
+   "406d92d0b31066542ee478d1": [
+    "en",
+    "school"
+   ],
+   "9233155e3e881edc044aa975": [
+    "en",
+    "country"
+   ],
+   "c60f6362a6be146778c8193b": [
+    "en",
+    "city"
+   ],
+   "1c2708702ebff7b65ebdbe7c": [
+    "en",
+    "house"
+   ],
+   "ae317a002f053184279db0bc": [
+    "en",
+    "room"
+   ],
+   "e6dd67202c8013a46b57e3cc": [
+    "en",
+    "door"
+   ],
+   "17a3d1118e62531b6e6e808b": [
+    "en",
+    "water"
+   ],
+   "950737d6f0ddf85feca68b91": [
+    "en",
+    "money"
+   ],
+   "3196ec799c3882525b8a9a73": [
+    "en",
+    "book"
+   ],
+   "9cd3cebe45bd4d6afff68213": [
+    "en",
+    "word"
+   ],
+   "6181f870c347ce021ee24c60": [
+    "en",
+    "question"
+   ],
+   "a585b529e86ac31847dc9765": [
+    "en",
+    "work"
+   ],
+   "d948075c30942de4c0b9da82": [
+    "en",
+    "hour"
+   ],
+   "988ca15880f6ba81aef4c066": [
+    "en",
+    "week"
+   ],
+   "1fa5ac32d3d46a66c8a24bf0": [
+    "en",
+    "month"
+   ],
+   "ba50e8b4ea1167b5390b1319": [
+    "en",
+    "night"
+   ],
+   "cfd13772cfe07dd3f549e3d9": [
+    "en",
+    "name"
+   ],
+   "a9fc0a2e589139e2ac852376": [
+    "en",
+    "idea"
+   ],
+   "a3d13d2a265c910f71f3fa2b": [
+    "en",
+    "head"
+   ],
+   "3bbe0e57c44e4da5835748c1": [
+    "en",
+    "be"
+   ],
+   "28e5f5b0dd07883d42c05700": [
+    "en",
+    "have"
+   ],
+   "efda42c48e428026d79848e5": [
+    "en",
+    "do"
+   ],
+   "1cb02c83659be6909ca1ddda": [
+    "en",
+    "say"
+   ],
+   "3682c929305db846e883129b": [
+    "en",
+    "go"
+   ],
+   "b11ff177123d587aca7cbe10": [
+    "en",
+    "get"
+   ],
+   "408a6295321010dfd182ad4c": [
+    "en",
+    "make"
+   ],
+   "c7d8a681029022e8caf87954": [
+    "en",
+    "know"
+   ],
+   "7b547b9ac247270d9e25cf78": [
+    "en",
+    "think"
+   ],
+   "a7851e26c9847237e5a2d7e7": [
+    "en",
+    "take"
+   ],
+   "baa022ecd3ab043cc9fd153e": [
+    "en",
+    "see"
+   ],
+   "9b39fe9b8f658b27b19cfdd4": [
+    "en",
+    "come"
+   ],
+   "fff0069d567dadd3d3f418f1": [
+    "en",
+    "want"
+   ],
+   "7650ed60898bd2609b7fd3c2": [
+    "en",
+    "look"
+   ],
+   "b53ce138af09123f26a0b949": [
+    "en",
+    "use"
+   ],
+   "a5e8b45d488f38e058a9f683": [
+    "en",
+    "find"
+   ],
+   "084f314881be24e8159c24ee": [
+    "en",
+    "give"
+   ],
+   "18289504574186fd65bf67d7": [
+    "en",
+    "tell"
+   ],
+   "4171407d410df303e1bf86a7": [
+    "en",
+    "good"
+   ],
+   "b731986c0402a9cf8121c4b2": [
+    "en",
+    "new"
+   ],
+   "3a02b8bf85c978950f1ac141": [
+    "en",
+    "first"
+   ],
+   "e1902df050e241671ba83972": [
+    "en",
+    "last"
+   ],
+   "2873610d7f59391db60c6acc": [
+    "en",
+    "long"
+   ],
+   "d06567c41f242f0974b2eafc": [
+    "en",
+    "great"
+   ],
+   "2e71e346692406841c2135d2": [
+    "en",
+    "little"
+   ],
+   "74511fbaeca48eacd5f315fc": [
+    "en",
+    "old"
+   ],
+   "1f30e5efcc41c58cc477d831": [
+    "en",
+    "big"
+   ],
+   "2dd65413e18c553a8999be29": [
+    "en",
+    "young"
+   ],
+   "76b044c2efd654b0baed8261": [
+    "en",
+    "important"
+   ],
+   "9192c7945cd5e189e6874e97": [
+    "en",
+    "different"
+   ]
   }
  }
 }

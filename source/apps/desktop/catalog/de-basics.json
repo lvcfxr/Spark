@@ -657,6 +657,208 @@
     189693,
     3357
    ]
+  },
+  "words": {
+   "fff264aa3beb44f66cd0a5bb": [
+    "de",
+    "Hallo"
+   ],
+   "001cf52f6ff0fe2c3d945a4f": [
+    "de",
+    "Tschüss"
+   ],
+   "3b618837a790b1a620729310": [
+    "de",
+    "Danke"
+   ],
+   "fae4686d006cc6a7b5079974": [
+    "de",
+    "Bitte"
+   ],
+   "96eebacb4bb8792b9f85a13a": [
+    "de",
+    "ja"
+   ],
+   "0b9d84b208313c53915fcaac": [
+    "de",
+    "nein"
+   ],
+   "fdcbe125a59be3fede4da803": [
+    "de",
+    "Wasser"
+   ],
+   "24fcf494472227819dfdf28f": [
+    "de",
+    "Haus"
+   ],
+   "e720c9832c0d8900a90619bc": [
+    "de",
+    "Hund"
+   ],
+   "99a75a03c9a57a175fa74ee4": [
+    "de",
+    "Katze"
+   ],
+   "f36456e0b866b98829445e1d": [
+    "de",
+    "Buch"
+   ],
+   "7c5e773864cbff4ba875c844": [
+    "de",
+    "Tisch"
+   ],
+   "51ba711983e9e00e34f36566": [
+    "de",
+    "Stuhl"
+   ],
+   "840c1f3713b6a59f18871b37": [
+    "de",
+    "Auto"
+   ],
+   "08becbb0c152f8ceb68899d3": [
+    "de",
+    "Stadt"
+   ],
+   "e5351306c77b7114815d40a5": [
+    "de",
+    "Tag"
+   ],
+   "b17b7850eedd4db7e4381399": [
+    "de",
+    "Nacht"
+   ],
+   "0dd74f1a06a6a8f23cd68924": [
+    "de",
+    "Zeit"
+   ],
+   "d820c22e0af2ef2c519ab359": [
+    "de",
+    "Freund"
+   ],
+   "81402ff8e96ba8f26a10e580": [
+    "de",
+    "Familie"
+   ],
+   "6a54f6c899c931999dce5e8b": [
+    "de",
+    "Arbeit"
+   ],
+   "8b783e81cdf9d25b32130a0a": [
+    "de",
+    "Schule"
+   ],
+   "37cb7e12e949c13327770c97": [
+    "de",
+    "Essen"
+   ],
+   "91ca2b18cfae2328b07f1ef8": [
+    "de",
+    "Brot"
+   ],
+   "971a8f1ba15282596e46dc24": [
+    "de",
+    "Milch"
+   ],
+   "3ed119dfdf9598c8de8c36e6": [
+    "de",
+    "Kaffee"
+   ],
+   "f0d1bafc3fd41f51e343e5fa": [
+    "de",
+    "rot"
+   ],
+   "595ec94a3547af73cfd3aa6f": [
+    "de",
+    "blau"
+   ],
+   "bcf43732db09ecda56ac0b43": [
+    "de",
+    "grün"
+   ],
+   "51d841177525b52ed107a452": [
+    "de",
+    "weiß"
+   ],
+   "af80b89958236727b3c0f3d4": [
+    "de",
+    "schwarz"
+   ],
+   "97e324e79409605428157030": [
+    "de",
+    "groß"
+   ],
+   "14ebe56c5de534c6e2efccaa": [
+    "de",
+    "klein"
+   ],
+   "1b912bee786a316e831eccf3": [
+    "de",
+    "gut"
+   ],
+   "342d8c52435e6f4913ab87de": [
+    "de",
+    "schlecht"
+   ],
+   "25619af819b55841d9182fc9": [
+    "de",
+    "neu"
+   ],
+   "5eacd28ded14d91db295f06a": [
+    "de",
+    "alt"
+   ],
+   "9f8699e9915d86a5cb18d13d": [
+    "de",
+    "sprechen"
+   ],
+   "0fbfb4ef48ecfe52c83ce314": [
+    "de",
+    "essen"
+   ],
+   "f65d9d8d0dcc24383f82e039": [
+    "de",
+    "trinken"
+   ],
+   "10ad2b73e470ccc216cda294": [
+    "de",
+    "wohnen"
+   ],
+   "f5cf55573ce23701fcf379fc": [
+    "de",
+    "sein"
+   ],
+   "2c6c4adf43f451afcec76c72": [
+    "de",
+    "haben"
+   ],
+   "c49356fdf3f14d130ae9b5bd": [
+    "de",
+    "gehen"
+   ],
+   "36f85b3979e9e82788d85d98": [
+    "de",
+    "machen"
+   ],
+   "d3e7774ba2f3799ffa6f82bf": [
+    "de",
+    "wollen"
+   ],
+   "b1892c1bbe402464388afec8": [
+    "de",
+    "eins"
+   ],
+   "f2d5dfb58b3e02e9f52962a9": [
+    "de",
+    "zwei"
+   ],
+   "b72186dd2557212cf60d3659": [
+    "de",
+    "drei"
+   ],
+   "7dc0c5e38ce24ba5113d832d": [
+    "de",
+    "heute"
+   ]
   }
  }
 }

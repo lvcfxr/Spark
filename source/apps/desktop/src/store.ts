@@ -22,6 +22,7 @@ export interface Settings {
   /** тема шапки главной (открывается с уровнем) */
   heroTheme?: string;
   botRemind?: boolean;
+  humanVoices?: boolean;
   /** перемешивать порядок карточек (по умолчанию да) */
   shuffle?: boolean;
   /** режим «Только слова»: без опыта, серий, курсов, наград */

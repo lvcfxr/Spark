@@ -19,9 +19,9 @@ import { DAILY_BONUS, THEMES, XP_RULES, rewardsList, themeById, titleOf, xpStats
 import { courseMediaId, embeddedCourses, loadCourseCards, loadCourses, type Course, type CourseCard } from "./courses";
 import { TIPS } from "./tips";
 import { detectLang, getLang, setLang, t, translateStatic, type Lang } from "./i18n";
-import { AUDIO_RE, IMAGE_RE, LIMITS, VIDEO_RE, allMediaKeys, getMediaBlob, hydrateMedia, mediaDuration, mediaUrl, mimeOf, playAudio, putLocal, putMedia, setBundledMedia, setMediaSync, shrinkImage } from "./media";
+import { AUDIO_RE, IMAGE_RE, LIMITS, VIDEO_RE, allMediaKeys, getMediaBlob, hydrateMedia, mediaDuration, mediaUrl, mimeOf, playAudio, playableUrl, setHuman, putLocal, putMedia, setBundledMedia, setMediaSync, shrinkImage } from "./media";
 import {
-  LANGS, LEVELS, LEVEL_NAMES, bundledDeckOf, localizeCard, communityAvailable, loadCommunity, loadCommunityCards, loadDeckMedia, loadSparkCards, loadSparkCatalog, myPublished, publishDeck, unpublishDeck,
+  LANGS, LEVELS, LEVEL_NAMES, bundledDeckOf, wordOfKey, localizeCard, communityAvailable, loadCommunity, loadCommunityCards, loadDeckMedia, loadSparkCards, loadSparkCatalog, myPublished, publishDeck, unpublishDeck,
   type CatalogDeck, type DeckCard, type MyPublished,
 } from "./catalog";
 
@@ -72,6 +72,7 @@ function unitMap(): UnitMap {
   return m;
 }
 const xp = () => xpStats(store.reviews, Date.now(), unitMap());
+let lvTab: "lvl" | "day" = "lvl";
 const DAY_NAMES = ["", "Первая звезда", "Пара звёзд", "Созвездие", "Ночное небо", "Комета", "Орбита", "Две луны", "Золотое созвездие", "Кольца", "Сияние", "Звездопад", "Звёздная корона", "Галактика", "Туманность", "Сверхновая"];
 const MILESTONES = [3, 5, 10, 15, 20, 25, 30, 40, 50, 75, 100, 150, 200, 300];
 
@@ -603,7 +604,7 @@ async function playFirst(sel: string, force = false) {
   if (!force && !store.settings.autoAudio) return;
   const b = document.querySelector<HTMLElement>(`#overlay ${sel} .snd[data-media]`);
   if (!b) return;
-  const u = await mediaUrl(b.dataset.media!);
+  const u = await playableUrl(b.dataset.media!);
   if (u) playAudio(u);
 }
 
@@ -1470,7 +1471,6 @@ function renderModal() {
       <button class="btn sec" data-a="modal-close">${t("Отмена")}</button><button class="btn" data-a="bulk-add">${t("Добавить")}</button></div></div>`;
     if (!isMobile()) $("m-bulk").focus();
   } else if (m.type === "settings") {
-    const sw = ["#3390ec", "#34c759", "#af52de", "#7c3aed", "#ff9500", "#ff2d55", "#14b8a6", "#f43f5e"].map((c) => `<button data-a="accent" data-c="${c}" class="${s.accent === c && !(THEMES.some((x) => x.id === s.heroTheme && x.accent)) ? "on" : ""}" style="background:${c}" title="${c}"></button>`).join("");
     const th = (["auto", "light", "dark"] as const).map((x, i) => `<button data-a="theme" data-t="${x}" class="${s.theme === x ? "on" : ""}">${[t("Авто"), t("Светлая"), t("Тёмная")][i]}</button>`).join("");
     const lg = ([["auto", t("Авто")], ["ru", "RU"], ["en", "EN"]] as [string, string][]).map(([v, n]) => `<button data-a="lang" data-k="${v}" class="${(s.lang ?? "auto") === v ? "on" : ""}">${n}</button>`).join("");
     const u = tgUser(), x = xp(), L = uiL(), photo = (u as { photo_url?: string } | null)?.photo_url;
@@ -1481,7 +1481,7 @@ function renderModal() {
       <button class="s-prof" data-a="level-open"><span class="av">${avatar}</span><span class="sp-main"><b>${esc(u?.first_name || t("Мой Spark"))}</b><span>${esc(titleOf(x.level)[L])} · ${t("Ур. {n}", { n: x.level })}</span></span>${ic("chevron")}</button>
       ${accountGroup()}
       ${sec("palette", t("Внешний вид"),
-        row("globe", t("Язык"), "", `<span class="seg">${lg}</span>`, "c1") + row("moon", t("Тема"), "", `<span class="seg">${th}</span>`, "c2") + row("palette", t("Цвет акцента"), t("цвет кнопок и шапки главной"), `<span class="sw">${sw}</span>`, "c3"),
+        row("globe", t("Язык"), "", `<span class="seg">${lg}</span>`, "c1") + row("moon", t("Тема"), "", `<span class="seg">${th}</span>`, "c2"),
         inTelegram() ? t("«Авто» — светлая или тёмная, как в Telegram. Цвета у Spark свои. Оформления за уровни — в окне уровня.") : t("Оформления за уровни выбираются в окне уровня (нажмите на уровень на главной)."))}
       ${sec("target", t("Обучение"),
         row("target", t("Желаемое удержание"), `${Math.round(s.retention * 100)}%`, `<input type="range" min="0.7" max="0.97" step="0.01" value="${s.retention}" id="s-ret">`, "c4") +
@@ -1493,6 +1493,7 @@ function renderModal() {
       ${sec("headphones", t("Звук и режимы"),
         switchRow("s-autoaudio", s.autoAudio, t("Автоматически проигрывать звук"), t("произношение звучит при показе карточки и ответа"), false, "sound") +
         (getSession()?.user.telegram ? switchRow("s-remind", s.botRemind !== false, t("Напоминания в чате с ботом"), t("не чаще раза в неделю, а потом раз в месяц, если вы не заходите; бот получает только итоги: число слов, уровень и серию"), false, "bolt") : "") +
+        switchRow("s-human", s.humanVoices !== false, t("Живые голоса"), t("слова произносят носители языка (Wikimedia Commons, лицензии CC); если записи нет или нет сети — встроенная озвучка"), false, "headphones") +
         switchRow("s-focus", s.focus === true, t("Только слова"), t("прячет опыт, серии, курсы и награды — остаются одни карточки"), false, "bolt"))}
       ${launchGroup()}
       ${filesGroup()}
@@ -1506,7 +1507,13 @@ function renderModal() {
     const x = xp(), L = uiL(), need = x.levelTo - x.levelFrom, have = Math.max(0, x.total - x.levelFrom), pct = Math.min(100, Math.round((have / need) * 100));
     const n = (v: number) => v.toLocaleString(getLang() === "en" ? "en-US" : "ru-RU");
     const rw = rewardsList(), nextRw = rw.find((r) => r.level > x.level);
-    const rows = rw.map((r) => `<div class="rw ${r.level <= x.level ? "got" : ""}"><span class="rw-ic">${r.level <= x.level ? ic("check") : ic("lock")}</span><span class="rw-t">${esc(r[L])}</span><span class="rw-l">${t("ур. {n}", { n: r.level })}</span></div>`).join("");
+    const byLevel = new Map<number, string[]>();
+    for (const r of rw) byLevel.set(r.level, [...(byLevel.get(r.level) ?? []), r[L]]);
+    const rows = [...byLevel].map(([lv, items]) => `<div class="rw ${lv <= x.level ? "got" : ""}"><span class="rw-ic">${lv <= x.level ? ic("check") : ic("lock")}</span><span class="rw-t">${items.map((i) => `<span>${esc(i)}</span>`).join("")}</span><span class="rw-l">${t("ур. {n}", { n: lv })}</span></div>`).join("");
+    const best = dayStreak().best;
+    const dayRows = DAY_LEVELS.slice(1).map((d, i) => `<div class="rw ${best >= d ? "got" : ""}"><span class="rw-ic dm">${dayMark(i + 1)}</span><span class="rw-t"><span>${esc(t(DAY_NAMES[i + 1]!))}</span><span class="muted">${t("бонус к опыту")} +${3 * (i + 1)}%</span></span><span class="rw-l">${d} ${t("дн.")}</span></div>`).join("");
+    const nextDay = DAY_LEVELS.find((d) => d > best);
+    const tab = lvTab;
     const themes = THEMES.map((th) => { const ok = th.level <= x.level, on = ok && unlockedTheme(x.level) === th.id;
       return `<button class="th ${on ? "on" : ""} ${ok ? "" : "lock"}" ${ok ? `data-a="hero-theme" data-id="${th.id}"` : "disabled"} title="${esc(th.name[L])}${ok ? "" : " · " + t("ур. {n}", { n: th.level })}" style="background:${th.css || "var(--hero-bg-custom)"}">${ok ? (on ? ic("check") : "") : ic("lock")}</button>`; }).join("");
     el.innerHTML = `<div class="sheet lvl-sheet"><div class="lv-head"><div class="lv-badge">${ic("spark")}<b>${x.level}</b></div><div><h2>${t("Уровень {n}", { n: x.level })}</h2><div class="lv-title">${esc(titleOf(x.level)[L])}</div></div></div>
@@ -1515,7 +1522,8 @@ function renderModal() {
       <div class="lv-tiles"><div><b>${n(x.total)}</b><span>${t("всего XP")}</span></div><div><b>${x.today >= 0 ? "+" : "−"}${n(Math.abs(x.today))}</b><span>${t("сегодня")}</span></div><div><b>${n(x.bestDay)}</b><span>${t("лучший день")}</span></div></div>
       ${nextRw ? `<div class="lv-next">${ic("trophy")} ${t("Следующая награда — на уровне {n}", { n: nextRw.level })}: <b>${esc(nextRw[L])}</b></div>` : ""}
       <div class="sec-t">${t("Оформление")} <span class="muted" style="font-weight:400">· ${t("цвет приложения и шапка главной")}</span></div><div class="themes">${themes}</div>
-      <div class="sec-t">${t("Награды за уровни")}</div><div class="rws">${rows}</div>
+      <div class="seg lv-tabs"><button data-a="lv-tab" data-k="lvl" class="${tab === "lvl" ? "on" : ""}">${t("За уровни")}</button><button data-a="lv-tab" data-k="day" class="${tab === "day" ? "on" : ""}">${t("За серию дней")}</button></div>
+      ${tab === "lvl" ? `<div class="rws">${rows}</div>` : `<p class="hint" style="margin:6px 2px">${t("Созвездие растёт вместе с серией дней и даёт бонус к опыту, пока серия жива. Рекорд: {n} дн.", { n: best })}${nextDay ? " " + t("Следующая награда — через {n} дн.", { n: nextDay - best }) : ""}</p><div class="rws">${dayRows}</div>`}
       <div class="sec-t">${t("Как начисляется опыт")}</div>
       <ul class="xp-how"><li>${t("Верный ответ: +{n} XP, «трудно»: +{h} XP, ошибка: −{w} XP", { n: XP_RULES.good, h: XP_RULES.hard, w: Math.abs(XP_RULES.wrong) })}</li><li>${t("Новая карточка: ещё +{n} XP за первую встречу", { n: XP_RULES.first })}</li>
         <li>${t("Серия правильных подряд и серия дней увеличивают награду за верные ответы")}</li><li>${t("За день: {list} ответов — бонус", { list: DAILY_BONUS.map(([c, b]) => `${c} (+${b})`).join(", ") })}</li>
@@ -1747,7 +1755,7 @@ document.addEventListener("click", (e) => {
     }
     case "kind": readDraft(); S.kind = el.dataset.k as Kind; renderEditor(); break;
     case "fmt": applyFmt(el.dataset.k!); break;
-    case "play": { const u = el.dataset.url; if (u) playAudio(u); else void mediaUrl(el.dataset.media!).then((x) => x && playAudio(x)); break; }
+    case "play": { const k = el.dataset.media, u = el.dataset.url; if (k) void playableUrl(k).then((x) => { const y = x ?? u; if (y) playAudio(y); }); else if (u) playAudio(u); break; }
     case "bulk-clear": S.sel.clear(); renderList(); renderEditor(); break;
     case "bulk-del": if (confirm(t("Удалить карточек: {n}?", { n: S.sel.size }))) { selCards().forEach((c) => store.deleteCard(c.id)); S.sel.clear(); toast(t("Удалено")); render(); } break;
     case "bulk-move": { const d = ($("b-deck") as HTMLSelectElement).value; selCards().forEach((c) => store.set("card", c.id, "deckId", d)); toast(t("Перемещено")); render(); break; }
@@ -1841,7 +1849,8 @@ document.addEventListener("click", (e) => {
     }
     case "stats": S.stats = true; render(); $("statspage").scrollTop = 0; break;
     case "stats-close": S.stats = false; render(); break;
-    case "level-open": S.modal = { type: "level" }; renderModal(); updateChrome(); break;
+    case "lv-tab": lvTab = el.dataset.k === "day" ? "day" : "lvl"; renderModal(); break;
+    case "level-open": lvTab = "lvl"; S.modal = { type: "level" }; renderModal(); updateChrome(); break;
     case "hero-theme": store.setSetting("heroTheme", id!); applyTheme(); renderModal(); renderStreak(true); break;
     case "browser-open": void openBrowser("spark"); break;
     case "tips-open": S.tips = { tab: "spark" }; S.modal = null; render(); break;
@@ -1961,6 +1970,7 @@ document.addEventListener("change", (e) => {
   else if (el.id === "s-shuffle") store.setSetting("shuffle", (el as HTMLInputElement).checked);
   else if (el.id === "s-manual") store.setSetting("manualGrades", (el as HTMLInputElement).checked);
   else if (el.id === "s-autoaudio") store.setSetting("autoAudio", (el as HTMLInputElement).checked);
+  else if (el.id === "s-human") store.setSetting("humanVoices", (el as HTMLInputElement).checked);
   else if (el.id === "s-remind") { store.setSetting("botRemind", (el as HTMLInputElement).checked); lastReport = ""; void reportProgress(); }
   else if (el.id === "s-sync") void setCloud((el as HTMLInputElement).checked);
   else if (el.dataset.sel !== undefined && pending) { pending.sel[Number(el.dataset.sel)] = (el as HTMLInputElement).checked; renderModal(); }
@@ -2068,6 +2078,7 @@ async function boot() {
   sync = new SyncService(() => store, updateSyncInd, onPulled, getMediaBlob);
   attachStore();
   if (store.syncOn) setMediaSync((k) => queueMedia([k]), downloadMedia);
+  setHuman(wordOfKey, () => store.settings.humanVoices !== false);
   setBundledMedia(async (k) => {
     const id = bundledDeckOf(k);
     if (!id) return null;
@@ -2075,7 +2086,7 @@ async function boot() {
     for (const [key, blob] of all) await putLocal(key, blob).catch(() => {});
     return all.get(k) ?? null;
   });
-  (window as unknown as { __spark: unknown }).__spark = { store, S, render, sync, inTelegram, t, sparkMark, streakMark, dayMark };
+  (window as unknown as { __spark: unknown }).__spark = { playableUrl, store, S, render, sync, inTelegram, t, sparkMark, streakMark, dayMark };
   (window as unknown as { __recall: unknown }).__recall = (window as unknown as { __spark: unknown }).__spark;
   render();
   sync.startBackground();

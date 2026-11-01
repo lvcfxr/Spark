@@ -657,6 +657,208 @@
     213573,
     4197
    ]
+  },
+  "words": {
+   "c95784d55c63dc66456e497f": [
+    "es",
+    "hola"
+   ],
+   "9bd377111d310603069adf44": [
+    "es",
+    "adiós"
+   ],
+   "464c8cf411c81656b9b2a435": [
+    "es",
+    "gracias"
+   ],
+   "1efee44a64f5e991cc27d125": [
+    "es",
+    "por favor"
+   ],
+   "61942bebc696859566b8a017": [
+    "es",
+    "sí"
+   ],
+   "24701bf196b8ae9b55bd30c9": [
+    "es",
+    "no"
+   ],
+   "db7704e04ccc67c969eb0c1a": [
+    "es",
+    "agua"
+   ],
+   "20f16a16ff3f0cfafe5c88c8": [
+    "es",
+    "casa"
+   ],
+   "db0e2df93b39d5a12c9b85f3": [
+    "es",
+    "perro"
+   ],
+   "26cc0f4b07e5821c336d0bd2": [
+    "es",
+    "gato"
+   ],
+   "ee0f7c5a526e4ca7413e0388": [
+    "es",
+    "libro"
+   ],
+   "1f716da8d34d172dcb1df8c9": [
+    "es",
+    "mesa"
+   ],
+   "e9ef25b827eefc092dac7799": [
+    "es",
+    "silla"
+   ],
+   "7c1ab749d99dd7a73a18b960": [
+    "es",
+    "coche"
+   ],
+   "8569a82f993d83a523970103": [
+    "es",
+    "ciudad"
+   ],
+   "473cf9872aa5e28612eb21e2": [
+    "es",
+    "día"
+   ],
+   "1dcff09077a870b4c67c8969": [
+    "es",
+    "noche"
+   ],
+   "e62fcc30c1893ae94ad65565": [
+    "es",
+    "tiempo"
+   ],
+   "f7ab380b90e45c2ced1ed78e": [
+    "es",
+    "amigo"
+   ],
+   "68e108dc4ba49c296da584eb": [
+    "es",
+    "familia"
+   ],
+   "59d6a0daa254ff3e172f1718": [
+    "es",
+    "trabajo"
+   ],
+   "5b275d77792b6cabfb480c00": [
+    "es",
+    "escuela"
+   ],
+   "2226c2bedc1bbcef007d5623": [
+    "es",
+    "comida"
+   ],
+   "2667a948951aa68254053689": [
+    "es",
+    "pan"
+   ],
+   "43a84f4f7af09e4ae5243119": [
+    "es",
+    "leche"
+   ],
+   "8a5cc2ad8c9723feca405362": [
+    "es",
+    "café"
+   ],
+   "a4ba5acabfa1e24a10d7ba92": [
+    "es",
+    "rojo"
+   ],
+   "81f9b9165a52a4bdfa647e60": [
+    "es",
+    "azul"
+   ],
+   "3cb85d2911aee1f0325e43ac": [
+    "es",
+    "verde"
+   ],
+   "51b8d09bf28e97b58050bd74": [
+    "es",
+    "blanco"
+   ],
+   "2a17037bdd16ecebf650c280": [
+    "es",
+    "negro"
+   ],
+   "33aa8678cfa9f70e2416b409": [
+    "es",
+    "grande"
+   ],
+   "e978358ccd1d2906e2036019": [
+    "es",
+    "pequeño"
+   ],
+   "fac75f721b37f36e4a6ff3e2": [
+    "es",
+    "bueno"
+   ],
+   "744235c0f8143100d7a4fae0": [
+    "es",
+    "malo"
+   ],
+   "0583db27039d1d7d69e62c28": [
+    "es",
+    "nuevo"
+   ],
+   "3f2483591b4ed9e13ca8322e": [
+    "es",
+    "viejo"
+   ],
+   "229201eaa62a415c3f8d6541": [
+    "es",
+    "hablar"
+   ],
+   "f0a3e57ae8723197bf047228": [
+    "es",
+    "comer"
+   ],
+   "3e8ed1c1902c18ab48a0d890": [
+    "es",
+    "beber"
+   ],
+   "91c5204b2146bd870efd7d48": [
+    "es",
+    "vivir"
+   ],
+   "965944c43d2ee7a18bc3b750": [
+    "es",
+    "ser"
+   ],
+   "b4e1bd987a1b5c0cf7e9b7db": [
+    "es",
+    "estar"
+   ],
+   "b0e84bd94ea469a6fa65b8d4": [
+    "es",
+    "tener"
+   ],
+   "28ebddeb4d48bd8c7aee1808": [
+    "es",
+    "ir"
+   ],
+   "cdbf716c3c1d4366438354ba": [
+    "es",
+    "hacer"
+   ],
+   "cab5d1319665bd8181d26929": [
+    "es",
+    "querer"
+   ],
+   "074eb7f85076dd62ce5baa44": [
+    "es",
+    "uno"
+   ],
+   "b023c70d108a186d84e8b2bb": [
+    "es",
+    "dos"
+   ],
+   "3ca9884f69d15a6335f5f887": [
+    "es",
+    "tres"
+   ]
   }
  }
 }

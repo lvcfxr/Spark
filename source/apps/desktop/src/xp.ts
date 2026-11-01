@@ -93,7 +93,7 @@ export const titleOf = (level: number): L2 => [...TITLES].reverse().find(([l]) =
 export interface Theme { id: string; level: number; name: L2; css: string; accent: string }
 /** Оформления: цвет акцента и шапка главной вместе (поэтому не бывает «красная тема и фиолетовая шапка»). Открываются с уровнем; «Мой цвет» — по выбранному акценту. */
 export const THEMES: Theme[] = [
-  { id: "night", level: 1, name: { ru: "Мой цвет", en: "My colour" }, css: "", accent: "" },
+  { id: "night", level: 1, name: { ru: "Классика", en: "Classic" }, css: "", accent: "" },
   { id: "ocean", level: 3, name: { ru: "Океан", en: "Ocean" }, css: "radial-gradient(120% 80% at 50% 0%, #67e8f9 0%, transparent 60%), linear-gradient(165deg, #0ea5e9 0%, #1d4ed8 52%, #172554 100%)", accent: "#0ea5e9" },
   { id: "dawn", level: 5, name: { ru: "Рассвет", en: "Dawn" }, css: "radial-gradient(120% 80% at 50% 0%, #fde68a 0%, transparent 60%), linear-gradient(165deg, #f472b6 0%, #c026d3 50%, #4c1d95 100%)", accent: "#db2777" },
   { id: "forest", level: 8, name: { ru: "Лес", en: "Forest" }, css: "radial-gradient(120% 80% at 50% 0%, #86efac 0%, transparent 60%), linear-gradient(165deg, #16a34a 0%, #047857 52%, #052e2b 100%)", accent: "#16a34a" },

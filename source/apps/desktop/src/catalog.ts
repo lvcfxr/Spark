@@ -14,7 +14,7 @@ export interface CatalogDeck {
   level?: string;
 }
 /** Звук колоды: все mp3 одним файлом; index — ключ медиа → [смещение, длина]. */
-export interface DeckMedia { file: string; type: string; index: Record<string, [number, number]>; base?: string }
+export interface DeckMedia { file: string; type: string; index: Record<string, [number, number]>; base?: string; words?: Record<string, [string, string]> }
 export interface DeckCard { front: string; back?: string; hint?: string; extra?: string; tags?: string; kind?: string; n?: number;
   front_en?: string; back_en?: string; hint_en?: string; extra_en?: string }
 /** Карточка на нужном языке: у встроенных колод есть английская сторона (front_en, back_en…). */
@@ -89,6 +89,11 @@ export function loadDeckMedia(deckId: string): Promise<Map<string, Blob>> {
     packs.set(deckId, p);
   }
   return p;
+}
+/** Какое слово (язык, слово) озвучено этим клипом — для подмены живой записью. */
+export function wordOfKey(key: string): [string, string] | null {
+  for (const m of mediaIndex.values()) { const w = m.words?.[key]; if (w) return w; }
+  return null;
 }
 /** В какой встроенной колоде лежит этот звук (для карточек, пришедших синхронизацией с другого устройства). */
 export function bundledDeckOf(key: string): string | null {
