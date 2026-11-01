@@ -1,7 +1,1845 @@
 {
  "id": "ja",
- "version": 1,
+ "version": 2,
  "cards": [
+  {
+   "id": "hira1-h1-a-あ",
+   "unit": "hira1",
+   "front": "あ",
+   "hint": "",
+   "back": {
+    "ru": "a",
+    "en": "a"
+   },
+   "extra": {
+    "ru": "> あめ [audio](media:82f47b1b439dc8913eaea453)\n> *ame*\n> — дождь",
+    "en": "> あめ [audio](media:82f47b1b439dc8913eaea453)\n> *ame*\n> — rain"
+   }
+  },
+  {
+   "id": "hira1-h1-i-い",
+   "unit": "hira1",
+   "front": "い",
+   "hint": "",
+   "back": {
+    "ru": "i",
+    "en": "i"
+   },
+   "extra": {
+    "ru": "> いぬ [audio](media:82872ada42b8f43cabfd556c)\n> *inu*\n> — собака",
+    "en": "> いぬ [audio](media:82872ada42b8f43cabfd556c)\n> *inu*\n> — dog"
+   }
+  },
+  {
+   "id": "hira1-h1-u-う",
+   "unit": "hira1",
+   "front": "う",
+   "hint": "",
+   "back": {
+    "ru": "u",
+    "en": "u"
+   },
+   "extra": {
+    "ru": "> うみ [audio](media:08269e921c93004650591cd2)\n> *umi*\n> — море",
+    "en": "> うみ [audio](media:08269e921c93004650591cd2)\n> *umi*\n> — sea"
+   }
+  },
+  {
+   "id": "hira1-h1-e-え",
+   "unit": "hira1",
+   "front": "え",
+   "hint": "",
+   "back": {
+    "ru": "e",
+    "en": "e"
+   },
+   "extra": {
+    "ru": "> えき [audio](media:70f7bb040b9b2bc01b9f9abc)\n> *eki*\n> — станция",
+    "en": "> えき [audio](media:70f7bb040b9b2bc01b9f9abc)\n> *eki*\n> — station"
+   }
+  },
+  {
+   "id": "hira1-h1-o-お",
+   "unit": "hira1",
+   "front": "お",
+   "hint": "",
+   "back": {
+    "ru": "o",
+    "en": "o"
+   },
+   "extra": {
+    "ru": "> おと [audio](media:66957ad7df4abee06ffa1023)\n> *oto*\n> — звук",
+    "en": "> おと [audio](media:66957ad7df4abee06ffa1023)\n> *oto*\n> — sound"
+   }
+  },
+  {
+   "id": "hira1-h1-ka-か",
+   "unit": "hira1",
+   "front": "か",
+   "hint": "",
+   "back": {
+    "ru": "ka",
+    "en": "ka"
+   },
+   "extra": {
+    "ru": "> かさ [audio](media:9f1462b62664c4eb9aa2d2fa)\n> *kasa*\n> — зонт",
+    "en": "> かさ [audio](media:9f1462b62664c4eb9aa2d2fa)\n> *kasa*\n> — umbrella"
+   }
+  },
+  {
+   "id": "hira1-h1-ki-き",
+   "unit": "hira1",
+   "front": "き",
+   "hint": "",
+   "back": {
+    "ru": "ki",
+    "en": "ki"
+   },
+   "extra": {
+    "ru": "> き [audio](media:095cc34a46b03d330c9391f1)\n> *ki*\n> — дерево",
+    "en": "> き [audio](media:095cc34a46b03d330c9391f1)\n> *ki*\n> — tree"
+   }
+  },
+  {
+   "id": "hira1-h1-ku-く",
+   "unit": "hira1",
+   "front": "く",
+   "hint": "",
+   "back": {
+    "ru": "ku",
+    "en": "ku"
+   },
+   "extra": {
+    "ru": "> くつ [audio](media:7dcc4eaa9844c2e74ef36e22)\n> *kutsu*\n> — обувь",
+    "en": "> くつ [audio](media:7dcc4eaa9844c2e74ef36e22)\n> *kutsu*\n> — shoes"
+   }
+  },
+  {
+   "id": "hira1-h1-ke-け",
+   "unit": "hira1",
+   "front": "け",
+   "hint": "",
+   "back": {
+    "ru": "ke",
+    "en": "ke"
+   },
+   "extra": {
+    "ru": "> けさ [audio](media:da5a20b1dcb2f619fdfe6bea)\n> *kesa*\n> — сегодня утром",
+    "en": "> けさ [audio](media:da5a20b1dcb2f619fdfe6bea)\n> *kesa*\n> — this morning"
+   }
+  },
+  {
+   "id": "hira1-h1-ko-こ",
+   "unit": "hira1",
+   "front": "こ",
+   "hint": "",
+   "back": {
+    "ru": "ko",
+    "en": "ko"
+   },
+   "extra": {
+    "ru": "> こえ [audio](media:ca9a143e57eb1cf8803ce22f)\n> *koe*\n> — голос",
+    "en": "> こえ [audio](media:ca9a143e57eb1cf8803ce22f)\n> *koe*\n> — voice"
+   }
+  },
+  {
+   "id": "hira1-h1-sa-さ",
+   "unit": "hira1",
+   "front": "さ",
+   "hint": "",
+   "back": {
+    "ru": "sa",
+    "en": "sa"
+   },
+   "extra": {
+    "ru": "> さかな [audio](media:4b2428e6641ab44dd213457e)\n> *sakana*\n> — рыба",
+    "en": "> さかな [audio](media:4b2428e6641ab44dd213457e)\n> *sakana*\n> — fish"
+   }
+  },
+  {
+   "id": "hira1-h1-shi-し",
+   "unit": "hira1",
+   "front": "し",
+   "hint": "",
+   "back": {
+    "ru": "shi",
+    "en": "shi"
+   },
+   "extra": {
+    "ru": "> しろ [audio](media:ad5cc8e1dedc5c982caced3c)\n> *shiro*\n> — замок",
+    "en": "> しろ [audio](media:ad5cc8e1dedc5c982caced3c)\n> *shiro*\n> — castle"
+   }
+  },
+  {
+   "id": "hira1-h1-su-す",
+   "unit": "hira1",
+   "front": "す",
+   "hint": "",
+   "back": {
+    "ru": "su",
+    "en": "su"
+   },
+   "extra": {
+    "ru": "> すし [audio](media:158599f395336a0aa9968fce)\n> *sushi*\n> — суши",
+    "en": "> すし [audio](media:158599f395336a0aa9968fce)\n> *sushi*\n> — sushi"
+   }
+  },
+  {
+   "id": "hira1-h1-se-せ",
+   "unit": "hira1",
+   "front": "せ",
+   "hint": "",
+   "back": {
+    "ru": "se",
+    "en": "se"
+   },
+   "extra": {
+    "ru": "> せかい [audio](media:8c66a394fcfd91a24709bcba)\n> *sekai*\n> — мир",
+    "en": "> せかい [audio](media:8c66a394fcfd91a24709bcba)\n> *sekai*\n> — world"
+   }
+  },
+  {
+   "id": "hira1-h1-so-そ",
+   "unit": "hira1",
+   "front": "そ",
+   "hint": "",
+   "back": {
+    "ru": "so",
+    "en": "so"
+   },
+   "extra": {
+    "ru": "> そら [audio](media:804d5ad9f5701d14b61e5c18)\n> *sora*\n> — небо",
+    "en": "> そら [audio](media:804d5ad9f5701d14b61e5c18)\n> *sora*\n> — sky"
+   }
+  },
+  {
+   "id": "hira1-h1-ta-た",
+   "unit": "hira1",
+   "front": "た",
+   "hint": "",
+   "back": {
+    "ru": "ta",
+    "en": "ta"
+   },
+   "extra": {
+    "ru": "> たまご [audio](media:f6128fff99a4dbca1b280809)\n> *tamago*\n> — яйцо",
+    "en": "> たまご [audio](media:f6128fff99a4dbca1b280809)\n> *tamago*\n> — egg"
+   }
+  },
+  {
+   "id": "hira1-h1-chi-ち",
+   "unit": "hira1",
+   "front": "ち",
+   "hint": "",
+   "back": {
+    "ru": "chi",
+    "en": "chi"
+   },
+   "extra": {
+    "ru": "> ちず [audio](media:177f8fdcf18f113e45f77491)\n> *chizu*\n> — карта",
+    "en": "> ちず [audio](media:177f8fdcf18f113e45f77491)\n> *chizu*\n> — map"
+   }
+  },
+  {
+   "id": "hira1-h1-tsu-つ",
+   "unit": "hira1",
+   "front": "つ",
+   "hint": "",
+   "back": {
+    "ru": "tsu",
+    "en": "tsu"
+   },
+   "extra": {
+    "ru": "> つき [audio](media:b26739fdf918a05d83e3a813)\n> *tsuki*\n> — луна",
+    "en": "> つき [audio](media:b26739fdf918a05d83e3a813)\n> *tsuki*\n> — moon"
+   }
+  },
+  {
+   "id": "hira1-h1-te-て",
+   "unit": "hira1",
+   "front": "て",
+   "hint": "",
+   "back": {
+    "ru": "te",
+    "en": "te"
+   },
+   "extra": {
+    "ru": "> て [audio](media:fc8f95bbc755bc7a2c90dcf9)\n> *te*\n> — рука",
+    "en": "> て [audio](media:fc8f95bbc755bc7a2c90dcf9)\n> *te*\n> — hand"
+   }
+  },
+  {
+   "id": "hira1-h1-to-と",
+   "unit": "hira1",
+   "front": "と",
+   "hint": "",
+   "back": {
+    "ru": "to",
+    "en": "to"
+   },
+   "extra": {
+    "ru": "> とり [audio](media:f765afcbf9b316f3cb03b27d)\n> *tori*\n> — птица",
+    "en": "> とり [audio](media:f765afcbf9b316f3cb03b27d)\n> *tori*\n> — bird"
+   }
+  },
+  {
+   "id": "hira1-h1-na-な",
+   "unit": "hira1",
+   "front": "な",
+   "hint": "",
+   "back": {
+    "ru": "na",
+    "en": "na"
+   },
+   "extra": {
+    "ru": "> なつ [audio](media:00437843bd7989d6b8f30dc7)\n> *natsu*\n> — лето",
+    "en": "> なつ [audio](media:00437843bd7989d6b8f30dc7)\n> *natsu*\n> — summer"
+   }
+  },
+  {
+   "id": "hira1-h1-ni-に",
+   "unit": "hira1",
+   "front": "に",
+   "hint": "",
+   "back": {
+    "ru": "ni",
+    "en": "ni"
+   },
+   "extra": {
+    "ru": "> にく [audio](media:8b8b48228b436ee3a6eb0ebb)\n> *niku*\n> — мясо",
+    "en": "> にく [audio](media:8b8b48228b436ee3a6eb0ebb)\n> *niku*\n> — meat"
+   }
+  },
+  {
+   "id": "hira1-h1-nu-ぬ",
+   "unit": "hira1",
+   "front": "ぬ",
+   "hint": "",
+   "back": {
+    "ru": "nu",
+    "en": "nu"
+   },
+   "extra": {
+    "ru": "> ぬの [audio](media:37cb1c237d75acc8687c7083)\n> *nuno*\n> — ткань",
+    "en": "> ぬの [audio](media:37cb1c237d75acc8687c7083)\n> *nuno*\n> — cloth"
+   }
+  },
+  {
+   "id": "hira1-h1-ne-ね",
+   "unit": "hira1",
+   "front": "ね",
+   "hint": "",
+   "back": {
+    "ru": "ne",
+    "en": "ne"
+   },
+   "extra": {
+    "ru": "> ねこ [audio](media:87136bf990270bf44222537f)\n> *neko*\n> — кошка",
+    "en": "> ねこ [audio](media:87136bf990270bf44222537f)\n> *neko*\n> — cat"
+   }
+  },
+  {
+   "id": "hira1-h1-no-の",
+   "unit": "hira1",
+   "front": "の",
+   "hint": "",
+   "back": {
+    "ru": "no",
+    "en": "no"
+   },
+   "extra": {
+    "ru": "> のり [audio](media:0b64c09a32e49eab03350305)\n> *nori*\n> — водоросли",
+    "en": "> のり [audio](media:0b64c09a32e49eab03350305)\n> *nori*\n> — seaweed"
+   }
+  },
+  {
+   "id": "hira2-h2-ha-は",
+   "unit": "hira2",
+   "front": "は",
+   "hint": "",
+   "back": {
+    "ru": "ha",
+    "en": "ha"
+   },
+   "extra": {
+    "ru": "> はな [audio](media:f94644af2e4b1bdca73a45bf)\n> *hana*\n> — цветок",
+    "en": "> はな [audio](media:f94644af2e4b1bdca73a45bf)\n> *hana*\n> — flower"
+   }
+  },
+  {
+   "id": "hira2-h2-hi-ひ",
+   "unit": "hira2",
+   "front": "ひ",
+   "hint": "",
+   "back": {
+    "ru": "hi",
+    "en": "hi"
+   },
+   "extra": {
+    "ru": "> ひと [audio](media:97a8e2aee65d50c36b01da96)\n> *hito*\n> — человек",
+    "en": "> ひと [audio](media:97a8e2aee65d50c36b01da96)\n> *hito*\n> — person"
+   }
+  },
+  {
+   "id": "hira2-h2-fu-ふ",
+   "unit": "hira2",
+   "front": "ふ",
+   "hint": "",
+   "back": {
+    "ru": "fu",
+    "en": "fu"
+   },
+   "extra": {
+    "ru": "> ふゆ [audio](media:40c83ae68b57b6a47baffdbb)\n> *fuyu*\n> — зима",
+    "en": "> ふゆ [audio](media:40c83ae68b57b6a47baffdbb)\n> *fuyu*\n> — winter"
+   }
+  },
+  {
+   "id": "hira2-h2-he-へ",
+   "unit": "hira2",
+   "front": "へ",
+   "hint": "",
+   "back": {
+    "ru": "he",
+    "en": "he"
+   },
+   "extra": {
+    "ru": "> へや [audio](media:b7d861342cf6d34544f4dff1)\n> *heya*\n> — комната",
+    "en": "> へや [audio](media:b7d861342cf6d34544f4dff1)\n> *heya*\n> — room"
+   }
+  },
+  {
+   "id": "hira2-h2-ho-ほ",
+   "unit": "hira2",
+   "front": "ほ",
+   "hint": "",
+   "back": {
+    "ru": "ho",
+    "en": "ho"
+   },
+   "extra": {
+    "ru": "> ほし [audio](media:a8fbc7fc7fcadd2f1545bd11)\n> *hoshi*\n> — звезда",
+    "en": "> ほし [audio](media:a8fbc7fc7fcadd2f1545bd11)\n> *hoshi*\n> — star"
+   }
+  },
+  {
+   "id": "hira2-h2-ma-ま",
+   "unit": "hira2",
+   "front": "ま",
+   "hint": "",
+   "back": {
+    "ru": "ma",
+    "en": "ma"
+   },
+   "extra": {
+    "ru": "> まど [audio](media:bcac5e8f33928c6430736ad4)\n> *mado*\n> — окно",
+    "en": "> まど [audio](media:bcac5e8f33928c6430736ad4)\n> *mado*\n> — window"
+   }
+  },
+  {
+   "id": "hira2-h2-mi-み",
+   "unit": "hira2",
+   "front": "み",
+   "hint": "",
+   "back": {
+    "ru": "mi",
+    "en": "mi"
+   },
+   "extra": {
+    "ru": "> みず [audio](media:63dc7d5a9826db686e261311)\n> *mizu*\n> — вода",
+    "en": "> みず [audio](media:63dc7d5a9826db686e261311)\n> *mizu*\n> — water"
+   }
+  },
+  {
+   "id": "hira2-h2-mu-む",
+   "unit": "hira2",
+   "front": "む",
+   "hint": "",
+   "back": {
+    "ru": "mu",
+    "en": "mu"
+   },
+   "extra": {
+    "ru": "> むし [audio](media:0acde8659c617c607794b5d8)\n> *mushi*\n> — насекомое",
+    "en": "> むし [audio](media:0acde8659c617c607794b5d8)\n> *mushi*\n> — insect"
+   }
+  },
+  {
+   "id": "hira2-h2-me-め",
+   "unit": "hira2",
+   "front": "め",
+   "hint": "",
+   "back": {
+    "ru": "me",
+    "en": "me"
+   },
+   "extra": {
+    "ru": "> め [audio](media:4a79e483a622b31155b7270c)\n> *me*\n> — глаз",
+    "en": "> め [audio](media:4a79e483a622b31155b7270c)\n> *me*\n> — eye"
+   }
+  },
+  {
+   "id": "hira2-h2-mo-も",
+   "unit": "hira2",
+   "front": "も",
+   "hint": "",
+   "back": {
+    "ru": "mo",
+    "en": "mo"
+   },
+   "extra": {
+    "ru": "> もり [audio](media:e4c9c3163a2cc6783f407447)\n> *mori*\n> — лес",
+    "en": "> もり [audio](media:e4c9c3163a2cc6783f407447)\n> *mori*\n> — forest"
+   }
+  },
+  {
+   "id": "hira2-h2-ya-や",
+   "unit": "hira2",
+   "front": "や",
+   "hint": "",
+   "back": {
+    "ru": "ya",
+    "en": "ya"
+   },
+   "extra": {
+    "ru": "> やま [audio](media:907c8591fb6fba085175ada4)\n> *yama*\n> — гора",
+    "en": "> やま [audio](media:907c8591fb6fba085175ada4)\n> *yama*\n> — mountain"
+   }
+  },
+  {
+   "id": "hira2-h2-yu-ゆ",
+   "unit": "hira2",
+   "front": "ゆ",
+   "hint": "",
+   "back": {
+    "ru": "yu",
+    "en": "yu"
+   },
+   "extra": {
+    "ru": "> ゆき [audio](media:a1001c2a7a59cedd8fb13ec8)\n> *yuki*\n> — снег",
+    "en": "> ゆき [audio](media:a1001c2a7a59cedd8fb13ec8)\n> *yuki*\n> — snow"
+   }
+  },
+  {
+   "id": "hira2-h2-yo-よ",
+   "unit": "hira2",
+   "front": "よ",
+   "hint": "",
+   "back": {
+    "ru": "yo",
+    "en": "yo"
+   },
+   "extra": {
+    "ru": "> よる [audio](media:00e3f4a18edc897ca42ba101)\n> *yoru*\n> — ночь",
+    "en": "> よる [audio](media:00e3f4a18edc897ca42ba101)\n> *yoru*\n> — night"
+   }
+  },
+  {
+   "id": "hira2-h2-ra-ら",
+   "unit": "hira2",
+   "front": "ら",
+   "hint": "",
+   "back": {
+    "ru": "ra",
+    "en": "ra"
+   },
+   "extra": {
+    "ru": "> らくだ [audio](media:6df199f42384cc7bdf092693)\n> *rakuda*\n> — верблюд",
+    "en": "> らくだ [audio](media:6df199f42384cc7bdf092693)\n> *rakuda*\n> — camel"
+   }
+  },
+  {
+   "id": "hira2-h2-ri-り",
+   "unit": "hira2",
+   "front": "り",
+   "hint": "",
+   "back": {
+    "ru": "ri",
+    "en": "ri"
+   },
+   "extra": {
+    "ru": "> りんご [audio](media:64b09ccfe154b46ca908b1a3)\n> *ringo*\n> — яблоко",
+    "en": "> りんご [audio](media:64b09ccfe154b46ca908b1a3)\n> *ringo*\n> — apple"
+   }
+  },
+  {
+   "id": "hira2-h2-ru-る",
+   "unit": "hira2",
+   "front": "る",
+   "hint": "",
+   "back": {
+    "ru": "ru",
+    "en": "ru"
+   },
+   "extra": {
+    "ru": "> るす [audio](media:2e8b4c7425c6e8a783a3ffef)\n> *rusu*\n> — отсутствие дома",
+    "en": "> るす [audio](media:2e8b4c7425c6e8a783a3ffef)\n> *rusu*\n> — being out"
+   }
+  },
+  {
+   "id": "hira2-h2-re-れ",
+   "unit": "hira2",
+   "front": "れ",
+   "hint": "",
+   "back": {
+    "ru": "re",
+    "en": "re"
+   },
+   "extra": {
+    "ru": "> れもん [audio](media:796d0980c9ac823f2e739225)\n> *remon*\n> — лимон",
+    "en": "> れもん [audio](media:796d0980c9ac823f2e739225)\n> *remon*\n> — lemon"
+   }
+  },
+  {
+   "id": "hira2-h2-ro-ろ",
+   "unit": "hira2",
+   "front": "ろ",
+   "hint": "",
+   "back": {
+    "ru": "ro",
+    "en": "ro"
+   },
+   "extra": {
+    "ru": "> ろうそく [audio](media:967d180b03b81093ec639b33)\n> *rousoku*\n> — свеча",
+    "en": "> ろうそく [audio](media:967d180b03b81093ec639b33)\n> *rousoku*\n> — candle"
+   }
+  },
+  {
+   "id": "hira2-h2-wa-わ",
+   "unit": "hira2",
+   "front": "わ",
+   "hint": "",
+   "back": {
+    "ru": "wa",
+    "en": "wa"
+   },
+   "extra": {
+    "ru": "> わに [audio](media:6cc8e5a4cb6df3ef4ccbf921)\n> *wani*\n> — крокодил",
+    "en": "> わに [audio](media:6cc8e5a4cb6df3ef4ccbf921)\n> *wani*\n> — crocodile"
+   }
+  },
+  {
+   "id": "hira2-h2-o-を",
+   "unit": "hira2",
+   "front": "を",
+   "hint": "",
+   "back": {
+    "ru": "o",
+    "en": "o"
+   },
+   "extra": {
+    "ru": "> ほんをよむ [audio](media:8d20136bdb174e341988bced)\n> *hon o yomu*\n> — читать книгу",
+    "en": "> ほんをよむ [audio](media:8d20136bdb174e341988bced)\n> *hon o yomu*\n> — to read a book"
+   }
+  },
+  {
+   "id": "hira2-h2-n-ん",
+   "unit": "hira2",
+   "front": "ん",
+   "hint": "",
+   "back": {
+    "ru": "n",
+    "en": "n"
+   },
+   "extra": {
+    "ru": "> ほん [audio](media:54ff73b16da4b7e8f8817cff)\n> *hon*\n> — книга",
+    "en": "> ほん [audio](media:54ff73b16da4b7e8f8817cff)\n> *hon*\n> — book"
+   }
+  },
+  {
+   "id": "hira3-h3-ga-が",
+   "unit": "hira3",
+   "front": "が",
+   "hint": "",
+   "back": {
+    "ru": "ga",
+    "en": "ga"
+   },
+   "extra": {
+    "ru": "> がっこう [audio](media:9850a5a5b01cb783dc6a58f0)\n> *gakkou*\n> — школа",
+    "en": "> がっこう [audio](media:9850a5a5b01cb783dc6a58f0)\n> *gakkou*\n> — school"
+   }
+  },
+  {
+   "id": "hira3-h3-gi-ぎ",
+   "unit": "hira3",
+   "front": "ぎ",
+   "hint": "",
+   "back": {
+    "ru": "gi",
+    "en": "gi"
+   },
+   "extra": {
+    "ru": "> ぎんこう [audio](media:046b104e028d25d948794c89)\n> *ginkou*\n> — банк",
+    "en": "> ぎんこう [audio](media:046b104e028d25d948794c89)\n> *ginkou*\n> — bank"
+   }
+  },
+  {
+   "id": "hira3-h3-gu-ぐ",
+   "unit": "hira3",
+   "front": "ぐ",
+   "hint": "",
+   "back": {
+    "ru": "gu",
+    "en": "gu"
+   },
+   "extra": {
+    "ru": "> かぐ [audio](media:e637d3352c3782ce6aec4036)\n> *kagu*\n> — мебель",
+    "en": "> かぐ [audio](media:e637d3352c3782ce6aec4036)\n> *kagu*\n> — furniture"
+   }
+  },
+  {
+   "id": "hira3-h3-ge-げ",
+   "unit": "hira3",
+   "front": "げ",
+   "hint": "",
+   "back": {
+    "ru": "ge",
+    "en": "ge"
+   },
+   "extra": {
+    "ru": "> げんき [audio](media:66c1e9b89e8b655bbf57c066)\n> *genki*\n> — здоровый, бодрый",
+    "en": "> げんき [audio](media:66c1e9b89e8b655bbf57c066)\n> *genki*\n> — healthy, well"
+   }
+  },
+  {
+   "id": "hira3-h3-go-ご",
+   "unit": "hira3",
+   "front": "ご",
+   "hint": "",
+   "back": {
+    "ru": "go",
+    "en": "go"
+   },
+   "extra": {
+    "ru": "> ごはん [audio](media:160c383b3840e2f9e54b61b3)\n> *gohan*\n> — рис; еда",
+    "en": "> ごはん [audio](media:160c383b3840e2f9e54b61b3)\n> *gohan*\n> — rice; meal"
+   }
+  },
+  {
+   "id": "hira3-h3-za-ざ",
+   "unit": "hira3",
+   "front": "ざ",
+   "hint": "",
+   "back": {
+    "ru": "za",
+    "en": "za"
+   },
+   "extra": {
+    "ru": "> ざっし [audio](media:521f7b06f5ad6c3cc1d8ac49)\n> *zasshi*\n> — журнал",
+    "en": "> ざっし [audio](media:521f7b06f5ad6c3cc1d8ac49)\n> *zasshi*\n> — magazine"
+   }
+  },
+  {
+   "id": "hira3-h3-ji-じ",
+   "unit": "hira3",
+   "front": "じ",
+   "hint": "",
+   "back": {
+    "ru": "ji",
+    "en": "ji"
+   },
+   "extra": {
+    "ru": "> じかん [audio](media:89884aeeff3b719086250404)\n> *jikan*\n> — время",
+    "en": "> じかん [audio](media:89884aeeff3b719086250404)\n> *jikan*\n> — time"
+   }
+  },
+  {
+   "id": "hira3-h3-zu-ず",
+   "unit": "hira3",
+   "front": "ず",
+   "hint": "",
+   "back": {
+    "ru": "zu",
+    "en": "zu"
+   },
+   "extra": {
+    "ru": "> みず [audio](media:63dc7d5a9826db686e261311)\n> *mizu*\n> — вода",
+    "en": "> みず [audio](media:63dc7d5a9826db686e261311)\n> *mizu*\n> — water"
+   }
+  },
+  {
+   "id": "hira3-h3-ze-ぜ",
+   "unit": "hira3",
+   "front": "ぜ",
+   "hint": "",
+   "back": {
+    "ru": "ze",
+    "en": "ze"
+   },
+   "extra": {
+    "ru": "> ぜんぶ [audio](media:21eedc22a70eb7d6001682bf)\n> *zenbu*\n> — всё",
+    "en": "> ぜんぶ [audio](media:21eedc22a70eb7d6001682bf)\n> *zenbu*\n> — all"
+   }
+  },
+  {
+   "id": "hira3-h3-zo-ぞ",
+   "unit": "hira3",
+   "front": "ぞ",
+   "hint": "",
+   "back": {
+    "ru": "zo",
+    "en": "zo"
+   },
+   "extra": {
+    "ru": "> ぞう [audio](media:144942b35084ade5dc3c2692)\n> *zou*\n> — слон",
+    "en": "> ぞう [audio](media:144942b35084ade5dc3c2692)\n> *zou*\n> — elephant"
+   }
+  },
+  {
+   "id": "hira3-h3-da-だ",
+   "unit": "hira3",
+   "front": "だ",
+   "hint": "",
+   "back": {
+    "ru": "da",
+    "en": "da"
+   },
+   "extra": {
+    "ru": "> だいがく [audio](media:5912e96082fecc27f32a10d7)\n> *daigaku*\n> — университет",
+    "en": "> だいがく [audio](media:5912e96082fecc27f32a10d7)\n> *daigaku*\n> — university"
+   }
+  },
+  {
+   "id": "hira3-h3-de-で",
+   "unit": "hira3",
+   "front": "で",
+   "hint": "",
+   "back": {
+    "ru": "de",
+    "en": "de"
+   },
+   "extra": {
+    "ru": "> でんわ [audio](media:a6871adc1cb945a86cfff8c0)\n> *denwa*\n> — телефон",
+    "en": "> でんわ [audio](media:a6871adc1cb945a86cfff8c0)\n> *denwa*\n> — telephone"
+   }
+  },
+  {
+   "id": "hira3-h3-do-ど",
+   "unit": "hira3",
+   "front": "ど",
+   "hint": "",
+   "back": {
+    "ru": "do",
+    "en": "do"
+   },
+   "extra": {
+    "ru": "> どうぶつ [audio](media:4f1707654a4e581a7b8bda88)\n> *doubutsu*\n> — животное",
+    "en": "> どうぶつ [audio](media:4f1707654a4e581a7b8bda88)\n> *doubutsu*\n> — animal"
+   }
+  },
+  {
+   "id": "hira3-h3-ba-ば",
+   "unit": "hira3",
+   "front": "ば",
+   "hint": "",
+   "back": {
+    "ru": "ba",
+    "en": "ba"
+   },
+   "extra": {
+    "ru": "> ばす [audio](media:94c214024ea8e9787cb15bcc)\n> *basu*\n> — автобус",
+    "en": "> ばす [audio](media:94c214024ea8e9787cb15bcc)\n> *basu*\n> — bus"
+   }
+  },
+  {
+   "id": "hira3-h3-bi-び",
+   "unit": "hira3",
+   "front": "び",
+   "hint": "",
+   "back": {
+    "ru": "bi",
+    "en": "bi"
+   },
+   "extra": {
+    "ru": "> びょういん [audio](media:e1b0bda0e7c0633101b7ce0e)\n> *byouin*\n> — больница",
+    "en": "> びょういん [audio](media:e1b0bda0e7c0633101b7ce0e)\n> *byouin*\n> — hospital"
+   }
+  },
+  {
+   "id": "hira3-h3-bu-ぶ",
+   "unit": "hira3",
+   "front": "ぶ",
+   "hint": "",
+   "back": {
+    "ru": "bu",
+    "en": "bu"
+   },
+   "extra": {
+    "ru": "> ぶた [audio](media:438bdb45972e64b8d3b5c349)\n> *buta*\n> — свинья",
+    "en": "> ぶた [audio](media:438bdb45972e64b8d3b5c349)\n> *buta*\n> — pig"
+   }
+  },
+  {
+   "id": "hira3-h3-be-べ",
+   "unit": "hira3",
+   "front": "べ",
+   "hint": "",
+   "back": {
+    "ru": "be",
+    "en": "be"
+   },
+   "extra": {
+    "ru": "> べんきょう [audio](media:e32e64e3a860fd836df6d710)\n> *benkyou*\n> — учёба",
+    "en": "> べんきょう [audio](media:e32e64e3a860fd836df6d710)\n> *benkyou*\n> — study"
+   }
+  },
+  {
+   "id": "hira3-h3-bo-ぼ",
+   "unit": "hira3",
+   "front": "ぼ",
+   "hint": "",
+   "back": {
+    "ru": "bo",
+    "en": "bo"
+   },
+   "extra": {
+    "ru": "> ぼうし [audio](media:75e3b8c601b5f807b90939f9)\n> *boushi*\n> — шапка",
+    "en": "> ぼうし [audio](media:75e3b8c601b5f807b90939f9)\n> *boushi*\n> — hat"
+   }
+  },
+  {
+   "id": "hira3-h3-pa-ぱ",
+   "unit": "hira3",
+   "front": "ぱ",
+   "hint": "",
+   "back": {
+    "ru": "pa",
+    "en": "pa"
+   },
+   "extra": {
+    "ru": "> ぱん [audio](media:9f5ce22d7ed9cfecb0279474)\n> *pan*\n> — хлеб",
+    "en": "> ぱん [audio](media:9f5ce22d7ed9cfecb0279474)\n> *pan*\n> — bread"
+   }
+  },
+  {
+   "id": "hira3-h3-pi-ぴ",
+   "unit": "hira3",
+   "front": "ぴ",
+   "hint": "",
+   "back": {
+    "ru": "pi",
+    "en": "pi"
+   },
+   "extra": {
+    "ru": "> ぴあの [audio](media:0b3ab59505d7085d2732b50a)\n> *piano*\n> — пианино",
+    "en": "> ぴあの [audio](media:0b3ab59505d7085d2732b50a)\n> *piano*\n> — piano"
+   }
+  },
+  {
+   "id": "hira3-h3-pu-ぷ",
+   "unit": "hira3",
+   "front": "ぷ",
+   "hint": "",
+   "back": {
+    "ru": "pu",
+    "en": "pu"
+   },
+   "extra": {
+    "ru": "> ぷーる [audio](media:830a1892e722083d39c87346)\n> *puuru*\n> — бассейн",
+    "en": "> ぷーる [audio](media:830a1892e722083d39c87346)\n> *puuru*\n> — pool"
+   }
+  },
+  {
+   "id": "hira3-h3-pe-ぺ",
+   "unit": "hira3",
+   "front": "ぺ",
+   "hint": "",
+   "back": {
+    "ru": "pe",
+    "en": "pe"
+   },
+   "extra": {
+    "ru": "> ぺん [audio](media:5348e30c3e707e7cc1b911b5)\n> *pen*\n> — ручка",
+    "en": "> ぺん [audio](media:5348e30c3e707e7cc1b911b5)\n> *pen*\n> — pen"
+   }
+  },
+  {
+   "id": "hira3-h3-po-ぽ",
+   "unit": "hira3",
+   "front": "ぽ",
+   "hint": "",
+   "back": {
+    "ru": "po",
+    "en": "po"
+   },
+   "extra": {
+    "ru": "> ぽけっと [audio](media:9da8a5c7f6a33dfc8923d122)\n> *poketto*\n> — карман",
+    "en": "> ぽけっと [audio](media:9da8a5c7f6a33dfc8923d122)\n> *poketto*\n> — pocket"
+   }
+  },
+  {
+   "id": "kata1-k1-a-ア",
+   "unit": "kata1",
+   "front": "ア",
+   "hint": "",
+   "back": {
+    "ru": "a",
+    "en": "a"
+   },
+   "extra": {
+    "ru": "> アイス [audio](media:4faa3e16396dd4d27bde0002)\n> *aisu*\n> — мороженое",
+    "en": "> アイス [audio](media:4faa3e16396dd4d27bde0002)\n> *aisu*\n> — ice cream"
+   }
+  },
+  {
+   "id": "kata1-k1-i-イ",
+   "unit": "kata1",
+   "front": "イ",
+   "hint": "",
+   "back": {
+    "ru": "i",
+    "en": "i"
+   },
+   "extra": {
+    "ru": "> インク [audio](media:30e94c61cbb506ff41bcadbb)\n> *inku*\n> — чернила",
+    "en": "> インク [audio](media:30e94c61cbb506ff41bcadbb)\n> *inku*\n> — ink"
+   }
+  },
+  {
+   "id": "kata1-k1-u-ウ",
+   "unit": "kata1",
+   "front": "ウ",
+   "hint": "",
+   "back": {
+    "ru": "u",
+    "en": "u"
+   },
+   "extra": {
+    "ru": "> ウイスキー [audio](media:823cdda054121461b8ca011a)\n> *uisukii*\n> — виски",
+    "en": "> ウイスキー [audio](media:823cdda054121461b8ca011a)\n> *uisukii*\n> — whisky"
+   }
+  },
+  {
+   "id": "kata1-k1-e-エ",
+   "unit": "kata1",
+   "front": "エ",
+   "hint": "",
+   "back": {
+    "ru": "e",
+    "en": "e"
+   },
+   "extra": {
+    "ru": "> エアコン [audio](media:f965dad08be6ea11656f5df2)\n> *eakon*\n> — кондиционер",
+    "en": "> エアコン [audio](media:f965dad08be6ea11656f5df2)\n> *eakon*\n> — air conditioner"
+   }
+  },
+  {
+   "id": "kata1-k1-o-オ",
+   "unit": "kata1",
+   "front": "オ",
+   "hint": "",
+   "back": {
+    "ru": "o",
+    "en": "o"
+   },
+   "extra": {
+    "ru": "> オレンジ [audio](media:4acf1f3dff627925f166cd87)\n> *orenji*\n> — апельсин",
+    "en": "> オレンジ [audio](media:4acf1f3dff627925f166cd87)\n> *orenji*\n> — orange"
+   }
+  },
+  {
+   "id": "kata1-k1-ka-カ",
+   "unit": "kata1",
+   "front": "カ",
+   "hint": "",
+   "back": {
+    "ru": "ka",
+    "en": "ka"
+   },
+   "extra": {
+    "ru": "> カメラ [audio](media:d6666d437a5dc311950f9cf6)\n> *kamera*\n> — фотоаппарат",
+    "en": "> カメラ [audio](media:d6666d437a5dc311950f9cf6)\n> *kamera*\n> — camera"
+   }
+  },
+  {
+   "id": "kata1-k1-ki-キ",
+   "unit": "kata1",
+   "front": "キ",
+   "hint": "",
+   "back": {
+    "ru": "ki",
+    "en": "ki"
+   },
+   "extra": {
+    "ru": "> キウイ [audio](media:c7f618709735c5704b2d4106)\n> *kiui*\n> — киви",
+    "en": "> キウイ [audio](media:c7f618709735c5704b2d4106)\n> *kiui*\n> — kiwi"
+   }
+  },
+  {
+   "id": "kata1-k1-ku-ク",
+   "unit": "kata1",
+   "front": "ク",
+   "hint": "",
+   "back": {
+    "ru": "ku",
+    "en": "ku"
+   },
+   "extra": {
+    "ru": "> クラス [audio](media:25cf0170ea8539e2ff792b1d)\n> *kurasu*\n> — класс",
+    "en": "> クラス [audio](media:25cf0170ea8539e2ff792b1d)\n> *kurasu*\n> — class"
+   }
+  },
+  {
+   "id": "kata1-k1-ke-ケ",
+   "unit": "kata1",
+   "front": "ケ",
+   "hint": "",
+   "back": {
+    "ru": "ke",
+    "en": "ke"
+   },
+   "extra": {
+    "ru": "> ケーキ [audio](media:09b388c45cb8f993be4b74df)\n> *keeki*\n> — торт",
+    "en": "> ケーキ [audio](media:09b388c45cb8f993be4b74df)\n> *keeki*\n> — cake"
+   }
+  },
+  {
+   "id": "kata1-k1-ko-コ",
+   "unit": "kata1",
+   "front": "コ",
+   "hint": "",
+   "back": {
+    "ru": "ko",
+    "en": "ko"
+   },
+   "extra": {
+    "ru": "> コーヒー [audio](media:55720cd1111547ec107706b5)\n> *koohii*\n> — кофе",
+    "en": "> コーヒー [audio](media:55720cd1111547ec107706b5)\n> *koohii*\n> — coffee"
+   }
+  },
+  {
+   "id": "kata1-k1-sa-サ",
+   "unit": "kata1",
+   "front": "サ",
+   "hint": "",
+   "back": {
+    "ru": "sa",
+    "en": "sa"
+   },
+   "extra": {
+    "ru": "> サラダ [audio](media:9b6fd419d47b0a00115bd840)\n> *sarada*\n> — салат",
+    "en": "> サラダ [audio](media:9b6fd419d47b0a00115bd840)\n> *sarada*\n> — salad"
+   }
+  },
+  {
+   "id": "kata1-k1-shi-シ",
+   "unit": "kata1",
+   "front": "シ",
+   "hint": "",
+   "back": {
+    "ru": "shi",
+    "en": "shi"
+   },
+   "extra": {
+    "ru": "> シャツ [audio](media:9c28e2c11c319f7c65e87268)\n> *shatsu*\n> — рубашка",
+    "en": "> シャツ [audio](media:9c28e2c11c319f7c65e87268)\n> *shatsu*\n> — shirt"
+   }
+  },
+  {
+   "id": "kata1-k1-su-ス",
+   "unit": "kata1",
+   "front": "ス",
+   "hint": "",
+   "back": {
+    "ru": "su",
+    "en": "su"
+   },
+   "extra": {
+    "ru": "> スープ [audio](media:3485fc0756b7df358cee38ef)\n> *suupu*\n> — суп",
+    "en": "> スープ [audio](media:3485fc0756b7df358cee38ef)\n> *suupu*\n> — soup"
+   }
+  },
+  {
+   "id": "kata1-k1-se-セ",
+   "unit": "kata1",
+   "front": "セ",
+   "hint": "",
+   "back": {
+    "ru": "se",
+    "en": "se"
+   },
+   "extra": {
+    "ru": "> セーター [audio](media:196441b500e86101fc961f1a)\n> *seetaa*\n> — свитер",
+    "en": "> セーター [audio](media:196441b500e86101fc961f1a)\n> *seetaa*\n> — sweater"
+   }
+  },
+  {
+   "id": "kata1-k1-so-ソ",
+   "unit": "kata1",
+   "front": "ソ",
+   "hint": "",
+   "back": {
+    "ru": "so",
+    "en": "so"
+   },
+   "extra": {
+    "ru": "> ソファ [audio](media:169e867286947e573c8a46b3)\n> *sofa*\n> — диван",
+    "en": "> ソファ [audio](media:169e867286947e573c8a46b3)\n> *sofa*\n> — sofa"
+   }
+  },
+  {
+   "id": "kata1-k1-ta-タ",
+   "unit": "kata1",
+   "front": "タ",
+   "hint": "",
+   "back": {
+    "ru": "ta",
+    "en": "ta"
+   },
+   "extra": {
+    "ru": "> タクシー [audio](media:5a0ca6001cf4ab5442b0aa82)\n> *takushii*\n> — такси",
+    "en": "> タクシー [audio](media:5a0ca6001cf4ab5442b0aa82)\n> *takushii*\n> — taxi"
+   }
+  },
+  {
+   "id": "kata1-k1-chi-チ",
+   "unit": "kata1",
+   "front": "チ",
+   "hint": "",
+   "back": {
+    "ru": "chi",
+    "en": "chi"
+   },
+   "extra": {
+    "ru": "> チーズ [audio](media:7ad8ce0204117d43e951ad7e)\n> *chiizu*\n> — сыр",
+    "en": "> チーズ [audio](media:7ad8ce0204117d43e951ad7e)\n> *chiizu*\n> — cheese"
+   }
+  },
+  {
+   "id": "kata1-k1-tsu-ツ",
+   "unit": "kata1",
+   "front": "ツ",
+   "hint": "",
+   "back": {
+    "ru": "tsu",
+    "en": "tsu"
+   },
+   "extra": {
+    "ru": "> ツアー [audio](media:d80fd33354c9a6ba55095941)\n> *tsuaa*\n> — тур",
+    "en": "> ツアー [audio](media:d80fd33354c9a6ba55095941)\n> *tsuaa*\n> — tour"
+   }
+  },
+  {
+   "id": "kata1-k1-te-テ",
+   "unit": "kata1",
+   "front": "テ",
+   "hint": "",
+   "back": {
+    "ru": "te",
+    "en": "te"
+   },
+   "extra": {
+    "ru": "> テレビ [audio](media:98f4b2996e53f8a52e346878)\n> *terebi*\n> — телевизор",
+    "en": "> テレビ [audio](media:98f4b2996e53f8a52e346878)\n> *terebi*\n> — TV"
+   }
+  },
+  {
+   "id": "kata1-k1-to-ト",
+   "unit": "kata1",
+   "front": "ト",
+   "hint": "",
+   "back": {
+    "ru": "to",
+    "en": "to"
+   },
+   "extra": {
+    "ru": "> トマト [audio](media:ea5c214a8608e134bc1c27ae)\n> *tomato*\n> — помидор",
+    "en": "> トマト [audio](media:ea5c214a8608e134bc1c27ae)\n> *tomato*\n> — tomato"
+   }
+  },
+  {
+   "id": "kata1-k1-na-ナ",
+   "unit": "kata1",
+   "front": "ナ",
+   "hint": "",
+   "back": {
+    "ru": "na",
+    "en": "na"
+   },
+   "extra": {
+    "ru": "> ナイフ [audio](media:7afdad055d57a4fbd0437d93)\n> *naifu*\n> — нож",
+    "en": "> ナイフ [audio](media:7afdad055d57a4fbd0437d93)\n> *naifu*\n> — knife"
+   }
+  },
+  {
+   "id": "kata1-k1-ni-ニ",
+   "unit": "kata1",
+   "front": "ニ",
+   "hint": "",
+   "back": {
+    "ru": "ni",
+    "en": "ni"
+   },
+   "extra": {
+    "ru": "> ニュース [audio](media:4d72f636da6ba8156e33807f)\n> *nyuusu*\n> — новости",
+    "en": "> ニュース [audio](media:4d72f636da6ba8156e33807f)\n> *nyuusu*\n> — news"
+   }
+  },
+  {
+   "id": "kata1-k1-nu-ヌ",
+   "unit": "kata1",
+   "front": "ヌ",
+   "hint": "",
+   "back": {
+    "ru": "nu",
+    "en": "nu"
+   },
+   "extra": {
+    "ru": "> カヌー [audio](media:130f60bdba8fe1778d0d113c)\n> *kanuu*\n> — каноэ",
+    "en": "> カヌー [audio](media:130f60bdba8fe1778d0d113c)\n> *kanuu*\n> — canoe"
+   }
+  },
+  {
+   "id": "kata1-k1-ne-ネ",
+   "unit": "kata1",
+   "front": "ネ",
+   "hint": "",
+   "back": {
+    "ru": "ne",
+    "en": "ne"
+   },
+   "extra": {
+    "ru": "> ネクタイ [audio](media:66e9abb94ac8fd1010a501e8)\n> *nekutai*\n> — галстук",
+    "en": "> ネクタイ [audio](media:66e9abb94ac8fd1010a501e8)\n> *nekutai*\n> — tie"
+   }
+  },
+  {
+   "id": "kata1-k1-no-ノ",
+   "unit": "kata1",
+   "front": "ノ",
+   "hint": "",
+   "back": {
+    "ru": "no",
+    "en": "no"
+   },
+   "extra": {
+    "ru": "> ノート [audio](media:4b363319e07b3d25050b5e28)\n> *nooto*\n> — тетрадь",
+    "en": "> ノート [audio](media:4b363319e07b3d25050b5e28)\n> *nooto*\n> — notebook"
+   }
+  },
+  {
+   "id": "kata2-k2-ha-ハ",
+   "unit": "kata2",
+   "front": "ハ",
+   "hint": "",
+   "back": {
+    "ru": "ha",
+    "en": "ha"
+   },
+   "extra": {
+    "ru": "> ハム [audio](media:a15ae1ff9d5f3ca92ed71f4d)\n> *hamu*\n> — ветчина",
+    "en": "> ハム [audio](media:a15ae1ff9d5f3ca92ed71f4d)\n> *hamu*\n> — ham"
+   }
+  },
+  {
+   "id": "kata2-k2-hi-ヒ",
+   "unit": "kata2",
+   "front": "ヒ",
+   "hint": "",
+   "back": {
+    "ru": "hi",
+    "en": "hi"
+   },
+   "extra": {
+    "ru": "> ヒーター [audio](media:149f521686f75b072c3fe653)\n> *hiitaa*\n> — обогреватель",
+    "en": "> ヒーター [audio](media:149f521686f75b072c3fe653)\n> *hiitaa*\n> — heater"
+   }
+  },
+  {
+   "id": "kata2-k2-fu-フ",
+   "unit": "kata2",
+   "front": "フ",
+   "hint": "",
+   "back": {
+    "ru": "fu",
+    "en": "fu"
+   },
+   "extra": {
+    "ru": "> フォーク [audio](media:301e247d42f3029a825262d1)\n> *fooku*\n> — вилка",
+    "en": "> フォーク [audio](media:301e247d42f3029a825262d1)\n> *fooku*\n> — fork"
+   }
+  },
+  {
+   "id": "kata2-k2-he-ヘ",
+   "unit": "kata2",
+   "front": "ヘ",
+   "hint": "",
+   "back": {
+    "ru": "he",
+    "en": "he"
+   },
+   "extra": {
+    "ru": "> ヘリコプター [audio](media:39a95598cc44102b4d970ee2)\n> *herikoputaa*\n> — вертолёт",
+    "en": "> ヘリコプター [audio](media:39a95598cc44102b4d970ee2)\n> *herikoputaa*\n> — helicopter"
+   }
+  },
+  {
+   "id": "kata2-k2-ho-ホ",
+   "unit": "kata2",
+   "front": "ホ",
+   "hint": "",
+   "back": {
+    "ru": "ho",
+    "en": "ho"
+   },
+   "extra": {
+    "ru": "> ホテル [audio](media:af2a2c8420e96d67d619f2d1)\n> *hoteru*\n> — отель",
+    "en": "> ホテル [audio](media:af2a2c8420e96d67d619f2d1)\n> *hoteru*\n> — hotel"
+   }
+  },
+  {
+   "id": "kata2-k2-ma-マ",
+   "unit": "kata2",
+   "front": "マ",
+   "hint": "",
+   "back": {
+    "ru": "ma",
+    "en": "ma"
+   },
+   "extra": {
+    "ru": "> マンガ [audio](media:0b46a4e3c5c797c23e14bd40)\n> *manga*\n> — манга",
+    "en": "> マンガ [audio](media:0b46a4e3c5c797c23e14bd40)\n> *manga*\n> — manga"
+   }
+  },
+  {
+   "id": "kata2-k2-mi-ミ",
+   "unit": "kata2",
+   "front": "ミ",
+   "hint": "",
+   "back": {
+    "ru": "mi",
+    "en": "mi"
+   },
+   "extra": {
+    "ru": "> ミルク [audio](media:8cb4e02991f9978506404094)\n> *miruku*\n> — молоко",
+    "en": "> ミルク [audio](media:8cb4e02991f9978506404094)\n> *miruku*\n> — milk"
+   }
+  },
+  {
+   "id": "kata2-k2-mu-ム",
+   "unit": "kata2",
+   "front": "ム",
+   "hint": "",
+   "back": {
+    "ru": "mu",
+    "en": "mu"
+   },
+   "extra": {
+    "ru": "> ゲーム [audio](media:238f5f593babb6c8b9565d9b)\n> *geemu*\n> — игра",
+    "en": "> ゲーム [audio](media:238f5f593babb6c8b9565d9b)\n> *geemu*\n> — game"
+   }
+  },
+  {
+   "id": "kata2-k2-me-メ",
+   "unit": "kata2",
+   "front": "メ",
+   "hint": "",
+   "back": {
+    "ru": "me",
+    "en": "me"
+   },
+   "extra": {
+    "ru": "> メモ [audio](media:68925ec393db3c76821a0d15)\n> *memo*\n> — заметка",
+    "en": "> メモ [audio](media:68925ec393db3c76821a0d15)\n> *memo*\n> — memo"
+   }
+  },
+  {
+   "id": "kata2-k2-mo-モ",
+   "unit": "kata2",
+   "front": "モ",
+   "hint": "",
+   "back": {
+    "ru": "mo",
+    "en": "mo"
+   },
+   "extra": {
+    "ru": "> モデル [audio](media:f3d734b4aa338a174de29369)\n> *moderu*\n> — модель",
+    "en": "> モデル [audio](media:f3d734b4aa338a174de29369)\n> *moderu*\n> — model"
+   }
+  },
+  {
+   "id": "kata2-k2-ya-ヤ",
+   "unit": "kata2",
+   "front": "ヤ",
+   "hint": "",
+   "back": {
+    "ru": "ya",
+    "en": "ya"
+   },
+   "extra": {
+    "ru": "> タイヤ [audio](media:e97174d7d67c5a2066d10b7e)\n> *taiya*\n> — шина",
+    "en": "> タイヤ [audio](media:e97174d7d67c5a2066d10b7e)\n> *taiya*\n> — tyre"
+   }
+  },
+  {
+   "id": "kata2-k2-yu-ユ",
+   "unit": "kata2",
+   "front": "ユ",
+   "hint": "",
+   "back": {
+    "ru": "yu",
+    "en": "yu"
+   },
+   "extra": {
+    "ru": "> ユーモア [audio](media:32f7eab30da223efc172ecfc)\n> *yuumoa*\n> — юмор",
+    "en": "> ユーモア [audio](media:32f7eab30da223efc172ecfc)\n> *yuumoa*\n> — humour"
+   }
+  },
+  {
+   "id": "kata2-k2-yo-ヨ",
+   "unit": "kata2",
+   "front": "ヨ",
+   "hint": "",
+   "back": {
+    "ru": "yo",
+    "en": "yo"
+   },
+   "extra": {
+    "ru": "> ヨット [audio](media:338c54ec2abde05c648a8383)\n> *yotto*\n> — яхта",
+    "en": "> ヨット [audio](media:338c54ec2abde05c648a8383)\n> *yotto*\n> — yacht"
+   }
+  },
+  {
+   "id": "kata2-k2-ra-ラ",
+   "unit": "kata2",
+   "front": "ラ",
+   "hint": "",
+   "back": {
+    "ru": "ra",
+    "en": "ra"
+   },
+   "extra": {
+    "ru": "> ラジオ [audio](media:6318282849ea1fbd807a0a47)\n> *rajio*\n> — радио",
+    "en": "> ラジオ [audio](media:6318282849ea1fbd807a0a47)\n> *rajio*\n> — radio"
+   }
+  },
+  {
+   "id": "kata2-k2-ri-リ",
+   "unit": "kata2",
+   "front": "リ",
+   "hint": "",
+   "back": {
+    "ru": "ri",
+    "en": "ri"
+   },
+   "extra": {
+    "ru": "> リモコン [audio](media:4945b125bf17d4920bd1e758)\n> *rimokon*\n> — пульт",
+    "en": "> リモコン [audio](media:4945b125bf17d4920bd1e758)\n> *rimokon*\n> — remote control"
+   }
+  },
+  {
+   "id": "kata2-k2-ru-ル",
+   "unit": "kata2",
+   "front": "ル",
+   "hint": "",
+   "back": {
+    "ru": "ru",
+    "en": "ru"
+   },
+   "extra": {
+    "ru": "> ルール [audio](media:fc001c82f515c7d7823e20bc)\n> *ruuru*\n> — правило",
+    "en": "> ルール [audio](media:fc001c82f515c7d7823e20bc)\n> *ruuru*\n> — rule"
+   }
+  },
+  {
+   "id": "kata2-k2-re-レ",
+   "unit": "kata2",
+   "front": "レ",
+   "hint": "",
+   "back": {
+    "ru": "re",
+    "en": "re"
+   },
+   "extra": {
+    "ru": "> レストラン [audio](media:5d6a3a246d5624c928bd8033)\n> *resutoran*\n> — ресторан",
+    "en": "> レストラン [audio](media:5d6a3a246d5624c928bd8033)\n> *resutoran*\n> — restaurant"
+   }
+  },
+  {
+   "id": "kata2-k2-ro-ロ",
+   "unit": "kata2",
+   "front": "ロ",
+   "hint": "",
+   "back": {
+    "ru": "ro",
+    "en": "ro"
+   },
+   "extra": {
+    "ru": "> ロボット [audio](media:7b51a6ee38787738ffccf844)\n> *robotto*\n> — робот",
+    "en": "> ロボット [audio](media:7b51a6ee38787738ffccf844)\n> *robotto*\n> — robot"
+   }
+  },
+  {
+   "id": "kata2-k2-wa-ワ",
+   "unit": "kata2",
+   "front": "ワ",
+   "hint": "",
+   "back": {
+    "ru": "wa",
+    "en": "wa"
+   },
+   "extra": {
+    "ru": "> ワイン [audio](media:dae3cf3b63674ed3258f7d33)\n> *wain*\n> — вино",
+    "en": "> ワイン [audio](media:dae3cf3b63674ed3258f7d33)\n> *wain*\n> — wine"
+   }
+  },
+  {
+   "id": "kata2-k2-o-ヲ",
+   "unit": "kata2",
+   "front": "ヲ",
+   "hint": "",
+   "back": {
+    "ru": "o",
+    "en": "o"
+   },
+   "extra": {
+    "ru": "Редкий знак: только частица を, в катакане почти не встречается.",
+    "en": "A rare sign: only the particle を; hardly used in katakana."
+   }
+  },
+  {
+   "id": "kata2-k2-n-ン",
+   "unit": "kata2",
+   "front": "ン",
+   "hint": "",
+   "back": {
+    "ru": "n",
+    "en": "n"
+   },
+   "extra": {
+    "ru": "> パン [audio](media:9f5ce22d7ed9cfecb0279474)\n> *pan*\n> — хлеб",
+    "en": "> パン [audio](media:9f5ce22d7ed9cfecb0279474)\n> *pan*\n> — bread"
+   }
+  },
+  {
+   "id": "rules-w-scripts",
+   "unit": "rules",
+   "front": "Три письменности",
+   "hint": "",
+   "back": {
+    "ru": "Хирагана, катакана и кандзи — вместе",
+    "en": "Hiragana, katakana and kanji — together"
+   },
+   "extra": {
+    "ru": "Хирагана — слоговая азбука для японских слов и окончаний. Катакана — для заимствований (コーヒー — кофе) и иностранных имён. Кандзи — иероглифы для корней слов. Ромадзи (латиница) нужен только вам на старте.\n> わたしはがくせいです。 [audio](media:8859c19d9a1b5daa2e713adb)\n> *watashi wa gakusei desu*\n> — Я студент.",
+    "en": "Hiragana: Japanese words and endings. Katakana: loanwords (コーヒー) and foreign names. Kanji: characters for word roots. Romaji (Latin letters) is only a helper for you at the start.\n> わたしはがくせいです。 [audio](media:8859c19d9a1b5daa2e713adb)\n> *watashi wa gakusei desu*\n> — I am a student."
+   },
+   "frontL": {
+    "ru": "Три письменности",
+    "en": "Three writing systems"
+   },
+   "notype": true
+  },
+  {
+   "id": "rules-w-order",
+   "unit": "rules",
+   "front": "Порядок слов",
+   "hint": "",
+   "back": {
+    "ru": "Глагол всегда в конце: Я яблоко ем",
+    "en": "The verb always comes last: I apple eat"
+   },
+   "extra": {
+    "ru": "Японская фраза строится «кто — что — делаю». Подлежащее часто опускают, если и так понятно.\n> わたしはりんごをたべます。 [audio](media:f4c23ee80b6d6be21de7a14f)\n> *watashi wa ringo o tabemasu*\n> — Я ем яблоко.",
+    "en": "A Japanese sentence goes “who — what — do”. The subject is often dropped when it is obvious.\n> わたしはりんごをたべます。 [audio](media:f4c23ee80b6d6be21de7a14f)\n> *watashi wa ringo o tabemasu*\n> — I eat an apple."
+   },
+   "frontL": {
+    "ru": "Порядок слов",
+    "en": "Word order"
+   },
+   "notype": true
+  },
+  {
+   "id": "rules-w-wa",
+   "unit": "rules",
+   "front": "Частица は (читается «ва»)",
+   "hint": "",
+   "back": {
+    "ru": "は отмечает тему: «что касается…»",
+    "en": "は marks the topic: “as for…”"
+   },
+   "extra": {
+    "ru": "Пишется は, но как частица читается «ва». Тема — то, о чём вы говорите.\n> わたしはアンナです。 [audio](media:a0a8639b06989a84c5e23f57)\n> *watashi wa anna desu*\n> — Я Анна.",
+    "en": "Written は but read “wa” as a particle. The topic is what you are talking about.\n> わたしはアンナです。 [audio](media:a0a8639b06989a84c5e23f57)\n> *watashi wa anna desu*\n> — I am Anna."
+   },
+   "frontL": {
+    "ru": "Частица は (читается «ва»)",
+    "en": "Particle は (read “wa”)"
+   },
+   "notype": true
+  },
+  {
+   "id": "rules-w-desu",
+   "unit": "rules",
+   "front": "です — «есть, является»",
+   "hint": "",
+   "back": {
+    "ru": "です делает фразу вежливой: A は B です",
+    "en": "です makes the sentence polite: A は B です"
+   },
+   "extra": {
+    "ru": "Одно и то же для «я», «ты», «он» — глагол не меняется. Отрицание: じゃありません.\n> これはほんです。 [audio](media:9711b52b4e8e0183fdef71b6)\n> *kore wa hon desu*\n> — Это книга.",
+    "en": "The same for I, you, he — it never changes. Negative: じゃありません.\n> これはほんです。 [audio](media:9711b52b4e8e0183fdef71b6)\n> *kore wa hon desu*\n> — This is a book."
+   },
+   "frontL": {
+    "ru": "です — «есть, является»",
+    "en": "です — “is / am / are”"
+   },
+   "notype": true
+  },
+  {
+   "id": "rules-w-o",
+   "unit": "rules",
+   "front": "Частица を — объект",
+   "hint": "",
+   "back": {
+    "ru": "を ставится после того, что мы делаем",
+    "en": "を follows the thing you act on"
+   },
+   "extra": {
+    "ru": "Пишется を, читается «о». Перед глаголом: что? кого?\n> みずをのみます。 [audio](media:53da0f6a2e0a6f15d1682ca2)\n> *mizu o nomimasu*\n> — Пью воду.",
+    "en": "Written を, read “o”. It comes before the verb: what? whom?\n> みずをのみます。 [audio](media:53da0f6a2e0a6f15d1682ca2)\n> *mizu o nomimasu*\n> — I drink water."
+   },
+   "frontL": {
+    "ru": "Частица を — объект",
+    "en": "Particle を — object"
+   },
+   "notype": true
+  },
+  {
+   "id": "rules-w-no",
+   "unit": "rules",
+   "front": "Частица の — принадлежность",
+   "hint": "",
+   "back": {
+    "ru": "A の B = B, принадлежащий A",
+    "en": "A の B = B belonging to A"
+   },
+   "extra": {
+    "ru": "Как «’s» в английском: わたしのほん — моя книга.\n> わたしのともだちです。 [audio](media:3958e020febe19b9c5add97b)\n> *watashi no tomodachi desu*\n> — Это мой друг.",
+    "en": "Like “’s”: わたしのほん — my book.\n> わたしのともだちです。 [audio](media:3958e020febe19b9c5add97b)\n> *watashi no tomodachi desu*\n> — This is my friend."
+   },
+   "frontL": {
+    "ru": "Частица の — принадлежность",
+    "en": "Particle の — “of / ’s”"
+   },
+   "notype": true
+  },
+  {
+   "id": "rules-w-ni",
+   "unit": "rules",
+   "front": "Частицы に и で",
+   "hint": "",
+   "back": {
+    "ru": "に — «в/на» (место, время); で — «где происходит действие»",
+    "en": "に — “at/to” (place, time); で — “where an action happens”"
+   },
+   "extra": {
+    "ru": "いきます с に: куда. たべます с で: где.\n> がっこうにいきます。 [audio](media:fa70659ba2194282a0507b48)\n> *gakkou ni ikimasu*\n> — Иду в школу.",
+    "en": "に with いきます: where to. で with たべます: where.\n> がっこうにいきます。 [audio](media:fa70659ba2194282a0507b48)\n> *gakkou ni ikimasu*\n> — I go to school."
+   },
+   "frontL": {
+    "ru": "Частицы に и で",
+    "en": "Particles に and で"
+   },
+   "notype": true
+  },
+  {
+   "id": "rules-w-masu",
+   "unit": "rules",
+   "front": "Вежливая форма на ます",
+   "hint": "",
+   "back": {
+    "ru": "Настоящее/будущее: ます, отрицание: ません",
+    "en": "Present/future: ます, negative: ません"
+   },
+   "extra": {
+    "ru": "たべます — ем / буду есть. たべません — не ем. Прошедшее: たべました.\n> まいにちコーヒーをのみます。 [audio](media:3966d98969da3ccd62e2722d)\n> *mainichi koohii o nomimasu*\n> — Каждый день пью кофе.",
+    "en": "たべます — eat / will eat. たべません — don’t eat. Past: たべました.\n> まいにちコーヒーをのみます。 [audio](media:3966d98969da3ccd62e2722d)\n> *mainichi koohii o nomimasu*\n> — I drink coffee every day."
+   },
+   "frontL": {
+    "ru": "Вежливая форма на ます",
+    "en": "The polite ます form"
+   },
+   "notype": true
+  },
+  {
+   "id": "rules-w-ka",
+   "unit": "rules",
+   "front": "Вопрос: частица か",
+   "hint": "",
+   "back": {
+    "ru": "Добавьте か в конце — и это вопрос",
+    "en": "Add か at the end — it becomes a question"
+   },
+   "extra": {
+    "ru": "Порядок слов не меняется, вопросительного знака в японском нет (используют ？ для удобства).\n> おげんきですか。 [audio](media:07babc5f334ffb32acb65da4)\n> *ogenki desu ka*\n> — Как поживаете?",
+    "en": "Word order does not change; no special question intonation is needed on paper.\n> おげんきですか。 [audio](media:07babc5f334ffb32acb65da4)\n> *ogenki desu ka*\n> — How are you?"
+   },
+   "frontL": {
+    "ru": "Вопрос: частица か",
+    "en": "Questions: particle か"
+   },
+   "notype": true
+  },
+  {
+   "id": "rules-w-kore",
+   "unit": "rules",
+   "front": "これ・それ・あれ",
+   "hint": "",
+   "back": {
+    "ru": "это (рядом со мной) / то (рядом с вами) / вон то",
+    "en": "this (near me) / that (near you) / that over there"
+   },
+   "extra": {
+    "ru": "Три «расстояния»: ко-, со-, а-. Так же: ここ・そこ・あそこ (место).\n> あれはえきです。 [audio](media:c861ed7a64a7c3a2fa7c148b)\n> *are wa eki desu*\n> — Вон то — станция.",
+    "en": "Three “distances”: ko-, so-, a-. Same for places: ここ・そこ・あそこ.\n> あれはえきです。 [audio](media:c861ed7a64a7c3a2fa7c148b)\n> *are wa eki desu*\n> — That over there is a station."
+   },
+   "frontL": {
+    "ru": "これ・それ・あれ",
+    "en": "これ・それ・あれ"
+   },
+   "notype": true
+  },
+  {
+   "id": "rules-w-long",
+   "unit": "rules",
+   "front": "Долгие гласные и っ",
+   "hint": "",
+   "back": {
+    "ru": "Долгота меняет смысл: おばさん ≠ おばあさん",
+    "en": "Length changes meaning: おばさん ≠ おばあさん"
+   },
+   "extra": {
+    "ru": "Долгий звук тянется вдвое дольше. Маленькое っ — короткая пауза перед согласным: がっこう (gakkou).\n> おばあさんはげんきです。 [audio](media:b31236e9cc34393215aba5ff)\n> *obaasan wa genki desu*\n> — Бабушка здорова.",
+    "en": "A long vowel lasts twice as long. Small っ is a short pause before a consonant: がっこう (gakkou).\n> おばあさんはげんきです。 [audio](media:b31236e9cc34393215aba5ff)\n> *obaasan wa genki desu*\n> — Grandmother is well."
+   },
+   "frontL": {
+    "ru": "Долгие гласные и っ",
+    "en": "Long vowels and っ"
+   },
+   "notype": true
+  },
+  {
+   "id": "rules-w-san",
+   "unit": "rules",
+   "front": "Вежливое さん",
+   "hint": "",
+   "back": {
+    "ru": "さん добавляют к имени собеседника",
+    "en": "Add さん to the other person’s name"
+   },
+   "extra": {
+    "ru": "Никогда не добавляйте さん к своему имени. Для близких — くん/ちゃん.\n> たなかさん、こんにちは。 [audio](media:f55af24c2422b0731a5c1c0b)\n> *tanaka san, konnichiwa*\n> — Здравствуйте, господин Танака.",
+    "en": "Never add さん to your own name. For close friends: くん/ちゃん.\n> たなかさん、こんにちは。 [audio](media:f55af24c2422b0731a5c1c0b)\n> *tanaka san, konnichiwa*\n> — Hello, Mr. Tanaka."
+   },
+   "frontL": {
+    "ru": "Вежливое さん",
+    "en": "Polite さん"
+   },
+   "notype": true
+  },
   {
    "id": "hello",
    "unit": "greet",
@@ -1127,644 +2965,1084 @@
   "file": "ja.audio.mp3",
   "type": "audio/mpeg",
   "index": {
-   "0313d78f0e2a7d6ab1755c77": [
+   "82f47b1b439dc8913eaea453": [
     0,
+    3117
+   ],
+   "82872ada42b8f43cabfd556c": [
+    3117,
+    4917
+   ],
+   "08269e921c93004650591cd2": [
+    8034,
+    4557
+   ],
+   "70f7bb040b9b2bc01b9f9abc": [
+    12591,
+    4077
+   ],
+   "66957ad7df4abee06ffa1023": [
+    16668,
+    3717
+   ],
+   "9f1462b62664c4eb9aa2d2fa": [
+    20385,
+    2997
+   ],
+   "095cc34a46b03d330c9391f1": [
+    23382,
+    3477
+   ],
+   "7dcc4eaa9844c2e74ef36e22": [
+    26859,
+    4197
+   ],
+   "da5a20b1dcb2f619fdfe6bea": [
+    31056,
+    3477
+   ],
+   "ca9a143e57eb1cf8803ce22f": [
+    34533,
+    3117
+   ],
+   "4b2428e6641ab44dd213457e": [
+    37650,
+    3597
+   ],
+   "ad5cc8e1dedc5c982caced3c": [
+    41247,
+    4197
+   ],
+   "158599f395336a0aa9968fce": [
+    45444,
+    4197
+   ],
+   "8c66a394fcfd91a24709bcba": [
+    49641,
+    3837
+   ],
+   "804d5ad9f5701d14b61e5c18": [
+    53478,
+    4077
+   ],
+   "f6128fff99a4dbca1b280809": [
+    57555,
+    3837
+   ],
+   "177f8fdcf18f113e45f77491": [
+    61392,
+    4437
+   ],
+   "b26739fdf918a05d83e3a813": [
+    65829,
+    4197
+   ],
+   "fc8f95bbc755bc7a2c90dcf9": [
+    70026,
+    3117
+   ],
+   "f765afcbf9b316f3cb03b27d": [
+    73143,
+    3957
+   ],
+   "00437843bd7989d6b8f30dc7": [
+    77100,
+    3957
+   ],
+   "8b8b48228b436ee3a6eb0ebb": [
+    81057,
+    4797
+   ],
+   "37cb1c237d75acc8687c7083": [
+    85854,
+    4797
+   ],
+   "87136bf990270bf44222537f": [
+    90651,
+    3837
+   ],
+   "0b64c09a32e49eab03350305": [
+    94488,
+    4677
+   ],
+   "f94644af2e4b1bdca73a45bf": [
+    99165,
+    3357
+   ],
+   "97a8e2aee65d50c36b01da96": [
+    102522,
+    3957
+   ],
+   "40c83ae68b57b6a47baffdbb": [
+    106479,
+    4797
+   ],
+   "b7d861342cf6d34544f4dff1": [
+    111276,
+    3237
+   ],
+   "a8fbc7fc7fcadd2f1545bd11": [
+    114513,
+    3597
+   ],
+   "bcac5e8f33928c6430736ad4": [
+    118110,
+    3357
+   ],
+   "63dc7d5a9826db686e261311": [
+    121467,
+    4557
+   ],
+   "0acde8659c617c607794b5d8": [
+    126024,
+    4197
+   ],
+   "4a79e483a622b31155b7270c": [
+    130221,
+    3117
+   ],
+   "e4c9c3163a2cc6783f407447": [
+    133338,
+    3837
+   ],
+   "907c8591fb6fba085175ada4": [
+    137175,
+    3357
+   ],
+   "a1001c2a7a59cedd8fb13ec8": [
+    140532,
+    4197
+   ],
+   "00e3f4a18edc897ca42ba101": [
+    144729,
+    5037
+   ],
+   "6df199f42384cc7bdf092693": [
+    149766,
+    4077
+   ],
+   "64b09ccfe154b46ca908b1a3": [
+    153843,
+    4437
+   ],
+   "2e8b4c7425c6e8a783a3ffef": [
+    158280,
+    4317
+   ],
+   "796d0980c9ac823f2e739225": [
+    162597,
+    4077
+   ],
+   "967d180b03b81093ec639b33": [
+    166674,
+    5997
+   ],
+   "6cc8e5a4cb6df3ef4ccbf921": [
+    172671,
+    3477
+   ],
+   "8d20136bdb174e341988bced": [
+    176148,
+    5157
+   ],
+   "54ff73b16da4b7e8f8817cff": [
+    181305,
+    3597
+   ],
+   "9850a5a5b01cb783dc6a58f0": [
+    184902,
+    3957
+   ],
+   "046b104e028d25d948794c89": [
+    188859,
+    5637
+   ],
+   "e637d3352c3782ce6aec4036": [
+    194496,
+    4077
+   ],
+   "66c1e9b89e8b655bbf57c066": [
+    198573,
+    4077
+   ],
+   "160c383b3840e2f9e54b61b3": [
+    202650,
+    3717
+   ],
+   "521f7b06f5ad6c3cc1d8ac49": [
+    206367,
+    3717
+   ],
+   "89884aeeff3b719086250404": [
+    210084,
+    3837
+   ],
+   "21eedc22a70eb7d6001682bf": [
+    213921,
+    5037
+   ],
+   "144942b35084ade5dc3c2692": [
+    218958,
+    4317
+   ],
+   "5912e96082fecc27f32a10d7": [
+    223275,
+    4917
+   ],
+   "a6871adc1cb945a86cfff8c0": [
+    228192,
+    4317
+   ],
+   "4f1707654a4e581a7b8bda88": [
+    232509,
+    6837
+   ],
+   "94c214024ea8e9787cb15bcc": [
+    239346,
+    4077
+   ],
+   "e1b0bda0e7c0633101b7ce0e": [
+    243423,
+    5277
+   ],
+   "438bdb45972e64b8d3b5c349": [
+    248700,
+    4077
+   ],
+   "e32e64e3a860fd836df6d710": [
+    252777,
+    5637
+   ],
+   "75e3b8c601b5f807b90939f9": [
+    258414,
+    5037
+   ],
+   "9f5ce22d7ed9cfecb0279474": [
+    263451,
+    3117
+   ],
+   "0b3ab59505d7085d2732b50a": [
+    266568,
+    4077
+   ],
+   "830a1892e722083d39c87346": [
+    270645,
+    5877
+   ],
+   "5348e30c3e707e7cc1b911b5": [
+    276522,
+    3597
+   ],
+   "9da8a5c7f6a33dfc8923d122": [
+    280119,
+    5037
+   ],
+   "4faa3e16396dd4d27bde0002": [
+    285156,
+    4197
+   ],
+   "30e94c61cbb506ff41bcadbb": [
+    289353,
+    4317
+   ],
+   "823cdda054121461b8ca011a": [
+    293670,
+    6477
+   ],
+   "f965dad08be6ea11656f5df2": [
+    300147,
+    4797
+   ],
+   "4acf1f3dff627925f166cd87": [
+    304944,
+    5157
+   ],
+   "d6666d437a5dc311950f9cf6": [
+    310101,
+    4437
+   ],
+   "c7f618709735c5704b2d4106": [
+    314538,
+    5037
+   ],
+   "25cf0170ea8539e2ff792b1d": [
+    319575,
+    4677
+   ],
+   "09b388c45cb8f993be4b74df": [
+    324252,
+    4077
+   ],
+   "55720cd1111547ec107706b5": [
+    328329,
+    4677
+   ],
+   "9b6fd419d47b0a00115bd840": [
+    333006,
+    3357
+   ],
+   "9c28e2c11c319f7c65e87268": [
+    336363,
+    4077
+   ],
+   "3485fc0756b7df358cee38ef": [
+    340440,
+    5877
+   ],
+   "196441b500e86101fc961f1a": [
+    346317,
+    3837
+   ],
+   "169e867286947e573c8a46b3": [
+    350154,
+    4077
+   ],
+   "5a0ca6001cf4ab5442b0aa82": [
+    354231,
+    4557
+   ],
+   "7ad8ce0204117d43e951ad7e": [
+    358788,
+    4557
+   ],
+   "d80fd33354c9a6ba55095941": [
+    363345,
+    3597
+   ],
+   "98f4b2996e53f8a52e346878": [
+    366942,
+    4677
+   ],
+   "ea5c214a8608e134bc1c27ae": [
+    371619,
+    3957
+   ],
+   "7afdad055d57a4fbd0437d93": [
+    375576,
+    5037
+   ],
+   "4d72f636da6ba8156e33807f": [
+    380613,
+    6357
+   ],
+   "130f60bdba8fe1778d0d113c": [
+    386970,
+    5157
+   ],
+   "66e9abb94ac8fd1010a501e8": [
+    392127,
+    5397
+   ],
+   "4b363319e07b3d25050b5e28": [
+    397524,
+    4317
+   ],
+   "a15ae1ff9d5f3ca92ed71f4d": [
+    401841,
+    4557
+   ],
+   "149f521686f75b072c3fe653": [
+    406398,
+    3837
+   ],
+   "301e247d42f3029a825262d1": [
+    410235,
+    4317
+   ],
+   "39a95598cc44102b4d970ee2": [
+    414552,
+    6717
+   ],
+   "af2a2c8420e96d67d619f2d1": [
+    421269,
+    5277
+   ],
+   "0b46a4e3c5c797c23e14bd40": [
+    426546,
+    3357
+   ],
+   "8cb4e02991f9978506404094": [
+    429903,
+    5637
+   ],
+   "238f5f593babb6c8b9565d9b": [
+    435540,
+    4917
+   ],
+   "68925ec393db3c76821a0d15": [
+    440457,
+    3597
+   ],
+   "f3d734b4aa338a174de29369": [
+    444054,
+    5517
+   ],
+   "e97174d7d67c5a2066d10b7e": [
+    449571,
+    3717
+   ],
+   "32f7eab30da223efc172ecfc": [
+    453288,
+    5157
+   ],
+   "338c54ec2abde05c648a8383": [
+    458445,
+    4437
+   ],
+   "6318282849ea1fbd807a0a47": [
+    462882,
+    3477
+   ],
+   "4945b125bf17d4920bd1e758": [
+    466359,
+    4917
+   ],
+   "fc001c82f515c7d7823e20bc": [
+    471276,
+    6117
+   ],
+   "5d6a3a246d5624c928bd8033": [
+    477393,
+    5997
+   ],
+   "7b51a6ee38787738ffccf844": [
+    483390,
+    5037
+   ],
+   "dae3cf3b63674ed3258f7d33": [
+    488427,
+    4077
+   ],
+   "8859c19d9a1b5daa2e713adb": [
+    492504,
+    8277
+   ],
+   "f4c23ee80b6d6be21de7a14f": [
+    500781,
+    8877
+   ],
+   "a0a8639b06989a84c5e23f57": [
+    509658,
+    6597
+   ],
+   "9711b52b4e8e0183fdef71b6": [
+    516255,
+    6957
+   ],
+   "53da0f6a2e0a6f15d1682ca2": [
+    523212,
+    7437
+   ],
+   "3958e020febe19b9c5add97b": [
+    530649,
+    8877
+   ],
+   "fa70659ba2194282a0507b48": [
+    539526,
+    7557
+   ],
+   "3966d98969da3ccd62e2722d": [
+    547083,
+    9717
+   ],
+   "07babc5f334ffb32acb65da4": [
+    556800,
+    7077
+   ],
+   "c861ed7a64a7c3a2fa7c148b": [
+    563877,
+    7197
+   ],
+   "b31236e9cc34393215aba5ff": [
+    571074,
+    7557
+   ],
+   "f55af24c2422b0731a5c1c0b": [
+    578631,
+    7677
+   ],
+   "0313d78f0e2a7d6ab1755c77": [
+    586308,
     5877
    ],
    "4a633079a2839c0c462bf4e8": [
-    5877,
+    592185,
     11277
    ],
    "a666fcbc1d779bc5d20c7ed8": [
-    17154,
+    603462,
     5637
    ],
    "69bfd2cd1cc2552c4488b4b0": [
-    22791,
+    609099,
     7797
    ],
    "9c90f5b5ada5b99affd71aee": [
-    30588,
+    616896,
     5877
    ],
    "ab4b725f49e075fd1b817f05": [
-    36465,
+    622773,
     11397
    ],
    "de6221c4651df3a62eb324e4": [
-    47862,
+    634170,
     6837
    ],
    "ae7362c87886ab0d6eef4911": [
-    54699,
+    641007,
     9837
    ],
    "929485dcbddca708d6e22ddf": [
-    64536,
+    650844,
     3237
    ],
    "9bcfb3bcac37fc2de22c2569": [
-    67773,
+    654081,
     6237
    ],
    "38d9b3c9f452001de0a3fcf4": [
-    74010,
+    660318,
     3957
    ],
    "18952aa49b87ed3982fb4f62": [
-    77967,
+    664275,
     8037
    ],
    "0848c3ccccc26b338cd40844": [
-    86004,
+    672312,
     6357
    ],
    "b8d345b6412c41b8ecc31a99": [
-    92361,
+    678669,
     9237
    ],
    "599971f399405fb763c6754a": [
-    101598,
+    687906,
     5277
    ],
    "bdfe7edc2de0c45968a8c987": [
-    106875,
+    693183,
     6717
    ],
    "ce809dccdbc9818375b575a4": [
-    113592,
+    699900,
     5997
    ],
    "53aa942efca151187caa2206": [
-    119589,
+    705897,
     7797
    ],
-   "07babc5f334ffb32acb65da4": [
-    127386,
-    7077
-   ],
    "fb7a08af051fe61af8ab6eb9": [
-    134463,
+    713694,
     13557
    ],
    "59ec64a94cb795224ed81adf": [
-    148020,
+    727251,
     7077
    ],
    "960c2d08639001bb85e472a8": [
-    155097,
+    734328,
     15357
    ],
    "7cf0f12355e686497427f70e": [
-    170454,
+    749685,
     6477
    ],
    "4361be3c7f56f88494b8dd25": [
-    176931,
+    756162,
     10797
    ],
    "be72861d5a6e15a988df4200": [
-    187728,
+    766959,
     5037
    ],
    "205bcfe4cc1e6f57cb110ade": [
-    192765,
+    771996,
     8877
    ],
    "0afca67e6ca34a94f26a7b1b": [
-    201642,
+    780873,
     5517
    ],
    "8cbd4bd86de33e3d112ec5c4": [
-    207159,
+    786390,
     14277
    ],
    "6bd0c4576f2e8463eab42912": [
-    221436,
+    800667,
     3237
    ],
    "69143a3f6ea346114e3e1dd8": [
-    224673,
+    803904,
     8157
    ],
    "0c9f3b0c29719a2cec03499c": [
-    232830,
+    812061,
     4317
    ],
    "32262c9c08750242a93eb4fc": [
-    237147,
+    816378,
     12357
    ],
    "37136b66fe21362771c684fc": [
-    249504,
+    828735,
     3117
    ],
    "fd0a61f153e2b0779fe82e10": [
-    252621,
+    831852,
     8757
    ],
    "c76b74dfefefe87dbe521d33": [
-    261378,
+    840609,
     3477
    ],
    "7199f0d34fd00348c513efea": [
-    264855,
+    844086,
     10437
    ],
    "dfd47302b4ea9cfe954b06db": [
-    275292,
+    854523,
     4677
    ],
    "bda092852eb25657385071cd": [
-    279969,
+    859200,
     9717
    ],
    "e631ea15673a4d4cda551ff1": [
-    289686,
+    868917,
     4077
    ],
    "ff39958e093e3693ae92b3e8": [
-    293763,
+    872994,
     8757
    ],
    "a07f59a3100272e637797cc9": [
-    302520,
+    881751,
     4317
    ],
    "58c889f6ba5f5eb948016fe9": [
-    306837,
+    886068,
     9837
    ],
    "d5da4512bc5a4f99e84e9d68": [
-    316674,
+    895905,
     3837
    ],
    "b5083bc6680067eb7954c9a6": [
-    320511,
+    899742,
     12117
    ],
    "1c83f862a0b8ce89975a0acb": [
-    332628,
+    911859,
     3357
    ],
    "6442137e439b8aac243a65c5": [
-    335985,
+    915216,
     6837
    ],
    "690b1a37ac27db12479e3e51": [
-    342822,
+    922053,
     4677
    ],
    "b3e55bdbb379eca7add4f71f": [
-    347499,
+    926730,
     8877
    ],
    "33c6dfa4738791732e70bc88": [
-    356376,
+    935607,
     3717
    ],
    "3f7cf225b7336235b53c3965": [
-    360093,
+    939324,
     10677
    ],
    "61a7cec1d738ec157cffa3e6": [
-    370770,
+    950001,
     3117
    ],
    "7be5550652ae3bcd7e1de44c": [
-    373887,
+    953118,
     7797
    ],
    "6ae3b0147b698f2c97d2309f": [
-    381684,
+    960915,
     4677
    ],
    "75b1c76865d90eacb34cb2ac": [
-    386361,
+    965592,
     6477
    ],
    "fb4705832e010636f7cba8eb": [
-    392838,
+    972069,
     3597
    ],
    "9136603e8953398d4b2fa83c": [
-    396435,
+    975666,
     8157
    ],
    "6324ab6ad98f5dfd7e7f3237": [
-    404592,
+    983823,
     4077
    ],
    "7758b85aee3b5c8d72954d16": [
-    408669,
+    987900,
     8637
    ],
    "18bb6657707e7bb39902681b": [
-    417306,
+    996537,
     5037
    ],
    "a67df172561b88fb3b3d6599": [
-    422343,
+    1001574,
     8517
    ],
-   "63dc7d5a9826db686e261311": [
-    430860,
-    4557
-   ],
    "bcc2466fe3156daa9161d317": [
-    435417,
+    1010091,
     8877
    ],
-   "9f5ce22d7ed9cfecb0279474": [
-    444294,
-    3117
-   ],
    "6f19e91b3c433c4b4a82d9e9": [
-    447411,
+    1018968,
     6717
    ],
    "be864e72491a96348e8e347c": [
-    454128,
+    1025685,
     5277
    ],
    "05fd46e5da93c1caf3ac9568": [
-    459405,
+    1030962,
     9597
    ],
    "e5a0fa956d0a0633065c88b0": [
-    469002,
+    1040559,
     3717
    ],
    "0ff9161e271feefbe345d79a": [
-    472719,
+    1044276,
     8877
    ],
    "507272fb1778575db7944958": [
-    481596,
+    1053153,
     6837
    ],
    "e07700daaa519b8b33799e41": [
-    488433,
+    1059990,
     10797
    ],
-   "64b09ccfe154b46ca908b1a3": [
-    499230,
-    4437
-   ],
    "961e2a356d29751050b8034b": [
-    503667,
+    1070787,
     8877
    ],
-   "8b8b48228b436ee3a6eb0ebb": [
-    512544,
-    4797
-   ],
    "5bd66c25800ecf6973a912a9": [
-    517341,
+    1079664,
     9837
    ],
-   "4b2428e6641ab44dd213457e": [
-    527178,
-    3597
-   ],
    "bc80e25ea21985833566a120": [
-    530775,
+    1089501,
     10797
    ],
    "eed33fe09ec1800bea6fc16d": [
-    541572,
+    1100298,
     5037
    ],
    "f2cb99c3147ed92ab647c965": [
-    546609,
+    1105335,
     8757
    ],
    "bc3655e6626ce2ecbbe1e0be": [
-    555366,
+    1114092,
     4557
    ],
    "1ae7423ac765b5e79e0051a8": [
-    559923,
+    1118649,
     7917
    ],
    "30fefe504deb90b173b3b585": [
-    567840,
+    1126566,
     3717
    ],
    "575026446621d1ad0f61a7f2": [
-    571557,
+    1130283,
     9597
    ],
-   "b7d861342cf6d34544f4dff1": [
-    581154,
-    3237
-   ],
    "e75defdc7f42e24faf6841b3": [
-    584391,
+    1139880,
     10317
    ],
    "f7299a3bdf1b9f09dd70210b": [
-    594708,
+    1150197,
     3357
    ],
    "07bae141b23f7b5084c4817f": [
-    598065,
+    1153554,
     8757
    ],
    "c98dcabe25399d4c4a5a21f4": [
-    606822,
+    1162311,
     5877
    ],
    "f61675bf59f87edc01fe1e4f": [
-    612699,
+    1168188,
     12597
    ],
    "f002110630670cad45e031a9": [
-    625296,
+    1180785,
     3837
    ],
    "3c6b497f63ed68151e19472a": [
-    629133,
+    1184622,
     9357
    ],
    "88ed566b720a87e422fac79f": [
-    638490,
+    1193979,
     3957
    ],
    "10041b7e0b1ee0611181c91a": [
-    642447,
+    1197936,
     8877
    ],
-   "9850a5a5b01cb783dc6a58f0": [
-    651324,
-    3957
-   ],
    "e647ae5f3588753616f723f0": [
-    655281,
+    1206813,
     10557
    ],
-   "e1b0bda0e7c0633101b7ce0e": [
-    665838,
-    5277
-   ],
    "ce39825e2f7b69f4551ba6e3": [
-    671115,
+    1217370,
     10077
    ],
-   "70f7bb040b9b2bc01b9f9abc": [
-    681192,
-    4077
-   ],
    "57d86daee38d4c3da3869a50": [
-    685269,
+    1227447,
     8157
    ],
    "6717736f8afe8e8bd5fa2625": [
-    693426,
+    1235604,
     5037
    ],
    "4a18661be0fb8bb1bb14827a": [
-    698463,
+    1240641,
     7677
    ],
    "ad9f60427799d77b65df0e15": [
-    706140,
+    1248318,
     4197
    ],
    "7e59c35611eadea02c5757f3": [
-    710337,
+    1252515,
     9117
    ],
    "f8bb35b81aa8a90d948c6805": [
-    719454,
+    1261632,
     4197
    ],
    "bd8ffe21ffc30a49eebf641c": [
-    723651,
+    1265829,
     10797
    ],
    "0af0c7db1c4cc25e22d64f45": [
-    734448,
+    1276626,
     4677
    ],
    "0a926ac105c7c943feadb4db": [
-    739125,
+    1281303,
     7917
    ],
    "061004e10db8d0f188cff34e": [
-    747042,
+    1289220,
     4797
    ],
    "ca5d5b9d949c46e565f35ce1": [
-    751839,
+    1294017,
     7917
    ],
    "60b53d52df00ee7b5ee79140": [
-    759756,
+    1301934,
     4917
    ],
    "e17bcac283bf62d7a32623fb": [
-    764673,
+    1306851,
     7437
    ],
    "35d8957f7b659235347e79fe": [
-    772110,
+    1314288,
     4437
    ],
    "5eabc541fd60f96effd5fd8a": [
-    776547,
+    1318725,
     10197
    ],
    "7a5e0f484287040c7a8c3a17": [
-    786744,
+    1328922,
     5037
    ],
    "1ae6149d79b456575e80d7d8": [
-    791781,
+    1333959,
     5277
    ],
    "7ace2e2dd09ed675c2f0414d": [
-    797058,
+    1339236,
     4077
    ],
    "e5cb242af16f42c49ad2ce34": [
-    801135,
+    1343313,
     8997
    ],
    "24ff8d4c98de8c4faac1beaf": [
-    810132,
+    1352310,
     5757
    ],
    "f6666253e7ab6febdc128f09": [
-    815889,
+    1358067,
     10437
    ],
    "8014d3c7cfd933e0d2ade1df": [
-    826326,
+    1368504,
     5037
    ],
    "e8d118e1dbfbdd72a7e29dcb": [
-    831363,
+    1373541,
     9837
    ],
    "1742cc24bb0ef0c01e5fb1ed": [
-    841200,
+    1383378,
     5517
    ],
    "6936a539b33e90a42ef3ac16": [
-    846717,
+    1388895,
     10197
    ],
    "666ed52e5119cc26bb325ef3": [
-    856914,
+    1399092,
     4197
    ],
    "671701c7128d798598218b70": [
-    861111,
+    1403289,
     7917
    ],
    "767902de8fd188387671636b": [
-    869028,
+    1411206,
     3957
    ],
    "524809a619b6faa7f57c2099": [
-    872985,
+    1415163,
     7917
    ],
    "a5ac29e885b1274a3acdff28": [
-    880902,
+    1423080,
     4797
    ],
    "7dda86e8236a8e359a7d9c18": [
-    885699,
+    1427877,
     10917
    ],
    "49111b94212d1ba8e27ca46e": [
-    896616,
+    1438794,
     5157
    ],
    "50df1152b21eb4ff70eac511": [
-    901773,
+    1443951,
     11037
    ],
    "47192141ee36f62605378400": [
-    912810,
+    1454988,
     5997
    ],
    "614d791c3e360d8934bcaada": [
-    918807,
+    1460985,
     8877
    ],
    "3b1ee7f9da3b262285b8b6c9": [
-    927684,
+    1469862,
     4677
    ],
    "311a218d0c19e430a38b5fd0": [
-    932361,
+    1474539,
     8037
    ],
    "e0664eadf8d24e1d05e406ee": [
-    940398,
+    1482576,
     5157
    ],
    "a7cba82e015c188b5a10711a": [
-    945555,
+    1487733,
     9597
    ],
    "51f08c004518996981120f44": [
-    955152,
+    1497330,
     4317
    ],
    "c49a3d27dbce1910a45af203": [
-    959469,
+    1501647,
     10197
    ],
-   "095cc34a46b03d330c9391f1": [
-    969666,
-    3477
-   ],
    "0218e878c2d48fdb4c4dcfbd": [
-    973143,
+    1511844,
     8757
    ],
    "380e8383bf1c512d97ad1b4b": [
-    981900,
+    1520601,
     5277
    ],
    "7f518e6d0653ab1b19b8e9f8": [
-    987177,
+    1525878,
     10797
    ],
-   "94c214024ea8e9787cb15bcc": [
-    997974,
-    4077
-   ],
    "06d93faafa649107198cc01c": [
-    1002051,
+    1536675,
     10077
    ],
    "7f9548f341da41f7019567c6": [
-    1012128,
+    1546752,
     3597
    ],
    "d82ccf02ea5476f8886c47b1": [
-    1015725,
+    1550349,
     9837
    ],
    "1dd8b1d032ce96e758814879": [
-    1025562,
+    1560186,
     5757
    ],
    "6cbdb18efad2d864ce250e78": [
-    1031319,
+    1565943,
     10677
    ],
    "856bb61d65101fe7939df14f": [
-    1041996,
+    1576620,
     4437
    ],
    "175e88d708425afee3e6e94b": [
-    1046433,
+    1581057,
     9477
    ],
-   "af2a2c8420e96d67d619f2d1": [
-    1055910,
-    5277
-   ],
    "cf652521ecd829f72d33e753": [
-    1061187,
+    1590534,
     10917
    ],
-   "177f8fdcf18f113e45f77491": [
-    1072104,
-    4437
-   ],
    "e7010d783beb4d35a84d5b15": [
-    1076541,
+    1601451,
     9717
    ],
    "2c73b51507124b1dd31e36e1": [
-    1086258,
+    1611168,
     4437
    ],
    "b07671ef63900f9c7351e48d": [
-    1090695,
+    1615605,
     9237
    ],
    "233f9b1939c6e1df62ba8a30": [
-    1099932,
+    1624842,
     3957
    ],
    "a03a8313983233f32f415cc1": [
-    1103889,
+    1628799,
     8997
    ],
    "f2e4e7a579e11b59920a31b3": [
-    1112886,
+    1637796,
     3837
    ],
    "884e39a78ef34d117fa8193a": [
-    1116723,
+    1641633,
     10677
    ]
   },

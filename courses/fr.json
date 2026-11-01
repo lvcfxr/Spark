@@ -1,7 +1,748 @@
 {
  "id": "fr",
- "version": 1,
+ "version": 2,
  "cards": [
+  {
+   "id": "alpha-l0",
+   "unit": "alpha",
+   "front": "A a",
+   "hint": "",
+   "back": {
+    "ru": "[а]",
+    "en": "a"
+   },
+   "extra": {
+    "ru": "Название буквы: [а]\n> ami [audio](media:fc5dd938a4f0aec30f3b4b9a)\n> — друг",
+    "en": "Letter name: a\n> ami [audio](media:fc5dd938a4f0aec30f3b4b9a)\n> — friend"
+   },
+   "notype": true
+  },
+  {
+   "id": "alpha-l1",
+   "unit": "alpha",
+   "front": "B b",
+   "hint": "",
+   "back": {
+    "ru": "[бэ]",
+    "en": "bé"
+   },
+   "extra": {
+    "ru": "Название буквы: [бэ]\n> bon [audio](media:2d15ea1875bf8c43d08bb752)\n> — хороший",
+    "en": "Letter name: bé\n> bon [audio](media:2d15ea1875bf8c43d08bb752)\n> — good"
+   },
+   "notype": true
+  },
+  {
+   "id": "alpha-l2",
+   "unit": "alpha",
+   "front": "C c",
+   "hint": "",
+   "back": {
+    "ru": "[сэ]",
+    "en": "cé"
+   },
+   "extra": {
+    "ru": "Название буквы: [сэ]\n> café [audio](media:5e8640174948811298b8a856)\n> — кофе",
+    "en": "Letter name: cé\n> café [audio](media:5e8640174948811298b8a856)\n> — coffee"
+   },
+   "notype": true
+  },
+  {
+   "id": "alpha-l3",
+   "unit": "alpha",
+   "front": "D d",
+   "hint": "",
+   "back": {
+    "ru": "[дэ]",
+    "en": "dé"
+   },
+   "extra": {
+    "ru": "Название буквы: [дэ]\n> deux [audio](media:8e3170b66791c346345c5f2b)\n> — два",
+    "en": "Letter name: dé\n> deux [audio](media:8e3170b66791c346345c5f2b)\n> — two"
+   },
+   "notype": true
+  },
+  {
+   "id": "alpha-l4",
+   "unit": "alpha",
+   "front": "E e",
+   "hint": "",
+   "back": {
+    "ru": "[э/ə]",
+    "en": "e"
+   },
+   "extra": {
+    "ru": "Название буквы: [э/ə]\n> le [audio](media:456aa339ab3d964fbd4a4668)\n> — артикль",
+    "en": "Letter name: e\n> le [audio](media:456aa339ab3d964fbd4a4668)\n> — the"
+   },
+   "notype": true
+  },
+  {
+   "id": "alpha-l5",
+   "unit": "alpha",
+   "front": "F f",
+   "hint": "",
+   "back": {
+    "ru": "[эф]",
+    "en": "effe"
+   },
+   "extra": {
+    "ru": "Название буквы: [эф]\n> fille [audio](media:9aa8df6820dfa28dda91ad7f)\n> — девочка",
+    "en": "Letter name: effe\n> fille [audio](media:9aa8df6820dfa28dda91ad7f)\n> — girl"
+   },
+   "notype": true
+  },
+  {
+   "id": "alpha-l6",
+   "unit": "alpha",
+   "front": "G g",
+   "hint": "",
+   "back": {
+    "ru": "[жэ]",
+    "en": "gé"
+   },
+   "extra": {
+    "ru": "Название буквы: [жэ]\n> gare [audio](media:ce286d29454f27bb9d9dcd68)\n> — вокзал",
+    "en": "Letter name: gé\n> gare [audio](media:ce286d29454f27bb9d9dcd68)\n> — station"
+   },
+   "notype": true
+  },
+  {
+   "id": "alpha-l7",
+   "unit": "alpha",
+   "front": "H h",
+   "hint": "",
+   "back": {
+    "ru": "[аш] (не читается)",
+    "en": "hache"
+   },
+   "extra": {
+    "ru": "Название буквы: [аш] (не читается)\n> hôtel [audio](media:0a326f5d18fd4c4b8e919708)\n> — отель",
+    "en": "Letter name: hache\n> hôtel [audio](media:0a326f5d18fd4c4b8e919708)\n> — hotel"
+   },
+   "notype": true
+  },
+  {
+   "id": "alpha-l8",
+   "unit": "alpha",
+   "front": "I i",
+   "hint": "",
+   "back": {
+    "ru": "[и]",
+    "en": "i"
+   },
+   "extra": {
+    "ru": "Название буквы: [и]\n> il [audio](media:ca491267981aeebc00f45433)\n> — он",
+    "en": "Letter name: i\n> il [audio](media:ca491267981aeebc00f45433)\n> — he"
+   },
+   "notype": true
+  },
+  {
+   "id": "alpha-l9",
+   "unit": "alpha",
+   "front": "J j",
+   "hint": "",
+   "back": {
+    "ru": "[жи]",
+    "en": "ji"
+   },
+   "extra": {
+    "ru": "Название буквы: [жи]\n> jour [audio](media:d394ae7e4f97275877445c52)\n> — день",
+    "en": "Letter name: ji\n> jour [audio](media:d394ae7e4f97275877445c52)\n> — day"
+   },
+   "notype": true
+  },
+  {
+   "id": "alpha-l10",
+   "unit": "alpha",
+   "front": "K k",
+   "hint": "",
+   "back": {
+    "ru": "[ка]",
+    "en": "ka"
+   },
+   "extra": {
+    "ru": "Название буквы: [ка]\n> kilo [audio](media:1e4c5126821e1530ce869f0f)\n> — килограмм",
+    "en": "Letter name: ka\n> kilo [audio](media:1e4c5126821e1530ce869f0f)\n> — kilo"
+   },
+   "notype": true
+  },
+  {
+   "id": "alpha-l11",
+   "unit": "alpha",
+   "front": "L l",
+   "hint": "",
+   "back": {
+    "ru": "[эль]",
+    "en": "elle"
+   },
+   "extra": {
+    "ru": "Название буквы: [эль]\n> lune [audio](media:72c89994c84552e223279cbb)\n> — луна",
+    "en": "Letter name: elle\n> lune [audio](media:72c89994c84552e223279cbb)\n> — moon"
+   },
+   "notype": true
+  },
+  {
+   "id": "alpha-l12",
+   "unit": "alpha",
+   "front": "M m",
+   "hint": "",
+   "back": {
+    "ru": "[эм]",
+    "en": "emme"
+   },
+   "extra": {
+    "ru": "Название буквы: [эм]\n> mère [audio](media:73c7b15f62aca55e050d9ab8)\n> — мать",
+    "en": "Letter name: emme\n> mère [audio](media:73c7b15f62aca55e050d9ab8)\n> — mother"
+   },
+   "notype": true
+  },
+  {
+   "id": "alpha-l13",
+   "unit": "alpha",
+   "front": "N n",
+   "hint": "",
+   "back": {
+    "ru": "[эн]",
+    "en": "enne"
+   },
+   "extra": {
+    "ru": "Название буквы: [эн]\n> nuit [audio](media:e0b9b1e42b21b45a23ffeb48)\n> — ночь",
+    "en": "Letter name: enne\n> nuit [audio](media:e0b9b1e42b21b45a23ffeb48)\n> — night"
+   },
+   "notype": true
+  },
+  {
+   "id": "alpha-l14",
+   "unit": "alpha",
+   "front": "O o",
+   "hint": "",
+   "back": {
+    "ru": "[о]",
+    "en": "o"
+   },
+   "extra": {
+    "ru": "Название буквы: [о]\n> eau [audio](media:92750336c8791098eb7d06e4)\n> — вода",
+    "en": "Letter name: o\n> eau [audio](media:92750336c8791098eb7d06e4)\n> — water"
+   },
+   "notype": true
+  },
+  {
+   "id": "alpha-l15",
+   "unit": "alpha",
+   "front": "P p",
+   "hint": "",
+   "back": {
+    "ru": "[пэ]",
+    "en": "pé"
+   },
+   "extra": {
+    "ru": "Название буквы: [пэ]\n> pain [audio](media:1d098cab6feecdc6429f25f2)\n> — хлеб",
+    "en": "Letter name: pé\n> pain [audio](media:1d098cab6feecdc6429f25f2)\n> — bread"
+   },
+   "notype": true
+  },
+  {
+   "id": "alpha-l16",
+   "unit": "alpha",
+   "front": "Q q",
+   "hint": "",
+   "back": {
+    "ru": "[кю]",
+    "en": "ku"
+   },
+   "extra": {
+    "ru": "Название буквы: [кю]\n> quatre [audio](media:a0cd63bb04cb03a16bd282b9)\n> — четыре",
+    "en": "Letter name: ku\n> quatre [audio](media:a0cd63bb04cb03a16bd282b9)\n> — four"
+   },
+   "notype": true
+  },
+  {
+   "id": "alpha-l17",
+   "unit": "alpha",
+   "front": "R r",
+   "hint": "",
+   "back": {
+    "ru": "[эр] (гортанное)",
+    "en": "erre"
+   },
+   "extra": {
+    "ru": "Название буквы: [эр] (гортанное)\n> rouge [audio](media:422ec95a02b21bcccdb23c34)\n> — красный",
+    "en": "Letter name: erre\n> rouge [audio](media:422ec95a02b21bcccdb23c34)\n> — red"
+   },
+   "notype": true
+  },
+  {
+   "id": "alpha-l18",
+   "unit": "alpha",
+   "front": "S s",
+   "hint": "",
+   "back": {
+    "ru": "[эс]",
+    "en": "esse"
+   },
+   "extra": {
+    "ru": "Название буквы: [эс]\n> sel [audio](media:c6a83b93cf8f45bc90a480f0)\n> — соль",
+    "en": "Letter name: esse\n> sel [audio](media:c6a83b93cf8f45bc90a480f0)\n> — salt"
+   },
+   "notype": true
+  },
+  {
+   "id": "alpha-l19",
+   "unit": "alpha",
+   "front": "T t",
+   "hint": "",
+   "back": {
+    "ru": "[тэ]",
+    "en": "té"
+   },
+   "extra": {
+    "ru": "Название буквы: [тэ]\n> thé [audio](media:b3f912486fc5479664d1ecbd)\n> — чай",
+    "en": "Letter name: té\n> thé [audio](media:b3f912486fc5479664d1ecbd)\n> — tea"
+   },
+   "notype": true
+  },
+  {
+   "id": "alpha-l20",
+   "unit": "alpha",
+   "front": "U u",
+   "hint": "",
+   "back": {
+    "ru": "[ю]",
+    "en": "u"
+   },
+   "extra": {
+    "ru": "Название буквы: [ю]\n> tu [audio](media:33c05c12f9a700d469b58ff2)\n> — ты",
+    "en": "Letter name: u\n> tu [audio](media:33c05c12f9a700d469b58ff2)\n> — you"
+   },
+   "notype": true
+  },
+  {
+   "id": "alpha-l21",
+   "unit": "alpha",
+   "front": "V v",
+   "hint": "",
+   "back": {
+    "ru": "[вэ]",
+    "en": "vé"
+   },
+   "extra": {
+    "ru": "Название буквы: [вэ]\n> vin [audio](media:cf2af36afffdb5130cf9e6f4)\n> — вино",
+    "en": "Letter name: vé\n> vin [audio](media:cf2af36afffdb5130cf9e6f4)\n> — wine"
+   },
+   "notype": true
+  },
+  {
+   "id": "alpha-l22",
+   "unit": "alpha",
+   "front": "W w",
+   "hint": "",
+   "back": {
+    "ru": "[дубль-вэ]",
+    "en": "double vé"
+   },
+   "extra": {
+    "ru": "Название буквы: [дубль-вэ]\n> wagon [audio](media:834871f23390f47b55ed5e81)\n> — вагон",
+    "en": "Letter name: double vé\n> wagon [audio](media:834871f23390f47b55ed5e81)\n> — carriage"
+   },
+   "notype": true
+  },
+  {
+   "id": "alpha-l23",
+   "unit": "alpha",
+   "front": "X x",
+   "hint": "",
+   "back": {
+    "ru": "[икс]",
+    "en": "iks"
+   },
+   "extra": {
+    "ru": "Название буквы: [икс]\n> taxi [audio](media:190ae04f6a00457de28d3475)\n> — такси",
+    "en": "Letter name: iks\n> taxi [audio](media:190ae04f6a00457de28d3475)\n> — taxi"
+   },
+   "notype": true
+  },
+  {
+   "id": "alpha-l24",
+   "unit": "alpha",
+   "front": "Y y",
+   "hint": "",
+   "back": {
+    "ru": "[игрек]",
+    "en": "i grec"
+   },
+   "extra": {
+    "ru": "Название буквы: [игрек]\n> yeux [audio](media:306cd4d19fbd08a688955db0)\n> — глаза",
+    "en": "Letter name: i grec\n> yeux [audio](media:306cd4d19fbd08a688955db0)\n> — eyes"
+   },
+   "notype": true
+  },
+  {
+   "id": "alpha-l25",
+   "unit": "alpha",
+   "front": "Z z",
+   "hint": "",
+   "back": {
+    "ru": "[зэд]",
+    "en": "zède"
+   },
+   "extra": {
+    "ru": "Название буквы: [зэд]\n> zéro [audio](media:0573254c143d3d11e4de9313)\n> — ноль",
+    "en": "Letter name: zède\n> zéro [audio](media:0573254c143d3d11e4de9313)\n> — zero"
+   },
+   "notype": true
+  },
+  {
+   "id": "sounds-s0",
+   "unit": "sounds",
+   "front": "ou",
+   "hint": "",
+   "back": {
+    "ru": "[у]",
+    "en": "like “oo” in moon"
+   },
+   "extra": {
+    "ru": "ou — «у»\n> où [audio](media:3f33d1a7fa75a475265294dc)\n> — где",
+    "en": "Sound: like “oo” in moon\n> où [audio](media:3f33d1a7fa75a475265294dc)\n> — where"
+   },
+   "notype": true
+  },
+  {
+   "id": "sounds-s1",
+   "unit": "sounds",
+   "front": "oi",
+   "hint": "",
+   "back": {
+    "ru": "[уа]",
+    "en": "like “wa” in water"
+   },
+   "extra": {
+    "ru": "oi — «уа»\n> moi [audio](media:ea211d0b7c48468de1b69c59)\n> — я, мне",
+    "en": "Sound: like “wa” in water\n> moi [audio](media:ea211d0b7c48468de1b69c59)\n> — me"
+   },
+   "notype": true
+  },
+  {
+   "id": "sounds-s2",
+   "unit": "sounds",
+   "front": "ch",
+   "hint": "",
+   "back": {
+    "ru": "[ш]",
+    "en": "like “sh”"
+   },
+   "extra": {
+    "ru": "ch — «ш»\n> chat [audio](media:5ed68af2c932277d55da3885)\n> — кот",
+    "en": "Sound: like “sh”\n> chat [audio](media:5ed68af2c932277d55da3885)\n> — cat"
+   },
+   "notype": true
+  },
+  {
+   "id": "sounds-s3",
+   "unit": "sounds",
+   "front": "gn",
+   "hint": "",
+   "back": {
+    "ru": "[нь]",
+    "en": "like “ny” in canyon"
+   },
+   "extra": {
+    "ru": "gn — «нь»\n> montagne [audio](media:716a43cbdc2ea0f6deb2556f)\n> — гора",
+    "en": "Sound: like “ny” in canyon\n> montagne [audio](media:716a43cbdc2ea0f6deb2556f)\n> — mountain"
+   },
+   "notype": true
+  },
+  {
+   "id": "sounds-s4",
+   "unit": "sounds",
+   "front": "an / en",
+   "hint": "",
+   "back": {
+    "ru": "[ан] (носовой)",
+    "en": "nasal “ã”"
+   },
+   "extra": {
+    "ru": "an, en — носовой «ан»\n> enfant [audio](media:1b1577fd0aa3d59ddc9e4d48)\n> — ребёнок",
+    "en": "Sound: nasal “ã”\n> enfant [audio](media:1b1577fd0aa3d59ddc9e4d48)\n> — child"
+   },
+   "notype": true
+  },
+  {
+   "id": "sounds-s5",
+   "unit": "sounds",
+   "front": "on",
+   "hint": "",
+   "back": {
+    "ru": "[он] (носовой)",
+    "en": "nasal “õ”"
+   },
+   "extra": {
+    "ru": "on — носовой «он»\n> bon [audio](media:2d15ea1875bf8c43d08bb752)\n> — хороший",
+    "en": "Sound: nasal “õ”\n> bon [audio](media:2d15ea1875bf8c43d08bb752)\n> — good"
+   },
+   "notype": true
+  },
+  {
+   "id": "sounds-s6",
+   "unit": "sounds",
+   "front": "in / ain",
+   "hint": "",
+   "back": {
+    "ru": "[ен] (носовой)",
+    "en": "nasal “ẽ”"
+   },
+   "extra": {
+    "ru": "in, ain — носовой «эн»\n> pain [audio](media:1d098cab6feecdc6429f25f2)\n> — хлеб",
+    "en": "Sound: nasal “ẽ”\n> pain [audio](media:1d098cab6feecdc6429f25f2)\n> — bread"
+   },
+   "notype": true
+  },
+  {
+   "id": "sounds-s7",
+   "unit": "sounds",
+   "front": "eau / au",
+   "hint": "",
+   "back": {
+    "ru": "[о]",
+    "en": "“o”"
+   },
+   "extra": {
+    "ru": "eau, au — «о»\n> eau [audio](media:92750336c8791098eb7d06e4)\n> — вода",
+    "en": "Sound: “o”\n> eau [audio](media:92750336c8791098eb7d06e4)\n> — water"
+   },
+   "notype": true
+  },
+  {
+   "id": "sounds-s8",
+   "unit": "sounds",
+   "front": "é / è / ê",
+   "hint": "",
+   "back": {
+    "ru": "[э]",
+    "en": "“e” variants"
+   },
+   "extra": {
+    "ru": "é — закрытый, è/ê — открытый «э»\n> café [audio](media:5e8640174948811298b8a856)\n> — кофе",
+    "en": "Sound: “e” variants\n> café [audio](media:5e8640174948811298b8a856)\n> — coffee"
+   },
+   "notype": true
+  },
+  {
+   "id": "sounds-s9",
+   "unit": "sounds",
+   "front": "ç",
+   "hint": "",
+   "back": {
+    "ru": "[с]",
+    "en": "“s” before a, o, u"
+   },
+   "extra": {
+    "ru": "ç — «с» перед a, o, u\n> garçon [audio](media:af58cedff528dd2a83e9a7d7)\n> — мальчик",
+    "en": "Sound: “s” before a, o, u\n> garçon [audio](media:af58cedff528dd2a83e9a7d7)\n> — boy"
+   },
+   "notype": true
+  },
+  {
+   "id": "sounds-s10",
+   "unit": "sounds",
+   "front": "u",
+   "hint": "",
+   "back": {
+    "ru": "[ю] (губы вперёд)",
+    "en": "say “ee” with rounded lips"
+   },
+   "extra": {
+    "ru": "u — «ю», но с вытянутыми губами\n> tu [audio](media:33c05c12f9a700d469b58ff2)\n> — ты",
+    "en": "Sound: say “ee” with rounded lips\n> tu [audio](media:33c05c12f9a700d469b58ff2)\n> — you"
+   },
+   "notype": true
+  },
+  {
+   "id": "sounds-s11",
+   "unit": "sounds",
+   "front": "qu",
+   "hint": "",
+   "back": {
+    "ru": "[к]",
+    "en": "“k”"
+   },
+   "extra": {
+    "ru": "qu — «к»\n> quand [audio](media:16849c567868a9e9ad074b71)\n> — когда",
+    "en": "Sound: “k”\n> quand [audio](media:16849c567868a9e9ad074b71)\n> — when"
+   },
+   "notype": true
+  },
+  {
+   "id": "rules-w-silent",
+   "unit": "rules",
+   "front": "Немые буквы и связывание",
+   "hint": "",
+   "back": {
+    "ru": "Последняя согласная обычно не читается",
+    "en": "The final consonant is usually silent"
+   },
+   "extra": {
+    "ru": "petit → [пти], grand → [гран]. Если следующее слово начинается с гласной, согласная «оживает»: les amis [лезами].\n> Les amis arrivent. [audio](media:ac0f8ab7a1db27f19917a9bf)\n> — Друзья приходят.",
+    "en": "petit → [pti], grand → [gran]. If the next word starts with a vowel, the consonant comes alive: les amis [lezami].\n> Les amis arrivent. [audio](media:ac0f8ab7a1db27f19917a9bf)\n> — The friends arrive."
+   },
+   "frontL": {
+    "ru": "Немые буквы и связывание",
+    "en": "Silent letters and liaison"
+   },
+   "notype": true
+  },
+  {
+   "id": "rules-w-gender",
+   "unit": "rules",
+   "front": "Род и артикли",
+   "hint": "",
+   "back": {
+    "ru": "le/la — «определённый», un/une — «неопределённый»",
+    "en": "le/la = “the”, un/une = “a”"
+   },
+   "extra": {
+    "ru": "Мужской: le, un. Женский: la, une. Перед гласной: l’. Множественное: les, des.\n> Le livre est sur la table. [audio](media:b50d7c2fd4d9ce84c1e4c9c0)\n> — Книга на столе.",
+    "en": "Masculine: le, un. Feminine: la, une. Before a vowel: l’. Plural: les, des.\n> Le livre est sur la table. [audio](media:b50d7c2fd4d9ce84c1e4c9c0)\n> — The book is on the table."
+   },
+   "frontL": {
+    "ru": "Род и артикли",
+    "en": "Gender and articles"
+   },
+   "notype": true
+  },
+  {
+   "id": "rules-w-plural",
+   "unit": "rules",
+   "front": "Множественное число",
+   "hint": "",
+   "back": {
+    "ru": "Обычно +s, но на слух не слышно",
+    "en": "Usually +s, but you can’t hear it"
+   },
+   "extra": {
+    "ru": "un livre → des livres. Разница слышна по артиклю: le/les.\n> Les enfants jouent. [audio](media:f02ba228c598910fe75a2a3f)\n> — Дети играют.",
+    "en": "un livre → des livres. You hear the difference in the article: le/les.\n> Les enfants jouent. [audio](media:f02ba228c598910fe75a2a3f)\n> — The children play."
+   },
+   "frontL": {
+    "ru": "Множественное число",
+    "en": "Plurals"
+   },
+   "notype": true
+  },
+  {
+   "id": "rules-w-pron",
+   "unit": "rules",
+   "front": "Местоимения",
+   "hint": "",
+   "back": {
+    "ru": "je, tu, il/elle, nous, vous, ils/elles",
+    "en": "je, tu, il/elle, nous, vous, ils/elles"
+   },
+   "extra": {
+    "ru": "Подлежащее обязательно: Je parle. Vous — вежливое «вы» и множественное. On = «мы» в разговоре.\n> Je parle français. [audio](media:4e97ea8e38db02f79be2ccd9)\n> — Я говорю по-французски.",
+    "en": "The subject is required: Je parle. Vous = polite and plural “you”. On = “we” in speech.\n> Je parle français. [audio](media:4e97ea8e38db02f79be2ccd9)\n> — I speak French."
+   },
+   "frontL": {
+    "ru": "Местоимения",
+    "en": "Subject pronouns"
+   },
+   "notype": true
+  },
+  {
+   "id": "rules-w-etre",
+   "unit": "rules",
+   "front": "Être — «быть»",
+   "hint": "",
+   "back": {
+    "ru": "suis, es, est, sommes, êtes, sont",
+    "en": "suis, es, est, sommes, êtes, sont"
+   },
+   "extra": {
+    "ru": "Самый нужный глагол: Je suis étudiant. Elle est fatiguée.\n> Je suis étudiant. [audio](media:154a74cac7cd162dd57ac748)\n> — Я студент.",
+    "en": "The most useful verb: Je suis étudiant. Elle est fatiguée.\n> Je suis étudiant. [audio](media:154a74cac7cd162dd57ac748)\n> — I am a student."
+   },
+   "frontL": {
+    "ru": "Être — «быть»",
+    "en": "Être — “to be”"
+   },
+   "notype": true
+  },
+  {
+   "id": "rules-w-avoir",
+   "unit": "rules",
+   "front": "Avoir — «иметь»",
+   "hint": "",
+   "back": {
+    "ru": "ai, as, a, avons, avez, ont",
+    "en": "ai, as, a, avons, avez, ont"
+   },
+   "extra": {
+    "ru": "J’ai faim — «я голоден» (буквально «имею голод»). Также возраст: J’ai vingt ans.\n> J’ai vingt ans. [audio](media:67efeb3afa5d6416e62f2415)\n> — Мне двадцать лет.",
+    "en": "J’ai faim — “I’m hungry” (literally “I have hunger”). Also age: J’ai vingt ans.\n> J’ai vingt ans. [audio](media:67efeb3afa5d6416e62f2415)\n> — I am twenty."
+   },
+   "frontL": {
+    "ru": "Avoir — «иметь»",
+    "en": "Avoir — “to have”"
+   },
+   "notype": true
+  },
+  {
+   "id": "rules-w-er",
+   "unit": "rules",
+   "front": "Глаголы на -er",
+   "hint": "",
+   "back": {
+    "ru": "parler: parle, parles, parle, parlons, parlez, parlent",
+    "en": "parler: parle, parles, parle, parlons, parlez, parlent"
+   },
+   "extra": {
+    "ru": "Окончания -e, -es, -e, -ons, -ez, -ent. Три формы звучат одинаково!\n> Nous parlons français. [audio](media:1313c24cecc2575635d61ee3)\n> — Мы говорим по-французски.",
+    "en": "Endings -e, -es, -e, -ons, -ez, -ent. Three forms sound the same!\n> Nous parlons français. [audio](media:1313c24cecc2575635d61ee3)\n> — We speak French."
+   },
+   "frontL": {
+    "ru": "Глаголы на -er",
+    "en": "Verbs in -er"
+   },
+   "notype": true
+  },
+  {
+   "id": "rules-w-adj",
+   "unit": "rules",
+   "front": "Прилагательные",
+   "hint": "",
+   "back": {
+    "ru": "Согласуются с существительным; чаще — после него",
+    "en": "They agree with the noun; usually after it"
+   },
+   "extra": {
+    "ru": "une voiture rouge, des voitures rouges. Женский — обычно +e: grand → grande.\n> Une petite maison blanche. [audio](media:1a02883b7339ae4d8ae7eb0d)\n> — Маленький белый дом.",
+    "en": "une voiture rouge, des voitures rouges. Feminine is usually +e: grand → grande.\n> Une petite maison blanche. [audio](media:1a02883b7339ae4d8ae7eb0d)\n> — A small white house."
+   },
+   "frontL": {
+    "ru": "Прилагательные",
+    "en": "Adjectives"
+   },
+   "notype": true
+  },
+  {
+   "id": "rules-w-neg",
+   "unit": "rules",
+   "front": "Отрицание и вопрос",
+   "hint": "",
+   "back": {
+    "ru": "ne … pas вокруг глагола; вопрос — est-ce que",
+    "en": "ne … pas around the verb; questions — est-ce que"
+   },
+   "extra": {
+    "ru": "Je ne parle pas russe. В речи ne часто опускают. Вопрос: Est-ce que tu parles français ?\n> Je ne sais pas. [audio](media:1c47a68b012d9399627132de)\n> — Я не знаю.",
+    "en": "Je ne parle pas russe. In speech ne is often dropped. Question: Est-ce que tu parles français ?\n> Je ne sais pas. [audio](media:1c47a68b012d9399627132de)\n> — I don’t know."
+   },
+   "frontL": {
+    "ru": "Отрицание и вопрос",
+    "en": "Negation and questions"
+   },
+   "notype": true
+  },
   {
    "id": "hello",
    "unit": "greet",
@@ -1127,640 +1868,784 @@
   "file": "fr.audio.mp3",
   "type": "audio/mpeg",
   "index": {
-   "1c2145236c98245254ce0fb8": [
+   "fc5dd938a4f0aec30f3b4b9a": [
     0,
+    4077
+   ],
+   "2d15ea1875bf8c43d08bb752": [
+    4077,
+    4077
+   ],
+   "5e8640174948811298b8a856": [
+    8154,
+    3717
+   ],
+   "8e3170b66791c346345c5f2b": [
+    11871,
+    3837
+   ],
+   "456aa339ab3d964fbd4a4668": [
+    15708,
+    3597
+   ],
+   "9aa8df6820dfa28dda91ad7f": [
+    19305,
+    4797
+   ],
+   "ce286d29454f27bb9d9dcd68": [
+    24102,
+    3837
+   ],
+   "0a326f5d18fd4c4b8e919708": [
+    27939,
+    4437
+   ],
+   "ca491267981aeebc00f45433": [
+    32376,
+    3477
+   ],
+   "d394ae7e4f97275877445c52": [
+    35853,
+    3837
+   ],
+   "1e4c5126821e1530ce869f0f": [
+    39690,
+    4077
+   ],
+   "72c89994c84552e223279cbb": [
+    43767,
+    4797
+   ],
+   "73c7b15f62aca55e050d9ab8": [
+    48564,
+    3837
+   ],
+   "e0b9b1e42b21b45a23ffeb48": [
+    52401,
+    4317
+   ],
+   "92750336c8791098eb7d06e4": [
+    56718,
+    3117
+   ],
+   "1d098cab6feecdc6429f25f2": [
+    59835,
+    2877
+   ],
+   "a0cd63bb04cb03a16bd282b9": [
+    62712,
+    3237
+   ],
+   "422ec95a02b21bcccdb23c34": [
+    65949,
+    3957
+   ],
+   "c6a83b93cf8f45bc90a480f0": [
+    69906,
+    3837
+   ],
+   "b3f912486fc5479664d1ecbd": [
+    73743,
+    3717
+   ],
+   "33c05c12f9a700d469b58ff2": [
+    77460,
+    3477
+   ],
+   "cf2af36afffdb5130cf9e6f4": [
+    80937,
+    3597
+   ],
+   "834871f23390f47b55ed5e81": [
+    84534,
+    5157
+   ],
+   "190ae04f6a00457de28d3475": [
+    89691,
+    4557
+   ],
+   "306cd4d19fbd08a688955db0": [
+    94248,
+    3837
+   ],
+   "0573254c143d3d11e4de9313": [
+    98085,
+    3597
+   ],
+   "3f33d1a7fa75a475265294dc": [
+    101682,
+    3597
+   ],
+   "ea211d0b7c48468de1b69c59": [
+    105279,
+    3477
+   ],
+   "5ed68af2c932277d55da3885": [
+    108756,
+    3117
+   ],
+   "716a43cbdc2ea0f6deb2556f": [
+    111873,
+    4917
+   ],
+   "1b1577fd0aa3d59ddc9e4d48": [
+    116790,
+    4677
+   ],
+   "af58cedff528dd2a83e9a7d7": [
+    121467,
+    5037
+   ],
+   "16849c567868a9e9ad074b71": [
+    126504,
+    3717
+   ],
+   "ac0f8ab7a1db27f19917a9bf": [
+    130221,
+    6957
+   ],
+   "b50d7c2fd4d9ce84c1e4c9c0": [
+    137178,
+    8637
+   ],
+   "f02ba228c598910fe75a2a3f": [
+    145815,
+    6477
+   ],
+   "4e97ea8e38db02f79be2ccd9": [
+    152292,
+    7197
+   ],
+   "154a74cac7cd162dd57ac748": [
+    159489,
+    7077
+   ],
+   "67efeb3afa5d6416e62f2415": [
+    166566,
+    5877
+   ],
+   "1313c24cecc2575635d61ee3": [
+    172443,
+    7317
+   ],
+   "1a02883b7339ae4d8ae7eb0d": [
+    179760,
+    9237
+   ],
+   "1c47a68b012d9399627132de": [
+    188997,
+    6237
+   ],
+   "1c2145236c98245254ce0fb8": [
+    195234,
     5157
    ],
    "f8bc3348022edfeddab97f64": [
-    5157,
+    200391,
     9597
    ],
    "05e88f7f0b6def161caadd63": [
-    14754,
+    209988,
     5157
    ],
    "e33228eb1f64af8214ea770d": [
-    19911,
+    215145,
     7317
    ],
    "3d8f70a5a3d4779a852842d2": [
-    27228,
+    222462,
     4797
    ],
    "6503accd83a245ad772213f6": [
-    32025,
+    227259,
     8277
    ],
    "c675b42bcab3a5686de42fa3": [
-    40302,
+    235536,
     5037
    ],
    "2df0ea1efbb741fc69c10d46": [
-    45339,
+    240573,
     8037
    ],
    "f334f27c9de02aef73d76dc9": [
-    53376,
+    248610,
     3237
    ],
    "815e1710dc5c1752c6c464f4": [
-    56613,
+    251847,
     7197
    ],
    "8dfe548b5aa90d41aaeb1095": [
-    63810,
+    259044,
     4077
    ],
    "ded6c42cbff65080859ae9bd": [
-    67887,
+    263121,
     5997
    ],
    "59b05ae4c6536a8deb94005a": [
-    73884,
+    269118,
     4557
    ],
    "059145831b80ef90e335c741": [
-    78441,
+    273675,
     8877
    ],
    "c69d974da96ff1402879c229": [
-    87318,
+    282552,
     6837
    ],
    "5b103975acb632da78eac463": [
-    94155,
+    289389,
     4917
    ],
    "4edac77eb4dfc5b47c7ec5d6": [
-    99072,
+    294306,
     6837
    ],
    "193845de56b873a6d16a756f": [
-    105909,
+    301143,
     5037
    ],
    "23c4fe5d4123e36b611912ef": [
-    110946,
+    306180,
     9357
    ],
    "877ce60dba0ef6c4294295ba": [
-    120303,
+    315537,
     3837
    ],
    "eb288158ba34c9e388ec45f0": [
-    124140,
+    319374,
     8877
    ],
    "208e58e5afcd0b178fac51bb": [
-    133017,
+    328251,
     5157
    ],
    "a6a66165f38f134524614c20": [
-    138174,
+    333408,
     8397
    ],
    "d781f63aae81b6385278c0e4": [
-    146571,
+    341805,
     5037
    ],
    "04cd721dbcdcf0f75c56f3c9": [
-    151608,
+    346842,
     6237
    ],
    "8169ea4b54ac330e577bec8b": [
-    157845,
+    353079,
     4437
    ],
    "3f5c317b6fcb182666131a71": [
-    162282,
+    357516,
     7197
    ],
    "fd66b77a15e549e7413bba70": [
-    169479,
+    364713,
     4437
    ],
    "2d60ac2a34d8122c6e9a04b3": [
-    173916,
+    369150,
     8037
    ],
    "30fc11b92f8a50599dfaadbc": [
-    181953,
+    377187,
     5037
    ],
    "5da241ef262c2b2103c89cc0": [
-    186990,
+    382224,
     9957
    ],
    "fb70d2fd48cb593931cb19ce": [
-    196947,
+    392181,
     5037
    ],
    "0e0f995795637444ba7a51e7": [
-    201984,
+    397218,
     6237
    ],
    "e0d9f664410d235ea4b63edd": [
-    208221,
+    403455,
     5037
    ],
    "688788e02931fbfbb8abd34a": [
-    213258,
+    408492,
     8157
    ],
    "cbbc0446c64bda7d3cbfd83e": [
-    221415,
+    416649,
     5517
    ],
    "2223a64d4f848f9a35da17c1": [
-    226932,
+    422166,
     8157
    ],
    "6b864af42512061610e61fae": [
-    235089,
+    430323,
     4197
    ],
    "a230226335e9ac3dd02bec97": [
-    239286,
+    434520,
     6357
    ],
    "7e0fbf780dc0e8feda110cf9": [
-    245643,
+    440877,
     3117
    ],
    "1cc1ba3864bd8817334e9b56": [
-    248760,
+    443994,
     7557
    ],
-   "8e3170b66791c346345c5f2b": [
-    256317,
-    3837
-   ],
    "17b3fbd98b64441547ad618b": [
-    260154,
+    451551,
     8397
    ],
    "f01697f8ec8e86c1e614c890": [
-    268551,
+    459948,
     4437
    ],
    "62bab217e2b302b0eadd26a2": [
-    272988,
+    464385,
     6717
    ],
    "7d856940499e048633c14966": [
-    279705,
+    471102,
     4077
    ],
    "4a5668b8bc3973fa6fdd4a45": [
-    283782,
+    475179,
     10317
    ],
    "a7c5fe13ccf4a601fc61b457": [
-    294099,
+    485496,
     4557
    ],
    "2dda490f84968ee96e3e6d6a": [
-    298656,
+    490053,
     7197
    ],
    "55443ef641c1371a70d3f03b": [
-    305853,
+    497250,
     5037
    ],
    "97b1a352378ad00006cf072f": [
-    310890,
+    502287,
     5997
    ],
    "5d9897ef258b6984c6992a3c": [
-    316887,
+    508284,
     5637
    ],
    "6ddfe4f419cb797bcf87c0cf": [
-    322524,
+    513921,
     7917
    ],
    "f043046012122a419bb10089": [
-    330441,
+    521838,
     5037
    ],
    "ce24af9a8247e7f63c0f6747": [
-    335478,
+    526875,
     8757
    ],
    "9e0096de621cb4325b5f062b": [
-    344235,
+    535632,
     4917
    ],
    "ceeeab14373236185b4e601a": [
-    349152,
+    540549,
     7557
    ],
    "2bea46e266ffd2dfe779b597": [
-    356709,
+    548106,
     4317
    ],
    "c9a0abf8b69da6d710f63706": [
-    361026,
+    552423,
     6477
    ],
    "c4cb264024ed6a5cf75451a7": [
-    367503,
+    558900,
     3837
    ],
    "db4ef2b2d7127b605296a7bc": [
-    371340,
+    562737,
     8277
    ],
    "6e393b224cf8e7ba33554894": [
-    379617,
+    571014,
     5157
    ],
    "21164059ca8a54ccbe06f9ea": [
-    384774,
+    576171,
     6837
    ],
    "420c9c972260e89152eb6d79": [
-    391611,
+    583008,
     5277
    ],
    "2c57e3dfd9ad963dd9c3359d": [
-    396888,
+    588285,
     9597
    ],
    "2f2b2a7fa6d56ad0a523fd01": [
-    406485,
+    597882,
     4557
    ],
    "5b62d22d336392e84a1d392d": [
-    411042,
+    602439,
     6357
    ],
    "1a6236890094e21a7292af8f": [
-    417399,
+    608796,
     5037
    ],
    "82ccfb3d3a22565e779ea843": [
-    422436,
+    613833,
     6717
    ],
    "023a9aced0c36657894a5ce4": [
-    429153,
+    620550,
     5037
    ],
    "d8d32005346984fb9e3db3a3": [
-    434190,
+    625587,
     7677
    ],
    "31dd588a30d4d85e87db6919": [
-    441867,
+    633264,
     5517
    ],
    "46fe150c521d570cc56c0f87": [
-    447384,
+    638781,
     8877
    ],
    "f89826d1fe32cb185879425d": [
-    456261,
+    647658,
     5757
    ],
    "fd1decabc103ec347ea6f787": [
-    462018,
+    653415,
     9597
    ],
    "911f53026f5eb3af4bb40e82": [
-    471615,
+    663012,
     4557
    ],
    "20428e0c716a2812c3dbe735": [
-    476172,
+    667569,
     7437
    ],
    "be9babd711754893ccb3fb5b": [
-    483609,
+    675006,
     4077
    ],
    "69bb6c86a2b05755e9be97ea": [
-    487686,
+    679083,
     7677
    ],
    "b918b90b71ed4fee63956e40": [
-    495363,
+    686760,
     5397
    ],
    "ce4c53ef8b460b6b8e20adb9": [
-    500760,
+    692157,
     6117
    ],
    "2603f004b9bd0900f9a4365f": [
-    506877,
+    698274,
     5637
    ],
    "08ad8d14f84db8ce69f05b17": [
-    512514,
+    703911,
     8277
    ],
    "33491ff6c2c2a7ec73c1926d": [
-    520791,
+    712188,
     4917
    ],
    "adfd28a179f7ce45c6317121": [
-    525708,
+    717105,
     9597
    ],
    "fab4ce22bad0cd213ac366bc": [
-    535305,
+    726702,
     3717
    ],
    "2355f304a67c41943cd14561": [
-    539022,
+    730419,
     7557
    ],
    "f88629a83335bbfbe7ffd0fb": [
-    546579,
+    737976,
     4917
    ],
    "3ee87adda0472f116ccaf3f3": [
-    551496,
+    742893,
     7317
    ],
    "a660c88bb4306125187af6f9": [
-    558813,
+    750210,
     5997
    ],
    "2c39eb9f61b053c2dd701006": [
-    564810,
+    756207,
     7917
    ],
    "464da6866e2f62ca8972227f": [
-    572727,
+    764124,
     4917
    ],
    "3aa85e3d6632481c2de5af21": [
-    577644,
+    769041,
     8877
    ],
    "3ee00e38f94bf7d2491bf85b": [
-    586521,
+    777918,
     5877
    ],
    "5b4baf0f0e9bb250aef946b3": [
-    592398,
+    783795,
     6957
    ],
    "cc5178bcb8cc13c5e24e1f66": [
-    599355,
+    790752,
     4797
    ],
    "f19e29b3f6998c3e0a7f1c66": [
-    604152,
+    795549,
     7317
    ],
    "0cb877965c8c62e564ef29f1": [
-    611469,
+    802866,
     5157
    ],
    "a5f871cfda3479938f83cb66": [
-    616626,
+    808023,
     6597
    ],
    "2c8dcfb671dcdde357f67fe6": [
-    623223,
+    814620,
     4197
    ],
-   "154a74cac7cd162dd57ac748": [
-    627420,
-    7077
-   ],
    "9d089c2451292553b3929152": [
-    634497,
+    818817,
     4677
    ],
    "72397d5607661fbadc84803c": [
-    639174,
+    823494,
     6837
    ],
    "580f53cc90d47a849be75c5d": [
-    646011,
+    830331,
     3597
    ],
    "02dc9d7a06a995812e2356c3": [
-    649608,
+    833928,
     7197
    ],
    "ae1b4689dde3f6cbfe894c25": [
-    656805,
+    841125,
     5037
    ],
    "1434ef1463bcfdbd437adc9e": [
-    661842,
+    846162,
     5877
    ],
    "c33500b205f626db91d6187a": [
-    667719,
+    852039,
     4077
    ],
    "f09e40c925c73a419753952e": [
-    671796,
+    856116,
     7557
    ],
    "d5b45001c217184b44469bb2": [
-    679353,
+    863673,
     4317
    ],
    "5031819f76f3da7d1209502b": [
-    683670,
+    867990,
     10317
    ],
    "87f23ab54f57f83e9aa5b68b": [
-    693987,
+    878307,
     4917
    ],
-   "1c47a68b012d9399627132de": [
-    698904,
-    6237
-   ],
    "bb05b07d9be8cd4675b0dffc": [
-    705141,
+    883224,
     5037
    ],
    "d1874bc6a6238a7a0eeaa155": [
-    710178,
+    888261,
     7077
    ],
    "3e1c756d7663735316c82713": [
-    717255,
+    895338,
     4797
    ],
    "79c5a3f86afd29bbb63a25ec": [
-    722052,
+    900135,
     6237
    ],
    "c41134832cbed794b94a41b2": [
-    728289,
+    906372,
     5037
    ],
    "f4cabf6fa01732ca188f1c9d": [
-    733326,
+    911409,
     7317
    ],
    "2c68684860b5db44b254c740": [
-    740643,
+    918726,
     4077
    ],
    "079548ba6de02bb5742d5e06": [
-    744720,
+    922803,
     8517
    ],
    "73791b6d2bf25d733ff5e357": [
-    753237,
+    931320,
     4437
    ],
    "642d9eca8d56c1424892e1e8": [
-    757674,
+    935757,
     7437
    ],
-   "2d15ea1875bf8c43d08bb752": [
-    765111,
-    4077
-   ],
    "5d2d01f86807e79990748279": [
-    769188,
+    943194,
     6837
    ],
    "a705db572ac2cc060620edd6": [
-    776025,
+    950031,
     3957
    ],
    "3dfff3f374bbf773efa69df5": [
-    779982,
+    953988,
     8757
    ],
    "5e05b3541c8e207b1f21e922": [
-    788739,
+    962745,
     4077
    ],
    "bc5c0127f50a4ec5dca7ff0b": [
-    792816,
+    966822,
     8157
    ],
    "778fbd21dd298008d8f9b4c2": [
-    800973,
+    974979,
     3597
    ],
    "d7be6c645099c1722fa0eb89": [
-    804570,
+    978576,
     7557
    ],
    "8b81656cb982f50d24026b73": [
-    812127,
+    986133,
     3717
    ],
    "ac75b22c2aca347714ea6208": [
-    815844,
+    989850,
     6237
    ],
    "8d532c1542be761d1e7b9e0a": [
-    822081,
+    996087,
     4437
    ],
    "64594a1d5721a8b069d71693": [
-    826518,
+    1000524,
     6477
    ],
    "57170bf75ac64e34bffc7a6f": [
-    832995,
+    1007001,
     3357
    ],
    "794be4117e76d4c613368c11": [
-    836352,
+    1010358,
     6957
    ],
-   "422ec95a02b21bcccdb23c34": [
-    843309,
-    3957
-   ],
    "65e38bd699d46b10b098c99e": [
-    847266,
+    1017315,
     6597
    ],
    "ee71bdb6943a8aa7b5b08b0c": [
-    853863,
+    1023912,
     5877
    ],
    "913ffeee9fcf861b28827aa9": [
-    859740,
+    1029789,
     6957
    ],
    "70c7fed256cb511bc2e59244": [
-    866697,
+    1036746,
     5037
    ],
    "538f675a68dfb2f82c13ded9": [
-    871734,
+    1041783,
     8397
    ],
    "19352b5d2c122380d185b12c": [
-    880131,
+    1050180,
     4917
    ],
    "41931466395c665023ecfc4f": [
-    885048,
+    1055097,
     8757
    ],
    "a89c3aeb296533d3d7fe389c": [
-    893805,
+    1063854,
     5037
    ],
    "c57c789e04b445bba2a48163": [
-    898842,
+    1068891,
     7197
    ],
    "c69a3b530b3659e93ad192ae": [
-    906039,
+    1076088,
     4677
    ],
    "6929aebc2c10f045e5f24e22": [
-    910716,
+    1080765,
     7677
    ],
    "c2db628c9fdab7d1dca88cad": [
-    918393,
+    1088442,
     5157
    ],
    "c2521501dc51cca968dcbee9": [
-    923550,
+    1093599,
     8517
    ],
    "58ef672f3e9d0d1c867a5fef": [
-    932067,
+    1102116,
     5157
    ],
    "13fc30ba8965bec3489a5dd9": [
-    937224,
+    1107273,
     6837
    ],
    "c662882d78f04edf4cfbc89a": [
-    944061,
+    1114110,
     4437
    ],
    "05d6fdad27ecd0bb6c273fc5": [
-    948498,
+    1118547,
     6837
    ],
    "baf0827cddfd56bae1faec64": [
-    955335,
+    1125384,
     5037
    ],
    "f76f19bd89777bcd0663b567": [
-    960372,
+    1130421,
     6957
    ],
-   "3f33d1a7fa75a475265294dc": [
-    967329,
-    3597
-   ],
    "337984ec59941bec787baf00": [
-    970926,
+    1137378,
     6117
    ]
   },

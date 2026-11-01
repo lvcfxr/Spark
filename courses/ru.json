@@ -1,7 +1,640 @@
 {
  "id": "ru",
- "version": 1,
+ "version": 2,
  "cards": [
+  {
+   "id": "cyr1-c1-0",
+   "unit": "cyr1",
+   "front": "А а",
+   "hint": "",
+   "back": {
+    "ru": "a",
+    "en": "a"
+   },
+   "extra": {
+    "ru": "Звук: like “a” in father\n> мама [audio](media:b2a5ed71fae3276c43074041)\n> *máma*\n> — mom",
+    "en": "Sound: like “a” in father\n> мама [audio](media:b2a5ed71fae3276c43074041)\n> *máma*\n> — mom"
+   }
+  },
+  {
+   "id": "cyr1-c1-1",
+   "unit": "cyr1",
+   "front": "Б б",
+   "hint": "",
+   "back": {
+    "ru": "b",
+    "en": "b"
+   },
+   "extra": {
+    "ru": "Звук: like “b” in bad\n> банан [audio](media:34570c273598c789e05103df)\n> *banán*\n> — banana",
+    "en": "Sound: like “b” in bad\n> банан [audio](media:34570c273598c789e05103df)\n> *banán*\n> — banana"
+   }
+  },
+  {
+   "id": "cyr1-c1-2",
+   "unit": "cyr1",
+   "front": "В в",
+   "hint": "",
+   "back": {
+    "ru": "v",
+    "en": "v"
+   },
+   "extra": {
+    "ru": "Звук: like “v” in van\n> вода [audio](media:5c006cf4527500688c0c377f)\n> *vodá*\n> — water",
+    "en": "Sound: like “v” in van\n> вода [audio](media:5c006cf4527500688c0c377f)\n> *vodá*\n> — water"
+   }
+  },
+  {
+   "id": "cyr1-c1-3",
+   "unit": "cyr1",
+   "front": "Г г",
+   "hint": "",
+   "back": {
+    "ru": "g",
+    "en": "g"
+   },
+   "extra": {
+    "ru": "Звук: like “g” in go\n> город [audio](media:6fc5c2c584ecd171c249cf81)\n> *górod*\n> — city",
+    "en": "Sound: like “g” in go\n> город [audio](media:6fc5c2c584ecd171c249cf81)\n> *górod*\n> — city"
+   }
+  },
+  {
+   "id": "cyr1-c1-4",
+   "unit": "cyr1",
+   "front": "Д д",
+   "hint": "",
+   "back": {
+    "ru": "d",
+    "en": "d"
+   },
+   "extra": {
+    "ru": "Звук: like “d” in dog\n> дом [audio](media:a2903c0ffa3bcffb9a1fc5c4)\n> *dom*\n> — house",
+    "en": "Sound: like “d” in dog\n> дом [audio](media:a2903c0ffa3bcffb9a1fc5c4)\n> *dom*\n> — house"
+   }
+  },
+  {
+   "id": "cyr1-c1-5",
+   "unit": "cyr1",
+   "front": "Е е",
+   "hint": "",
+   "back": {
+    "ru": "ye",
+    "en": "ye"
+   },
+   "extra": {
+    "ru": "Звук: like “ye” in yes\n> день [audio](media:185a69b0b6f66876ba107954)\n> *den’*\n> — day",
+    "en": "Sound: like “ye” in yes\n> день [audio](media:185a69b0b6f66876ba107954)\n> *den’*\n> — day"
+   }
+  },
+  {
+   "id": "cyr1-c1-6",
+   "unit": "cyr1",
+   "front": "Ё ё",
+   "hint": "",
+   "back": {
+    "ru": "yo",
+    "en": "yo"
+   },
+   "extra": {
+    "ru": "Звук: like “yo” in yonder (always stressed)\n> ёж [audio](media:cc7461887b370de0949cce50)\n> *yozh*\n> — hedgehog",
+    "en": "Sound: like “yo” in yonder (always stressed)\n> ёж [audio](media:cc7461887b370de0949cce50)\n> *yozh*\n> — hedgehog"
+   }
+  },
+  {
+   "id": "cyr1-c1-7",
+   "unit": "cyr1",
+   "front": "Ж ж",
+   "hint": "",
+   "back": {
+    "ru": "zh",
+    "en": "zh"
+   },
+   "extra": {
+    "ru": "Звук: like “s” in measure\n> жизнь [audio](media:b18909621dc743e4850850c1)\n> *zhizn’*\n> — life",
+    "en": "Sound: like “s” in measure\n> жизнь [audio](media:b18909621dc743e4850850c1)\n> *zhizn’*\n> — life"
+   }
+  },
+  {
+   "id": "cyr1-c1-8",
+   "unit": "cyr1",
+   "front": "З з",
+   "hint": "",
+   "back": {
+    "ru": "z",
+    "en": "z"
+   },
+   "extra": {
+    "ru": "Звук: like “z” in zoo\n> зима [audio](media:16acd07a56d1b0e6f1c47d90)\n> *zimá*\n> — winter",
+    "en": "Sound: like “z” in zoo\n> зима [audio](media:16acd07a56d1b0e6f1c47d90)\n> *zimá*\n> — winter"
+   }
+  },
+  {
+   "id": "cyr1-c1-9",
+   "unit": "cyr1",
+   "front": "И и",
+   "hint": "",
+   "back": {
+    "ru": "ee",
+    "en": "ee"
+   },
+   "extra": {
+    "ru": "Звук: like “ee” in see\n> мир [audio](media:097405e9258c0c91b84443ba)\n> *meer*\n> — peace; world",
+    "en": "Sound: like “ee” in see\n> мир [audio](media:097405e9258c0c91b84443ba)\n> *meer*\n> — peace; world"
+   }
+  },
+  {
+   "id": "cyr1-c1-10",
+   "unit": "cyr1",
+   "front": "Й й",
+   "hint": "",
+   "back": {
+    "ru": "y",
+    "en": "y"
+   },
+   "extra": {
+    "ru": "Звук: short “y” as in boy\n> чай [audio](media:966185c95a1d885ae8728cd6)\n> *chay*\n> — tea",
+    "en": "Sound: short “y” as in boy\n> чай [audio](media:966185c95a1d885ae8728cd6)\n> *chay*\n> — tea"
+   }
+  },
+  {
+   "id": "cyr1-c1-11",
+   "unit": "cyr1",
+   "front": "К к",
+   "hint": "",
+   "back": {
+    "ru": "k",
+    "en": "k"
+   },
+   "extra": {
+    "ru": "Звук: like “k” in kit\n> кот [audio](media:97dd1c7ffd4889f10c29fbb7)\n> *kot*\n> — cat",
+    "en": "Sound: like “k” in kit\n> кот [audio](media:97dd1c7ffd4889f10c29fbb7)\n> *kot*\n> — cat"
+   }
+  },
+  {
+   "id": "cyr1-c1-12",
+   "unit": "cyr1",
+   "front": "Л л",
+   "hint": "",
+   "back": {
+    "ru": "l",
+    "en": "l"
+   },
+   "extra": {
+    "ru": "Звук: like “l” in lamp\n> лампа [audio](media:8db69bd6055a7be705aa3d98)\n> *lámpa*\n> — lamp",
+    "en": "Sound: like “l” in lamp\n> лампа [audio](media:8db69bd6055a7be705aa3d98)\n> *lámpa*\n> — lamp"
+   }
+  },
+  {
+   "id": "cyr2-c2-0",
+   "unit": "cyr2",
+   "front": "М м",
+   "hint": "",
+   "back": {
+    "ru": "m",
+    "en": "m"
+   },
+   "extra": {
+    "ru": "Звук: like “m” in mom\n> мама [audio](media:b2a5ed71fae3276c43074041)\n> *máma*\n> — mom",
+    "en": "Sound: like “m” in mom\n> мама [audio](media:b2a5ed71fae3276c43074041)\n> *máma*\n> — mom"
+   }
+  },
+  {
+   "id": "cyr2-c2-1",
+   "unit": "cyr2",
+   "front": "Н н",
+   "hint": "",
+   "back": {
+    "ru": "n",
+    "en": "n"
+   },
+   "extra": {
+    "ru": "Звук: like “n” in no\n> нос [audio](media:399549ba1e252522de933d38)\n> *nos*\n> — nose",
+    "en": "Sound: like “n” in no\n> нос [audio](media:399549ba1e252522de933d38)\n> *nos*\n> — nose"
+   }
+  },
+  {
+   "id": "cyr2-c2-2",
+   "unit": "cyr2",
+   "front": "О о",
+   "hint": "",
+   "back": {
+    "ru": "o",
+    "en": "o"
+   },
+   "extra": {
+    "ru": "Звук: like “o” in more (unstressed: “a”)\n> окно [audio](media:f93a99f42b68896ea4515185)\n> *oknó*\n> — window",
+    "en": "Sound: like “o” in more (unstressed: “a”)\n> окно [audio](media:f93a99f42b68896ea4515185)\n> *oknó*\n> — window"
+   }
+  },
+  {
+   "id": "cyr2-c2-3",
+   "unit": "cyr2",
+   "front": "П п",
+   "hint": "",
+   "back": {
+    "ru": "p",
+    "en": "p"
+   },
+   "extra": {
+    "ru": "Звук: like “p” in pot\n> папа [audio](media:b928b4f0f013567e9e3c739e)\n> *pápa*\n> — dad",
+    "en": "Sound: like “p” in pot\n> папа [audio](media:b928b4f0f013567e9e3c739e)\n> *pápa*\n> — dad"
+   }
+  },
+  {
+   "id": "cyr2-c2-4",
+   "unit": "cyr2",
+   "front": "Р р",
+   "hint": "",
+   "back": {
+    "ru": "r",
+    "en": "r"
+   },
+   "extra": {
+    "ru": "Звук: rolled “r” (tap your tongue)\n> рука [audio](media:626e5f7e330c92795396c60f)\n> *ruká*\n> — hand",
+    "en": "Sound: rolled “r” (tap your tongue)\n> рука [audio](media:626e5f7e330c92795396c60f)\n> *ruká*\n> — hand"
+   }
+  },
+  {
+   "id": "cyr2-c2-5",
+   "unit": "cyr2",
+   "front": "С с",
+   "hint": "",
+   "back": {
+    "ru": "s",
+    "en": "s"
+   },
+   "extra": {
+    "ru": "Звук: like “s” in sun\n> сок [audio](media:f91f7bc95ac0acd340386cce)\n> *sok*\n> — juice",
+    "en": "Sound: like “s” in sun\n> сок [audio](media:f91f7bc95ac0acd340386cce)\n> *sok*\n> — juice"
+   }
+  },
+  {
+   "id": "cyr2-c2-6",
+   "unit": "cyr2",
+   "front": "Т т",
+   "hint": "",
+   "back": {
+    "ru": "t",
+    "en": "t"
+   },
+   "extra": {
+    "ru": "Звук: like “t” in top\n> тут [audio](media:ffbc4c220ee845f47f5e3f26)\n> *toot*\n> — here",
+    "en": "Sound: like “t” in top\n> тут [audio](media:ffbc4c220ee845f47f5e3f26)\n> *toot*\n> — here"
+   }
+  },
+  {
+   "id": "cyr2-c2-7",
+   "unit": "cyr2",
+   "front": "У у",
+   "hint": "",
+   "back": {
+    "ru": "oo",
+    "en": "oo"
+   },
+   "extra": {
+    "ru": "Звук: like “oo” in moon\n> утро [audio](media:ccd370a13858152cb9c7e60b)\n> *útro*\n> — morning",
+    "en": "Sound: like “oo” in moon\n> утро [audio](media:ccd370a13858152cb9c7e60b)\n> *útro*\n> — morning"
+   }
+  },
+  {
+   "id": "cyr2-c2-8",
+   "unit": "cyr2",
+   "front": "Ф ф",
+   "hint": "",
+   "back": {
+    "ru": "f",
+    "en": "f"
+   },
+   "extra": {
+    "ru": "Звук: like “f” in fan\n> фото [audio](media:a5e5b67b91a86f0c6563c8d1)\n> *fóto*\n> — photo",
+    "en": "Sound: like “f” in fan\n> фото [audio](media:a5e5b67b91a86f0c6563c8d1)\n> *fóto*\n> — photo"
+   }
+  },
+  {
+   "id": "cyr2-c2-9",
+   "unit": "cyr2",
+   "front": "Х х",
+   "hint": "",
+   "back": {
+    "ru": "kh",
+    "en": "kh"
+   },
+   "extra": {
+    "ru": "Звук: like “ch” in Scottish loch\n> хлеб [audio](media:3f2382d29672b75d8b719d23)\n> *khleb*\n> — bread",
+    "en": "Sound: like “ch” in Scottish loch\n> хлеб [audio](media:3f2382d29672b75d8b719d23)\n> *khleb*\n> — bread"
+   }
+  },
+  {
+   "id": "cyr3-c3-0",
+   "unit": "cyr3",
+   "front": "Ц ц",
+   "hint": "",
+   "back": {
+    "ru": "ts",
+    "en": "ts"
+   },
+   "extra": {
+    "ru": "Звук: like “ts” in cats\n> цирк [audio](media:8e7c5088f190cfda10eefa6c)\n> *tsirk*\n> — circus",
+    "en": "Sound: like “ts” in cats\n> цирк [audio](media:8e7c5088f190cfda10eefa6c)\n> *tsirk*\n> — circus"
+   }
+  },
+  {
+   "id": "cyr3-c3-1",
+   "unit": "cyr3",
+   "front": "Ч ч",
+   "hint": "",
+   "back": {
+    "ru": "ch",
+    "en": "ch"
+   },
+   "extra": {
+    "ru": "Звук: like “ch” in chat\n> час [audio](media:1d1e13af0c39bfc77b7619fd)\n> *chas*\n> — hour",
+    "en": "Sound: like “ch” in chat\n> час [audio](media:1d1e13af0c39bfc77b7619fd)\n> *chas*\n> — hour"
+   }
+  },
+  {
+   "id": "cyr3-c3-2",
+   "unit": "cyr3",
+   "front": "Ш ш",
+   "hint": "",
+   "back": {
+    "ru": "sh",
+    "en": "sh"
+   },
+   "extra": {
+    "ru": "Звук: like “sh” in shop\n> шарф [audio](media:dc2a51ceebc2aee92220e5b2)\n> *sharf*\n> — scarf",
+    "en": "Sound: like “sh” in shop\n> шарф [audio](media:dc2a51ceebc2aee92220e5b2)\n> *sharf*\n> — scarf"
+   }
+  },
+  {
+   "id": "cyr3-c3-3",
+   "unit": "cyr3",
+   "front": "Щ щ",
+   "hint": "",
+   "back": {
+    "ru": "shch",
+    "en": "shch"
+   },
+   "extra": {
+    "ru": "Звук: soft long “sh” (as in fresh cheese)\n> борщ [audio](media:5f53e3dd5f53428433147adf)\n> *borshch*\n> — beet soup",
+    "en": "Sound: soft long “sh” (as in fresh cheese)\n> борщ [audio](media:5f53e3dd5f53428433147adf)\n> *borshch*\n> — beet soup"
+   }
+  },
+  {
+   "id": "cyr3-c3-4",
+   "unit": "cyr3",
+   "front": "Ъ ъ",
+   "hint": "",
+   "back": {
+    "ru": "—",
+    "en": "—"
+   },
+   "extra": {
+    "ru": "Звук: hard sign: no sound, separates sounds\n> подъезд [audio](media:7aadb41feeb8407529b91276)\n> *podyézd*\n> — building entrance",
+    "en": "Sound: hard sign: no sound, separates sounds\n> подъезд [audio](media:7aadb41feeb8407529b91276)\n> *podyézd*\n> — building entrance"
+   }
+  },
+  {
+   "id": "cyr3-c3-5",
+   "unit": "cyr3",
+   "front": "Ы ы",
+   "hint": "",
+   "back": {
+    "ru": "y",
+    "en": "y"
+   },
+   "extra": {
+    "ru": "Звук: “i” said further back in the throat (like “i” in bit, tongue back)\n> мы [audio](media:a1a8d84a52214f1c0fdd05df)\n> *my*\n> — we",
+    "en": "Sound: “i” said further back in the throat (like “i” in bit, tongue back)\n> мы [audio](media:a1a8d84a52214f1c0fdd05df)\n> *my*\n> — we"
+   }
+  },
+  {
+   "id": "cyr3-c3-6",
+   "unit": "cyr3",
+   "front": "Ь ь",
+   "hint": "",
+   "back": {
+    "ru": "—",
+    "en": "—"
+   },
+   "extra": {
+    "ru": "Звук: soft sign: no sound, softens the consonant before it\n> соль [audio](media:fc3184a67b5d32223f79792e)\n> *sol’*\n> — salt",
+    "en": "Sound: soft sign: no sound, softens the consonant before it\n> соль [audio](media:fc3184a67b5d32223f79792e)\n> *sol’*\n> — salt"
+   }
+  },
+  {
+   "id": "cyr3-c3-7",
+   "unit": "cyr3",
+   "front": "Э э",
+   "hint": "",
+   "back": {
+    "ru": "e",
+    "en": "e"
+   },
+   "extra": {
+    "ru": "Звук: like “e” in met\n> это [audio](media:2e7cc4ae98a0de46c6c52fb1)\n> *éto*\n> — this",
+    "en": "Sound: like “e” in met\n> это [audio](media:2e7cc4ae98a0de46c6c52fb1)\n> *éto*\n> — this"
+   }
+  },
+  {
+   "id": "cyr3-c3-8",
+   "unit": "cyr3",
+   "front": "Ю ю",
+   "hint": "",
+   "back": {
+    "ru": "yu",
+    "en": "yu"
+   },
+   "extra": {
+    "ru": "Звук: like “you”\n> юг [audio](media:b5caaf8c5f31880a0638b400)\n> *yug*\n> — south",
+    "en": "Sound: like “you”\n> юг [audio](media:b5caaf8c5f31880a0638b400)\n> *yug*\n> — south"
+   }
+  },
+  {
+   "id": "cyr3-c3-9",
+   "unit": "cyr3",
+   "front": "Я я",
+   "hint": "",
+   "back": {
+    "ru": "ya",
+    "en": "ya"
+   },
+   "extra": {
+    "ru": "Звук: like “ya” in yard\n> яблоко [audio](media:26e75c46c03b0d7b5058ec1a)\n> *yábloko*\n> — apple",
+    "en": "Sound: like “ya” in yard\n> яблоко [audio](media:26e75c46c03b0d7b5058ec1a)\n> *yábloko*\n> — apple"
+   }
+  },
+  {
+   "id": "rules-w-stress",
+   "unit": "rules",
+   "front": "Ударение",
+   "hint": "",
+   "back": {
+    "ru": "Ударение в русском свободное и подвижное",
+    "en": "Russian stress is free and moves"
+   },
+   "extra": {
+    "ru": "Безударная О читается как «а»: молоко = malakó. Учите слово сразу с ударением.\n> Это молоко. [audio](media:54d95f9c4e263178f5707537)\n> *éto malakó*\n> — This is milk.",
+    "en": "Unstressed О sounds like “a”: молоко = malakó. Learn each word with its stress.\n> Это молоко. [audio](media:54d95f9c4e263178f5707537)\n> *éto malakó*\n> — This is milk."
+   },
+   "frontL": {
+    "ru": "Ударение",
+    "en": "Stress"
+   },
+   "notype": true
+  },
+  {
+   "id": "rules-w-noart",
+   "unit": "rules",
+   "front": "Артиклей нет",
+   "hint": "",
+   "back": {
+    "ru": "В русском нет «a/the»",
+    "en": "Russian has no “a/the”"
+   },
+   "extra": {
+    "ru": "Книга = a book / the book. Смысл понятен из контекста.\n> Это книга. [audio](media:81bbba7a1ea6d80a2f39032e)\n> *éto kníga*\n> — This is a book.",
+    "en": "Книга = a book / the book. Context tells you which.\n> Это книга. [audio](media:81bbba7a1ea6d80a2f39032e)\n> *éto kníga*\n> — This is a book."
+   },
+   "frontL": {
+    "ru": "Артиклей нет",
+    "en": "No articles"
+   },
+   "notype": true
+  },
+  {
+   "id": "rules-w-nobe",
+   "unit": "rules",
+   "front": "Глагол «быть»",
+   "hint": "",
+   "back": {
+    "ru": "В настоящем времени его нет",
+    "en": "It is dropped in the present tense"
+   },
+   "extra": {
+    "ru": "Я студент = I am a student, буквально «я студент». Прошедшее: был/была.\n> Я студент. [audio](media:ecafe43debf1794ac3e6a510)\n> *ya studyént*\n> — I am a student.",
+    "en": "Я студент = I am a student, literally “I student”. Past: был/была.\n> Я студент. [audio](media:ecafe43debf1794ac3e6a510)\n> *ya studyént*\n> — I am a student."
+   },
+   "frontL": {
+    "ru": "Глагол «быть»",
+    "en": "The verb “to be”"
+   },
+   "notype": true
+  },
+  {
+   "id": "rules-w-gender",
+   "unit": "rules",
+   "front": "Род существительных",
+   "hint": "",
+   "back": {
+    "ru": "Три рода: мужской, женский, средний",
+    "en": "Three genders: masculine, feminine, neuter"
+   },
+   "extra": {
+    "ru": "Обычно по окончанию: стол (м), книга (ж), окно (с). Прилагательные согласуются с родом.\n> Это новая книга. [audio](media:4108dbe54a8859706d66d2b8)\n> *éto nóvaya kníga*\n> — This is a new book.",
+    "en": "Usually by the ending: стол (m), книга (f), окно (n). Adjectives agree with the gender.\n> Это новая книга. [audio](media:4108dbe54a8859706d66d2b8)\n> *éto nóvaya kníga*\n> — This is a new book."
+   },
+   "frontL": {
+    "ru": "Род существительных",
+    "en": "Noun gender"
+   },
+   "notype": true
+  },
+  {
+   "id": "rules-w-you",
+   "unit": "rules",
+   "front": "Ты и вы",
+   "hint": "",
+   "back": {
+    "ru": "ты — друзьям, вы — старшим и незнакомым",
+    "en": "ты — friends; вы — elders, strangers and plural"
+   },
+   "extra": {
+    "ru": "Вы — и вежливое «вы», и множественное «вы». Это очень важно в вежливой речи.\n> Как вас зовут? [audio](media:dac5d459c89ca26f2970c732)\n> *kak vas zavoót*\n> — What is your name?",
+    "en": "вы is both polite “you” and plural “you”. Important for politeness.\n> Как вас зовут? [audio](media:dac5d459c89ca26f2970c732)\n> *kak vas zavoót*\n> — What is your name?"
+   },
+   "frontL": {
+    "ru": "Ты и вы",
+    "en": "ты and вы"
+   },
+   "notype": true
+  },
+  {
+   "id": "rules-w-cases",
+   "unit": "rules",
+   "front": "Падежи — главная идея",
+   "hint": "",
+   "back": {
+    "ru": "Окончание слова показывает его роль в фразе",
+    "en": "The ending shows the word’s role"
+   },
+   "extra": {
+    "ru": "Шесть падежей. Начните с двух: именительный (кто?) и винительный (что? — книгу).\n> Я читаю книгу. [audio](media:33fc0835b8906852ec5a54d4)\n> *ya chitáyu knígoo*\n> — I read a book.",
+    "en": "Six cases. Start with two: nominative (who?) and accusative (what? — книгу).\n> Я читаю книгу. [audio](media:33fc0835b8906852ec5a54d4)\n> *ya chitáyu knígoo*\n> — I read a book."
+   },
+   "frontL": {
+    "ru": "Падежи — главная идея",
+    "en": "Cases — the big idea"
+   },
+   "notype": true
+  },
+  {
+   "id": "rules-w-order",
+   "unit": "rules",
+   "front": "Порядок слов",
+   "hint": "",
+   "back": {
+    "ru": "Порядок свободный, но обычный — как в английском",
+    "en": "Order is flexible, but the default is like English"
+   },
+   "extra": {
+    "ru": "Роль слов показывают окончания, поэтому можно менять порядок ради акцента.\n> Мама любит папу. [audio](media:fcfc437991549f11a2533095)\n> *máma lyóobit pápoo*\n> — Mom loves Dad.",
+    "en": "Endings show roles, so order can change for emphasis.\n> Мама любит папу. [audio](media:fcfc437991549f11a2533095)\n> *máma lyóobit pápoo*\n> — Mom loves Dad."
+   },
+   "frontL": {
+    "ru": "Порядок слов",
+    "en": "Word order"
+   },
+   "notype": true
+  },
+  {
+   "id": "rules-w-neg",
+   "unit": "rules",
+   "front": "Отрицание",
+   "hint": "",
+   "back": {
+    "ru": "Поставьте «не» перед словом",
+    "en": "Put «не» before the word"
+   },
+   "extra": {
+    "ru": "«Нет» — это «no», «не» — частица отрицания перед глаголом или прилагательным.\n> Я не знаю. [audio](media:585cc434b5de90d164e47bcd)\n> *ya nye znáyu*\n> — I don’t know.",
+    "en": "«Нет» is “no”; «не» is the negating particle before a verb or adjective.\n> Я не знаю. [audio](media:585cc434b5de90d164e47bcd)\n> *ya nye znáyu*\n> — I don’t know."
+   },
+   "frontL": {
+    "ru": "Отрицание",
+    "en": "Negation"
+   },
+   "notype": true
+  },
+  {
+   "id": "rules-w-q",
+   "unit": "rules",
+   "front": "Вопрос",
+   "hint": "",
+   "back": {
+    "ru": "Вопрос — интонация или слово «ли»/вопросительное слово",
+    "en": "Intonation or a question word"
+   },
+   "extra": {
+    "ru": "Кто? Что? Где? Когда? Почему? Просто поднимите голос в конце: Ты студент?\n> Где ты живёшь? [audio](media:bca5a623ccc8a069b2966aad)\n> *gdye ty zhivyósh*\n> — Where do you live?",
+    "en": "Кто? Что? Где? Когда? Почему? Or just raise your voice: Ты студент?\n> Где ты живёшь? [audio](media:bca5a623ccc8a069b2966aad)\n> *gdye ty zhivyósh*\n> — Where do you live?"
+   },
+   "frontL": {
+    "ru": "Вопрос",
+    "en": "Questions"
+   },
+   "notype": true
+  },
   {
    "id": "hello",
    "unit": "greet",
@@ -1127,644 +1760,760 @@
   "file": "ru.audio.mp3",
   "type": "audio/mpeg",
   "index": {
-   "71f35dee7295b829c9ffc390": [
+   "b2a5ed71fae3276c43074041": [
     0,
+    4197
+   ],
+   "34570c273598c789e05103df": [
+    4197,
+    4317
+   ],
+   "5c006cf4527500688c0c377f": [
+    8514,
+    3837
+   ],
+   "6fc5c2c584ecd171c249cf81": [
+    12351,
+    3597
+   ],
+   "a2903c0ffa3bcffb9a1fc5c4": [
+    15948,
+    3477
+   ],
+   "185a69b0b6f66876ba107954": [
+    19425,
+    3837
+   ],
+   "cc7461887b370de0949cce50": [
+    23262,
+    3837
+   ],
+   "b18909621dc743e4850850c1": [
+    27099,
+    3597
+   ],
+   "16acd07a56d1b0e6f1c47d90": [
+    30696,
+    3837
+   ],
+   "097405e9258c0c91b84443ba": [
+    34533,
+    3837
+   ],
+   "966185c95a1d885ae8728cd6": [
+    38370,
+    3477
+   ],
+   "97dd1c7ffd4889f10c29fbb7": [
+    41847,
+    3357
+   ],
+   "8db69bd6055a7be705aa3d98": [
+    45204,
+    4077
+   ],
+   "399549ba1e252522de933d38": [
+    49281,
+    3717
+   ],
+   "f93a99f42b68896ea4515185": [
+    52998,
+    3477
+   ],
+   "b928b4f0f013567e9e3c739e": [
+    56475,
+    3597
+   ],
+   "626e5f7e330c92795396c60f": [
+    60072,
+    4197
+   ],
+   "f91f7bc95ac0acd340386cce": [
+    64269,
+    3837
+   ],
+   "ffbc4c220ee845f47f5e3f26": [
+    68106,
+    3357
+   ],
+   "ccd370a13858152cb9c7e60b": [
+    71463,
+    4077
+   ],
+   "a5e5b67b91a86f0c6563c8d1": [
+    75540,
+    3357
+   ],
+   "3f2382d29672b75d8b719d23": [
+    78897,
+    3597
+   ],
+   "8e7c5088f190cfda10eefa6c": [
+    82494,
+    3597
+   ],
+   "1d1e13af0c39bfc77b7619fd": [
+    86091,
+    3477
+   ],
+   "dc2a51ceebc2aee92220e5b2": [
+    89568,
+    3957
+   ],
+   "5f53e3dd5f53428433147adf": [
+    93525,
+    3717
+   ],
+   "7aadb41feeb8407529b91276": [
+    97242,
+    5157
+   ],
+   "a1a8d84a52214f1c0fdd05df": [
+    102399,
+    3357
+   ],
+   "fc3184a67b5d32223f79792e": [
+    105756,
+    3717
+   ],
+   "2e7cc4ae98a0de46c6c52fb1": [
+    109473,
+    3957
+   ],
+   "b5caaf8c5f31880a0638b400": [
+    113430,
+    3357
+   ],
+   "26e75c46c03b0d7b5058ec1a": [
+    116787,
+    4917
+   ],
+   "54d95f9c4e263178f5707537": [
+    121704,
+    6957
+   ],
+   "81bbba7a1ea6d80a2f39032e": [
+    128661,
+    6117
+   ],
+   "ecafe43debf1794ac3e6a510": [
+    134778,
+    6597
+   ],
+   "4108dbe54a8859706d66d2b8": [
+    141375,
+    7917
+   ],
+   "dac5d459c89ca26f2970c732": [
+    149292,
+    6837
+   ],
+   "33fc0835b8906852ec5a54d4": [
+    156129,
+    8157
+   ],
+   "fcfc437991549f11a2533095": [
+    164286,
+    9477
+   ],
+   "585cc434b5de90d164e47bcd": [
+    173763,
+    6837
+   ],
+   "bca5a623ccc8a069b2966aad": [
+    180600,
+    7557
+   ],
+   "71f35dee7295b829c9ffc390": [
+    188157,
     3717
    ],
    "149790111ddfc36ed23e8032": [
-    3717,
+    191874,
     13317
    ],
    "396cbe948176cc1807932659": [
-    17034,
+    205191,
     6597
    ],
    "f2103bad17c1de43baa34568": [
-    23631,
+    211788,
     13557
    ],
    "f2c740e3bf2ac1eb457ff219": [
-    37188,
+    225345,
     5397
    ],
    "fa815fdb6a3ca5c152805105": [
-    42585,
+    230742,
     7557
    ],
    "e1eee84178be192fad08ed59": [
-    50142,
+    238299,
     5397
    ],
    "954ec98b0751b78df6069b7c": [
-    55539,
+    243696,
     12477
    ],
    "4e55aa7fb1ecab210f746bd9": [
-    68016,
+    256173,
     3237
    ],
    "4ce7338d0f7f19cffec054ef": [
-    71253,
+    259410,
     8157
    ],
    "cb7b98feddc5d73309df58d0": [
-    79410,
+    267567,
     3717
    ],
    "aaa11b44efe4754721d0756e": [
-    83127,
+    271284,
     11877
    ],
    "44b5d54f644f232f9b01d896": [
-    95004,
+    283161,
     5517
    ],
    "94060ff3de88abae77e79902": [
-    100521,
+    288678,
     12117
    ],
    "15e8eb0da6f24212dc29ceba": [
-    112638,
+    300795,
     6957
    ],
    "8212d5a67ec5e4fb4e9f221f": [
-    119595,
+    307752,
     12117
    ],
    "b51a11311aca5233a3be8e54": [
-    131712,
+    319869,
     6717
    ],
    "7210ccb7e183085add6d33f9": [
-    138429,
+    326586,
     13797
    ],
    "41f2e60c45a2b44d9b216946": [
-    152226,
+    340383,
     4797
    ],
    "f1d618a9e9e0c00a6794d0c1": [
-    157023,
+    345180,
     14637
    ],
    "634bb57376523bfcfb2e23f5": [
-    171660,
+    359817,
     4917
    ],
    "1d2fd6c501662730fc65e6a1": [
-    176577,
+    364734,
     14757
    ],
    "d405534908ff8a469245c9e3": [
-    191334,
+    379491,
     5157
    ],
    "03fa950ed6e19f02ac45af36": [
-    196491,
+    384648,
     13437
    ],
    "23f33f9358a7bd87da4563f4": [
-    209928,
+    398085,
     5037
    ],
    "d1654b9d13a4a5766d70d05e": [
-    214965,
+    403122,
     6717
    ],
    "f710e30e5937d256b0a9bb0e": [
-    221682,
+    409839,
     3957
    ],
    "6fd652a781394431a26166ae": [
-    225639,
+    413796,
     9957
    ],
-   "b2a5ed71fae3276c43074041": [
-    235596,
-    4197
-   ],
    "7b62e8e12a4f1930752fd45d": [
-    239793,
+    423753,
     9357
    ],
-   "b928b4f0f013567e9e3c739e": [
-    249150,
-    3597
-   ],
    "516f256a7518be85ceb24420": [
-    252747,
+    433110,
     12357
    ],
    "dce84745b8988085a1ce197a": [
-    265104,
+    445467,
     3837
    ],
    "ba397dd44a4604e0f9566a52": [
-    268941,
+    449304,
     7797
    ],
    "e74df2402ef4b65368628a5a": [
-    276738,
+    457101,
     4557
    ],
    "6e447302054ecd7dac669dda": [
-    281295,
+    461658,
     10197
    ],
    "bc9658d6116868788df47d4e": [
-    291492,
+    471855,
     4077
    ],
    "f67b169306bcdb6392b494b1": [
-    295569,
+    475932,
     9117
    ],
    "5a32a57ee5da1aefd6e4b1b4": [
-    304686,
+    485049,
     3477
    ],
    "9dcf9b7cea2d9d132f25054f": [
-    308163,
+    488526,
     9357
    ],
    "08dba1b447cc16bd16bacc4b": [
-    317520,
+    497883,
     4317
    ],
    "dddbd429b7df8034799c4b63": [
-    321837,
+    502200,
     11157
    ],
    "f3a225c913de05cb879cdb59": [
-    332994,
+    513357,
     3957
    ],
    "50f60a81ac08a167063e9a80": [
-    336951,
+    517314,
     12837
    ],
    "0239dbc2543efba63886056e": [
-    349788,
+    530151,
     3477
    ],
    "19ffe242ba6b4c9b7d4fd2eb": [
-    353265,
+    533628,
     7557
    ],
    "a5b88f214d3b205e93584fa7": [
-    360822,
+    541185,
     4077
    ],
    "f25b5bbd79fde3ad62e60122": [
-    364899,
+    545262,
     8637
    ],
    "37b32c7bc085d9d7f2224ce9": [
-    373536,
+    553899,
     3357
    ],
    "aefa303cf52861480e7989b4": [
-    376893,
+    557256,
     8637
    ],
-   "185a69b0b6f66876ba107954": [
-    385530,
-    3837
-   ],
    "85956596450cd5d995159280": [
-    389367,
+    565893,
     6357
    ],
    "06a74db0b81a6bc6014bd4d8": [
-    395724,
+    572250,
     4077
    ],
    "2344f6568a39db6fbbd03a88": [
-    399801,
+    576327,
     10077
    ],
    "41177c23d7e19102fc8918f9": [
-    409878,
+    586404,
     5397
    ],
    "677a34a2fcef607ee18cf871": [
-    415275,
+    591801,
     7197
    ],
    "8b10aedc38be4965ab6d5b80": [
-    422472,
+    598998,
     4677
    ],
    "6ec6ba9c2977ee2d8c8a7f0b": [
-    427149,
+    603675,
     9477
    ],
    "ea9efb9eb0ceaa3af983eaae": [
-    436626,
+    613152,
     4437
    ],
    "460c161db89f959147b60b8e": [
-    441063,
+    617589,
     6957
    ],
-   "5c006cf4527500688c0c377f": [
-    448020,
-    3837
-   ],
    "e922931a8a5260178987651d": [
-    451857,
+    624546,
     14037
    ],
-   "3f2382d29672b75d8b719d23": [
-    465894,
-    3597
-   ],
    "8ba66318287e3c442b244a03": [
-    469491,
+    638583,
     8637
    ],
    "a9054a8445fc56ee41a2c694": [
-    478128,
+    647220,
     3837
    ],
    "d3e941ed7b1ee0f55500edd9": [
-    481965,
+    651057,
     12117
    ],
-   "966185c95a1d885ae8728cd6": [
-    494082,
-    3477
-   ],
    "3faffa49838e88f2c49fa380": [
-    497559,
+    663174,
     6717
    ],
    "68f5212893e72f1bdf34e9c6": [
-    504276,
+    669891,
     4677
    ],
    "8c56722812ca216a17259289": [
-    508953,
+    674568,
     6957
    ],
-   "26e75c46c03b0d7b5058ec1a": [
-    515910,
-    4917
-   ],
    "9d10c972d01d4981a3f85d55": [
-    520827,
+    681525,
     12357
    ],
    "20f9eff509f554f75b256374": [
-    533184,
+    693882,
     4677
    ],
    "48d6b08d1123bf0c62921bdb": [
-    537861,
+    698559,
     7677
    ],
    "7231c72c6042abaac4bd2135": [
-    545538,
+    706236,
     4197
    ],
    "646dbb931e53522951f82b98": [
-    549735,
+    710433,
     11277
    ],
    "eedb251bb9ecd794e57a7cd5": [
-    561012,
+    721710,
     3597
    ],
    "5ad22eb48f205e041ec7876f": [
-    564609,
+    725307,
     7077
    ],
    "e578dd9d0cb5b02d3997f353": [
-    571686,
+    732384,
     3477
    ],
    "1fe8c42821c02500bcdf368b": [
-    575163,
+    735861,
     6477
    ],
-   "a2903c0ffa3bcffb9a1fc5c4": [
-    581640,
-    3477
-   ],
    "b16b28ca904bb2fd819d6c5c": [
-    585117,
+    742338,
     6477
    ],
    "aba8ab61e78b24b565a36abd": [
-    591594,
+    748815,
     4797
    ],
    "901afc8a4f729d23cc0970bc": [
-    596391,
+    753612,
     10317
    ],
    "0f87a4e6472bcb27c3992033": [
-    606708,
+    763929,
     3717
    ],
    "82aac143ec88bfc85f9807c0": [
-    610425,
+    767646,
     11757
    ],
    "3351c1d60d085a815e1fd54f": [
-    622182,
+    779403,
     4797
    ],
    "850504d7bab43ba5cb90f6b8": [
-    626979,
+    784200,
     10677
    ],
-   "6fc5c2c584ecd171c249cf81": [
-    637656,
-    3597
-   ],
    "3b4e9bdb088db1a0a3f9bf55": [
-    641253,
+    794877,
     8397
    ],
    "fdeaac0aa88a81dd1ff0c64f": [
-    649650,
+    803274,
     5277
    ],
    "bdd2918db07ae0e3d01ac7cc": [
-    654927,
+    808551,
     8757
    ],
    "610f25cbf8439a82dce1e4af": [
-    663684,
+    817308,
     4557
    ],
    "78c52f7dd4bb7b0c3e9b0073": [
-    668241,
+    821865,
     6237
    ],
    "9ac464065994f9ab5bff0f33": [
-    674478,
+    828102,
     5397
    ],
    "62ee93ca3d6c63c32bd3421c": [
-    679875,
+    833499,
     6597
    ],
    "678ca13bb23d551d7e6e484e": [
-    686472,
+    840096,
     4677
    ],
    "58eaa79436a38bc5969ef2a6": [
-    691149,
+    844773,
     6237
    ],
    "2ca0f772ac1d1800cba93466": [
-    697386,
+    851010,
     4197
    ],
    "d81d7111fbddf925237db96a": [
-    701583,
+    855207,
     7797
    ],
    "802876a8df418a36eb227900": [
-    709380,
+    863004,
     2997
    ],
-   "ecafe43debf1794ac3e6a510": [
-    712377,
-    6597
-   ],
    "fb8b2a9db26f6a4a350dbb5c": [
-    718974,
+    866001,
     4197
    ],
    "2dc0c82a9f8b2a236291d5ce": [
-    723171,
+    870198,
     8757
    ],
    "049a78ec7aeb16a37b511241": [
-    731928,
+    878955,
     4077
    ],
    "6bf539cdac19cc2b496c683b": [
-    736005,
+    883032,
     7437
    ],
    "81d48bb1d1860af52adb38f6": [
-    743442,
+    890469,
     4557
    ],
    "cc545373b6614053af0cb7eb": [
-    747999,
+    895026,
     8397
    ],
    "a76e91a5b96074ea3f1dee46": [
-    756396,
+    903423,
     4437
    ],
    "455d1b87e4d697276454da88": [
-    760833,
+    907860,
     8517
    ],
    "08c7f4188e0987a93c1c1780": [
-    769350,
+    916377,
     4437
    ],
    "ee9e04bd7b0f27c6967fd0d6": [
-    773787,
+    920814,
     12477
    ],
    "99d7822fb47f3024c910dd00": [
-    786264,
+    933291,
     4317
    ],
-   "585cc434b5de90d164e47bcd": [
-    790581,
-    6837
-   ],
    "0c76efc73a26aff3fa70692a": [
-    797418,
+    937608,
     4437
    ],
    "629eb4f9f10d50a28b00b48c": [
-    801855,
+    942045,
     7797
    ],
    "5914c98854f94b9229e3450b": [
-    809652,
+    949842,
     3477
    ],
    "9cbccfb0f1eca23414c76019": [
-    813129,
+    953319,
     7677
    ],
    "4fb72a0d4abb102436bb73c2": [
-    820806,
+    960996,
     3597
    ],
-   "bca5a623ccc8a069b2966aad": [
-    824403,
-    7557
-   ],
    "7a644fbead4dfce47deb6316": [
-    831960,
+    964593,
     4557
    ],
    "a39a60b2f04a42fd0bef2ccb": [
-    836517,
+    969150,
     7557
    ],
    "75f14214478c7fd31075b0e9": [
-    844074,
+    976707,
     5517
    ],
    "42dd2aef0c71fb008baf2c21": [
-    849591,
+    982224,
     10797
    ],
    "8d7970850b3b07ade21cd9ac": [
-    860388,
+    993021,
     4797
    ],
    "bff990c9c68f27d522f58a3e": [
-    865185,
+    997818,
     9477
    ],
    "032f50b4776950993780e05c": [
-    874662,
+    1007295,
     4077
    ],
    "11677767e742b40a21650fef": [
-    878739,
+    1011372,
     9477
    ],
    "2ba37dad862df80e6d2255ac": [
-    888216,
+    1020849,
     4797
    ],
    "ebbd528ac9dafa6847d63f83": [
-    893013,
+    1025646,
     8877
    ],
    "e198e9f74eb197c63785ba35": [
-    901890,
+    1034523,
     4677
    ],
    "475dbd51d3de428eb91ee331": [
-    906567,
+    1039200,
     7557
    ],
    "d151c7e2475072aa12824afe": [
-    914124,
+    1046757,
     4437
    ],
    "7999ce20d34f4f40aea80418": [
-    918561,
+    1051194,
     6237
    ],
    "f44c4811527566822980ebd5": [
-    924798,
+    1057431,
     5517
    ],
    "17fc4d4d808237659464dd3c": [
-    930315,
+    1062948,
     7197
    ],
    "35027030100297580f34be95": [
-    937512,
+    1070145,
     5157
    ],
    "5d05131ca051747a733880d6": [
-    942669,
+    1075302,
     7797
    ],
    "e55c85680446ed5848fbcfff": [
-    950466,
+    1083099,
     4557
    ],
    "52b1ee8567c3a90d1ffdc937": [
-    955023,
+    1087656,
     10557
    ],
    "1fce2df5da19e4defd1b5d29": [
-    965580,
+    1098213,
     4677
    ],
    "4a741f3fbd57a593e400cca2": [
-    970257,
+    1102890,
     7917
    ],
    "b9b750d32f409c045ff4c8ca": [
-    978174,
+    1110807,
     5517
    ],
    "96690e586352d227ce6256d8": [
-    983691,
+    1116324,
     7917
    ],
    "9fcdda14931faefaea0b75ed": [
-    991608,
+    1124241,
     4797
    ],
    "e8b16696bdacc80184375e6a": [
-    996405,
+    1129038,
     8397
    ],
    "0b749a49d6898d6a2bde3ee3": [
-    1004802,
+    1137435,
     4677
    ],
    "ad19196d2306f0664dee5380": [
-    1009479,
+    1142112,
     8877
    ],
    "8488aea160adac3ab49d3985": [
-    1018356,
+    1150989,
     3957
    ],
    "277e6963628d38a619d85bc3": [
-    1022313,
+    1154946,
     11757
    ],
    "cc64e20f6d27c35595524540": [
-    1034070,
+    1166703,
     5997
    ],
    "fb1f609ee6eb375a316db9bf": [
-    1040067,
+    1172700,
     6477
    ],
    "030c1d7d97c83168e645a4f8": [
-    1046544,
+    1179177,
     4317
    ],
    "cd512ac9b7ac52f8973591a4": [
-    1050861,
+    1183494,
     7677
    ],
    "9bdcd116ac72cfcb716da746": [
-    1058538,
+    1191171,
     4077
    ],
    "f1b3c6f3268501919226d745": [
-    1062615,
+    1195248,
     7197
    ],
    "47ae0836e32f6edc093259a5": [
-    1069812,
+    1202445,
     4917
    ],
    "b8d4f5a61bbfe9785bcac468": [
-    1074729,
+    1207362,
     9837
    ],
    "bdc5ca84a5cd7ade5d581f29": [
-    1084566,
+    1217199,
     3477
    ],
    "9f7f0a4994972e33cdd3fe7a": [
-    1088043,
+    1220676,
     5637
    ]
   },
