@@ -1,7 +1,722 @@
 {
  "id": "es",
- "version": 1,
+ "version": 2,
  "cards": [
+  {
+   "id": "alpha-l0",
+   "unit": "alpha",
+   "front": "A a",
+   "hint": "",
+   "back": {
+    "ru": "a — «а»",
+    "en": "a — like “a” in father"
+   },
+   "extra": {
+    "ru": "Читается: «а»\n> amigo [audio](media:67fc9bbfa04d3e8977afaa0e)\n> — друг",
+    "en": "Sound: like “a” in father\n> amigo [audio](media:67fc9bbfa04d3e8977afaa0e)\n> — friend"
+   },
+   "notype": true
+  },
+  {
+   "id": "alpha-l1",
+   "unit": "alpha",
+   "front": "B b",
+   "hint": "",
+   "back": {
+    "ru": "be — «б»",
+    "en": "be — like “b” in boy (same as v)"
+   },
+   "extra": {
+    "ru": "Читается: «б»\n> bien [audio](media:9fc33fc4357a54ec168b9836)\n> — хорошо",
+    "en": "Sound: like “b” in boy (same as v)\n> bien [audio](media:9fc33fc4357a54ec168b9836)\n> — well"
+   },
+   "notype": true
+  },
+  {
+   "id": "alpha-l2",
+   "unit": "alpha",
+   "front": "C c",
+   "hint": "",
+   "back": {
+    "ru": "ce — «к» (перед a, o, u); «с/θ» перед e, i",
+    "en": "ce — “k” before a, o, u; “th/s” before e, i"
+   },
+   "extra": {
+    "ru": "Читается: «к» (перед a, o, u); «с/θ» перед e, i\n> casa [audio](media:9a7bdefc078822baba099ba2)\n> — дом",
+    "en": "Sound: “k” before a, o, u; “th/s” before e, i\n> casa [audio](media:9a7bdefc078822baba099ba2)\n> — house"
+   },
+   "notype": true
+  },
+  {
+   "id": "alpha-l3",
+   "unit": "alpha",
+   "front": "D d",
+   "hint": "",
+   "back": {
+    "ru": "de — «д»",
+    "en": "de — like “d” (soft between vowels)"
+   },
+   "extra": {
+    "ru": "Читается: «д»\n> dos [audio](media:b023c70d108a186d84e8b2bb)\n> — два",
+    "en": "Sound: like “d” (soft between vowels)\n> dos [audio](media:b023c70d108a186d84e8b2bb)\n> — two"
+   },
+   "notype": true
+  },
+  {
+   "id": "alpha-l4",
+   "unit": "alpha",
+   "front": "E e",
+   "hint": "",
+   "back": {
+    "ru": "e — «э»",
+    "en": "e — like “e” in met"
+   },
+   "extra": {
+    "ru": "Читается: «э»\n> verde [audio](media:3cb85d2911aee1f0325e43ac)\n> — зелёный",
+    "en": "Sound: like “e” in met\n> verde [audio](media:3cb85d2911aee1f0325e43ac)\n> — green"
+   },
+   "notype": true
+  },
+  {
+   "id": "alpha-l5",
+   "unit": "alpha",
+   "front": "F f",
+   "hint": "",
+   "back": {
+    "ru": "efe — «ф»",
+    "en": "efe — like “f” in fan"
+   },
+   "extra": {
+    "ru": "Читается: «ф»\n> fuego [audio](media:5f0304dbd77223c0b6949ddf)\n> — огонь",
+    "en": "Sound: like “f” in fan\n> fuego [audio](media:5f0304dbd77223c0b6949ddf)\n> — fire"
+   },
+   "notype": true
+  },
+  {
+   "id": "alpha-l6",
+   "unit": "alpha",
+   "front": "G g",
+   "hint": "",
+   "back": {
+    "ru": "ge — «г»; перед e, i — «х»",
+    "en": "ge — “g” in go; before e, i like harsh “h”"
+   },
+   "extra": {
+    "ru": "Читается: «г»; перед e, i — «х»\n> gato [audio](media:60ec2561125bb2b17e342a83)\n> — кот",
+    "en": "Sound: “g” in go; before e, i like harsh “h”\n> gato [audio](media:60ec2561125bb2b17e342a83)\n> — cat"
+   },
+   "notype": true
+  },
+  {
+   "id": "alpha-l7",
+   "unit": "alpha",
+   "front": "H h",
+   "hint": "",
+   "back": {
+    "ru": "hache — не читается",
+    "en": "hache — silent"
+   },
+   "extra": {
+    "ru": "Читается: не читается\n> hola [audio](media:c95784d55c63dc66456e497f)\n> — привет",
+    "en": "Sound: silent\n> hola [audio](media:c95784d55c63dc66456e497f)\n> — hello"
+   },
+   "notype": true
+  },
+  {
+   "id": "alpha-l8",
+   "unit": "alpha",
+   "front": "I i",
+   "hint": "",
+   "back": {
+    "ru": "i — «и»",
+    "en": "i — like “ee” in see"
+   },
+   "extra": {
+    "ru": "Читается: «и»\n> isla [audio](media:4610393898ef7d5b7d25de85)\n> — остров",
+    "en": "Sound: like “ee” in see\n> isla [audio](media:4610393898ef7d5b7d25de85)\n> — island"
+   },
+   "notype": true
+  },
+  {
+   "id": "alpha-l9",
+   "unit": "alpha",
+   "front": "J j",
+   "hint": "",
+   "back": {
+    "ru": "jota — «х» (твёрдое)",
+    "en": "jota — harsh “h” (like Scottish loch)"
+   },
+   "extra": {
+    "ru": "Читается: «х» (твёрдое)\n> jugo [audio](media:ae635d3d6a84e46f0e01b59e)\n> — сок",
+    "en": "Sound: harsh “h” (like Scottish loch)\n> jugo [audio](media:ae635d3d6a84e46f0e01b59e)\n> — juice"
+   },
+   "notype": true
+  },
+  {
+   "id": "alpha-l10",
+   "unit": "alpha",
+   "front": "K k",
+   "hint": "",
+   "back": {
+    "ru": "ka — «к» (редкая)",
+    "en": "ka — like “k” (rare)"
+   },
+   "extra": {
+    "ru": "Читается: «к» (редкая)\n> kilo [audio](media:6e32e8f56fbe48053318e988)\n> — килограмм",
+    "en": "Sound: like “k” (rare)\n> kilo [audio](media:6e32e8f56fbe48053318e988)\n> — kilo"
+   },
+   "notype": true
+  },
+  {
+   "id": "alpha-l11",
+   "unit": "alpha",
+   "front": "L l",
+   "hint": "",
+   "back": {
+    "ru": "ele — «л»",
+    "en": "ele — like “l” in lamp"
+   },
+   "extra": {
+    "ru": "Читается: «л»\n> luna [audio](media:44f8b529da53c6b11eb22820)\n> — луна",
+    "en": "Sound: like “l” in lamp\n> luna [audio](media:44f8b529da53c6b11eb22820)\n> — moon"
+   },
+   "notype": true
+  },
+  {
+   "id": "alpha-l12",
+   "unit": "alpha",
+   "front": "M m",
+   "hint": "",
+   "back": {
+    "ru": "eme — «м»",
+    "en": "eme — like “m”"
+   },
+   "extra": {
+    "ru": "Читается: «м»\n> mesa [audio](media:528d3394e7472a3728295f46)\n> — стол",
+    "en": "Sound: like “m”\n> mesa [audio](media:528d3394e7472a3728295f46)\n> — table"
+   },
+   "notype": true
+  },
+  {
+   "id": "alpha-l13",
+   "unit": "alpha",
+   "front": "N n",
+   "hint": "",
+   "back": {
+    "ru": "ene — «н»",
+    "en": "ene — like “n”"
+   },
+   "extra": {
+    "ru": "Читается: «н»\n> noche [audio](media:330125968ca13a708b72ee22)\n> — ночь",
+    "en": "Sound: like “n”\n> noche [audio](media:330125968ca13a708b72ee22)\n> — night"
+   },
+   "notype": true
+  },
+  {
+   "id": "alpha-l14",
+   "unit": "alpha",
+   "front": "Ñ ñ",
+   "hint": "",
+   "back": {
+    "ru": "eñe — «нь» (мягкое)",
+    "en": "eñe — like “ny” in canyon"
+   },
+   "extra": {
+    "ru": "Читается: «нь» (мягкое)\n> niño [audio](media:bd9f866bbd77c43f0d0ae758)\n> — ребёнок",
+    "en": "Sound: like “ny” in canyon\n> niño [audio](media:bd9f866bbd77c43f0d0ae758)\n> — child"
+   },
+   "notype": true
+  },
+  {
+   "id": "alpha-l15",
+   "unit": "alpha",
+   "front": "O o",
+   "hint": "",
+   "back": {
+    "ru": "o — «о»",
+    "en": "o — like “o” in more"
+   },
+   "extra": {
+    "ru": "Читается: «о»\n> ojo [audio](media:b198205c1a651aefee3d504f)\n> — глаз",
+    "en": "Sound: like “o” in more\n> ojo [audio](media:b198205c1a651aefee3d504f)\n> — eye"
+   },
+   "notype": true
+  },
+  {
+   "id": "alpha-l16",
+   "unit": "alpha",
+   "front": "P p",
+   "hint": "",
+   "back": {
+    "ru": "pe — «п»",
+    "en": "pe — like “p”, no puff of air"
+   },
+   "extra": {
+    "ru": "Читается: «п»\n> pan [audio](media:bfd556b0a11e26e51c9b4036)\n> — хлеб",
+    "en": "Sound: like “p”, no puff of air\n> pan [audio](media:bfd556b0a11e26e51c9b4036)\n> — bread"
+   },
+   "notype": true
+  },
+  {
+   "id": "alpha-l17",
+   "unit": "alpha",
+   "front": "Q q",
+   "hint": "",
+   "back": {
+    "ru": "cu — «к» (всегда с u: que, qui)",
+    "en": "cu — “k” (always with u: que, qui)"
+   },
+   "extra": {
+    "ru": "Читается: «к» (всегда с u: que, qui)\n> queso [audio](media:5862f8706712ee451eea6e0b)\n> — сыр",
+    "en": "Sound: “k” (always with u: que, qui)\n> queso [audio](media:5862f8706712ee451eea6e0b)\n> — cheese"
+   },
+   "notype": true
+  },
+  {
+   "id": "alpha-l18",
+   "unit": "alpha",
+   "front": "R r",
+   "hint": "",
+   "back": {
+    "ru": "erre — «р» (одно касание); в начале слова — раскатистое",
+    "en": "erre — one tap of the tongue; rolled at the start"
+   },
+   "extra": {
+    "ru": "Читается: «р» (одно касание); в начале слова — раскатистое\n> rojo [audio](media:a4ba5acabfa1e24a10d7ba92)\n> — красный",
+    "en": "Sound: one tap of the tongue; rolled at the start\n> rojo [audio](media:a4ba5acabfa1e24a10d7ba92)\n> — red"
+   },
+   "notype": true
+  },
+  {
+   "id": "alpha-l19",
+   "unit": "alpha",
+   "front": "S s",
+   "hint": "",
+   "back": {
+    "ru": "ese — «с»",
+    "en": "ese — like “s” in sun"
+   },
+   "extra": {
+    "ru": "Читается: «с»\n> sol [audio](media:0d3ec13023e281b366c01859)\n> — солнце",
+    "en": "Sound: like “s” in sun\n> sol [audio](media:0d3ec13023e281b366c01859)\n> — sun"
+   },
+   "notype": true
+  },
+  {
+   "id": "alpha-l20",
+   "unit": "alpha",
+   "front": "T t",
+   "hint": "",
+   "back": {
+    "ru": "te — «т»",
+    "en": "te — like “t”, no puff of air"
+   },
+   "extra": {
+    "ru": "Читается: «т»\n> taza [audio](media:41a3ee6c5c980a10d8d63097)\n> — чашка",
+    "en": "Sound: like “t”, no puff of air\n> taza [audio](media:41a3ee6c5c980a10d8d63097)\n> — cup"
+   },
+   "notype": true
+  },
+  {
+   "id": "alpha-l21",
+   "unit": "alpha",
+   "front": "U u",
+   "hint": "",
+   "back": {
+    "ru": "u — «у»",
+    "en": "u — like “oo” in moon"
+   },
+   "extra": {
+    "ru": "Читается: «у»\n> uno [audio](media:074eb7f85076dd62ce5baa44)\n> — один",
+    "en": "Sound: like “oo” in moon\n> uno [audio](media:074eb7f85076dd62ce5baa44)\n> — one"
+   },
+   "notype": true
+  },
+  {
+   "id": "alpha-l22",
+   "unit": "alpha",
+   "front": "V v",
+   "hint": "",
+   "back": {
+    "ru": "uve — «б» (как b)",
+    "en": "uve — like “b” (same as b)"
+   },
+   "extra": {
+    "ru": "Читается: «б» (как b)\n> vaso [audio](media:e0518a973e2bee6cdb76bb42)\n> — стакан",
+    "en": "Sound: like “b” (same as b)\n> vaso [audio](media:e0518a973e2bee6cdb76bb42)\n> — glass"
+   },
+   "notype": true
+  },
+  {
+   "id": "alpha-l23",
+   "unit": "alpha",
+   "front": "W w",
+   "hint": "",
+   "back": {
+    "ru": "uve doble — «у»/«в» (редкая)",
+    "en": "uve doble — “w” (rare, loanwords)"
+   },
+   "extra": {
+    "ru": "Читается: «у»/«в» (редкая)\n> web [audio](media:15149a5985de52816f1b7394)\n> — сайт",
+    "en": "Sound: “w” (rare, loanwords)\n> web [audio](media:15149a5985de52816f1b7394)\n> — website"
+   },
+   "notype": true
+  },
+  {
+   "id": "alpha-l24",
+   "unit": "alpha",
+   "front": "X x",
+   "hint": "",
+   "back": {
+    "ru": "equis — «кс»",
+    "en": "equis — like “ks”"
+   },
+   "extra": {
+    "ru": "Читается: «кс»\n> taxi [audio](media:5d508fff6858092a6a650e19)\n> — такси",
+    "en": "Sound: like “ks”\n> taxi [audio](media:5d508fff6858092a6a650e19)\n> — taxi"
+   },
+   "notype": true
+  },
+  {
+   "id": "alpha-l25",
+   "unit": "alpha",
+   "front": "Y y",
+   "hint": "",
+   "back": {
+    "ru": "i griega — «й» или «и» (отдельно)",
+    "en": "i griega — “y” in yes; alone it means “and”"
+   },
+   "extra": {
+    "ru": "Читается: «й» или «и» (отдельно)\n> yo [audio](media:e4a8f1f3439b7eb10ba4b938)\n> — я",
+    "en": "Sound: “y” in yes; alone it means “and”\n> yo [audio](media:e4a8f1f3439b7eb10ba4b938)\n> — I"
+   },
+   "notype": true
+  },
+  {
+   "id": "alpha-l26",
+   "unit": "alpha",
+   "front": "Z z",
+   "hint": "",
+   "back": {
+    "ru": "zeta — «с» (в Испании «θ»)",
+    "en": "zeta — “s” (in Spain like “th”)"
+   },
+   "extra": {
+    "ru": "Читается: «с» (в Испании «θ»)\n> zapato [audio](media:f3d92b5521b0ad41b5c67be0)\n> — ботинок",
+    "en": "Sound: “s” (in Spain like “th”)\n> zapato [audio](media:f3d92b5521b0ad41b5c67be0)\n> — shoe"
+   },
+   "notype": true
+  },
+  {
+   "id": "sounds-s0",
+   "unit": "sounds",
+   "front": "ll",
+   "hint": "",
+   "back": {
+    "ru": "«й/ж»",
+    "en": "like “y” in yes"
+   },
+   "extra": {
+    "ru": "Звук: «й/ж»: lluvia\n> lluvia [audio](media:837d9e4ddc3f0c86c7384873)\n> — дождь",
+    "en": "Sound: like “y” in yes: lluvia (rain)\n> lluvia [audio](media:837d9e4ddc3f0c86c7384873)\n> — rain"
+   },
+   "notype": true
+  },
+  {
+   "id": "sounds-s1",
+   "unit": "sounds",
+   "front": "ch",
+   "hint": "",
+   "back": {
+    "ru": "«ч»",
+    "en": "like “ch” in chat"
+   },
+   "extra": {
+    "ru": "Звук: «ч»\n> chico [audio](media:bacbcb3f82ec5c4a4aa50765)\n> — парень",
+    "en": "Sound: like “ch” in chat\n> chico [audio](media:bacbcb3f82ec5c4a4aa50765)\n> — boy"
+   },
+   "notype": true
+  },
+  {
+   "id": "sounds-s2",
+   "unit": "sounds",
+   "front": "rr",
+   "hint": "",
+   "back": {
+    "ru": "раскатистое «рр»",
+    "en": "strongly rolled r"
+   },
+   "extra": {
+    "ru": "Звук: раскатистое «рр»\n> perro [audio](media:2cc6d71a50017b92d8a88061)\n> — собака",
+    "en": "Sound: strongly rolled r\n> perro [audio](media:2cc6d71a50017b92d8a88061)\n> — dog"
+   },
+   "notype": true
+  },
+  {
+   "id": "sounds-s3",
+   "unit": "sounds",
+   "front": "qu",
+   "hint": "",
+   "back": {
+    "ru": "«к» (u не читается)",
+    "en": "“k” (u is silent)"
+   },
+   "extra": {
+    "ru": "Звук: «к» (u не читается)\n> quince [audio](media:1646817261ede7735eedefe9)\n> — пятнадцать",
+    "en": "Sound: “k” (u is silent)\n> quince [audio](media:1646817261ede7735eedefe9)\n> — fifteen"
+   },
+   "notype": true
+  },
+  {
+   "id": "sounds-s4",
+   "unit": "sounds",
+   "front": "gu + e/i",
+   "hint": "",
+   "back": {
+    "ru": "«г» (u не читается)",
+    "en": "“g” (u is silent)"
+   },
+   "extra": {
+    "ru": "Звук: «г» (u не читается)\n> guitarra [audio](media:9a54803e45a98f6fa40c3011)\n> — гитара",
+    "en": "Sound: “g” (u is silent): guerra\n> guitarra [audio](media:9a54803e45a98f6fa40c3011)\n> — guitar"
+   },
+   "notype": true
+  },
+  {
+   "id": "sounds-s5",
+   "unit": "sounds",
+   "front": "güe / güi",
+   "hint": "",
+   "back": {
+    "ru": "«гу-» (ü читается)",
+    "en": "“gw” (ü is pronounced)"
+   },
+   "extra": {
+    "ru": "Звук: «гу-» (ü читается)\n> bilingüe [audio](media:adad98c589744d4c4e56993a)\n> — двуязычный",
+    "en": "Sound: “gw” (ü is pronounced)\n> bilingüe [audio](media:adad98c589744d4c4e56993a)\n> — bilingual"
+   },
+   "notype": true
+  },
+  {
+   "id": "sounds-s6",
+   "unit": "sounds",
+   "front": "ce, ci, z",
+   "hint": "",
+   "back": {
+    "ru": "«с» (в Испании «θ»)",
+    "en": "“s” (Spain"
+   },
+   "extra": {
+    "ru": "Звук: «с» (в Испании «θ»)\n> cinco [audio](media:5be97e1eeeb9403d348ead10)\n> — пять",
+    "en": "Sound: “s” (Spain: “th”)\n> cinco [audio](media:5be97e1eeeb9403d348ead10)\n> — five"
+   },
+   "notype": true
+  },
+  {
+   "id": "sounds-s7",
+   "unit": "sounds",
+   "front": "ge, gi, j",
+   "hint": "",
+   "back": {
+    "ru": "«х» (резкое)",
+    "en": "harsh “h”"
+   },
+   "extra": {
+    "ru": "Звук: «х» (резкое)\n> gente [audio](media:c7f6042470dd8743dfb38485)\n> — люди",
+    "en": "Sound: harsh “h”\n> gente [audio](media:c7f6042470dd8743dfb38485)\n> — people"
+   },
+   "notype": true
+  },
+  {
+   "id": "rules-w-vowels",
+   "unit": "rules",
+   "front": "Гласные всегда одинаковы",
+   "hint": "",
+   "back": {
+    "ru": "5 гласных — 5 звуков, читаются ясно",
+    "en": "5 vowels, 5 clear sounds"
+   },
+   "extra": {
+    "ru": "a, e, i, o, u читаются всегда одинаково и ясно, даже без ударения.\n> Hola, me llamo Ana. [audio](media:90841dec08c70332dd4329e0)\n> — Привет, меня зовут Ана.",
+    "en": "a, e, i, o, u always sound the same and clear, even unstressed.\n> Hola, me llamo Ana. [audio](media:90841dec08c70332dd4329e0)\n> — Hi, my name is Ana."
+   },
+   "frontL": {
+    "ru": "Гласные всегда одинаковы",
+    "en": "Vowels never change"
+   },
+   "notype": true
+  },
+  {
+   "id": "rules-w-stress",
+   "unit": "rules",
+   "front": "Ударение",
+   "hint": "",
+   "back": {
+    "ru": "Три правила — и ударение понятно",
+    "en": "Three rules and you know the stress"
+   },
+   "extra": {
+    "ru": "Слова на гласную, n, s — ударение на предпоследнем слоге (ca-sa). На другие согласные — на последнем (ha-blar). Исключения отмечены чёрточкой: café.\n> Quiero un café. [audio](media:a47bccbe52320085a8135c91)\n> — Хочу кофе.",
+    "en": "Words ending in a vowel, n, s: stress the second-to-last syllable (ca-sa). Other consonants: last syllable (ha-blar). Exceptions have an accent mark: café.\n> Quiero un café. [audio](media:a47bccbe52320085a8135c91)\n> — I want a coffee."
+   },
+   "frontL": {
+    "ru": "Ударение",
+    "en": "Stress"
+   },
+   "notype": true
+  },
+  {
+   "id": "rules-w-noun",
+   "unit": "rules",
+   "front": "Род и артикли",
+   "hint": "",
+   "back": {
+    "ru": "el/la — «определённый», un/una — «неопределённый»",
+    "en": "el/la = “the”, un/una = “a”"
+   },
+   "extra": {
+    "ru": "Мужской — el, un (el libro), женский — la, una (la casa). Обычно -o — мужской, -a — женский. Исключения: el día, la mano.\n> La casa es grande. [audio](media:ecc0ef440a5c8a57670c58ab)\n> — Дом большой.",
+    "en": "Masculine: el, un (el libro); feminine: la, una (la casa). Usually -o is masculine, -a feminine. Exceptions: el día, la mano.\n> La casa es grande. [audio](media:ecc0ef440a5c8a57670c58ab)\n> — The house is big."
+   },
+   "frontL": {
+    "ru": "Род и артикли",
+    "en": "Gender and articles"
+   },
+   "notype": true
+  },
+  {
+   "id": "rules-w-plural",
+   "unit": "rules",
+   "front": "Множественное число",
+   "hint": "",
+   "back": {
+    "ru": "+s после гласной, +es после согласной",
+    "en": "+s after a vowel, +es after a consonant"
+   },
+   "extra": {
+    "ru": "casa → casas, ciudad → ciudades. Артикль тоже меняется: el → los, la → las.\n> Las casas son grandes. [audio](media:93c0c28d561d3b5042129717)\n> — Дома большие.",
+    "en": "casa → casas, ciudad → ciudades. The article changes too: el → los, la → las.\n> Las casas son grandes. [audio](media:93c0c28d561d3b5042129717)\n> — The houses are big."
+   },
+   "frontL": {
+    "ru": "Множественное число",
+    "en": "Plurals"
+   },
+   "notype": true
+  },
+  {
+   "id": "rules-w-pron",
+   "unit": "rules",
+   "front": "Местоимения",
+   "hint": "",
+   "back": {
+    "ru": "yo, tú, él/ella, nosotros, vosotros, ellos",
+    "en": "yo, tú, él/ella, nosotros, vosotros, ellos"
+   },
+   "extra": {
+    "ru": "Подлежащее часто опускают — окончание глагола всё скажет: hablo = «я говорю». Usted — вежливое «вы».\n> Hablo español. [audio](media:fe8aac03887afdffbc5a7dd5)\n> — Я говорю по-испански.",
+    "en": "The subject is often dropped — the verb ending says it: hablo = “I speak”. Usted is polite “you”.\n> Hablo español. [audio](media:fe8aac03887afdffbc5a7dd5)\n> — I speak Spanish."
+   },
+   "frontL": {
+    "ru": "Местоимения",
+    "en": "Subject pronouns"
+   },
+   "notype": true
+  },
+  {
+   "id": "rules-w-ser",
+   "unit": "rules",
+   "front": "Ser — «быть» (постоянное)",
+   "hint": "",
+   "back": {
+    "ru": "soy, eres, es, somos, sois, son",
+    "en": "soy, eres, es, somos, sois, son"
+   },
+   "extra": {
+    "ru": "Ser — кто/что человек или вещь, профессия, национальность. Es profesor, Soy ruso.\n> Soy estudiante. [audio](media:125610665f57b3b9d333ff1e)\n> — Я студент.",
+    "en": "Ser: who/what someone or something is, job, nationality. Es profesor, Soy ruso.\n> Soy estudiante. [audio](media:125610665f57b3b9d333ff1e)\n> — I am a student."
+   },
+   "frontL": {
+    "ru": "Ser — «быть» (постоянное)",
+    "en": "Ser — “to be” (permanent)"
+   },
+   "notype": true
+  },
+  {
+   "id": "rules-w-estar",
+   "unit": "rules",
+   "front": "Estar — «быть» (состояние, место)",
+   "hint": "",
+   "back": {
+    "ru": "estoy, estás, está, estamos, estáis, están",
+    "en": "estoy, estás, está, estamos, estáis, están"
+   },
+   "extra": {
+    "ru": "Estar — где находится и в каком состоянии: Estoy cansado, Madrid está en España.\n> Estoy en casa. [audio](media:bc5f8a8913875143ddd8238e)\n> — Я дома.",
+    "en": "Estar: where something is and how: Estoy cansado, Madrid está en España.\n> Estoy en casa. [audio](media:bc5f8a8913875143ddd8238e)\n> — I am at home."
+   },
+   "frontL": {
+    "ru": "Estar — «быть» (состояние, место)",
+    "en": "Estar — “to be” (state, place)"
+   },
+   "notype": true
+  },
+  {
+   "id": "rules-w-ar",
+   "unit": "rules",
+   "front": "Глаголы на -ar",
+   "hint": "",
+   "back": {
+    "ru": "hablar: hablo, hablas, habla, hablamos, habláis, hablan",
+    "en": "hablar: hablo, hablas, habla, hablamos, habláis, hablan"
+   },
+   "extra": {
+    "ru": "Отбросьте -ar и добавьте -o, -as, -a, -amos, -áis, -an. Так спрягаются сотни глаголов.\n> Ella habla mucho. [audio](media:aba83284bab9c0ec267ed6e2)\n> — Она много говорит.",
+    "en": "Drop -ar and add -o, -as, -a, -amos, -áis, -an. Hundreds of verbs work this way.\n> Ella habla mucho. [audio](media:aba83284bab9c0ec267ed6e2)\n> — She talks a lot."
+   },
+   "frontL": {
+    "ru": "Глаголы на -ar",
+    "en": "Verbs in -ar"
+   },
+   "notype": true
+  },
+  {
+   "id": "rules-w-adj",
+   "unit": "rules",
+   "front": "Прилагательные",
+   "hint": "",
+   "back": {
+    "ru": "Стоят после существительного и согласуются с ним",
+    "en": "They follow the noun and agree with it"
+   },
+   "extra": {
+    "ru": "un gato negro, una casa negra, unos gatos negros. Нужны род и число.\n> Tengo un gato negro. [audio](media:0ceb301601eea91af885601a)\n> — У меня чёрный кот.",
+    "en": "un gato negro, una casa negra, unos gatos negros. Gender and number must match.\n> Tengo un gato negro. [audio](media:0ceb301601eea91af885601a)\n> — I have a black cat."
+   },
+   "frontL": {
+    "ru": "Прилагательные",
+    "en": "Adjectives"
+   },
+   "notype": true
+  },
+  {
+   "id": "rules-w-neg",
+   "unit": "rules",
+   "front": "Отрицание и вопрос",
+   "hint": "",
+   "back": {
+    "ru": "no перед глаголом; вопрос — интонация и ¿ ?",
+    "en": "no before the verb; questions: intonation and ¿ ?"
+   },
+   "extra": {
+    "ru": "No hablo francés. Вопросительный и восклицательный знаки ставят в начале и в конце: ¿Cómo estás?\n> ¿Cómo estás? [audio](media:6a0daec34f3c5ff5f853a14f)\n> — Как дела?",
+    "en": "No hablo francés. Question and exclamation marks come at both ends: ¿Cómo estás?\n> ¿Cómo estás? [audio](media:6a0daec34f3c5ff5f853a14f)\n> — How are you?"
+   },
+   "frontL": {
+    "ru": "Отрицание и вопрос",
+    "en": "Negation and questions"
+   },
+   "notype": true
+  },
   {
    "id": "hello",
    "unit": "greet",
@@ -1127,644 +1842,800 @@
   "file": "es.audio.mp3",
   "type": "audio/mpeg",
   "index": {
-   "c95784d55c63dc66456e497f": [
+   "67fc9bbfa04d3e8977afaa0e": [
     0,
+    4437
+   ],
+   "9fc33fc4357a54ec168b9836": [
+    4437,
+    3837
+   ],
+   "9a7bdefc078822baba099ba2": [
+    8274,
+    3477
+   ],
+   "b023c70d108a186d84e8b2bb": [
+    11751,
+    3597
+   ],
+   "3cb85d2911aee1f0325e43ac": [
+    15348,
+    3957
+   ],
+   "5f0304dbd77223c0b6949ddf": [
+    19305,
+    4317
+   ],
+   "60ec2561125bb2b17e342a83": [
+    23622,
+    4077
+   ],
+   "c95784d55c63dc66456e497f": [
+    27699,
     3237
    ],
+   "4610393898ef7d5b7d25de85": [
+    30936,
+    4437
+   ],
+   "ae635d3d6a84e46f0e01b59e": [
+    35373,
+    2517
+   ],
+   "6e32e8f56fbe48053318e988": [
+    37890,
+    3717
+   ],
+   "44f8b529da53c6b11eb22820": [
+    41607,
+    3957
+   ],
+   "528d3394e7472a3728295f46": [
+    45564,
+    4197
+   ],
+   "330125968ca13a708b72ee22": [
+    49761,
+    4557
+   ],
+   "bd9f866bbd77c43f0d0ae758": [
+    54318,
+    4437
+   ],
+   "b198205c1a651aefee3d504f": [
+    58755,
+    3237
+   ],
+   "bfd556b0a11e26e51c9b4036": [
+    61992,
+    3597
+   ],
+   "5862f8706712ee451eea6e0b": [
+    65589,
+    4077
+   ],
+   "a4ba5acabfa1e24a10d7ba92": [
+    69666,
+    3477
+   ],
+   "0d3ec13023e281b366c01859": [
+    73143,
+    3357
+   ],
+   "41a3ee6c5c980a10d8d63097": [
+    76500,
+    4317
+   ],
+   "074eb7f85076dd62ce5baa44": [
+    80817,
+    3837
+   ],
+   "e0518a973e2bee6cdb76bb42": [
+    84654,
+    4317
+   ],
+   "15149a5985de52816f1b7394": [
+    88971,
+    3477
+   ],
+   "5d508fff6858092a6a650e19": [
+    92448,
+    4197
+   ],
+   "e4a8f1f3439b7eb10ba4b938": [
+    96645,
+    2997
+   ],
+   "f3d92b5521b0ad41b5c67be0": [
+    99642,
+    5037
+   ],
+   "837d9e4ddc3f0c86c7384873": [
+    104679,
+    2877
+   ],
+   "bacbcb3f82ec5c4a4aa50765": [
+    107556,
+    4197
+   ],
+   "2cc6d71a50017b92d8a88061": [
+    111753,
+    3597
+   ],
+   "1646817261ede7735eedefe9": [
+    115350,
+    3477
+   ],
+   "9a54803e45a98f6fa40c3011": [
+    118827,
+    5037
+   ],
+   "adad98c589744d4c4e56993a": [
+    123864,
+    5157
+   ],
+   "5be97e1eeeb9403d348ead10": [
+    129021,
+    4317
+   ],
+   "c7f6042470dd8743dfb38485": [
+    133338,
+    4197
+   ],
+   "90841dec08c70332dd4329e0": [
+    137535,
+    7437
+   ],
+   "a47bccbe52320085a8135c91": [
+    144972,
+    6237
+   ],
+   "ecc0ef440a5c8a57670c58ab": [
+    151209,
+    7917
+   ],
+   "93c0c28d561d3b5042129717": [
+    159126,
+    8517
+   ],
+   "fe8aac03887afdffbc5a7dd5": [
+    167643,
+    6237
+   ],
+   "125610665f57b3b9d333ff1e": [
+    173880,
+    6357
+   ],
+   "bc5f8a8913875143ddd8238e": [
+    180237,
+    6957
+   ],
+   "aba83284bab9c0ec267ed6e2": [
+    187194,
+    7317
+   ],
+   "0ceb301601eea91af885601a": [
+    194511,
+    8157
+   ],
+   "6a0daec34f3c5ff5f853a14f": [
+    202668,
+    5757
+   ],
    "1fee6d90687fa403b3fe738e": [
-    3237,
+    208425,
     8757
    ],
    "9bd377111d310603069adf44": [
-    11994,
+    217182,
     4437
    ],
    "dd49b65b5075d02442009789": [
-    16431,
+    221619,
     7797
    ],
    "464c8cf411c81656b9b2a435": [
-    24228,
+    229416,
     5037
    ],
    "a3778fc60887b98d4e0b7b56": [
-    29265,
+    234453,
     8037
    ],
    "1efee44a64f5e991cc27d125": [
-    37302,
+    242490,
     4077
    ],
    "b6587b5272a83c0299bfc9c1": [
-    41379,
+    246567,
     7917
    ],
    "61942bebc696859566b8a017": [
-    49296,
+    254484,
     2757
    ],
    "c5e341d7be726bbf6b0b4783": [
-    52053,
+    257241,
     5277
    ],
    "24701bf196b8ae9b55bd30c9": [
-    57330,
+    262518,
     3237
    ],
    "f60fbf1cc213f68739f6358c": [
-    60567,
+    265755,
     5997
    ],
    "166f29fb0a0aa087bdbacb6b": [
-    66564,
+    271752,
     4557
    ],
    "df2d11d8b8c10907dc07fe13": [
-    71121,
+    276309,
     8037
    ],
    "22ae551e805872514f97007c": [
-    79158,
+    284346,
     6117
    ],
    "afa72420508140a4773794a9": [
-    85275,
+    290463,
     7917
    ],
    "0adfbaa4586e977c3ded0501": [
-    93192,
+    298380,
     6717
    ],
    "5079e26012561a67f482dc07": [
-    99909,
+    305097,
     10437
    ],
    "fa78f2ac09dd1076f387631c": [
-    110346,
+    315534,
     4677
    ],
    "b0183dbe7ba7cbab89ede5c6": [
-    115023,
+    320211,
     8397
    ],
    "25a0385afb389e726d63442c": [
-    123420,
+    328608,
     4917
    ],
    "e90c09c735ddeef4b23410d9": [
-    128337,
+    333525,
     9837
    ],
    "7e774a3f66338af7781fb180": [
-    138174,
+    343362,
     4797
    ],
    "e1f1af8bcebda9aaf4bf58ed": [
-    142971,
+    348159,
     8757
    ],
    "6d2118386e950f83ee095549": [
-    151728,
+    356916,
     4917
    ],
    "a13784fd77aa6bf71217d25c": [
-    156645,
+    361833,
     6837
    ],
    "f7ab380b90e45c2ced1ed78e": [
-    163482,
+    368670,
     5157
    ],
    "6ee727c3f4d605b1052631df": [
-    168639,
+    373827,
     7917
    ],
    "883a9a43dcbd4041748c5fc9": [
-    176556,
+    381744,
     5037
    ],
    "f9943fca88672cbe50f5ffbf": [
-    181593,
+    386781,
     8277
    ],
    "a859c941fd9244a801a66ab1": [
-    189870,
+    395058,
     5157
    ],
    "be5607892d7ade686ab48f2f": [
-    195027,
+    400215,
     11037
    ],
    "aaafa81fb9d5cae8054a8598": [
-    206064,
+    411252,
     5157
    ],
    "2cc0193e03bc93c9b0389e23": [
-    211221,
+    416409,
     6717
    ],
    "d7cc8c726f279765526fcfe1": [
-    217938,
+    423126,
     5037
    ],
    "ab72202d6fc6117c2ca388c0": [
-    222975,
+    428163,
     9597
    ],
    "68e108dc4ba49c296da584eb": [
-    232572,
+    437760,
     5277
    ],
    "14382ee75c3d06f942b739ab": [
-    237849,
+    443037,
     9237
    ],
    "e43682b794445432d18ef49d": [
-    247086,
+    452274,
     5157
    ],
    "2431abf76616f3be24bd5807": [
-    252243,
+    457431,
     6357
    ],
-   "074eb7f85076dd62ce5baa44": [
-    258600,
-    3837
-   ],
    "5de14963894b1105e0031fbf": [
-    262437,
+    463788,
     8877
    ],
-   "b023c70d108a186d84e8b2bb": [
-    271314,
-    3597
-   ],
    "98f873156df1b012def91fe2": [
-    274911,
+    472665,
     8757
    ],
    "3ca9884f69d15a6335f5f887": [
-    283668,
+    481422,
     4197
    ],
    "4e04489019919191853e07c6": [
-    287865,
+    485619,
     5757
    ],
    "787a5fbdebd3a730c3e2975e": [
-    293622,
+    491376,
     4077
    ],
    "4e1ab2cc88e3c9ae17e42b83": [
-    297699,
+    495453,
     11037
    ],
    "dddc509b0e99b56e32608e0c": [
-    308736,
+    506490,
     4197
    ],
    "12911b804dc19f3d015c84e1": [
-    312933,
+    510687,
     7077
    ],
    "473cf9872aa5e28612eb21e2": [
-    320010,
+    517764,
     4797
    ],
    "cfcd2963f2e5ce9c87edc5a0": [
-    324807,
+    522561,
     9357
    ],
    "211576ffdb67583dd280f4e6": [
-    334164,
+    531918,
     5157
    ],
    "2d0411dec046c56d241f9afe": [
-    339321,
+    537075,
     8757
    ],
    "f8e7677da917568b2be6b9fe": [
-    348078,
+    545832,
     3117
    ],
    "3d9d563ee432098730c42e10": [
-    351195,
+    548949,
     6357
    ],
    "f12f758d5a81810636b6495f": [
-    357552,
+    555306,
     5037
    ],
    "50e040eb401e656c723253e4": [
-    362589,
+    560343,
     6957
    ],
    "a12813b6ced966a1bc875e5c": [
-    369546,
+    567300,
     4077
    ],
    "89f124e9a1d05386584cc5c2": [
-    373623,
+    571377,
     5877
    ],
    "db7704e04ccc67c969eb0c1a": [
-    379500,
+    577254,
     4077
    ],
    "72d22beb8805682c5b7d88b6": [
-    383577,
+    581331,
     10437
    ],
    "2667a948951aa68254053689": [
-    394014,
+    591768,
     4437
    ],
    "b6ce6b4b3b1b7b5215b7679a": [
-    398451,
+    596205,
     5397
    ],
    "8a5cc2ad8c9723feca405362": [
-    403848,
+    601602,
     5037
    ],
    "5f0aaae363c7496886d66b18": [
-    408885,
+    606639,
     9117
    ],
    "92dfe83249ccb69a914896ea": [
-    418002,
+    615756,
     4077
    ],
    "a4be554ff9b8e1e19df8f5e1": [
-    422079,
+    619833,
     5757
    ],
    "43a84f4f7af09e4ae5243119": [
-    427836,
+    625590,
     5037
    ],
    "39a6a6c7c5df085dfd93c822": [
-    432873,
+    630627,
     6957
    ],
    "433317970c44e4e2867a043f": [
-    439830,
+    637584,
     5637
    ],
    "1908297794e6e02c4132b16f": [
-    445467,
+    643221,
     8757
    ],
    "375cf88b614a06a20a11aae0": [
-    454224,
+    651978,
     5037
    ],
    "9a5e86e265d3c9672c7588af": [
-    459261,
+    657015,
     6117
    ],
    "de05b7608ea3bacd5286f800": [
-    465378,
+    663132,
     5637
    ],
    "8a168d74187fbd98bf928537": [
-    471015,
+    668769,
     7797
    ],
    "f0a3e57ae8723197bf047228": [
-    478812,
+    676566,
     3717
    ],
    "9dfb35004f570cceb5f56f25": [
-    482529,
+    680283,
     7437
    ],
    "3e8ed1c1902c18ab48a0d890": [
-    489966,
+    687720,
     4197
    ],
    "ea189edc082fbd307d813d03": [
-    494163,
+    691917,
     6717
    ],
    "20f16a16ff3f0cfafe5c88c8": [
-    500880,
+    698634,
     5037
    ],
    "e46f13622ff09d2e0ca4d6fe": [
-    505917,
+    703671,
     7677
    ],
    "cec743315109ec7b7f5514fa": [
-    513594,
+    711348,
     5757
    ],
    "63302c9fcbb3008ebfd60b79": [
-    519351,
+    717105,
     8997
    ],
    "be223239981b4839ec6d853e": [
-    528348,
+    726102,
     5037
    ],
    "a5c7338bc96fa2e19ea5412d": [
-    533385,
+    731139,
     9837
    ],
    "9383736aac38f91b7d63edff": [
-    543222,
+    740976,
     5037
    ],
    "2d23b2f7ea95fb2432e9de74": [
-    548259,
+    746013,
     7917
    ],
    "8569a82f993d83a523970103": [
-    556176,
+    753930,
     5157
    ],
    "b6cae34bfe3bddaafa2072c7": [
-    561333,
+    759087,
     8277
    ],
    "42128bd851cb08d4f76d6088": [
-    569610,
+    767364,
     5037
    ],
    "12fc3dd6d15bf00a6d04ec4f": [
-    574647,
+    772401,
     8757
    ],
    "5b275d77792b6cabfb480c00": [
-    583404,
+    781158,
     5277
    ],
    "8bda9f89864eb97e59411d50": [
-    588681,
+    786435,
     10797
    ],
    "c43649b05a948a59cfab27e8": [
-    599478,
+    797232,
     5757
    ],
    "909bdeb56dd5ec34958bc2d1": [
-    605235,
+    802989,
     8757
    ],
    "403e5c032362d2b8e680142b": [
-    613992,
+    811746,
     5517
    ],
    "746de2d235e0f4c6f44412f2": [
-    619509,
+    817263,
     8997
    ],
    "ef9a494aaa0f99eb95dcad26": [
-    628506,
+    826260,
     5157
    ],
    "a926a50340a29930b98dba4c": [
-    633663,
+    831417,
     6957
    ],
    "965944c43d2ee7a18bc3b750": [
-    640620,
+    838374,
     3117
    ],
-   "125610665f57b3b9d333ff1e": [
-    643737,
-    6357
-   ],
    "b0e84bd94ea469a6fa65b8d4": [
-    650094,
+    841491,
     4317
    ],
    "626e5582cdaab18f8f625a63": [
-    654411,
+    845808,
     6837
    ],
    "28ebddeb4d48bd8c7aee1808": [
-    661248,
+    852645,
     2757
    ],
    "a100bc0fe41454f883f2baa8": [
-    664005,
+    855402,
     6717
    ],
    "d43df38726257866d01bce0e": [
-    670722,
+    862119,
     4437
    ],
    "9de932bba09457f3e53b092c": [
-    675159,
+    866556,
     4797
    ],
    "c1b5f6d98704eef1c737c11e": [
-    679956,
+    871353,
     3837
    ],
    "331ca934b03e29203af0901d": [
-    683793,
+    875190,
     5877
    ],
    "229201eaa62a415c3f8d6541": [
-    689670,
+    881067,
     3717
    ],
    "f7a6c5b9b538e4e40600056c": [
-    693387,
+    884784,
     10797
    ],
    "9a26c42a5d906e69392bb7d9": [
-    704184,
+    895581,
     4197
    ],
    "b98f50f2484f44e21ce3cb60": [
-    708381,
+    899778,
     4557
    ],
    "cab5d1319665bd8181d26929": [
-    712938,
+    904335,
     4197
    ],
-   "a47bccbe52320085a8135c91": [
-    717135,
-    6237
-   ],
    "b18d45d27edc3ce1f0f15a55": [
-    723372,
+    908532,
     4077
    ],
    "00676a92a287b41ee485a20c": [
-    727449,
+    912609,
     5997
    ],
    "91c5204b2146bd870efd7d48": [
-    733446,
+    918606,
     3717
    ],
    "d14aa28b3f4c68cc607458ce": [
-    737163,
+    922323,
     5997
    ],
    "33aa8678cfa9f70e2416b409": [
-    743160,
+    928320,
     4437
    ],
    "d03980ef352a440632b68422": [
-    747597,
+    932757,
     8877
    ],
    "e978358ccd1d2906e2036019": [
-    756474,
+    941634,
     4677
    ],
    "6731529261fce75e8c1f3b82": [
-    761151,
+    946311,
     7917
    ],
    "fac75f721b37f36e4a6ff3e2": [
-    769068,
+    954228,
     3957
    ],
    "3c2af7e0e8a48e356b45ea90": [
-    773025,
+    958185,
     8157
    ],
    "744235c0f8143100d7a4fae0": [
-    781182,
+    966342,
     3957
    ],
    "6040ee6fd4e6b3983be41cb5": [
-    785139,
+    970299,
     7917
    ],
    "0583db27039d1d7d69e62c28": [
-    793056,
+    978216,
     4077
    ],
    "f4b0f8d1cda3119dbe25850b": [
-    797133,
+    982293,
     8877
    ],
    "3f2483591b4ed9e13ca8322e": [
-    806010,
+    991170,
     4437
    ],
    "0f5a0e8a36977e3d26671efc": [
-    810447,
+    995607,
     8157
    ],
    "c690fd0aea2c787bc1e02eaf": [
-    818604,
+    1003764,
     5037
    ],
    "c117cf2e2acb03ec8cbd6f91": [
-    823641,
+    1008801,
     8157
    ],
    "2e4356d84479305eb6f0a5c9": [
-    831798,
+    1016958,
     4077
    ],
    "bd52e3b0ea7faa1ff36e0728": [
-    835875,
+    1021035,
     7797
    ],
    "35fe86f14df5c6d2dfb19abf": [
-    843672,
+    1028832,
     4917
    ],
    "df4635f1cf729ab479edc0c4": [
-    848589,
+    1033749,
     8877
    ],
-   "a4ba5acabfa1e24a10d7ba92": [
-    857466,
-    3477
-   ],
    "51ba00de4084332a390ce824": [
-    860943,
+    1042626,
     8997
    ],
    "7c1ab749d99dd7a73a18b960": [
-    869940,
+    1051623,
     5037
    ],
    "0da96e977762c172e52d0ba5": [
-    874977,
+    1056660,
     7917
    ],
    "332e3da494dfb48b52aed7b0": [
-    882894,
+    1064577,
     5877
    ],
    "09ec36963330abf32c4db15c": [
-    888771,
+    1070454,
     8997
    ],
    "65dd7d0d1ec342a929c45d4f": [
-    897768,
+    1079451,
     4917
    ],
    "8c2db51fec591f394a1c90bb": [
-    902685,
+    1084368,
     8757
    ],
    "5c63c9fa8c92afc871a00ebd": [
-    911442,
+    1093125,
     4917
    ],
    "03f69306b689c2a4f5b9d9f4": [
-    916359,
+    1098042,
     8877
    ],
    "f12acd6dab42ef003daa9462": [
-    925236,
+    1106919,
     5757
    ],
    "4400c6a250aa2e215599b320": [
-    930993,
+    1112676,
     8757
    ],
    "c85cddf242480b9cd1c7c856": [
-    939750,
+    1121433,
     4917
    ],
    "e33994aa9a3296f811966411": [
-    944667,
+    1126350,
     9117
    ],
    "4b507d43b6a35a809c63b738": [
-    953784,
+    1135467,
     4917
    ],
    "4a31424194ded3d9c4875cb0": [
-    958701,
+    1140384,
     6957
    ],
    "85b35ac3a5078a66b10856f6": [
-    965658,
+    1147341,
     6357
    ],
    "9b8584420369ff15857164dd": [
-    972015,
+    1153698,
     7317
    ],
    "2514d329441f4f8f78ab3c23": [
-    979332,
+    1161015,
     6117
    ],
    "e014481b460467284eece10a": [
-    985449,
+    1167132,
     7197
    ],
    "a7b7a32c797ca731b44a3119": [
-    992646,
+    1174329,
     4197
    ],
    "3e53be5b593197c9ed34c17d": [
-    996843,
+    1178526,
     8037
    ]
   },

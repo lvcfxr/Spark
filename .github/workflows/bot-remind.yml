@@ -1,18 +1,21 @@
-# Раз в день бот пишет тем, кто не занимался 7 или 30 дней (по одному сообщению на каждый срок; включается и выключается в настройках и командой /remind).
-# Нужны те же секреты, что для новостей: SPARK_BOT_URL и SPARK_BOT_SECRET. Без них ничего не делает.
-name: Bot — напоминания
+# Каждый час бот проверяет: кому пора напомнить о занятиях (через 7 и 30 дней без занятий) и кому прислать «слово дня».
+# Тихие часы и часовой пояс учитываются для каждого человека отдельно. Нужны секреты репозитория SPARK_BOT_URL и SPARK_BOT_SECRET; без них ничего не делает.
+name: Bot — напоминания и слово дня
 on:
   schedule:
-    - cron: "17 16 * * *"
+    - cron: "7 * * * *"
   workflow_dispatch:
+permissions:
+  contents: read
 jobs:
-  remind:
+  tick:
     runs-on: ubuntu-latest
     steps:
-      - name: Напомнить
+      - name: Напоминания и слово дня
         env:
           BOT_URL: ${{ secrets.SPARK_BOT_URL }}
           BOT_SECRET: ${{ secrets.SPARK_BOT_SECRET }}
         run: |
           if [ -z "$BOT_URL" ] || [ -z "$BOT_SECRET" ]; then echo "Секреты бота не заданы — пропускаю"; exit 0; fi
-          curl -fsS -X POST "$BOT_URL?action=remind" -H "x-admin-secret: $BOT_SECRET"
+          curl -fsS -X POST "$BOT_URL?action=remind" -H "x-admin-secret: $BOT_SECRET"; echo
+          curl -fsS -X POST "$BOT_URL?action=word" -H "x-admin-secret: $BOT_SECRET"

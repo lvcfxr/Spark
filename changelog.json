@@ -1,6 +1,48 @@
 {
  "releases": [
   {
+   "version": "0.17",
+   "date": "01.11.2026",
+   "ru": [
+    "Цель на день с прогрессом на главной (в настройках — 10, 20, 40, 80 карточек или выкл)",
+    "«Произнести»: скажите слово в микрофон, Spark подскажет, насколько верно (где это умеет устройство)",
+    "Режим «Слушать»: слова и переводы звучат подряд, удобно в дороге",
+    "Список карточек: быстрые фильтры и выбор нескольких карточек с действиями (переместить, тег, приостановить, удалить)",
+    "Копии в облаке: раз в сутки, семь последних, восстановление в настройках",
+    "Ссылка на колоду: отправьте другу, колода откроется в Spark без публикации в каталоге",
+    "Бот: слово дня (/word), тихие часы для всех сообщений",
+    "Курсы переписаны «как в учебнике»: у каждого языка сначала алфавит и звуки (хирагана и катакана, кириллица, особые сочетания), затем базовые правила и только потом слова",
+    "Новая карточка сначала показывается с ответом («Запомнил — проверить»), после чего плавно появляется поле ввода",
+    "Анимированные иконки: опыт, серия, цель, кубок, наушники и другие",
+    "Колоды на главной разделены: свои — сверху, «Колоды Spark» и «Из сообщества» — компактными раскрывающимися группами",
+    "Кнопка «Произнести» стала необязательной: включается в настройках",
+    "Оформления за уровни: первым открывается заметно отличный «Рассвет»",
+    "Значок колоды: флаг крупно, рядом кружок с символом или вашим фото, цвет обводки на выбор",
+    "Каталог защищён от мусорных колод: проверка перед публикацией, лимиты и жалобы; Spark-колоды и курсы публиковать нельзя",
+    "Поиск по тегам точный: chapter1 больше не находит chapter10",
+    "Усилена защита приложения и данных (политика безопасности браузера, права и квоты на сервере)"
+   ],
+   "en": [
+    "Daily goal with progress on the home screen (10, 20, 40, 80 cards or off in Settings)",
+    "“Say it”: speak the word, Spark tells you how close you were (where the device supports it)",
+    "Listen mode: words and translations play in a row, handy on the go",
+    "Card list: quick filters and multi-select with actions (move, tag, suspend, delete)",
+    "Cloud backups: daily, last seven, restore in Settings",
+    "Deck links: send one to a friend and the deck opens in Spark without publishing to the catalog",
+    "Bot: word of the day (/word) and quiet hours for all messages",
+    "Courses rebuilt like a good textbook: each language starts with the alphabet and sounds (hiragana and katakana, Cyrillic, special spellings), then basic rules, and only then words",
+    "A new card is first shown with its answer (“Got it — test me”), then the input field fades in",
+    "Animated icons: XP, streak, goal, trophy, headphones and more",
+    "Home decks are split: yours on top, “Spark decks” and “From the community” in compact collapsible groups",
+    "The “Say it” button is optional now: turn it on in Settings",
+    "Level themes: the first unlock is the clearly different “Dawn”",
+    "Deck badge: a big flag with a circle next to it holding a symbol or your own photo, ring colour of your choice",
+    "The catalog is protected from junk decks: checks before publishing, limits and reports; Spark decks and courses can't be published",
+    "Tag search is exact: chapter1 no longer finds chapter10",
+    "Stronger protection of the app and data (content security policy, server-side permissions and quotas)"
+   ]
+  },
+  {
    "version": "0.16",
    "date": "01.11.2026",
    "ru": [
