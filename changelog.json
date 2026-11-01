@@ -1,6 +1,16 @@
 {
  "releases": [
   {
+   "version": "0.19.1",
+   "date": "01.11.2026",
+   "ru": [
+    "Вернулась аватарка Telegram: политика безопасности блокировала адреса, с которых Telegram отдаёт фото; если фото не загрузилось, показывается буква"
+   ],
+   "en": [
+    "The Telegram avatar is back: the security policy blocked the hosts Telegram serves photos from; if the photo fails to load, a letter is shown"
+   ]
+  },
+  {
    "version": "0.19",
    "date": "01.11.2026",
    "ru": [
