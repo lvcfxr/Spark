@@ -1,3 +1,4 @@
+import { humanUrl } from "./human";
 /**
  * Медиа карточек (картинки, звук) в IndexedDB: в localStorage они не поместятся.
  * Ключ — SHA-256 содержимого (одинаковые файлы хранятся один раз). В тексте карточки:
@@ -81,6 +82,18 @@ export async function allMediaKeys(): Promise<string[]> {
   } catch { return []; }
 }
 
+let wordOf: (key: string) => [string, string] | null = () => null;
+let humanOn: () => boolean = () => false;
+export const setHuman = (w: (key: string) => [string, string] | null, on: () => boolean) => { wordOf = w; humanOn = on; };
+/** Для проигрывания: сначала живая запись носителя (если слово из встроенной озвучки и она нашлась за ~3 с), иначе обычный звук. */
+export async function playableUrl(key: string): Promise<string | null> {
+  const w = humanOn() ? wordOf(key) : null;
+  if (w) {
+    const h = await Promise.race([humanUrl(w[0], w[1]), new Promise<null>((r) => setTimeout(() => r(null), 1500))]);
+    if (h) return h;
+  }
+  return mediaUrl(key);
+}
 export async function mediaUrl(key: string): Promise<string | null> {
   const hit = urls.get(key);
   if (hit) return hit;
