@@ -1,6 +1,16 @@
 {
  "releases": [
   {
+   "version": "0.19.2",
+   "date": "01.11.2026",
+   "ru": [
+    "Обновление больше не «залипает»: приложение само открывает свежую копию в обход кэша Telegram, кнопка «Обновить» тоже; ссылки из бота всегда ведут на свежую версию"
+   ],
+   "en": [
+    "Updates no longer get stuck: the app opens a fresh copy bypassing Telegram's cache, the “Update” button too; links from the bot always lead to the fresh version"
+   ]
+  },
+  {
    "version": "0.19.1",
    "date": "01.11.2026",
    "ru": [
