@@ -9,6 +9,8 @@ on:
     branches: [main]
     paths: [changelog.json, version.json]
   workflow_dispatch:
+permissions:
+  contents: read
 jobs:
   notify:
     runs-on: ubuntu-latest

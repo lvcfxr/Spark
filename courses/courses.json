@@ -1,5 +1,5 @@
 {
- "version": 1,
+ "version": 2,
  "courses": [
   {
    "id": "es",
@@ -12,21 +12,45 @@
    "cefr": "A1",
    "exam": "A1",
    "title": {
-    "ru": "Испанский: первые шаги",
-    "en": "Spanish: first steps"
+    "ru": "Испанский с нуля",
+    "en": "Spanish from scratch"
    },
    "level": {
     "ru": "Начинающий",
     "en": "Beginner"
    },
    "description": {
-    "ru": "80 самых нужных слов и фраз в 8 уровнях: приветствия, семья, числа, еда, город, глаголы, описания и поездки. У каждого слова — произношение, озвучка и живой пример с переводом. Уровни открываются по очереди.",
-    "en": "The 80 most useful words and phrases in 8 levels: greetings, family, numbers, food, town, verbs, describing and travel. Every word has pronunciation, audio and a real example with translation. Levels unlock one by one."
+    "ru": "Начинаем как в хорошем учебнике: сначала алфавит и звуки, затем базовые правила, и только потом 80 самых нужных слов и фраз в 8 уровнях. У слов есть произношение, звук и пример с переводом. Уровни открываются по очереди.",
+    "en": "Built like a good textbook: first the alphabet and sounds, then basic rules, and only then the 80 most useful words and phrases in 8 levels. Words come with pronunciation, audio and an example. Levels unlock one by one."
    },
    "author": "Spark",
-   "words": 80,
-   "minutes": 120,
+   "words": 125,
+   "minutes": 190,
    "units": [
+    {
+     "id": "alpha",
+     "title": {
+      "ru": "Алфавит и произношение",
+      "en": "Alphabet and pronunciation"
+     },
+     "count": 27
+    },
+    {
+     "id": "sounds",
+     "title": {
+      "ru": "Особые сочетания",
+      "en": "Special sound combinations"
+     },
+     "count": 8
+    },
+    {
+     "id": "rules",
+     "title": {
+      "ru": "Основные правила",
+      "en": "Basic rules"
+     },
+     "count": 10
+    },
     {
      "id": "greet",
      "title": {
@@ -92,7 +116,7 @@
      "count": 10
     }
    ],
-   "version": 1,
+   "version": 2,
    "file": "es.json",
    "audio": true
   },
@@ -106,21 +130,45 @@
    "cefr": "A1",
    "exam": "A1",
    "title": {
-    "ru": "Английский: первые шаги",
-    "en": "English: first steps"
+    "ru": "Английский с нуля",
+    "en": "English from scratch"
    },
    "level": {
     "ru": "Начинающий",
     "en": "Beginner"
    },
    "description": {
-    "ru": "80 самых нужных слов и фраз в 8 уровнях: приветствия, семья, числа, еда, город, глаголы, описания и поездки. У каждого слова — произношение, озвучка и живой пример с переводом. Уровни открываются по очереди.",
-    "en": "The 80 most useful words and phrases in 8 levels: greetings, family, numbers, food, town, verbs, describing and travel. Every word has pronunciation, audio and a real example with translation. Levels unlock one by one."
+    "ru": "Начинаем как в хорошем учебнике: сначала алфавит и звуки, затем базовые правила, и только потом 80 самых нужных слов и фраз в 8 уровнях. У слов есть произношение, звук и пример с переводом. Уровни открываются по очереди.",
+    "en": "Built like a good textbook: first the alphabet and sounds, then basic rules, and only then the 80 most useful words and phrases in 8 levels. Words come with pronunciation, audio and an example. Levels unlock one by one."
    },
    "author": "Spark",
-   "words": 80,
-   "minutes": 120,
+   "words": 127,
+   "minutes": 190,
    "units": [
+    {
+     "id": "alpha",
+     "title": {
+      "ru": "Алфавит",
+      "en": "Alphabet"
+     },
+     "count": 26
+    },
+    {
+     "id": "sounds",
+     "title": {
+      "ru": "Звуки и написание",
+      "en": "Sounds and spelling"
+     },
+     "count": 12
+    },
+    {
+     "id": "rules",
+     "title": {
+      "ru": "Основные правила",
+      "en": "Basic rules"
+     },
+     "count": 9
+    },
     {
      "id": "greet",
      "title": {
@@ -186,7 +234,7 @@
      "count": 10
     }
    ],
-   "version": 1,
+   "version": 2,
    "file": "en.json",
    "audio": true
   },
@@ -201,21 +249,45 @@
    "cefr": "A1",
    "exam": "A1",
    "title": {
-    "ru": "Французский: первые шаги",
-    "en": "French: first steps"
+    "ru": "Французский с нуля",
+    "en": "French from scratch"
    },
    "level": {
     "ru": "Начинающий",
     "en": "Beginner"
    },
    "description": {
-    "ru": "80 самых нужных слов и фраз в 8 уровнях: приветствия, семья, числа, еда, город, глаголы, описания и поездки. У каждого слова — произношение, озвучка и живой пример с переводом. Уровни открываются по очереди.",
-    "en": "The 80 most useful words and phrases in 8 levels: greetings, family, numbers, food, town, verbs, describing and travel. Every word has pronunciation, audio and a real example with translation. Levels unlock one by one."
+    "ru": "Начинаем как в хорошем учебнике: сначала алфавит и звуки, затем базовые правила, и только потом 80 самых нужных слов и фраз в 8 уровнях. У слов есть произношение, звук и пример с переводом. Уровни открываются по очереди.",
+    "en": "Built like a good textbook: first the alphabet and sounds, then basic rules, and only then the 80 most useful words and phrases in 8 levels. Words come with pronunciation, audio and an example. Levels unlock one by one."
    },
    "author": "Spark",
-   "words": 80,
-   "minutes": 120,
+   "words": 127,
+   "minutes": 190,
    "units": [
+    {
+     "id": "alpha",
+     "title": {
+      "ru": "Алфавит",
+      "en": "Alphabet"
+     },
+     "count": 26
+    },
+    {
+     "id": "sounds",
+     "title": {
+      "ru": "Звуки и написание",
+      "en": "Sounds and spelling"
+     },
+     "count": 12
+    },
+    {
+     "id": "rules",
+     "title": {
+      "ru": "Основные правила",
+      "en": "Basic rules"
+     },
+     "count": 9
+    },
     {
      "id": "greet",
      "title": {
@@ -281,7 +353,7 @@
      "count": 10
     }
    ],
-   "version": 1,
+   "version": 2,
    "file": "fr.json",
    "audio": true
   },
@@ -296,21 +368,45 @@
    "cefr": "A1",
    "exam": "A1",
    "title": {
-    "ru": "Немецкий: первые шаги",
-    "en": "German: first steps"
+    "ru": "Немецкий с нуля",
+    "en": "German from scratch"
    },
    "level": {
     "ru": "Начинающий",
     "en": "Beginner"
    },
    "description": {
-    "ru": "80 самых нужных слов и фраз в 8 уровнях: приветствия, семья, числа, еда, город, глаголы, описания и поездки. У каждого слова — произношение, озвучка и живой пример с переводом. Уровни открываются по очереди.",
-    "en": "The 80 most useful words and phrases in 8 levels: greetings, family, numbers, food, town, verbs, describing and travel. Every word has pronunciation, audio and a real example with translation. Levels unlock one by one."
+    "ru": "Начинаем как в хорошем учебнике: сначала алфавит и звуки, затем базовые правила, и только потом 80 самых нужных слов и фраз в 8 уровнях. У слов есть произношение, звук и пример с переводом. Уровни открываются по очереди.",
+    "en": "Built like a good textbook: first the alphabet and sounds, then basic rules, and only then the 80 most useful words and phrases in 8 levels. Words come with pronunciation, audio and an example. Levels unlock one by one."
    },
    "author": "Spark",
-   "words": 80,
-   "minutes": 120,
+   "words": 131,
+   "minutes": 195,
    "units": [
+    {
+     "id": "alpha",
+     "title": {
+      "ru": "Алфавит и умлауты",
+      "en": "Alphabet and umlauts"
+     },
+     "count": 30
+    },
+    {
+     "id": "sounds",
+     "title": {
+      "ru": "Звуки и написание",
+      "en": "Sounds and spelling"
+     },
+     "count": 12
+    },
+    {
+     "id": "rules",
+     "title": {
+      "ru": "Основные правила",
+      "en": "Basic rules"
+     },
+     "count": 9
+    },
     {
      "id": "greet",
      "title": {
@@ -376,7 +472,7 @@
      "count": 10
     }
    ],
-   "version": 1,
+   "version": 2,
    "file": "de.json",
    "audio": true
   },
@@ -391,21 +487,69 @@
    "cefr": "N5",
    "exam": "JLPT N5",
    "title": {
-    "ru": "Японский: первые шаги",
-    "en": "Japanese: first steps"
+    "ru": "Японский с нуля",
+    "en": "Japanese from scratch"
    },
    "level": {
     "ru": "Начинающий",
     "en": "Beginner"
    },
    "description": {
-    "ru": "80 самых нужных слов и фраз в 8 уровнях: приветствия, семья, числа, еда, город, глаголы, описания и поездки. У каждого слова — произношение, озвучка и живой пример с переводом. Уровни открываются по очереди.",
-    "en": "The 80 most useful words and phrases in 8 levels: greetings, family, numbers, food, town, verbs, describing and travel. Every word has pronunciation, audio and a real example with translation. Levels unlock one by one."
+    "ru": "Начинаем как в хорошем учебнике: сначала хирагана и катакана, затем базовые правила, и только потом 80 самых нужных слов и фраз в 8 уровнях. У слов есть произношение, звук и пример с переводом. Уровни открываются по очереди.",
+    "en": "Built like a good textbook: first hiragana and katakana, then basic rules, and only then the 80 most useful words and phrases in 8 levels. Words come with pronunciation, audio and an example. Levels unlock one by one."
    },
    "author": "Spark",
-   "words": 80,
-   "minutes": 120,
+   "words": 207,
+   "minutes": 310,
    "units": [
+    {
+     "id": "hira1",
+     "title": {
+      "ru": "Хирагана 1: あ か さ た な",
+      "en": "Hiragana 1: a ka sa ta na"
+     },
+     "count": 25
+    },
+    {
+     "id": "hira2",
+     "title": {
+      "ru": "Хирагана 2: は ま や ら わ ん",
+      "en": "Hiragana 2: ha ma ya ra wa n"
+     },
+     "count": 21
+    },
+    {
+     "id": "hira3",
+     "title": {
+      "ru": "Хирагана 3: が ざ だ ば ぱ",
+      "en": "Hiragana 3: voiced sounds"
+     },
+     "count": 23
+    },
+    {
+     "id": "kata1",
+     "title": {
+      "ru": "Катакана 1: ア カ サ タ ナ",
+      "en": "Katakana 1: a ka sa ta na"
+     },
+     "count": 25
+    },
+    {
+     "id": "kata2",
+     "title": {
+      "ru": "Катакана 2: ハ マ ヤ ラ ワ ン",
+      "en": "Katakana 2: ha ma ya ra wa n"
+     },
+     "count": 21
+    },
+    {
+     "id": "rules",
+     "title": {
+      "ru": "Основные правила",
+      "en": "Basic rules"
+     },
+     "count": 12
+    },
     {
      "id": "greet",
      "title": {
@@ -471,7 +615,7 @@
      "count": 10
     }
    ],
-   "version": 1,
+   "version": 2,
    "file": "ja.json",
    "audio": true
   },
@@ -485,21 +629,53 @@
    "cefr": "A1",
    "exam": "A1",
    "title": {
-    "ru": "Русский: первые шаги",
-    "en": "Russian: first steps"
+    "ru": "Русский с нуля",
+    "en": "Russian from scratch"
    },
    "level": {
     "ru": "Начинающий",
     "en": "Beginner"
    },
    "description": {
-    "ru": "80 самых нужных слов и фраз в 8 уровнях: приветствия, семья, числа, еда, город, глаголы, описания и поездки. У каждого слова — произношение, озвучка и живой пример с переводом. Уровни открываются по очереди.",
-    "en": "The 80 most useful words and phrases in 8 levels: greetings, family, numbers, food, town, verbs, describing and travel. Every word has pronunciation, audio and a real example with translation. Levels unlock one by one."
+    "ru": "Начинаем как в хорошем учебнике: сначала кириллица, затем базовые правила, и только потом 80 самых нужных слов и фраз в 8 уровнях. У слов есть произношение, звук и пример с переводом. Уровни открываются по очереди.",
+    "en": "Built like a good textbook: first the Cyrillic alphabet, then basic rules, and only then the 80 most useful words and phrases in 8 levels. Words come with pronunciation, audio and an example. Levels unlock one by one."
    },
    "author": "Spark",
-   "words": 80,
-   "minutes": 120,
+   "words": 122,
+   "minutes": 185,
    "units": [
+    {
+     "id": "cyr1",
+     "title": {
+      "ru": "Алфавит 1: А–Л",
+      "en": "Alphabet 1: А–Л"
+     },
+     "count": 13
+    },
+    {
+     "id": "cyr2",
+     "title": {
+      "ru": "Алфавит 2: М–Х",
+      "en": "Alphabet 2: М–Х"
+     },
+     "count": 10
+    },
+    {
+     "id": "cyr3",
+     "title": {
+      "ru": "Алфавит 3: Ц–Я",
+      "en": "Alphabet 3: Ц–Я"
+     },
+     "count": 10
+    },
+    {
+     "id": "rules",
+     "title": {
+      "ru": "Основные правила",
+      "en": "Basic rules"
+     },
+     "count": 9
+    },
     {
      "id": "greet",
      "title": {
@@ -565,7 +741,7 @@
      "count": 10
     }
    ],
-   "version": 1,
+   "version": 2,
    "file": "ru.json",
    "audio": true
   }
