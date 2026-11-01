@@ -1072,6 +1072,17 @@ svg.i { transform-box: fill-box; transform-origin: center; }
 
 @media (max-width: 760px) { .col > .head h1.one-line { font-size: 18px; } .col > .head { gap: 2px; } }
 [hidden] { display: none !important; }
+
+/* окно уровня: читаемая шапка (число не перекрывается иконкой, подпись контрастная) */
+.lvl-sheet .lv-head { gap: 16px; padding: 2px 0 4px; }
+.lvl-sheet .lv-badge { width: 64px; height: 64px; border-radius: 20px; box-shadow: 0 6px 18px color-mix(in srgb, var(--accent) 40%, transparent), inset 0 1px 0 #ffffff40; }
+.lvl-sheet .lv-badge b { font-size: 28px; color: #fff; text-shadow: 0 2px 6px #0006; }
+.lvl-sheet .lv-badge svg.i { top: -7px; right: -7px; left: auto; width: 22px; height: 22px; opacity: 1; color: #fcd34d; background: var(--card, #fff); border-radius: 50%; padding: 3px; box-shadow: 0 1px 4px #0004; animation: none !important; filter: none; stroke-width: 2; }
+.lvl-sheet .lv-head h2 { font-size: 24px; line-height: 1.15; color: var(--text); }
+.lvl-sheet .lv-title { display: inline-block; margin-top: 6px; padding: 3px 12px; border-radius: 999px; font-size: 13.5px; font-weight: 700; color: color-mix(in srgb, var(--accent) 82%, #000); background: color-mix(in srgb, var(--accent) 14%, transparent); }
+html[data-dark="1"] .lvl-sheet .lv-title { color: color-mix(in srgb, var(--accent) 35%, #fff); background: color-mix(in srgb, var(--accent) 28%, transparent); }
+.lvl-sheet .lv-bar { height: 12px; background: color-mix(in srgb, var(--text) 10%, transparent); margin: 12px 0 8px; } .lvl-sheet .lv-bar i { background: linear-gradient(90deg, var(--accent), color-mix(in srgb, var(--accent) 50%, #fbbf24)); }
+.lvl-sheet .lv-need { display: flex; flex-wrap: wrap; gap: 2px 8px; align-items: baseline; } .lvl-sheet .lv-need b { font-size: 16px; }
 </style>
 </head>
 <body>
