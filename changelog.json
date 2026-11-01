@@ -1,6 +1,24 @@
 {
  "releases": [
   {
+   "version": "0.19",
+   "date": "01.11.2026",
+   "ru": [
+    "Анимация «серия продлена» после занятия: кольцо до следующей награды, созвездие, неделя кружками, подсказка",
+    "Статистика стала проще: сегодня, серия, прогресс за неделю или месяц со сравнением, коллекция",
+    "Окно уровня переделано: кольцо опыта по центру, три вкладки (награды, серия дней, оформление)",
+    "Кружок на значке колоды теперь точно на углу флага",
+    "Проверка 18+ у картинок усилена: смотрит изображение с нескольких сторон и считает долю кожи"
+   ],
+   "en": [
+    "“Streak extended” animation after a session: ring to the next reward, constellation, week circles, a hint",
+    "Statistics are simpler: today, streak, week or month progress with comparison, collection",
+    "The level window was redone: XP ring in the centre, three tabs (rewards, day streak, look)",
+    "The circle on a deck badge now sits exactly on the flag's corner",
+    "The 18+ image check is stricter: it looks at the image from several angles and measures the skin share"
+   ]
+  },
+  {
    "version": "0.18",
    "date": "01.11.2026",
    "ru": [
