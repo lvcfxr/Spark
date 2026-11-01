@@ -130,6 +130,8 @@ const plain = (s: string) => stripMedia(s, t("[фото]"), t("[звук]"), t("
 type Kind = "basic" | "rev" | "cloze";
 interface Draft { front: string; hint: string; back: string; extra: string; tags: string }
 interface Review {
+  /** карточки для повторения сверх нормы (кнопка «Повторить»): показываются по очереди, когда обычные закончились */
+  queue?: string[];
   deckId: string; cardId: string | null; show: boolean; typed: string | null; ok: boolean | null; done: number;
   t0: number; paused: number; baseline: number; dur: number;
   pending: { rating: Rating; speed: Speed; dur: number } | null; locking: boolean;
@@ -223,9 +225,9 @@ function applyTheme() {
   root.dataset.dark = dark ? "1" : "0";
   // оформление: акцент и шапка главной всегда одного цвета
   const th = THEMES.find((x) => x.id === s.heroTheme && x.accent && x.level <= xp().level);
-  const accent = th ? th.accent : s.accent;
+  const accent = th ? th.accent : "#7c3aed";  // по умолчанию фиолетовый; оформление за уровень меняет цвет всего приложения
   root.style.setProperty("--accent", accent);
-  root.style.setProperty("--hero-bg-custom", `linear-gradient(165deg, ${s.accent}, color-mix(in srgb, ${s.accent} 50%, #000))`);
+  root.style.setProperty("--hero-bg-custom", `linear-gradient(165deg, ${accent}, color-mix(in srgb, ${accent} 50%, #000))`);
   root.style.setProperty("--hero-bg", th ? th.css : `radial-gradient(120% 80% at 50% 0%, color-mix(in srgb, ${accent} 55%, #fff) 0%, transparent 60%), linear-gradient(165deg, ${accent} 0%, color-mix(in srgb, ${accent} 62%, #000) 50%, color-mix(in srgb, ${accent} 22%, #05030a) 100%)`);
   paintTelegramChrome(getComputedStyle(root).getPropertyValue("--bg").trim() || (dark ? "#0e0e10" : "#f4f4f7"));
 }
@@ -387,13 +389,12 @@ const TOOLBAR = (cloze: boolean) => `<div class="tb">
   <button class="tbb" data-a="fmt" data-k="b" title="${t("Жирный")} (Ctrl+B)"><b>B</b></button>
   <button class="tbb" data-a="fmt" data-k="i" title="${t("Курсив")} (Ctrl+I)"><i>I</i></button>
   <button class="tbb" data-a="fmt" data-k="hl" title="${t("Выделение")}">▮</button>
-  <button class="tbb" data-a="fmt" data-k="code" title="${t("Код")}">&lt;/&gt;</button>
+  <button class="tbb" data-a="fmt" data-k="sub" title="${t("Мелкий подзаголовок: строка начинается с «# »")}">H</button>
+  <button class="tbb" data-a="fmt" data-k="quote" title="${t("Вставка: строка начинается с «> »")}">❝</button>
   <span class="sep"></span>
-  <button class="tbb wide" data-a="fmt" data-k="sub" title="${t("Мелкий подзаголовок: строка начинается с «# »")}">${t("Подзаголовок")}</button>
-  <button class="tbb wide" data-a="fmt" data-k="quote" title="${t("Вставка: строка начинается с «> »")}">${t("Вставка")}</button>
-  <button class="tbb wide" data-a="fmt" data-k="img" title="${t("Добавить картинку")}">${ic("image")} ${t("Картинка")}</button>
-  <button class="tbb wide" data-a="fmt" data-k="video" title="${t("Короткое видео (до {s} с)", { s: LIMITS.videoSeconds })}">${ic("video")} ${t("Видео")}</button>
-  <button class="tbb wide" data-a="fmt" data-k="audio" title="${t("Записать произношение или выбрать аудиофайл")}">${ic("mic")} ${t("Звук")}</button>
+  <button class="tbb" data-a="fmt" data-k="img" title="${t("Добавить картинку")}">${ic("image")}</button>
+  <button class="tbb" data-a="fmt" data-k="video" title="${t("Короткое видео (до {s} с)", { s: LIMITS.videoSeconds })}">${ic("video")}</button>
+  <button class="tbb" data-a="fmt" data-k="audio" title="${t("Записать произношение или выбрать аудиофайл")}">${ic("mic")}</button>
   ${cloze ? `<button class="tbb wide" data-a="fmt" data-k="cloze" title="${t("Пропуск")} (Ctrl+Shift+C)">[…] ${t("Пропуск")}</button>` : ""}</div>`;
 
 function readDraft() {
@@ -442,19 +443,20 @@ function renderEditor() {
   host.innerHTML = `<div class="editor"><div class="m-only m-head"><button class="btn sec" data-a="m-back">${ic("back")} ${t("Карточки")}</button></div>${kinds}
     <label>${t("Колода")}</label><select id="f-deck">${opts}</select>
     ${TOOLBAR(kind === "cloze")}
-    <label>${frontLabel}</label><textarea id="f-front" class="fld" placeholder="${esc(frontPh)}">${esc(v.front ?? "")}</textarea>
+    <label>${frontLabel}</label><textarea id="f-front" class="fld" rows="2" placeholder="${esc(frontPh)}">${esc(v.front ?? "")}</textarea>
+    ${kind === "cloze" ? "" : `<label>${t("Обратная сторона")}</label><textarea id="f-back" class="fld" rows="2" placeholder="${t("Ответ или перевод")}">${esc(v.back ?? "")}</textarea>`}
+    <div id="atts-box">${card ? attachmentsHtml(card) : ""}</div>
+    <details class="more-f" ${v.hint || v.extra || v.tags || v.typed || card?.suspended ? "open" : ""}><summary>${t("Дополнительно")} <span class="opt">${t("подсказка, пояснение, теги")}</span></summary>
     <label>${t("Подсказка")} <span class="opt">${t("мелким под лицевой стороной")}</span></label><input type="text" id="f-hint" class="fld" placeholder="${t("напр. транскрипция, часть речи")}" value="${esc(v.hint ?? "")}">
-    ${kind === "cloze" ? "" : `<label>${t("Обратная сторона")}</label><textarea id="f-back" class="fld" placeholder="${t("Ответ или перевод")}">${esc(v.back ?? "")}</textarea>`}
     <label>${t("Пояснение")} <span class="opt">${t("вставкой под ответом: пример, заметка")}</span></label><textarea id="f-extra" class="fld short" placeholder="${esc(t("# Пример") + "\n> " + t("Hablo español."))}">${esc(v.extra ?? "")}</textarea>
     <label>${t("Теги")}</label><input type="text" id="f-tags" class="fld" placeholder="${t("через пробел: глаголы B1")}" value="${esc(v.tags ?? "")}">
-    <div id="atts-box">${card ? attachmentsHtml(card) : ""}</div>
     <div class="group sw-group">${switchRow("f-typed", !!v.typed, t("Ввод ответа с клавиатуры"), t("при повторении нужно набрать ответ"))}
     ${card ? switchRow("f-susp", card.suspended, t("Приостановить карточку"), t("не показывать при повторении")) : ""}</div>
+    <p class="hint" style="margin-left:0">${t("Разметка")}: <code># ${t("подзаголовок")}</code>, <code>&gt; ${t("вставка")}</code>, <code>**${t("жирный")}**</code>, <code>*${t("курсив")}*</code>, <code>==${t("выделение")}==</code>.</p></details>
     <div class="actions">${card
       ? `<button class="btn danger" data-a="card-del">${t("Удалить")}</button>${card.kind === "basic" && !card.group ? `<button class="btn sec" data-a="card-swap" title="${t("Лицевая ⇄ обратная")}">⇄ ${t("Поменять")}</button><button class="btn sec" data-a="card-mkrev" title="${t("Создать связанную обратную карточку")}">＋ ${t("Обратная")}</button>` : ""}<button class="btn sec" data-a="card-new">${t("Новая")}</button><span class="muted autosave">${t("Сохраняется автоматически")}</span>`
       : `<button class="btn" data-a="card-add">${t("Добавить")}</button><span class="muted d-only"><kbd>Ctrl</kbd>+<kbd>Enter</kbd> — ${t("добавить и продолжить")}</span>`}</div>
     <div class="preview-wrap" id="prev">${previewHtml(card ?? null)}</div>${info}
-    <p class="hint" style="margin-left:0">${t("Разметка")}: <code># ${t("подзаголовок")}</code>, <code>&gt; ${t("вставка")}</code>, <code>**${t("жирный")}**</code>, <code>*${t("курсив")}*</code>, <code>==${t("выделение")}==</code>.</p>
   </div>`;
   media(host);
 }
@@ -758,21 +760,52 @@ function toggleTyped() {
   if (card && !r.show) { r.t0 = Date.now(); r.paused = 0; }
   renderReview();
 }
-/** «Учить ещё»: +10 / +20 / +30 новых карточек сверх дневного лимита. */
+/** «Продолжить»: новые слова сверх нормы (+10/+20/+30) и повторение уже знакомых карточек (сегодняшних или ближайших по сроку). */
 function spareNew(deckId: string): Map<string, number> {
   const cards = allCards().filter((c) => (deckId === "all" || c.deckId === deckId) && !c.suspended);
   const out = new Map<string, number>();
   for (const [id, c] of scan(Date.now(), cards, allDecks())) if ((c.spare ?? 0) > 0) out.set(id, c.spare!);
   return out;
 }
+/** Карточки для досрочного повторения: «today» — те, что вы уже отвечали сегодня; «soon» — ближайшие по сроку (до 20). */
+function extraReviewIds(deckId: string, mode: "today" | "soon"): string[] {
+  const now = Date.now(), start = dayStart(now);
+  const cards = allCards().filter((c) => (deckId === "all" || c.deckId === deckId) && !c.suspended && store.stateOf(c.id).phase !== "new");
+  if (mode === "today") {
+    const seen = new Set<string>();
+    for (const r of store.reviews) if (r.ts >= start) seen.add(r.cardId);
+    return cards.filter((c) => seen.has(c.id)).map((c) => c.id);
+  }
+  return cards.filter((c) => store.stateOf(c.id).due > now).sort((a, b) => store.stateOf(a.id).due - store.stateOf(b.id).due).slice(0, 20).map((c) => c.id);
+}
+function takeQueued(r: Review): string | null {
+  while (r.queue?.length) {
+    const id = r.queue.shift()!;
+    if (allCards().some((c) => c.id === id && !c.suspended)) return id;
+  }
+  return null;
+}
 function moreHtml(deckId: string): string {
   const spare = [...spareNew(deckId).values()].reduce((a, b) => a + b, 0);
-  if (!spare) return "";
+  const today = extraReviewIds(deckId, "today").length, soon = extraReviewIds(deckId, "soon").length;
+  if (!spare && !today && !soon) return "";
   const opts = [10, 20, 30].filter((n) => n < spare);
-  const btns = [...opts.map((n) => `<button class="btn sec" data-a="rv-more" data-n="${n}">+${n}</button>`),
+  const nb = [...opts.map((n) => `<button class="btn sec" data-a="rv-more" data-n="${n}">+${n}</button>`),
     ...(opts.length < 3 ? [`<button class="btn sec" data-a="rv-more" data-n="${spare}">${opts.length ? t("все {n}", { n: spare }) : "+" + spare}</button>`] : [])].join("");
-  return `<div class="rv-more"><div class="rv-more-t">${ic("plus")} ${t("Учить ещё")}</div>
-    <p class="muted">${t("Новых карточек осталось: {n}. Сколько добавить на сегодня?", { n: spare })}</p><div class="rv-more-b">${btns}</div></div>`;
+  const rb = (today ? `<button class="btn sec" data-a="rv-rep" data-m="today">${t("Сегодняшние")} · ${today}</button>` : "") + (soon ? `<button class="btn sec" data-a="rv-rep" data-m="soon">${t("Ближайшие")} · ${soon}</button>` : "");
+  return `<div class="rv-more"><div class="rv-more-t">${t("Продолжить занятие")}</div>
+    ${spare ? `<div class="rv-row"><span class="rv-lbl">${ic("plus")}<b>${t("Новые слова")}</b><i>${t("ещё {n}", { n: spare })}</i></span><span class="rv-btns">${nb}</span></div>` : ""}
+    ${today || soon ? `<div class="rv-row"><span class="rv-lbl">${ic("sync")}<b>${t("Повторить")}</b><i>${t("то, что уже знакомо")}</i></span><span class="rv-btns">${rb}</span></div>` : ""}</div>`;
+}
+function repeatMore(mode: "today" | "soon") {
+  const r = S.review;
+  if (!r) return;
+  const ids = extraReviewIds(r.deckId, mode);
+  if (!ids.length) return;
+  for (let i = ids.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [ids[i], ids[j]] = [ids[j]!, ids[i]!]; }
+  r.queue = ids;
+  haptic("success");
+  showNext();
 }
 function learnMore(n: number) {
   const r = S.review;
@@ -794,7 +827,7 @@ function startReview(deckId: string, unit?: { tag: string; title: string }) {
 }
 function showNext() {
   const r = S.review!;
-  r.cardId = pickNext(r.deckId, Date.now(), r.unit, r.cardId);
+  r.cardId = pickNext(r.deckId, Date.now(), r.unit, r.cardId) ?? takeQueued(r);
   Object.assign(r, { show: false, typed: null, ok: null, pending: null, locking: false, t0: Date.now(), paused: 0, dur: 0 });
   if (r.done > 0 && r.done % 10 === 0) r.baseline = computeBaseline();
   hiddenAt = document.hidden ? Date.now() : null;
@@ -1312,9 +1345,8 @@ function myCoursesHtml(): string {
   const L = uiL();
   const head = `<div class="sec-h"><span>${t("Мои курсы")}</span><button class="link" data-a="courses-open">${t("Все курсы")} ${ic("chevron")}</button></div>`;
   if (!mine.length) {
-    const flags = visibleCourses(all).map((c) => `<span class="flag">${emo(c.flag)}</span>`).join("");
-    return head + `<button class="mc promo" data-a="courses-open"><span class="mc-flags">${flags}</span><span class="mc-t">${t("Курсы по уровням")}</span>
-      <span class="mc-d">${t("Слова, произношение, озвучка и примеры — шаг за шагом")}</span><span class="mc-go">${t("Выбрать курс")} ${ic("chevron")}</span></button>`;
+    const flags = visibleCourses(all).slice(0, 5).map((c) => `<span class="flag">${emo(c.flag)}</span>`).join("");
+    return `<button class="mc promo slim" data-a="courses-open"><span class="mc-flags">${flags}</span><span class="mc-t">${t("Курсы по уровням")}</span><span class="mc-go">${ic("chevron")}</span></button>`;
   }
   return head + mine.map((c) => { const st = courseStats(c); return `<button class="mc" data-a="crs-home" data-id="${c.id}">
     <span class="mc-top"><span class="flag">${emo(c.flag)}</span><span class="lvl-badge">${esc(c.level[L])}</span></span><span class="mc-t">${esc(c.title[L])}</span>
@@ -1885,6 +1917,7 @@ document.addEventListener("click", (e) => {
     case "study": startReview(S.deckId); break;
     case "rv-close": closeReview(); break;
     case "rv-more": learnMore(Number(el.dataset.n) || 0); break;
+    case "rv-rep": repeatMore(el.dataset.m === "soon" ? "soon" : "today"); break;
     case "rv-typed": toggleTyped(); break;
     case "rv-attach": if (S.review?.cardId) { S.attach = { cardId: S.review.cardId, side: S.review.show ? "a" : "q" }; S.modal = { type: "attach" }; renderModal(); updateChrome(); } break;
     case "att-side": if (S.attach) { S.attach.side = el.dataset.k as "q" | "a"; renderModal(); } break;
