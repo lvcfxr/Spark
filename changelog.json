@@ -21,7 +21,8 @@
     "Каталог защищён от мусорных колод: проверка перед публикацией, лимиты и жалобы; Spark-колоды и курсы публиковать нельзя",
     "Поиск по тегам точный: chapter1 больше не находит chapter10",
     "Усилена защита приложения и данных (политика безопасности браузера, права и квоты на сервере)",
-    "Данные теперь хранятся в IndexedDB (там гораздо больше места): исправлена ошибка «Не удалось сохранить данные» в Telegram, старые данные переносятся сами"
+    "Данные теперь хранятся в IndexedDB (там гораздо больше места): исправлена ошибка «Не удалось сохранить данные» в Telegram, старые данные переносятся сами",
+    "Колоды, созданные вами или импортированные, можно редактировать: название, значок, параметры. Кнопка настроек — в шапке колоды"
    ],
    "en": [
     "Daily goal with progress on the home screen (10, 20, 40, 80 cards or off in Settings)",
@@ -41,7 +42,8 @@
     "The catalog is protected from junk decks: checks before publishing, limits and reports; Spark decks and courses can't be published",
     "Tag search is exact: chapter1 no longer finds chapter10",
     "Stronger protection of the app and data (content security policy, server-side permissions and quotas)",
-    "Data now lives in IndexedDB (far more room): fixes the “Couldn't save your data” error in Telegram; old data moves over automatically"
+    "Data now lives in IndexedDB (far more room): fixes the “Couldn't save your data” error in Telegram; old data moves over automatically",
+    "Decks you created or imported can be edited: name, badge, settings. The settings button is in the deck header"
    ]
   },
   {
