@@ -1,6 +1,26 @@
 {
  "releases": [
   {
+   "version": "0.16",
+   "date": "01.11.2026",
+   "ru": [
+    "Живые голоса носителей языка для слов (Wikimedia Commons), включаются в настройках",
+    "После нормы — блок «Продолжить занятие»: новые слова и повторение сегодняшних или ближайших карточек",
+    "Награды: за уровни — одна строка на уровень, за серию дней — отдельная вкладка с бонусом к опыту",
+    "Новые оформления за уровни меняют цвет всего приложения, основной цвет — фиолетовый",
+    "Главная и редактор карточки стали компактнее: дополнительные поля под «Дополнительно», курсы — одной строкой",
+    "Исправлена нижняя панель"
+   ],
+   "en": [
+    "Native-speaker voices for words (Wikimedia Commons), switch in Settings",
+    "After your daily goal: a “Keep going” block — new words, or review today's or next-due cards",
+    "Rewards: one row per level; a separate tab for day-streak rewards with an XP bonus",
+    "New level themes recolour the whole app; the default colour is purple",
+    "Home and the card editor are more compact: extra fields under “More options”, courses in one row",
+    "Fixed the bottom bar"
+   ]
+  },
+  {
    "version": "0.15",
    "date": "01.11.2026",
    "ru": [

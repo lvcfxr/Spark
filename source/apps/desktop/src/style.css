@@ -1,7 +1,7 @@
 :root {
   --bg: #f4f4f7; --panel: #ffffffcc; --panel-solid: #fff; --text: #111; --muted: #8a8a8e; --line: #0000001a;
   --hover: #0000000a; --card: #fff; --shadow: 0 1px 2px #0000000d, 0 8px 24px #00000012;
-  --accent: #3390ec; --good: #34c759; --bad: #ff3b30; --warn: #ff9500; --r: 14px;
+  --accent: #7c3aed; --good: #34c759; --bad: #ff3b30; --warn: #ff9500; --r: 14px;
   font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI Variable", "Segoe UI", system-ui, sans-serif;
 }
 :root[data-dark="1"] {
@@ -952,3 +952,23 @@ html[data-dark="0"] .dmark.dl12 { --rim: #38bdf8 !important; }
 .rw-t { display: flex; flex-direction: column; gap: 1px; } .rw-t .muted { font-size: 12px; }
 .rw-ic.dm { width: 30px; height: 30px; background: transparent !important; } .rw-ic.dm svg { width: 28px; height: 28px; }
 .lv-tabs { width: 100%; margin: 14px 0 8px; display: flex; } .lv-tabs button { flex: 1; }
+
+.rv-more { text-align: left; } .rv-more-t { font-weight: 700; margin-bottom: 8px; text-align: center; }
+.rv-row { display: flex; flex-direction: column; gap: 6px; padding: 10px 12px; border-radius: 14px; background: var(--hover); margin-bottom: 8px; }
+.rv-lbl { display: flex; align-items: center; gap: 8px; } .rv-lbl svg.i { width: 18px; height: 18px; color: var(--accent); } .rv-lbl i { font-style: normal; color: var(--muted); font-size: 13px; margin-left: auto; }
+.rv-btns { display: flex; gap: 8px; flex-wrap: wrap; } .rv-btns .btn { flex: 1; min-width: 0; padding-left: 8px; padding-right: 8px; }
+
+.tb { flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; } .tb::-webkit-scrollbar { display: none; } .tbb { flex: none; }
+.more-f { margin-top: 12px; border-top: 1px solid var(--line); padding-top: 10px; } .more-f summary { cursor: pointer; font-weight: 600; font-size: 14px; list-style: none; display: flex; gap: 8px; align-items: center; color: var(--accent); }
+.more-f summary::-webkit-details-marker { display: none; } .more-f summary::before { content: "＋"; font-weight: 700; } .more-f[open] summary::before { content: "−"; }
+.more-f summary .opt { color: var(--muted); font-weight: 400; font-size: 12px; }
+.fld { min-height: 0; }
+
+/* компактная главная */
+.hs-n { font-size: 46px !important; letter-spacing: -1.5px; } .dmark.xl { width: 46px !important; height: 46px !important; }
+.hero-streak { margin-top: 6px; gap: 10px; } .hs-cap { margin-top: 2px; font-size: 14px; } .hs-sub { font-size: 12px; min-height: 0; }
+.hero-tiles { margin-top: 8px; gap: 6px; } .ht { flex-direction: row; align-items: baseline; justify-content: center; flex-wrap: wrap; gap: 6px; padding: 8px 6px; border-radius: 14px; }
+.ht b { font-size: 17px; } .ht b svg.i { width: 15px; height: 15px; } .ht span { font-size: 11px; }
+.mc.slim { flex-direction: row; align-items: center; gap: 10px; padding: 10px 14px; min-height: 0; } .mc.slim .mc-t { flex: 1; font-size: 15px; text-align: left; } .mc.slim .mc-flags .fl { width: 22px; height: 15px; }
+.mc.slim .mc-go { margin-left: auto; }
+.search { max-width: 100%; box-sizing: border-box; }

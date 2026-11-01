@@ -1,7 +1,7 @@
 {
   "name": "spark",
-  "version": "0.15.0",
-  "description": "Spark — карточки с интервальными повторениями",
+  "version": "0.16.0",
+  "description": "Spark \u2014 \u043a\u0430\u0440\u0442\u043e\u0447\u043a\u0438 \u0441 \u0438\u043d\u0442\u0435\u0440\u0432\u0430\u043b\u044c\u043d\u044b\u043c\u0438 \u043f\u043e\u0432\u0442\u043e\u0440\u0435\u043d\u0438\u044f\u043c\u0438",
   "main": "electron/main.cjs",
   "scripts": {
     "build": "node build.mjs",
