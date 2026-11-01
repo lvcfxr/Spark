@@ -1,6 +1,24 @@
 {
  "releases": [
   {
+   "version": "0.18",
+   "date": "01.11.2026",
+   "ru": [
+    "Данные теперь хранятся в IndexedDB (там гораздо больше места): исправлена ошибка «Не удалось сохранить данные» в Telegram, старые данные переносятся сами",
+    "Колоды, созданные вами или импортированные, можно редактировать: название, значок, параметры. Кнопка настроек — в шапке колоды",
+    "Окно уровня переверстано: число уровня, звание и полоска опыта читаются в светлой и тёмной темах",
+    "Анимация серии стала компактной и показывается по центру под шапкой: карточку и кнопки не перекрывает",
+    "Поле ответа подсказывает системе язык ввода (русский, английский, японский…): на многих телефонах клавиатура переключается сама"
+   ],
+   "en": [
+    "Data now lives in IndexedDB (far more room): fixes the “Couldn't save your data” error in Telegram; old data moves over automatically",
+    "Decks you created or imported can be edited: name, badge, settings. The settings button is in the deck header",
+    "The level window was redesigned: the level number, title and XP bar are readable in light and dark themes",
+    "The streak animation is compact and shown top-centre under the header: it never covers the card or buttons",
+    "The answer field hints the input language (Russian, English, Japanese…): on many phones the keyboard switches by itself"
+   ]
+  },
+  {
    "version": "0.17",
    "date": "01.11.2026",
    "ru": [
@@ -20,12 +38,7 @@
     "Значок колоды: флаг крупно, рядом кружок с символом или вашим фото, цвет обводки на выбор",
     "Каталог защищён от мусорных колод: проверка перед публикацией, лимиты и жалобы; Spark-колоды и курсы публиковать нельзя",
     "Поиск по тегам точный: chapter1 больше не находит chapter10",
-    "Усилена защита приложения и данных (политика безопасности браузера, права и квоты на сервере)",
-    "Данные теперь хранятся в IndexedDB (там гораздо больше места): исправлена ошибка «Не удалось сохранить данные» в Telegram, старые данные переносятся сами",
-    "Колоды, созданные вами или импортированные, можно редактировать: название, значок, параметры. Кнопка настроек — в шапке колоды",
-    "Окно уровня переверстано: число уровня, звание и полоска опыта читаются в светлой и тёмной темах",
-    "Анимация серии стала компактной и показывается по центру под шапкой: карточку и кнопки не перекрывает",
-    "Поле ответа подсказывает системе язык ввода (русский, английский, японский…): на многих телефонах клавиатура переключается сама"
+    "Усилена защита приложения и данных (политика безопасности браузера, права и квоты на сервере)"
    ],
    "en": [
     "Daily goal with progress on the home screen (10, 20, 40, 80 cards or off in Settings)",
@@ -44,12 +57,7 @@
     "Deck badge: a big flag with a circle next to it holding a symbol or your own photo, ring colour of your choice",
     "The catalog is protected from junk decks: checks before publishing, limits and reports; Spark decks and courses can't be published",
     "Tag search is exact: chapter1 no longer finds chapter10",
-    "Stronger protection of the app and data (content security policy, server-side permissions and quotas)",
-    "Data now lives in IndexedDB (far more room): fixes the “Couldn't save your data” error in Telegram; old data moves over automatically",
-    "Decks you created or imported can be edited: name, badge, settings. The settings button is in the deck header",
-    "The level window was redesigned: the level number, title and XP bar are readable in light and dark themes",
-    "The streak animation is compact and shown top-centre under the header: it never covers the card or buttons",
-    "The answer field hints the input language (Russian, English, Japanese…): on many phones the keyboard switches by itself"
+    "Stronger protection of the app and data (content security policy, server-side permissions and quotas)"
    ]
   },
   {
