@@ -15,7 +15,7 @@ const r = await build({ entryPoints: ["src/main.ts"], bundle: true, minify: true
 const js = r.outputFiles[0].text.replace(/<\/script/g, "<\\/script");
 const css = readFileSync("src/style.css", "utf8");
 const FAVICON = "data:image/svg+xml;base64," + Buffer.from(readFileSync("brand/icon.svg")).toString("base64");
-const html = readFileSync("index.template.html", "utf8").replace("FAVICON_DATA_URI", FAVICON).replace("/*CSS*/", () => css).replace("/*JS*/", () => js);
+const html = readFileSync("index.template.html", "utf8").replace("FAVICON_DATA_URI", FAVICON).replace("SPLASH_LOGO", () => LOGO.replace('width="72" height="72"', 'width="120" height="120"')).replace("/*CSS*/", () => css).replace("/*JS*/", () => js);
 mkdirSync("dist", { recursive: true });
 writeFileSync("dist/Spark.html", html);
 writeFileSync("dist/index.html", html);
@@ -33,12 +33,13 @@ mkdirSync("dist-web/decks", { recursive: true });
 for (const f of deckFiles) copyFileSync("catalog/" + f, "dist-web/decks/" + f);
 // список изменений (бот рассылает его при обновлении) и картинки бота
 copyFileSync("web/changelog.json", "dist-web/changelog.json");
+if (existsSync("web/nsfw.js")) copyFileSync("web/nsfw.js", "dist-web/nsfw.js");
 mkdirSync("dist-web/bot", { recursive: true });
 for (const f of readdirSync("web/bot")) copyFileSync("web/bot/" + f, "dist-web/bot/" + f);
 for (const dir of ["dist-web/courses", "dist-web-update/courses"]) { mkdirSync(dir, { recursive: true }); if (existsSync(CDIR)) for (const f of readdirSync(CDIR)) copyFileSync(CDIR + "/" + f, dir + "/" + f); }
 // Патч для уже развёрнутого Mini App: всё, кроме config.js (ваши адрес и ключ не затираются)
 mkdirSync("dist-web-update", { recursive: true });
-for (const f of ["index.html", "icon-512.png", "_headers", "version.json", "changelog.json"]) copyFileSync("dist-web/" + f, "dist-web-update/" + f);
+for (const f of ["index.html", "icon-512.png", "_headers", "version.json", "changelog.json", ...(existsSync("web/nsfw.js") ? ["nsfw.js"] : [])]) copyFileSync("dist-web/" + f, "dist-web-update/" + f);
 mkdirSync("dist-web-update/bot", { recursive: true });
 for (const f of readdirSync("web/bot")) copyFileSync("web/bot/" + f, "dist-web-update/bot/" + f);
 mkdirSync("dist-web-update/decks", { recursive: true });

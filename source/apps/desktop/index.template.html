@@ -10,6 +10,7 @@
 <style>/*CSS*/</style>
 </head>
 <body>
+<div id="splash" aria-hidden="true"><div class="sp-glow"></div><div class="sp-ring"></div><div class="sp-logo">SPLASH_LOGO</div><div class="sp-word">Spark</div><i class="sp-s s1"></i><i class="sp-s s2"></i><i class="sp-s s3"></i><i class="sp-s s4"></i></div>
 <div id="update-bar" class="update-bar" hidden></div>
 <div id="app">
   <section class="col">
@@ -19,7 +20,6 @@
       <button data-a="browser-open" data-i18n-title="Каталог"><span class="ic" data-ic="catalog"></span><span data-i18n="Каталог">Каталог</span></button>
       <button data-a="courses-open" data-i18n-title="Курсы"><span class="ic" data-ic="cap"></span><span data-i18n="Курсы">Курсы</span></button>
       <button data-a="stats" data-i18n-title="Статистика"><span class="ic" data-ic="stats"></span><span data-i18n="Статистика">Статистика</span></button>
-      <button data-a="tips-open" data-i18n-title="Советы"><span class="ic" data-ic="bulb"></span><span data-i18n="Советы">Советы</span></button>
       <button data-a="settings" data-i18n-title="Настройки"><span class="ic" data-ic="settings"></span><span data-i18n="Настройки">Настройки</span></button>
     </nav>
   </section>
@@ -36,7 +36,7 @@
 <div id="browser"></div><div id="tips"></div><div id="courses"></div><div id="statspage"></div><div id="overlay"></div><div id="modal"></div>
 <div class="drop" id="drop" data-i18n="Отпустите файл, чтобы импортировать">Отпустите файл, чтобы импортировать</div>
 <input type="file" id="file" hidden accept=".apkg,.colpkg,.txt,.csv,.tsv,.json">
-<input type="file" id="img-file" hidden accept="image/*">
+<input type="file" id="img-file" hidden accept="image/*"><input type="file" id="icon-file" hidden accept="image/*">
 <input type="file" id="vid-file" hidden accept="video/*">
 <input type="file" id="aud-file" hidden accept="audio/*">
 <script src="config.js"></script>

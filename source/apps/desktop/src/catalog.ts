@@ -10,6 +10,8 @@ export interface CatalogDeck {
   media?: string; audio?: boolean;
   /** Для кого колода: на каком языке перевод и пояснения (ru / en). */
   natives?: string[];
+  /** Уровень: A1–C2 (CEFR), N5–N1 (JLPT) — для поиска и фильтра */
+  level?: string;
 }
 /** Звук колоды: все mp3 одним файлом; index — ключ медиа → [смещение, длина]. */
 export interface DeckMedia { file: string; type: string; index: Record<string, [number, number]>; base?: string }
@@ -112,11 +114,13 @@ type Row = Record<string, unknown>;
 const toDeck = (r: Row): CatalogDeck => ({
   id: String(r.id), source: "community", title: String(r.title), description: String(r.description ?? ""), emoji: String(r.emoji ?? "📘"),
   lang_front: String(r.lang_front ?? ""), lang_back: String(r.lang_back ?? ""), tags: (r.tags as string[]) ?? [], count: Number(r.card_count ?? 0),
-  version: Date.parse(String(r.updated_at ?? "")) || 0, author: String(r.author_name ?? ""), downloads: Number(r.downloads ?? 0), updated: String(r.updated_at ?? ""),
+  level: String(r.level ?? ""), version: Date.parse(String(r.updated_at ?? "")) || 0, author: String(r.author_name ?? ""), downloads: Number(r.downloads ?? 0), updated: String(r.updated_at ?? ""),
 });
 
 export async function loadCommunity(): Promise<CatalogDeck[]> {
-  const r = await rest(`shared_decks?select=${COLS}&is_public=eq.true&order=downloads.desc&limit=300`);
+  let r: Response;
+  try { r = await rest(`shared_decks?select=${COLS},level&is_public=eq.true&order=downloads.desc&limit=300`); }
+  catch { r = await rest(`shared_decks?select=${COLS}&is_public=eq.true&order=downloads.desc&limit=300`); }  // колонка level ещё не добавлена на сервере
   return ((await r.json()) as Row[]).map(toDeck);
 }
 export async function loadCommunityCards(id: string): Promise<DeckCard[]> {
@@ -135,13 +139,17 @@ export async function myPublished(): Promise<MyPublished[]> {
   return (await r.json()) as MyPublished[];
 }
 
-export interface PublishInput { local_deck_id: string; title: string; description: string; emoji: string; lang_front: string; lang_back: string; tags: string[]; author_name: string; cards: DeckCard[] }
+export interface PublishInput { local_deck_id: string; title: string; description: string; emoji: string; lang_front: string; lang_back: string; level?: string; tags: string[]; author_name: string; cards: DeckCard[] }
 export async function publishDeck(p: PublishInput): Promise<void> {
-  await rest("shared_decks?on_conflict=owner,local_deck_id", {
-    method: "POST", auth: true, headers: { Prefer: "resolution=merge-duplicates,return=minimal" },
-    json: { ...p, card_count: p.cards.length, is_public: true, updated_at: new Date().toISOString() },
-  });
+  const send = (body: unknown) => rest("shared_decks?on_conflict=owner,local_deck_id", { method: "POST", auth: true, headers: { Prefer: "resolution=merge-duplicates,return=minimal" }, json: body });
+  const body = { ...p, card_count: p.cards.length, is_public: true, updated_at: new Date().toISOString() };
+  try { await send(body); }
+  catch (e) { if (!p.level) throw e; const { level: _l, ...rest2 } = body; await send(rest2); }   // сервер без колонки level: публикуем без уровня
 }
+/** Уровни для фильтров и публикации. */
+export const LEVELS = ["A1", "A2", "B1", "B2", "C1", "C2", "N5", "N4", "N3", "N2", "N1"];
+export const LEVEL_NAMES: Record<string, [string, string]> = { A1: ["A1 · начальный", "A1 · beginner"], A2: ["A2 · элементарный", "A2 · elementary"], B1: ["B1 · средний", "B1 · intermediate"], B2: ["B2 · выше среднего", "B2 · upper-intermediate"], C1: ["C1 · продвинутый", "C1 · advanced"], C2: ["C2 · свободный", "C2 · proficient"],
+  N5: ["JLPT N5", "JLPT N5"], N4: ["JLPT N4", "JLPT N4"], N3: ["JLPT N3", "JLPT N3"], N2: ["JLPT N2", "JLPT N2"], N1: ["JLPT N1", "JLPT N1"] };
 export async function unpublishDeck(id: string): Promise<void> {
   await rest(`shared_decks?id=eq.${encodeURIComponent(id)}`, { method: "DELETE", auth: true });
 }
