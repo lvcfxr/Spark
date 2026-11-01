@@ -23,7 +23,9 @@
     "Усилена защита приложения и данных (политика безопасности браузера, права и квоты на сервере)",
     "Данные теперь хранятся в IndexedDB (там гораздо больше места): исправлена ошибка «Не удалось сохранить данные» в Telegram, старые данные переносятся сами",
     "Колоды, созданные вами или импортированные, можно редактировать: название, значок, параметры. Кнопка настроек — в шапке колоды",
-    "Окно уровня переверстано: число уровня, звание и полоска опыта читаются в светлой и тёмной темах"
+    "Окно уровня переверстано: число уровня, звание и полоска опыта читаются в светлой и тёмной темах",
+    "Анимация серии стала компактной и показывается по центру под шапкой: карточку и кнопки не перекрывает",
+    "Поле ответа подсказывает системе язык ввода (русский, английский, японский…): на многих телефонах клавиатура переключается сама"
    ],
    "en": [
     "Daily goal with progress on the home screen (10, 20, 40, 80 cards or off in Settings)",
@@ -45,7 +47,9 @@
     "Stronger protection of the app and data (content security policy, server-side permissions and quotas)",
     "Data now lives in IndexedDB (far more room): fixes the “Couldn't save your data” error in Telegram; old data moves over automatically",
     "Decks you created or imported can be edited: name, badge, settings. The settings button is in the deck header",
-    "The level window was redesigned: the level number, title and XP bar are readable in light and dark themes"
+    "The level window was redesigned: the level number, title and XP bar are readable in light and dark themes",
+    "The streak animation is compact and shown top-centre under the header: it never covers the card or buttons",
+    "The answer field hints the input language (Russian, English, Japanese…): on many phones the keyboard switches by itself"
    ]
   },
   {
