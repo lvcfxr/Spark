@@ -5,17 +5,19 @@
    "date": "05.11.2026",
    "ru": [
     "Тренировка у каждой колоды (меню «⋯»): диктант, выбор из четырёх вариантов, пропуски в предложениях из примеров курса и «Слабые места» — повторение карточек, где вы чаще ошибаетесь",
-    "Слова со скриншота: сфотографируйте страницу или переписку — ИИ найдёт слова, переведёт, добавит примеры, а вы проверите и добавите в нужную колоду",
+    "Скоро: слова со скриншота через ИИ — пункт уже есть в меню колоды",
     "Работает без интернета: приложение открывается офлайн на Android, ПК и в браузере",
     "Недельный отчёт в боте по воскресеньям: повторения, новые слова, опыт и сравнение с прошлой неделей (/report)",
-    "Шапка колоды стала проще: редкие действия собраны в меню «⋯»"
+    "Шапка колоды стала проще: редкие действия собраны в меню «⋯»",
+    "Друзья: пригласите по ссылке или коду, рейтинг недели и общая цель команды; можно поделиться серией и уровнем"
    ],
    "en": [
     "Practice for every deck (“⋯” menu): dictation, multiple choice, fill-in-the-gap from course examples and “Weak spots” — a review of the cards you miss most",
-    "Words from a screenshot: snap a page or a chat — AI finds the words, translates them, adds examples, and you check them and add to the deck you want",
+    "Coming soon: words from a screenshot with AI — the item is already in the deck menu",
     "Works offline: the app opens without internet on Android, desktop and in the browser",
     "A weekly report in the bot on Sundays: reviews, new words, XP and a comparison with last week (/report)",
-    "The deck header is simpler: less frequent actions moved to the “⋯” menu"
+    "The deck header is simpler: less frequent actions moved to the “⋯” menu",
+    "Friends: invite by link or code, a weekly ranking and a team goal; share your streak and level"
    ]
   },
   {
