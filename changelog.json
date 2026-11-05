@@ -6,19 +6,37 @@
    "ru": [
     "Тренировка у каждой колоды (меню «⋯»): диктант, выбор из четырёх вариантов, пропуски в предложениях из примеров курса и «Слабые места» — повторение карточек, где вы чаще ошибаетесь",
     "Скоро: слова со скриншота через ИИ — пункт уже есть в меню колоды",
+    "Награды за приглашения: +150 XP за каждого друга (до 10), темы «Дружба» и «Созвездие друзей»",
     "Работает без интернета: приложение открывается офлайн на Android, ПК и в браузере",
     "Недельный отчёт в боте по воскресеньям: повторения, новые слова, опыт и сравнение с прошлой неделей (/report)",
     "Шапка колоды стала проще: редкие действия собраны в меню «⋯»",
-    "Друзья: пригласите по ссылке или коду, рейтинг недели и общая цель команды; можно поделиться серией и уровнем"
+    "Друзья: пригласите по ссылке или коду, рейтинг недели и общая цель команды; можно поделиться серией и уровнем",
+    "Новые курсы: итальянский и португальский (Бразилия) с нуля, а также A2 для испанского, английского, французского и немецкого (прошедшее и будущее время, сравнения, 40 новых слов)",
+    "Новости об обновлениях бот присылает сам: с картинкой и разделами «Новое» и «Исправления»"
    ],
    "en": [
     "Practice for every deck (“⋯” menu): dictation, multiple choice, fill-in-the-gap from course examples and “Weak spots” — a review of the cards you miss most",
     "Coming soon: words from a screenshot with AI — the item is already in the deck menu",
+    "Invite rewards: +150 XP per friend (up to 10), the “Friendship” and “Friends' constellation” themes",
     "Works offline: the app opens without internet on Android, desktop and in the browser",
     "A weekly report in the bot on Sundays: reviews, new words, XP and a comparison with last week (/report)",
     "The deck header is simpler: less frequent actions moved to the “⋯” menu",
-    "Friends: invite by link or code, a weekly ranking and a team goal; share your streak and level"
-   ]
+    "Friends: invite by link or code, a weekly ranking and a team goal; share your streak and level",
+    "New courses: Italian and Portuguese (Brazil) from scratch, plus A2 for Spanish, English, French and German (past and future tenses, comparisons, 40 new words)",
+    "The bot now sends update news on its own, with a picture and “New” and “Fixes” sections"
+   ],
+   "fix": {
+    "ru": [
+     "Обновление больше не «залипает» в кэше Telegram: приложение само открывает свежую версию",
+     "Слова со скриншота через ИИ пока выключены — пункт в меню помечен «Скоро»",
+     "Новые курсы пока без озвучки"
+    ],
+    "en": [
+     "Updates no longer get stuck in Telegram's cache: the app opens the fresh version itself",
+     "Words from a screenshot with AI are switched off for now — the menu item says “Soon”",
+     "The new courses have no audio yet"
+    ]
+   }
   },
   {
    "version": "0.19.2",

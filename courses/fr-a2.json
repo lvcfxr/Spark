@@ -1,0 +1,661 @@
+{
+"id": "fr-a2",
+"version": 2,
+"cards": [
+{
+"id": "a2rules-0",
+"unit": "a2rules",
+"front": "Прошедшее: passé composé",
+"frontL": {
+"ru": "Прошедшее: passé composé",
+"en": "Past: passé composé"
+},
+"hint": "",
+"back": {
+"ru": "avoir/être + причастие",
+"en": "avoir/être + participle"
+},
+"extra": {
+"ru": "J'ai parlé, j'ai fini. С глаголами движения — être: je suis allé(e).\n> Hier, j'ai parlé avec ma mère.\n> — Вчера я говорил с мамой.",
+"en": "J'ai parlé, j'ai fini. With motion verbs — être: je suis allé(e).\n> Hier, j'ai parlé avec ma mère.\n> — Yesterday I spoke with my mother."
+},
+"notype": true
+},
+{
+"id": "a2rules-1",
+"unit": "a2rules",
+"front": "Ближайшее будущее",
+"frontL": {
+"ru": "Ближайшее будущее",
+"en": "Near future"
+},
+"hint": "",
+"back": {
+"ru": "aller + инфинитив",
+"en": "aller + infinitive"
+},
+"extra": {
+"ru": "je vais, tu vas, il va, nous allons, vous allez, ils vont + инфинитив.\n> Je vais voyager cet été.\n> — Этим летом я поеду путешествовать.",
+"en": "je vais, tu vas, il va, nous allons, vous allez, ils vont + infinitive.\n> Je vais voyager cet été.\n> — I'm going to travel this summer."
+},
+"notype": true
+},
+{
+"id": "a2rules-2",
+"unit": "a2rules",
+"front": "Сравнение",
+"frontL": {
+"ru": "Сравнение",
+"en": "Comparisons"
+},
+"hint": "",
+"back": {
+"ru": "plus … que / moins … que",
+"en": "plus … que / moins … que"
+},
+"extra": {
+"ru": "Paris est plus grand que Lyon. Хороший → meilleur.\n> C'est moins cher que l'autre.\n> — Это дешевле, чем другое.",
+"en": "Paris est plus grand que Lyon. Good → meilleur.\n> C'est moins cher que l'autre.\n> — It's cheaper than the other one."
+},
+"notype": true
+},
+{
+"id": "a2rules-3",
+"unit": "a2rules",
+"front": "Возвратные глаголы",
+"frontL": {
+"ru": "Возвратные глаголы",
+"en": "Reflexive verbs"
+},
+"hint": "",
+"back": {
+"ru": "me, te, se, nous, vous, se перед глаголом",
+"en": "me, te, se, nous, vous, se before the verb"
+},
+"extra": {
+"ru": "se lever → je me lève. В passé composé — с être: je me suis levé.\n> Je me lève à sept heures.\n> — Я встаю в семь.",
+"en": "se lever → je me lève. In passé composé with être: je me suis levé.\n> Je me lève à sept heures.\n> — I get up at seven."
+},
+"notype": true
+},
+{
+"id": "a2rules-4",
+"unit": "a2rules",
+"front": "Частица en и y",
+"frontL": {
+"ru": "Частица en и y",
+"en": "en and y"
+},
+"hint": "",
+"back": {
+"ru": "en — «этого», y — «туда»",
+"en": "en — “of it”, y — “there”"
+},
+"extra": {
+"ru": "Tu as du pain ? — Oui, j'en ai. Tu vas à Paris ? — Oui, j'y vais.\n> Oui, j'y vais demain.\n> — Да, я поеду туда завтра.",
+"en": "Tu as du pain ? — Oui, j'en ai. Tu vas à Paris ? — Oui, j'y vais.\n> Oui, j'y vais demain.\n> — Yes, I'm going there tomorrow."
+},
+"notype": true
+},
+{
+"id": "always",
+"unit": "a2time",
+"front": "toujours",
+"hint": "tuʒuʁ",
+"back": {
+"ru": "всегда",
+"en": "always"
+},
+"extra": {
+"ru": "> Je bois toujours du café le matin.\n> — Я всегда пью кофе утром.",
+"en": "> Je bois toujours du café le matin.\n> — I always drink coffee in the morning."
+}
+},
+{
+"id": "often",
+"unit": "a2time",
+"front": "souvent",
+"hint": "suvɑ̃",
+"back": {
+"ru": "часто",
+"en": "often"
+},
+"extra": {
+"ru": "> Nous allons souvent au cinéma.\n> — Мы часто ходим в кино.",
+"en": "> Nous allons souvent au cinéma.\n> — We often go to the cinema."
+}
+},
+{
+"id": "sometimes",
+"unit": "a2time",
+"front": "parfois",
+"hint": "paʁfwa",
+"back": {
+"ru": "иногда",
+"en": "sometimes"
+},
+"extra": {
+"ru": "> Parfois, je travaille à la maison.\n> — Иногда я работаю дома.",
+"en": "> Parfois, je travaille à la maison.\n> — Sometimes I work from home."
+}
+},
+{
+"id": "never",
+"unit": "a2time",
+"front": "ne … jamais",
+"hint": "nə … ʒamɛ",
+"back": {
+"ru": "никогда",
+"en": "never"
+},
+"extra": {
+"ru": "Глагол — между ne и jamais.\n> Je ne mange jamais de viande.\n> — Я никогда не ем мясо.",
+"en": "The verb goes between ne and jamais.\n> Je ne mange jamais de viande.\n> — I never eat meat."
+}
+},
+{
+"id": "early",
+"unit": "a2time",
+"front": "tôt",
+"hint": "to",
+"back": {
+"ru": "рано",
+"en": "early"
+},
+"extra": {
+"ru": "> Je me lève tôt.\n> — Я встаю рано.",
+"en": "> Je me lève tôt.\n> — I get up early."
+}
+},
+{
+"id": "late",
+"unit": "a2time",
+"front": "tard",
+"hint": "taʁ",
+"back": {
+"ru": "поздно",
+"en": "late"
+},
+"extra": {
+"ru": "Опаздывать — être en retard.\n> Il est déjà tard.\n> — Уже поздно.",
+"en": "To be late: être en retard.\n> Il est déjà tard.\n> — It's already late."
+}
+},
+{
+"id": "then",
+"unit": "a2time",
+"front": "ensuite",
+"hint": "ɑ̃sɥit",
+"back": {
+"ru": "потом, затем",
+"en": "then; after that"
+},
+"extra": {
+"ru": "> D'abord le petit-déjeuner, ensuite le travail.\n> — Сначала завтрак, потом работа.",
+"en": "> D'abord le petit-déjeuner, ensuite le travail.\n> — Breakfast first, then work."
+}
+},
+{
+"id": "everyday",
+"unit": "a2time",
+"front": "tous les jours",
+"hint": "tu le ʒuʁ",
+"back": {
+"ru": "каждый день",
+"en": "every day"
+},
+"extra": {
+"ru": "> J'apprends des mots tous les jours.\n> — Я учу слова каждый день.",
+"en": "> J'apprends des mots tous les jours.\n> — I learn words every day."
+}
+},
+{
+"id": "price",
+"unit": "a2shop",
+"front": "le prix",
+"hint": "lə pʁi",
+"back": {
+"ru": "цена",
+"en": "price"
+},
+"extra": {
+"ru": "> Quel est le prix ?\n> — Какая цена?",
+"en": "> Quel est le prix ?\n> — What's the price?"
+}
+},
+{
+"id": "expensive",
+"unit": "a2shop",
+"front": "cher",
+"hint": "ʃɛʁ",
+"back": {
+"ru": "дорогой",
+"en": "expensive"
+},
+"extra": {
+"ru": "> Ce téléphone est très cher.\n> — Этот телефон очень дорогой.",
+"en": "> Ce téléphone est très cher.\n> — This phone is very expensive."
+}
+},
+{
+"id": "cheap",
+"unit": "a2shop",
+"front": "pas cher",
+"hint": "pa ʃɛʁ",
+"back": {
+"ru": "дешёвый",
+"en": "cheap"
+},
+"extra": {
+"ru": "Bon marché — книжное.\n> Ici, tout est pas cher.\n> — Здесь всё дешёвое.",
+"en": "Bon marché is more formal.\n> Ici, tout est pas cher.\n> — Everything here is cheap."
+}
+},
+{
+"id": "money",
+"unit": "a2shop",
+"front": "l'argent",
+"hint": "laʁʒɑ̃",
+"back": {
+"ru": "деньги",
+"en": "money"
+},
+"extra": {
+"ru": "> Je n'ai pas d'argent.\n> — У меня нет денег.",
+"en": "> Je n'ai pas d'argent.\n> — I don't have any money."
+}
+},
+{
+"id": "buy",
+"unit": "a2shop",
+"front": "acheter",
+"hint": "aʃte",
+"back": {
+"ru": "покупать",
+"en": "to buy"
+},
+"extra": {
+"ru": "> Je veux acheter un cadeau.\n> — Я хочу купить подарок.",
+"en": "> Je veux acheter un cadeau.\n> — I want to buy a present."
+}
+},
+{
+"id": "pay",
+"unit": "a2shop",
+"front": "payer",
+"hint": "peje",
+"back": {
+"ru": "платить",
+"en": "to pay"
+},
+"extra": {
+"ru": "> Je peux payer par carte ?\n> — Можно заплатить картой?",
+"en": "> Je peux payer par carte ?\n> — Can I pay by card?"
+}
+},
+{
+"id": "size",
+"unit": "a2shop",
+"front": "la taille",
+"hint": "la taj",
+"back": {
+"ru": "размер",
+"en": "size"
+},
+"extra": {
+"ru": "Размер обуви — la pointure.\n> Vous avez une taille plus grande ?\n> — У вас есть размер побольше?",
+"en": "Shoe size: la pointure.\n> Vous avez une taille plus grande ?\n> — Do you have a bigger size?"
+}
+},
+{
+"id": "howmuch",
+"unit": "a2shop",
+"front": "c'est combien ?",
+"hint": "sɛ kɔ̃bjɛ̃",
+"back": {
+"ru": "сколько стоит?",
+"en": "how much is it?"
+},
+"extra": {
+"ru": "> C'est combien, ce billet ?\n> — Сколько стоит этот билет?",
+"en": "> C'est combien, ce billet ?\n> — How much is this ticket?"
+}
+},
+{
+"id": "happy",
+"unit": "a2feel",
+"front": "heureux",
+"hint": "øʁø",
+"back": {
+"ru": "счастливый",
+"en": "happy"
+},
+"extra": {
+"ru": "Ж. р. — heureuse.\n> Je suis très heureux aujourd'hui.\n> — Я очень счастлив сегодня.",
+"en": "Feminine: heureuse.\n> Je suis très heureux aujourd'hui.\n> — I'm very happy today."
+}
+},
+{
+"id": "tired",
+"unit": "a2feel",
+"front": "fatigué",
+"hint": "fatiɡe",
+"back": {
+"ru": "уставший",
+"en": "tired"
+},
+"extra": {
+"ru": "> Je suis fatigué après le travail.\n> — Я устал после работы.",
+"en": "> Je suis fatigué après le travail.\n> — I'm tired after work."
+}
+},
+{
+"id": "sick",
+"unit": "a2feel",
+"front": "malade",
+"hint": "malad",
+"back": {
+"ru": "больной",
+"en": "ill; sick"
+},
+"extra": {
+"ru": "> Mon frère est malade.\n> — Мой брат болен.",
+"en": "> Mon frère est malade.\n> — My brother is ill."
+}
+},
+{
+"id": "head",
+"unit": "a2feel",
+"front": "la tête",
+"hint": "la tɛt",
+"back": {
+"ru": "голова",
+"en": "head"
+},
+"extra": {
+"ru": "J'ai mal à … — «у меня болит…».\n> J'ai mal à la tête.\n> — У меня болит голова.",
+"en": "J'ai mal à … — “… hurts”.\n> J'ai mal à la tête.\n> — I have a headache."
+}
+},
+{
+"id": "doctor",
+"unit": "a2feel",
+"front": "le médecin",
+"hint": "lə medsɛ̃",
+"back": {
+"ru": "врач",
+"en": "doctor"
+},
+"extra": {
+"ru": "> Je dois aller chez le médecin.\n> — Мне нужно к врачу.",
+"en": "> Je dois aller chez le médecin.\n> — I need to see a doctor."
+}
+},
+{
+"id": "medicine",
+"unit": "a2feel",
+"front": "le médicament",
+"hint": "lə medikamɑ̃",
+"back": {
+"ru": "лекарство",
+"en": "medicine"
+},
+"extra": {
+"ru": "> Prends le médicament.\n> — Прими лекарство.",
+"en": "> Prends le médicament.\n> — Take the medicine."
+}
+},
+{
+"id": "hungry",
+"unit": "a2feel",
+"front": "avoir faim",
+"hint": "avwaʁ fɛ̃",
+"back": {
+"ru": "голодный",
+"en": "hungry"
+},
+"extra": {
+"ru": "> Tu as faim ?\n> — Ты голоден?",
+"en": "> Tu as faim ?\n> — Are you hungry?"
+}
+},
+{
+"id": "feel",
+"unit": "a2feel",
+"front": "se sentir",
+"hint": "sə sɑ̃tiʁ",
+"back": {
+"ru": "чувствовать (себя)",
+"en": "to feel"
+},
+"extra": {
+"ru": "> Je me sens mieux.\n> — Я чувствую себя лучше.",
+"en": "> Je me sens mieux.\n> — I feel better."
+}
+},
+{
+"id": "work2",
+"unit": "a2work",
+"front": "le travail",
+"hint": "lə tʁavaj",
+"back": {
+"ru": "работа",
+"en": "work; job"
+},
+"extra": {
+"ru": "> J'ai un nouveau travail.\n> — У меня новая работа.",
+"en": "> J'ai un nouveau travail.\n> — I have a new job."
+}
+},
+{
+"id": "office",
+"unit": "a2work",
+"front": "le bureau",
+"hint": "lə byʁo",
+"back": {
+"ru": "офис",
+"en": "office"
+},
+"extra": {
+"ru": "> Le bureau est au centre.\n> — Офис в центре.",
+"en": "> Le bureau est au centre.\n> — The office is in the centre."
+}
+},
+{
+"id": "meeting",
+"unit": "a2work",
+"front": "la réunion",
+"hint": "la ʁeynjɔ̃",
+"back": {
+"ru": "встреча",
+"en": "meeting"
+},
+"extra": {
+"ru": "> J'ai une réunion à dix heures.\n> — У меня встреча в десять.",
+"en": "> J'ai une réunion à dix heures.\n> — I have a meeting at ten."
+}
+},
+{
+"id": "study",
+"unit": "a2work",
+"front": "étudier",
+"hint": "etydje",
+"back": {
+"ru": "учиться, изучать",
+"en": "to study"
+},
+"extra": {
+"ru": "> J'étudie l'espagnol.\n> — Я изучаю испанский.",
+"en": "> J'étudie l'espagnol.\n> — I'm studying Spanish."
+}
+},
+{
+"id": "exam",
+"unit": "a2work",
+"front": "l'examen",
+"hint": "lɛɡzamɛ̃",
+"back": {
+"ru": "экзамен",
+"en": "exam"
+},
+"extra": {
+"ru": "> Demain, j'ai un examen.\n> — Завтра у меня экзамен.",
+"en": "> Demain, j'ai un examen.\n> — I have an exam tomorrow."
+}
+},
+{
+"id": "begin",
+"unit": "a2work",
+"front": "commencer",
+"hint": "kɔmɑ̃se",
+"back": {
+"ru": "начинать",
+"en": "to begin; to start"
+},
+"extra": {
+"ru": "> Le cours commence à neuf heures.\n> — Урок начинается в девять.",
+"en": "> Le cours commence à neuf heures.\n> — The lesson starts at nine."
+}
+},
+{
+"id": "finish",
+"unit": "a2work",
+"front": "finir",
+"hint": "finiʁ",
+"back": {
+"ru": "заканчивать",
+"en": "to finish"
+},
+"extra": {
+"ru": "> Je finis à cinq heures.\n> — Я заканчиваю в пять.",
+"en": "> Je finis à cinq heures.\n> — I finish at five."
+}
+},
+{
+"id": "question",
+"unit": "a2work",
+"front": "la question",
+"hint": "la kɛstjɔ̃",
+"back": {
+"ru": "вопрос",
+"en": "question"
+},
+"extra": {
+"ru": "> J'ai une question.\n> — У меня есть вопрос.",
+"en": "> J'ai une question.\n> — I have a question."
+}
+},
+{
+"id": "travel",
+"unit": "a2trip",
+"front": "voyager",
+"hint": "vwajaʒe",
+"back": {
+"ru": "путешествовать",
+"en": "to travel"
+},
+"extra": {
+"ru": "> J'adore voyager.\n> — Я люблю путешествовать.",
+"en": "> J'adore voyager.\n> — I love to travel."
+}
+},
+{
+"id": "holiday",
+"unit": "a2trip",
+"front": "les vacances",
+"hint": "le vakɑ̃s",
+"back": {
+"ru": "отпуск, каникулы",
+"en": "holiday; vacation"
+},
+"extra": {
+"ru": "Всегда во мн. ч.\n> En été, nous sommes en vacances.\n> — Летом у нас отпуск.",
+"en": "Always plural.\n> En été, nous sommes en vacances.\n> — We have a holiday in the summer."
+}
+},
+{
+"id": "visit",
+"unit": "a2trip",
+"front": "rendre visite à",
+"hint": "ʁɑ̃dʁ vizit a",
+"back": {
+"ru": "посещать, навещать",
+"en": "to visit"
+},
+"extra": {
+"ru": "Место — visiter.\n> Nous avons rendu visite à mamie.\n> — Мы навестили бабушку.",
+"en": "For places: visiter.\n> Nous avons rendu visite à mamie.\n> — We visited Grandma."
+}
+},
+{
+"id": "return",
+"unit": "a2trip",
+"front": "revenir",
+"hint": "ʁəvniʁ",
+"back": {
+"ru": "возвращаться",
+"en": "to return; to come back"
+},
+"extra": {
+"ru": "> Je reviens lundi.\n> — Я вернусь в понедельник.",
+"en": "> Je reviens lundi.\n> — I'll come back on Monday."
+}
+},
+{
+"id": "forget",
+"unit": "a2trip",
+"front": "oublier",
+"hint": "ublije",
+"back": {
+"ru": "забывать",
+"en": "to forget"
+},
+"extra": {
+"ru": "> J'ai oublié mes clés.\n> — Я забыл ключи.",
+"en": "> J'ai oublié mes clés.\n> — I forgot my keys."
+}
+},
+{
+"id": "remember",
+"unit": "a2trip",
+"front": "se souvenir de",
+"hint": "sə suvniʁ də",
+"back": {
+"ru": "помнить",
+"en": "to remember"
+},
+"extra": {
+"ru": "> Tu te souviens de son nom ?\n> — Ты помнишь его имя?",
+"en": "> Tu te souviens de son nom ?\n> — Do you remember his name?"
+}
+},
+{
+"id": "wait",
+"unit": "a2trip",
+"front": "attendre",
+"hint": "atɑ̃dʁ",
+"back": {
+"ru": "ждать",
+"en": "to wait"
+},
+"extra": {
+"ru": "> Attends-moi, s'il te plaît.\n> — Подожди меня, пожалуйста.",
+"en": "> Attends-moi, s'il te plaît.\n> — Wait for me, please."
+}
+},
+{
+"id": "help",
+"unit": "a2trip",
+"front": "aider",
+"hint": "ede",
+"back": {
+"ru": "помогать",
+"en": "to help"
+},
+"extra": {
+"ru": "> Tu peux m'aider ?\n> — Можешь мне помочь?",
+"en": "> Tu peux m'aider ?\n> — Can you help me?"
+}
+}
+]
+}

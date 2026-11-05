@@ -620,6 +620,244 @@
    "audio": true
   },
   {
+   "id": "it",
+   "lang": "it",
+   "flag": "🇮🇹",
+   "natives": [
+    "ru",
+    "en"
+   ],
+   "cefr": "A1",
+   "exam": "A1",
+   "title": {
+    "ru": "Итальянский с нуля",
+    "en": "Italian from scratch"
+   },
+   "level": {
+    "ru": "Начинающий",
+    "en": "Beginner"
+   },
+   "description": {
+    "ru": "Начинаем как в хорошем учебнике: сначала алфавит и звуки, затем базовые правила, и только потом 80 самых нужных слов и фраз в 8 уровнях. У слов есть произношение, звук и пример с переводом. Уровни открываются по очереди.",
+    "en": "Built like a good textbook: first the alphabet and sounds, then basic rules, and only then the 80 most useful words and phrases in 8 levels. Words come with pronunciation, audio and an example. Levels unlock one by one."
+   },
+   "author": "Spark",
+   "words": 116,
+   "minutes": 175,
+   "units": [
+    {
+     "id": "alpha",
+     "title": {
+      "ru": "Алфавит",
+      "en": "Alphabet"
+     },
+     "count": 21
+    },
+    {
+     "id": "sounds",
+     "title": {
+      "ru": "Звуки и написание",
+      "en": "Sounds and spelling"
+     },
+     "count": 8
+    },
+    {
+     "id": "rules",
+     "title": {
+      "ru": "Основные правила",
+      "en": "Basic rules"
+     },
+     "count": 7
+    },
+    {
+     "id": "greet",
+     "title": {
+      "ru": "Приветствия и вежливость",
+      "en": "Greetings and politeness"
+     },
+     "count": 10
+    },
+    {
+     "id": "people",
+     "title": {
+      "ru": "Люди и семья",
+      "en": "People and family"
+     },
+     "count": 10
+    },
+    {
+     "id": "numbers",
+     "title": {
+      "ru": "Числа и время",
+      "en": "Numbers and time"
+     },
+     "count": 10
+    },
+    {
+     "id": "food",
+     "title": {
+      "ru": "Еда и напитки",
+      "en": "Food and drink"
+     },
+     "count": 10
+    },
+    {
+     "id": "city",
+     "title": {
+      "ru": "Дом и город",
+      "en": "Home and town"
+     },
+     "count": 10
+    },
+    {
+     "id": "verbs",
+     "title": {
+      "ru": "Глаголы: первые шаги",
+      "en": "Verbs: first steps"
+     },
+     "count": 10
+    },
+    {
+     "id": "describe",
+     "title": {
+      "ru": "Какой? Описания",
+      "en": "Describing things"
+     },
+     "count": 10
+    },
+    {
+     "id": "travel",
+     "title": {
+      "ru": "Поездки и транспорт",
+      "en": "Travel and transport"
+     },
+     "count": 10
+    }
+   ],
+   "version": 2,
+   "file": "it.json",
+   "audio": false
+  },
+  {
+   "id": "pt",
+   "lang": "pt",
+   "flag": "🇧🇷",
+   "natives": [
+    "ru",
+    "en"
+   ],
+   "cefr": "A1",
+   "exam": "A1",
+   "title": {
+    "ru": "Португальский (Бразилия) с нуля",
+    "en": "Portuguese (Brazil) from scratch"
+   },
+   "level": {
+    "ru": "Начинающий",
+    "en": "Beginner"
+   },
+   "description": {
+    "ru": "Начинаем как в хорошем учебнике: сначала алфавит и звуки, затем базовые правила, и только потом 80 самых нужных слов и фраз в 8 уровнях. У слов есть произношение, звук и пример с переводом. Уровни открываются по очереди.",
+    "en": "Built like a good textbook: first the alphabet and sounds, then basic rules, and only then the 80 most useful words and phrases in 8 levels. Words come with pronunciation, audio and an example. Levels unlock one by one."
+   },
+   "author": "Spark",
+   "words": 121,
+   "minutes": 180,
+   "units": [
+    {
+     "id": "alpha",
+     "title": {
+      "ru": "Алфавит",
+      "en": "Alphabet"
+     },
+     "count": 26
+    },
+    {
+     "id": "sounds",
+     "title": {
+      "ru": "Звуки и написание",
+      "en": "Sounds and spelling"
+     },
+     "count": 8
+    },
+    {
+     "id": "rules",
+     "title": {
+      "ru": "Основные правила",
+      "en": "Basic rules"
+     },
+     "count": 7
+    },
+    {
+     "id": "greet",
+     "title": {
+      "ru": "Приветствия и вежливость",
+      "en": "Greetings and politeness"
+     },
+     "count": 10
+    },
+    {
+     "id": "people",
+     "title": {
+      "ru": "Люди и семья",
+      "en": "People and family"
+     },
+     "count": 10
+    },
+    {
+     "id": "numbers",
+     "title": {
+      "ru": "Числа и время",
+      "en": "Numbers and time"
+     },
+     "count": 10
+    },
+    {
+     "id": "food",
+     "title": {
+      "ru": "Еда и напитки",
+      "en": "Food and drink"
+     },
+     "count": 10
+    },
+    {
+     "id": "city",
+     "title": {
+      "ru": "Дом и город",
+      "en": "Home and town"
+     },
+     "count": 10
+    },
+    {
+     "id": "verbs",
+     "title": {
+      "ru": "Глаголы: первые шаги",
+      "en": "Verbs: first steps"
+     },
+     "count": 10
+    },
+    {
+     "id": "describe",
+     "title": {
+      "ru": "Какой? Описания",
+      "en": "Describing things"
+     },
+     "count": 10
+    },
+    {
+     "id": "travel",
+     "title": {
+      "ru": "Поездки и транспорт",
+      "en": "Travel and transport"
+     },
+     "count": 10
+    }
+   ],
+   "version": 2,
+   "file": "pt.json",
+   "audio": false
+  },
+  {
    "id": "ru",
    "lang": "ru",
    "flag": "🇷🇺",
@@ -744,6 +982,321 @@
    "version": 2,
    "file": "ru.json",
    "audio": true
+  },
+  {
+   "id": "es-a2",
+   "lang": "es",
+   "flag": "🇪🇸",
+   "natives": [
+    "ru",
+    "en"
+   ],
+   "cefr": "A2",
+   "exam": "A2",
+   "title": {
+    "ru": "Испанский A2",
+    "en": "Spanish A2"
+   },
+   "level": {
+    "ru": "Элементарный",
+    "en": "Elementary"
+   },
+   "description": {
+    "ru": "Следующий шаг после курса «с нуля»: прошедшее и будущее время, сравнения и ещё 40 нужных слов — привычки, покупки, здоровье, работа и поездки.",
+    "en": "The next step after “from scratch”: past and future tenses, comparisons and 40 more useful words — habits, shopping, health, work and travel."
+   },
+   "author": "Spark",
+   "words": 45,
+   "minutes": 70,
+   "units": [
+    {
+     "id": "a2rules",
+     "title": {
+      "ru": "Грамматика A2",
+      "en": "A2 grammar"
+     },
+     "count": 5
+    },
+    {
+     "id": "a2time",
+     "title": {
+      "ru": "Время и привычки",
+      "en": "Time and habits"
+     },
+     "count": 8
+    },
+    {
+     "id": "a2shop",
+     "title": {
+      "ru": "Покупки и деньги",
+      "en": "Shopping and money"
+     },
+     "count": 8
+    },
+    {
+     "id": "a2feel",
+     "title": {
+      "ru": "Чувства и здоровье",
+      "en": "Feelings and health"
+     },
+     "count": 8
+    },
+    {
+     "id": "a2work",
+     "title": {
+      "ru": "Работа и учёба",
+      "en": "Work and study"
+     },
+     "count": 8
+    },
+    {
+     "id": "a2trip",
+     "title": {
+      "ru": "Поездки и планы",
+      "en": "Trips and plans"
+     },
+     "count": 8
+    }
+   ],
+   "version": 2,
+   "file": "es-a2.json",
+   "audio": false
+  },
+  {
+   "id": "en-a2",
+   "lang": "en",
+   "flag": "🇬🇧",
+   "natives": [
+    "ru"
+   ],
+   "cefr": "A2",
+   "exam": "A2",
+   "title": {
+    "ru": "Английский A2",
+    "en": "English A2"
+   },
+   "level": {
+    "ru": "Элементарный",
+    "en": "Elementary"
+   },
+   "description": {
+    "ru": "Следующий шаг после курса «с нуля»: прошедшее и будущее время, сравнения и ещё 40 нужных слов — привычки, покупки, здоровье, работа и поездки.",
+    "en": "The next step after “from scratch”: past and future tenses, comparisons and 40 more useful words — habits, shopping, health, work and travel."
+   },
+   "author": "Spark",
+   "words": 45,
+   "minutes": 70,
+   "units": [
+    {
+     "id": "a2rules",
+     "title": {
+      "ru": "Грамматика A2",
+      "en": "A2 grammar"
+     },
+     "count": 5
+    },
+    {
+     "id": "a2time",
+     "title": {
+      "ru": "Время и привычки",
+      "en": "Time and habits"
+     },
+     "count": 8
+    },
+    {
+     "id": "a2shop",
+     "title": {
+      "ru": "Покупки и деньги",
+      "en": "Shopping and money"
+     },
+     "count": 8
+    },
+    {
+     "id": "a2feel",
+     "title": {
+      "ru": "Чувства и здоровье",
+      "en": "Feelings and health"
+     },
+     "count": 8
+    },
+    {
+     "id": "a2work",
+     "title": {
+      "ru": "Работа и учёба",
+      "en": "Work and study"
+     },
+     "count": 8
+    },
+    {
+     "id": "a2trip",
+     "title": {
+      "ru": "Поездки и планы",
+      "en": "Trips and plans"
+     },
+     "count": 8
+    }
+   ],
+   "version": 2,
+   "file": "en-a2.json",
+   "audio": false
+  },
+  {
+   "id": "fr-a2",
+   "lang": "fr",
+   "flag": "🇫🇷",
+   "natives": [
+    "ru",
+    "en"
+   ],
+   "cefr": "A2",
+   "exam": "A2",
+   "title": {
+    "ru": "Французский A2",
+    "en": "French A2"
+   },
+   "level": {
+    "ru": "Элементарный",
+    "en": "Elementary"
+   },
+   "description": {
+    "ru": "Следующий шаг после курса «с нуля»: прошедшее и будущее время, сравнения и ещё 40 нужных слов — привычки, покупки, здоровье, работа и поездки.",
+    "en": "The next step after “from scratch”: past and future tenses, comparisons and 40 more useful words — habits, shopping, health, work and travel."
+   },
+   "author": "Spark",
+   "words": 45,
+   "minutes": 70,
+   "units": [
+    {
+     "id": "a2rules",
+     "title": {
+      "ru": "Грамматика A2",
+      "en": "A2 grammar"
+     },
+     "count": 5
+    },
+    {
+     "id": "a2time",
+     "title": {
+      "ru": "Время и привычки",
+      "en": "Time and habits"
+     },
+     "count": 8
+    },
+    {
+     "id": "a2shop",
+     "title": {
+      "ru": "Покупки и деньги",
+      "en": "Shopping and money"
+     },
+     "count": 8
+    },
+    {
+     "id": "a2feel",
+     "title": {
+      "ru": "Чувства и здоровье",
+      "en": "Feelings and health"
+     },
+     "count": 8
+    },
+    {
+     "id": "a2work",
+     "title": {
+      "ru": "Работа и учёба",
+      "en": "Work and study"
+     },
+     "count": 8
+    },
+    {
+     "id": "a2trip",
+     "title": {
+      "ru": "Поездки и планы",
+      "en": "Trips and plans"
+     },
+     "count": 8
+    }
+   ],
+   "version": 2,
+   "file": "fr-a2.json",
+   "audio": false
+  },
+  {
+   "id": "de-a2",
+   "lang": "de",
+   "flag": "🇩🇪",
+   "natives": [
+    "ru",
+    "en"
+   ],
+   "cefr": "A2",
+   "exam": "A2",
+   "title": {
+    "ru": "Немецкий A2",
+    "en": "German A2"
+   },
+   "level": {
+    "ru": "Элементарный",
+    "en": "Elementary"
+   },
+   "description": {
+    "ru": "Следующий шаг после курса «с нуля»: прошедшее и будущее время, сравнения и ещё 40 нужных слов — привычки, покупки, здоровье, работа и поездки.",
+    "en": "The next step after “from scratch”: past and future tenses, comparisons and 40 more useful words — habits, shopping, health, work and travel."
+   },
+   "author": "Spark",
+   "words": 45,
+   "minutes": 70,
+   "units": [
+    {
+     "id": "a2rules",
+     "title": {
+      "ru": "Грамматика A2",
+      "en": "A2 grammar"
+     },
+     "count": 5
+    },
+    {
+     "id": "a2time",
+     "title": {
+      "ru": "Время и привычки",
+      "en": "Time and habits"
+     },
+     "count": 8
+    },
+    {
+     "id": "a2shop",
+     "title": {
+      "ru": "Покупки и деньги",
+      "en": "Shopping and money"
+     },
+     "count": 8
+    },
+    {
+     "id": "a2feel",
+     "title": {
+      "ru": "Чувства и здоровье",
+      "en": "Feelings and health"
+     },
+     "count": 8
+    },
+    {
+     "id": "a2work",
+     "title": {
+      "ru": "Работа и учёба",
+      "en": "Work and study"
+     },
+     "count": 8
+    },
+    {
+     "id": "a2trip",
+     "title": {
+      "ru": "Поездки и планы",
+      "en": "Trips and plans"
+     },
+     "count": 8
+    }
+   ],
+   "version": 2,
+   "file": "de-a2.json",
+   "audio": false
   }
  ]
 }
