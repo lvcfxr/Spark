@@ -1,5 +1,5 @@
 {
- "version": 2,
+ "version": 3,
  "courses": [
   {
    "id": "es",
@@ -116,7 +116,7 @@
      "count": 10
     }
    ],
-   "version": 2,
+   "version": 3,
    "file": "es.json",
    "audio": true
   },
@@ -234,7 +234,7 @@
      "count": 10
     }
    ],
-   "version": 2,
+   "version": 3,
    "file": "en.json",
    "audio": true
   },
@@ -353,7 +353,7 @@
      "count": 10
     }
    ],
-   "version": 2,
+   "version": 3,
    "file": "fr.json",
    "audio": true
   },
@@ -472,7 +472,7 @@
      "count": 10
     }
    ],
-   "version": 2,
+   "version": 3,
    "file": "de.json",
    "audio": true
   },
@@ -495,12 +495,12 @@
     "en": "Beginner"
    },
    "description": {
-    "ru": "Начинаем как в хорошем учебнике: сначала хирагана и катакана, затем базовые правила, и только потом 80 самых нужных слов и фраз в 8 уровнях. У слов есть произношение, звук и пример с переводом. Уровни открываются по очереди.",
-    "en": "Built like a good textbook: first hiragana and katakana, then basic rules, and only then the 80 most useful words and phrases in 8 levels. Words come with pronunciation, audio and an example. Levels unlock one by one."
+    "ru": "Сначала хирагана и катакана, затем 25 уроков уровня N5 в классическом порядке учебников: от «A は B です» до «если» и «даже если». В каждом уроке — грамматика с примерами и новые слова со звуком, ромадзи и переводом. Уровни открываются по очереди.",
+    "en": "Hiragana and katakana first, then 25 N5 lessons in the classic textbook order: from “A は B です” to “if” and “even if”. Each lesson has grammar with examples and new words with audio, romaji and a translation. Levels unlock one by one."
    },
    "author": "Spark",
-   "words": 207,
-   "minutes": 310,
+   "words": 383,
+   "minutes": 575,
    "units": [
     {
      "id": "hira1",
@@ -543,79 +543,207 @@
      "count": 21
     },
     {
-     "id": "rules",
+     "id": "l01",
      "title": {
-      "ru": "Основные правила",
-      "en": "Basic rules"
+      "ru": "Урок 1: Знакомство",
+      "en": "Lesson 1: Introductions"
      },
      "count": 12
     },
     {
-     "id": "greet",
+     "id": "l02",
      "title": {
-      "ru": "Приветствия и вежливость",
-      "en": "Greetings and politeness"
+      "ru": "Урок 2: Это, то и вещи",
+      "en": "Lesson 2: This, that and things"
+     },
+     "count": 12
+    },
+    {
+     "id": "l03",
+     "title": {
+      "ru": "Урок 3: Где? Сколько стоит?",
+      "en": "Lesson 3: Where? How much?"
      },
      "count": 10
     },
     {
-     "id": "people",
+     "id": "l04",
      "title": {
-      "ru": "Люди и семья",
-      "en": "People and family"
+      "ru": "Урок 4: Время и ます",
+      "en": "Lesson 4: Time and ます"
+     },
+     "count": 13
+    },
+    {
+     "id": "l05",
+     "title": {
+      "ru": "Урок 5: Куда и на чём",
+      "en": "Lesson 5: Going places"
+     },
+     "count": 12
+    },
+    {
+     "id": "l06",
+     "title": {
+      "ru": "Урок 6: Что делаем? Приглашение",
+      "en": "Lesson 6: Actions and invitations"
+     },
+     "count": 12
+    },
+    {
+     "id": "l07",
+     "title": {
+      "ru": "Урок 7: Чем? Дарить и получать",
+      "en": "Lesson 7: Tools, giving and receiving"
+     },
+     "count": 12
+    },
+    {
+     "id": "l08",
+     "title": {
+      "ru": "Урок 8: Прилагательные",
+      "en": "Lesson 8: Adjectives"
+     },
+     "count": 13
+    },
+    {
+     "id": "l09",
+     "title": {
+      "ru": "Урок 9: Нравится, умею, понимаю",
+      "en": "Lesson 9: Likes, skills, understanding"
+     },
+     "count": 11
+    },
+    {
+     "id": "l10",
+     "title": {
+      "ru": "Урок 10: Есть, находится",
+      "en": "Lesson 10: There is, is located"
+     },
+     "count": 11
+    },
+    {
+     "id": "l11",
+     "title": {
+      "ru": "Урок 11: Счёт",
+      "en": "Lesson 11: Counting"
+     },
+     "count": 11
+    },
+    {
+     "id": "l12",
+     "title": {
+      "ru": "Урок 12: Прошлое и сравнение",
+      "en": "Lesson 12: Past and comparison"
      },
      "count": 10
     },
     {
-     "id": "numbers",
+     "id": "l13",
      "title": {
-      "ru": "Числа и время",
-      "en": "Numbers and time"
+      "ru": "Урок 13: Хочу",
+      "en": "Lesson 13: Wants"
+     },
+     "count": 11
+    },
+    {
+     "id": "l14",
+     "title": {
+      "ru": "Урок 14: て-форма",
+      "en": "Lesson 14: The て-form"
+     },
+     "count": 12
+    },
+    {
+     "id": "l15",
+     "title": {
+      "ru": "Урок 15: Можно и нельзя",
+      "en": "Lesson 15: Permission and prohibition"
+     },
+     "count": 11
+    },
+    {
+     "id": "l16",
+     "title": {
+      "ru": "Урок 16: Последовательность действий",
+      "en": "Lesson 16: Sequences of actions"
+     },
+     "count": 11
+    },
+    {
+     "id": "l17",
+     "title": {
+      "ru": "Урок 17: ない-форма",
+      "en": "Lesson 17: The ない-form"
+     },
+     "count": 11
+    },
+    {
+     "id": "l18",
+     "title": {
+      "ru": "Урок 18: Могу; хобби",
+      "en": "Lesson 18: Can; hobbies"
      },
      "count": 10
     },
     {
-     "id": "food",
+     "id": "l19",
      "title": {
-      "ru": "Еда и напитки",
-      "en": "Food and drink"
+      "ru": "Урок 19: Опыт и перемены",
+      "en": "Lesson 19: Experience and change"
      },
      "count": 10
     },
     {
-     "id": "city",
+     "id": "l20",
      "title": {
-      "ru": "Дом и город",
-      "en": "Home and town"
+      "ru": "Урок 20: Простой стиль",
+      "en": "Lesson 20: Plain style"
+     },
+     "count": 9
+    },
+    {
+     "id": "l21",
+     "title": {
+      "ru": "Урок 21: Думаю, сказал",
+      "en": "Lesson 21: I think, he said"
      },
      "count": 10
     },
     {
-     "id": "verbs",
+     "id": "l22",
      "title": {
-      "ru": "Глаголы: первые шаги",
-      "en": "Verbs: first steps"
+      "ru": "Урок 22: Описание через действие",
+      "en": "Lesson 22: Describing with clauses"
      },
-     "count": 10
+     "count": 9
     },
     {
-     "id": "describe",
+     "id": "l23",
      "title": {
-      "ru": "Какой? Описания",
-      "en": "Describing things"
+      "ru": "Урок 23: Когда; если — то",
+      "en": "Lesson 23: When; if — then"
      },
-     "count": 10
+     "count": 9
     },
     {
-     "id": "travel",
+     "id": "l24",
      "title": {
-      "ru": "Поездки и транспорт",
-      "en": "Travel and transport"
+      "ru": "Урок 24: Мне сделали",
+      "en": "Lesson 24: Doing things for others"
      },
-     "count": 10
+     "count": 8
+    },
+    {
+     "id": "l25",
+     "title": {
+      "ru": "Урок 25: Если; даже если",
+      "en": "Lesson 25: If; even if"
+     },
+     "count": 8
     }
    ],
-   "version": 2,
+   "version": 3,
    "file": "ja.json",
    "audio": true
   },
@@ -734,7 +862,7 @@
      "count": 10
     }
    ],
-   "version": 2,
+   "version": 3,
    "file": "it.json",
    "audio": false
   },
@@ -853,7 +981,7 @@
      "count": 10
     }
    ],
-   "version": 2,
+   "version": 3,
    "file": "pt.json",
    "audio": false
   },
@@ -979,7 +1107,7 @@
      "count": 10
     }
    ],
-   "version": 2,
+   "version": 3,
    "file": "ru.json",
    "audio": true
   },
@@ -1058,7 +1186,7 @@
      "count": 8
     }
    ],
-   "version": 2,
+   "version": 3,
    "file": "es-a2.json",
    "audio": false
   },
@@ -1136,7 +1264,7 @@
      "count": 8
     }
    ],
-   "version": 2,
+   "version": 3,
    "file": "en-a2.json",
    "audio": false
   },
@@ -1215,7 +1343,7 @@
      "count": 8
     }
    ],
-   "version": 2,
+   "version": 3,
    "file": "fr-a2.json",
    "audio": false
   },
@@ -1294,7 +1422,7 @@
      "count": 8
     }
    ],
-   "version": 2,
+   "version": 3,
    "file": "de-a2.json",
    "audio": false
   }

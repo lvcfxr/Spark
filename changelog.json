@@ -1,6 +1,26 @@
 {
  "releases": [
   {
+   "version": "0.22",
+   "date": "05.11.2026",
+   "ru": [
+    "Японский курс переработан: после хираганы и катаканы — 25 уроков уровня N5 в классическом порядке учебников, от «A は B です» до «если» и «даже если». В каждом уроке грамматика с примерами и новые слова со звуком",
+    "Главная стала понятнее: колоды — карточками с прогрессом и числом карточек к повторению"
+   ],
+   "en": [
+    "The Japanese course is rebuilt: after hiragana and katakana come 25 N5 lessons in the classic textbook order, from “A は B です” to “if” and “even if”. Each lesson has grammar with examples and new words with audio",
+    "A clearer home screen: decks are shown as cards with progress and the number of cards due"
+   ],
+   "fix": {
+    "ru": [
+     "Звук слов на iPhone и в Telegram: играет сразу по нажатию, а если живая запись не воспроизводится — звучит встроенная озвучка"
+    ],
+    "en": [
+     "Word audio on iPhone and in Telegram: plays right away on tap, and if a native recording can't be played the built-in voice is used"
+    ]
+   }
+  },
+  {
    "version": "0.21",
    "date": "05.11.2026",
    "ru": [
