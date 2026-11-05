@@ -1,6 +1,24 @@
 {
  "releases": [
   {
+   "version": "0.20.1",
+   "date": "05.11.2026",
+   "ru": [
+    "«Друзья» — отдельная вкладка в нижней панели"
+   ],
+   "en": [
+    "“Friends” is now a separate tab in the bottom bar"
+   ],
+   "fix": {
+    "ru": [
+     "Друзья больше не спрятаны в статистике"
+    ],
+    "en": [
+     "Friends are no longer hidden inside statistics"
+    ]
+   }
+  },
+  {
    "version": "0.20",
    "date": "05.11.2026",
    "ru": [
