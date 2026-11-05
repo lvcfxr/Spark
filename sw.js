@@ -1,7 +1,7 @@
-// Spark service worker 0.20.1
-const V = "spark-0.20.1", SHELL = ["./", "index.html", "config.js", "icon-512.png"];
+// Spark service worker 0.22.0
+const V = "spark-0.22.0", SHELL = ["./", "index.html", "config.js", "icon-512.png"];
 self.addEventListener("install", (e) => { e.waitUntil(caches.open(V).then((c) => Promise.allSettled(SHELL.map((u) => c.add(u)))).then(() => self.skipWaiting())); });
-self.addEventListener("activate", (e) => { e.waitUntil(caches.keys().then((ks) => Promise.all(ks.filter((k) => k.startsWith("spark-") && k !== V).map((k) => caches.delete(k)))).then(() => self.clients.claim())); });
+self.addEventListener("activate", (e) => { e.waitUntil(caches.keys().then((ks) => Promise.all(ks.filter((k) => /^spark-\d/.test(k) && k !== V).map((k) => caches.delete(k)))).then(() => self.clients.claim())); });
 const netFirst = async (req, fallbackKey, ms) => {
   const c = await caches.open(V);
   try {
@@ -11,7 +11,7 @@ const netFirst = async (req, fallbackKey, ms) => {
   } catch { const hit = await c.match(fallbackKey || req, { ignoreSearch: true }); if (hit) return hit; throw new Error("offline"); }
 };
 const swr = async (req) => {
-  const c = await caches.open(V), hit = await c.match(req);
+  const c = await caches.open(V), hit = (await c.match(req)) || (await caches.match(req, { ignoreSearch: true }));
   const net = fetch(req).then((r) => { if (r && r.ok) c.put(req, r.clone()); return r; }).catch(() => null);
   return hit || (await net) || Response.error();
 };
