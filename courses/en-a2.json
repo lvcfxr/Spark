@@ -1,0 +1,661 @@
+{
+"id": "en-a2",
+"version": 2,
+"cards": [
+{
+"id": "a2rules-0",
+"unit": "a2rules",
+"front": "Прошедшее: Past Simple",
+"frontL": {
+"ru": "Прошедшее: Past Simple",
+"en": "Past Simple"
+},
+"hint": "",
+"back": {
+"ru": "Правильные: +ed; неправильные — учить",
+"en": "Regular: +ed; irregular — learn them"
+},
+"extra": {
+"ru": "worked, played; go → went, buy → bought. Вопрос и отрицание — did: Did you go? I didn't go.\n> Yesterday I spoke with my mother.\n> — Вчера я говорил с мамой.",
+"en": "worked, played; go → went, buy → bought. Questions and negatives use did.\n> Yesterday I spoke with my mother.\n> — Yesterday I spoke with my mother."
+},
+"notype": true
+},
+{
+"id": "a2rules-1",
+"unit": "a2rules",
+"front": "Будущее: going to и will",
+"frontL": {
+"ru": "Будущее: going to и will",
+"en": "Future: going to and will"
+},
+"hint": "",
+"back": {
+"ru": "going to — план, will — решение сейчас",
+"en": "going to — a plan, will — a decision now"
+},
+"extra": {
+"ru": "I'm going to travel in summer (план). I'll help you (решил только что).\n> I'm going to visit London.\n> — Я собираюсь посетить Лондон.",
+"en": "I'm going to travel in summer (plan). I'll help you (decided now).\n> I'm going to visit London.\n> — I'm going to visit London."
+},
+"notype": true
+},
+{
+"id": "a2rules-2",
+"unit": "a2rules",
+"front": "Сравнение",
+"frontL": {
+"ru": "Сравнение",
+"en": "Comparisons"
+},
+"hint": "",
+"back": {
+"ru": "-er than / more … than",
+"en": "-er than / more … than"
+},
+"extra": {
+"ru": "cheap → cheaper than; expensive → more expensive than. good → better, bad → worse.\n> This is cheaper than that.\n> — Это дешевле, чем то.",
+"en": "cheap → cheaper than; expensive → more expensive than. good → better, bad → worse.\n> This is cheaper than that.\n> — This is cheaper than that."
+},
+"notype": true
+},
+{
+"id": "a2rules-3",
+"unit": "a2rules",
+"front": "Present Continuous",
+"frontL": {
+"ru": "Present Continuous",
+"en": "Present Continuous"
+},
+"hint": "",
+"back": {
+"ru": "am/is/are + -ing — то, что происходит сейчас",
+"en": "am/is/are + -ing — happening now"
+},
+"extra": {
+"ru": "I'm reading now. Сравните: I read every day (привычка).\n> I'm studying Spanish now.\n> — Сейчас я учу испанский.",
+"en": "I'm reading now. Compare: I read every day (habit).\n> I'm studying Spanish now.\n> — I'm studying Spanish now."
+},
+"notype": true
+},
+{
+"id": "a2rules-4",
+"unit": "a2rules",
+"front": "Can, must, have to",
+"frontL": {
+"ru": "Can, must, have to",
+"en": "Can, must, have to"
+},
+"hint": "",
+"back": {
+"ru": "умею/могу, должен, приходится",
+"en": "ability, obligation"
+},
+"extra": {
+"ru": "I can swim. I must go. I have to work tomorrow. После них — глагол без to (кроме have to).\n> I have to see a doctor.\n> — Мне нужно к врачу.",
+"en": "I can swim. I must go. I have to work tomorrow.\n> I have to see a doctor.\n> — I have to see a doctor."
+},
+"notype": true
+},
+{
+"id": "always",
+"unit": "a2time",
+"front": "always",
+"hint": "ˈɔːlweɪz",
+"back": {
+"ru": "всегда",
+"en": "always"
+},
+"extra": {
+"ru": "Стоит перед смысловым глаголом.\n> I always drink coffee in the morning.\n> — Я всегда пью кофе утром.",
+"en": "Goes before the main verb.\n> I always drink coffee in the morning.\n> — I always drink coffee in the morning."
+}
+},
+{
+"id": "often",
+"unit": "a2time",
+"front": "often",
+"hint": "ˈɒfn",
+"back": {
+"ru": "часто",
+"en": "often"
+},
+"extra": {
+"ru": "> We often go to the cinema.\n> — Мы часто ходим в кино.",
+"en": "> We often go to the cinema.\n> — We often go to the cinema."
+}
+},
+{
+"id": "sometimes",
+"unit": "a2time",
+"front": "sometimes",
+"hint": "ˈsʌmtaɪmz",
+"back": {
+"ru": "иногда",
+"en": "sometimes"
+},
+"extra": {
+"ru": "> Sometimes I work from home.\n> — Иногда я работаю дома.",
+"en": "> Sometimes I work from home.\n> — Sometimes I work from home."
+}
+},
+{
+"id": "never",
+"unit": "a2time",
+"front": "never",
+"hint": "ˈnevə",
+"back": {
+"ru": "никогда",
+"en": "never"
+},
+"extra": {
+"ru": "Без второго отрицания: I never eat.\n> I never eat meat.\n> — Я никогда не ем мясо.",
+"en": "No double negative: I never eat.\n> I never eat meat.\n> — I never eat meat."
+}
+},
+{
+"id": "early",
+"unit": "a2time",
+"front": "early",
+"hint": "ˈɜːli",
+"back": {
+"ru": "рано",
+"en": "early"
+},
+"extra": {
+"ru": "> I get up early.\n> — Я встаю рано.",
+"en": "> I get up early.\n> — I get up early."
+}
+},
+{
+"id": "late",
+"unit": "a2time",
+"front": "late",
+"hint": "leɪt",
+"back": {
+"ru": "поздно",
+"en": "late"
+},
+"extra": {
+"ru": "> It's already late.\n> — Уже поздно.",
+"en": "> It's already late.\n> — It's already late."
+}
+},
+{
+"id": "then",
+"unit": "a2time",
+"front": "then",
+"hint": "ðen",
+"back": {
+"ru": "потом, затем",
+"en": "then; after that"
+},
+"extra": {
+"ru": "> Breakfast first, then work.\n> — Сначала завтрак, потом работа.",
+"en": "> Breakfast first, then work.\n> — Breakfast first, then work."
+}
+},
+{
+"id": "everyday",
+"unit": "a2time",
+"front": "every day",
+"hint": "ˈevri deɪ",
+"back": {
+"ru": "каждый день",
+"en": "every day"
+},
+"extra": {
+"ru": "Everyday (слитно) — «повседневный».\n> I learn words every day.\n> — Я учу слова каждый день.",
+"en": "Everyday (one word) means “ordinary”.\n> I learn words every day.\n> — I learn words every day."
+}
+},
+{
+"id": "price",
+"unit": "a2shop",
+"front": "price",
+"hint": "praɪs",
+"back": {
+"ru": "цена",
+"en": "price"
+},
+"extra": {
+"ru": "> What's the price?\n> — Какая цена?",
+"en": "> What's the price?\n> — What's the price?"
+}
+},
+{
+"id": "expensive",
+"unit": "a2shop",
+"front": "expensive",
+"hint": "ɪkˈspensɪv",
+"back": {
+"ru": "дорогой",
+"en": "expensive"
+},
+"extra": {
+"ru": "> This phone is very expensive.\n> — Этот телефон очень дорогой.",
+"en": "> This phone is very expensive.\n> — This phone is very expensive."
+}
+},
+{
+"id": "cheap",
+"unit": "a2shop",
+"front": "cheap",
+"hint": "tʃiːp",
+"back": {
+"ru": "дешёвый",
+"en": "cheap"
+},
+"extra": {
+"ru": "> Everything here is cheap.\n> — Здесь всё дешёвое.",
+"en": "> Everything here is cheap.\n> — Everything here is cheap."
+}
+},
+{
+"id": "money",
+"unit": "a2shop",
+"front": "money",
+"hint": "ˈmʌni",
+"back": {
+"ru": "деньги",
+"en": "money"
+},
+"extra": {
+"ru": "Неисчисляемое: much money.\n> I don't have any money.\n> — У меня нет денег.",
+"en": "Uncountable: much money.\n> I don't have any money.\n> — I don't have any money."
+}
+},
+{
+"id": "buy",
+"unit": "a2shop",
+"front": "buy",
+"hint": "baɪ",
+"back": {
+"ru": "покупать",
+"en": "to buy"
+},
+"extra": {
+"ru": "Прошедшее: bought.\n> I want to buy a present.\n> — Я хочу купить подарок.",
+"en": "Past: bought.\n> I want to buy a present.\n> — I want to buy a present."
+}
+},
+{
+"id": "pay",
+"unit": "a2shop",
+"front": "pay",
+"hint": "peɪ",
+"back": {
+"ru": "платить",
+"en": "to pay"
+},
+"extra": {
+"ru": "Прошедшее: paid.\n> Can I pay by card?\n> — Можно заплатить картой?",
+"en": "Past: paid.\n> Can I pay by card?\n> — Can I pay by card?"
+}
+},
+{
+"id": "size",
+"unit": "a2shop",
+"front": "size",
+"hint": "saɪz",
+"back": {
+"ru": "размер",
+"en": "size"
+},
+"extra": {
+"ru": "> Do you have a bigger size?\n> — У вас есть размер побольше?",
+"en": "> Do you have a bigger size?\n> — Do you have a bigger size?"
+}
+},
+{
+"id": "howmuch",
+"unit": "a2shop",
+"front": "how much is it?",
+"hint": "haʊ mʌtʃ ɪz ɪt",
+"back": {
+"ru": "сколько стоит?",
+"en": "how much is it?"
+},
+"extra": {
+"ru": "> How much is this ticket?\n> — Сколько стоит этот билет?",
+"en": "> How much is this ticket?\n> — How much is this ticket?"
+}
+},
+{
+"id": "happy",
+"unit": "a2feel",
+"front": "happy",
+"hint": "ˈhæpi",
+"back": {
+"ru": "счастливый",
+"en": "happy"
+},
+"extra": {
+"ru": "> I'm very happy today.\n> — Я очень счастлив сегодня.",
+"en": "> I'm very happy today.\n> — I'm very happy today."
+}
+},
+{
+"id": "tired",
+"unit": "a2feel",
+"front": "tired",
+"hint": "ˈtaɪəd",
+"back": {
+"ru": "уставший",
+"en": "tired"
+},
+"extra": {
+"ru": "> I'm tired after work.\n> — Я устал после работы.",
+"en": "> I'm tired after work.\n> — I'm tired after work."
+}
+},
+{
+"id": "sick",
+"unit": "a2feel",
+"front": "ill",
+"hint": "ɪl",
+"back": {
+"ru": "больной",
+"en": "ill; sick"
+},
+"extra": {
+"ru": "В США чаще sick.\n> My brother is ill.\n> — Мой брат болен.",
+"en": "In the US sick is more common.\n> My brother is ill.\n> — My brother is ill."
+}
+},
+{
+"id": "head",
+"unit": "a2feel",
+"front": "headache",
+"hint": "ˈhedeɪk",
+"back": {
+"ru": "голова",
+"en": "head"
+},
+"extra": {
+"ru": "head — голова, ache — боль.\n> I have a headache.\n> — У меня болит голова.",
+"en": "head + ache (pain).\n> I have a headache.\n> — I have a headache."
+}
+},
+{
+"id": "doctor",
+"unit": "a2feel",
+"front": "doctor",
+"hint": "ˈdɒktə",
+"back": {
+"ru": "врач",
+"en": "doctor"
+},
+"extra": {
+"ru": "> I need to see a doctor.\n> — Мне нужно к врачу.",
+"en": "> I need to see a doctor.\n> — I need to see a doctor."
+}
+},
+{
+"id": "medicine",
+"unit": "a2feel",
+"front": "medicine",
+"hint": "ˈmedsn",
+"back": {
+"ru": "лекарство",
+"en": "medicine"
+},
+"extra": {
+"ru": "> Take the medicine.\n> — Прими лекарство.",
+"en": "> Take the medicine.\n> — Take the medicine."
+}
+},
+{
+"id": "hungry",
+"unit": "a2feel",
+"front": "hungry",
+"hint": "ˈhʌŋɡri",
+"back": {
+"ru": "голодный",
+"en": "hungry"
+},
+"extra": {
+"ru": "> Are you hungry?\n> — Ты голоден?",
+"en": "> Are you hungry?\n> — Are you hungry?"
+}
+},
+{
+"id": "feel",
+"unit": "a2feel",
+"front": "feel",
+"hint": "fiːl",
+"back": {
+"ru": "чувствовать (себя)",
+"en": "to feel"
+},
+"extra": {
+"ru": "Прошедшее: felt.\n> I feel better.\n> — Я чувствую себя лучше.",
+"en": "Past: felt.\n> I feel better.\n> — I feel better."
+}
+},
+{
+"id": "work2",
+"unit": "a2work",
+"front": "job",
+"hint": "dʒɒb",
+"back": {
+"ru": "работа",
+"en": "work; job"
+},
+"extra": {
+"ru": "Job — исчисляемое, work — нет.\n> I have a new job.\n> — У меня новая работа.",
+"en": "Job is countable, work isn't.\n> I have a new job.\n> — I have a new job."
+}
+},
+{
+"id": "office",
+"unit": "a2work",
+"front": "office",
+"hint": "ˈɒfɪs",
+"back": {
+"ru": "офис",
+"en": "office"
+},
+"extra": {
+"ru": "> The office is in the centre.\n> — Офис в центре.",
+"en": "> The office is in the centre.\n> — The office is in the centre."
+}
+},
+{
+"id": "meeting",
+"unit": "a2work",
+"front": "meeting",
+"hint": "ˈmiːtɪŋ",
+"back": {
+"ru": "встреча",
+"en": "meeting"
+},
+"extra": {
+"ru": "> I have a meeting at ten.\n> — У меня встреча в десять.",
+"en": "> I have a meeting at ten.\n> — I have a meeting at ten."
+}
+},
+{
+"id": "study",
+"unit": "a2work",
+"front": "study",
+"hint": "ˈstʌdi",
+"back": {
+"ru": "учиться, изучать",
+"en": "to study"
+},
+"extra": {
+"ru": "> I'm studying Spanish.\n> — Я изучаю испанский.",
+"en": "> I'm studying Spanish.\n> — I'm studying Spanish."
+}
+},
+{
+"id": "exam",
+"unit": "a2work",
+"front": "exam",
+"hint": "ɪɡˈzæm",
+"back": {
+"ru": "экзамен",
+"en": "exam"
+},
+"extra": {
+"ru": "> I have an exam tomorrow.\n> — Завтра у меня экзамен.",
+"en": "> I have an exam tomorrow.\n> — I have an exam tomorrow."
+}
+},
+{
+"id": "begin",
+"unit": "a2work",
+"front": "start",
+"hint": "stɑːt",
+"back": {
+"ru": "начинать",
+"en": "to begin; to start"
+},
+"extra": {
+"ru": "Также begin (began, begun).\n> The lesson starts at nine.\n> — Урок начинается в девять.",
+"en": "Also begin (began, begun).\n> The lesson starts at nine.\n> — The lesson starts at nine."
+}
+},
+{
+"id": "finish",
+"unit": "a2work",
+"front": "finish",
+"hint": "ˈfɪnɪʃ",
+"back": {
+"ru": "заканчивать",
+"en": "to finish"
+},
+"extra": {
+"ru": "> I finish at five.\n> — Я заканчиваю в пять.",
+"en": "> I finish at five.\n> — I finish at five."
+}
+},
+{
+"id": "question",
+"unit": "a2work",
+"front": "question",
+"hint": "ˈkwestʃən",
+"back": {
+"ru": "вопрос",
+"en": "question"
+},
+"extra": {
+"ru": "> I have a question.\n> — У меня есть вопрос.",
+"en": "> I have a question.\n> — I have a question."
+}
+},
+{
+"id": "travel",
+"unit": "a2trip",
+"front": "travel",
+"hint": "ˈtrævl",
+"back": {
+"ru": "путешествовать",
+"en": "to travel"
+},
+"extra": {
+"ru": "> I love to travel.\n> — Я люблю путешествовать.",
+"en": "> I love to travel.\n> — I love to travel."
+}
+},
+{
+"id": "holiday",
+"unit": "a2trip",
+"front": "holiday",
+"hint": "ˈhɒlədeɪ",
+"back": {
+"ru": "отпуск, каникулы",
+"en": "holiday; vacation"
+},
+"extra": {
+"ru": "В США — vacation.\n> We have a holiday in the summer.\n> — Летом у нас отпуск.",
+"en": "In the US: vacation.\n> We have a holiday in the summer.\n> — We have a holiday in the summer."
+}
+},
+{
+"id": "visit",
+"unit": "a2trip",
+"front": "visit",
+"hint": "ˈvɪzɪt",
+"back": {
+"ru": "посещать, навещать",
+"en": "to visit"
+},
+"extra": {
+"ru": "> We visited Grandma.\n> — Мы навестили бабушку.",
+"en": "> We visited Grandma.\n> — We visited Grandma."
+}
+},
+{
+"id": "return",
+"unit": "a2trip",
+"front": "come back",
+"hint": "kʌm bæk",
+"back": {
+"ru": "возвращаться",
+"en": "to return; to come back"
+},
+"extra": {
+"ru": "> I'll come back on Monday.\n> — Я вернусь в понедельник.",
+"en": "> I'll come back on Monday.\n> — I'll come back on Monday."
+}
+},
+{
+"id": "forget",
+"unit": "a2trip",
+"front": "forget",
+"hint": "fəˈɡet",
+"back": {
+"ru": "забывать",
+"en": "to forget"
+},
+"extra": {
+"ru": "Прошедшее: forgot.\n> I forgot my keys.\n> — Я забыл ключи.",
+"en": "Past: forgot.\n> I forgot my keys.\n> — I forgot my keys."
+}
+},
+{
+"id": "remember",
+"unit": "a2trip",
+"front": "remember",
+"hint": "rɪˈmembə",
+"back": {
+"ru": "помнить",
+"en": "to remember"
+},
+"extra": {
+"ru": "> Do you remember his name?\n> — Ты помнишь его имя?",
+"en": "> Do you remember his name?\n> — Do you remember his name?"
+}
+},
+{
+"id": "wait",
+"unit": "a2trip",
+"front": "wait",
+"hint": "weɪt",
+"back": {
+"ru": "ждать",
+"en": "to wait"
+},
+"extra": {
+"ru": "Ждать кого-то — wait for.\n> Wait for me, please.\n> — Подожди меня, пожалуйста.",
+"en": "To wait for someone: wait for.\n> Wait for me, please.\n> — Wait for me, please."
+}
+},
+{
+"id": "help",
+"unit": "a2trip",
+"front": "help",
+"hint": "help",
+"back": {
+"ru": "помогать",
+"en": "to help"
+},
+"extra": {
+"ru": "> Can you help me?\n> — Можешь мне помочь?",
+"en": "> Can you help me?\n> — Can you help me?"
+}
+}
+]
+}

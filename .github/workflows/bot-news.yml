@@ -21,7 +21,7 @@ jobs:
           BOT_URL: ${{ secrets.SPARK_BOT_URL }}
           BOT_SECRET: ${{ secrets.SPARK_BOT_SECRET }}
         run: |
-          if [ -z "$BOT_URL" ] || [ -z "$BOT_SECRET" ]; then echo "Секреты бота не заданы — пропускаю"; exit 0; fi
+          if [ -z "$BOT_URL" ] || [ -z "$BOT_SECRET" ]; then echo "::warning::Секреты SPARK_BOT_URL и SPARK_BOT_SECRET не заданы — рассылка об обновлении не отправлена (Settings → Secrets and variables → Actions)"; exit 0; fi
           want=$(jq -r '.releases[0].version' changelog.json)
           site="https://${GITHUB_REPOSITORY_OWNER}.github.io/${GITHUB_REPOSITORY#*/}"
           for i in $(seq 1 40); do

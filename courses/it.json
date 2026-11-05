@@ -1,0 +1,1694 @@
+{
+"id": "it",
+"version": 2,
+"cards": [
+{
+"id": "alpha-l0",
+"unit": "alpha",
+"front": "A a",
+"hint": "",
+"back": {
+"ru": "[а]",
+"en": "a"
+},
+"extra": {
+"ru": "Название: a\n> amico\n> — друг",
+"en": "Name: a\n> amico\n> — friend"
+},
+"notype": true
+},
+{
+"id": "alpha-l1",
+"unit": "alpha",
+"front": "B b",
+"hint": "",
+"back": {
+"ru": "[би]",
+"en": "bi"
+},
+"extra": {
+"ru": "Название: bi\n> bello\n> — красивый",
+"en": "Name: bi\n> bello\n> — beautiful"
+},
+"notype": true
+},
+{
+"id": "alpha-l2",
+"unit": "alpha",
+"front": "C c",
+"hint": "",
+"back": {
+"ru": "[чи]",
+"en": "ci"
+},
+"extra": {
+"ru": "Название: ci\n> casa\n> — дом",
+"en": "Name: ci\n> casa\n> — house"
+},
+"notype": true
+},
+{
+"id": "alpha-l3",
+"unit": "alpha",
+"front": "D d",
+"hint": "",
+"back": {
+"ru": "[ди]",
+"en": "di"
+},
+"extra": {
+"ru": "Название: di\n> domani\n> — завтра",
+"en": "Name: di\n> domani\n> — tomorrow"
+},
+"notype": true
+},
+{
+"id": "alpha-l4",
+"unit": "alpha",
+"front": "E e",
+"hint": "",
+"back": {
+"ru": "[э]",
+"en": "e"
+},
+"extra": {
+"ru": "Название: e\n> esempio\n> — пример",
+"en": "Name: e\n> esempio\n> — example"
+},
+"notype": true
+},
+{
+"id": "alpha-l5",
+"unit": "alpha",
+"front": "F f",
+"hint": "",
+"back": {
+"ru": "[эффе]",
+"en": "effe"
+},
+"extra": {
+"ru": "Название: effe\n> festa\n> — праздник",
+"en": "Name: effe\n> festa\n> — party"
+},
+"notype": true
+},
+{
+"id": "alpha-l6",
+"unit": "alpha",
+"front": "G g",
+"hint": "",
+"back": {
+"ru": "[джи]",
+"en": "gi"
+},
+"extra": {
+"ru": "Название: gi\n> gatto\n> — кот",
+"en": "Name: gi\n> gatto\n> — cat"
+},
+"notype": true
+},
+{
+"id": "alpha-l7",
+"unit": "alpha",
+"front": "H h",
+"hint": "",
+"back": {
+"ru": "[акка] — не читается",
+"en": "acca"
+},
+"extra": {
+"ru": "Название: acca\n> ho\n> — у меня есть",
+"en": "Name: acca\n> ho\n> — I have"
+},
+"notype": true
+},
+{
+"id": "alpha-l8",
+"unit": "alpha",
+"front": "I i",
+"hint": "",
+"back": {
+"ru": "[и]",
+"en": "i"
+},
+"extra": {
+"ru": "Название: i\n> isola\n> — остров",
+"en": "Name: i\n> isola\n> — island"
+},
+"notype": true
+},
+{
+"id": "alpha-l9",
+"unit": "alpha",
+"front": "L l",
+"hint": "",
+"back": {
+"ru": "[элле]",
+"en": "elle"
+},
+"extra": {
+"ru": "Название: elle\n> luna\n> — луна",
+"en": "Name: elle\n> luna\n> — moon"
+},
+"notype": true
+},
+{
+"id": "alpha-l10",
+"unit": "alpha",
+"front": "M m",
+"hint": "",
+"back": {
+"ru": "[эмме]",
+"en": "emme"
+},
+"extra": {
+"ru": "Название: emme\n> mare\n> — море",
+"en": "Name: emme\n> mare\n> — sea"
+},
+"notype": true
+},
+{
+"id": "alpha-l11",
+"unit": "alpha",
+"front": "N n",
+"hint": "",
+"back": {
+"ru": "[энне]",
+"en": "enne"
+},
+"extra": {
+"ru": "Название: enne\n> notte\n> — ночь",
+"en": "Name: enne\n> notte\n> — night"
+},
+"notype": true
+},
+{
+"id": "alpha-l12",
+"unit": "alpha",
+"front": "O o",
+"hint": "",
+"back": {
+"ru": "[о]",
+"en": "o"
+},
+"extra": {
+"ru": "Название: o\n> oggi\n> — сегодня",
+"en": "Name: o\n> oggi\n> — today"
+},
+"notype": true
+},
+{
+"id": "alpha-l13",
+"unit": "alpha",
+"front": "P p",
+"hint": "",
+"back": {
+"ru": "[пи]",
+"en": "pi"
+},
+"extra": {
+"ru": "Название: pi\n> pane\n> — хлеб",
+"en": "Name: pi\n> pane\n> — bread"
+},
+"notype": true
+},
+{
+"id": "alpha-l14",
+"unit": "alpha",
+"front": "Q q",
+"hint": "",
+"back": {
+"ru": "[ку]",
+"en": "cu"
+},
+"extra": {
+"ru": "Название: cu\n> quattro\n> — четыре",
+"en": "Name: cu\n> quattro\n> — four"
+},
+"notype": true
+},
+{
+"id": "alpha-l15",
+"unit": "alpha",
+"front": "R r",
+"hint": "",
+"back": {
+"ru": "[эрре] — раскатистое",
+"en": "erre"
+},
+"extra": {
+"ru": "Название: erre\n> Roma\n> — Рим",
+"en": "Name: erre\n> Roma\n> — Rome"
+},
+"notype": true
+},
+{
+"id": "alpha-l16",
+"unit": "alpha",
+"front": "S s",
+"hint": "",
+"back": {
+"ru": "[эссе]",
+"en": "esse"
+},
+"extra": {
+"ru": "Название: esse\n> sole\n> — солнце",
+"en": "Name: esse\n> sole\n> — sun"
+},
+"notype": true
+},
+{
+"id": "alpha-l17",
+"unit": "alpha",
+"front": "T t",
+"hint": "",
+"back": {
+"ru": "[ти]",
+"en": "ti"
+},
+"extra": {
+"ru": "Название: ti\n> treno\n> — поезд",
+"en": "Name: ti\n> treno\n> — train"
+},
+"notype": true
+},
+{
+"id": "alpha-l18",
+"unit": "alpha",
+"front": "U u",
+"hint": "",
+"back": {
+"ru": "[у]",
+"en": "u"
+},
+"extra": {
+"ru": "Название: u\n> uva\n> — виноград",
+"en": "Name: u\n> uva\n> — grapes"
+},
+"notype": true
+},
+{
+"id": "alpha-l19",
+"unit": "alpha",
+"front": "V v",
+"hint": "",
+"back": {
+"ru": "[ву]",
+"en": "vu"
+},
+"extra": {
+"ru": "Название: vu\n> vino\n> — вино",
+"en": "Name: vu\n> vino\n> — wine"
+},
+"notype": true
+},
+{
+"id": "alpha-l20",
+"unit": "alpha",
+"front": "Z z",
+"hint": "",
+"back": {
+"ru": "[дзэта]",
+"en": "zeta"
+},
+"extra": {
+"ru": "Название: zeta\n> zucchero\n> — сахар",
+"en": "Name: zeta\n> zucchero\n> — sugar"
+},
+"notype": true
+},
+{
+"id": "sounds-s0",
+"unit": "sounds",
+"front": "c + e/i",
+"hint": "",
+"back": {
+"ru": "[ч]",
+"en": "[ч]"
+},
+"extra": {
+"ru": "перед e, i — «ч»: cena, ciao\n> cena\n> — ужин",
+"en": "before e, i — “ch”: cena, ciao\n> cena\n> — dinner"
+},
+"notype": true
+},
+{
+"id": "sounds-s1",
+"unit": "sounds",
+"front": "ch",
+"hint": "",
+"back": {
+"ru": "[к]",
+"en": "[к]"
+},
+"extra": {
+"ru": "ch — «к»: che, chi\n> chiave\n> — ключ",
+"en": "ch is “k”: che, chi\n> chiave\n> — key"
+},
+"notype": true
+},
+{
+"id": "sounds-s2",
+"unit": "sounds",
+"front": "g + e/i",
+"hint": "",
+"back": {
+"ru": "[дж]",
+"en": "[дж]"
+},
+"extra": {
+"ru": "перед e, i — «дж»\n> gelato\n> — мороженое",
+"en": "before e, i — “j”\n> gelato\n> — ice cream"
+},
+"notype": true
+},
+{
+"id": "sounds-s3",
+"unit": "sounds",
+"front": "gh",
+"hint": "",
+"back": {
+"ru": "[г]",
+"en": "[г]"
+},
+"extra": {
+"ru": "gh — твёрдое «г»\n> spaghetti\n> — спагетти",
+"en": "gh is a hard “g”\n> spaghetti\n> — spaghetti"
+},
+"notype": true
+},
+{
+"id": "sounds-s4",
+"unit": "sounds",
+"front": "gli",
+"hint": "",
+"back": {
+"ru": "[ль]",
+"en": "[ль]"
+},
+"extra": {
+"ru": "gli — мягкое долгое «ль»\n> famiglia\n> — семья",
+"en": "gli is a soft “ly”\n> famiglia\n> — family"
+},
+"notype": true
+},
+{
+"id": "sounds-s5",
+"unit": "sounds",
+"front": "gn",
+"hint": "",
+"back": {
+"ru": "[нь]",
+"en": "[нь]"
+},
+"extra": {
+"ru": "gn — «нь»\n> bagno\n> — ванная",
+"en": "gn is “ny”\n> bagno\n> — bathroom"
+},
+"notype": true
+},
+{
+"id": "sounds-s6",
+"unit": "sounds",
+"front": "sc + e/i",
+"hint": "",
+"back": {
+"ru": "[ш]",
+"en": "[ш]"
+},
+"extra": {
+"ru": "sce, sci — «ше», «ши»\n> pesce\n> — рыба",
+"en": "sce, sci — “she”, “shee”\n> pesce\n> — fish"
+},
+"notype": true
+},
+{
+"id": "sounds-s7",
+"unit": "sounds",
+"front": "двойные",
+"hint": "",
+"back": {
+"ru": "долгие согласные",
+"en": "долгие согласные"
+},
+"extra": {
+"ru": "двойную согласную тянут: notte ≠ note\n> notte\n> — ночь",
+"en": "double consonants are held longer: notte ≠ note\n> notte\n> — night"
+},
+"notype": true
+},
+{
+"id": "rules-w-gender",
+"unit": "rules",
+"front": "Род и артикли",
+"hint": "",
+"back": {
+"ru": "il/la, lo, l' — «определённые»; un/una — «неопределённые»",
+"en": "il/la, lo, l' = “the”; un/una = “a”"
+},
+"extra": {
+"ru": "Мужской: il libro, lo studente (перед s+согл., z), l'amico. Женский: la casa, l'acqua. Обычно -o — мужской, -a — женский.\n> Il libro è nuovo.\n> — Книга новая.",
+"en": "Masculine: il libro, lo studente (before s+consonant, z), l'amico. Feminine: la casa, l'acqua. Usually -o masculine, -a feminine.\n> Il libro è nuovo.\n> — The book is new."
+},
+"frontL": {
+"ru": "Род и артикли",
+"en": "Gender and articles"
+},
+"notype": true
+},
+{
+"id": "rules-w-plural",
+"unit": "rules",
+"front": "Множественное число",
+"hint": "",
+"back": {
+"ru": "-o → -i, -a → -e, -e → -i",
+"en": "-o → -i, -a → -e, -e → -i"
+},
+"extra": {
+"ru": "libro → libri, casa → case, notte → notti. Артикли: il → i, la → le, lo/l' → gli.\n> Le case sono grandi.\n> — Дома большие.",
+"en": "libro → libri, casa → case, notte → notti. Articles: il → i, la → le, lo/l' → gli.\n> Le case sono grandi.\n> — The houses are big."
+},
+"frontL": {
+"ru": "Множественное число",
+"en": "Plurals"
+},
+"notype": true
+},
+{
+"id": "rules-w-essere",
+"unit": "rules",
+"front": "Essere — «быть»",
+"hint": "",
+"back": {
+"ru": "sono, sei, è, siamo, siete, sono",
+"en": "sono, sei, è, siamo, siete, sono"
+},
+"extra": {
+"ru": "Местоимение обычно опускают: Sono stanco — «я устал».\n> Sono studente.\n> — Я студент.",
+"en": "The pronoun is usually dropped: Sono stanco — “I'm tired”.\n> Sono studente.\n> — I am a student."
+},
+"frontL": {
+"ru": "Essere — «быть»",
+"en": "Essere — “to be”"
+},
+"notype": true
+},
+{
+"id": "rules-w-avere",
+"unit": "rules",
+"front": "Avere — «иметь»",
+"hint": "",
+"back": {
+"ru": "ho, hai, ha, abbiamo, avete, hanno",
+"en": "ho, hai, ha, abbiamo, avete, hanno"
+},
+"extra": {
+"ru": "h не читается. Возраст: Ho vent'anni — «мне двадцать».\n> Ho fame.\n> — Я голоден.",
+"en": "The h is silent. Age: Ho vent'anni — “I'm twenty”.\n> Ho fame.\n> — I'm hungry."
+},
+"frontL": {
+"ru": "Avere — «иметь»",
+"en": "Avere — “to have”"
+},
+"notype": true
+},
+{
+"id": "rules-w-are",
+"unit": "rules",
+"front": "Глаголы на -are",
+"hint": "",
+"back": {
+"ru": "parlare: parlo, parli, parla, parliamo, parlate, parlano",
+"en": "parlare: parlo, parli, parla, parliamo, parlate, parlano"
+},
+"extra": {
+"ru": "Основа + -o, -i, -a, -iamo, -ate, -ano. Так спрягаются сотни глаголов.\n> Parliamo italiano.\n> — Мы говорим по-итальянски.",
+"en": "Stem + -o, -i, -a, -iamo, -ate, -ano. Hundreds of verbs work this way.\n> Parliamo italiano.\n> — We speak Italian."
+},
+"frontL": {
+"ru": "Глаголы на -are",
+"en": "Verbs in -are"
+},
+"notype": true
+},
+{
+"id": "rules-w-stress",
+"unit": "rules",
+"front": "Ударение",
+"hint": "",
+"back": {
+"ru": "Обычно на предпоследний слог",
+"en": "Usually on the second-to-last syllable"
+},
+"extra": {
+"ru": "Если на последнем — над гласной знак: città, caffè, perché.\n> Un caffè, per favore.\n> — Кофе, пожалуйста.",
+"en": "If on the last one, there is an accent mark: città, caffè, perché.\n> Un caffè, per favore.\n> — A coffee, please."
+},
+"frontL": {
+"ru": "Ударение",
+"en": "Stress"
+},
+"notype": true
+},
+{
+"id": "rules-w-neg",
+"unit": "rules",
+"front": "Отрицание и вопрос",
+"hint": "",
+"back": {
+"ru": "non перед глаголом; вопрос — интонацией",
+"en": "non before the verb; questions by intonation"
+},
+"extra": {
+"ru": "Non parlo tedesco. Порядок слов в вопросе не меняется: Parli italiano?\n> Parli italiano?\n> — Ты говоришь по-итальянски?",
+"en": "Non parlo tedesco. Word order doesn't change in questions: Parli italiano?\n> Parli italiano?\n> — Do you speak Italian?"
+},
+"frontL": {
+"ru": "Отрицание и вопрос",
+"en": "Negation and questions"
+},
+"notype": true
+},
+{
+"id": "hello",
+"unit": "greet",
+"front": "ciao",
+"hint": "ˈtʃao",
+"back": {
+"ru": "привет; здравствуйте",
+"en": "hello"
+},
+"extra": {
+"ru": "Ciao — и «привет», и «пока». Вежливо: buongiorno.\n> Ciao! Che piacere vederti.\n> — Привет! Рад тебя видеть.",
+"en": "Ciao means both “hi” and “bye”. Polite: buongiorno.\n> Ciao! Che piacere vederti.\n> — Hello! Nice to see you."
+}
+},
+{
+"id": "bye",
+"unit": "greet",
+"front": "arrivederci",
+"hint": "arriveˈdertʃi",
+"back": {
+"ru": "до свидания",
+"en": "goodbye"
+},
+"extra": {
+"ru": "A domani — «до завтра».\n> Arrivederci, a domani!\n> — До свидания, до завтра!",
+"en": "A domani means “see you tomorrow”.\n> Arrivederci, a domani!\n> — Goodbye, see you tomorrow!"
+}
+},
+{
+"id": "thanks",
+"unit": "greet",
+"front": "grazie",
+"hint": "ˈɡrattsje",
+"back": {
+"ru": "спасибо",
+"en": "thank you"
+},
+"extra": {
+"ru": "> Grazie per l'aiuto.\n> — Спасибо за помощь.",
+"en": "> Grazie per l'aiuto.\n> — Thank you for the help."
+}
+},
+{
+"id": "please",
+"unit": "greet",
+"front": "per favore",
+"hint": "per faˈvore",
+"back": {
+"ru": "пожалуйста (просьба)",
+"en": "please"
+},
+"extra": {
+"ru": "> Un caffè, per favore.\n> — Кофе, пожалуйста.",
+"en": "> Un caffè, per favore.\n> — A coffee, please."
+}
+},
+{
+"id": "yes",
+"unit": "greet",
+"front": "sì",
+"hint": "si",
+"back": {
+"ru": "да",
+"en": "yes"
+},
+"extra": {
+"ru": "Ударение на i: sì «да», si — частица.\n> Sì, certo.\n> — Да, конечно.",
+"en": "With an accent: sì “yes”; si is a pronoun.\n> Sì, certo.\n> — Yes, of course."
+}
+},
+{
+"id": "no",
+"unit": "greet",
+"front": "no",
+"hint": "nɔ",
+"back": {
+"ru": "нет",
+"en": "no"
+},
+"extra": {
+"ru": "> No, grazie.\n> — Нет, спасибо.",
+"en": "> No, grazie.\n> — No, thank you."
+}
+},
+{
+"id": "sorry",
+"unit": "greet",
+"front": "scusi",
+"hint": "ˈskuzi",
+"back": {
+"ru": "извините",
+"en": "sorry; excuse me"
+},
+"extra": {
+"ru": "Scusa — на «ты».\n> Scusi, sono in ritardo.\n> — Извините, я опоздал.",
+"en": "Scusa is the informal form.\n> Scusi, sono in ritardo.\n> — Sorry, I'm late."
+}
+},
+{
+"id": "morning",
+"unit": "greet",
+"front": "buongiorno",
+"hint": "bwɔnˈdʒorno",
+"back": {
+"ru": "доброе утро",
+"en": "good morning"
+},
+"extra": {
+"ru": "Говорят до вечера.\n> Buongiorno, mamma!\n> — Доброе утро, мама!",
+"en": "Used until the afternoon.\n> Buongiorno, mamma!\n> — Good morning, Mom!"
+}
+},
+{
+"id": "night",
+"unit": "greet",
+"front": "buonanotte",
+"hint": "bwɔnaˈnɔtte",
+"back": {
+"ru": "спокойной ночи",
+"en": "good night"
+},
+"extra": {
+"ru": "> Buonanotte, a domani.\n> — Спокойной ночи, до завтра.",
+"en": "> Buonanotte, a domani.\n> — Good night, see you tomorrow."
+}
+},
+{
+"id": "howru",
+"unit": "greet",
+"front": "come stai?",
+"hint": "ˈkome ˈstai",
+"back": {
+"ru": "как дела?",
+"en": "how are you?"
+},
+"extra": {
+"ru": "Вежливо: come sta?\n> Come stai? — Bene, grazie.\n> — Как дела? — Хорошо, спасибо.",
+"en": "Polite: come sta?\n> Come stai? — Bene, grazie.\n> — How are you? — Fine, thanks."
+}
+},
+{
+"id": "man",
+"unit": "people",
+"front": "l'uomo",
+"hint": "ˈlwɔmo",
+"back": {
+"ru": "мужчина",
+"en": "man"
+},
+"extra": {
+"ru": "Мн. ч.: gli uomini.\n> Quest'uomo è il mio insegnante.\n> — Этот мужчина — мой учитель.",
+"en": "Plural: gli uomini.\n> Quest'uomo è il mio insegnante.\n> — This man is my teacher."
+}
+},
+{
+"id": "woman",
+"unit": "people",
+"front": "la donna",
+"hint": "la ˈdɔnna",
+"back": {
+"ru": "женщина",
+"en": "woman"
+},
+"extra": {
+"ru": "> Questa donna è medico.\n> — Эта женщина — врач.",
+"en": "> Questa donna è medico.\n> — This woman is a doctor."
+}
+},
+{
+"id": "child",
+"unit": "people",
+"front": "il bambino",
+"hint": "il bamˈbino",
+"back": {
+"ru": "ребёнок",
+"en": "child"
+},
+"extra": {
+"ru": "Девочка — la bambina.\n> Il bambino dorme.\n> — Ребёнок спит.",
+"en": "A girl: la bambina.\n> Il bambino dorme.\n> — The child is sleeping."
+}
+},
+{
+"id": "friend",
+"unit": "people",
+"front": "l'amico",
+"hint": "laˈmiko",
+"back": {
+"ru": "друг",
+"en": "friend"
+},
+"extra": {
+"ru": "Подруга — l'amica.\n> È il mio migliore amico.\n> — Он мой лучший друг.",
+"en": "Female friend: l'amica.\n> È il mio migliore amico.\n> — He is my best friend."
+}
+},
+{
+"id": "mother",
+"unit": "people",
+"front": "la madre",
+"hint": "la ˈmadre",
+"back": {
+"ru": "мать; мама",
+"en": "mother"
+},
+"extra": {
+"ru": "Мама — mamma.\n> Mia madre è insegnante.\n> — Моя мама — учитель.",
+"en": "Mum: mamma.\n> Mia madre è insegnante.\n> — My mother is a teacher."
+}
+},
+{
+"id": "father",
+"unit": "people",
+"front": "il padre",
+"hint": "il ˈpadre",
+"back": {
+"ru": "отец; папа",
+"en": "father"
+},
+"extra": {
+"ru": "Папа — papà.\n> Mio padre lavora in banca.\n> — Мой папа работает в банке.",
+"en": "Dad: papà.\n> Mio padre lavora in banca.\n> — My father works at a bank."
+}
+},
+{
+"id": "brother",
+"unit": "people",
+"front": "il fratello",
+"hint": "il fraˈtɛllo",
+"back": {
+"ru": "брат",
+"en": "brother"
+},
+"extra": {
+"ru": "> Ho un fratello.\n> — У меня есть брат.",
+"en": "> Ho un fratello.\n> — I have a brother."
+}
+},
+{
+"id": "sister",
+"unit": "people",
+"front": "la sorella",
+"hint": "la soˈrɛlla",
+"back": {
+"ru": "сестра",
+"en": "sister"
+},
+"extra": {
+"ru": "> Mia sorella ama la musica.\n> — Моя сестра любит музыку.",
+"en": "> Mia sorella ama la musica.\n> — My sister loves music."
+}
+},
+{
+"id": "family",
+"unit": "people",
+"front": "la famiglia",
+"hint": "la faˈmiʎʎa",
+"back": {
+"ru": "семья",
+"en": "family"
+},
+"extra": {
+"ru": "gli — мягкое «ль».\n> Ho una famiglia grande.\n> — У меня большая семья.",
+"en": "gli is a soft “ly”.\n> Ho una famiglia grande.\n> — I have a big family."
+}
+},
+{
+"id": "name",
+"unit": "people",
+"front": "il nome",
+"hint": "il ˈnome",
+"back": {
+"ru": "имя",
+"en": "name"
+},
+"extra": {
+"ru": "«Меня зовут» — mi chiamo.\n> Mi chiamo Anna.\n> — Меня зовут Анна.",
+"en": "“My name is” — mi chiamo.\n> Mi chiamo Anna.\n> — My name is Anna."
+}
+},
+{
+"id": "one",
+"unit": "numbers",
+"front": "uno",
+"hint": "ˈuno",
+"back": {
+"ru": "один",
+"en": "one"
+},
+"extra": {
+"ru": "Перед сущ. ж. р. — una.\n> Una mela, per favore.\n> — Одно яблоко, пожалуйста.",
+"en": "Before a feminine noun: una.\n> Una mela, per favore.\n> — One apple, please."
+}
+},
+{
+"id": "two",
+"unit": "numbers",
+"front": "due",
+"hint": "ˈdue",
+"back": {
+"ru": "два",
+"en": "two"
+},
+"extra": {
+"ru": "> Due caffè, per favore.\n> — Два кофе, пожалуйста.",
+"en": "> Due caffè, per favore.\n> — Two coffees, please."
+}
+},
+{
+"id": "three",
+"unit": "numbers",
+"front": "tre",
+"hint": "tre",
+"back": {
+"ru": "три",
+"en": "three"
+},
+"extra": {
+"ru": "> Sono le tre.\n> — Сейчас три часа.",
+"en": "> Sono le tre.\n> — It's three o'clock."
+}
+},
+{
+"id": "ten",
+"unit": "numbers",
+"front": "dieci",
+"hint": "ˈdjɛtʃi",
+"back": {
+"ru": "десять",
+"en": "ten"
+},
+"extra": {
+"ru": "> Aspetti dieci minuti, per favore.\n> — Подождите десять минут.",
+"en": "> Aspetti dieci minuti, per favore.\n> — Please wait ten minutes."
+}
+},
+{
+"id": "hundred",
+"unit": "numbers",
+"front": "cento",
+"hint": "ˈtʃɛnto",
+"back": {
+"ru": "сто",
+"en": "a hundred"
+},
+"extra": {
+"ru": "> Costa cento euro.\n> — Это стоит сто евро.",
+"en": "> Costa cento euro.\n> — It costs a hundred euros."
+}
+},
+{
+"id": "day",
+"unit": "numbers",
+"front": "il giorno",
+"hint": "il ˈdʒorno",
+"back": {
+"ru": "день",
+"en": "day"
+},
+"extra": {
+"ru": "«Хорошего дня» — buona giornata.\n> Buona giornata!\n> — Хорошего дня!",
+"en": "“Have a nice day” — buona giornata.\n> Buona giornata!\n> — Have a nice day!"
+}
+},
+{
+"id": "week",
+"unit": "numbers",
+"front": "la settimana",
+"hint": "la settiˈmana",
+"back": {
+"ru": "неделя",
+"en": "week"
+},
+"extra": {
+"ru": "> Ci vediamo la settimana prossima.\n> — Увидимся на следующей неделе.",
+"en": "> Ci vediamo la settimana prossima.\n> — See you next week."
+}
+},
+{
+"id": "today",
+"unit": "numbers",
+"front": "oggi",
+"hint": "ˈɔddʒi",
+"back": {
+"ru": "сегодня",
+"en": "today"
+},
+"extra": {
+"ru": "> Oggi fa freddo.\n> — Сегодня холодно.",
+"en": "> Oggi fa freddo.\n> — It's cold today."
+}
+},
+{
+"id": "tomorrow",
+"unit": "numbers",
+"front": "domani",
+"hint": "doˈmani",
+"back": {
+"ru": "завтра",
+"en": "tomorrow"
+},
+"extra": {
+"ru": "> Domani lavoro.\n> — Завтра я работаю.",
+"en": "> Domani lavoro.\n> — I'm working tomorrow."
+}
+},
+{
+"id": "yesterday",
+"unit": "numbers",
+"front": "ieri",
+"hint": "ˈjɛri",
+"back": {
+"ru": "вчера",
+"en": "yesterday"
+},
+"extra": {
+"ru": "> Ieri ha piovuto.\n> — Вчера был дождь.",
+"en": "> Ieri ha piovuto.\n> — It rained yesterday."
+}
+},
+{
+"id": "water",
+"unit": "food",
+"front": "l'acqua",
+"hint": "ˈlakkwa",
+"back": {
+"ru": "вода",
+"en": "water"
+},
+"extra": {
+"ru": "> Un bicchiere d'acqua, per favore.\n> — Стакан воды, пожалуйста.",
+"en": "> Un bicchiere d'acqua, per favore.\n> — A glass of water, please."
+}
+},
+{
+"id": "bread",
+"unit": "food",
+"front": "il pane",
+"hint": "il ˈpane",
+"back": {
+"ru": "хлеб",
+"en": "bread"
+},
+"extra": {
+"ru": "> Compro il pane.\n> — Я покупаю хлеб.",
+"en": "> Compro il pane.\n> — I'm buying bread."
+}
+},
+{
+"id": "coffee",
+"unit": "food",
+"front": "il caffè",
+"hint": "il kafˈfɛ",
+"back": {
+"ru": "кофе",
+"en": "coffee"
+},
+"extra": {
+"ru": "Caffè — это эспрессо.\n> Bevo il caffè ogni mattina.\n> — Я пью кофе каждое утро.",
+"en": "Un caffè is an espresso.\n> Bevo il caffè ogni mattina.\n> — I drink coffee every morning."
+}
+},
+{
+"id": "tea",
+"unit": "food",
+"front": "il tè",
+"hint": "il tɛ",
+"back": {
+"ru": "чай",
+"en": "tea"
+},
+"extra": {
+"ru": "> Vuoi del tè?\n> — Хочешь чаю?",
+"en": "> Vuoi del tè?\n> — Would you like some tea?"
+}
+},
+{
+"id": "milk",
+"unit": "food",
+"front": "il latte",
+"hint": "il ˈlatte",
+"back": {
+"ru": "молоко",
+"en": "milk"
+},
+"extra": {
+"ru": "Caffellatte — кофе с молоком.\n> Caffè con latte.\n> — Кофе с молоком.",
+"en": "Caffellatte is coffee with milk.\n> Caffè con latte.\n> — Coffee with milk."
+}
+},
+{
+"id": "apple",
+"unit": "food",
+"front": "la mela",
+"hint": "la ˈmela",
+"back": {
+"ru": "яблоко",
+"en": "apple"
+},
+"extra": {
+"ru": "> È una mela verde.\n> — Это зелёное яблоко.",
+"en": "> È una mela verde.\n> — This is a green apple."
+}
+},
+{
+"id": "meat",
+"unit": "food",
+"front": "la carne",
+"hint": "la ˈkarne",
+"back": {
+"ru": "мясо",
+"en": "meat"
+},
+"extra": {
+"ru": "> Non mangio carne.\n> — Я не ем мясо.",
+"en": "> Non mangio carne.\n> — I don't eat meat."
+}
+},
+{
+"id": "fish",
+"unit": "food",
+"front": "il pesce",
+"hint": "il ˈpeʃʃe",
+"back": {
+"ru": "рыба",
+"en": "fish"
+},
+"extra": {
+"ru": "sce — «ше».\n> Stasera mangiamo pesce.\n> — Сегодня на ужин рыба.",
+"en": "sce sounds like “she”.\n> Stasera mangiamo pesce.\n> — We're having fish for dinner today."
+}
+},
+{
+"id": "eat",
+"unit": "food",
+"front": "mangiare",
+"hint": "manˈdʒare",
+"back": {
+"ru": "есть, кушать",
+"en": "to eat"
+},
+"extra": {
+"ru": "> Mangiamo alle sette.\n> — Мы едим в семь.",
+"en": "> Mangiamo alle sette.\n> — We eat at seven."
+}
+},
+{
+"id": "drink",
+"unit": "food",
+"front": "bere",
+"hint": "ˈbere",
+"back": {
+"ru": "пить",
+"en": "to drink"
+},
+"extra": {
+"ru": "Неправильный: bevo, bevi, beve…\n> Cosa bevi?\n> — Что ты будешь пить?",
+"en": "Irregular: bevo, bevi, beve…\n> Cosa bevi?\n> — What will you drink?"
+}
+},
+{
+"id": "house",
+"unit": "city",
+"front": "la casa",
+"hint": "la ˈkaza",
+"back": {
+"ru": "дом",
+"en": "house; home"
+},
+"extra": {
+"ru": "A casa — «дома».\n> Questa è la mia casa.\n> — Это мой дом.",
+"en": "A casa means “at home”.\n> Questa è la mia casa.\n> — This is my house."
+}
+},
+{
+"id": "room",
+"unit": "city",
+"front": "la stanza",
+"hint": "la ˈstantsa",
+"back": {
+"ru": "комната",
+"en": "room"
+},
+"extra": {
+"ru": "> La mia stanza è piccola.\n> — Моя комната маленькая.",
+"en": "> La mia stanza è piccola.\n> — My room is small."
+}
+},
+{
+"id": "door",
+"unit": "city",
+"front": "la porta",
+"hint": "la ˈpɔrta",
+"back": {
+"ru": "дверь",
+"en": "door"
+},
+"extra": {
+"ru": "> Chiudi la porta, per favore.\n> — Закрой дверь, пожалуйста.",
+"en": "> Chiudi la porta, per favore.\n> — Close the door, please."
+}
+},
+{
+"id": "street",
+"unit": "city",
+"front": "la strada",
+"hint": "la ˈstrada",
+"back": {
+"ru": "улица",
+"en": "street"
+},
+"extra": {
+"ru": "Улица в адресе — via.\n> Abito in questa strada.\n> — Я живу на этой улице.",
+"en": "In addresses: via.\n> Abito in questa strada.\n> — I live on this street."
+}
+},
+{
+"id": "town",
+"unit": "city",
+"front": "la città",
+"hint": "la tʃitˈta",
+"back": {
+"ru": "город",
+"en": "city; town"
+},
+"extra": {
+"ru": "> È una bella città.\n> — Это красивый город.",
+"en": "> È una bella città.\n> — It's a beautiful city."
+}
+},
+{
+"id": "shop",
+"unit": "city",
+"front": "il negozio",
+"hint": "il neˈɡɔttsjo",
+"back": {
+"ru": "магазин",
+"en": "shop; store"
+},
+"extra": {
+"ru": "> Il negozio è chiuso.\n> — Магазин закрыт.",
+"en": "> Il negozio è chiuso.\n> — The shop is closed."
+}
+},
+{
+"id": "school",
+"unit": "city",
+"front": "la scuola",
+"hint": "la ˈskwɔla",
+"back": {
+"ru": "школа",
+"en": "school"
+},
+"extra": {
+"ru": "> I bambini sono a scuola.\n> — Дети в школе.",
+"en": "> I bambini sono a scuola.\n> — The children are at school."
+}
+},
+{
+"id": "hospital",
+"unit": "city",
+"front": "l'ospedale",
+"hint": "lospeˈdale",
+"back": {
+"ru": "больница",
+"en": "hospital"
+},
+"extra": {
+"ru": "> Dov'è l'ospedale?\n> — Где больница?",
+"en": "> Dov'è l'ospedale?\n> — Where is the hospital?"
+}
+},
+{
+"id": "station",
+"unit": "city",
+"front": "la stazione",
+"hint": "la statˈtsjone",
+"back": {
+"ru": "вокзал; станция",
+"en": "station"
+},
+"extra": {
+"ru": "> La stazione è vicina.\n> — Вокзал рядом.",
+"en": "> La stazione è vicina.\n> — The station is nearby."
+}
+},
+{
+"id": "park",
+"unit": "city",
+"front": "il parco",
+"hint": "il ˈparko",
+"back": {
+"ru": "парк",
+"en": "park"
+},
+"extra": {
+"ru": "> Andiamo al parco.\n> — Пойдём в парк.",
+"en": "> Andiamo al parco.\n> — Let's go to the park."
+}
+},
+{
+"id": "be",
+"unit": "verbs",
+"front": "essere",
+"hint": "ˈɛssere",
+"back": {
+"ru": "быть",
+"en": "to be"
+},
+"extra": {
+"ru": "sono, sei, è, siamo, siete, sono\n> Sono studente.\n> — Я студент.",
+"en": "sono, sei, è, siamo, siete, sono\n> Sono studente.\n> — I am a student."
+}
+},
+{
+"id": "have",
+"unit": "verbs",
+"front": "avere",
+"hint": "aˈvere",
+"back": {
+"ru": "иметь",
+"en": "to have"
+},
+"extra": {
+"ru": "h не читается: ho, hai, ha.\n> Ho una macchina.\n> — У меня есть машина.",
+"en": "The h is silent: ho, hai, ha.\n> Ho una macchina.\n> — I have a car."
+}
+},
+{
+"id": "go",
+"unit": "verbs",
+"front": "andare",
+"hint": "anˈdare",
+"back": {
+"ru": "идти; ехать",
+"en": "to go"
+},
+"extra": {
+"ru": "> Vado a scuola.\n> — Я иду в школу.",
+"en": "> Vado a scuola.\n> — I'm going to school."
+}
+},
+{
+"id": "come",
+"unit": "verbs",
+"front": "venire",
+"hint": "veˈnire",
+"back": {
+"ru": "приходить",
+"en": "to come"
+},
+"extra": {
+"ru": "> Vieni domani.\n> — Приходи завтра.",
+"en": "> Vieni domani.\n> — Come tomorrow."
+}
+},
+{
+"id": "see",
+"unit": "verbs",
+"front": "vedere",
+"hint": "veˈdere",
+"back": {
+"ru": "видеть; смотреть",
+"en": "to see"
+},
+"extra": {
+"ru": "Смотреть (ТВ) — guardare.\n> Guardo la TV.\n> — Я смотрю телевизор.",
+"en": "To watch: guardare.\n> Guardo la TV.\n> — I'm watching TV."
+}
+},
+{
+"id": "speak",
+"unit": "verbs",
+"front": "parlare",
+"hint": "parˈlare",
+"back": {
+"ru": "говорить",
+"en": "to speak"
+},
+"extra": {
+"ru": "> Parli più piano, per favore.\n> — Говорите медленнее, пожалуйста.",
+"en": "> Parli più piano, per favore.\n> — Speak more slowly, please."
+}
+},
+{
+"id": "know",
+"unit": "verbs",
+"front": "sapere",
+"hint": "saˈpere",
+"back": {
+"ru": "знать",
+"en": "to know"
+},
+"extra": {
+"ru": "Знать человека — conoscere.\n> Non lo so.\n> — Я не знаю.",
+"en": "To know a person: conoscere.\n> Non lo so.\n> — I don't know."
+}
+},
+{
+"id": "want",
+"unit": "verbs",
+"front": "volere",
+"hint": "voˈlere",
+"back": {
+"ru": "хотеть",
+"en": "to want"
+},
+"extra": {
+"ru": "> Voglio un caffè.\n> — Я хочу кофе.",
+"en": "> Voglio un caffè.\n> — I want coffee."
+}
+},
+{
+"id": "can",
+"unit": "verbs",
+"front": "potere",
+"hint": "poˈtere",
+"back": {
+"ru": "мочь",
+"en": "can; to be able"
+},
+"extra": {
+"ru": "> Posso aiutare.\n> — Я могу помочь.",
+"en": "> Posso aiutare.\n> — I can help."
+}
+},
+{
+"id": "live",
+"unit": "verbs",
+"front": "abitare",
+"hint": "abiˈtare",
+"back": {
+"ru": "жить",
+"en": "to live"
+},
+"extra": {
+"ru": "> Dove abiti?\n> — Где ты живёшь?",
+"en": "> Dove abiti?\n> — Where do you live?"
+}
+},
+{
+"id": "big",
+"unit": "describe",
+"front": "grande",
+"hint": "ˈɡrande",
+"back": {
+"ru": "большой",
+"en": "big"
+},
+"extra": {
+"ru": "> Hanno una casa grande.\n> — У них большой дом.",
+"en": "> Hanno una casa grande.\n> — They have a big house."
+}
+},
+{
+"id": "small",
+"unit": "describe",
+"front": "piccolo",
+"hint": "ˈpikkolo",
+"back": {
+"ru": "маленький",
+"en": "small"
+},
+"extra": {
+"ru": "> È un cane piccolo.\n> — Это маленькая собака.",
+"en": "> È un cane piccolo.\n> — It's a small dog."
+}
+},
+{
+"id": "good",
+"unit": "describe",
+"front": "buono",
+"hint": "ˈbwɔno",
+"back": {
+"ru": "хороший",
+"en": "good"
+},
+"extra": {
+"ru": "> È una buona idea.\n> — Это хорошая идея.",
+"en": "> È una buona idea.\n> — That's a good idea."
+}
+},
+{
+"id": "bad",
+"unit": "describe",
+"front": "cattivo",
+"hint": "katˈtivo",
+"back": {
+"ru": "плохой",
+"en": "bad"
+},
+"extra": {
+"ru": "О погоде — brutto.\n> Oggi il tempo è brutto.\n> — Сегодня плохая погода.",
+"en": "For the weather: brutto.\n> Oggi il tempo è brutto.\n> — The weather is bad today."
+}
+},
+{
+"id": "new",
+"unit": "describe",
+"front": "nuovo",
+"hint": "ˈnwɔvo",
+"back": {
+"ru": "новый",
+"en": "new"
+},
+"extra": {
+"ru": "> Ho un telefono nuovo.\n> — У меня новый телефон.",
+"en": "> Ho un telefono nuovo.\n> — I have a new phone."
+}
+},
+{
+"id": "old",
+"unit": "describe",
+"front": "vecchio",
+"hint": "ˈvɛkkjo",
+"back": {
+"ru": "старый",
+"en": "old"
+},
+"extra": {
+"ru": "> È una città vecchia.\n> — Это старый город.",
+"en": "> È una città vecchia.\n> — It's an old town."
+}
+},
+{
+"id": "hot",
+"unit": "describe",
+"front": "caldo",
+"hint": "ˈkaldo",
+"back": {
+"ru": "горячий",
+"en": "hot"
+},
+"extra": {
+"ru": "> Il tè è caldo.\n> — Чай горячий.",
+"en": "> Il tè è caldo.\n> — The tea is hot."
+}
+},
+{
+"id": "cold",
+"unit": "describe",
+"front": "freddo",
+"hint": "ˈfreddo",
+"back": {
+"ru": "холодный",
+"en": "cold"
+},
+"extra": {
+"ru": "> L'acqua è fredda.\n> — Вода холодная.",
+"en": "> L'acqua è fredda.\n> — The water is cold."
+}
+},
+{
+"id": "beautiful",
+"unit": "describe",
+"front": "bello",
+"hint": "ˈbɛllo",
+"back": {
+"ru": "красивый",
+"en": "beautiful"
+},
+"extra": {
+"ru": "> Che bella vista!\n> — Какой красивый вид!",
+"en": "> Che bella vista!\n> — What a beautiful view!"
+}
+},
+{
+"id": "red",
+"unit": "describe",
+"front": "rosso",
+"hint": "ˈrosso",
+"back": {
+"ru": "красный",
+"en": "red"
+},
+"extra": {
+"ru": "> Mi piace il rosso.\n> — Мне нравится красный цвет.",
+"en": "> Mi piace il rosso.\n> — I like the colour red."
+}
+},
+{
+"id": "car",
+"unit": "travel",
+"front": "la macchina",
+"hint": "la ˈmakkina",
+"back": {
+"ru": "машина",
+"en": "car"
+},
+"extra": {
+"ru": "> Questa è la mia macchina.\n> — Это моя машина.",
+"en": "> Questa è la mia macchina.\n> — This is my car."
+}
+},
+{
+"id": "bus",
+"unit": "travel",
+"front": "l'autobus",
+"hint": "ˈlautobus",
+"back": {
+"ru": "автобус",
+"en": "bus"
+},
+"extra": {
+"ru": "> L'autobus è in ritardo.\n> — Автобус опаздывает.",
+"en": "> L'autobus è in ritardo.\n> — The bus is late."
+}
+},
+{
+"id": "train",
+"unit": "travel",
+"front": "il treno",
+"hint": "il ˈtrɛno",
+"back": {
+"ru": "поезд",
+"en": "train"
+},
+"extra": {
+"ru": "> Il treno parte alle sei.\n> — Поезд уходит в шесть.",
+"en": "> Il treno parte alle sei.\n> — The train leaves at six."
+}
+},
+{
+"id": "plane",
+"unit": "travel",
+"front": "l'aereo",
+"hint": "laˈɛreo",
+"back": {
+"ru": "самолёт",
+"en": "plane"
+},
+"extra": {
+"ru": "> L'aereo vola a Roma.\n> — Самолёт летит в Рим.",
+"en": "> L'aereo vola a Roma.\n> — The plane is flying to Rome."
+}
+},
+{
+"id": "ticket",
+"unit": "travel",
+"front": "il biglietto",
+"hint": "il biʎˈʎetto",
+"back": {
+"ru": "билет",
+"en": "ticket"
+},
+"extra": {
+"ru": "> Un biglietto, per favore.\n> — Один билет, пожалуйста.",
+"en": "> Un biglietto, per favore.\n> — One ticket, please."
+}
+},
+{
+"id": "hotel",
+"unit": "travel",
+"front": "l'albergo",
+"hint": "lalˈbɛrɡo",
+"back": {
+"ru": "гостиница, отель",
+"en": "hotel"
+},
+"extra": {
+"ru": "Говорят и hotel.\n> L'albergo è in centro.\n> — Отель в центре.",
+"en": "Hotel is also used.\n> L'albergo è in centro.\n> — The hotel is in the centre."
+}
+},
+{
+"id": "map",
+"unit": "travel",
+"front": "la mappa",
+"hint": "la ˈmappa",
+"back": {
+"ru": "карта",
+"en": "map"
+},
+"extra": {
+"ru": "> Ha una mappa?\n> — У тебя есть карта?",
+"en": "> Ha una mappa?\n> — Do you have a map?"
+}
+},
+{
+"id": "left",
+"unit": "travel",
+"front": "a sinistra",
+"hint": "a siˈnistra",
+"back": {
+"ru": "налево; левый",
+"en": "left"
+},
+"extra": {
+"ru": "> Giri a sinistra.\n> — Поверните налево.",
+"en": "> Giri a sinistra.\n> — Turn left."
+}
+},
+{
+"id": "right",
+"unit": "travel",
+"front": "a destra",
+"hint": "a ˈdɛstra",
+"back": {
+"ru": "направо; правый",
+"en": "right"
+},
+"extra": {
+"ru": "> Giri a destra.\n> — Поверните направо.",
+"en": "> Giri a destra.\n> — Turn right."
+}
+},
+{
+"id": "where",
+"unit": "travel",
+"front": "dove",
+"hint": "ˈdove",
+"back": {
+"ru": "где",
+"en": "where"
+},
+"extra": {
+"ru": "> Dov'è la metro?\n> — Где метро?",
+"en": "> Dov'è la metro?\n> — Where is the metro?"
+}
+}
+]
+}

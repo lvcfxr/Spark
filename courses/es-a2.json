@@ -1,0 +1,661 @@
+{
+"id": "es-a2",
+"version": 2,
+"cards": [
+{
+"id": "a2rules-0",
+"unit": "a2rules",
+"front": "Прошедшее: pretérito indefinido",
+"frontL": {
+"ru": "Прошедшее: pretérito indefinido",
+"en": "Past: pretérito"
+},
+"hint": "",
+"back": {
+"ru": "Законченное действие в прошлом: hablé, comí, viví",
+"en": "Finished past actions: hablé, comí, viví"
+},
+"extra": {
+"ru": "Окончания -ar: -é, -aste, -ó, -amos, -asteis, -aron. Часто с ayer, la semana pasada.\n> Ayer hablé con mi madre.\n> — Вчера я говорил с мамой.",
+"en": "-ar endings: -é, -aste, -ó, -amos, -asteis, -aron. Often with ayer, la semana pasada.\n> Ayer hablé con mi madre.\n> — Yesterday I spoke with my mother."
+},
+"notype": true
+},
+{
+"id": "a2rules-1",
+"unit": "a2rules",
+"front": "Будущее: ir a + инфинитив",
+"frontL": {
+"ru": "Будущее: ir a + инфинитив",
+"en": "Future: ir a + infinitive"
+},
+"hint": "",
+"back": {
+"ru": "voy a + глагол = «собираюсь»",
+"en": "voy a + verb = “I'm going to”"
+},
+"extra": {
+"ru": "voy, vas, va, vamos, vais, van + a + инфинитив. Самый частый способ говорить о планах.\n> Voy a viajar en verano.\n> — Летом я поеду путешествовать.",
+"en": "voy, vas, va, vamos, vais, van + a + infinitive. The most common way to talk about plans.\n> Voy a viajar en verano.\n> — I'm going to travel in summer."
+},
+"notype": true
+},
+{
+"id": "a2rules-2",
+"unit": "a2rules",
+"front": "Сравнение",
+"frontL": {
+"ru": "Сравнение",
+"en": "Comparisons"
+},
+"hint": "",
+"back": {
+"ru": "más … que / menos … que",
+"en": "más … que / menos … que"
+},
+"extra": {
+"ru": "Madrid es más grande que Toledo. Исключения: mejor, peor, mayor, menor.\n> Este es más barato que el otro.\n> — Этот дешевле, чем другой.",
+"en": "Madrid es más grande que Toledo. Irregular: mejor, peor, mayor, menor.\n> Este es más barato que el otro.\n> — This one is cheaper than the other."
+},
+"notype": true
+},
+{
+"id": "a2rules-3",
+"unit": "a2rules",
+"front": "Возвратные глаголы",
+"frontL": {
+"ru": "Возвратные глаголы",
+"en": "Reflexive verbs"
+},
+"hint": "",
+"back": {
+"ru": "me, te, se, nos, os, se перед глаголом",
+"en": "me, te, se, nos, os, se before the verb"
+},
+"extra": {
+"ru": "levantarse → me levanto. Действие направлено на себя.\n> Me levanto a las siete.\n> — Я встаю в семь.",
+"en": "levantarse → me levanto. The action is on oneself.\n> Me levanto a las siete.\n> — I get up at seven."
+},
+"notype": true
+},
+{
+"id": "a2rules-4",
+"unit": "a2rules",
+"front": "Gustar",
+"frontL": {
+"ru": "Gustar",
+"en": "Gustar"
+},
+"hint": "",
+"back": {
+"ru": "Me gusta = «мне нравится»",
+"en": "Me gusta = “I like”"
+},
+"extra": {
+"ru": "Глагол согласуется с тем, что нравится: me gusta el café, me gustan los gatos.\n> Me gustan los idiomas.\n> — Мне нравятся языки.",
+"en": "The verb agrees with what is liked: me gusta el café, me gustan los gatos.\n> Me gustan los idiomas.\n> — I like languages."
+},
+"notype": true
+},
+{
+"id": "always",
+"unit": "a2time",
+"front": "siempre",
+"hint": "ˈsjempre",
+"back": {
+"ru": "всегда",
+"en": "always"
+},
+"extra": {
+"ru": "> Siempre tomo café por la mañana.\n> — Я всегда пью кофе утром.",
+"en": "> Siempre tomo café por la mañana.\n> — I always drink coffee in the morning."
+}
+},
+{
+"id": "often",
+"unit": "a2time",
+"front": "a menudo",
+"hint": "a meˈnuðo",
+"back": {
+"ru": "часто",
+"en": "often"
+},
+"extra": {
+"ru": "Также: muchas veces.\n> Vamos a menudo al cine.\n> — Мы часто ходим в кино.",
+"en": "Also: muchas veces.\n> Vamos a menudo al cine.\n> — We often go to the cinema."
+}
+},
+{
+"id": "sometimes",
+"unit": "a2time",
+"front": "a veces",
+"hint": "a ˈβeθes",
+"back": {
+"ru": "иногда",
+"en": "sometimes"
+},
+"extra": {
+"ru": "> A veces trabajo en casa.\n> — Иногда я работаю дома.",
+"en": "> A veces trabajo en casa.\n> — Sometimes I work from home."
+}
+},
+{
+"id": "never",
+"unit": "a2time",
+"front": "nunca",
+"hint": "ˈnunka",
+"back": {
+"ru": "никогда",
+"en": "never"
+},
+"extra": {
+"ru": "Перед глаголом без no.\n> Nunca como carne.\n> — Я никогда не ем мясо.",
+"en": "Before the verb, without no.\n> Nunca como carne.\n> — I never eat meat."
+}
+},
+{
+"id": "early",
+"unit": "a2time",
+"front": "temprano",
+"hint": "temˈprano",
+"back": {
+"ru": "рано",
+"en": "early"
+},
+"extra": {
+"ru": "> Me levanto temprano.\n> — Я встаю рано.",
+"en": "> Me levanto temprano.\n> — I get up early."
+}
+},
+{
+"id": "late",
+"unit": "a2time",
+"front": "tarde",
+"hint": "ˈtaɾðe",
+"back": {
+"ru": "поздно",
+"en": "late"
+},
+"extra": {
+"ru": "La tarde — ещё и «вечер/день».\n> Ya es tarde.\n> — Уже поздно.",
+"en": "La tarde also means “afternoon”.\n> Ya es tarde.\n> — It's already late."
+}
+},
+{
+"id": "then",
+"unit": "a2time",
+"front": "luego",
+"hint": "ˈlweɣo",
+"back": {
+"ru": "потом, затем",
+"en": "then; after that"
+},
+"extra": {
+"ru": "> Primero el desayuno, luego el trabajo.\n> — Сначала завтрак, потом работа.",
+"en": "> Primero el desayuno, luego el trabajo.\n> — Breakfast first, then work."
+}
+},
+{
+"id": "everyday",
+"unit": "a2time",
+"front": "todos los días",
+"hint": "ˈtoðos los ˈðias",
+"back": {
+"ru": "каждый день",
+"en": "every day"
+},
+"extra": {
+"ru": "> Aprendo palabras todos los días.\n> — Я учу слова каждый день.",
+"en": "> Aprendo palabras todos los días.\n> — I learn words every day."
+}
+},
+{
+"id": "price",
+"unit": "a2shop",
+"front": "el precio",
+"hint": "el ˈpɾeθjo",
+"back": {
+"ru": "цена",
+"en": "price"
+},
+"extra": {
+"ru": "> ¿Cuál es el precio?\n> — Какая цена?",
+"en": "> ¿Cuál es el precio?\n> — What's the price?"
+}
+},
+{
+"id": "expensive",
+"unit": "a2shop",
+"front": "caro",
+"hint": "ˈkaɾo",
+"back": {
+"ru": "дорогой",
+"en": "expensive"
+},
+"extra": {
+"ru": "> Este móvil es muy caro.\n> — Этот телефон очень дорогой.",
+"en": "> Este móvil es muy caro.\n> — This phone is very expensive."
+}
+},
+{
+"id": "cheap",
+"unit": "a2shop",
+"front": "barato",
+"hint": "baˈɾato",
+"back": {
+"ru": "дешёвый",
+"en": "cheap"
+},
+"extra": {
+"ru": "> Aquí todo es barato.\n> — Здесь всё дешёвое.",
+"en": "> Aquí todo es barato.\n> — Everything here is cheap."
+}
+},
+{
+"id": "money",
+"unit": "a2shop",
+"front": "el dinero",
+"hint": "el diˈneɾo",
+"back": {
+"ru": "деньги",
+"en": "money"
+},
+"extra": {
+"ru": "> No tengo dinero.\n> — У меня нет денег.",
+"en": "> No tengo dinero.\n> — I don't have any money."
+}
+},
+{
+"id": "buy",
+"unit": "a2shop",
+"front": "comprar",
+"hint": "komˈpɾaɾ",
+"back": {
+"ru": "покупать",
+"en": "to buy"
+},
+"extra": {
+"ru": "> Quiero comprar un regalo.\n> — Я хочу купить подарок.",
+"en": "> Quiero comprar un regalo.\n> — I want to buy a present."
+}
+},
+{
+"id": "pay",
+"unit": "a2shop",
+"front": "pagar",
+"hint": "paˈɣaɾ",
+"back": {
+"ru": "платить",
+"en": "to pay"
+},
+"extra": {
+"ru": "> ¿Puedo pagar con tarjeta?\n> — Можно заплатить картой?",
+"en": "> ¿Puedo pagar con tarjeta?\n> — Can I pay by card?"
+}
+},
+{
+"id": "size",
+"unit": "a2shop",
+"front": "la talla",
+"hint": "la ˈtaʎa",
+"back": {
+"ru": "размер",
+"en": "size"
+},
+"extra": {
+"ru": "Размер обуви — el número.\n> ¿Tiene una talla más grande?\n> — У вас есть размер побольше?",
+"en": "Shoe size: el número.\n> ¿Tiene una talla más grande?\n> — Do you have a bigger size?"
+}
+},
+{
+"id": "howmuch",
+"unit": "a2shop",
+"front": "¿cuánto cuesta?",
+"hint": "ˈkwanto ˈkwesta",
+"back": {
+"ru": "сколько стоит?",
+"en": "how much is it?"
+},
+"extra": {
+"ru": "> ¿Cuánto cuesta este billete?\n> — Сколько стоит этот билет?",
+"en": "> ¿Cuánto cuesta este billete?\n> — How much is this ticket?"
+}
+},
+{
+"id": "happy",
+"unit": "a2feel",
+"front": "feliz",
+"hint": "feˈliθ",
+"back": {
+"ru": "счастливый",
+"en": "happy"
+},
+"extra": {
+"ru": "> Hoy estoy muy feliz.\n> — Я очень счастлив сегодня.",
+"en": "> Hoy estoy muy feliz.\n> — I'm very happy today."
+}
+},
+{
+"id": "tired",
+"unit": "a2feel",
+"front": "cansado",
+"hint": "kanˈsaðo",
+"back": {
+"ru": "уставший",
+"en": "tired"
+},
+"extra": {
+"ru": "С estar: estoy cansado.\n> Estoy cansado después del trabajo.\n> — Я устал после работы.",
+"en": "With estar: estoy cansado.\n> Estoy cansado después del trabajo.\n> — I'm tired after work."
+}
+},
+{
+"id": "sick",
+"unit": "a2feel",
+"front": "enfermo",
+"hint": "emˈfeɾmo",
+"back": {
+"ru": "больной",
+"en": "ill; sick"
+},
+"extra": {
+"ru": "> Mi hermano está enfermo.\n> — Мой брат болен.",
+"en": "> Mi hermano está enfermo.\n> — My brother is ill."
+}
+},
+{
+"id": "head",
+"unit": "a2feel",
+"front": "la cabeza",
+"hint": "la kaˈβeθa",
+"back": {
+"ru": "голова",
+"en": "head"
+},
+"extra": {
+"ru": "Me duele — «у меня болит».\n> Me duele la cabeza.\n> — У меня болит голова.",
+"en": "Me duele — “it hurts me”.\n> Me duele la cabeza.\n> — I have a headache."
+}
+},
+{
+"id": "doctor",
+"unit": "a2feel",
+"front": "el médico",
+"hint": "el ˈmeðiko",
+"back": {
+"ru": "врач",
+"en": "doctor"
+},
+"extra": {
+"ru": "> Necesito ir al médico.\n> — Мне нужно к врачу.",
+"en": "> Necesito ir al médico.\n> — I need to see a doctor."
+}
+},
+{
+"id": "medicine",
+"unit": "a2feel",
+"front": "la medicina",
+"hint": "la meðiˈθina",
+"back": {
+"ru": "лекарство",
+"en": "medicine"
+},
+"extra": {
+"ru": "> Toma la medicina.\n> — Прими лекарство.",
+"en": "> Toma la medicina.\n> — Take the medicine."
+}
+},
+{
+"id": "hungry",
+"unit": "a2feel",
+"front": "tener hambre",
+"hint": "teˈneɾ ˈambɾe",
+"back": {
+"ru": "голодный",
+"en": "hungry"
+},
+"extra": {
+"ru": "Буквально «иметь голод».\n> ¿Tienes hambre?\n> — Ты голоден?",
+"en": "Literally “to have hunger”.\n> ¿Tienes hambre?\n> — Are you hungry?"
+}
+},
+{
+"id": "feel",
+"unit": "a2feel",
+"front": "sentirse",
+"hint": "senˈtiɾse",
+"back": {
+"ru": "чувствовать (себя)",
+"en": "to feel"
+},
+"extra": {
+"ru": "> Me siento mejor.\n> — Я чувствую себя лучше.",
+"en": "> Me siento mejor.\n> — I feel better."
+}
+},
+{
+"id": "work2",
+"unit": "a2work",
+"front": "el trabajo",
+"hint": "el tɾaˈβaxo",
+"back": {
+"ru": "работа",
+"en": "work; job"
+},
+"extra": {
+"ru": "> Tengo un trabajo nuevo.\n> — У меня новая работа.",
+"en": "> Tengo un trabajo nuevo.\n> — I have a new job."
+}
+},
+{
+"id": "office",
+"unit": "a2work",
+"front": "la oficina",
+"hint": "la ofiˈθina",
+"back": {
+"ru": "офис",
+"en": "office"
+},
+"extra": {
+"ru": "> La oficina está en el centro.\n> — Офис в центре.",
+"en": "> La oficina está en el centro.\n> — The office is in the centre."
+}
+},
+{
+"id": "meeting",
+"unit": "a2work",
+"front": "la reunión",
+"hint": "la reuˈnjon",
+"back": {
+"ru": "встреча",
+"en": "meeting"
+},
+"extra": {
+"ru": "> Tengo una reunión a las diez.\n> — У меня встреча в десять.",
+"en": "> Tengo una reunión a las diez.\n> — I have a meeting at ten."
+}
+},
+{
+"id": "study",
+"unit": "a2work",
+"front": "estudiar",
+"hint": "estuˈðjaɾ",
+"back": {
+"ru": "учиться, изучать",
+"en": "to study"
+},
+"extra": {
+"ru": "> Estudio español.\n> — Я изучаю испанский.",
+"en": "> Estudio español.\n> — I'm studying Spanish."
+}
+},
+{
+"id": "exam",
+"unit": "a2work",
+"front": "el examen",
+"hint": "el ekˈsamen",
+"back": {
+"ru": "экзамен",
+"en": "exam"
+},
+"extra": {
+"ru": "> Mañana tengo un examen.\n> — Завтра у меня экзамен.",
+"en": "> Mañana tengo un examen.\n> — I have an exam tomorrow."
+}
+},
+{
+"id": "begin",
+"unit": "a2work",
+"front": "empezar",
+"hint": "empeˈθaɾ",
+"back": {
+"ru": "начинать",
+"en": "to begin; to start"
+},
+"extra": {
+"ru": "e → ie: empiezo.\n> La clase empieza a las nueve.\n> — Урок начинается в девять.",
+"en": "e → ie: empiezo.\n> La clase empieza a las nueve.\n> — The lesson starts at nine."
+}
+},
+{
+"id": "finish",
+"unit": "a2work",
+"front": "terminar",
+"hint": "teɾmiˈnaɾ",
+"back": {
+"ru": "заканчивать",
+"en": "to finish"
+},
+"extra": {
+"ru": "> Termino a las cinco.\n> — Я заканчиваю в пять.",
+"en": "> Termino a las cinco.\n> — I finish at five."
+}
+},
+{
+"id": "question",
+"unit": "a2work",
+"front": "la pregunta",
+"hint": "la pɾeˈɣunta",
+"back": {
+"ru": "вопрос",
+"en": "question"
+},
+"extra": {
+"ru": "> Tengo una pregunta.\n> — У меня есть вопрос.",
+"en": "> Tengo una pregunta.\n> — I have a question."
+}
+},
+{
+"id": "travel",
+"unit": "a2trip",
+"front": "viajar",
+"hint": "bjaˈxaɾ",
+"back": {
+"ru": "путешествовать",
+"en": "to travel"
+},
+"extra": {
+"ru": "> Me encanta viajar.\n> — Я люблю путешествовать.",
+"en": "> Me encanta viajar.\n> — I love to travel."
+}
+},
+{
+"id": "holiday",
+"unit": "a2trip",
+"front": "las vacaciones",
+"hint": "las bakaˈθjones",
+"back": {
+"ru": "отпуск, каникулы",
+"en": "holiday; vacation"
+},
+"extra": {
+"ru": "Всегда во мн. ч.\n> En verano tenemos vacaciones.\n> — Летом у нас отпуск.",
+"en": "Always plural.\n> En verano tenemos vacaciones.\n> — We have a holiday in the summer."
+}
+},
+{
+"id": "visit",
+"unit": "a2trip",
+"front": "visitar",
+"hint": "bisiˈtaɾ",
+"back": {
+"ru": "посещать, навещать",
+"en": "to visit"
+},
+"extra": {
+"ru": "Перед человеком — a.\n> Visitamos a la abuela.\n> — Мы навестили бабушку.",
+"en": "Before a person: a.\n> Visitamos a la abuela.\n> — We visited Grandma."
+}
+},
+{
+"id": "return",
+"unit": "a2trip",
+"front": "volver",
+"hint": "bolˈβeɾ",
+"back": {
+"ru": "возвращаться",
+"en": "to return; to come back"
+},
+"extra": {
+"ru": "o → ue: vuelvo.\n> Vuelvo el lunes.\n> — Я вернусь в понедельник.",
+"en": "o → ue: vuelvo.\n> Vuelvo el lunes.\n> — I'll come back on Monday."
+}
+},
+{
+"id": "forget",
+"unit": "a2trip",
+"front": "olvidar",
+"hint": "olβiˈðaɾ",
+"back": {
+"ru": "забывать",
+"en": "to forget"
+},
+"extra": {
+"ru": "> Olvidé las llaves.\n> — Я забыл ключи.",
+"en": "> Olvidé las llaves.\n> — I forgot my keys."
+}
+},
+{
+"id": "remember",
+"unit": "a2trip",
+"front": "recordar",
+"hint": "rekoɾˈðaɾ",
+"back": {
+"ru": "помнить",
+"en": "to remember"
+},
+"extra": {
+"ru": "o → ue: recuerdo.\n> ¿Recuerdas su nombre?\n> — Ты помнишь его имя?",
+"en": "o → ue: recuerdo.\n> ¿Recuerdas su nombre?\n> — Do you remember his name?"
+}
+},
+{
+"id": "wait",
+"unit": "a2trip",
+"front": "esperar",
+"hint": "espeˈɾaɾ",
+"back": {
+"ru": "ждать",
+"en": "to wait"
+},
+"extra": {
+"ru": "Esperar — и «ждать», и «надеяться».\n> Espérame, por favor.\n> — Подожди меня, пожалуйста.",
+"en": "Also means “to hope”.\n> Espérame, por favor.\n> — Wait for me, please."
+}
+},
+{
+"id": "help",
+"unit": "a2trip",
+"front": "ayudar",
+"hint": "aʝuˈðaɾ",
+"back": {
+"ru": "помогать",
+"en": "to help"
+},
+"extra": {
+"ru": "> ¿Me puedes ayudar?\n> — Можешь мне помочь?",
+"en": "> ¿Me puedes ayudar?\n> — Can you help me?"
+}
+}
+]
+}

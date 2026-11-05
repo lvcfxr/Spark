@@ -1,6 +1,6 @@
 # Каждый час бот проверяет: кому пора напомнить о занятиях (через 7 и 30 дней без занятий) и кому прислать «слово дня».
 # Тихие часы и часовой пояс учитываются для каждого человека отдельно. Нужны секреты репозитория SPARK_BOT_URL и SPARK_BOT_SECRET; без них ничего не делает.
-name: Bot — напоминания и слово дня
+name: Bot — напоминания, слово дня и недельный отчёт
 on:
   schedule:
     - cron: "7 * * * *"
@@ -18,4 +18,5 @@ jobs:
         run: |
           if [ -z "$BOT_URL" ] || [ -z "$BOT_SECRET" ]; then echo "Секреты бота не заданы — пропускаю"; exit 0; fi
           curl -fsS -X POST "$BOT_URL?action=remind" -H "x-admin-secret: $BOT_SECRET"; echo
-          curl -fsS -X POST "$BOT_URL?action=word" -H "x-admin-secret: $BOT_SECRET"
+          curl -fsS -X POST "$BOT_URL?action=word" -H "x-admin-secret: $BOT_SECRET"; echo
+          curl -fsS -X POST "$BOT_URL?action=weekly" -H "x-admin-secret: $BOT_SECRET"

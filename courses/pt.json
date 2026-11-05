@@ -1,0 +1,1769 @@
+{
+"id": "pt",
+"version": 2,
+"cards": [
+{
+"id": "alpha-l0",
+"unit": "alpha",
+"front": "A a",
+"hint": "",
+"back": {
+"ru": "[а]",
+"en": "á"
+},
+"extra": {
+"ru": "Название: á\n> amigo\n> — друг",
+"en": "Name: á\n> amigo\n> — friend"
+},
+"notype": true
+},
+{
+"id": "alpha-l1",
+"unit": "alpha",
+"front": "B b",
+"hint": "",
+"back": {
+"ru": "[бэ]",
+"en": "bê"
+},
+"extra": {
+"ru": "Название: bê\n> bola\n> — мяч",
+"en": "Name: bê\n> bola\n> — ball"
+},
+"notype": true
+},
+{
+"id": "alpha-l2",
+"unit": "alpha",
+"front": "C c",
+"hint": "",
+"back": {
+"ru": "[сэ]",
+"en": "cê"
+},
+"extra": {
+"ru": "Название: cê\n> casa\n> — дом",
+"en": "Name: cê\n> casa\n> — house"
+},
+"notype": true
+},
+{
+"id": "alpha-l3",
+"unit": "alpha",
+"front": "D d",
+"hint": "",
+"back": {
+"ru": "[дэ]; перед i — «дж»",
+"en": "dê"
+},
+"extra": {
+"ru": "Название: dê\n> dia\n> — день",
+"en": "Name: dê\n> dia\n> — day"
+},
+"notype": true
+},
+{
+"id": "alpha-l4",
+"unit": "alpha",
+"front": "E e",
+"hint": "",
+"back": {
+"ru": "[э]",
+"en": "é"
+},
+"extra": {
+"ru": "Название: é\n> escola\n> — школа",
+"en": "Name: é\n> escola\n> — school"
+},
+"notype": true
+},
+{
+"id": "alpha-l5",
+"unit": "alpha",
+"front": "F f",
+"hint": "",
+"back": {
+"ru": "[эфи]",
+"en": "efe"
+},
+"extra": {
+"ru": "Название: efe\n> festa\n> — праздник",
+"en": "Name: efe\n> festa\n> — party"
+},
+"notype": true
+},
+{
+"id": "alpha-l6",
+"unit": "alpha",
+"front": "G g",
+"hint": "",
+"back": {
+"ru": "[жэ]",
+"en": "gê"
+},
+"extra": {
+"ru": "Название: gê\n> gato\n> — кот",
+"en": "Name: gê\n> gato\n> — cat"
+},
+"notype": true
+},
+{
+"id": "alpha-l7",
+"unit": "alpha",
+"front": "H h",
+"hint": "",
+"back": {
+"ru": "[ага] — не читается",
+"en": "agá"
+},
+"extra": {
+"ru": "Название: agá\n> hoje\n> — сегодня",
+"en": "Name: agá\n> hoje\n> — today"
+},
+"notype": true
+},
+{
+"id": "alpha-l8",
+"unit": "alpha",
+"front": "I i",
+"hint": "",
+"back": {
+"ru": "[и]",
+"en": "i"
+},
+"extra": {
+"ru": "Название: i\n> ilha\n> — остров",
+"en": "Name: i\n> ilha\n> — island"
+},
+"notype": true
+},
+{
+"id": "alpha-l9",
+"unit": "alpha",
+"front": "J j",
+"hint": "",
+"back": {
+"ru": "[жота]",
+"en": "jota"
+},
+"extra": {
+"ru": "Название: jota\n> janela\n> — окно",
+"en": "Name: jota\n> janela\n> — window"
+},
+"notype": true
+},
+{
+"id": "alpha-l10",
+"unit": "alpha",
+"front": "K k",
+"hint": "",
+"back": {
+"ru": "[ка]",
+"en": "cá"
+},
+"extra": {
+"ru": "Название: cá\n> kiwi\n> — киви",
+"en": "Name: cá\n> kiwi\n> — kiwi"
+},
+"notype": true
+},
+{
+"id": "alpha-l11",
+"unit": "alpha",
+"front": "L l",
+"hint": "",
+"back": {
+"ru": "[эли]; на конце — «у»",
+"en": "ele"
+},
+"extra": {
+"ru": "Название: ele\n> Brasil\n> — Бразилия",
+"en": "Name: ele\n> Brasil\n> — Brazil"
+},
+"notype": true
+},
+{
+"id": "alpha-l12",
+"unit": "alpha",
+"front": "M m",
+"hint": "",
+"back": {
+"ru": "[эми]",
+"en": "eme"
+},
+"extra": {
+"ru": "Название: eme\n> mãe\n> — мама",
+"en": "Name: eme\n> mãe\n> — mother"
+},
+"notype": true
+},
+{
+"id": "alpha-l13",
+"unit": "alpha",
+"front": "N n",
+"hint": "",
+"back": {
+"ru": "[эни]",
+"en": "ene"
+},
+"extra": {
+"ru": "Название: ene\n> noite\n> — ночь",
+"en": "Name: ene\n> noite\n> — night"
+},
+"notype": true
+},
+{
+"id": "alpha-l14",
+"unit": "alpha",
+"front": "O o",
+"hint": "",
+"back": {
+"ru": "[о]; без ударения на конце — «у»",
+"en": "ó"
+},
+"extra": {
+"ru": "Название: ó\n> olho\n> — глаз",
+"en": "Name: ó\n> olho\n> — eye"
+},
+"notype": true
+},
+{
+"id": "alpha-l15",
+"unit": "alpha",
+"front": "P p",
+"hint": "",
+"back": {
+"ru": "[пэ]",
+"en": "pê"
+},
+"extra": {
+"ru": "Название: pê\n> pão\n> — хлеб",
+"en": "Name: pê\n> pão\n> — bread"
+},
+"notype": true
+},
+{
+"id": "alpha-l16",
+"unit": "alpha",
+"front": "Q q",
+"hint": "",
+"back": {
+"ru": "[кэ]",
+"en": "quê"
+},
+"extra": {
+"ru": "Название: quê\n> queijo\n> — сыр",
+"en": "Name: quê\n> queijo\n> — cheese"
+},
+"notype": true
+},
+{
+"id": "alpha-l17",
+"unit": "alpha",
+"front": "R r",
+"hint": "",
+"back": {
+"ru": "[эхи]; в начале — как «х»",
+"en": "erre"
+},
+"extra": {
+"ru": "Название: erre\n> rio\n> — река",
+"en": "Name: erre\n> rio\n> — river"
+},
+"notype": true
+},
+{
+"id": "alpha-l18",
+"unit": "alpha",
+"front": "S s",
+"hint": "",
+"back": {
+"ru": "[эси]",
+"en": "esse"
+},
+"extra": {
+"ru": "Название: esse\n> sol\n> — солнце",
+"en": "Name: esse\n> sol\n> — sun"
+},
+"notype": true
+},
+{
+"id": "alpha-l19",
+"unit": "alpha",
+"front": "T t",
+"hint": "",
+"back": {
+"ru": "[тэ]; перед i — «ч»",
+"en": "tê"
+},
+"extra": {
+"ru": "Название: tê\n> tia\n> — тётя",
+"en": "Name: tê\n> tia\n> — aunt"
+},
+"notype": true
+},
+{
+"id": "alpha-l20",
+"unit": "alpha",
+"front": "U u",
+"hint": "",
+"back": {
+"ru": "[у]",
+"en": "u"
+},
+"extra": {
+"ru": "Название: u\n> uva\n> — виноград",
+"en": "Name: u\n> uva\n> — grapes"
+},
+"notype": true
+},
+{
+"id": "alpha-l21",
+"unit": "alpha",
+"front": "V v",
+"hint": "",
+"back": {
+"ru": "[вэ]",
+"en": "vê"
+},
+"extra": {
+"ru": "Название: vê\n> verde\n> — зелёный",
+"en": "Name: vê\n> verde\n> — green"
+},
+"notype": true
+},
+{
+"id": "alpha-l22",
+"unit": "alpha",
+"front": "W w",
+"hint": "",
+"back": {
+"ru": "[даблиу]",
+"en": "dáblio"
+},
+"extra": {
+"ru": "Название: dáblio\n> web\n> — интернет",
+"en": "Name: dáblio\n> web\n> — web"
+},
+"notype": true
+},
+{
+"id": "alpha-l23",
+"unit": "alpha",
+"front": "X x",
+"hint": "",
+"back": {
+"ru": "[шис]",
+"en": "xis"
+},
+"extra": {
+"ru": "Название: xis\n> xícara\n> — чашка",
+"en": "Name: xis\n> xícara\n> — cup"
+},
+"notype": true
+},
+{
+"id": "alpha-l24",
+"unit": "alpha",
+"front": "Y y",
+"hint": "",
+"back": {
+"ru": "[ипсилон]",
+"en": "ípsilon"
+},
+"extra": {
+"ru": "Название: ípsilon\n> yoga\n> — йога",
+"en": "Name: ípsilon\n> yoga\n> — yoga"
+},
+"notype": true
+},
+{
+"id": "alpha-l25",
+"unit": "alpha",
+"front": "Z z",
+"hint": "",
+"back": {
+"ru": "[зэ]",
+"en": "zê"
+},
+"extra": {
+"ru": "Название: zê\n> zero\n> — ноль",
+"en": "Name: zê\n> zero\n> — zero"
+},
+"notype": true
+},
+{
+"id": "sounds-s0",
+"unit": "sounds",
+"front": "ão",
+"hint": "",
+"back": {
+"ru": "[ɐ̃w] носовой",
+"en": "[ɐ̃w] носовой"
+},
+"extra": {
+"ru": "носовое «аун»\n> pão\n> — хлеб",
+"en": "nasal “owng”\n> pão\n> — bread"
+},
+"notype": true
+},
+{
+"id": "sounds-s1",
+"unit": "sounds",
+"front": "ã / õ",
+"hint": "",
+"back": {
+"ru": "носовые",
+"en": "носовые"
+},
+"extra": {
+"ru": "тильда делает гласную носовой\n> maçã\n> — яблоко",
+"en": "the tilde makes the vowel nasal\n> maçã\n> — apple"
+},
+"notype": true
+},
+{
+"id": "sounds-s2",
+"unit": "sounds",
+"front": "lh",
+"hint": "",
+"back": {
+"ru": "[ль]",
+"en": "[ль]"
+},
+"extra": {
+"ru": "lh — мягкое «ль»\n> filho\n> — сын",
+"en": "lh is a soft “ly”\n> filho\n> — son"
+},
+"notype": true
+},
+{
+"id": "sounds-s3",
+"unit": "sounds",
+"front": "nh",
+"hint": "",
+"back": {
+"ru": "[нь]",
+"en": "[нь]"
+},
+"extra": {
+"ru": "nh — «нь»\n> vinho\n> — вино",
+"en": "nh is “ny”\n> vinho\n> — wine"
+},
+"notype": true
+},
+{
+"id": "sounds-s4",
+"unit": "sounds",
+"front": "ch",
+"hint": "",
+"back": {
+"ru": "[ш]",
+"en": "[ш]"
+},
+"extra": {
+"ru": "ch — «ш»\n> chave\n> — ключ",
+"en": "ch is “sh”\n> chave\n> — key"
+},
+"notype": true
+},
+{
+"id": "sounds-s5",
+"unit": "sounds",
+"front": "rr / r-",
+"hint": "",
+"back": {
+"ru": "[х]",
+"en": "[х]"
+},
+"extra": {
+"ru": "rr и начальное r — как «х»\n> carro\n> — машина",
+"en": "rr and initial r sound like “h”\n> carro\n> — car"
+},
+"notype": true
+},
+{
+"id": "sounds-s6",
+"unit": "sounds",
+"front": "ç",
+"hint": "",
+"back": {
+"ru": "[с]",
+"en": "[с]"
+},
+"extra": {
+"ru": "ç — «с»\n> maçã\n> — яблоко",
+"en": "ç is “s”\n> maçã\n> — apple"
+},
+"notype": true
+},
+{
+"id": "sounds-s7",
+"unit": "sounds",
+"front": "de / te",
+"hint": "",
+"back": {
+"ru": "[джи] / [чи]",
+"en": "[джи] / [чи]"
+},
+"extra": {
+"ru": "di, ti, а на конце de, te — «джи», «чи»\n> cidade\n> — город",
+"en": "di, ti and final de, te sound “jee”, “chee”\n> cidade\n> — city"
+},
+"notype": true
+},
+{
+"id": "rules-w-gender",
+"unit": "rules",
+"front": "Род и артикли",
+"hint": "",
+"back": {
+"ru": "o/a — «определённые», um/uma — «неопределённые»",
+"en": "o/a = “the”, um/uma = “a”"
+},
+"extra": {
+"ru": "Мужской: o livro, um amigo. Женский: a casa, uma amiga. Обычно -o — мужской, -a — женский.\n> A casa é grande.\n> — Дом большой.",
+"en": "Masculine: o livro, um amigo. Feminine: a casa, uma amiga. Usually -o masculine, -a feminine.\n> A casa é grande.\n> — The house is big."
+},
+"frontL": {
+"ru": "Род и артикли",
+"en": "Gender and articles"
+},
+"notype": true
+},
+{
+"id": "rules-w-plural",
+"unit": "rules",
+"front": "Множественное число",
+"hint": "",
+"back": {
+"ru": "Чаще всего +s",
+"en": "Usually +s"
+},
+"extra": {
+"ru": "livro → livros, casa → casas; -ão → -ões: avião → aviões. Артикли: os, as.\n> As casas são bonitas.\n> — Дома красивые.",
+"en": "livro → livros, casa → casas; -ão → -ões: avião → aviões. Articles: os, as.\n> As casas são bonitas.\n> — The houses are beautiful."
+},
+"frontL": {
+"ru": "Множественное число",
+"en": "Plurals"
+},
+"notype": true
+},
+{
+"id": "rules-w-ser",
+"unit": "rules",
+"front": "Ser и estar",
+"hint": "",
+"back": {
+"ru": "ser — постоянное, estar — состояние и место",
+"en": "ser — permanent, estar — state and place"
+},
+"extra": {
+"ru": "Eu sou brasileiro (кто я). Eu estou cansado (как я сейчас). Onde está? (где).\n> Eu estou em casa.\n> — Я дома.",
+"en": "Eu sou brasileiro (who I am). Eu estou cansado (how I am now). Onde está? (where).\n> Eu estou em casa.\n> — I'm at home."
+},
+"frontL": {
+"ru": "Ser и estar",
+"en": "Ser and estar"
+},
+"notype": true
+},
+{
+"id": "rules-w-voce",
+"unit": "rules",
+"front": "Você",
+"hint": "",
+"back": {
+"ru": "В Бразилии «ты» — você (глагол как для «он»)",
+"en": "In Brazil “you” is você (verb as for “he”)"
+},
+"extra": {
+"ru": "Você fala inglês? — Ты говоришь по-английски? Tu встречается в разговоре на юге и в Португалии.\n> Você fala português?\n> — Ты говоришь по-португальски?",
+"en": "Você fala inglês? — Do you speak English? Tu is heard in the south and in Portugal.\n> Você fala português?\n> — Do you speak Portuguese?"
+},
+"frontL": {
+"ru": "Você",
+"en": "Você"
+},
+"notype": true
+},
+{
+"id": "rules-w-ar",
+"unit": "rules",
+"front": "Глаголы на -ar",
+"hint": "",
+"back": {
+"ru": "falar: falo, fala, falamos, falam",
+"en": "falar: falo, fala, falamos, falam"
+},
+"extra": {
+"ru": "eu falo, você/ele fala, nós falamos, vocês/eles falam — в Бразилии форм всего четыре.\n> Nós falamos português.\n> — Мы говорим по-португальски.",
+"en": "eu falo, você/ele fala, nós falamos, vocês/eles falam — only four forms in Brazil.\n> Nós falamos português.\n> — We speak Portuguese."
+},
+"frontL": {
+"ru": "Глаголы на -ar",
+"en": "Verbs in -ar"
+},
+"notype": true
+},
+{
+"id": "rules-w-nasal",
+"unit": "rules",
+"front": "Носовые звуки",
+"hint": "",
+"back": {
+"ru": "~ над гласной и m/n в конце слога — гласная в нос",
+"en": "~ over a vowel and m/n at the end of a syllable — vowel goes nasal"
+},
+"extra": {
+"ru": "não, mãe, bem, sim. Звук идёт и через нос; «н» в конце почти не слышно.\n> Não, obrigado.\n> — Нет, спасибо.",
+"en": "não, mãe, bem, sim. Air goes through the nose too; the final n is barely heard.\n> Não, obrigado.\n> — No, thank you."
+},
+"frontL": {
+"ru": "Носовые звуки",
+"en": "Nasal sounds"
+},
+"notype": true
+},
+{
+"id": "rules-w-neg",
+"unit": "rules",
+"front": "Отрицание и вопрос",
+"hint": "",
+"back": {
+"ru": "não перед глаголом; вопрос — интонацией",
+"en": "não before the verb; questions by intonation"
+},
+"extra": {
+"ru": "Eu não sei. Порядок в вопросе тот же: Você mora aqui?\n> Você mora aqui?\n> — Ты здесь живёшь?",
+"en": "Eu não sei. Questions keep the order: Você mora aqui?\n> Você mora aqui?\n> — Do you live here?"
+},
+"frontL": {
+"ru": "Отрицание и вопрос",
+"en": "Negation and questions"
+},
+"notype": true
+},
+{
+"id": "hello",
+"unit": "greet",
+"front": "olá",
+"hint": "oˈla",
+"back": {
+"ru": "привет; здравствуйте",
+"en": "hello"
+},
+"extra": {
+"ru": "Неформально — oi.\n> Olá! Que bom te ver.\n> — Привет! Рад тебя видеть.",
+"en": "Informal: oi.\n> Olá! Que bom te ver.\n> — Hello! Nice to see you."
+}
+},
+{
+"id": "bye",
+"unit": "greet",
+"front": "tchau",
+"hint": "tʃaw",
+"back": {
+"ru": "до свидания",
+"en": "goodbye"
+},
+"extra": {
+"ru": "Até amanhã — «до завтра».\n> Tchau, até amanhã!\n> — До свидания, до завтра!",
+"en": "Até amanhã means “see you tomorrow”.\n> Tchau, até amanhã!\n> — Goodbye, see you tomorrow!"
+}
+},
+{
+"id": "thanks",
+"unit": "greet",
+"front": "obrigado",
+"hint": "obriˈɡadu",
+"back": {
+"ru": "спасибо",
+"en": "thank you"
+},
+"extra": {
+"ru": "Женщина говорит obrigada.\n> Obrigado pela ajuda.\n> — Спасибо за помощь.",
+"en": "A woman says obrigada.\n> Obrigado pela ajuda.\n> — Thank you for the help."
+}
+},
+{
+"id": "please",
+"unit": "greet",
+"front": "por favor",
+"hint": "pur faˈvor",
+"back": {
+"ru": "пожалуйста (просьба)",
+"en": "please"
+},
+"extra": {
+"ru": "> Um café, por favor.\n> — Кофе, пожалуйста.",
+"en": "> Um café, por favor.\n> — A coffee, please."
+}
+},
+{
+"id": "yes",
+"unit": "greet",
+"front": "sim",
+"hint": "sĩ",
+"back": {
+"ru": "да",
+"en": "yes"
+},
+"extra": {
+"ru": "> Sim, claro.\n> — Да, конечно.",
+"en": "> Sim, claro.\n> — Yes, of course."
+}
+},
+{
+"id": "no",
+"unit": "greet",
+"front": "não",
+"hint": "nɐ̃w̃",
+"back": {
+"ru": "нет",
+"en": "no"
+},
+"extra": {
+"ru": "ão — носовой звук.\n> Não, obrigado.\n> — Нет, спасибо.",
+"en": "ão is nasal.\n> Não, obrigado.\n> — No, thank you."
+}
+},
+{
+"id": "sorry",
+"unit": "greet",
+"front": "desculpe",
+"hint": "dʒisˈkupi",
+"back": {
+"ru": "извините",
+"en": "sorry; excuse me"
+},
+"extra": {
+"ru": "> Desculpe, estou atrasado.\n> — Извините, я опоздал.",
+"en": "> Desculpe, estou atrasado.\n> — Sorry, I'm late."
+}
+},
+{
+"id": "morning",
+"unit": "greet",
+"front": "bom dia",
+"hint": "bõ ˈdʒia",
+"back": {
+"ru": "доброе утро",
+"en": "good morning"
+},
+"extra": {
+"ru": "> Bom dia, mãe!\n> — Доброе утро, мама!",
+"en": "> Bom dia, mãe!\n> — Good morning, Mom!"
+}
+},
+{
+"id": "night",
+"unit": "greet",
+"front": "boa noite",
+"hint": "ˈboa ˈnojtʃi",
+"back": {
+"ru": "спокойной ночи",
+"en": "good night"
+},
+"extra": {
+"ru": "И «добрый вечер», и «спокойной ночи».\n> Boa noite, até amanhã.\n> — Спокойной ночи, до завтра.",
+"en": "Both “good evening” and “good night”.\n> Boa noite, até amanhã.\n> — Good night, see you tomorrow."
+}
+},
+{
+"id": "howru",
+"unit": "greet",
+"front": "tudo bem?",
+"hint": "ˈtudu bẽj̃",
+"back": {
+"ru": "как дела?",
+"en": "how are you?"
+},
+"extra": {
+"ru": "Самое частое «как дела?».\n> Tudo bem? — Tudo bem, obrigado.\n> — Как дела? — Хорошо, спасибо.",
+"en": "The most common “how are you?”.\n> Tudo bem? — Tudo bem, obrigado.\n> — How are you? — Fine, thanks."
+}
+},
+{
+"id": "man",
+"unit": "people",
+"front": "o homem",
+"hint": "u ˈomẽj̃",
+"back": {
+"ru": "мужчина",
+"en": "man"
+},
+"extra": {
+"ru": "h не читается.\n> Este homem é meu professor.\n> — Этот мужчина — мой учитель.",
+"en": "The h is silent.\n> Este homem é meu professor.\n> — This man is my teacher."
+}
+},
+{
+"id": "woman",
+"unit": "people",
+"front": "a mulher",
+"hint": "a muˈʎɛr",
+"back": {
+"ru": "женщина",
+"en": "woman"
+},
+"extra": {
+"ru": "> Esta mulher é médica.\n> — Эта женщина — врач.",
+"en": "> Esta mulher é médica.\n> — This woman is a doctor."
+}
+},
+{
+"id": "child",
+"unit": "people",
+"front": "a criança",
+"hint": "a kriˈɐ̃sa",
+"back": {
+"ru": "ребёнок",
+"en": "child"
+},
+"extra": {
+"ru": "> A criança está dormindo.\n> — Ребёнок спит.",
+"en": "> A criança está dormindo.\n> — The child is sleeping."
+}
+},
+{
+"id": "friend",
+"unit": "people",
+"front": "o amigo",
+"hint": "u aˈmiɡu",
+"back": {
+"ru": "друг",
+"en": "friend"
+},
+"extra": {
+"ru": "Подруга — a amiga.\n> Ele é meu melhor amigo.\n> — Он мой лучший друг.",
+"en": "Female friend: a amiga.\n> Ele é meu melhor amigo.\n> — He is my best friend."
+}
+},
+{
+"id": "mother",
+"unit": "people",
+"front": "a mãe",
+"hint": "a mɐ̃j̃",
+"back": {
+"ru": "мать; мама",
+"en": "mother"
+},
+"extra": {
+"ru": "> Minha mãe é professora.\n> — Моя мама — учитель.",
+"en": "> Minha mãe é professora.\n> — My mother is a teacher."
+}
+},
+{
+"id": "father",
+"unit": "people",
+"front": "o pai",
+"hint": "u paj",
+"back": {
+"ru": "отец; папа",
+"en": "father"
+},
+"extra": {
+"ru": "> Meu pai trabalha num banco.\n> — Мой папа работает в банке.",
+"en": "> Meu pai trabalha num banco.\n> — My father works at a bank."
+}
+},
+{
+"id": "brother",
+"unit": "people",
+"front": "o irmão",
+"hint": "u irˈmɐ̃w̃",
+"back": {
+"ru": "брат",
+"en": "brother"
+},
+"extra": {
+"ru": "> Eu tenho um irmão.\n> — У меня есть брат.",
+"en": "> Eu tenho um irmão.\n> — I have a brother."
+}
+},
+{
+"id": "sister",
+"unit": "people",
+"front": "a irmã",
+"hint": "a irˈmɐ̃",
+"back": {
+"ru": "сестра",
+"en": "sister"
+},
+"extra": {
+"ru": "> Minha irmã adora música.\n> — Моя сестра любит музыку.",
+"en": "> Minha irmã adora música.\n> — My sister loves music."
+}
+},
+{
+"id": "family",
+"unit": "people",
+"front": "a família",
+"hint": "a faˈmilja",
+"back": {
+"ru": "семья",
+"en": "family"
+},
+"extra": {
+"ru": "> Eu tenho uma família grande.\n> — У меня большая семья.",
+"en": "> Eu tenho uma família grande.\n> — I have a big family."
+}
+},
+{
+"id": "name",
+"unit": "people",
+"front": "o nome",
+"hint": "u ˈnomi",
+"back": {
+"ru": "имя",
+"en": "name"
+},
+"extra": {
+"ru": "> Meu nome é Ana.\n> — Меня зовут Анна.",
+"en": "> Meu nome é Ana.\n> — My name is Anna."
+}
+},
+{
+"id": "one",
+"unit": "numbers",
+"front": "um",
+"hint": "ũ",
+"back": {
+"ru": "один",
+"en": "one"
+},
+"extra": {
+"ru": "Ж. р. — uma.\n> Uma maçã, por favor.\n> — Одно яблоко, пожалуйста.",
+"en": "Feminine: uma.\n> Uma maçã, por favor.\n> — One apple, please."
+}
+},
+{
+"id": "two",
+"unit": "numbers",
+"front": "dois",
+"hint": "dojs",
+"back": {
+"ru": "два",
+"en": "two"
+},
+"extra": {
+"ru": "Ж. р. — duas.\n> Dois cafés, por favor.\n> — Два кофе, пожалуйста.",
+"en": "Feminine: duas.\n> Dois cafés, por favor.\n> — Two coffees, please."
+}
+},
+{
+"id": "three",
+"unit": "numbers",
+"front": "três",
+"hint": "tres",
+"back": {
+"ru": "три",
+"en": "three"
+},
+"extra": {
+"ru": "> São três horas.\n> — Сейчас три часа.",
+"en": "> São três horas.\n> — It's three o'clock."
+}
+},
+{
+"id": "ten",
+"unit": "numbers",
+"front": "dez",
+"hint": "des",
+"back": {
+"ru": "десять",
+"en": "ten"
+},
+"extra": {
+"ru": "> Espere dez minutos, por favor.\n> — Подождите десять минут.",
+"en": "> Espere dez minutos, por favor.\n> — Please wait ten minutes."
+}
+},
+{
+"id": "hundred",
+"unit": "numbers",
+"front": "cem",
+"hint": "sẽj̃",
+"back": {
+"ru": "сто",
+"en": "a hundred"
+},
+"extra": {
+"ru": "> Custa cem euros.\n> — Это стоит сто евро.",
+"en": "> Custa cem euros.\n> — It costs a hundred euros."
+}
+},
+{
+"id": "day",
+"unit": "numbers",
+"front": "o dia",
+"hint": "u ˈdʒia",
+"back": {
+"ru": "день",
+"en": "day"
+},
+"extra": {
+"ru": "> Tenha um bom dia!\n> — Хорошего дня!",
+"en": "> Tenha um bom dia!\n> — Have a nice day!"
+}
+},
+{
+"id": "week",
+"unit": "numbers",
+"front": "a semana",
+"hint": "a seˈmɐna",
+"back": {
+"ru": "неделя",
+"en": "week"
+},
+"extra": {
+"ru": "> Até a semana que vem.\n> — Увидимся на следующей неделе.",
+"en": "> Até a semana que vem.\n> — See you next week."
+}
+},
+{
+"id": "today",
+"unit": "numbers",
+"front": "hoje",
+"hint": "ˈoʒi",
+"back": {
+"ru": "сегодня",
+"en": "today"
+},
+"extra": {
+"ru": "> Hoje está frio.\n> — Сегодня холодно.",
+"en": "> Hoje está frio.\n> — It's cold today."
+}
+},
+{
+"id": "tomorrow",
+"unit": "numbers",
+"front": "amanhã",
+"hint": "amɐˈɲɐ̃",
+"back": {
+"ru": "завтра",
+"en": "tomorrow"
+},
+"extra": {
+"ru": "> Amanhã eu trabalho.\n> — Завтра я работаю.",
+"en": "> Amanhã eu trabalho.\n> — I'm working tomorrow."
+}
+},
+{
+"id": "yesterday",
+"unit": "numbers",
+"front": "ontem",
+"hint": "ˈõtẽj̃",
+"back": {
+"ru": "вчера",
+"en": "yesterday"
+},
+"extra": {
+"ru": "> Ontem choveu.\n> — Вчера был дождь.",
+"en": "> Ontem choveu.\n> — It rained yesterday."
+}
+},
+{
+"id": "water",
+"unit": "food",
+"front": "a água",
+"hint": "a ˈaɡwa",
+"back": {
+"ru": "вода",
+"en": "water"
+},
+"extra": {
+"ru": "> Um copo de água, por favor.\n> — Стакан воды, пожалуйста.",
+"en": "> Um copo de água, por favor.\n> — A glass of water, please."
+}
+},
+{
+"id": "bread",
+"unit": "food",
+"front": "o pão",
+"hint": "u pɐ̃w̃",
+"back": {
+"ru": "хлеб",
+"en": "bread"
+},
+"extra": {
+"ru": "> Eu compro pão.\n> — Я покупаю хлеб.",
+"en": "> Eu compro pão.\n> — I'm buying bread."
+}
+},
+{
+"id": "coffee",
+"unit": "food",
+"front": "o café",
+"hint": "u kaˈfɛ",
+"back": {
+"ru": "кофе",
+"en": "coffee"
+},
+"extra": {
+"ru": "> Eu tomo café toda manhã.\n> — Я пью кофе каждое утро.",
+"en": "> Eu tomo café toda manhã.\n> — I drink coffee every morning."
+}
+},
+{
+"id": "tea",
+"unit": "food",
+"front": "o chá",
+"hint": "u ʃa",
+"back": {
+"ru": "чай",
+"en": "tea"
+},
+"extra": {
+"ru": "> Você quer chá?\n> — Хочешь чаю?",
+"en": "> Você quer chá?\n> — Would you like some tea?"
+}
+},
+{
+"id": "milk",
+"unit": "food",
+"front": "o leite",
+"hint": "u ˈlejtʃi",
+"back": {
+"ru": "молоко",
+"en": "milk"
+},
+"extra": {
+"ru": "> Café com leite.\n> — Кофе с молоком.",
+"en": "> Café com leite.\n> — Coffee with milk."
+}
+},
+{
+"id": "apple",
+"unit": "food",
+"front": "a maçã",
+"hint": "a maˈsɐ̃",
+"back": {
+"ru": "яблоко",
+"en": "apple"
+},
+"extra": {
+"ru": "> É uma maçã verde.\n> — Это зелёное яблоко.",
+"en": "> É uma maçã verde.\n> — This is a green apple."
+}
+},
+{
+"id": "meat",
+"unit": "food",
+"front": "a carne",
+"hint": "a ˈkarni",
+"back": {
+"ru": "мясо",
+"en": "meat"
+},
+"extra": {
+"ru": "> Eu não como carne.\n> — Я не ем мясо.",
+"en": "> Eu não como carne.\n> — I don't eat meat."
+}
+},
+{
+"id": "fish",
+"unit": "food",
+"front": "o peixe",
+"hint": "u ˈpejʃi",
+"back": {
+"ru": "рыба",
+"en": "fish"
+},
+"extra": {
+"ru": "> Hoje vamos comer peixe.\n> — Сегодня на ужин рыба.",
+"en": "> Hoje vamos comer peixe.\n> — We're having fish for dinner today."
+}
+},
+{
+"id": "eat",
+"unit": "food",
+"front": "comer",
+"hint": "koˈmer",
+"back": {
+"ru": "есть, кушать",
+"en": "to eat"
+},
+"extra": {
+"ru": "> Nós comemos às sete.\n> — Мы едим в семь.",
+"en": "> Nós comemos às sete.\n> — We eat at seven."
+}
+},
+{
+"id": "drink",
+"unit": "food",
+"front": "beber",
+"hint": "beˈber",
+"back": {
+"ru": "пить",
+"en": "to drink"
+},
+"extra": {
+"ru": "Пить кофе/чай — tomar.\n> O que você vai beber?\n> — Что ты будешь пить?",
+"en": "For coffee or tea: tomar.\n> O que você vai beber?\n> — What will you drink?"
+}
+},
+{
+"id": "house",
+"unit": "city",
+"front": "a casa",
+"hint": "a ˈkaza",
+"back": {
+"ru": "дом",
+"en": "house; home"
+},
+"extra": {
+"ru": "> Esta é a minha casa.\n> — Это мой дом.",
+"en": "> Esta é a minha casa.\n> — This is my house."
+}
+},
+{
+"id": "room",
+"unit": "city",
+"front": "o quarto",
+"hint": "u ˈkwartu",
+"back": {
+"ru": "комната",
+"en": "room"
+},
+"extra": {
+"ru": "> Meu quarto é pequeno.\n> — Моя комната маленькая.",
+"en": "> Meu quarto é pequeno.\n> — My room is small."
+}
+},
+{
+"id": "door",
+"unit": "city",
+"front": "a porta",
+"hint": "a ˈpɔrta",
+"back": {
+"ru": "дверь",
+"en": "door"
+},
+"extra": {
+"ru": "> Feche a porta, por favor.\n> — Закрой дверь, пожалуйста.",
+"en": "> Feche a porta, por favor.\n> — Close the door, please."
+}
+},
+{
+"id": "street",
+"unit": "city",
+"front": "a rua",
+"hint": "a ˈhua",
+"back": {
+"ru": "улица",
+"en": "street"
+},
+"extra": {
+"ru": "r в начале — как «х».\n> Eu moro nesta rua.\n> — Я живу на этой улице.",
+"en": "Initial r sounds like “h”.\n> Eu moro nesta rua.\n> — I live on this street."
+}
+},
+{
+"id": "town",
+"unit": "city",
+"front": "a cidade",
+"hint": "a siˈdadʒi",
+"back": {
+"ru": "город",
+"en": "city; town"
+},
+"extra": {
+"ru": "> É uma cidade bonita.\n> — Это красивый город.",
+"en": "> É uma cidade bonita.\n> — It's a beautiful city."
+}
+},
+{
+"id": "shop",
+"unit": "city",
+"front": "a loja",
+"hint": "a ˈlɔʒa",
+"back": {
+"ru": "магазин",
+"en": "shop; store"
+},
+"extra": {
+"ru": "> A loja está fechada.\n> — Магазин закрыт.",
+"en": "> A loja está fechada.\n> — The shop is closed."
+}
+},
+{
+"id": "school",
+"unit": "city",
+"front": "a escola",
+"hint": "a isˈkɔla",
+"back": {
+"ru": "школа",
+"en": "school"
+},
+"extra": {
+"ru": "> As crianças estão na escola.\n> — Дети в школе.",
+"en": "> As crianças estão na escola.\n> — The children are at school."
+}
+},
+{
+"id": "hospital",
+"unit": "city",
+"front": "o hospital",
+"hint": "u ospiˈtaw",
+"back": {
+"ru": "больница",
+"en": "hospital"
+},
+"extra": {
+"ru": "> Onde fica o hospital?\n> — Где больница?",
+"en": "> Onde fica o hospital?\n> — Where is the hospital?"
+}
+},
+{
+"id": "station",
+"unit": "city",
+"front": "a estação",
+"hint": "a istaˈsɐ̃w̃",
+"back": {
+"ru": "вокзал; станция",
+"en": "station"
+},
+"extra": {
+"ru": "> A estação fica perto.\n> — Вокзал рядом.",
+"en": "> A estação fica perto.\n> — The station is nearby."
+}
+},
+{
+"id": "park",
+"unit": "city",
+"front": "o parque",
+"hint": "u ˈparki",
+"back": {
+"ru": "парк",
+"en": "park"
+},
+"extra": {
+"ru": "> Vamos ao parque.\n> — Пойдём в парк.",
+"en": "> Vamos ao parque.\n> — Let's go to the park."
+}
+},
+{
+"id": "be",
+"unit": "verbs",
+"front": "ser",
+"hint": "ser",
+"back": {
+"ru": "быть",
+"en": "to be"
+},
+"extra": {
+"ru": "Постоянное — ser, состояние/место — estar.\n> Eu sou estudante.\n> — Я студент.",
+"en": "Permanent: ser; state or place: estar.\n> Eu sou estudante.\n> — I am a student."
+}
+},
+{
+"id": "have",
+"unit": "verbs",
+"front": "ter",
+"hint": "ter",
+"back": {
+"ru": "иметь",
+"en": "to have"
+},
+"extra": {
+"ru": "> Eu tenho um carro.\n> — У меня есть машина.",
+"en": "> Eu tenho um carro.\n> — I have a car."
+}
+},
+{
+"id": "go",
+"unit": "verbs",
+"front": "ir",
+"hint": "ir",
+"back": {
+"ru": "идти; ехать",
+"en": "to go"
+},
+"extra": {
+"ru": "> Eu vou para a escola.\n> — Я иду в школу.",
+"en": "> Eu vou para a escola.\n> — I'm going to school."
+}
+},
+{
+"id": "come",
+"unit": "verbs",
+"front": "vir",
+"hint": "vir",
+"back": {
+"ru": "приходить",
+"en": "to come"
+},
+"extra": {
+"ru": "> Venha amanhã.\n> — Приходи завтра.",
+"en": "> Venha amanhã.\n> — Come tomorrow."
+}
+},
+{
+"id": "see",
+"unit": "verbs",
+"front": "ver",
+"hint": "ver",
+"back": {
+"ru": "видеть; смотреть",
+"en": "to see"
+},
+"extra": {
+"ru": "> Eu vejo televisão.\n> — Я смотрю телевизор.",
+"en": "> Eu vejo televisão.\n> — I'm watching TV."
+}
+},
+{
+"id": "speak",
+"unit": "verbs",
+"front": "falar",
+"hint": "faˈlar",
+"back": {
+"ru": "говорить",
+"en": "to speak"
+},
+"extra": {
+"ru": "> Fale mais devagar, por favor.\n> — Говорите медленнее, пожалуйста.",
+"en": "> Fale mais devagar, por favor.\n> — Speak more slowly, please."
+}
+},
+{
+"id": "know",
+"unit": "verbs",
+"front": "saber",
+"hint": "saˈber",
+"back": {
+"ru": "знать",
+"en": "to know"
+},
+"extra": {
+"ru": "Знать человека — conhecer.\n> Eu não sei.\n> — Я не знаю.",
+"en": "To know a person: conhecer.\n> Eu não sei.\n> — I don't know."
+}
+},
+{
+"id": "want",
+"unit": "verbs",
+"front": "querer",
+"hint": "keˈrer",
+"back": {
+"ru": "хотеть",
+"en": "to want"
+},
+"extra": {
+"ru": "> Eu quero um café.\n> — Я хочу кофе.",
+"en": "> Eu quero um café.\n> — I want coffee."
+}
+},
+{
+"id": "can",
+"unit": "verbs",
+"front": "poder",
+"hint": "poˈder",
+"back": {
+"ru": "мочь",
+"en": "can; to be able"
+},
+"extra": {
+"ru": "> Eu posso ajudar.\n> — Я могу помочь.",
+"en": "> Eu posso ajudar.\n> — I can help."
+}
+},
+{
+"id": "live",
+"unit": "verbs",
+"front": "morar",
+"hint": "moˈrar",
+"back": {
+"ru": "жить",
+"en": "to live"
+},
+"extra": {
+"ru": "> Onde você mora?\n> — Где ты живёшь?",
+"en": "> Onde você mora?\n> — Where do you live?"
+}
+},
+{
+"id": "big",
+"unit": "describe",
+"front": "grande",
+"hint": "ˈɡrɐ̃dʒi",
+"back": {
+"ru": "большой",
+"en": "big"
+},
+"extra": {
+"ru": "> Eles têm uma casa grande.\n> — У них большой дом.",
+"en": "> Eles têm uma casa grande.\n> — They have a big house."
+}
+},
+{
+"id": "small",
+"unit": "describe",
+"front": "pequeno",
+"hint": "peˈkenu",
+"back": {
+"ru": "маленький",
+"en": "small"
+},
+"extra": {
+"ru": "> É um cachorro pequeno.\n> — Это маленькая собака.",
+"en": "> É um cachorro pequeno.\n> — It's a small dog."
+}
+},
+{
+"id": "good",
+"unit": "describe",
+"front": "bom",
+"hint": "bõ",
+"back": {
+"ru": "хороший",
+"en": "good"
+},
+"extra": {
+"ru": "Ж. р. — boa.\n> É uma boa ideia.\n> — Это хорошая идея.",
+"en": "Feminine: boa.\n> É uma boa ideia.\n> — That's a good idea."
+}
+},
+{
+"id": "bad",
+"unit": "describe",
+"front": "ruim",
+"hint": "huˈĩ",
+"back": {
+"ru": "плохой",
+"en": "bad"
+},
+"extra": {
+"ru": "> O tempo está ruim hoje.\n> — Сегодня плохая погода.",
+"en": "> O tempo está ruim hoje.\n> — The weather is bad today."
+}
+},
+{
+"id": "new",
+"unit": "describe",
+"front": "novo",
+"hint": "ˈnovu",
+"back": {
+"ru": "новый",
+"en": "new"
+},
+"extra": {
+"ru": "> Eu tenho um celular novo.\n> — У меня новый телефон.",
+"en": "> Eu tenho um celular novo.\n> — I have a new phone."
+}
+},
+{
+"id": "old",
+"unit": "describe",
+"front": "velho",
+"hint": "ˈvɛʎu",
+"back": {
+"ru": "старый",
+"en": "old"
+},
+"extra": {
+"ru": "> É uma cidade velha.\n> — Это старый город.",
+"en": "> É uma cidade velha.\n> — It's an old town."
+}
+},
+{
+"id": "hot",
+"unit": "describe",
+"front": "quente",
+"hint": "ˈkẽtʃi",
+"back": {
+"ru": "горячий",
+"en": "hot"
+},
+"extra": {
+"ru": "> O chá está quente.\n> — Чай горячий.",
+"en": "> O chá está quente.\n> — The tea is hot."
+}
+},
+{
+"id": "cold",
+"unit": "describe",
+"front": "frio",
+"hint": "ˈfriu",
+"back": {
+"ru": "холодный",
+"en": "cold"
+},
+"extra": {
+"ru": "> A água está fria.\n> — Вода холодная.",
+"en": "> A água está fria.\n> — The water is cold."
+}
+},
+{
+"id": "beautiful",
+"unit": "describe",
+"front": "bonito",
+"hint": "boˈnitu",
+"back": {
+"ru": "красивый",
+"en": "beautiful"
+},
+"extra": {
+"ru": "> Que vista bonita!\n> — Какой красивый вид!",
+"en": "> Que vista bonita!\n> — What a beautiful view!"
+}
+},
+{
+"id": "red",
+"unit": "describe",
+"front": "vermelho",
+"hint": "verˈmeʎu",
+"back": {
+"ru": "красный",
+"en": "red"
+},
+"extra": {
+"ru": "> Eu gosto de vermelho.\n> — Мне нравится красный цвет.",
+"en": "> Eu gosto de vermelho.\n> — I like the colour red."
+}
+},
+{
+"id": "car",
+"unit": "travel",
+"front": "o carro",
+"hint": "u ˈkahu",
+"back": {
+"ru": "машина",
+"en": "car"
+},
+"extra": {
+"ru": "rr — как «х».\n> Este é o meu carro.\n> — Это моя машина.",
+"en": "rr sounds like “h”.\n> Este é o meu carro.\n> — This is my car."
+}
+},
+{
+"id": "bus",
+"unit": "travel",
+"front": "o ônibus",
+"hint": "u ˈonibus",
+"back": {
+"ru": "автобус",
+"en": "bus"
+},
+"extra": {
+"ru": "> O ônibus está atrasado.\n> — Автобус опаздывает.",
+"en": "> O ônibus está atrasado.\n> — The bus is late."
+}
+},
+{
+"id": "train",
+"unit": "travel",
+"front": "o trem",
+"hint": "u trẽj̃",
+"back": {
+"ru": "поезд",
+"en": "train"
+},
+"extra": {
+"ru": "> O trem sai às seis.\n> — Поезд уходит в шесть.",
+"en": "> O trem sai às seis.\n> — The train leaves at six."
+}
+},
+{
+"id": "plane",
+"unit": "travel",
+"front": "o avião",
+"hint": "u aviˈɐ̃w̃",
+"back": {
+"ru": "самолёт",
+"en": "plane"
+},
+"extra": {
+"ru": "> O avião vai para Roma.\n> — Самолёт летит в Рим.",
+"en": "> O avião vai para Roma.\n> — The plane is flying to Rome."
+}
+},
+{
+"id": "ticket",
+"unit": "travel",
+"front": "a passagem",
+"hint": "a paˈsaʒẽj̃",
+"back": {
+"ru": "билет",
+"en": "ticket"
+},
+"extra": {
+"ru": "Билет в кино — ingresso.\n> Uma passagem, por favor.\n> — Один билет, пожалуйста.",
+"en": "A cinema ticket: ingresso.\n> Uma passagem, por favor.\n> — One ticket, please."
+}
+},
+{
+"id": "hotel",
+"unit": "travel",
+"front": "o hotel",
+"hint": "u oˈtɛw",
+"back": {
+"ru": "гостиница, отель",
+"en": "hotel"
+},
+"extra": {
+"ru": "> O hotel fica no centro.\n> — Отель в центре.",
+"en": "> O hotel fica no centro.\n> — The hotel is in the centre."
+}
+},
+{
+"id": "map",
+"unit": "travel",
+"front": "o mapa",
+"hint": "u ˈmapa",
+"back": {
+"ru": "карта",
+"en": "map"
+},
+"extra": {
+"ru": "> Você tem um mapa?\n> — У тебя есть карта?",
+"en": "> Você tem um mapa?\n> — Do you have a map?"
+}
+},
+{
+"id": "left",
+"unit": "travel",
+"front": "à esquerda",
+"hint": "a isˈkerda",
+"back": {
+"ru": "налево; левый",
+"en": "left"
+},
+"extra": {
+"ru": "> Vire à esquerda.\n> — Поверните налево.",
+"en": "> Vire à esquerda.\n> — Turn left."
+}
+},
+{
+"id": "right",
+"unit": "travel",
+"front": "à direita",
+"hint": "a dʒiˈrejta",
+"back": {
+"ru": "направо; правый",
+"en": "right"
+},
+"extra": {
+"ru": "> Vire à direita.\n> — Поверните направо.",
+"en": "> Vire à direita.\n> — Turn right."
+}
+},
+{
+"id": "where",
+"unit": "travel",
+"front": "onde",
+"hint": "ˈõdʒi",
+"back": {
+"ru": "где",
+"en": "where"
+},
+"extra": {
+"ru": "> Onde fica o metrô?\n> — Где метро?",
+"en": "> Onde fica o metrô?\n> — Where is the metro?"
+}
+}
+]
+}
