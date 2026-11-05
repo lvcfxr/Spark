@@ -1,6 +1,18 @@
 {
  "releases": [
   {
+   "version": "0.24",
+   "date": "05.11.2026",
+   "ru": [
+    "Озвучка курсов переделана: чище и понятнее, без скачков громкости и щелчков, слова не «проглатываются»; японские фразы звучат цельно, без пауз после каждого слова",
+    "Немецкий звучит естественнее: голос без искусственного изменения тона"
+   ],
+   "en": [
+    "Course audio redone: cleaner and clearer, no volume jumps or clicks, words are no longer clipped; Japanese sentences sound whole, without pauses after every word",
+    "German sounds more natural: a voice without artificial pitch shifting"
+   ]
+  },
+  {
    "version": "0.23",
    "date": "05.11.2026",
    "ru": [
