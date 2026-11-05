@@ -1,6 +1,16 @@
 {
  "releases": [
   {
+   "version": "0.25",
+   "date": "05.11.2026",
+   "ru": [
+    "Японский курс озвучен заново другим голосом: слова и фразы звучат чётко и правильно, без искажений вроде «ます» → «メス»"
+   ],
+   "en": [
+    "The Japanese course has a new voice: words and sentences sound clear and correct, without distortions"
+   ]
+  },
+  {
    "version": "0.24",
    "date": "05.11.2026",
    "ru": [
