@@ -1,6 +1,32 @@
 {
  "releases": [
   {
+   "version": "0.23",
+   "date": "05.11.2026",
+   "ru": [
+    "Игры для заучивания: «Пары» на время, «Звездопад» и «Блиц» — с рекордами для каждой колоды",
+    "На главной появился раздел «Тренировки»: игры, диктант, выбор ответа, произношение и работа над ошибками — в одно касание",
+    "Новый режим «Произношение»: скажите слово вслух, Spark проверит",
+    "Кнопка тренировок теперь видна в заголовке колоды, а после занятия Spark предлагает закрепить слова игрой или диктантом",
+    "Главная стала проще: без раздела «Все карточки», колоды — ровными карточками с прогрессом"
+   ],
+   "en": [
+    "Learning games: timed “Pairs”, “Starfall” and “Blitz” — with records for each deck",
+    "A new “Practice” section on the home screen: games, dictation, multiple choice, pronunciation and mistakes — one tap away",
+    "New “Pronunciation” mode: say the word aloud and Spark checks it",
+    "The practice button is now visible in the deck header, and after a session Spark offers to reinforce words with a game or dictation",
+    "A simpler home screen: no “All cards” row, decks are tidy cards with progress"
+   ],
+   "fix": {
+    "ru": [
+     "Живые записи носителей звучат чаще: Spark заранее ищет их для ближайших карточек и больше не застревает на синтезированном голосе"
+    ],
+    "en": [
+     "Native recordings play more often: Spark looks them up in advance for upcoming cards and no longer gets stuck on the synthetic voice"
+    ]
+   }
+  },
+  {
    "version": "0.22",
    "date": "05.11.2026",
    "ru": [
