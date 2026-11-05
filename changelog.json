@@ -5,21 +5,23 @@
    "date": "05.11.2026",
    "ru": [
     "Экспорт в Anki (.apkg): карточки, картинки, звук и прогресс повторений. В Telegram файл приходит в чат с ботом",
-    "Офлайн: колоду или курс можно скачать целиком вместе со звуком — учитесь без интернета",
     "«Как запомнить»: подсказки-ассоциации к слову (созвучия, ключевое слово, цвет рода) и своя ассоциация, которая показывается при повторении",
+    "Импорт на телефоне: файл колоды можно просто переслать боту — он пришлёт кнопку «Импортировать в Spark»",
     "Импорт и экспорт Anki — в настройках"
    ],
    "en": [
     "Export to Anki (.apkg): cards, images, sound and review progress. In Telegram the file arrives in your chat with the bot",
-    "Offline: download a deck or a whole course with sound — study without internet",
     "“How to remember”: association hints for a word (look-alikes, keyword, gender colour) and your own association shown at review",
+    "Import on a phone: just forward the deck file to the bot — it replies with an “Import into Spark” button",
     "Anki import and export in Settings"
    ],
    "fix": {
     "ru": [
+     "Импорт колод на телефоне: файлы .apkg снова можно выбрать (раньше телефон их не показывал или не узнавал без расширения)",
      "Живые записи произношения больше не стираются при обновлении приложения"
     ],
     "en": [
+     "Deck import on phones: .apkg files can be picked again (phones used to hide them or not recognise them without an extension)",
      "Native pronunciation recordings are no longer wiped when the app updates"
     ]
    }
