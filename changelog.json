@@ -1,6 +1,16 @@
 {
  "releases": [
   {
+   "version": "0.29",
+   "date": "07.11.2026",
+   "ru": [
+    "Низ неба в занятии — «звёздный прибой» вместо стеклянной кромки: волны цвета неба медленно катятся, по гребню бежит золотой блик, на волнах мерцают искры, иногда по небу пролетает метеор; анимация не сбивается при смене карточки. Новые звуки — живые записи вместо синтезатора: звон стекла за верный ответ (с серией звенит выше), шелест страницы при перевороте карточки, мягкий стук при ошибке, а конец занятия, новый уровень, серия и титулы звучат короткими мелодиями на пиццикато, стил-драме и саксофоне"
+   ],
+   "en": [
+    "The bottom of the study sky is now a “star tide” instead of the glass edge: sky-coloured waves roll slowly, a golden glint runs along the crest, sparks twinkle on the waves, and now and then a meteor crosses the sky; the animation keeps going smoothly between cards. New sounds — real recordings instead of a synthesizer: a glass chime for a right answer (higher as your streak grows), a page rustle when a card flips, a soft thud for a mistake, and short pizzicato, steel drum and sax jingles for finishing a session, levelling up, streaks and titles"
+   ]
+  },
+  {
    "version": "0.28",
    "date": "07.11.2026",
    "ru": [
