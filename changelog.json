@@ -1,6 +1,16 @@
 {
  "releases": [
   {
+   "version": "0.26",
+   "date": "07.11.2026",
+   "ru": [
+    "Ввод ответа стал спокойнее: на время засчитывается только то, сколько вы вспоминаете слово — Spark знает ваш темп печати и не считает время на набор и исправления, поэтому медленная печать не снижает оценку (а «додумать» слово, пока печатаешь, не выйдет); верно набранное слово никогда не считается ошибкой, а при опечатке Spark подсказывает «почти» и даёт спокойно исправить — и в повторении, и в диктанте"
+   ],
+   "en": [
+    "Typing answers is calmer: only the time you spend recalling the word counts — Spark knows your typing pace and doesn't count time spent typing and fixing, so slow typing doesn't lower the grade (and you can't stall by typing); a correctly typed word is never counted as a mistake, and on a typo Spark says “almost” and lets you fix it — in reviews and in dictation"
+   ]
+  },
+  {
    "version": "0.25",
    "date": "05.11.2026",
    "ru": [
