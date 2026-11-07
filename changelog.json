@@ -1,13 +1,23 @@
 {
  "releases": [
   {
+   "version": "0.27",
+   "date": "07.11.2026",
+   "ru": [
+    "Заморозки серии: каждые 7 дней подряд дают заморозку (до двух), она сохраняет серию, если вы пропустили день; награды за 7, 30 и 100 дней подряд (+50, +200 и +500 XP); титулы за языки по уровню владения — от «Путника» (A1) до «Виртуоза» (C2), выдаются за успешно пройденный курс; в статистике — раздел «Языки» и сравнение новых слов с прошлой неделей; «Слабые слова» теперь учитывают опечатки и трудные ответы и появляются на главной; бот напомнит вечером, если серия под угрозой; появились звуки: нажатия, верные и неверные ответы (с серией тон растёт), конец занятия, новый уровень и награды — их можно выключить в настройках"
+   ],
+   "en": [
+    "Streak freezes: every 7 days in a row earns a freeze (up to two) that keeps your streak if you miss a day; rewards for 7, 30 and 100-day streaks (+50, +200 and +500 XP); language titles by proficiency — from “Wanderer” (A1) to “Virtuoso” (C2), earned by successfully completing a course; a “Languages” section in stats and new words compared with last week; “Weak words” now count typos and hard answers and show up on the home screen; the bot reminds you in the evening if your streak is at risk; sounds: taps, right and wrong answers (the pitch rises with your streak), session end, level-ups and rewards — can be turned off in settings"
+   ]
+  },
+  {
    "version": "0.26",
    "date": "07.11.2026",
    "ru": [
-    "Ввод ответа стал спокойнее: на время засчитывается только то, сколько вы вспоминаете слово — Spark знает ваш темп печати и не считает время на набор и исправления, поэтому медленная печать не снижает оценку (а «додумать» слово, пока печатаешь, не выйдет); верно набранное слово никогда не считается ошибкой, а при опечатке Spark подсказывает «почти» и даёт спокойно исправить — и в повторении, и в диктанте"
+    "Ввод ответа стал спокойнее: при наборе нет бегущего таймера, время печати и исправлений не считается (Spark знает ваш темп, а «додумать» слово, пока печатаешь, не выйдет); верно набранное слово обычно засчитывается как «Хорошо», «Легко» — если вспомнили заметно быстрее обычного, и никогда не считается ошибкой; при опечатке Spark подсказывает «почти» и даёт спокойно исправить — и в повторении, и в диктанте"
    ],
    "en": [
-    "Typing answers is calmer: only the time you spend recalling the word counts — Spark knows your typing pace and doesn't count time spent typing and fixing, so slow typing doesn't lower the grade (and you can't stall by typing); a correctly typed word is never counted as a mistake, and on a typo Spark says “almost” and lets you fix it — in reviews and in dictation"
+    "Typing answers is calmer: no running timer while you type, typing and correction time doesn't count (Spark knows your pace, and you can't stall by typing); a correctly typed word is usually graded “Good”, “Easy” if you recalled it noticeably faster than usual, and it's never counted as a mistake; on a typo Spark says “almost” and lets you fix it — in reviews and in dictation"
    ]
   },
   {
