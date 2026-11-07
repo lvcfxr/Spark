@@ -4,10 +4,10 @@
    "version": "0.27",
    "date": "07.11.2026",
    "ru": [
-    "Заморозки серии: каждые 7 дней подряд дают заморозку (до двух), она сохраняет серию, если вы пропустили день; награды за 7, 30 и 100 дней подряд (+50, +200 и +500 XP); титулы за языки по уровню владения — от «Путника» (A1) до «Виртуоза» (C2), выдаются за успешно пройденный курс; в статистике — раздел «Языки» и сравнение новых слов с прошлой неделей; «Слабые слова» теперь учитывают опечатки и трудные ответы и появляются на главной; бот напомнит вечером, если серия под угрозой"
+    "Заморозки серии: каждые 7 дней подряд дают заморозку (до двух), она сохраняет серию, если вы пропустили день; награды за 7, 30 и 100 дней подряд (+50, +200 и +500 XP); титулы за языки по уровню владения — от «Путника» (A1) до «Виртуоза» (C2), выдаются за успешно пройденный курс; в статистике — раздел «Языки» и сравнение новых слов с прошлой неделей; «Слабые слова» теперь учитывают опечатки и трудные ответы и появляются на главной; бот напомнит вечером, если серия под угрозой; появились звуки: нажатия, верные и неверные ответы (с серией тон растёт), конец занятия, новый уровень и награды — их можно выключить в настройках"
    ],
    "en": [
-    "Streak freezes: every 7 days in a row earns a freeze (up to two) that keeps your streak if you miss a day; rewards for 7, 30 and 100-day streaks (+50, +200 and +500 XP); language titles by proficiency — from “Wanderer” (A1) to “Virtuoso” (C2), earned by successfully completing a course; a “Languages” section in stats and new words compared with last week; “Weak words” now count typos and hard answers and show up on the home screen; the bot reminds you in the evening if your streak is at risk"
+    "Streak freezes: every 7 days in a row earns a freeze (up to two) that keeps your streak if you miss a day; rewards for 7, 30 and 100-day streaks (+50, +200 and +500 XP); language titles by proficiency — from “Wanderer” (A1) to “Virtuoso” (C2), earned by successfully completing a course; a “Languages” section in stats and new words compared with last week; “Weak words” now count typos and hard answers and show up on the home screen; the bot reminds you in the evening if your streak is at risk; sounds: taps, right and wrong answers (the pitch rises with your streak), session end, level-ups and rewards — can be turned off in settings"
    ]
   },
   {
