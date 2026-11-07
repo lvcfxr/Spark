@@ -1,6 +1,16 @@
 {
  "releases": [
   {
+   "version": "0.31",
+   "date": "07.11.2026",
+   "ru": [
+    "Японский курс переозвучен новым голосом: все слова и фразы теперь читает реалистичный женский голос VOICEVOX Nemo вместо прежнего синтеза — естественная интонация, а ударение берётся по словарю (например, あめ звучит как «дождь», а не «конфета»). Звук в уже начатом курсе обновится сам"
+   ],
+   "en": [
+    "The Japanese course has a new voice: every word and phrase is now read by a realistic female VOICEVOX Nemo voice instead of the old synthesizer — natural intonation, with pitch accent taken from the dictionary (e.g. あめ sounds like “rain”, not “candy”). Audio in a course you’ve already started updates automatically"
+   ]
+  },
+  {
    "version": "0.30",
    "date": "07.11.2026",
    "ru": [
