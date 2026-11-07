@@ -13,4 +13,4 @@
 
 Исходный код, схема базы и инструкции по настройке хранятся отдельно и в этот репозиторий не входят.
 
-**Данные:** словари для подсказки «как запомнить» построены по частотам слов [wordfreq](https://github.com/rspeer/wordfreq) (CC BY-SA 4.0) и WordNet; живые записи произношения — Wikimedia Commons / Lingua Libre (лицензии CC).
+**Данные:** словари для подсказки «как запомнить» построены по частотам слов [wordfreq](https://github.com/rspeer/wordfreq) (CC BY-SA 4.0) и WordNet; живые записи произношения — Wikimedia Commons / Lingua Libre (лицензии CC). Звуки интерфейса — паки [Kenney](https://kenney.nl) (UI Audio, RPG Audio, Impact Sounds, Music Jingles; CC0). Шрифт заголовков — Manrope (SIL OFL 1.1).
