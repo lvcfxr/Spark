@@ -13,4 +13,4 @@
 
 Исходный код, схема базы и инструкции по настройке хранятся отдельно и в этот репозиторий не входят.
 
-**Данные:** словари для подсказки «как запомнить» построены по частотам слов [wordfreq](https://github.com/rspeer/wordfreq) (CC BY-SA 4.0) и WordNet; живые записи произношения — Wikimedia Commons / Lingua Libre (лицензии CC). Звуки интерфейса — [Kenney](https://kenney.nl) и [UI SFX](https://github.com/romainsimon/uisfx) (CC0). Шрифт заголовков — Manrope (SIL OFL 1.1).
+**Данные:** словари для подсказки «как запомнить» построены по частотам слов [wordfreq](https://github.com/rspeer/wordfreq) (CC BY-SA 4.0) и WordNet; живые записи произношения — Wikimedia Commons / Lingua Libre (лицензии CC). Звуки интерфейса — [Kenney](https://kenney.nl) и [UI SFX](https://github.com/romainsimon/uisfx) (CC0). Озвучка японского курса — VOICEVOX Nemo. Шрифт заголовков — Manrope (SIL OFL 1.1).
