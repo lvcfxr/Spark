@@ -1,6 +1,16 @@
 {
  "releases": [
   {
+   "version": "0.28",
+   "date": "07.11.2026",
+   "ru": [
+    "Новое оформление «Сияние». Главная: шапка из стекла, разбитого звездой Spark, — лучи звезды показывают серию, цель дня и уровень, в центре звезды — значок уровня серии и число дней, а мелкие осколки слегка парят внутри стекла; «Продолжить» с путём по уровням курса и титулом в конце; неделя звёздами (заморозка — снежинкой). Занятие: сверху небо с созвездием — каждая карточка звезда, верные ответы золотые, ошибки оранжевые; небо обрывается разбитым стеклом с трещинами и падающими осколками. Серия правильных ответов: звезда-самоцвет наполняется огнём до следующей вехи (5, 10, 20, 30, 50), а верные ответы подряд тянутся хвостом кометы — золотой, после 5 оранжевый, после 10 фиолетовый, после 20 голубой; при ошибке самоцвет трескается, хвост рассыпается искрами. Новый итог занятия: точность, опыт, время, ошибки списком и продление серии с наградами и заморозками. Новое приветствие при первом запуске. Стеклянные карточки, меню, окна, каталог, курсы, статистика и настройки; переработанная тёмная тема (авто, светлая или тёмная — в настройках)"
+   ],
+   "en": [
+    "New “Radiance” look. Home: a glass header shattered by the Spark star — its rays show your streak, daily goal and level, the streak level badge and day count sit at its center, and small shards float inside the glass; “Continue” shows a path through course levels with a title at the end; your week as stars (a freeze shows as a snowflake). Study: a sky with a constellation on top — every card is a star, right answers gold, mistakes orange; the sky breaks off into shattered glass with cracks and falling shards. Answer streak: a gem star fills with fire towards the next milestone (5, 10, 20, 30, 50), and consecutive right answers trail behind as a comet — gold, orange after 5, purple after 10, blue after 20; a mistake cracks the gem and the tail scatters into sparks. A new end-of-session screen: accuracy, XP, time, your mistakes and streak progress with rewards and freezes. A new first-run welcome. Glass cards, menus, sheets, catalog, courses, stats and settings; a reworked dark theme (auto, light or dark — in settings)"
+   ]
+  },
+  {
    "version": "0.27",
    "date": "07.11.2026",
    "ru": [
