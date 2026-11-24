@@ -1,6 +1,24 @@
 {
  "releases": [
   {
+   "version": "0.34",
+   "date": "24.11.2026",
+   "ru": [
+    "Тест уровня перед курсом: несколько вопросов по каждому уровню — знакомые уровни засчитываются, и курс начинается с первого незнакомого. Предлагается при старте курса и всегда доступен на его странице",
+    "Новый курс «Японский N3»: 25 уроков, 75 грамматических тем («вот почему», «чем больше, тем…», «благодаря» и «из-за», «вынужден», «не могу не» и другие) и 250 слов, всё озвучено",
+    "«Как пишется» для кандзи и каны: порядок черт с анимацией и прописи — пишете пальцем, а Spark проверяет каждую черту и подсказывает, если она пошла не так. Кнопка есть на японских карточках и в тренажёре каны",
+    "Японские слова можно показывать кандзи с фуриганой или только кандзи (Настройки → Обучение → Японские слова)",
+    "Новая тренировка «На слух»: слово только звучит, а вы выбираете перевод"
+   ],
+   "en": [
+    "Placement test before a course: a few questions per level — levels you know are counted, and the course starts from the first new one. Offered when you start a course and always available on its page",
+    "New course “Japanese N3”: 25 lessons, 75 grammar points (“no wonder”, “the more…, the more…”, “thanks to” and “because of”, “have no choice but to”, “can’t help” and more) and 250 words, all with audio",
+    "“How to write” for kanji and kana: animated stroke order and writing practice — draw with your finger and Spark checks each stroke and helps if it goes wrong. The button is on Japanese cards and in the kana trainer",
+    "Japanese words can now be shown in kanji with furigana or kanji only (Settings → Learning → Japanese words)",
+    "New “By ear” practice: you only hear the word and choose the translation"
+   ]
+  },
+  {
    "version": "0.33",
    "date": "24.11.2026",
    "ru": [
