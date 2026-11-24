@@ -1131,6 +1131,237 @@
    "audio": true
   },
   {
+   "id": "ja-n3",
+   "lang": "ja",
+   "flag": "🇯🇵",
+   "natives": [
+    "ru",
+    "en"
+   ],
+   "cefr": "N3",
+   "exam": "JLPT N3",
+   "title": {
+    "ru": "Японский N3",
+    "en": "Japanese N3"
+   },
+   "level": {
+    "ru": "Средний",
+    "en": "Intermediate"
+   },
+   "description": {
+    "ru": "Продолжение после N4: 25 уроков уровня N3 — «вот почему» и «не то чтобы», «чем больше, тем…», «благодаря» и «из-за», «несмотря на», «вынужден», «не могу не», сожаления и пожелания. 75 грамматических тем и 250 слов о жизни, работе, чувствах и новостях, всё со звуком, ромадзи и переводом.",
+    "en": "The follow-up to N4: 25 N3 lessons — “no wonder” and “it’s not that”, “the more…, the more…”, “thanks to” and “because of”, “despite”, “have no choice but to”, “can’t help”, regrets and wishes. 75 grammar points and 250 words about life, work, feelings and the news, all with audio, romaji and a translation."
+   },
+   "author": "Spark",
+   "words": 325,
+   "minutes": 490,
+   "units": [
+    {
+     "id": "l51",
+     "title": {
+      "ru": "Урок 51: Собирался и чуть не",
+      "en": "Lesson 51: About to and almost"
+     },
+     "count": 13
+    },
+    {
+     "id": "l52",
+     "title": {
+      "ru": "Урок 52: Вот почему и не то чтобы",
+      "en": "Lesson 52: That’s why and it’s not that"
+     },
+     "count": 13
+    },
+    {
+     "id": "l53",
+     "title": {
+      "ru": "Урок 53: Наверняка и не может быть",
+      "en": "Lesson 53: Surely and can’t be"
+     },
+     "count": 13
+    },
+    {
+     "id": "l54",
+     "title": {
+      "ru": "Урок 54: Чем больше, тем…",
+      "en": "Lesson 54: The more…, the more…"
+     },
+     "count": 13
+    },
+    {
+     "id": "l55",
+     "title": {
+      "ru": "Урок 55: О, к и для",
+      "en": "Lesson 55: About, towards and for"
+     },
+     "count": 13
+    },
+    {
+     "id": "l56",
+     "title": {
+      "ru": "Урок 56: Зависит от и по словам",
+      "en": "Lesson 56: Depends on and according to"
+     },
+     "count": 13
+    },
+    {
+     "id": "l57",
+     "title": {
+      "ru": "Урок 57: В качестве и для (кого-то)",
+      "en": "Lesson 57: As and for (someone)"
+     },
+     "count": 13
+    },
+    {
+     "id": "l58",
+     "title": {
+      "ru": "Урок 58: Каждый раз и через один",
+      "en": "Lesson 58: Every time and every other"
+     },
+     "count": 13
+    },
+    {
+     "id": "l59",
+     "title": {
+      "ru": "Урок 59: Так положено и незачем",
+      "en": "Lesson 59: It’s the rule and no need"
+     },
+     "count": 13
+    },
+    {
+     "id": "l60",
+     "title": {
+      "ru": "Урок 60: Бывало и хотя",
+      "en": "Lesson 60: Used to and although"
+     },
+     "count": 13
+    },
+    {
+     "id": "l61",
+     "title": {
+      "ru": "Урок 61: -ватый и склонен к",
+      "en": "Lesson 61: -ish and tend to"
+     },
+     "count": 13
+    },
+    {
+     "id": "l62",
+     "title": {
+      "ru": "Урок 62: Даже и именно",
+      "en": "Lesson 62: Even and precisely"
+     },
+     "count": 13
+    },
+    {
+     "id": "l63",
+     "title": {
+      "ru": "Урок 63: Не только и мало того",
+      "en": "Lesson 63: Not only and on top of that"
+     },
+     "count": 13
+    },
+    {
+     "id": "l64",
+     "title": {
+      "ru": "Урок 64: Как сказано и делать вид",
+      "en": "Lesson 64: As told and pretend"
+     },
+     "count": 13
+    },
+    {
+     "id": "l65",
+     "title": {
+      "ru": "Урок 65: Вместо и с другой стороны",
+      "en": "Lesson 65: Instead and on the other hand"
+     },
+     "count": 13
+    },
+    {
+     "id": "l66",
+     "title": {
+      "ru": "Урок 66: Благодаря и из-за",
+      "en": "Lesson 66: Thanks to and because of"
+     },
+     "count": 13
+    },
+    {
+     "id": "l67",
+     "title": {
+      "ru": "Урок 67: Для своего и хотя",
+      "en": "Lesson 67: For its and despite"
+     },
+     "count": 13
+    },
+    {
+     "id": "l68",
+     "title": {
+      "ru": "Урок 68: Пока не и пока",
+      "en": "Lesson 68: Not until and as long as"
+     },
+     "count": 13
+    },
+    {
+     "id": "l69",
+     "title": {
+      "ru": "Урок 69: Мол и говорят",
+      "en": "Lesson 69: Reported speech and hearsay"
+     },
+     "count": 13
+    },
+    {
+     "id": "l70",
+     "title": {
+      "ru": "Урок 70: Не могу и приходится",
+      "en": "Lesson 70: Can’t and have to"
+     },
+     "count": 13
+    },
+    {
+     "id": "l71",
+     "title": {
+      "ru": "Урок 71: Советы и долг",
+      "en": "Lesson 71: Advice and duty"
+     },
+     "count": 13
+    },
+    {
+     "id": "l72",
+     "title": {
+      "ru": "Урок 72: Насколько и ничто не сравнится",
+      "en": "Lesson 72: To what extent and nothing compares"
+     },
+     "count": 13
+    },
+    {
+     "id": "l73",
+     "title": {
+      "ru": "Урок 73: В самый разгар и как только",
+      "en": "Lesson 73: In the middle of and as soon as"
+     },
+     "count": 13
+    },
+    {
+     "id": "l74",
+     "title": {
+      "ru": "Урок 74: Ужасно хочется",
+      "en": "Lesson 74: Dying to"
+     },
+     "count": 13
+    },
+    {
+     "id": "l75",
+     "title": {
+      "ru": "Урок 75: Если бы и как хорошо бы",
+      "en": "Lesson 75: If only and wishes"
+     },
+     "count": 13
+    }
+   ],
+   "version": 3,
+   "file": "ja-n3.json",
+   "audio": true
+  },
+  {
    "id": "it",
    "lang": "it",
    "flag": "🇮🇹",
