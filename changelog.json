@@ -1,6 +1,18 @@
 {
  "releases": [
   {
+   "version": "0.32",
+   "date": "24.11.2026",
+   "ru": [
+    "Японский курс сильно расширен. Азбука теперь полная: ё-он (きゃ, しゅ, ちょ…), маленькая っ, долгие звуки, звонкая катакана и звуки иностранных слов (ファ, ティ, ヴァ). После 25 уроков добавлены 8 тематических блоков слов — числа и деньги, дни недели и время, семья, еда, тело, дом и город, цвета и погода, глаголы — и 80 кандзи N5: у каждого онъёми, кунъёми и слово-пример со звуком",
+    "Новый курс «Японский N4» — продолжение после N5: 25 уроков, 75 грамматических тем (возможность, намерение, «кажется» и «говорят», пассив и каузатив, ば и なら, кэйго и другое) и 250 новых слов. Всё озвучено голосом VOICEVOX Nemo, а за прохождение даётся титул уровня N4"
+   ],
+   "en": [
+    "The Japanese course is much bigger. The kana are now complete: yōon (きゃ, しゅ, ちょ…), the small っ, long vowels, voiced katakana and the sounds of foreign words (ファ, ティ, ヴァ). After the 25 lessons there are 8 themed word sets — numbers and money, days and time, family, food, body, home and town, colours and weather, verbs — and the 80 N5 kanji, each with on’yomi, kun’yomi and an example word with audio",
+    "New course “Japanese N4”, the follow-up to N5: 25 lessons, 75 grammar points (potential, intention, “seems” and hearsay, passive and causative, ば and なら, keigo and more) and 250 new words. Everything is voiced by VOICEVOX Nemo, and finishing it earns the N4 title"
+   ]
+  },
+  {
    "version": "0.31",
    "date": "07.11.2026",
    "ru": [
