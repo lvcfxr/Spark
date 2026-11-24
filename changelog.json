@@ -1,6 +1,16 @@
 {
  "releases": [
   {
+   "version": "0.33",
+   "date": "24.11.2026",
+   "ru": [
+    "Тренажёр каны в японском разделе: выберите столбцы азбуки (あ, か, さ…, звонкие и ё-он), хирагану, катакану или обе сразу — и печатайте ромадзи. Ответ засчитывается сам, без Enter, пробел — подсказка. Ошибочные знаки возвращаются чаще, а в таблице видно, какие знаки уже уверенно знаете. Открывается со страницы японских курсов и из «Тренировок»"
+   ],
+   "en": [
+    "Kana trainer in the Japanese section: pick kana columns (あ, か, さ…, voiced and yōon), hiragana, katakana or both, and type the romaji. Answers are accepted automatically without Enter, Space shows a hint. Characters you miss come back more often, and the table shows which ones you already know well. Open it from the Japanese course pages or from “Practice”"
+   ]
+  },
+  {
    "version": "0.32",
    "date": "24.11.2026",
    "ru": [
