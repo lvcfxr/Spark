@@ -1,6 +1,42 @@
 {
  "releases": [
   {
+   "version": "0.36",
+   "date": "28.11.2026",
+   "ru": [
+    "Японский: тренажёр спряжений — 113 глаголов и 44 прилагательных, формы от ます и て до пассива и побудительной. Печатайте латиницей — ромадзи сами превращаются в кану; после ответа видно правило, ошибки возвращаются",
+    "Японский: тренажёр «Числа и время» — числа, цены, часы, даты и счётные суффиксы со всеми особыми чтениями (よじ, ようか, さんびゃく, いっぽん…): запись → чтение, чтение → цифры и на слух",
+    "Тренажёр каны: новые режимы «Ромадзи → знак», «На слух → знак» (озвучка VOICEVOX Nemo), «Слова целиком» и «60 секунд» с рекордом",
+    "Обратные карточки в курсах: перевод → слово. В японском ответ печатается ромадзи и сразу становится каной",
+    "В карточках курсов — кнопка «Сообщить об ошибке»: опечатки и неестественные фразы можно отправить прямо из занятия"
+   ],
+   "en": [
+    "Japanese: a conjugation trainer — 113 verbs and 44 adjectives, forms from ます and て to passive and causative. Type in Latin letters — romaji turn into kana; after each answer you see the rule, and mistakes come back",
+    "Japanese: a “Numbers and time” trainer — numbers, prices, clock time, dates and counters with all the special readings (よじ, ようか, さんびゃく, いっぽん…): written → reading, reading → digits, and by ear",
+    "Kana trainer: new modes “Romaji → kana”, “By ear → kana” (VOICEVOX Nemo audio), “Whole words” and a “60 seconds” challenge with a best score",
+    "Reverse cards in courses: translation → word. In Japanese you type romaji and it turns into kana right away",
+    "Course cards now have a “Report a mistake” button: send typos and unnatural phrases straight from a session"
+   ]
+  },
+  {
+   "version": "0.35",
+   "date": "28.11.2026",
+   "ru": [
+    "«Занятие на сегодня» на главной: одна кнопка — повторения, немного новых слов по вашей дневной цели и короткая тренировка на слух. Видно, сколько минут займёт и какие шаги уже сделаны. Есть и кнопка «Есть только минута» — 10 карточек",
+    "Режим возвращения после перерыва: если накопилось много повторений, Spark раскладывает их на несколько дней понемногу и не добавляет новых слов, пока долг не разобран",
+    "Задания на день: три небольших задания (ответы, серия верных, тренировка, игра, тренажёр каны, прописи…) по +20 XP. Закройте все задания в 5 днях недели — откроется сундук: +150 XP и заморозка серии",
+    "«Что я умею»: сколько слов вы знаете и что это значит, какие темы курсов освоены, а для японского — сколько знаков хираганы, катаканы и кандзи уже выучено",
+    "Напоминания в Telegram приходят в ваше обычное время занятий, а кнопка «⚡ 1 минута» сразу открывает короткое занятие. В недельном отчёте — дни со всеми заданиями"
+   ],
+   "en": [
+    "“Today’s session” on the home screen: one button — reviews, a few new words sized to your daily goal and a short listening round. You see how many minutes it takes and which steps are done. There’s also “Only have a minute” — 10 cards",
+    "Comeback mode after a break: if lots of reviews have piled up, Spark spreads them over several days and holds back new words until the backlog is cleared",
+    "Daily quests: three small tasks (answers, a correct run, practice, a game, the kana trainer, writing…), +20 XP each. Finish all quests on 5 days of the week to open the chest: +150 XP and a streak freeze",
+    "“What I can do”: how many words you know and what that means, which course topics you’ve mastered, and for Japanese — how many hiragana, katakana and kanji you’ve learned",
+    "Telegram reminders now come at your usual study time, and the “⚡ 1 minute” button opens a short session right away. The weekly report shows days with all quests done"
+   ]
+  },
+  {
    "version": "0.34",
    "date": "24.11.2026",
    "ru": [
