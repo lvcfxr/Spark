@@ -1,6 +1,24 @@
 {
  "releases": [
   {
+   "version": "0.36",
+   "date": "28.11.2026",
+   "ru": [
+    "Японский: тренажёр спряжений — 113 глаголов и 44 прилагательных, формы от ます и て до пассива и побудительной. Печатайте латиницей — ромадзи сами превращаются в кану; после ответа видно правило, ошибки возвращаются",
+    "Японский: тренажёр «Числа и время» — числа, цены, часы, даты и счётные суффиксы со всеми особыми чтениями (よじ, ようか, さんびゃく, いっぽん…): запись → чтение, чтение → цифры и на слух",
+    "Тренажёр каны: новые режимы «Ромадзи → знак», «На слух → знак» (озвучка VOICEVOX Nemo), «Слова целиком» и «60 секунд» с рекордом",
+    "Обратные карточки в курсах: перевод → слово. В японском ответ печатается ромадзи и сразу становится каной",
+    "В карточках курсов — кнопка «Сообщить об ошибке»: опечатки и неестественные фразы можно отправить прямо из занятия"
+   ],
+   "en": [
+    "Japanese: a conjugation trainer — 113 verbs and 44 adjectives, forms from ます and て to passive and causative. Type in Latin letters — romaji turn into kana; after each answer you see the rule, and mistakes come back",
+    "Japanese: a “Numbers and time” trainer — numbers, prices, clock time, dates and counters with all the special readings (よじ, ようか, さんびゃく, いっぽん…): written → reading, reading → digits, and by ear",
+    "Kana trainer: new modes “Romaji → kana”, “By ear → kana” (VOICEVOX Nemo audio), “Whole words” and a “60 seconds” challenge with a best score",
+    "Reverse cards in courses: translation → word. In Japanese you type romaji and it turns into kana right away",
+    "Course cards now have a “Report a mistake” button: send typos and unnatural phrases straight from a session"
+   ]
+  },
+  {
    "version": "0.35",
    "date": "28.11.2026",
    "ru": [
