@@ -1,6 +1,24 @@
 {
  "releases": [
   {
+   "version": "0.43.1",
+   "date": "28.11.2026",
+   "ru": [],
+   "en": [],
+   "fix": {
+    "ru": [
+     "Окна, открытые с экранов «Курсы», «Каталог» и «Статистика» (тренажёры, читалка, тень и другие), снова появляются поверх — с 0.42 они открывались под экраном и кнопки казались нерабочими",
+     "Полоса «добавьте ярлык» в тёмной теме больше не белым по белому",
+     "Вертикальная дата на главной не наезжает на цифры"
+    ],
+    "en": [
+     "Windows opened from Courses, Catalog and Stats (drills, reader, shadowing and more) appear on top again — since 0.42 they opened underneath, so the buttons seemed dead",
+     "The “add a shortcut” bar is no longer white on white in dark mode",
+     "The vertical date on the home screen no longer overlaps the numbers"
+    ]
+   }
+  },
+  {
    "version": "0.43",
    "date": "28.11.2026",
    "ru": [
