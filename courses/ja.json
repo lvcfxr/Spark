@@ -9906,6 +9906,1433 @@
    }
   }
  ],
+ "stories": [
+  {
+   "unit": "l01",
+   "title": {
+    "ru": "Знакомство",
+    "en": "Introductions"
+   },
+   "q": {
+    "ru": "Кто такая Юки?",
+    "en": "Who is Yuki?",
+    "opts": {
+     "ru": [
+      "Японская студентка, подруга Анны",
+      "Учительница Анны",
+      "Студентка из России"
+     ],
+     "en": [
+      "A Japanese student, Anna's friend",
+      "Anna's teacher",
+      "A student from Russia"
+     ]
+    }
+   },
+   "lines": [
+    {
+     "who": "",
+     "s": "{jk|はじめまして。私はアンナです。|はじめまして。 わたしは アンナです。} [audio](media:659d544609ebad455634879b)",
+     "tr": {
+      "ru": "Здравствуйте, я Анна.",
+      "en": "Nice to meet you. I'm Anna."
+     }
+    },
+    {
+     "who": "",
+     "s": "{jk|ロシア人です。大学の学生です。|ロシアじんです。 だいがくの がくせいです。} [audio](media:1d5289f3fc8c22a5656609bd)",
+     "tr": {
+      "ru": "Я из России. Учусь в университете.",
+      "en": "I'm Russian. I'm a university student."
+     }
+    },
+    {
+     "who": "",
+     "s": "{jk|友達のゆきさんは日本人です。|ともだちの ゆきさんは にほんじんです。} [audio](media:40b1d64904b2e9a6c99a4d46)",
+     "tr": {
+      "ru": "Моя подруга Юки — японка.",
+      "en": "My friend Yuki is Japanese."
+     }
+    },
+    {
+     "who": "",
+     "s": "{jk|ゆきさんも学生です。二十歳です。|ゆきさんも がくせいです。 はたちです。} [audio](media:3a0f7217eb398627af5429c3)",
+     "tr": {
+      "ru": "Юки тоже студентка. Ей двадцать лет.",
+      "en": "Yuki is a student too. She's twenty."
+     }
+    }
+   ]
+  },
+  {
+   "unit": "l02",
+   "title": {
+    "ru": "Чьи это вещи?",
+    "en": "Whose things?"
+   },
+   "q": {
+    "ru": "Чей японский словарь?",
+    "en": "Whose is the Japanese dictionary?",
+    "opts": {
+     "ru": [
+      "Учителя",
+      "Анны",
+      "Юки"
+     ],
+     "en": [
+      "The teacher's",
+      "Anna's",
+      "Yuki's"
+     ]
+    }
+   },
+   "lines": [
+    {
+     "who": "",
+     "s": "{jk|これは私のかばんです。|これは わたしの かばんです。} [audio](media:82ba924db2e4a45a1938b250)",
+     "tr": {
+      "ru": "Это моя сумка.",
+      "en": "This is my bag."
+     }
+    },
+    {
+     "who": "",
+     "s": "{jk|それはゆきさんの傘です。|それは ゆきさんの かさです。} [audio](media:2fd4097d03788688b3a9b9e2)",
+     "tr": {
+      "ru": "А то — зонт Юки.",
+      "en": "That's Yuki's umbrella."
+     }
+    },
+    {
+     "who": "",
+     "s": "{jk|あれは何ですか。日本語の辞書です。|あれは なんですか。 にほんごの じしょです。} [audio](media:10599a890b21fc187e8127b7)",
+     "tr": {
+      "ru": "А что там? Японский словарь.",
+      "en": "What's that over there? A Japanese dictionary."
+     }
+    },
+    {
+     "who": "",
+     "s": "{jk|誰の辞書ですか。先生の辞書です。|だれの じしょですか。 せんせいの じしょです。} [audio](media:b5ff08f62a3f92e5875f6073)",
+     "tr": {
+      "ru": "Чей словарь? Учителя.",
+      "en": "Whose dictionary is it? The teacher's."
+     }
+    }
+   ]
+  },
+  {
+   "unit": "l03",
+   "title": {
+    "ru": "В универмаге",
+    "en": "At the department store"
+   },
+   "q": {
+    "ru": "Где отдел сумок?",
+    "en": "Where is the bag section?",
+    "opts": {
+     "ru": [
+      "На третьем этаже",
+      "На первом этаже",
+      "На пятом этаже"
+     ],
+     "en": [
+      "On the third floor",
+      "On the first floor",
+      "On the fifth floor"
+     ]
+    }
+   },
+   "lines": [
+    {
+     "who": "",
+     "s": "ここは デパートです。 [audio](media:054dc9162d4fbe5e5c4df5a4)",
+     "tr": {
+      "ru": "Это универмаг.",
+      "en": "This is a department store."
+     }
+    },
+    {
+     "who": "",
+     "s": "{jk|かばん売り場は三階です。|かばん うりばは さんがいです。} [audio](media:b803e30bb01530e8e509a9fc)",
+     "tr": {
+      "ru": "Отдел сумок — на третьем этаже.",
+      "en": "The bag section is on the third floor."
+     }
+    },
+    {
+     "who": "",
+     "s": "この かばんは いくらですか。 [audio](media:82b0be21642f389775adbadb)",
+     "tr": {
+      "ru": "Сколько стоит эта сумка?",
+      "en": "How much is this bag?"
+     }
+    },
+    {
+     "who": "",
+     "s": "{jk|一万円です。高いですね。|いちまんえんです。 たかいですね。} [audio](media:a21a236d1e76caae9a3db225)",
+     "tr": {
+      "ru": "Десять тысяч иен. Дорого!",
+      "en": "Ten thousand yen. That's expensive!"
+     }
+    }
+   ]
+  },
+  {
+   "unit": "l04",
+   "title": {
+    "ru": "День Анны",
+    "en": "Anna's day"
+   },
+   "q": {
+    "ru": "Во сколько Анна встаёт?",
+    "en": "What time does Anna get up?",
+    "opts": {
+     "ru": [
+      "В шесть",
+      "В девять",
+      "В одиннадцать"
+     ],
+     "en": [
+      "At six",
+      "At nine",
+      "At eleven"
+     ]
+    }
+   },
+   "lines": [
+    {
+     "who": "",
+     "s": "{jk|アンナさんは毎朝六時に起きます。|アンナさんは まいあさ ろくじに おきます。} [audio](media:d5b22cabedcfe06a2f5e64a3)",
+     "tr": {
+      "ru": "Анна встаёт каждое утро в шесть.",
+      "en": "Anna gets up at six every morning."
+     }
+    },
+    {
+     "who": "",
+     "s": "{jk|九時から五時まで勉強します。|くじから ごじまで べんきょうします。} [audio](media:130e12cbafd68a549bf42021)",
+     "tr": {
+      "ru": "С девяти до пяти учится.",
+      "en": "She studies from nine to five."
+     }
+    },
+    {
+     "who": "",
+     "s": "{jk|昨日は十一時に寝ました。|きのうは じゅういちじに ねました。} [audio](media:84dafef656132820bd6cdfb1)",
+     "tr": {
+      "ru": "Вчера она легла в одиннадцать.",
+      "en": "Yesterday she went to bed at eleven."
+     }
+    },
+    {
+     "who": "",
+     "s": "{jk|明日は休みます。|あしたは やすみます。} [audio](media:242e4b2b6476a1c569135a87)",
+     "tr": {
+      "ru": "Завтра она отдыхает.",
+      "en": "Tomorrow she's taking the day off."
+     }
+    }
+   ]
+  },
+  {
+   "unit": "l05",
+   "title": {
+    "ru": "Поездка в Киото",
+    "en": "A trip to Kyoto"
+   },
+   "q": {
+    "ru": "На чём Анна поедет в Киото?",
+    "en": "How is Anna getting to Kyoto?",
+    "opts": {
+     "ru": [
+      "На синкансэне",
+      "На автобусе",
+      "На машине"
+     ],
+     "en": [
+      "By bullet train",
+      "By bus",
+      "By car"
+     ]
+    }
+   },
+   "lines": [
+    {
+     "who": "",
+     "s": "{jk|来週、アンナさんは京都へ行きます。|らいしゅう、 アンナさんは きょうとへ いきます。} [audio](media:8deba4de200d472d4a74e9ab)",
+     "tr": {
+      "ru": "На следующей неделе Анна едет в Киото.",
+      "en": "Next week Anna is going to Kyoto."
+     }
+    },
+    {
+     "who": "",
+     "s": "{jk|ゆきさんと新幹線で行きます。|ゆきさんと しんかんせんで いきます。} [audio](media:259f3c7f2bf86740eb80075f)",
+     "tr": {
+      "ru": "Она едет с Юки на синкансэне.",
+      "en": "She's going with Yuki by bullet train."
+     }
+    },
+    {
+     "who": "",
+     "s": "{jk|駅まではバスで行きます。|えきまでは バスで いきます。} [audio](media:2e214fca1d59d89393a1e7c0)",
+     "tr": {
+      "ru": "До станции — на автобусе.",
+      "en": "She'll take the bus to the station."
+     }
+    },
+    {
+     "who": "",
+     "s": "{jk|土曜日に東京へ帰ります。|どようびに とうきょうへ かえります。} [audio](media:4ef66aa4c62ac9888f8ccb6f)",
+     "tr": {
+      "ru": "В субботу вернётся в Токио.",
+      "en": "She'll come back to Tokyo on Saturday."
+     }
+    }
+   ]
+  },
+  {
+   "unit": "l06",
+   "title": {
+    "ru": "В Киото",
+    "en": "In Kyoto"
+   },
+   "q": {
+    "ru": "Что предложила Юки?",
+    "en": "What did Yuki suggest?",
+    "opts": {
+     "ru": [
+      "Сфотографироваться вместе",
+      "Выпить кофе",
+      "Поехать домой"
+     ],
+     "en": [
+      "Taking a photo together",
+      "Having coffee",
+      "Going home"
+     ]
+    }
+   },
+   "lines": [
+    {
+     "who": "",
+     "s": "{jk|京都でゆきさんとお寺を見ました。|きょうとで ゆきさんと おてらを みました。} [audio](media:f430a48a5079b9f78d65c215)",
+     "tr": {
+      "ru": "В Киото Анна с Юки осматривали храм.",
+      "en": "In Kyoto, Anna and Yuki saw a temple."
+     }
+    },
+    {
+     "who": "",
+     "s": "{jk|それからお茶を飲みました。|それから おちゃを のみました。} [audio](media:b3df9debacc98e1ffc32f868)",
+     "tr": {
+      "ru": "Потом пили чай.",
+      "en": "Then they drank tea."
+     }
+    },
+    {
+     "who": "ゆき",
+     "s": "{jk|一緒に写真を撮りませんか。|いっしょに しゃしんを とりませんか。} [audio](media:abc37532b4201b0ef57a8bfd)",
+     "tr": {
+      "ru": "Давай сфотографируемся вместе?",
+      "en": "Shall we take a photo together?"
+     }
+    },
+    {
+     "who": "アンナ",
+     "s": "{jk|ええ、撮りましょう。|ええ、 とりましょう。} [audio](media:e066a9a43b0e0f355213858d)",
+     "tr": {
+      "ru": "Да, давай!",
+      "en": "Yes, let's!"
+     }
+    }
+   ]
+  },
+  {
+   "unit": "l07",
+   "title": {
+    "ru": "Подарки",
+    "en": "Presents"
+   },
+   "q": {
+    "ru": "Что Анна подарила Юки?",
+    "en": "What did Anna give Yuki?",
+    "opts": {
+     "ru": [
+      "Русские сладости",
+      "Цветы",
+      "Словарь"
+     ],
+     "en": [
+      "Russian sweets",
+      "Flowers",
+      "A dictionary"
+     ]
+    }
+   },
+   "lines": [
+    {
+     "who": "",
+     "s": "{jk|ゆきさんはアンナさんに花をあげました。|ゆきさんは アンナさんに はなを あげました。} [audio](media:b15f4151a542cc732bd96e1f)",
+     "tr": {
+      "ru": "Юки подарила Анне цветы.",
+      "en": "Yuki gave Anna flowers."
+     }
+    },
+    {
+     "who": "",
+     "s": "{jk|アンナさんはゆきさんにロシアのお菓子をあげました。|アンナさんは ゆきさんに ロシアの おかしを あげました。} [audio](media:8f65b7469aee4390c0d30b4c)",
+     "tr": {
+      "ru": "Анна подарила Юки русские сладости.",
+      "en": "Anna gave Yuki Russian sweets."
+     }
+    },
+    {
+     "who": "",
+     "s": "{jk|先生はアンナさんに日本語を教えます。|せんせいは アンナさんに にほんごを おしえます。} [audio](media:e22a43719f99b324a2a507d0)",
+     "tr": {
+      "ru": "Учитель учит Анну японскому.",
+      "en": "The teacher teaches Anna Japanese."
+     }
+    },
+    {
+     "who": "",
+     "s": "{jk|アンナさんは箸でご飯を食べます。|アンナさんは はしで ごはんを たべます。} [audio](media:625fdab2d84544d77abcc711)",
+     "tr": {
+      "ru": "Анна ест рис палочками.",
+      "en": "Anna eats rice with chopsticks."
+     }
+    }
+   ]
+  },
+  {
+   "unit": "l08",
+   "title": {
+    "ru": "Комната Анны",
+    "en": "Anna's room"
+   },
+   "q": {
+    "ru": "Какая комната у Анны?",
+    "en": "What is Anna's room like?",
+    "opts": {
+     "ru": [
+      "Маленькая, но красивая",
+      "Большая и старая",
+      "Большая и дорогая"
+     ],
+     "en": [
+      "Small but pretty",
+      "Big and old",
+      "Big and expensive"
+     ]
+    }
+   },
+   "lines": [
+    {
+     "who": "",
+     "s": "{jk|アンナさんの部屋は小さいです。|アンナさんの へやは ちいさいです。} [audio](media:eee5fb62ad151cf7860158ae)",
+     "tr": {
+      "ru": "Комната Анны маленькая.",
+      "en": "Anna's room is small."
+     }
+    },
+    {
+     "who": "",
+     "s": "{jk|でも、きれいな部屋です。|でも、 きれいな へやです。} [audio](media:41fdfc1d5fd4b4212000d97b)",
+     "tr": {
+      "ru": "Но комната красивая.",
+      "en": "But it's a pretty room."
+     }
+    },
+    {
+     "who": "",
+     "s": "{jk|隣のラーメン屋はとてもおいしいです。|となりの ラーメンやは とても おいしいです。} [audio](media:62513fc80db922c66a6c669f)",
+     "tr": {
+      "ru": "Раменная по соседству очень вкусная.",
+      "en": "The ramen shop next door is very good."
+     }
+    },
+    {
+     "who": "",
+     "s": "{jk|そして、安いです。|そして、 やすいです。} [audio](media:43a635477ec559c2f6846c6a)",
+     "tr": {
+      "ru": "И ещё недорогая.",
+      "en": "And it's cheap."
+     }
+    }
+   ]
+  },
+  {
+   "unit": "l09",
+   "title": {
+    "ru": "Что нравится",
+    "en": "What they like"
+   },
+   "q": {
+    "ru": "Что хорошо умеет Юки?",
+    "en": "What is Yuki good at?",
+    "opts": {
+     "ru": [
+      "Готовить",
+      "Петь",
+      "Писать кандзи"
+     ],
+     "en": [
+      "Cooking",
+      "Singing",
+      "Writing kanji"
+     ]
+    }
+   },
+   "lines": [
+    {
+     "who": "",
+     "s": "{jk|アンナさんは日本の音楽が好きです。|アンナさんは にほんの おんがくが すきです。} [audio](media:ff828c3d7567c3d2ce0992ce)",
+     "tr": {
+      "ru": "Анна любит японскую музыку.",
+      "en": "Anna likes Japanese music."
+     }
+    },
+    {
+     "who": "",
+     "s": "{jk|ゆきさんは料理が上手です。|ゆきさんは りょうりが じょうずです。} [audio](media:01c4d2ee1b9f70ba7f87a463)",
+     "tr": {
+      "ru": "Юки хорошо готовит.",
+      "en": "Yuki is good at cooking."
+     }
+    },
+    {
+     "who": "",
+     "s": "{jk|アンナさんは漢字が少し分かります。|アンナさんは かんじが すこし わかります。} [audio](media:33fde17a544371aadd19e305)",
+     "tr": {
+      "ru": "Анна немного понимает кандзи.",
+      "en": "Anna understands a little kanji."
+     }
+    },
+    {
+     "who": "",
+     "s": "{jk|でも、カタカナはまだ下手です。|でも、 カタカナは まだ へたです。} [audio](media:155a50adbfe765ea9bfd10b4)",
+     "tr": {
+      "ru": "А вот катакана у неё пока выходит плохо.",
+      "en": "But she's still bad at katakana."
+     }
+    }
+   ]
+  },
+  {
+   "unit": "l10",
+   "title": {
+    "ru": "Фотография на столе",
+    "en": "The photo on the desk"
+   },
+   "q": {
+    "ru": "Где живёт кот Анны?",
+    "en": "Where does Anna's cat live?",
+    "opts": {
+     "ru": [
+      "В России",
+      "В комнате Анны",
+      "В парке"
+     ],
+     "en": [
+      "In Russia",
+      "In Anna's room",
+      "In the park"
+     ]
+    }
+   },
+   "lines": [
+    {
+     "who": "",
+     "s": "{jk|アンナさんの部屋に机があります。|アンナさんの へやに つくえが あります。} [audio](media:67774c93d6d237bb93195231)",
+     "tr": {
+      "ru": "В комнате Анны есть стол.",
+      "en": "There's a desk in Anna's room."
+     }
+    },
+    {
+     "who": "",
+     "s": "{jk|机の上に猫の写真があります。|つくえの うえに ねこの しゃしんが あります。} [audio](media:7a5a9fb018a421d4545e8fc3)",
+     "tr": {
+      "ru": "На столе — фотография кота.",
+      "en": "On the desk there's a photo of a cat."
+     }
+    },
+    {
+     "who": "",
+     "s": "{jk|猫の名前はバルシクです。ロシアにいます。|ねこの なまえは バルシクです。 ロシアに います。} [audio](media:f568327426d250104c8ec9e3)",
+     "tr": {
+      "ru": "Кота зовут Барсик. Он живёт в России.",
+      "en": "The cat's name is Barsik. He's in Russia."
+     }
+    },
+    {
+     "who": "",
+     "s": "{jk|アパートの前に公園があります。|アパートの まえに こうえんが あります。} [audio](media:dd274dccbaf62642d74074e4)",
+     "tr": {
+      "ru": "Перед домом есть парк.",
+      "en": "There's a park in front of the apartment."
+     }
+    }
+   ]
+  },
+  {
+   "unit": "l11",
+   "title": {
+    "ru": "На почте",
+    "en": "At the post office"
+   },
+   "q": {
+    "ru": "Сколько марок купила Анна?",
+    "en": "How many stamps did Anna buy?",
+    "opts": {
+     "ru": [
+      "Пять",
+      "Две",
+      "Одну"
+     ],
+     "en": [
+      "Five",
+      "Two",
+      "One"
+     ]
+    }
+   },
+   "lines": [
+    {
+     "who": "",
+     "s": "{jk|アンナさんは郵便局へ行きました。|アンナさんは ゆうびんきょくへ いきました。} [audio](media:c51d49ff716eb7b48e4c6c5b)",
+     "tr": {
+      "ru": "Анна пошла на почту.",
+      "en": "Anna went to the post office."
+     }
+    },
+    {
+     "who": "",
+     "s": "{jk|切手を五枚買いました。|きってを ごまい かいました。} [audio](media:0dc362ef56b4d44d4d988852)",
+     "tr": {
+      "ru": "Купила пять марок.",
+      "en": "She bought five stamps."
+     }
+    },
+    {
+     "who": "",
+     "s": "{jk|ロシアまで一週間かかります。|ロシアまで いっしゅうかん かかります。} [audio](media:f14918882fd1f2dc68fc4b26)",
+     "tr": {
+      "ru": "Письмо в Россию идёт неделю.",
+      "en": "It takes a week to get to Russia."
+     }
+    },
+    {
+     "who": "",
+     "s": "{jk|アンナさんは兄弟が二人います。|アンナさんは きょうだいが ふたり います。} [audio](media:f04edba0a256b20888bce2a9)",
+     "tr": {
+      "ru": "У Анны двое братьев и сестёр.",
+      "en": "Anna has two siblings."
+     }
+    }
+   ]
+  },
+  {
+   "unit": "l12",
+   "title": {
+    "ru": "Погода и времена года",
+    "en": "Weather and seasons"
+   },
+   "q": {
+    "ru": "Какое время года Анна любит больше всего?",
+    "en": "Which season does Anna like best?",
+    "opts": {
+     "ru": [
+      "Лето",
+      "Зиму",
+      "Весну"
+     ],
+     "en": [
+      "Summer",
+      "Winter",
+      "Spring"
+     ]
+    }
+   },
+   "lines": [
+    {
+     "who": "",
+     "s": "{jk|昨日はとても寒かったです。|きのうは とても さむかったです。} [audio](media:49b285bde39c14589a53f61c)",
+     "tr": {
+      "ru": "Вчера было очень холодно.",
+      "en": "Yesterday was very cold."
+     }
+    },
+    {
+     "who": "",
+     "s": "{jk|でも、モスクワの冬より暖かいです。|でも、 モスクワの ふゆより あたたかいです。} [audio](media:94d2830be3d236a9e5ae133c)",
+     "tr": {
+      "ru": "Но всё равно теплее, чем московская зима.",
+      "en": "But it's still warmer than a Moscow winter."
+     }
+    },
+    {
+     "who": "",
+     "s": "{jk|アンナさんは夏が一番好きです。|アンナさんは なつが いちばん すきです。} [audio](media:747c524485811e8773b79b58)",
+     "tr": {
+      "ru": "Больше всего Анна любит лето.",
+      "en": "Anna likes summer best."
+     }
+    },
+    {
+     "who": "",
+     "s": "{jk|夏休みの旅行は楽しかったです。|なつやすみの りょこうは たのしかったです。} [audio](media:8663246b35bd9ce62a9feb84)",
+     "tr": {
+      "ru": "Летняя поездка была весёлой.",
+      "en": "The summer holiday trip was fun."
+     }
+    }
+   ]
+  },
+  {
+   "unit": "l13",
+   "title": {
+    "ru": "Чего хочется",
+    "en": "What she wants"
+   },
+   "q": {
+    "ru": "Что Анна хочет купить?",
+    "en": "What does Anna want to buy?",
+    "opts": {
+     "ru": [
+      "Новый компьютер",
+      "Новую сумку",
+      "Билет в Киото"
+     ],
+     "en": [
+      "A new computer",
+      "A new bag",
+      "A ticket to Kyoto"
+     ]
+    }
+   },
+   "lines": [
+    {
+     "who": "",
+     "s": "{jk|アンナさんは新しいパソコンが欲しいです。|アンナさんは あたらしい パソコンが ほしいです。} [audio](media:32d4b6b03e6d1be5fc71f9eb)",
+     "tr": {
+      "ru": "Анна хочет новый компьютер.",
+      "en": "Anna wants a new computer."
+     }
+    },
+    {
+     "who": "",
+     "s": "{jk|日曜日に買い物に行きたいです。|にちようびに かいものに いきたいです。} [audio](media:66b8944d9e9f2e75a6e97970)",
+     "tr": {
+      "ru": "В воскресенье хочет пойти за покупками.",
+      "en": "She wants to go shopping on Sunday."
+     }
+    },
+    {
+     "who": "",
+     "s": "{jk|でも、今日は疲れました。|でも、 きょうは つかれました。} [audio](media:d6ebcb22b4e1af4822ca02bb)",
+     "tr": {
+      "ru": "Но сегодня она устала.",
+      "en": "But today she's tired."
+     }
+    },
+    {
+     "who": "",
+     "s": "{jk|早く寝たいです。|はやく ねたいです。} [audio](media:be3a86bba5dae3bab218b693)",
+     "tr": {
+      "ru": "Хочется пораньше лечь спать.",
+      "en": "She wants to go to bed early."
+     }
+    }
+   ]
+  },
+  {
+   "unit": "l14",
+   "title": {
+    "ru": "Дождливый день",
+    "en": "A rainy day"
+   },
+   "q": {
+    "ru": "Что делала Анна на станции?",
+    "en": "What was Anna doing at the station?",
+    "opts": {
+     "ru": [
+      "Ждала Юки",
+      "Покупала билет",
+      "Звонила учителю"
+     ],
+     "en": [
+      "Waiting for Yuki",
+      "Buying a ticket",
+      "Calling the teacher"
+     ]
+    }
+   },
+   "lines": [
+    {
+     "who": "",
+     "s": "{jk|今日は雨が降っています。|きょうは あめが ふって います。} [audio](media:2ffbbaaec095a41f7ee6a56b)",
+     "tr": {
+      "ru": "Сегодня идёт дождь.",
+      "en": "It's raining today."
+     }
+    },
+    {
+     "who": "",
+     "s": "{jk|アンナさんは傘を持って、駅でゆきさんを待っています。|アンナさんは かさを もって、 えきで ゆきさんを まって います。} [audio](media:00db5740ac1c418d52a8acfb)",
+     "tr": {
+      "ru": "Анна с зонтом ждёт Юки на станции.",
+      "en": "Anna is waiting for Yuki at the station with an umbrella."
+     }
+    },
+    {
+     "who": "ゆき",
+     "s": "{jk|ちょっと待ってください。電話をかけます。|ちょっと まって ください。 でんわを かけます。} [audio](media:2f6dd9dbcf3ab6f6cc8564c3)",
+     "tr": {
+      "ru": "Подожди немного, я позвоню.",
+      "en": "Wait a moment, I'll make a call."
+     }
+    },
+    {
+     "who": "",
+     "s": "{jk|二人はゆっくり歩いて、カフェへ行きました。|ふたりは ゆっくり あるいて、 カフェへ いきました。} [audio](media:ce260f0be7137e981f39da31)",
+     "tr": {
+      "ru": "Потом они не спеша пошли пешком в кафе.",
+      "en": "The two walked slowly to a café."
+     }
+    }
+   ]
+  },
+  {
+   "unit": "l15",
+   "title": {
+    "ru": "В музее",
+    "en": "At the museum"
+   },
+   "q": {
+    "ru": "Что нельзя делать в музее?",
+    "en": "What isn't allowed in the museum?",
+    "opts": {
+     "ru": [
+      "Фотографировать",
+      "Сидеть",
+      "Смотреть картины"
+     ],
+     "en": [
+      "Taking photos",
+      "Sitting",
+      "Looking at the paintings"
+     ]
+    }
+   },
+   "lines": [
+    {
+     "who": "アンナ",
+     "s": "{jk|美術館で写真を撮ってもいいですか。|びじゅつかんで しゃしんを とっても いいですか。} [audio](media:97719c2f52ad93525fa6b4a6)",
+     "tr": {
+      "ru": "В музее можно фотографировать?",
+      "en": "May I take photos in the museum?"
+     }
+    },
+    {
+     "who": "ゆき",
+     "s": "{jk|いいえ、撮ってはいけません。|いいえ、 とっては いけません。} [audio](media:35624269f31d9064e52f41dd)",
+     "tr": {
+      "ru": "Нет, нельзя.",
+      "en": "No, you mustn't."
+     }
+    },
+    {
+     "who": "ゆき",
+     "s": "{jk|でも、ここに座ってもいいです。|でも、 ここに すわっても いいです。} [audio](media:38537137063b40ccbfc075a1)",
+     "tr": {
+      "ru": "Но здесь можно посидеть.",
+      "en": "But you may sit here."
+     }
+    },
+    {
+     "who": "",
+     "s": "{jk|アンナさんはいすに座って、絵を見ました。|アンナさんは いすに すわって、 えを みました。} [audio](media:c9535d010163c4f75ec53dea)",
+     "tr": {
+      "ru": "Анна села на стул и смотрела на картины.",
+      "en": "Anna sat on a chair and looked at the paintings."
+     }
+    }
+   ]
+  },
+  {
+   "unit": "l16",
+   "title": {
+    "ru": "Вечер",
+    "en": "The evening"
+   },
+   "q": {
+    "ru": "Что Анна делает после домашнего задания?",
+    "en": "What does Anna do after her homework?",
+    "opts": {
+     "ru": [
+      "Играет на пианино",
+      "Принимает душ",
+      "Готовит ужин"
+     ],
+     "en": [
+      "Plays the piano",
+      "Takes a shower",
+      "Makes dinner"
+     ]
+    }
+   },
+   "lines": [
+    {
+     "who": "",
+     "s": "{jk|アンナさんはうちへ帰ってから、シャワーを浴びます。|アンナさんは うちへ かえってから、 シャワーを あびます。} [audio](media:9cb1e329c1fd26cf63dd9f96)",
+     "tr": {
+      "ru": "Вернувшись домой, Анна принимает душ.",
+      "en": "After getting home, Anna takes a shower."
+     }
+    },
+    {
+     "who": "",
+     "s": "{jk|それから晩ご飯を作って食べます。|それから ばんごはんを つくって たべます。} [audio](media:40759645eef020dca816b060)",
+     "tr": {
+      "ru": "Потом готовит ужин и ест.",
+      "en": "Then she makes dinner and eats."
+     }
+    },
+    {
+     "who": "",
+     "s": "{jk|宿題が終わってから、ピアノを弾きます。|しゅくだいが おわってから、 ピアノを ひきます。} [audio](media:f8faea5c6211b78e7c6f2f95)",
+     "tr": {
+      "ru": "Закончив домашнее задание, играет на пианино.",
+      "en": "After finishing her homework, she plays the piano."
+     }
+    },
+    {
+     "who": "",
+     "s": "{jk|アンナさんは背が高くて、髪が長いです。|アンナさんは せが たかくて、 かみが ながいです。} [audio](media:d9baf04fc703f963387cb73f)",
+     "tr": {
+      "ru": "Анна высокая, у неё длинные волосы.",
+      "en": "Anna is tall and has long hair."
+     }
+    }
+   ]
+  },
+  {
+   "unit": "l17",
+   "title": {
+    "ru": "Простуда",
+    "en": "A cold"
+   },
+   "q": {
+    "ru": "Что сказал врач?",
+    "en": "What did the doctor say?",
+    "opts": {
+     "ru": [
+      "Не ходить в университет и пить лекарство",
+      "Пойти в университет",
+      "Не пить лекарство"
+     ],
+     "en": [
+      "Stay away from university and take medicine",
+      "Go to university",
+      "Don't take medicine"
+     ]
+    }
+   },
+   "lines": [
+    {
+     "who": "",
+     "s": "{jk|アンナさんは風邪をひきました。熱があります。|アンナさんは かぜを ひきました。 ねつが あります。} [audio](media:aeffa5dd08ed838c4636a42f)",
+     "tr": {
+      "ru": "Анна простудилась. У неё температура.",
+      "en": "Anna caught a cold. She has a fever."
+     }
+    },
+    {
+     "who": "いしゃ",
+     "s": "{jk|今日は大学へ行かないでください。|きょうは だいがくへ いかないで ください。} [audio](media:1f9da8ef839d61e47e9a18b8)",
+     "tr": {
+      "ru": "Сегодня не ходите в университет.",
+      "en": "Please don't go to the university today."
+     }
+    },
+    {
+     "who": "いしゃ",
+     "s": "{jk|薬を飲まなければなりません。|くすりを のまなければ なりません。} [audio](media:e6855dd936ecdf8a3ae610c5)",
+     "tr": {
+      "ru": "Нужно принимать лекарство.",
+      "en": "You have to take medicine."
+     }
+    },
+    {
+     "who": "いしゃ",
+     "s": "{jk|心配しないでください。すぐ治りますよ。|しんぱいしないで ください。 すぐ なおりますよ。} [audio](media:7d7fad383aaf9bda4a1d7e9b)",
+     "tr": {
+      "ru": "Не волнуйтесь, скоро поправитесь.",
+      "en": "Don't worry, you'll get better soon."
+     }
+    }
+   ]
+  },
+  {
+   "unit": "l18",
+   "title": {
+    "ru": "Хобби",
+    "en": "Hobbies"
+   },
+   "q": {
+    "ru": "Что умеет Юки?",
+    "en": "What can Yuki do?",
+    "opts": {
+     "ru": [
+      "Водить машину",
+      "Играть на пианино",
+      "Петь японские песни"
+     ],
+     "en": [
+      "Drive a car",
+      "Play the piano",
+      "Sing Japanese songs"
+     ]
+    }
+   },
+   "lines": [
+    {
+     "who": "",
+     "s": "{jk|アンナさんの趣味は歌を歌うことです。|アンナさんの しゅみは うたを うたう ことです。} [audio](media:f17dd178d0722c08c88d4e95)",
+     "tr": {
+      "ru": "Хобби Анны — петь.",
+      "en": "Anna's hobby is singing."
+     }
+    },
+    {
+     "who": "",
+     "s": "{jk|日本語の歌も歌うことができます。|にほんごの うたも うたう ことが できます。} [audio](media:de72f4aca960dd83e09afc76)",
+     "tr": {
+      "ru": "Она умеет петь и японские песни.",
+      "en": "She can sing Japanese songs too."
+     }
+    },
+    {
+     "who": "",
+     "s": "{jk|ゆきさんは車の運転ができます。|ゆきさんは くるまの うんてんが できます。} [audio](media:2698633d4473c7105ca8d971)",
+     "tr": {
+      "ru": "Юки умеет водить машину.",
+      "en": "Yuki can drive a car."
+     }
+    },
+    {
+     "who": "",
+     "s": "{jk|寝る前に、二人はカラオケの予約をしました。|ねる まえに、 ふたりは カラオケの よやくを しました。} [audio](media:62c17f6479b0538f1263be84)",
+     "tr": {
+      "ru": "Перед сном они забронировали караоке.",
+      "en": "Before bed, the two booked karaoke."
+     }
+    }
+   ]
+  },
+  {
+   "unit": "l19",
+   "title": {
+    "ru": "Фудзи",
+    "en": "Mt Fuji"
+   },
+   "q": {
+    "ru": "Поднималась ли Анна на Фудзи?",
+    "en": "Has Anna climbed Mt Fuji?",
+    "opts": {
+     "ru": [
+      "Нет, ни разу",
+      "Да, однажды",
+      "Да, много раз"
+     ],
+     "en": [
+      "No, never",
+      "Yes, once",
+      "Yes, many times"
+     ]
+    }
+   },
+   "lines": [
+    {
+     "who": "",
+     "s": "{jk|アンナさんは富士山に登ったことがありません。|アンナさんは ふじさんに のぼった ことが ありません。} [audio](media:ba8bd97bb594ff9eecc8476e)",
+     "tr": {
+      "ru": "Анна ни разу не поднималась на Фудзи.",
+      "en": "Anna has never climbed Mt Fuji."
+     }
+    },
+    {
+     "who": "",
+     "s": "{jk|ゆきさんは一度登ったことがあります。|ゆきさんは いちど のぼった ことが あります。} [audio](media:fe3746febb3dbd8c2b9ca681)",
+     "tr": {
+      "ru": "А Юки однажды поднималась.",
+      "en": "Yuki has climbed it once."
+     }
+    },
+    {
+     "who": "",
+     "s": "{jk|夏休みに一緒に登ったり、温泉に入ったりしたいです。|なつやすみに いっしょに のぼったり、 おんせんに はいったり したいです。} [audio](media:d2b864f0a151f7c75482391f)",
+     "tr": {
+      "ru": "Летом они хотят подняться на гору, сходить в онсэн и всё такое.",
+      "en": "In the summer they want to climb the mountain, go to a hot spring and so on."
+     }
+    },
+    {
+     "who": "",
+     "s": "{jk|アンナさんの日本語はだんだん上手になりました。|アンナさんの にほんごは だんだん じょうずに なりました。} [audio](media:b4d2e14d3bfaabdc72827b7e)",
+     "tr": {
+      "ru": "Японский у Анны постепенно стал лучше.",
+      "en": "Anna's Japanese has gradually got better."
+     }
+    }
+   ]
+  },
+  {
+   "unit": "l20",
+   "title": {
+    "ru": "Болтовня",
+    "en": "A chat"
+   },
+   "q": {
+    "ru": "Почему Анна вчера сидела дома?",
+    "en": "Why did Anna stay home yesterday?",
+    "opts": {
+     "ru": [
+      "Было много домашки",
+      "Она болела",
+      "Шёл дождь"
+     ],
+     "en": [
+      "She had lots of homework",
+      "She was ill",
+      "It was raining"
+     ]
+    }
+   },
+   "lines": [
+    {
+     "who": "ゆき",
+     "s": "{jk|アンナ、昨日何した？|アンナ、 きのう なに した？} [audio](media:5c598a7d10e0796270dd7aa0)",
+     "tr": {
+      "ru": "Анна, что вчера делала?",
+      "en": "Anna, what did you do yesterday?"
+     }
+    },
+    {
+     "who": "アンナ",
+     "s": "{jk|ずっとうちにいた。宿題が多かったんだ。|ずっと うちに いた。 しゅくだいが おおかったんだ。} [audio](media:e0f426e49af00be6f8034751)",
+     "tr": {
+      "ru": "Весь день сидела дома. Домашки было много.",
+      "en": "I stayed home all day. I had loads of homework."
+     }
+    },
+    {
+     "who": "ゆき",
+     "s": "{jk|大変だったね。今度カラオケ行こう。|たいへんだったね。 こんど カラオケ いこう。} [audio](media:cfa4141089cec954569d6536)",
+     "tr": {
+      "ru": "Тяжело тебе. Давай в следующий раз в караоке.",
+      "en": "That sounds rough. Let's go to karaoke next time."
+     }
+    },
+    {
+     "who": "アンナ",
+     "s": "{jk|うん、行く！|うん、 いく！} [audio](media:409d72195a26b11290bea0d5)",
+     "tr": {
+      "ru": "Ага, пойду!",
+      "en": "Yeah, I'm in!"
+     }
+    }
+   ]
+  },
+  {
+   "unit": "l21",
+   "title": {
+    "ru": "Прогноз",
+    "en": "The forecast"
+   },
+   "q": {
+    "ru": "Что думает Анна о погоде на завтра?",
+    "en": "What does Anna think about tomorrow's weather?",
+    "opts": {
+     "ru": [
+      "Наверное, будет дождь",
+      "Будет солнечно",
+      "Будет снег"
+     ],
+     "en": [
+      "It'll probably rain",
+      "It'll be sunny",
+      "It'll snow"
+     ]
+    }
+   },
+   "lines": [
+    {
+     "who": "",
+     "s": "{jk|ゆきさんは「明日は晴れると思う」と言いました。|ゆきさんは 「あしたは はれると おもう」と いいました。} [audio](media:adcacf1f97e7ba34ece2b297)",
+     "tr": {
+      "ru": "Юки сказала: «Думаю, завтра будет солнечно».",
+      "en": "Yuki said, \"I think it'll be sunny tomorrow.\""
+     }
+    },
+    {
+     "who": "",
+     "s": "{jk|でも、テレビは雨だと言っていました。|でも、 テレビは あめだと いって いました。} [audio](media:74cbb3ec04de011a937c2199)",
+     "tr": {
+      "ru": "Но по телевизору говорили, что будет дождь.",
+      "en": "But the TV said it would rain."
+     }
+    },
+    {
+     "who": "",
+     "s": "{jk|アンナさんはたぶん雨が降ると思います。|アンナさんは たぶん あめが ふると おもいます。} [audio](media:2be2c1ce6173531a7545f0d1)",
+     "tr": {
+      "ru": "Анна думает, что дождь, наверное, всё-таки будет.",
+      "en": "Anna thinks it'll probably rain."
+     }
+    },
+    {
+     "who": "",
+     "s": "{jk|明日はサッカーの試合があります。|あしたは サッカーの しあいが あります。} [audio](media:b5f671feb55261e5c0a8ca64)",
+     "tr": {
+      "ru": "А завтра футбольный матч.",
+      "en": "There's a football match tomorrow."
+     }
+    }
+   ]
+  },
+  {
+   "unit": "l22",
+   "title": {
+    "ru": "Кто есть кто",
+    "en": "Who's who"
+   },
+   "q": {
+    "ru": "Кто носит очки?",
+    "en": "Who is wearing glasses?",
+    "opts": {
+     "ru": [
+      "Учитель Танака",
+      "Юки",
+      "Анна"
+     ],
+     "en": [
+      "Mr Tanaka, the teacher",
+      "Yuki",
+      "Anna"
+     ]
+    }
+   },
+   "lines": [
+    {
+     "who": "",
+     "s": "{jk|めがねをかけている人は田中先生です。|めがねを かけて いる ひとは たなかせんせいです。} [audio](media:cb7f3a4b66220c552c207dbb)",
+     "tr": {
+      "ru": "Человек в очках — учитель Танака.",
+      "en": "The person wearing glasses is Mr Tanaka, the teacher."
+     }
+    },
+    {
+     "who": "",
+     "s": "{jk|先生が作ったケーキはとてもおいしいです。|せんせいが つくった ケーキは とても おいしいです。} [audio](media:0edf1e7d7561574c453807d4)",
+     "tr": {
+      "ru": "Торт, который испёк учитель, очень вкусный.",
+      "en": "The cake the teacher made is very tasty."
+     }
+    },
+    {
+     "who": "",
+     "s": "{jk|アンナさんは昨日買った帽子をかぶっています。|アンナさんは きのう かった ぼうしを かぶって います。} [audio](media:cf40b052a494607985c078d5)",
+     "tr": {
+      "ru": "Анна в шляпе, которую купила вчера.",
+      "en": "Anna is wearing the hat she bought yesterday."
+     }
+    },
+    {
+     "who": "",
+     "s": "{jk|今日はゆきさんと会う約束があります。|きょうは ゆきさんと あう やくそくが あります。} [audio](media:f1422a4708fd352fb1470a2c)",
+     "tr": {
+      "ru": "Сегодня она договорилась встретиться с Юки.",
+      "en": "Today she has plans to meet Yuki."
+     }
+    }
+   ]
+  },
+  {
+   "unit": "l23",
+   "title": {
+    "ru": "Прогулка в парке",
+    "en": "A walk in the park"
+   },
+   "q": {
+    "ru": "Что Анна покупает, когда идёт в парк?",
+    "en": "What does Anna buy when she goes to the park?",
+    "opts": {
+     "ru": [
+      "Хлеб",
+      "Цветы",
+      "Чай"
+     ],
+     "en": [
+      "Bread",
+      "Flowers",
+      "Tea"
+     ]
+    }
+   },
+   "lines": [
+    {
+     "who": "",
+     "s": "{jk|アンナさんは暇なとき、公園を散歩します。|アンナさんは ひまな とき、 こうえんを さんぽします。} [audio](media:16c5f9a4bbb92bbce80cc059)",
+     "tr": {
+      "ru": "В свободное время Анна гуляет в парке.",
+      "en": "When she's free, Anna walks in the park."
+     }
+    },
+    {
+     "who": "",
+     "s": "{jk|この道をまっすぐ行って、右へ曲がると、公園があります。|この みちを まっすぐ いって、 みぎへ まがると、 こうえんが あります。} [audio](media:4f184232d1a8a605689ab3c8)",
+     "tr": {
+      "ru": "Пройдёшь прямо по этой улице, свернёшь направо — там парк.",
+      "en": "Go straight along this road and turn right, and there's the park."
+     }
+    },
+    {
+     "who": "",
+     "s": "{jk|公園に行くとき、いつもパンを買います。|こうえんに いく とき、 いつも パンを かいます。} [audio](media:1fda25104300e01906e581ea)",
+     "tr": {
+      "ru": "Когда идёт в парк, всегда покупает хлеб.",
+      "en": "When she goes to the park, she always buys bread."
+     }
+    },
+    {
+     "who": "",
+     "s": "{jk|鳥にパンをあげると、たくさん来ます。|とりに パンを あげると、 たくさん きます。} [audio](media:8c9365476d20981c995abe74)",
+     "tr": {
+      "ru": "Дашь птицам хлеба — слетается целая стая.",
+      "en": "When you give bread to the birds, lots of them come."
+     }
+    }
+   ]
+  },
+  {
+   "unit": "l24",
+   "title": {
+    "ru": "День рождения",
+    "en": "A birthday"
+   },
+   "q": {
+    "ru": "Что сделала Юки на день рождения Анны?",
+    "en": "What did Yuki do for Anna's birthday?",
+    "opts": {
+     "ru": [
+      "Испекла торт",
+      "Прислала письмо",
+      "Свозила в онсэн"
+     ],
+     "en": [
+      "Baked a cake",
+      "Sent a letter",
+      "Took her to a hot spring"
+     ]
+    }
+   },
+   "lines": [
+    {
+     "who": "",
+     "s": "{jk|アンナさんの誕生日に、ゆきさんがケーキを作ってくれました。|アンナさんの たんじょうびに、 ゆきさんが ケーキを つくって くれました。} [audio](media:009b004c7b22f68c00c4c477)",
+     "tr": {
+      "ru": "На день рождения Анны Юки испекла ей торт.",
+      "en": "On Anna's birthday, Yuki baked her a cake."
+     }
+    },
+    {
+     "who": "",
+     "s": "{jk|先輩はアンナさんを温泉に連れて行ってくれました。|せんぱいは アンナさんを おんせんに つれて いって くれました。} [audio](media:358192693fa63fbbad4325bc)",
+     "tr": {
+      "ru": "Сэмпай свозил Анну в онсэн.",
+      "en": "Her senior took Anna to a hot spring."
+     }
+    },
+    {
+     "who": "",
+     "s": "{jk|母はロシアから手紙を送ってくれました。|ははは ロシアから てがみを おくって くれました。} [audio](media:9825af0b67e1882454ee72f2)",
+     "tr": {
+      "ru": "Мама прислала из России письмо.",
+      "en": "Her mother sent her a letter from Russia."
+     }
+    },
+    {
+     "who": "",
+     "s": "アンナさんは みんなに いろいろ して もらって、 うれしかったです。 [audio](media:587bc13d1700cb29bf6e88cf)",
+     "tr": {
+      "ru": "Все столько для неё сделали — Анна была счастлива.",
+      "en": "Everyone did so much for her, and Anna was happy."
+     }
+    }
+   ]
+  },
+  {
+   "unit": "l25",
+   "title": {
+    "ru": "Мечты и планы",
+    "en": "Dreams and plans"
+   },
+   "q": {
+    "ru": "Что Анна сделает в следующем году?",
+    "en": "What will Anna do next year?",
+    "opts": {
+     "ru": [
+      "Сдаст экзамен по японскому",
+      "Поедет в Россию",
+      "Купит машину"
+     ],
+     "en": [
+      "Take a Japanese exam",
+      "Go to Russia",
+      "Buy a car"
+     ]
+    }
+   },
+   "lines": [
+    {
+     "who": "",
+     "s": "{jk|もしお金があったら、日本中を旅行したいです。|もし おかねが あったら、 にほんじゅうを りょこうしたいです。} [audio](media:069979d6520f678c6c7cc0bf)",
+     "tr": {
+      "ru": "Будь у неё деньги, Анна объездила бы всю Японию.",
+      "en": "If she had money, Anna would travel all over Japan."
+     }
+    },
+    {
+     "who": "",
+     "s": "{jk|でも、お金がなくても、毎日楽しいです。|でも、 おかねが なくても、 まいにち たのしいです。} [audio](media:44484a29b82bf4e6351ac7cc)",
+     "tr": {
+      "ru": "Но и без денег ей каждый день весело.",
+      "en": "But even without money, every day is fun."
+     }
+    },
+    {
+     "who": "",
+     "s": "{jk|来年、アンナさんは日本語の試験を受けます。|らいねん、 アンナさんは にほんごの しけんを うけます。} [audio](media:2c9b2c2cae1c7e88e00a8956)",
+     "tr": {
+      "ru": "В следующем году Анна сдаёт экзамен по японскому.",
+      "en": "Next year Anna is taking a Japanese exam."
+     }
+    },
+    {
+     "who": "",
+     "s": "{jk|難しくても、頑張ります。|むずかしくても、 がんばります。} [audio](media:227fc88719188717b3e69a05)",
+     "tr": {
+      "ru": "Даже если будет трудно, она постарается.",
+      "en": "Even if it's hard, she'll do her best."
+     }
+    }
+   ]
+  }
+ ],
  "media": {
   "file": "ja.audio.mp3",
   "type": "audio/mpeg",
@@ -13817,6 +15244,402 @@
    "0adf83671ad407bc407f098b": [
     10829712,
     9261
+   ],
+   "659d544609ebad455634879b": [
+    10838973,
+    21549
+   ],
+   "1d5289f3fc8c22a5656609bd": [
+    10860522,
+    25005
+   ],
+   "40b1d64904b2e9a6c99a4d46": [
+    10885527,
+    20013
+   ],
+   "3a0f7217eb398627af5429c3": [
+    10905540,
+    23277
+   ],
+   "82ba924db2e4a45a1938b250": [
+    10928817,
+    15213
+   ],
+   "2fd4097d03788688b3a9b9e2": [
+    10944030,
+    15789
+   ],
+   "10599a890b21fc187e8127b7": [
+    10959819,
+    22701
+   ],
+   "b5ff08f62a3f92e5875f6073": [
+    10982520,
+    23085
+   ],
+   "054dc9162d4fbe5e5c4df5a4": [
+    11005605,
+    12717
+   ],
+   "b803e30bb01530e8e509a9fc": [
+    11018322,
+    15981
+   ],
+   "82b0be21642f389775adbadb": [
+    11034303,
+    14637
+   ],
+   "a21a236d1e76caae9a3db225": [
+    11048940,
+    20781
+   ],
+   "d5b22cabedcfe06a2f5e64a3": [
+    11069721,
+    20589
+   ],
+   "130e12cbafd68a549bf42021": [
+    11090310,
+    18285
+   ],
+   "84dafef656132820bd6cdfb1": [
+    11108595,
+    16941
+   ],
+   "242e4b2b6476a1c569135a87": [
+    11125536,
+    12333
+   ],
+   "8deba4de200d472d4a74e9ab": [
+    11137869,
+    23661
+   ],
+   "259f3c7f2bf86740eb80075f": [
+    11161530,
+    18477
+   ],
+   "2e214fca1d59d89393a1e7c0": [
+    11180007,
+    15213
+   ],
+   "4ef66aa4c62ac9888f8ccb6f": [
+    11195220,
+    17517
+   ],
+   "f430a48a5079b9f78d65c215": [
+    11212737,
+    18861
+   ],
+   "b3df9debacc98e1ffc32f868": [
+    11231598,
+    15021
+   ],
+   "abc37532b4201b0ef57a8bfd": [
+    11246619,
+    16749
+   ],
+   "e066a9a43b0e0f355213858d": [
+    11263368,
+    15021
+   ],
+   "b15f4151a542cc732bd96e1f": [
+    11278389,
+    20589
+   ],
+   "8f65b7469aee4390c0d30b4c": [
+    11298978,
+    25197
+   ],
+   "e22a43719f99b324a2a507d0": [
+    11324175,
+    22893
+   ],
+   "625fdab2d84544d77abcc711": [
+    11347068,
+    19821
+   ],
+   "eee5fb62ad151cf7860158ae": [
+    11366889,
+    18093
+   ],
+   "41fdfc1d5fd4b4212000d97b": [
+    11384982,
+    16557
+   ],
+   "62513fc80db922c66a6c669f": [
+    11401539,
+    21549
+   ],
+   "43a635477ec559c2f6846c6a": [
+    11423088,
+    15789
+   ],
+   "ff828c3d7567c3d2ce0992ce": [
+    11438877,
+    20781
+   ],
+   "01c4d2ee1b9f70ba7f87a463": [
+    11459658,
+    17133
+   ],
+   "33fde17a544371aadd19e305": [
+    11476791,
+    20781
+   ],
+   "155a50adbfe765ea9bfd10b4": [
+    11497572,
+    20013
+   ],
+   "67774c93d6d237bb93195231": [
+    11517585,
+    19053
+   ],
+   "7a5a9fb018a421d4545e8fc3": [
+    11536638,
+    20205
+   ],
+   "f568327426d250104c8ec9e3": [
+    11556843,
+    26925
+   ],
+   "dd274dccbaf62642d74074e4": [
+    11583768,
+    18669
+   ],
+   "c51d49ff716eb7b48e4c6c5b": [
+    11602437,
+    19245
+   ],
+   "0dc362ef56b4d44d4d988852": [
+    11621682,
+    14061
+   ],
+   "f14918882fd1f2dc68fc4b26": [
+    11635743,
+    18093
+   ],
+   "f04edba0a256b20888bce2a9": [
+    11653836,
+    19245
+   ],
+   "49b285bde39c14589a53f61c": [
+    11673081,
+    16941
+   ],
+   "94d2830be3d236a9e5ae133c": [
+    11690022,
+    24045
+   ],
+   "747c524485811e8773b79b58": [
+    11714067,
+    19245
+   ],
+   "8663246b35bd9ce62a9feb84": [
+    11733312,
+    20973
+   ],
+   "32d4b6b03e6d1be5fc71f9eb": [
+    11754285,
+    23277
+   ],
+   "66b8944d9e9f2e75a6e97970": [
+    11777562,
+    19245
+   ],
+   "d6ebcb22b4e1af4822ca02bb": [
+    11796807,
+    16557
+   ],
+   "be3a86bba5dae3bab218b693": [
+    11813364,
+    11373
+   ],
+   "2ffbbaaec095a41f7ee6a56b": [
+    11824737,
+    14637
+   ],
+   "00db5740ac1c418d52a8acfb": [
+    11839374,
+    31149
+   ],
+   "2f6dd9dbcf3ab6f6cc8564c3": [
+    11870523,
+    23853
+   ],
+   "ce260f0be7137e981f39da31": [
+    11894376,
+    24621
+   ],
+   "97719c2f52ad93525fa6b4a6": [
+    11918997,
+    20973
+   ],
+   "35624269f31d9064e52f41dd": [
+    11939970,
+    19437
+   ],
+   "38537137063b40ccbfc075a1": [
+    11959407,
+    20205
+   ],
+   "c9535d010163c4f75ec53dea": [
+    11979612,
+    24237
+   ],
+   "9cb1e329c1fd26cf63dd9f96": [
+    12003849,
+    28269
+   ],
+   "40759645eef020dca816b060": [
+    12032118,
+    20781
+   ],
+   "f8faea5c6211b78e7c6f2f95": [
+    12052899,
+    24429
+   ],
+   "d9baf04fc703f963387cb73f": [
+    12077328,
+    26541
+   ],
+   "aeffa5dd08ed838c4636a42f": [
+    12103869,
+    25773
+   ],
+   "1f9da8ef839d61e47e9a18b8": [
+    12129642,
+    18669
+   ],
+   "7d7fad383aaf9bda4a1d7e9b": [
+    12148311,
+    25965
+   ],
+   "f17dd178d0722c08c88d4e95": [
+    12174276,
+    20589
+   ],
+   "de72f4aca960dd83e09afc76": [
+    12194865,
+    20013
+   ],
+   "2698633d4473c7105ca8d971": [
+    12214878,
+    20781
+   ],
+   "62c17f6479b0538f1263be84": [
+    12235659,
+    27309
+   ],
+   "ba8bd97bb594ff9eecc8476e": [
+    12262968,
+    24621
+   ],
+   "fe3746febb3dbd8c2b9ca681": [
+    12287589,
+    21549
+   ],
+   "d2b864f0a151f7c75482391f": [
+    12309138,
+    34605
+   ],
+   "b4d2e14d3bfaabdc72827b7e": [
+    12343743,
+    24621
+   ],
+   "5c598a7d10e0796270dd7aa0": [
+    12368364,
+    16749
+   ],
+   "e0f426e49af00be6f8034751": [
+    12385113,
+    23853
+   ],
+   "cfa4141089cec954569d6536": [
+    12408966,
+    23085
+   ],
+   "409d72195a26b11290bea0d5": [
+    12432051,
+    10413
+   ],
+   "adcacf1f97e7ba34ece2b297": [
+    12442464,
+    29613
+   ],
+   "74cbb3ec04de011a937c2199": [
+    12472077,
+    22125
+   ],
+   "2be2c1ce6173531a7545f0d1": [
+    12494202,
+    21741
+   ],
+   "b5f671feb55261e5c0a8ca64": [
+    12515943,
+    19053
+   ],
+   "cb7f3a4b66220c552c207dbb": [
+    12534996,
+    23853
+   ],
+   "0edf1e7d7561574c453807d4": [
+    12558849,
+    24813
+   ],
+   "cf40b052a494607985c078d5": [
+    12583662,
+    24429
+   ],
+   "f1422a4708fd352fb1470a2c": [
+    12608091,
+    20973
+   ],
+   "16c5f9a4bbb92bbce80cc059": [
+    12629064,
+    27693
+   ],
+   "4f184232d1a8a605689ab3c8": [
+    12656757,
+    35757
+   ],
+   "1fda25104300e01906e581ea": [
+    12692514,
+    24429
+   ],
+   "8c9365476d20981c995abe74": [
+    12716943,
+    22509
+   ],
+   "009b004c7b22f68c00c4c477": [
+    12739452,
+    33453
+   ],
+   "358192693fa63fbbad4325bc": [
+    12772905,
+    27117
+   ],
+   "9825af0b67e1882454ee72f2": [
+    12800022,
+    22893
+   ],
+   "587bc13d1700cb29bf6e88cf": [
+    12822915,
+    31533
+   ],
+   "069979d6520f678c6c7cc0bf": [
+    12854448,
+    29037
+   ],
+   "44484a29b82bf4e6351ac7cc": [
+    12883485,
+    29997
+   ],
+   "2c9b2c2cae1c7e88e00a8956": [
+    12913482,
+    27885
+   ],
+   "227fc88719188717b3e69a05": [
+    12941367,
+    19245
    ]
   },
   "words": {

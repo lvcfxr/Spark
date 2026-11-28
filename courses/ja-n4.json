@@ -8083,6 +8083,1433 @@
    }
   }
  ],
+ "stories": [
+  {
+   "unit": "l26",
+   "title": {
+    "ru": "Год в Японии",
+    "en": "A year in Japan"
+   },
+   "q": {
+    "ru": "Что видно из окна Анны?",
+    "en": "What can be seen from Anna's window?",
+    "opts": {
+     "ru": [
+      "Фудзи",
+      "Море",
+      "Станция"
+     ],
+     "en": [
+      "Mt Fuji",
+      "The sea",
+      "The station"
+     ]
+    }
+   },
+   "lines": [
+    {
+     "who": "",
+     "s": "{jk|日本に来て、一年が経ちました。|にほんに きて、 いちねんが たちました。} [audio](media:080df97113c31fb1ef6395f0)",
+     "tr": {
+      "ru": "Прошёл год с тех пор, как Анна приехала в Японию.",
+      "en": "A year has passed since Anna came to Japan."
+     }
+    },
+    {
+     "who": "",
+     "s": "{jk|今は日本語で電話ができます。漢字も少し読めます。|いまは にほんごで でんわが できます。 かんじも すこし よめます。} [audio](media:b350d5ddbf6be14fc27bd547)",
+     "tr": {
+      "ru": "Теперь она может говорить по телефону по-японски и немного читает кандзи.",
+      "en": "Now she can talk on the phone in Japanese and read some kanji."
+     }
+    },
+    {
+     "who": "",
+     "s": "{jk|アパートの窓から富士山が見えます。|アパートの まどから ふじさんが みえます。} [audio](media:a053ab05f8a8edb00a7a18ef)",
+     "tr": {
+      "ru": "Из окна её квартиры видна Фудзи.",
+      "en": "She can see Mt Fuji from her apartment window."
+     }
+    },
+    {
+     "who": "",
+     "s": "{jk|でも、ニュースはまだ全然分かりません。|でも、 ニュースは まだ ぜんぜん わかりません。} [audio](media:214e4b2253135ebd21b46fad)",
+     "tr": {
+      "ru": "Но новости она пока совсем не понимает.",
+      "en": "But she still doesn't understand the news at all."
+     }
+    }
+   ]
+  },
+  {
+   "unit": "l27",
+   "title": {
+    "ru": "Перед вечеринкой",
+    "en": "Before the party"
+   },
+   "q": {
+    "ru": "Что Анна сделала заранее?",
+    "en": "What did Anna do in advance?",
+    "opts": {
+     "ru": [
+      "Купила напитки",
+      "Нарисовала картину",
+      "Починила холодильник"
+     ],
+     "en": [
+      "Bought drinks",
+      "Drew a picture",
+      "Fixed the fridge"
+     ]
+    }
+   },
+   "lines": [
+    {
+     "who": "",
+     "s": "{jk|今晩、アンナさんのうちでパーティーをします。|こんばん、 アンナさんの うちで パーティーを します。} [audio](media:7cfdb3ae23d271e8a966f9ef)",
+     "tr": {
+      "ru": "Сегодня вечером у Анны дома вечеринка.",
+      "en": "Tonight there's a party at Anna's place."
+     }
+    },
+    {
+     "who": "",
+     "s": "{jk|壁にはゆきさんが描いた絵が貼ってあります。|かべには ゆきさんが かいた えが はって あります。} [audio](media:fb57c709b8986f5ea8d1d418)",
+     "tr": {
+      "ru": "На стене висит рисунок Юки.",
+      "en": "A picture Yuki drew is up on the wall."
+     }
+    },
+    {
+     "who": "",
+     "s": "{jk|テーブルにお皿が並べてあります。飲み物も買っておきました。|テーブルに おさらが ならべて あります。 のみものも かって おきました。} [audio](media:821ae9c40004035b107d2f7a)",
+     "tr": {
+      "ru": "На столе расставлены тарелки. Напитки куплены заранее.",
+      "en": "Plates are set out on the table. She bought drinks in advance too."
+     }
+    },
+    {
+     "who": "",
+     "s": "{jk|あれ？冷蔵庫の電気が消えています。|あれ？ れいぞうこの でんきが きえて います。} [audio](media:32826725d28d439c0dd4737b)",
+     "tr": {
+      "ru": "Ой? В холодильнике не горит свет.",
+      "en": "Huh? The light in the fridge is off."
+     }
+    }
+   ]
+  },
+  {
+   "unit": "l28",
+   "title": {
+    "ru": "Планы на будущее",
+    "en": "Plans for the future"
+   },
+   "q": {
+    "ru": "Что Анна планирует на летние каникулы?",
+    "en": "What is Anna planning for the summer holidays?",
+    "opts": {
+     "ru": [
+      "Съездить в Россию",
+      "Пойти в магистратуру",
+      "Найти работу"
+     ],
+     "en": [
+      "Go back to Russia",
+      "Start graduate school",
+      "Find a job"
+     ]
+    }
+   },
+   "lines": [
+    {
+     "who": "",
+     "s": "{jk|アンナさんは来年大学院に行くつもりです。|アンナさんは らいねん だいがくいんに いく つもりです。} [audio](media:d19920424543a68cf6b83751)",
+     "tr": {
+      "ru": "Анна собирается в следующем году в магистратуру.",
+      "en": "Anna intends to go to graduate school next year."
+     }
+    },
+    {
+     "who": "",
+     "s": "{jk|夏休みにはロシアへ帰る予定です。|なつやすみには ロシアへ かえる よていです。} [audio](media:05d1b5c3543b986262079297)",
+     "tr": {
+      "ru": "На летние каникулы планирует съездить домой в Россию.",
+      "en": "She plans to go back to Russia for the summer holidays."
+     }
+    },
+    {
+     "who": "",
+     "s": "{jk|将来は日本で就職しようと思っています。|しょうらいは にほんで しゅうしょくしようと おもって います。} [audio](media:1fee2b0a1ef229ef27e94105)",
+     "tr": {
+      "ru": "В будущем думает устроиться на работу в Японии.",
+      "en": "In the future she's thinking of getting a job in Japan."
+     }
+    },
+    {
+     "who": "",
+     "s": "{jk|まだ決めていませんが、必ず日本語を使う仕事をしたいです。|まだ きめて いませんが、 かならず にほんごを つかう しごとを したいです。} [audio](media:8a2cf5ac0dfdc72943b12cca)",
+     "tr": {
+      "ru": "Точно ещё не решила, но работа обязательно должна быть с японским.",
+      "en": "She hasn't decided yet, but she definitely wants a job that uses Japanese."
+     }
+    }
+   ]
+  },
+  {
+   "unit": "l29",
+   "title": {
+    "ru": "Сладкое",
+    "en": "Sweets"
+   },
+   "q": {
+    "ru": "Что посоветовала Юки?",
+    "en": "What did Yuki advise?",
+    "opts": {
+     "ru": [
+      "Каждый день заниматься спортом",
+      "Есть больше сладкого",
+      "Меньше спать"
+     ],
+     "en": [
+      "Exercise every day",
+      "Eat more sweets",
+      "Sleep less"
+     ]
+    }
+   },
+   "lines": [
+    {
+     "who": "",
+     "s": "{jk|最近アンナさんは甘いものを食べ過ぎています。|さいきん アンナさんは あまい ものを たべすぎて います。} [audio](media:b68bae72be289e941d4c32b8)",
+     "tr": {
+      "ru": "В последнее время Анна ест слишком много сладкого.",
+      "en": "Lately Anna has been eating too many sweets."
+     }
+    },
+    {
+     "who": "",
+     "s": "{jk|体重が三キロ増えました。|たいじゅうが さんキロ ふえました。} [audio](media:b5a5c69fda2632f3d86272c7)",
+     "tr": {
+      "ru": "Вес прибавился на три килограмма.",
+      "en": "She's put on three kilos."
+     }
+    },
+    {
+     "who": "",
+     "s": "{jk|ゆきさんは「毎日運動した方がいいよ」と言いました。|ゆきさんは 「まいにち うんどうした ほうが いいよ」と いいました。} [audio](media:4e77691a8844af604e26c047)",
+     "tr": {
+      "ru": "Юки сказала: «Тебе лучше бы каждый день заниматься спортом».",
+      "en": "Yuki said, \"You'd better exercise every day.\""
+     }
+    },
+    {
+     "who": "",
+     "s": "{jk|このジムの説明は分かりやすくて、始めやすいです。|この ジムの せつめいは わかりやすくて、 はじめやすいです。} [audio](media:e24b8cf748c05a5d9b546eea)",
+     "tr": {
+      "ru": "В этом спортзале всё понятно объясняют — начать легко.",
+      "en": "This gym explains things clearly, so it's easy to start."
+     }
+    }
+   ]
+  },
+  {
+   "unit": "l30",
+   "title": {
+    "ru": "Тайфун",
+    "en": "A typhoon"
+   },
+   "q": {
+    "ru": "Что может случиться завтра?",
+    "en": "What might happen tomorrow?",
+    "opts": {
+     "ru": [
+      "Придёт тайфун",
+      "Будет землетрясение",
+      "Пойдёт снег"
+     ],
+     "en": [
+      "A typhoon may come",
+      "There'll be an earthquake",
+      "It'll snow"
+     ]
+    }
+   },
+   "lines": [
+    {
+     "who": "",
+     "s": "{jk|明日台風が来るかもしれません。|あした たいふうが くる かもしれません。} [audio](media:2e4a506fdec0dff5d41e7df9)",
+     "tr": {
+      "ru": "Завтра, может быть, придёт тайфун.",
+      "en": "A typhoon may come tomorrow."
+     }
+    },
+    {
+     "who": "",
+     "s": "{jk|天気予報では、午後から強い雨が降るでしょう。|てんきよほうでは、 ごごから つよい あめが ふるでしょう。} [audio](media:f9dbd23176b6c1ea52425c69)",
+     "tr": {
+      "ru": "По прогнозу, после полудня, вероятно, пойдёт сильный дождь.",
+      "en": "According to the forecast, heavy rain will probably fall from the afternoon."
+     }
+    },
+    {
+     "who": "",
+     "s": "{jk|アルバイトの店長はもう知っているはずです。|アルバイトの てんちょうは もう しって いる はずです。} [audio](media:c920736fc23b8943b0ead799)",
+     "tr": {
+      "ru": "Управляющий на подработке наверняка уже в курсе.",
+      "en": "The manager at her part-time job should already know."
+     }
+    },
+    {
+     "who": "",
+     "s": "{jk|電車が止まったら、仕事に間に合わないかもしれません。|でんしゃが とまったら、 しごとに まにあわない かもしれません。} [audio](media:acbe33e48f083a9a5f044f2b)",
+     "tr": {
+      "ru": "Если поезда встанут, она может не успеть на работу.",
+      "en": "If the trains stop, she might not make it to work."
+     }
+    }
+   ]
+  },
+  {
+   "unit": "l31",
+   "title": {
+    "ru": "Слухи",
+    "en": "Rumours"
+   },
+   "q": {
+    "ru": "Что, говорят, откроется?",
+    "en": "What is apparently opening?",
+    "opts": {
+     "ru": [
+      "Новая пекарня",
+      "Новое кафе",
+      "Магазин одежды"
+     ],
+     "en": [
+      "A new bakery",
+      "A new café",
+      "A clothes shop"
+     ]
+    }
+   },
+   "lines": [
+    {
+     "who": "",
+     "s": "{jk|お客さんの話では、隣の店が閉まるそうです。|おきゃくさんの はなしでは、 となりの みせが しまる そうです。} [audio](media:6c33b24418b7e2514f7cf99b)",
+     "tr": {
+      "ru": "Посетитель рассказал, что соседний магазин закрывается.",
+      "en": "A customer said the shop next door is closing."
+     }
+    },
+    {
+     "who": "",
+     "s": "{jk|店長は寂しそうな顔をしています。|てんちょうは さびしそうな かおを して います。} [audio](media:9ebe1028d9010f9a706df9f8)",
+     "tr": {
+      "ru": "У управляющего грустный вид.",
+      "en": "The manager looks lonely."
+     }
+    },
+    {
+     "who": "",
+     "s": "{jk|いい匂いがします。誰かがパンを焼いているようです。|いい においが します。 だれかが パンを やいて いる ようです。} [audio](media:c30ed44b7f47be42ba1c6846)",
+     "tr": {
+      "ru": "Пахнет вкусно. Похоже, кто-то печёт хлеб.",
+      "en": "There's a nice smell. Someone seems to be baking bread."
+     }
+    },
+    {
+     "who": "",
+     "s": "{jk|新しいパン屋ができるらしいです。|あたらしい パンやが できる らしいです。} [audio](media:e625f0695f0988438c24c6cd)",
+     "tr": {
+      "ru": "Говорят, откроется новая пекарня.",
+      "en": "Apparently a new bakery is opening."
+     }
+    }
+   ]
+  },
+  {
+   "unit": "l32",
+   "title": {
+    "ru": "Квартира",
+    "en": "The apartment"
+   },
+   "q": {
+    "ru": "Что плохого в квартире Анны?",
+    "en": "What's bad about Anna's apartment?",
+    "opts": {
+     "ru": [
+      "Дорогая аренда и шумные соседи",
+      "Далеко от станции",
+      "Тесно"
+     ],
+     "en": [
+      "High rent and noisy neighbours",
+      "It's far from the station",
+      "It's cramped"
+     ]
+    }
+   },
+   "lines": [
+    {
+     "who": "",
+     "s": "{jk|アンナさんは音楽を聞きながら、勉強します。|アンナさんは おんがくを ききながら、 べんきょうします。} [audio](media:96fe3819f589eaa28d66fcae)",
+     "tr": {
+      "ru": "Анна занимается под музыку.",
+      "en": "Anna studies while listening to music."
+     }
+    },
+    {
+     "who": "",
+     "s": "{jk|アルバイトをしながら、大学に通っています。|アルバイトを しながら、 だいがくに かよって います。} [audio](media:28dd42d172b8eda95e4aaf4c)",
+     "tr": {
+      "ru": "Ходит в университет и при этом подрабатывает.",
+      "en": "She goes to university while working part-time."
+     }
+    },
+    {
+     "who": "",
+     "s": "{jk|今のアパートは駅に近いし、広いし、とても便利です。|いまの アパートは えきに ちかいし、 ひろいし、 とても べんりです。} [audio](media:0c8cef9b6efbc634ac912887)",
+     "tr": {
+      "ru": "Нынешняя квартира и к станции близко, и просторная — очень удобно.",
+      "en": "Her apartment is close to the station and spacious, so it's very convenient."
+     }
+    },
+    {
+     "who": "",
+     "s": "{jk|でも、家賃が高いし、隣がうるさいです。|でも、 やちんが たかいし、 となりが うるさいです。} [audio](media:c8300b58e625b09ef1ec4b9a)",
+     "tr": {
+      "ru": "Но и аренда дорогая, и соседи шумные.",
+      "en": "But the rent is high, and the neighbours are noisy."
+     }
+    }
+   ]
+  },
+  {
+   "unit": "l33",
+   "title": {
+    "ru": "Опоздание",
+    "en": "Running late"
+   },
+   "q": {
+    "ru": "Почему Анна опоздала?",
+    "en": "Why was Anna late?",
+    "opts": {
+     "ru": [
+      "Поезд задержался из-за аварии",
+      "Она проспала",
+      "Она заблудилась"
+     ],
+     "en": [
+      "The train was delayed by an accident",
+      "She overslept",
+      "She got lost"
+     ]
+    }
+   },
+   "lines": [
+    {
+     "who": "",
+     "s": "{jk|今朝、事故で電車が遅れたので、アルバイトに遅れました。|けさ、 じこで でんしゃが おくれたので、 アルバイトに おくれました。} [audio](media:d3308ef3653ca74df0cb8d33)",
+     "tr": {
+      "ru": "Утром из-за аварии задержался поезд, и Анна опоздала на подработку.",
+      "en": "This morning the train was delayed by an accident, so Anna was late for work."
+     }
+    },
+    {
+     "who": "",
+     "s": "{jk|店長に叱られると思って、心配しました。|てんちょうに しかられると おもって、 しんぱいしました。} [audio](media:3f6812a640286e8c23f2787b)",
+     "tr": {
+      "ru": "Она боялась, что управляющий её отругает.",
+      "en": "She was worried the manager would scold her."
+     }
+    },
+    {
+     "who": "",
+     "s": "{jk|でも、店長は「事故なら仕方がない」と言いました。|でも、 てんちょうは 「じこなら しかたが ない」と いいました。} [audio](media:47c9656993a3d182b2de6203)",
+     "tr": {
+      "ru": "Но тот сказал: «Раз авария — ничего не поделаешь».",
+      "en": "But the manager said, \"If it was an accident, it can't be helped.\""
+     }
+    },
+    {
+     "who": "",
+     "s": "{jk|アンナさんはそれを聞いて、安心しました。|アンナさんは それを きいて、 あんしんしました。} [audio](media:83f6f081ff8a4f1a6cc91a03)",
+     "tr": {
+      "ru": "Услышав это, Анна успокоилась.",
+      "en": "Hearing that, Anna was relieved."
+     }
+    }
+   ]
+  },
+  {
+   "unit": "l34",
+   "title": {
+    "ru": "Подготовка к экзамену",
+    "en": "Preparing for the exam"
+   },
+   "q": {
+    "ru": "Зачем Анна поставила два будильника?",
+    "en": "Why did Anna set two alarm clocks?",
+    "opts": {
+     "ru": [
+      "Чтобы не проспать",
+      "Чтобы учить слова",
+      "Потому что один сломался"
+     ],
+     "en": [
+      "So she wouldn't oversleep",
+      "To memorize words",
+      "Because one was broken"
+     ]
+    }
+   },
+   "lines": [
+    {
+     "who": "",
+     "s": "{jk|アンナさんは試験に合格するために、毎日単語を覚えています。|アンナさんは しけんに ごうかくする ために、 まいにち たんごを おぼえて います。} [audio](media:0e41e24bb3afdcbc39ce7c95)",
+     "tr": {
+      "ru": "Чтобы сдать экзамен, Анна каждый день учит слова.",
+      "en": "Anna memorizes words every day to pass the exam."
+     }
+    },
+    {
+     "who": "",
+     "s": "{jk|忘れないように、アプリにメモしています。|わすれない ように、 アプリに メモして います。} [audio](media:6aae6924388b07141cc2bab9)",
+     "tr": {
+      "ru": "Чтобы не забыть, записывает их в приложение.",
+      "en": "She notes them down in an app so she won't forget."
+     }
+    },
+    {
+     "who": "",
+     "s": "{jk|寝坊しないように、目覚まし時計を二つかけました。|ねぼうしない ように、 めざましどけいを ふたつ かけました。} [audio](media:536714296a848d6e5ad54dad)",
+     "tr": {
+      "ru": "Чтобы не проспать, поставила два будильника.",
+      "en": "She set two alarm clocks so she wouldn't oversleep."
+     }
+    },
+    {
+     "who": "",
+     "s": "{jk|旅行のために、貯金もしています。|りょこうの ために、 ちょきんも して います。} [audio](media:2815788143afd99528d7404c)",
+     "tr": {
+      "ru": "Ещё она копит деньги на путешествие.",
+      "en": "She's also saving money for a trip."
+     }
+    }
+   ]
+  },
+  {
+   "unit": "l35",
+   "title": {
+    "ru": "Подарки учителю",
+    "en": "Gifts for the teacher"
+   },
+   "q": {
+    "ru": "Что Анна получила от учителя?",
+    "en": "What did Anna receive from the teacher?",
+    "opts": {
+     "ru": [
+      "Книгу",
+      "Сладости",
+      "Сувенир из России"
+     ],
+     "en": [
+      "A book",
+      "Sweets",
+      "A souvenir from Russia"
+     ]
+    }
+   },
+   "lines": [
+    {
+     "who": "",
+     "s": "{jk|アンナさんは先生にロシアのお土産を差し上げました。|アンナさんは せんせいに ロシアの おみやげを さしあげました。} [audio](media:c0d0d87e926c77af2f81831a)",
+     "tr": {
+      "ru": "Анна преподнесла учителю сувенир из России.",
+      "en": "Anna presented her teacher with a souvenir from Russia."
+     }
+    },
+    {
+     "who": "",
+     "s": "{jk|先生はアンナさんに本をくださいました。|せんせいは アンナさんに ほんを くださいました。} [audio](media:810446f5cf6a795300a446c0)",
+     "tr": {
+      "ru": "Учитель подарил Анне книгу.",
+      "en": "The teacher gave Anna a book."
+     }
+    },
+    {
+     "who": "",
+     "s": "{jk|先生の奥さんにもお菓子をいただきました。|せんせいの おくさんにも おかしを いただきました。} [audio](media:e6be5d065c3f4f54b3743449)",
+     "tr": {
+      "ru": "А от жены учителя она получила сладости.",
+      "en": "She also received sweets from the teacher's wife."
+     }
+    },
+    {
+     "who": "",
+     "s": "{jk|家に帰って、隣の猫に餌をやりました。|いえに かえって、 となりの ねこに えさを やりました。} [audio](media:b18c230b03ad947a8b8e6d96)",
+     "tr": {
+      "ru": "Вернувшись домой, покормила соседскую кошку.",
+      "en": "After getting home, she fed the neighbour's cat."
+     }
+    }
+   ]
+  },
+  {
+   "unit": "l36",
+   "title": {
+    "ru": "Неудачный день",
+    "en": "A bad day"
+   },
+   "q": {
+    "ru": "Что хорошего случилось с Анной?",
+    "en": "What good thing happened to Anna?",
+    "opts": {
+     "ru": [
+      "Учитель похвалил сочинение",
+      "Ей вернули велосипед",
+      "Ей подарили книгу"
+     ],
+     "en": [
+      "The teacher praised her essay",
+      "Her bike was returned",
+      "She was given a book"
+     ]
+    }
+   },
+   "lines": [
+    {
+     "who": "",
+     "s": "{jk|昨日、アンナさんは電車で足を踏まれました。|きのう、 アンナさんは でんしゃで あしを ふまれました。} [audio](media:f02f1850aea28d264ed1ef3a)",
+     "tr": {
+      "ru": "Вчера Анне в поезде наступили на ногу.",
+      "en": "Yesterday someone stepped on Anna's foot on the train."
+     }
+    },
+    {
+     "who": "",
+     "s": "{jk|それから、自転車を盗まれました。|それから、 じてんしゃを ぬすまれました。} [audio](media:0e560cd86a47cc20f9fc4762)",
+     "tr": {
+      "ru": "Потом у неё украли велосипед.",
+      "en": "Then her bicycle was stolen."
+     }
+    },
+    {
+     "who": "",
+     "s": "{jk|でも、先生に作文を褒められました。|でも、 せんせいに さくぶんを ほめられました。} [audio](media:dcc329ba4ec6d3b807e2b195)",
+     "tr": {
+      "ru": "Зато учитель похвалил её сочинение.",
+      "en": "But the teacher praised her essay."
+     }
+    },
+    {
+     "who": "",
+     "s": "{jk|その作文は学校の雑誌に載せられるそうです。|その さくぶんは がっこうの ざっしに のせられる そうです。} [audio](media:d82a0ad7c48060447499fb4a)",
+     "tr": {
+      "ru": "Говорят, сочинение опубликуют в журнале университета.",
+      "en": "Apparently the essay will be published in the school magazine."
+     }
+    }
+   ]
+  },
+  {
+   "unit": "l37",
+   "title": {
+    "ru": "Строгий отец",
+    "en": "A strict father"
+   },
+   "q": {
+    "ru": "Что разрешил Юки отец?",
+    "en": "What did Yuki's father let her do?",
+    "opts": {
+     "ru": [
+      "Учить в университете то, что ей нравится",
+      "Не заниматься на пианино",
+      "Поехать в Россию"
+     ],
+     "en": [
+      "Study what she liked at university",
+      "Skip piano practice",
+      "Go to Russia"
+     ]
+    }
+   },
+   "lines": [
+    {
+     "who": "",
+     "s": "{jk|ゆきさんのお父さんは厳しい人です。|ゆきさんの おとうさんは きびしい ひとです。} [audio](media:614179dc1ab72f768ac3b27e)",
+     "tr": {
+      "ru": "Отец Юки — строгий человек.",
+      "en": "Yuki's father is a strict man."
+     }
+    },
+    {
+     "who": "",
+     "s": "{jk|子供のとき、お父さんはゆきさんに毎日ピアノを練習させました。|こどもの とき、 おとうさんは ゆきさんに まいにち ピアノを れんしゅうさせました。} [audio](media:517db5eb9ba718c6e4b6e188)",
+     "tr": {
+      "ru": "В детстве он заставлял Юки каждый день заниматься на пианино.",
+      "en": "When she was a child, he made Yuki practise the piano every day."
+     }
+    },
+    {
+     "who": "",
+     "s": "{jk|でも、大学では好きなことを勉強させてくれました。|でも、 だいがくでは すきな ことを べんきょうさせて くれました。} [audio](media:456c942834c3779f890f7844)",
+     "tr": {
+      "ru": "Но в университете позволил учить то, что ей нравится.",
+      "en": "But at university he let her study what she liked."
+     }
+    },
+    {
+     "who": "",
+     "s": "{jk|ゆきさんは「今度父にロシアの料理を食べさせたい」と言っています。|ゆきさんは 「こんど ちちに ロシアの りょうりを たべさせたい」と いって います。} [audio](media:2a502c6c65a9ae5768426b2f)",
+     "tr": {
+      "ru": "Юки говорит: «Хочу накормить папу русской едой».",
+      "en": "Yuki says, \"Next time I want my dad to try Russian food.\""
+     }
+    }
+   ]
+  },
+  {
+   "unit": "l38",
+   "title": {
+    "ru": "Медленный компьютер",
+    "en": "A slow computer"
+   },
+   "q": {
+    "ru": "Что посоветовала Юки, чтобы компьютер работал быстрее?",
+    "en": "What did Yuki suggest to speed up the computer?",
+    "opts": {
+     "ru": [
+      "Удалить ненужные файлы",
+      "Купить новый",
+      "Выключить его"
+     ],
+     "en": [
+      "Delete unneeded files",
+      "Buy a new one",
+      "Turn it off"
+     ]
+    }
+   },
+   "lines": [
+    {
+     "who": "アンナ",
+     "s": "{jk|パソコンが遅いんだけど、どうすればいい？|パソコンが おそいんだけど、 どう すれば いい？} [audio](media:5d8038078adb66ae56ffee1b)",
+     "tr": {
+      "ru": "Компьютер тормозит — что делать?",
+      "en": "My computer's slow — what should I do?"
+     }
+    },
+    {
+     "who": "ゆき",
+     "s": "{jk|いらないファイルを消せば、速くなるよ。|いらない ファイルを けせば、 はやく なるよ。} [audio](media:3811fedf1ed54c14647c4657)",
+     "tr": {
+      "ru": "Удалишь ненужные файлы — станет быстрее.",
+      "en": "If you delete files you don't need, it'll get faster."
+     }
+    },
+    {
+     "who": "ゆき",
+     "s": "{jk|新しいのを買うなら、秋葉原がいいよ。|あたらしいのを かうなら、 あきはばらが いいよ。} [audio](media:5a2cbd69b48105274ea9998f)",
+     "tr": {
+      "ru": "А если покупать новый — то лучше в Акихабаре.",
+      "en": "If you're buying a new one, Akihabara is good."
+     }
+    },
+    {
+     "who": "アンナ",
+     "s": "{jk|ありがとう。やり方が分かれば、自分でできる。|ありがとう。 やりかたが わかれば、 じぶんで できる。} [audio](media:d21934eab1a50b5994ff0843)",
+     "tr": {
+      "ru": "Спасибо. Если пойму как — справлюсь сама.",
+      "en": "Thanks. If I know how, I can do it myself."
+     }
+    }
+   ]
+  },
+  {
+   "unit": "l39",
+   "title": {
+    "ru": "Покупка",
+    "en": "A purchase"
+   },
+   "q": {
+    "ru": "Что Анна забыла в поезде?",
+    "en": "What did Anna leave on the train?",
+    "opts": {
+     "ru": [
+      "Зонт",
+      "Платье",
+      "Телефон"
+     ],
+     "en": [
+      "Her umbrella",
+      "The dress",
+      "Her phone"
+     ]
+    }
+   },
+   "lines": [
+    {
+     "who": "",
+     "s": "{jk|アンナさんはデパートでワンピースを試着してみました。|アンナさんは デパートで ワンピースを しちゃくして みました。} [audio](media:61a19328e4e75ac4f3e95b82)",
+     "tr": {
+      "ru": "Анна примерила в универмаге платье.",
+      "en": "Anna tried on a dress at the department store."
+     }
+    },
+    {
+     "who": "",
+     "s": "{jk|とても似合ったので、買ってしまいました。|とても にあったので、 かって しまいました。} [audio](media:445f09ff7ac14d353026b817)",
+     "tr": {
+      "ru": "Оно ей так шло, что она не удержалась и купила.",
+      "en": "It suited her so well that she ended up buying it."
+     }
+    },
+    {
+     "who": "",
+     "s": "{jk|でも、帰りに電車に傘を忘れてしまいました。|でも、 かえりに でんしゃに かさを わすれて しまいました。} [audio](media:ecc404348e58dbbfec06fa87)",
+     "tr": {
+      "ru": "Но на обратном пути забыла зонт в поезде.",
+      "en": "But on the way home she left her umbrella on the train."
+     }
+    },
+    {
+     "who": "",
+     "s": "{jk|駅の忘れ物センターに電話してみます。|えきの わすれものセンターに でんわして みます。} [audio](media:29ecc8a1f59e6a0ffc9f6f71)",
+     "tr": {
+      "ru": "Попробует позвонить в бюро находок на станции.",
+      "en": "She'll try calling the station's lost-and-found."
+     }
+    }
+   ]
+  },
+  {
+   "unit": "l40",
+   "title": {
+    "ru": "Свадьба брата",
+    "en": "A brother's wedding"
+   },
+   "q": {
+    "ru": "Кто только что женился?",
+    "en": "Who just got married?",
+    "opts": {
+     "ru": [
+      "Брат Юки",
+      "Отец Юки",
+      "Учитель"
+     ],
+     "en": [
+      "Yuki's brother",
+      "Yuki's father",
+      "The teacher"
+     ]
+    }
+   },
+   "lines": [
+    {
+     "who": "",
+     "s": "{jk|ちょうど家を出るところに、ゆきさんから電話がありました。|ちょうど いえを でる ところに、 ゆきさんから でんわが ありました。} [audio](media:143ecc30ea6b85e84590a3dc)",
+     "tr": {
+      "ru": "Как раз когда Анна выходила из дома, позвонила Юки.",
+      "en": "Just as Anna was about to leave home, Yuki called."
+     }
+    },
+    {
+     "who": "",
+     "s": "{jk|ゆきさんはさっき駅に着いたところでした。|ゆきさんは さっき えきに ついた ところでした。} [audio](media:f0126a0fb1cc0c69812741cc)",
+     "tr": {
+      "ru": "Юки только что приехала на станцию.",
+      "en": "Yuki had just arrived at the station."
+     }
+    },
+    {
+     "who": "",
+     "s": "{jk|ゆきさんのお兄さんは結婚したばかりです。|ゆきさんの おにいさんは けっこんした ばかりです。} [audio](media:13db22658d3122af62708929)",
+     "tr": {
+      "ru": "Брат Юки только что женился.",
+      "en": "Yuki's older brother just got married."
+     }
+    },
+    {
+     "who": "",
+     "s": "{jk|二人はお祝いのプレゼントを買いに行きました。|ふたりは おいわいの プレゼントを かいに いきました。} [audio](media:a1c63c9626cb0395c8dc4d09)",
+     "tr": {
+      "ru": "Девушки пошли покупать подарок к свадьбе.",
+      "en": "The two went to buy a wedding present."
+     }
+    }
+   ]
+  },
+  {
+   "unit": "l41",
+   "title": {
+    "ru": "Непонятный фильм",
+    "en": "A puzzling film"
+   },
+   "q": {
+    "ru": "Что сделала Анна, когда не поняла название?",
+    "en": "What did Anna do when she didn't understand the title?",
+    "opts": {
+     "ru": [
+      "Посмотрела в словаре",
+      "Спросила учителя",
+      "Пересмотрела фильм"
+     ],
+     "en": [
+      "Looked it up in a dictionary",
+      "Asked the teacher",
+      "Watched the movie again"
+     ]
+    }
+   },
+   "lines": [
+    {
+     "who": "",
+     "s": "{jk|アンナさんは「風の町」という映画を見ました。|アンナさんは 「かぜの まち」と いう えいがを みました。} [audio](media:f5276e836df01250295e7b60)",
+     "tr": {
+      "ru": "Анна посмотрела фильм под названием «Город ветра».",
+      "en": "Anna saw a movie called \"Town of the Wind\"."
+     }
+    },
+    {
+     "who": "",
+     "s": "{jk|タイトルの意味が分からなかったので、辞書で調べました。|タイトルの いみが わからなかったので、 じしょで しらべました。} [audio](media:8e0826c36752e136ca30390a)",
+     "tr": {
+      "ru": "Смысл названия был непонятен, и она посмотрела в словаре.",
+      "en": "She didn't understand the title, so she looked it up in a dictionary."
+     }
+    },
+    {
+     "who": "",
+     "s": "{jk|ゆきさんにその言葉が正しいかどうか聞きました。|ゆきさんに その ことばが ただしいか どうか ききました。} [audio](media:760d0297016ffdf517b13086)",
+     "tr": {
+      "ru": "Спросила у Юки, правильно ли она поняла это слово.",
+      "en": "She asked Yuki whether she'd got the word right."
+     }
+    },
+    {
+     "who": "",
+     "s": "{jk|ゆきさんも何が言いたい映画なのか分からないと言いました。|ゆきさんも なにが いいたい えいがなのか わからないと いいました。} [audio](media:2a0e942fb2998e731492be8c)",
+     "tr": {
+      "ru": "Юки сказала, что тоже не поняла, о чём фильм.",
+      "en": "Yuki said she didn't get what the movie was trying to say either."
+     }
+    }
+   ]
+  },
+  {
+   "unit": "l42",
+   "title": {
+    "ru": "Новые привычки",
+    "en": "New habits"
+   },
+   "q": {
+    "ru": "Что решила Анна?",
+    "en": "What did Anna decide?",
+    "opts": {
+     "ru": [
+      "Вставать рано каждое утро",
+      "Бросить курить",
+      "Сменить работу"
+     ],
+     "en": [
+      "To get up early every morning",
+      "To quit smoking",
+      "To change jobs"
+     ]
+    }
+   },
+   "lines": [
+    {
+     "who": "",
+     "s": "{jk|アンナさんは毎朝早起きすることにしました。|アンナさんは まいあさ はやおきする ことに しました。} [audio](media:f815a82c2cc29e3a4a8b517a)",
+     "tr": {
+      "ru": "Анна решила каждое утро вставать рано.",
+      "en": "Anna decided to get up early every morning."
+     }
+    },
+    {
+     "who": "",
+     "s": "{jk|それから、甘いものをあまり食べないようにしています。|それから、 あまい ものを あまり たべない ように して います。} [audio](media:ea50958f7f9733a6d0874e4d)",
+     "tr": {
+      "ru": "И старается поменьше есть сладкого.",
+      "en": "She's also trying not to eat many sweets."
+     }
+    },
+    {
+     "who": "",
+     "s": "{jk|アルバイトの店では、たばこが吸えないことになりました。|アルバイトの みせでは、 たばこが すえない ことに なりました。} [audio](media:c83abd8413be075017770258)",
+     "tr": {
+      "ru": "В кафе, где она подрабатывает, теперь нельзя курить.",
+      "en": "At the café where she works part-time, smoking is no longer allowed."
+     }
+    },
+    {
+     "who": "",
+     "s": "{jk|アンナさんはたばこを吸わないので、構いません。|アンナさんは たばこを すわないので、 かまいません。} [audio](media:0c93b9e4a6290450d9f069e1)",
+     "tr": {
+      "ru": "Анна не курит, так что ей всё равно.",
+      "en": "Anna doesn't smoke, so she doesn't mind."
+     }
+    }
+   ]
+  },
+  {
+   "unit": "l43",
+   "title": {
+    "ru": "Стажировка",
+    "en": "The internship"
+   },
+   "q": {
+    "ru": "Что сделал президент компании?",
+    "en": "What did the company president do?",
+    "opts": {
+     "ru": [
+      "Посмотрел материалы Анны",
+      "Пригласил её на обед",
+      "Отругал её"
+     ],
+     "en": [
+      "Looked at Anna's materials",
+      "Invited her to lunch",
+      "Scolded her"
+     ]
+    }
+   },
+   "lines": [
+    {
+     "who": "",
+     "s": "{jk|アンナさんは会社でインターンをしています。|アンナさんは かいしゃで インターンを して います。} [audio](media:de362ad2e2743ed5bc62db26)",
+     "tr": {
+      "ru": "Анна проходит стажировку в компании.",
+      "en": "Anna is doing an internship at a company."
+     }
+    },
+    {
+     "who": "",
+     "s": "{jk|今日は社長が会議室にいらっしゃいました。|きょうは しゃちょうが かいぎしつに いらっしゃいました。} [audio](media:e3d45a206ec47a728be96eec)",
+     "tr": {
+      "ru": "Сегодня в переговорную пришёл президент компании.",
+      "en": "Today the company president came to the meeting room."
+     }
+    },
+    {
+     "who": "",
+     "s": "{jk|社長は「ロシアの方ですか」とおっしゃいました。|しゃちょうは 「ロシアの かたですか」と おっしゃいました。} [audio](media:e907a9d7f463a4820f840691)",
+     "tr": {
+      "ru": "Президент спросил: «Вы из России?»",
+      "en": "The president said, \"Are you from Russia?\""
+     }
+    },
+    {
+     "who": "",
+     "s": "{jk|そして、アンナさんが作った資料をご覧になりました。|そして、 アンナさんが つくった しりょうを ごらんに なりました。} [audio](media:a04ef8322465741a839c878a)",
+     "tr": {
+      "ru": "И посмотрел материалы, которые подготовила Анна.",
+      "en": "And he looked at the materials Anna had prepared."
+     }
+    }
+   ]
+  },
+  {
+   "unit": "l44",
+   "title": {
+    "ru": "Гость",
+    "en": "A guest"
+   },
+   "q": {
+    "ru": "Что сказал гость?",
+    "en": "What did the guest say?",
+    "opts": {
+     "ru": [
+      "Похвалил её вежливый японский",
+      "Попросил чаю",
+      "Спросил дорогу"
+     ],
+     "en": [
+      "Praised her polite Japanese",
+      "Asked for tea",
+      "Asked for directions"
+     ]
+    }
+   },
+   "lines": [
+    {
+     "who": "",
+     "s": "{jk|アンナさんはお客様を会議室へご案内しました。|アンナさんは おきゃくさまを かいぎしつへ ごあんないしました。} [audio](media:ae585221d4747484dd8807d4)",
+     "tr": {
+      "ru": "Анна проводила гостя в переговорную.",
+      "en": "Anna showed the guest to the meeting room."
+     }
+    },
+    {
+     "who": "アンナ",
+     "s": "{jk|わたくしはインターンのアンナと申します。|わたくしは インターンの アンナと もうします。} [audio](media:726f018ed45361d78904e7de)",
+     "tr": {
+      "ru": "Меня зовут Анна, я стажёр.",
+      "en": "My name is Anna; I'm an intern."
+     }
+    },
+    {
+     "who": "アンナ",
+     "s": "{jk|お荷物をお持ちしましょうか。|おにもつを おもちしましょうか。} [audio](media:62ddffaa0106f6117f495277)",
+     "tr": {
+      "ru": "Позвольте, я понесу ваш багаж.",
+      "en": "Shall I carry your luggage?"
+     }
+    },
+    {
+     "who": "",
+     "s": "{jk|お客様は「丁寧な日本語ですね」と褒めてくださいました。|おきゃくさまは 「ていねいな にほんごですね」と ほめて くださいました。} [audio](media:32c8578dee701a9b9834f632)",
+     "tr": {
+      "ru": "Гость похвалил: «Какой у вас вежливый японский!»",
+      "en": "The guest kindly praised her: \"Your Japanese is so polite.\""
+     }
+    }
+   ]
+  },
+  {
+   "unit": "l45",
+   "title": {
+    "ru": "Автошкола",
+    "en": "Driving school"
+   },
+   "q": {
+    "ru": "Что нужно делать на красный, по словам инструктора?",
+    "en": "What does the instructor say to do at a red light?",
+    "opts": {
+     "ru": [
+      "Остановиться",
+      "Ехать дальше",
+      "Посигналить"
+     ],
+     "en": [
+      "Stop",
+      "Keep going",
+      "Honk"
+     ]
+    }
+   },
+   "lines": [
+    {
+     "who": "",
+     "s": "{jk|ゆきさんは車の免許を取るために、教習所に通っています。|ゆきさんは くるまの めんきょを とる ために、 きょうしゅうじょに かよって います。} [audio](media:d6e6f1155ba576a9f36dceec)",
+     "tr": {
+      "ru": "Юки ходит в автошколу, чтобы получить права.",
+      "en": "Yuki is going to driving school to get her licence."
+     }
+    },
+    {
+     "who": "",
+     "s": "{jk|教官は「信号が赤のときは止まれ！」と大きい声で言います。|きょうかんは 「しんごうが あかの ときは とまれ！」と おおきい こえで いいます。} [audio](media:c0e08db2d768cf4197b6c96e)",
+     "tr": {
+      "ru": "Инструктор громко командует: «На красный — стоять!»",
+      "en": "The instructor shouts, \"Stop when the light is red!\""
+     }
+    },
+    {
+     "who": "",
+     "s": "{jk|「ここに車を止めるな」という意味のマークもあります。|「ここに くるまを とめるな」と いう いみの マークも あります。} [audio](media:31d2d00a8214fc5e8d4b708d)",
+     "tr": {
+      "ru": "Есть и знак, который значит «здесь не парковаться».",
+      "en": "There's also a sign that means \"Don't park here.\""
+     }
+    },
+    {
+     "who": "",
+     "s": "{jk|ゆきさんは「怖いけど、頑張れ、私」と言っています。|ゆきさんは 「こわいけど、 がんばれ、 わたし」と いって います。} [audio](media:24cfbf632184db135cfd212c)",
+     "tr": {
+      "ru": "Юки говорит себе: «Страшно, но держись!»",
+      "en": "Yuki tells herself, \"It's scary, but hang in there!\""
+     }
+    }
+   ]
+  },
+  {
+   "unit": "l46",
+   "title": {
+    "ru": "Токио или Осака?",
+    "en": "Tokyo or Osaka?"
+   },
+   "q": {
+    "ru": "Почему Анне больше нравится Осака?",
+    "en": "Why does Anna prefer Osaka?",
+    "opts": {
+     "ru": [
+      "Там вкусная еда",
+      "Там больше магазинов",
+      "Там живёт Юки"
+     ],
+     "en": [
+      "The food is good",
+      "There are more shops",
+      "Yuki lives there"
+     ]
+    }
+   },
+   "lines": [
+    {
+     "who": "ゆき",
+     "s": "{jk|東京と大阪と、どちらが好き？|とうきょうと おおさかと、 どちらが すき？} [audio](media:66d0a64e2c914f16a0fd26a0)",
+     "tr": {
+      "ru": "Что тебе больше нравится — Токио или Осака?",
+      "en": "Which do you like better, Tokyo or Osaka?"
+     }
+    },
+    {
+     "who": "アンナ",
+     "s": "{jk|大阪の方が好き。食べ物がおいしいから。|おおさかの ほうが すき。 たべものが おいしいから。} [audio](media:56174c41541d2841580cb923)",
+     "tr": {
+      "ru": "Осака. Там еда вкуснее.",
+      "en": "Osaka. Because the food's good."
+     }
+    },
+    {
+     "who": "ゆき",
+     "s": "{jk|でも、東京ほど賑やかじゃないよね。|でも、 とうきょうほど にぎやかじゃ ないよね。} [audio](media:f2a034823c94c3d00e02caf1)",
+     "tr": {
+      "ru": "Но там не так оживлённо, как в Токио.",
+      "en": "But it's not as lively as Tokyo."
+     }
+    },
+    {
+     "who": "アンナ",
+     "s": "{jk|うん。だから、私には大阪の方がいいんだ。|うん。 だから、 わたしには おおさかの ほうが いいんだ。} [audio](media:248e9181fe801d511b9ecbd9)",
+     "tr": {
+      "ru": "Ага. Поэтому мне Осака больше и подходит.",
+      "en": "Yeah. That's why Osaka suits me better."
+     }
+    }
+   ]
+  },
+  {
+   "unit": "l47",
+   "title": {
+    "ru": "Сроки",
+    "en": "Deadlines"
+   },
+   "q": {
+    "ru": "До какого дня нужно сдать доклад?",
+    "en": "When is the report due?",
+    "opts": {
+     "ru": [
+      "До пятницы",
+      "До понедельника",
+      "До конца месяца"
+     ],
+     "en": [
+      "By Friday",
+      "By Monday",
+      "By the end of the month"
+     ]
+    }
+   },
+   "lines": [
+    {
+     "who": "",
+     "s": "{jk|レポートの締め切りは金曜日までです。|レポートの しめきりは きんようびまでです。} [audio](media:61e1cf32b1578163ae5cc96c)",
+     "tr": {
+      "ru": "Доклад нужно сдать до пятницы.",
+      "en": "The report is due by Friday."
+     }
+    },
+    {
+     "who": "",
+     "s": "{jk|忘れないうちに、メモをまとめておきます。|わすれない うちに、 メモを まとめて おきます。} [audio](media:23e7f2485f5f05c9111941cf)",
+     "tr": {
+      "ru": "Пока не забыла, Анна приводит в порядок записи.",
+      "en": "She organises her notes while she still remembers."
+     }
+    },
+    {
+     "who": "",
+     "s": "{jk|ゆきさんが旅行している間に、ゆきさんの荷物が届きました。|ゆきさんが りょこうして いる あいだに、 ゆきさんの にもつが とどきました。} [audio](media:d28459fa32114126288da37a)",
+     "tr": {
+      "ru": "Пока Юки путешествовала, пришла её посылка.",
+      "en": "While Yuki was travelling, her package arrived."
+     }
+    },
+    {
+     "who": "",
+     "s": "{jk|アンナさんはゆきさんの留守の間、荷物を預かっています。|アンナさんは ゆきさんの るすの あいだ、 にもつを あずかって います。} [audio](media:0becfca2fece8769c13fafc9)",
+     "tr": {
+      "ru": "Пока Юки нет, посылка хранится у Анны.",
+      "en": "While Yuki is away, Anna is looking after the package."
+     }
+    }
+   ]
+  },
+  {
+   "unit": "l48",
+   "title": {
+    "ru": "Странный сон",
+    "en": "A strange dream"
+   },
+   "q": {
+    "ru": "Каким был сон Анны?",
+    "en": "What was Anna's dream like?",
+    "opts": {
+     "ru": [
+      "Будто она шла по облакам",
+      "Будто она летела на самолёте",
+      "Будто она плыла в море"
+     ],
+     "en": [
+      "As if she were walking on clouds",
+      "As if she were flying a plane",
+      "As if she were swimming in the sea"
+     ]
+    }
+   },
+   "lines": [
+    {
+     "who": "",
+     "s": "{jk|ゆうべ、アンナさんは不思議な夢を見ました。|ゆうべ、 アンナさんは ふしぎな ゆめを みました。} [audio](media:1079a8dcad9d49e32f79ad28)",
+     "tr": {
+      "ru": "Прошлой ночью Анне приснился странный сон.",
+      "en": "Last night Anna had a strange dream."
+     }
+    },
+    {
+     "who": "",
+     "s": "{jk|雲の上を歩いているみたいでした。|くもの うえを あるいて いる みたいでした。} [audio](media:dabedb98db6f509301b103d8)",
+     "tr": {
+      "ru": "Будто она шла по облакам.",
+      "en": "It was as if she were walking on the clouds."
+     }
+    },
+    {
+     "who": "",
+     "s": "{jk|星が宝石のように光っていました。|ほしが ほうせきの ように ひかって いました。} [audio](media:96b7212ea7aa7f1b91fbb042)",
+     "tr": {
+      "ru": "Звёзды сияли, как драгоценные камни.",
+      "en": "The stars were shining like jewels."
+     }
+    },
+    {
+     "who": "",
+     "s": "{jk|ゆきさんに話したら、「まるで映画みたいだね」と言いました。|ゆきさんに はなしたら、 「まるで えいがみたいだね」と いいました。} [audio](media:008289be7d9ce014d54f8e29)",
+     "tr": {
+      "ru": "Когда она рассказала Юки, та сказала: «Прямо как в кино!»",
+      "en": "When she told Yuki, Yuki said, \"It's just like a movie!\""
+     }
+    }
+   ]
+  },
+  {
+   "unit": "l49",
+   "title": {
+    "ru": "Без зонта",
+    "en": "Without an umbrella"
+   },
+   "q": {
+    "ru": "Почему Анна промокла?",
+    "en": "Why did Anna get wet?",
+    "opts": {
+     "ru": [
+      "Вышла без зонта",
+      "Упала в реку",
+      "Мыла машину"
+     ],
+     "en": [
+      "She went out without an umbrella",
+      "She fell in a river",
+      "She was washing a car"
+     ]
+    }
+   },
+   "lines": [
+    {
+     "who": "",
+     "s": "{jk|今朝は朝ご飯を食べずに家を出ました。|けさは あさごはんを たべずに いえを でました。} [audio](media:bf1f34817bb9eb40064eb1d6)",
+     "tr": {
+      "ru": "Сегодня Анна ушла из дома, не позавтракав.",
+      "en": "This morning Anna left home without eating breakfast."
+     }
+    },
+    {
+     "who": "",
+     "s": "{jk|傘も持たずに出かけたので、雨に濡れました。|かさも もたずに でかけたので、 あめに ぬれました。} [audio](media:8aaf205257ed3c9da753c666)",
+     "tr": {
+      "ru": "И без зонта — так что промокла под дождём.",
+      "en": "She went out without an umbrella too, so she got wet in the rain."
+     }
+    },
+    {
+     "who": "",
+     "s": "{jk|風邪をひいたゆきさんの代わりに、アンナさんがアルバイトに行きました。|かぜを ひいた ゆきさんの かわりに、 アンナさんが アルバイトに いきました。} [audio](media:13f3f449e544784b88bf98d9)",
+     "tr": {
+      "ru": "Вместо простывшей Юки на подработку пошла Анна.",
+      "en": "Anna went to work in place of Yuki, who had a cold."
+     }
+    },
+    {
+     "who": "",
+     "s": "{jk|仕事の後、牛乳の代わりに豆乳を買って帰りました。|しごとの あと、 ぎゅうにゅうの かわりに とうにゅうを かって かえりました。} [audio](media:3b11a925682ddf530c12432c)",
+     "tr": {
+      "ru": "После работы купила вместо молока соевое.",
+      "en": "After work, she bought soy milk instead of milk on the way home."
+     }
+    }
+   ]
+  },
+  {
+   "unit": "l50",
+   "title": {
+    "ru": "Знобит",
+    "en": "Feeling chilly"
+   },
+   "q": {
+    "ru": "Как себя чувствует Анна?",
+    "en": "How is Anna feeling?",
+    "opts": {
+     "ru": [
+      "Её знобит — кажется, простуда",
+      "Она очень весёлая",
+      "Ей хочется есть"
+     ],
+     "en": [
+      "She feels chilly — maybe a cold",
+      "She's very cheerful",
+      "She's hungry"
+     ]
+    }
+   },
+   "lines": [
+    {
+     "who": "",
+     "s": "{jk|最近、アンナさんはなんだか寒気がします。|さいきん、 アンナさんは なんだか さむけが します。} [audio](media:9caea57cf17b162a1ff468b0)",
+     "tr": {
+      "ru": "В последнее время Анну как-то знобит.",
+      "en": "Lately Anna has been feeling chilly somehow."
+     }
+    },
+    {
+     "who": "",
+     "s": "{jk|風邪をひいたような気がします。|かぜを ひいた ような きが します。} [audio](media:72c7fe40a971ed5191cda62d)",
+     "tr": {
+      "ru": "Кажется, она простудилась.",
+      "en": "She feels like she's caught a cold."
+     }
+    },
+    {
+     "who": "",
+     "s": "{jk|先生に「試験の日を教えていただけませんか」と頼みました。|せんせいに 「しけんの ひを おしえて いただけませんか」と たのみました。} [audio](media:6338a6998d54bc6462691bdf)",
+     "tr": {
+      "ru": "Она попросила учителя: «Не могли бы вы сказать дату экзамена?»",
+      "en": "She asked the teacher, \"Could you tell me the date of the exam?\""
+     }
+    },
+    {
+     "who": "",
+     "s": "{jk|先生は「早く元気になってほしい」と言ってくださいました。|せんせいは 「はやく げんきに なって ほしい」と いって くださいました。} [audio](media:d32ffc88552feb4d61d8875b)",
+     "tr": {
+      "ru": "Учитель ответил: «Поскорее поправляйтесь».",
+      "en": "The teacher said, \"I want you to get well soon.\""
+     }
+    }
+   ]
+  }
+ ],
  "media": {
   "file": "ja-n4.audio.mp3",
   "type": "audio/mpeg",
@@ -11278,6 +12705,406 @@
    "641a696faa7d5fcde71d48e1": [
     10012569,
     6189
+   ],
+   "080df97113c31fb1ef6395f0": [
+    10018758,
+    21933
+   ],
+   "b350d5ddbf6be14fc27bd547": [
+    10040691,
+    33261
+   ],
+   "a053ab05f8a8edb00a7a18ef": [
+    10073952,
+    20781
+   ],
+   "214e4b2253135ebd21b46fad": [
+    10094733,
+    24045
+   ],
+   "7cfdb3ae23d271e8a966f9ef": [
+    10118778,
+    25389
+   ],
+   "fb57c709b8986f5ea8d1d418": [
+    10144167,
+    23853
+   ],
+   "821ae9c40004035b107d2f7a": [
+    10168020,
+    34797
+   ],
+   "32826725d28d439c0dd4737b": [
+    10202817,
+    24621
+   ],
+   "d19920424543a68cf6b83751": [
+    10227438,
+    24813
+   ],
+   "05d1b5c3543b986262079297": [
+    10252251,
+    22317
+   ],
+   "1fee2b0a1ef229ef27e94105": [
+    10274568,
+    25773
+   ],
+   "8a2cf5ac0dfdc72943b12cca": [
+    10300341,
+    35757
+   ],
+   "b68bae72be289e941d4c32b8": [
+    10336098,
+    25581
+   ],
+   "b5a5c69fda2632f3d86272c7": [
+    10361679,
+    16173
+   ],
+   "4e77691a8844af604e26c047": [
+    10377852,
+    33837
+   ],
+   "e24b8cf748c05a5d9b546eea": [
+    10411689,
+    31149
+   ],
+   "2e4a506fdec0dff5d41e7df9": [
+    10442838,
+    19053
+   ],
+   "f9dbd23176b6c1ea52425c69": [
+    10461891,
+    28269
+   ],
+   "c920736fc23b8943b0ead799": [
+    10490160,
+    23469
+   ],
+   "acbe33e48f083a9a5f044f2b": [
+    10513629,
+    31149
+   ],
+   "6c33b24418b7e2514f7cf99b": [
+    10544778,
+    29805
+   ],
+   "9ebe1028d9010f9a706df9f8": [
+    10574583,
+    21165
+   ],
+   "c30ed44b7f47be42ba1c6846": [
+    10595748,
+    30765
+   ],
+   "e625f0695f0988438c24c6cd": [
+    10626513,
+    19821
+   ],
+   "96fe3819f589eaa28d66fcae": [
+    10646334,
+    27117
+   ],
+   "28dd42d172b8eda95e4aaf4c": [
+    10673451,
+    26349
+   ],
+   "0c8cef9b6efbc634ac912887": [
+    10699800,
+    36909
+   ],
+   "c8300b58e625b09ef1ec4b9a": [
+    10736709,
+    29613
+   ],
+   "d3308ef3653ca74df0cb8d33": [
+    10766322,
+    35949
+   ],
+   "3f6812a640286e8c23f2787b": [
+    10802271,
+    26733
+   ],
+   "47c9656993a3d182b2de6203": [
+    10829004,
+    34221
+   ],
+   "83f6f081ff8a4f1a6cc91a03": [
+    10863225,
+    25389
+   ],
+   "0e41e24bb3afdcbc39ce7c95": [
+    10888614,
+    37677
+   ],
+   "6aae6924388b07141cc2bab9": [
+    10926291,
+    24621
+   ],
+   "536714296a848d6e5ad54dad": [
+    10950912,
+    29229
+   ],
+   "2815788143afd99528d7404c": [
+    10980141,
+    21933
+   ],
+   "c0d0d87e926c77af2f81831a": [
+    11002074,
+    28653
+   ],
+   "810446f5cf6a795300a446c0": [
+    11030727,
+    22509
+   ],
+   "e6be5d065c3f4f54b3743449": [
+    11053236,
+    22893
+   ],
+   "b18c230b03ad947a8b8e6d96": [
+    11076129,
+    26541
+   ],
+   "f02f1850aea28d264ed1ef3a": [
+    11102670,
+    26541
+   ],
+   "0e560cd86a47cc20f9fc4762": [
+    11129211,
+    22509
+   ],
+   "dcc329ba4ec6d3b807e2b195": [
+    11151720,
+    24621
+   ],
+   "d82a0ad7c48060447499fb4a": [
+    11176341,
+    27501
+   ],
+   "614179dc1ab72f768ac3b27e": [
+    11203842,
+    21549
+   ],
+   "517db5eb9ba718c6e4b6e188": [
+    11225391,
+    38061
+   ],
+   "456c942834c3779f890f7844": [
+    11263452,
+    30573
+   ],
+   "2a502c6c65a9ae5768426b2f": [
+    11294025,
+    39981
+   ],
+   "5d8038078adb66ae56ffee1b": [
+    11334006,
+    25005
+   ],
+   "3811fedf1ed54c14647c4657": [
+    11359011,
+    22317
+   ],
+   "5a2cbd69b48105274ea9998f": [
+    11381328,
+    24429
+   ],
+   "d21934eab1a50b5994ff0843": [
+    11405757,
+    29037
+   ],
+   "61a19328e4e75ac4f3e95b82": [
+    11434794,
+    27501
+   ],
+   "445f09ff7ac14d353026b817": [
+    11462295,
+    22893
+   ],
+   "ecc404348e58dbbfec06fa87": [
+    11485188,
+    28845
+   ],
+   "29ecc8a1f59e6a0ffc9f6f71": [
+    11514033,
+    23277
+   ],
+   "143ecc30ea6b85e84590a3dc": [
+    11537310,
+    30765
+   ],
+   "f0126a0fb1cc0c69812741cc": [
+    11568075,
+    22317
+   ],
+   "13db22658d3122af62708929": [
+    11590392,
+    23661
+   ],
+   "a1c63c9626cb0395c8dc4d09": [
+    11614053,
+    24237
+   ],
+   "f5276e836df01250295e7b60": [
+    11638290,
+    29997
+   ],
+   "8e0826c36752e136ca30390a": [
+    11668287,
+    30381
+   ],
+   "760d0297016ffdf517b13086": [
+    11698668,
+    25773
+   ],
+   "2a0e942fb2998e731492be8c": [
+    11724441,
+    29037
+   ],
+   "f815a82c2cc29e3a4a8b517a": [
+    11753478,
+    24621
+   ],
+   "ea50958f7f9733a6d0874e4d": [
+    11778099,
+    29229
+   ],
+   "c83abd8413be075017770258": [
+    11807328,
+    29805
+   ],
+   "0c93b9e4a6290450d9f069e1": [
+    11837133,
+    26925
+   ],
+   "de362ad2e2743ed5bc62db26": [
+    11864058,
+    22125
+   ],
+   "e3d45a206ec47a728be96eec": [
+    11886183,
+    22893
+   ],
+   "e907a9d7f463a4820f840691": [
+    11909076,
+    29805
+   ],
+   "a04ef8322465741a839c878a": [
+    11938881,
+    30189
+   ],
+   "ae585221d4747484dd8807d4": [
+    11969070,
+    28077
+   ],
+   "726f018ed45361d78904e7de": [
+    11997147,
+    21357
+   ],
+   "62ddffaa0106f6117f495277": [
+    12018504,
+    15597
+   ],
+   "32c8578dee701a9b9834f632": [
+    12034101,
+    37677
+   ],
+   "d6e6f1155ba576a9f36dceec": [
+    12071778,
+    36141
+   ],
+   "c0e08db2d768cf4197b6c96e": [
+    12107919,
+    37677
+   ],
+   "31d2d00a8214fc5e8d4b708d": [
+    12145596,
+    29613
+   ],
+   "24cfbf632184db135cfd212c": [
+    12175209,
+    40557
+   ],
+   "66d0a64e2c914f16a0fd26a0": [
+    12215766,
+    22509
+   ],
+   "56174c41541d2841580cb923": [
+    12238275,
+    26349
+   ],
+   "f2a034823c94c3d00e02caf1": [
+    12264624,
+    22509
+   ],
+   "248e9181fe801d511b9ecbd9": [
+    12287133,
+    30189
+   ],
+   "61e1cf32b1578163ae5cc96c": [
+    12317322,
+    21549
+   ],
+   "23e7f2485f5f05c9111941cf": [
+    12338871,
+    25005
+   ],
+   "d28459fa32114126288da37a": [
+    12363876,
+    35181
+   ],
+   "0becfca2fece8769c13fafc9": [
+    12399057,
+    32493
+   ],
+   "1079a8dcad9d49e32f79ad28": [
+    12431550,
+    25965
+   ],
+   "dabedb98db6f509301b103d8": [
+    12457515,
+    18669
+   ],
+   "96b7212ea7aa7f1b91fbb042": [
+    12476184,
+    20589
+   ],
+   "008289be7d9ce014d54f8e29": [
+    12496773,
+    34221
+   ],
+   "bf1f34817bb9eb40064eb1d6": [
+    12530994,
+    21933
+   ],
+   "8aaf205257ed3c9da753c666": [
+    12552927,
+    26925
+   ],
+   "13f3f449e544784b88bf98d9": [
+    12579852,
+    35181
+   ],
+   "3b11a925682ddf530c12432c": [
+    12615033,
+    32877
+   ],
+   "9caea57cf17b162a1ff468b0": [
+    12647910,
+    27117
+   ],
+   "72c7fe40a971ed5191cda62d": [
+    12675027,
+    17325
+   ],
+   "6338a6998d54bc6462691bdf": [
+    12692352,
+    37677
+   ],
+   "d32ffc88552feb4d61d8875b": [
+    12730029,
+    37101
    ]
   },
   "words": {
