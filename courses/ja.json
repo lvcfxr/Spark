@@ -3011,6 +3011,23 @@
    }
   },
   {
+   "id": "l01-dlg",
+   "unit": "l01",
+   "front": "A: {jk|はじめまして。アンナです。ロシア人です。|はじめまして。 アンナです。 ロシアじんです。} [audio](media:5faeaead1b4d8d68ea348be8)\nB: {jk|田中です。よろしくお願いします。|たなかです。 よろしく おねがいします。} [audio](media:d68145dbe2e8bba09d874a33)\nA: {jk|田中さんは学生ですか。|たなかさんは がくせいですか。} [audio](media:5bce3ccea5caabec7f26fed3)\nB: {jk|いいえ、学生じゃありません。会社員です。|いいえ、 がくせいじゃ ありません。 かいしゃいんです。} [audio](media:4db4249ce66c02459d421e02)",
+   "hint": "",
+   "notype": true,
+   "opt": true,
+   "dlg": true,
+   "back": {
+    "ru": "A: Здравствуйте, я Анна. Я из России.\nB: Я Танака. Очень приятно.\nA: Танака-сан, вы студент?\nB: Нет, не студент. Я служащий.",
+    "en": "A: Nice to meet you. I'm Anna. I'm Russian.\nB: I'm Tanaka. Pleased to meet you.\nA: Are you a student, Mr Tanaka?\nB: No, I'm not a student. I work for a company."
+   },
+   "extra": {
+    "ru": "*A: hajimemashite. anna desu. roshiajin desu.*\n*B: tanaka desu. yoroshiku onegaishimasu.*\n*A: tanakasan wa gakusei desu ka.*\n*B: iie, gakusei ja arimasen. kaishain desu.*",
+    "en": "*A: hajimemashite. anna desu. roshiajin desu.*\n*B: tanaka desu. yoroshiku onegaishimasu.*\n*A: tanakasan wa gakusei desu ka.*\n*B: iie, gakusei ja arimasen. kaishain desu.*"
+   }
+  },
+  {
    "id": "l02-g-kore",
    "unit": "l02",
    "front": "これ・それ・あれ",
@@ -3194,6 +3211,23 @@
    }
   },
   {
+   "id": "l02-dlg",
+   "unit": "l02",
+   "front": "A: {jk|これは何ですか。|これは なんですか。} [audio](media:8973ab38b921cf8a17598c24)\nB: {jk|それは日本語の辞書です。|それは にほんごの じしょです。} [audio](media:a12c2995de0af6cb95c37be6)\nA: {jk|誰の辞書ですか。|だれの じしょですか。} [audio](media:7cc74bb1ea1efbab3e31ac70)\nB: {jk|私のです。あの傘も私のです。|わたしのです。 あの かさも わたしのです。} [audio](media:d98e74d766f72a72482002e8)",
+   "hint": "",
+   "notype": true,
+   "opt": true,
+   "dlg": true,
+   "back": {
+    "ru": "A: Что это?\nB: Это японский словарь.\nA: Чей это словарь?\nB: Мой. И тот зонт тоже мой.",
+    "en": "A: What is this?\nB: That's a Japanese dictionary.\nA: Whose dictionary is it?\nB: It's mine. That umbrella is mine too."
+   },
+   "extra": {
+    "ru": "*A: kore wa nan desu ka.*\n*B: sore wa nihongo no jisho desu.*\n*A: dare no jisho desu ka.*\n*B: watashi no desu. ano kasa mo watashi no desu.*",
+    "en": "*A: kore wa nan desu ka.*\n*B: sore wa nihongo no jisho desu.*\n*A: dare no jisho desu ka.*\n*B: watashi no desu. ano kasa mo watashi no desu.*"
+   }
+  },
+  {
    "id": "l03-g-koko",
    "unit": "l03",
    "front": "ここ・そこ・あそこ",
@@ -3341,6 +3375,23 @@
    "extra": {
     "ru": "> おくには どちらですか。 [audio](media:60140800958eb7748d112f92)\n> *okuni wa dochira desu ka*\n> — Из какой вы страны?",
     "en": "> おくには どちらですか。 [audio](media:60140800958eb7748d112f92)\n> *okuni wa dochira desu ka*\n> — Which country are you from?"
+   }
+  },
+  {
+   "id": "l03-dlg",
+   "unit": "l03",
+   "front": "A: すみません、 トイレは どこですか。 [audio](media:9c57232e59dacceab90d8a38)\nB: {jk|あそこです。階段の隣です。|あそこです。 かいだんの となりです。} [audio](media:56db166b72beb9648e0b811c)\nA: それから、 この シャツは いくらですか。 [audio](media:7447c979a4e98cb61e22bed8)\nB: {jk|二千円です。|にせんえんです。} [audio](media:0151fbea81eeddbe9073db94)",
+   "hint": "",
+   "notype": true,
+   "opt": true,
+   "dlg": true,
+   "back": {
+    "ru": "A: Извините, где туалет?\nB: Вон там, рядом с лестницей.\nA: И ещё: сколько стоит эта рубашка?\nB: Две тысячи иен.",
+    "en": "A: Excuse me, where is the toilet?\nB: Over there, next to the stairs.\nA: Also, how much is this shirt?\nB: It's two thousand yen."
+   },
+   "extra": {
+    "ru": "*A: sumimasen, toire wa doko desu ka.*\n*B: asoko desu. kaidan no tonari desu.*\n*A: sorekara, kono shatsu wa ikura desu ka.*\n*B: nisen en desu.*",
+    "en": "*A: sumimasen, toire wa doko desu ka.*\n*B: asoko desu. kaidan no tonari desu.*\n*A: sorekara, kono shatsu wa ikura desu ka.*\n*B: nisen en desu.*"
    }
   },
   {
@@ -3541,6 +3592,23 @@
    }
   },
   {
+   "id": "l04-dlg",
+   "unit": "l04",
+   "front": "A: {jk|毎朝何時に起きますか。|まいあさ なんじに おきますか。} [audio](media:f121f53f24bad0f0dff5eae6)\nB: {jk|六時に起きます。九時から五時まで働きます。|ろくじに おきます。 くじから ごじまで はたらきます。} [audio](media:9b3be6d14225b86da5efa327)\nA: {jk|昨日も働きましたか。|きのうも はたらきましたか。} [audio](media:f19a5a07b6b3dfda092951ad)\nB: {jk|いいえ、昨日は休みました。|いいえ、 きのうは やすみました。} [audio](media:04c9015698c8cdf0b5820e94)",
+   "hint": "",
+   "notype": true,
+   "opt": true,
+   "dlg": true,
+   "back": {
+    "ru": "A: Во сколько вы встаёте по утрам?\nB: В шесть. Работаю с девяти до пяти.\nA: Вчера тоже работали?\nB: Нет, вчера отдыхал.",
+    "en": "A: What time do you get up every morning?\nB: At six. I work from nine to five.\nA: Did you work yesterday too?\nB: No, I had yesterday off."
+   },
+   "extra": {
+    "ru": "*A: maiasa nanji ni okimasu ka.*\n*B: rokuji ni okimasu. kuji kara goji made hatarakimasu.*\n*A: kinou mo hatarakimashita ka.*\n*B: iie, kinou wa yasumimashita.*",
+    "en": "*A: maiasa nanji ni okimasu ka.*\n*B: rokuji ni okimasu. kuji kara goji made hatarakimasu.*\n*A: kinou mo hatarakimashita ka.*\n*B: iie, kinou wa yasumimashita.*"
+   }
+  },
+  {
    "id": "l05-g-e-iku",
    "unit": "l05",
    "front": "へ いきます / きます / かえります",
@@ -3721,6 +3789,23 @@
    "extra": {
     "ru": "> いつ にほんへ きましたか。 [audio](media:a7a5a04ed1e2ff778ea1322c)\n> *itsu nihon e kimashita ka*\n> — Когда вы приехали в Японию?",
     "en": "> いつ にほんへ きましたか。 [audio](media:a7a5a04ed1e2ff778ea1322c)\n> *itsu nihon e kimashita ka*\n> — When did you come to Japan?"
+   }
+  },
+  {
+   "id": "l05-dlg",
+   "unit": "l05",
+   "front": "A: {jk|明日どこへ行きますか。|あした どこへ いきますか。} [audio](media:5621c8fbad8bd73b14a903ee)\nB: {jk|友達と京都へ行きます。|ともだちと きょうとへ いきます。} [audio](media:65323659383318a85de813e0)\nA: {jk|新幹線で行きますか。|しんかんせんで いきますか。} [audio](media:b5a734bc5b1454c5c7d724bf)\nB: {jk|いいえ、バスで行きます。安いですから。|いいえ、 バスで いきます。 やすいですから。} [audio](media:fa443bc5c17e0979be6cafe3)",
+   "hint": "",
+   "notype": true,
+   "opt": true,
+   "dlg": true,
+   "back": {
+    "ru": "A: Куда вы завтра едете?\nB: Еду с другом в Киото.\nA: На синкансэне?\nB: Нет, на автобусе — так дешевле.",
+    "en": "A: Where are you going tomorrow?\nB: I'm going to Kyoto with a friend.\nA: Are you going by bullet train?\nB: No, by bus. It's cheaper."
+   },
+   "extra": {
+    "ru": "*A: ashita doko e ikimasu ka.*\n*B: tomodachi to kyouto e ikimasu.*\n*A: shinkansen de ikimasu ka.*\n*B: iie, basu de ikimasu. yasui desu kara.*",
+    "en": "*A: ashita doko e ikimasu ka.*\n*B: tomodachi to kyouto e ikimasu.*\n*A: shinkansen de ikimasu ka.*\n*B: iie, basu de ikimasu. yasui desu kara.*"
    }
   },
   {
@@ -3907,6 +3992,23 @@
    }
   },
   {
+   "id": "l06-dlg",
+   "unit": "l06",
+   "front": "A: {jk|一緒に昼ご飯を食べませんか。|いっしょに ひるごはんを たべませんか。} [audio](media:fb8c5bf0d1042d7241e01aa0)\nB: {jk|いいですね。どこで食べましょうか。|いいですね。 どこで たべましょうか。} [audio](media:550ada86991b08ccb37826ff)\nA: {jk|駅の前のレストランで食べましょう。|えきの まえの レストランで たべましょう。} [audio](media:3c47c9802703dff98319438c)\nB: はい、 そう しましょう。 [audio](media:fe7a0ab3fc7ff3adbd073bf3)",
+   "hint": "",
+   "notype": true,
+   "opt": true,
+   "dlg": true,
+   "back": {
+    "ru": "A: Не хотите вместе пообедать?\nB: Отличная идея. Где поедим?\nA: Давайте в ресторане у станции.\nB: Да, давайте.",
+    "en": "A: Would you like to have lunch together?\nB: Sounds good. Where shall we eat?\nA: Let's eat at the restaurant in front of the station.\nB: Yes, let's do that."
+   },
+   "extra": {
+    "ru": "*A: issho ni hirugohan o tabemasen ka.*\n*B: ii desu ne. doko de tabemashou ka.*\n*A: eki no mae no resutoran de tabemashou.*\n*B: hai, sou shimashou.*",
+    "en": "*A: issho ni hirugohan o tabemasen ka.*\n*B: ii desu ne. doko de tabemashou ka.*\n*A: eki no mae no resutoran de tabemashou.*\n*B: hai, sou shimashou.*"
+   }
+  },
+  {
    "id": "l07-g-de-tool",
    "unit": "l07",
    "front": "で — чем, на каком языке",
@@ -4087,6 +4189,23 @@
    "extra": {
     "ru": "> きれいな はなですね。 [audio](media:26a74d90bd6cef4ba9f8c1e7)\n> *kireina hana desu ne*\n> — Какой красивый цветок!",
     "en": "> きれいな はなですね。 [audio](media:26a74d90bd6cef4ba9f8c1e7)\n> *kireina hana desu ne*\n> — What a beautiful flower!"
+   }
+  },
+  {
+   "id": "l07-dlg",
+   "unit": "l07",
+   "front": "A: {jk|素敵な時計ですね。|すてきな とけいですね。} [audio](media:e6c567f9ea01a4f862806c2e)\nB: {jk|ありがとう。父にもらいました。|ありがとう。 ちちに もらいました。} [audio](media:2dce165599d9a2c1f08ce214)\nA: {jk|私は母に花をあげました。|わたしは ははに はなを あげました。} [audio](media:27d2cfb355b81b94ff571583)\nB: {jk|お母さんはもう花を見ましたか。|おかあさんは もう はなを みましたか。} [audio](media:6382b800ab3ec6f6b61057e3)",
+   "hint": "",
+   "notype": true,
+   "opt": true,
+   "dlg": true,
+   "back": {
+    "ru": "A: Какие красивые часы!\nB: Спасибо. Мне подарил отец.\nA: А я подарила маме цветы.\nB: Мама уже их увидела?",
+    "en": "A: What a lovely watch.\nB: Thanks. My father gave it to me.\nA: I gave my mother flowers.\nB: Has your mother seen them yet?"
+   },
+   "extra": {
+    "ru": "*A: sutekina tokei desu ne.*\n*B: arigatou. chichi ni moraimashita.*\n*A: watashi wa haha ni hana o agemashita.*\n*B: okaasan wa mou hana o mimashita ka.*",
+    "en": "*A: sutekina tokei desu ne.*\n*B: arigatou. chichi ni moraimashita.*\n*A: watashi wa haha ni hana o agemashita.*\n*B: okaasan wa mou hana o mimashita ka.*"
    }
   },
   {
@@ -4287,6 +4406,23 @@
    }
   },
   {
+   "id": "l08-dlg",
+   "unit": "l08",
+   "front": "A: {jk|日本の生活はどうですか。|にほんの せいかつは どうですか。} [audio](media:c3662835df1ea1dd6a4cf5d8)\nB: {jk|とても楽しいです。でも、物が高いです。|とても たのしいです。 でも、 ものが たかいです。} [audio](media:6fb55e95c270172d846b2444)\nA: {jk|部屋はどんな部屋ですか。|へやは どんな へやですか。} [audio](media:a48484f52e121c3b65cdb7fb)\nB: {jk|小さいですが、きれいで静かです。|ちいさいですが、 きれいで しずかです。} [audio](media:facb52e473fd3e66bed50624)",
+   "hint": "",
+   "notype": true,
+   "opt": true,
+   "dlg": true,
+   "back": {
+    "ru": "A: Как жизнь в Японии?\nB: Очень интересно. Но всё дорого.\nA: А какая у вас комната?\nB: Маленькая, но чистая и тихая.",
+    "en": "A: How's life in Japan?\nB: It's a lot of fun. But things are expensive.\nA: What's your room like?\nB: It's small, but clean and quiet."
+   },
+   "extra": {
+    "ru": "*A: nihon no seikatsu wa dou desu ka.*\n*B: totemo tanoshii desu. demo, mono ga takai desu.*\n*A: heya wa donna heya desu ka.*\n*B: chiisai desu ga, kirei de shizuka desu.*",
+    "en": "*A: nihon no seikatsu wa dou desu ka.*\n*B: totemo tanoshii desu. demo, mono ga takai desu.*\n*A: heya wa donna heya desu ka.*\n*B: chiisai desu ga, kirei de shizuka desu.*"
+   }
+  },
+  {
    "id": "l09-g-ga-suki",
    "unit": "l09",
    "front": "が すきです / じょうずです / わかります",
@@ -4448,6 +4584,23 @@
    "extra": {
     "ru": "> どうして きのう やすみましたか。 [audio](media:42bd6a387c7bc9196284d2e9)\n> *doushite kinou yasumimashita ka*\n> — Почему вы вчера не пришли?",
     "en": "> どうして きのう やすみましたか。 [audio](media:42bd6a387c7bc9196284d2e9)\n> *doushite kinou yasumimashita ka*\n> — Why were you absent yesterday?"
+   }
+  },
+  {
+   "id": "l09-dlg",
+   "unit": "l09",
+   "front": "A: {jk|どんな食べ物が好きですか。|どんな たべものが すきですか。} [audio](media:2e287f1e499ab07f46dd6d1a)\nB: {jk|寿司が好きです。でも、納豆は嫌いです。|すしが すきです。 でも、 なっとうは きらいです。} [audio](media:3d1dab0bdb7eb5a936a7a16e)\nA: {jk|料理が上手ですか。|りょうりが じょうずですか。} [audio](media:0317b90224c0ee68bc21c9f8)\nB: {jk|いいえ、下手です。時間がありませんから。|いいえ、 へたです。 じかんが ありませんから。} [audio](media:8bf528cb5a35361a10f5ec62)",
+   "hint": "",
+   "notype": true,
+   "opt": true,
+   "dlg": true,
+   "back": {
+    "ru": "A: Какую еду вы любите?\nB: Люблю суши. А вот натто не люблю.\nA: Вы хорошо готовите?\nB: Нет, плохо — времени нет.",
+    "en": "A: What kind of food do you like?\nB: I like sushi. But I don't like natto.\nA: Are you a good cook?\nB: No, I'm bad at it. I don't have time."
+   },
+   "extra": {
+    "ru": "*A: donna tabemono ga suki desu ka.*\n*B: sushi ga suki desu. demo, nattou wa kirai desu.*\n*A: ryouri ga jouzu desu ka.*\n*B: iie, heta desu. jikan ga arimasen kara.*",
+    "en": "*A: donna tabemono ga suki desu ka.*\n*B: sushi ga suki desu. demo, nattou wa kirai desu.*\n*A: ryouri ga jouzu desu ka.*\n*B: iie, heta desu. jikan ga arimasen kara.*"
    }
   },
   {
@@ -4615,6 +4768,23 @@
    }
   },
   {
+   "id": "l10-dlg",
+   "unit": "l10",
+   "front": "A: {jk|すみません、近くに銀行がありますか。|すみません、 ちかくに ぎんこうが ありますか。} [audio](media:9e3276d97290ba880dc5b67d)\nB: {jk|ええ、駅の隣にあります。|ええ、 えきの となりに あります。} [audio](media:e73205ceda33d02c992d2d3e)\nA: {jk|駅の前に誰がいますか。|えきの まえに だれが いますか。} [audio](media:bc83073855100f3c1deb984a)\nB: {jk|山田さんです。犬もいます。|やまださんです。 いぬも います。} [audio](media:9ef6216360d9167c95db1599)",
+   "hint": "",
+   "notype": true,
+   "opt": true,
+   "dlg": true,
+   "back": {
+    "ru": "A: Извините, здесь рядом есть банк?\nB: Да, рядом со станцией.\nA: А кто это у станции?\nB: Ямада-сан. И собака с ним.",
+    "en": "A: Excuse me, is there a bank nearby?\nB: Yes, next to the station.\nA: Who's that in front of the station?\nB: That's Mr Yamada. His dog is there too."
+   },
+   "extra": {
+    "ru": "*A: sumimasen, chikaku ni ginkou ga arimasu ka.*\n*B: ee, eki no tonari ni arimasu.*\n*A: eki no mae ni dare ga imasu ka.*\n*B: yamadasan desu. inu mo imasu.*",
+    "en": "*A: sumimasen, chikaku ni ginkou ga arimasu ka.*\n*B: ee, eki no tonari ni arimasu.*\n*A: eki no mae ni dare ga imasu ka.*\n*B: yamadasan desu. inu mo imasu.*"
+   }
+  },
+  {
    "id": "l11-g-counters",
    "unit": "l11",
    "front": "Счётные суффиксы",
@@ -4779,6 +4949,23 @@
    }
   },
   {
+   "id": "l11-dlg",
+   "unit": "l11",
+   "front": "A: {jk|切符を二枚ください。|きっぷを にまい ください。} [audio](media:55ee45c2db580e2924ea6fec)\nB: {jk|はい、六百円です。|はい、 ろっぴゃくえんです。} [audio](media:1307fbd77c6319c2a36e1310)\nA: {jk|大阪までどのくらいかかりますか。|おおさかまで どのくらい かかりますか。} [audio](media:3343603e4364eee1b430a88b)\nB: {jk|一時間ぐらいかかります。|いちじかんぐらい かかります。} [audio](media:9fd10930c8e4c6a51943aa47)",
+   "hint": "",
+   "notype": true,
+   "opt": true,
+   "dlg": true,
+   "back": {
+    "ru": "A: Два билета, пожалуйста.\nB: Пожалуйста, шестьсот иен.\nA: Сколько ехать до Осаки?\nB: Около часа.",
+    "en": "A: Two tickets, please.\nB: Here you are, six hundred yen.\nA: How long does it take to Osaka?\nB: About an hour."
+   },
+   "extra": {
+    "ru": "*A: kippu o nimai kudasai.*\n*B: hai, roppyaku en desu.*\n*A: oosaka made dono kurai kakarimasu ka.*\n*B: ichijikan gurai kakarimasu.*",
+    "en": "*A: kippu o nimai kudasai.*\n*B: hai, roppyaku en desu.*\n*A: oosaka made dono kurai kakarimasu ka.*\n*B: ichijikan gurai kakarimasu.*"
+   }
+  },
+  {
    "id": "l12-g-past-adj",
    "unit": "l12",
    "front": "Прошедшее прилагательных",
@@ -4926,6 +5113,23 @@
    "extra": {
     "ru": "> どの きせつが すきですか。 [audio](media:4231844b00a117b3deca0b88)\n> *dono kisetsu ga suki desu ka*\n> — Какое время года вам нравится?",
     "en": "> どの きせつが すきですか。 [audio](media:4231844b00a117b3deca0b88)\n> *dono kisetsu ga suki desu ka*\n> — Which season do you like?"
+   }
+  },
+  {
+   "id": "l12-dlg",
+   "unit": "l12",
+   "front": "A: {jk|旅行はどうでしたか。|りょこうは どうでしたか。} [audio](media:1722c3802a0fc0a8926b16b9)\nB: {jk|楽しかったです。でも、とても寒かったです。|たのしかったです。 でも、 とても さむかったです。} [audio](media:a5c5489a26156e72b17943ec)\nA: {jk|北海道は東京より寒いですね。|ほっかいどうは とうきょうより さむいですね。} [audio](media:ccea311aaf2a31668a19fb94)\nB: {jk|ええ。でも、食べ物が一番おいしかったです。|ええ。 でも、 たべものが いちばん おいしかったです。} [audio](media:90d0509b6aeb1ca3802d5baf)",
+   "hint": "",
+   "notype": true,
+   "opt": true,
+   "dlg": true,
+   "back": {
+    "ru": "A: Как прошла поездка?\nB: Было здорово, но очень холодно.\nA: На Хоккайдо холоднее, чем в Токио.\nB: Да. Зато еда была просто отличная.",
+    "en": "A: How was your trip?\nB: It was fun. But it was very cold.\nA: Hokkaido is colder than Tokyo, isn't it?\nB: Yes. But the food was the best."
+   },
+   "extra": {
+    "ru": "*A: ryokou wa dou deshita ka.*\n*B: tanoshikatta desu. demo, totemo samukatta desu.*\n*A: hokkaidou wa toukyou yori samui desu ne.*\n*B: ee. demo, tabemono ga ichiban oishikatta desu.*",
+    "en": "*A: ryokou wa dou deshita ka.*\n*B: tanoshikatta desu. demo, totemo samukatta desu.*\n*A: hokkaidou wa toukyou yori samui desu ne.*\n*B: ee. demo, tabemono ga ichiban oishikatta desu.*"
    }
   },
   {
@@ -5095,6 +5299,23 @@
    "extra": {
     "ru": "> らいねん けっこんします。 [audio](media:8d076dc41dcc44f43a0061a0)\n> *rainen kekkon shimasu*\n> — В следующем году женюсь.",
     "en": "> らいねん けっこんします。 [audio](media:8d076dc41dcc44f43a0061a0)\n> *rainen kekkon shimasu*\n> — I’m getting married next year."
+   }
+  },
+  {
+   "id": "l13-dlg",
+   "unit": "l13",
+   "front": "A: {jk|夏休みに何をしたいですか。|なつやすみに なにを したいですか。} [audio](media:6969bfa17090f38f90913af0)\nB: {jk|海で泳ぎたいです。|うみで およぎたいです。} [audio](media:4845f7e01d5a9cf338d89230)\nA: {jk|私は新しいカメラが欲しいです。|わたしは あたらしい カメラが ほしいです。} [audio](media:c8cdaf89185d728cfba1ce85)\nB: {jk|じゃ、一緒に買い物に行きましょう。|じゃ、 いっしょに かいものに いきましょう。} [audio](media:20b51bd9b1b0ad5e00ef8cc9)",
+   "hint": "",
+   "notype": true,
+   "opt": true,
+   "dlg": true,
+   "back": {
+    "ru": "A: Что хотите делать летом на каникулах?\nB: Хочу плавать в море.\nA: А я хочу новый фотоаппарат.\nB: Тогда пойдём вместе за покупками.",
+    "en": "A: What do you want to do in the summer holidays?\nB: I want to swim in the sea.\nA: I want a new camera.\nB: Then let's go shopping together."
+   },
+   "extra": {
+    "ru": "*A: natsuyasumi ni nani o shitai desu ka.*\n*B: umi de oyogitai desu.*\n*A: watashi wa atarashii kamera ga hoshii desu.*\n*B: ja, issho ni kaimono ni ikimashou.*",
+    "en": "*A: natsuyasumi ni nani o shitai desu ka.*\n*B: umi de oyogitai desu.*\n*A: watashi wa atarashii kamera ga hoshii desu.*\n*B: ja, issho ni kaimono ni ikimashou.*"
    }
   },
   {
@@ -5281,6 +5502,23 @@
    }
   },
   {
+   "id": "l14-dlg",
+   "unit": "l14",
+   "front": "A: {jk|すみません、もう少しゆっくり話してください。|すみません、 もう すこし ゆっくり はなして ください。} [audio](media:47f678597640ac376c882021)\nB: {jk|あ、すみません。今何をしていますか。|あ、 すみません。 いま なにを して いますか。} [audio](media:fa6277deef85ba623d9e8409)\nA: {jk|友達を待っています。|ともだちを まって います。} [audio](media:8f0d0aec24d2d8a2b6d62e59)\nB: {jk|荷物、持ちましょうか。|にもつ、 もちましょうか。} [audio](media:28b25989d2c3fdbdc909eca3)",
+   "hint": "",
+   "notype": true,
+   "opt": true,
+   "dlg": true,
+   "back": {
+    "ru": "A: Извините, говорите, пожалуйста, помедленнее.\nB: Ой, простите. Что вы сейчас делаете?\nA: Жду друга.\nB: Давайте я подержу ваши вещи?",
+    "en": "A: Sorry, please speak a little more slowly.\nB: Oh, sorry. What are you doing now?\nA: I'm waiting for a friend.\nB: Shall I hold your bags?"
+   },
+   "extra": {
+    "ru": "*A: sumimasen, mou sukoshi yukkuri hanashite kudasai.*\n*B: a, sumimasen. ima nani o shite imasu ka.*\n*A: tomodachi o matte imasu.*\n*B: nimotsu, mochimashou ka.*",
+    "en": "*A: sumimasen, mou sukoshi yukkuri hanashite kudasai.*\n*B: a, sumimasen. ima nani o shite imasu ka.*\n*A: tomodachi o matte imasu.*\n*B: nimotsu, mochimashou ka.*"
+   }
+  },
+  {
    "id": "l15-g-temo-ii",
    "unit": "l15",
    "front": "～ても いいです",
@@ -5447,6 +5685,23 @@
    "extra": {
     "ru": "> この かいしゃの せいひんを つかっています。 [audio](media:aee036dec13d70f37250d5bc)\n> *kono kaisha no seihin o tsukatteimasu*\n> — Пользуюсь продукцией этой компании.",
     "en": "> この かいしゃの せいひんを つかっています。 [audio](media:aee036dec13d70f37250d5bc)\n> *kono kaisha no seihin o tsukatteimasu*\n> — I use this company’s products."
+   }
+  },
+  {
+   "id": "l15-dlg",
+   "unit": "l15",
+   "front": "A: {jk|ここに座ってもいいですか。|ここに すわっても いいですか。} [audio](media:e08940c46b2a50dec47d8e77)\nB: ええ、 どうぞ。 [audio](media:e5a8ba2823869c919127cbf3)\nA: {jk|ここで写真を撮ってもいいですか。|ここで しゃしんを とっても いいですか。} [audio](media:6a5d6db5ccf7acab217ecfae)\nB: {jk|すみません、ここで写真を撮ってはいけません。|すみません、 ここで しゃしんを とっては いけません。} [audio](media:e1a60d3f46fe944d9364501f)",
+   "hint": "",
+   "notype": true,
+   "opt": true,
+   "dlg": true,
+   "back": {
+    "ru": "A: Можно здесь сесть?\nB: Да, пожалуйста.\nA: А здесь можно фотографировать?\nB: Извините, здесь фотографировать нельзя.",
+    "en": "A: May I sit here?\nB: Yes, go ahead.\nA: May I take photos here?\nB: Sorry, you can't take photos here."
+   },
+   "extra": {
+    "ru": "*A: koko ni suwattemo ii desu ka.*\n*B: ee, douzo.*\n*A: koko de shashin o tottemo ii desu ka.*\n*B: sumimasen, koko de shashin o totte wa ikemasen.*",
+    "en": "*A: koko ni suwattemo ii desu ka.*\n*B: ee, douzo.*\n*A: koko de shashin o tottemo ii desu ka.*\n*B: sumimasen, koko de shashin o totte wa ikemasen.*"
    }
   },
   {
@@ -5619,6 +5874,23 @@
    }
   },
   {
+   "id": "l16-dlg",
+   "unit": "l16",
+   "front": "A: {jk|週末は何をしましたか。|しゅうまつは なにを しましたか。} [audio](media:4ef3a38757bd3da80d4d5dcf)\nB: {jk|朝起きて、公園を走って、シャワーを浴びました。|あさ おきて、 こうえんを はしって、 シャワーを あびました。} [audio](media:a3f06fe8203a34b575a1e2d5)\nA: それから？ [audio](media:0986bc00dc6ffc6854538187)\nB: {jk|昼ご飯を食べてから、映画を見に行きました。|ひるごはんを たべてから、 えいがを みに いきました。} [audio](media:a21769a506f5b8ac82d10341)",
+   "hint": "",
+   "notype": true,
+   "opt": true,
+   "dlg": true,
+   "back": {
+    "ru": "A: Что делали на выходных?\nB: Утром встал, побегал в парке, принял душ.\nA: А потом?\nB: Пообедал и пошёл в кино.",
+    "en": "A: What did you do at the weekend?\nB: I got up, went for a run in the park and had a shower.\nA: And then?\nB: After lunch I went to see a film."
+   },
+   "extra": {
+    "ru": "*A: shuumatsu wa nani o shimashita ka.*\n*B: asa okite, kouen o hashitte, shawaa o abimashita.*\n*A: sorekara?*\n*B: hirugohan o tabete kara, eiga o mi ni ikimashita.*",
+    "en": "*A: shuumatsu wa nani o shimashita ka.*\n*B: asa okite, kouen o hashitte, shawaa o abimashita.*\n*A: sorekara?*\n*B: hirugohan o tabete kara, eiga o mi ni ikimashita.*"
+   }
+  },
+  {
    "id": "l17-g-naide",
    "unit": "l17",
    "front": "～ないで ください",
@@ -5788,6 +6060,23 @@
    }
   },
   {
+   "id": "l17-dlg",
+   "unit": "l17",
+   "front": "A: どう しましたか。 [audio](media:8f1cd49332d46f81cefd0e54)\nB: {jk|熱があります。頭も痛いです。|ねつが あります。 あたまも いたいです。} [audio](media:e002e9d51e50bdbc23b982b5)\nA: {jk|この薬を飲んでください。今日はお風呂に入らないでください。|この くすりを のんで ください。 きょうは おふろに はいらないで ください。} [audio](media:c23a773a3231c730fe68adf3)\nB: {jk|会社に行かなければなりませんか。|かいしゃに いかなければ なりませんか。} [audio](media:30cd101ab0a5cdf0db32cb62)",
+   "hint": "",
+   "notype": true,
+   "opt": true,
+   "dlg": true,
+   "back": {
+    "ru": "A: Что случилось?\nB: У меня температура. И голова болит.\nA: Выпейте это лекарство. И сегодня не принимайте ванну.\nB: Мне нужно идти на работу?",
+    "en": "A: What's the matter?\nB: I have a fever. My head hurts too.\nA: Please take this medicine. And please don't take a bath today.\nB: Do I have to go to work?"
+   },
+   "extra": {
+    "ru": "*A: dou shimashita ka.*\n*B: netsu ga arimasu. atama mo itai desu.*\n*A: kono kusuri o nonde kudasai. kyou wa ofuro ni hairanaide kudasai.*\n*B: kaisha ni ikanakereba narimasen ka.*",
+    "en": "*A: dou shimashita ka.*\n*B: netsu ga arimasu. atama mo itai desu.*\n*A: kono kusuri o nonde kudasai. kyou wa ofuro ni hairanaide kudasai.*\n*B: kaisha ni ikanakereba narimasen ka.*"
+   }
+  },
+  {
    "id": "l18-g-dict-form",
    "unit": "l18",
    "front": "Словарная форма",
@@ -5940,6 +6229,23 @@
    "extra": {
     "ru": "> たべる まえに てを あらいます。 [audio](media:c9f7c22ae1a783f49dfe86e0)\n> *taberu mae ni te o araimasu*\n> — Мою руки перед едой.",
     "en": "> たべる まえに てを あらいます。 [audio](media:c9f7c22ae1a783f49dfe86e0)\n> *taberu mae ni te o araimasu*\n> — I wash my hands before eating."
+   }
+  },
+  {
+   "id": "l18-dlg",
+   "unit": "l18",
+   "front": "A: {jk|趣味は何ですか。|しゅみは なんですか。} [audio](media:71897df5e195ff7fa3c32e74)\nB: {jk|ギターを弾くことです。|ギターを ひく ことです。} [audio](media:064b3416696307b29550939c)\nA: {jk|日本の歌も歌うことができますか。|にほんの うたも うたう ことが できますか。} [audio](media:419a6bbd081c1410c618f332)\nB: {jk|少しできます。寝る前に練習します。|すこし できます。 ねる まえに れんしゅう します。} [audio](media:387a5b5a40bd2e8b8b7baf06)",
+   "hint": "",
+   "notype": true,
+   "opt": true,
+   "dlg": true,
+   "back": {
+    "ru": "A: Какое у вас хобби?\nB: Играть на гитаре.\nA: А японские песни петь умеете?\nB: Немного. Репетирую перед сном.",
+    "en": "A: What's your hobby?\nB: Playing the guitar.\nA: Can you sing Japanese songs too?\nB: A little. I practise before going to bed."
+   },
+   "extra": {
+    "ru": "*A: shumi wa nan desu ka.*\n*B: gitaa o hiku koto desu.*\n*A: nihon no uta mo utau koto ga dekimasu ka.*\n*B: sukoshi dekimasu. neru mae ni renshuu shimasu.*",
+    "en": "*A: shumi wa nan desu ka.*\n*B: gitaa o hiku koto desu.*\n*A: nihon no uta mo utau koto ga dekimasu ka.*\n*B: sukoshi dekimasu. neru mae ni renshuu shimasu.*"
    }
   },
   {
@@ -6098,6 +6404,23 @@
    }
   },
   {
+   "id": "l19-dlg",
+   "unit": "l19",
+   "front": "A: {jk|富士山に登ったことがありますか。|ふじさんに のぼった ことが ありますか。} [audio](media:f756806393f3cad8cb921353)\nB: {jk|いいえ、まだありません。いつか登りたいです。|いいえ、 まだ ありません。 いつか のぼりたいです。} [audio](media:b8f2ea4b63a8c499222a7d5a)\nA: {jk|休みの日は何をしますか。|やすみの ひは なにを しますか。} [audio](media:f5a3207e76b661fb213e8cbe)\nB: {jk|掃除をしたり、洗濯をしたりします。|そうじを したり、 せんたくを したり します。} [audio](media:ff5dd8e1800f4a6a57949ff6)",
+   "hint": "",
+   "notype": true,
+   "opt": true,
+   "dlg": true,
+   "back": {
+    "ru": "A: Вы когда-нибудь поднимались на Фудзи?\nB: Нет, ещё нет. Когда-нибудь хочу.\nA: А что вы делаете в выходные?\nB: Убираюсь, стираю и всё такое.",
+    "en": "A: Have you ever climbed Mt Fuji?\nB: No, not yet. I want to someday.\nA: What do you do on your days off?\nB: I clean, do the laundry and so on."
+   },
+   "extra": {
+    "ru": "*A: fujisan ni nobotta koto ga arimasu ka.*\n*B: iie, mada arimasen. itsuka noboritai desu.*\n*A: yasumi no hi wa nani o shimasu ka.*\n*B: souji o shitari, sentaku o shitari shimasu.*",
+    "en": "*A: fujisan ni nobotta koto ga arimasu ka.*\n*B: iie, mada arimasen. itsuka noboritai desu.*\n*A: yasumi no hi wa nani o shimasu ka.*\n*B: souji o shitari, sentaku o shitari shimasu.*"
+   }
+  },
+  {
    "id": "l20-g-plain",
    "unit": "l20",
    "front": "Простой (разговорный) стиль",
@@ -6231,6 +6554,23 @@
    "extra": {
     "ru": "> つぎは いつ あう？ [audio](media:e63539690a60be888f0681be)\n> *tsugi wa itsu au*\n> — Когда в следующий раз встретимся?",
     "en": "> つぎは いつ あう？ [audio](media:e63539690a60be888f0681be)\n> *tsugi wa itsu au*\n> — When shall we meet next?"
+   }
+  },
+  {
+   "id": "l20-dlg",
+   "unit": "l20",
+   "front": "A: {jk|明日、暇？|あした、 ひま？} [audio](media:5c0418fb21174c31550b008e)\nB: {jk|うん、暇。どうして？|うん、 ひま。 どうして？} [audio](media:9b234cfc7995f24b34dd970d)\nA: {jk|映画、一緒に見に行かない？|えいが、 いっしょに みに いかない？} [audio](media:147152e292871749f5433065)\nB: {jk|いいね。何時にする？|いいね。 なんじ に する？} [audio](media:15dff9338ceba6ae86d436d0)",
+   "hint": "",
+   "notype": true,
+   "opt": true,
+   "dlg": true,
+   "back": {
+    "ru": "A: Завтра свободен?\nB: Ага. А что?\nA: Пойдём вместе в кино?\nB: Давай. Во сколько?",
+    "en": "A: Free tomorrow?\nB: Yeah. Why?\nA: Want to go see a film together?\nB: Sure. What time?"
+   },
+   "extra": {
+    "ru": "*A: ashita, hima?*\n*B: un, hima. doushite?*\n*A: eiga, issho ni mi ni ikanai?*\n*B: ii ne. nanji ni suru?*",
+    "en": "*A: ashita, hima?*\n*B: un, hima. doushite?*\n*A: eiga, issho ni mi ni ikanai?*\n*B: ii ne. nanji ni suru?*"
    }
   },
   {
@@ -6389,6 +6729,23 @@
    }
   },
   {
+   "id": "l21-dlg",
+   "unit": "l21",
+   "front": "A: {jk|明日の試合、どう思いますか。|あしたの しあい、 どう おもいますか。} [audio](media:884dc3d748384a859b5ff374)\nB: {jk|日本が勝つと思います。|にほんが かつと おもいます。} [audio](media:560f35f67f76744daa4e2ba6)\nA: {jk|天気予報は雨だと言っていましたよ。|てんきよほうは あめだと いって いましたよ。} [audio](media:1a62b3b0c3a38592053541ca)\nB: {jk|大丈夫でしょう。たぶん晴れますよ。|だいじょうぶ でしょう。 たぶん はれますよ。} [audio](media:18b93629812d87d5c131d3ba)",
+   "hint": "",
+   "notype": true,
+   "opt": true,
+   "dlg": true,
+   "back": {
+    "ru": "A: Как думаете, что будет на завтрашнем матче?\nB: Думаю, Япония победит.\nA: А прогноз обещал дождь.\nB: Ничего страшного. Наверное, прояснится.",
+    "en": "A: What do you think about tomorrow's match?\nB: I think Japan will win.\nA: The forecast said rain, you know.\nB: It'll be fine. It'll probably clear up."
+   },
+   "extra": {
+    "ru": "*A: ashita no shiai, dou omoimasu ka.*\n*B: nihon ga katsu to omoimasu.*\n*A: tenki yohou wa ame da to itte imashita yo.*\n*B: daijoubu deshou. tabun haremasu yo.*",
+    "en": "*A: ashita no shiai, dou omoimasu ka.*\n*B: nihon ga katsu to omoimasu.*\n*A: tenki yohou wa ame da to itte imashita yo.*\n*B: daijoubu deshou. tabun haremasu yo.*"
+   }
+  },
+  {
    "id": "l22-g-rel-clause",
    "unit": "l22",
    "front": "Определение-предложение",
@@ -6522,6 +6879,23 @@
    "extra": {
     "ru": "> すきな まちは どこですか。 [audio](media:6276e1aac26796020bbd256d)\n> *sukina machi wa doko desu ka*\n> — Какой город вам нравится?",
     "en": "> すきな まちは どこですか。 [audio](media:6276e1aac26796020bbd256d)\n> *sukina machi wa doko desu ka*\n> — Which town do you like?"
+   }
+  },
+  {
+   "id": "l22-dlg",
+   "unit": "l22",
+   "front": "A: {jk|あの眼鏡をかけている人は誰ですか。|あの めがねを かけて いる ひとは だれですか。} [audio](media:2ae1fe689b7bc4598e8eca14)\nB: {jk|私の先輩です。私が住んでいるアパートの隣に住んでいます。|わたしの せんぱいです。 わたしが すんで いる アパートの となりに すんで います。} [audio](media:22914f72ca632a2a48e388db)\nA: {jk|先輩が持っているのは何ですか。|せんぱいが もって いるのは なんですか。} [audio](media:668af60567001fd5430607fa)\nB: {jk|母が作ったケーキです。|ははが つくった ケーキです。} [audio](media:bf588bf97de4336cedcc2432)",
+   "hint": "",
+   "notype": true,
+   "opt": true,
+   "dlg": true,
+   "back": {
+    "ru": "A: Кто тот человек в очках?\nB: Мой старший товарищ. Живёт рядом с моей квартирой.\nA: А что у него в руках?\nB: Торт, который испекла моя мама.",
+    "en": "A: Who's that person wearing glasses?\nB: My senior. He lives next to my apartment.\nA: What is he holding?\nB: A cake my mother made."
+   },
+   "extra": {
+    "ru": "*A: ano megane o kakete iru hito wa dare desu ka.*\n*B: watashi no senpai desu. watashi ga sunde iru apaato no tonari ni sunde imasu.*\n*A: senpai ga motte iru no wa nan desu ka.*\n*B: haha ga tsukutta keeki desu.*",
+    "en": "*A: ano megane o kakete iru hito wa dare desu ka.*\n*B: watashi no senpai desu. watashi ga sunde iru apaato no tonari ni sunde imasu.*\n*A: senpai ga motte iru no wa nan desu ka.*\n*B: haha ga tsukutta keeki desu.*"
    }
   },
   {
@@ -6661,6 +7035,23 @@
    }
   },
   {
+   "id": "l23-dlg",
+   "unit": "l23",
+   "front": "A: {jk|暇なとき、何をしますか。|ひまな とき、 なにを しますか。} [audio](media:02fb0348cb9a0ed3a57c43f3)\nB: {jk|散歩をします。この道を右へ曲がると、公園がありますから。|さんぽを します。 この みちを みぎへ まがると、 こうえんが ありますから。} [audio](media:63a1a5be226da91d00f851df)\nA: {jk|子供のとき、よく公園で遊びました。|こどもの とき、 よく こうえんで あそびました。} [audio](media:097f912231488a65c2bf088a)\nB: {jk|私もです。|わたしも です。} [audio](media:ab48df445729be48bfc3c1c2)",
+   "hint": "",
+   "notype": true,
+   "opt": true,
+   "dlg": true,
+   "back": {
+    "ru": "A: Что делаете в свободное время?\nB: Гуляю. Если свернуть тут направо — будет парк.\nA: В детстве я часто играл в парке.\nB: Я тоже.",
+    "en": "A: What do you do in your free time?\nB: I go for walks. If you turn right on this road, there's a park.\nA: When I was a child, I often played in the park.\nB: Me too."
+   },
+   "extra": {
+    "ru": "*A: himana toki, nani o shimasu ka.*\n*B: sanpo o shimasu. kono michi o migi e magaru to, kouen ga arimasu kara.*\n*A: kodomo no toki, yoku kouen de asobimashita.*\n*B: watashi mo desu.*",
+    "en": "*A: himana toki, nani o shimasu ka.*\n*B: sanpo o shimasu. kono michi o migi e magaru to, kouen ga arimasu kara.*\n*A: kodomo no toki, yoku kouen de asobimashita.*\n*B: watashi mo desu.*"
+   }
+  },
+  {
    "id": "l24-g-kureru",
    "unit": "l24",
    "front": "くれます",
@@ -6783,6 +7174,23 @@
    }
   },
   {
+   "id": "l24-dlg",
+   "unit": "l24",
+   "front": "A: {jk|素敵なセーターですね。|すてきな セーターですね。} [audio](media:eef22bfdd9785d61e8816d91)\nB: {jk|祖母が編んでくれました。|そぼが あんで くれました。} [audio](media:4d9384e6c82f89011ea477e1)\nA: {jk|いいですね。私は父に自転車を直してもらいました。|いいですね。 わたしは ちちに じてんしゃを なおして もらいました。} [audio](media:96d8f10df894d2cd45abf8e5)\nB: {jk|じゃ、今度一緒にサイクリングに行きましょう。|じゃ、 こんど いっしょに サイクリングに いきましょう。} [audio](media:e1765566c02002999de3f8b5)",
+   "hint": "",
+   "notype": true,
+   "opt": true,
+   "dlg": true,
+   "back": {
+    "ru": "A: Какой красивый свитер!\nB: Бабушка связала.\nA: Здорово. А мне папа починил велосипед.\nB: Тогда в следующий раз покатаемся вместе.",
+    "en": "A: What a nice sweater.\nB: My grandmother knitted it for me.\nA: Nice. My father fixed my bike for me.\nB: Then let's go cycling together next time."
+   },
+   "extra": {
+    "ru": "*A: sutekina seetaa desu ne.*\n*B: sobo ga ande kuremashita.*\n*A: ii desu ne. watashi wa chichi ni jitensha o naoshite moraimashita.*\n*B: ja, kondo issho ni saikuringu ni ikimashou.*",
+    "en": "*A: sutekina seetaa desu ne.*\n*B: sobo ga ande kuremashita.*\n*A: ii desu ne. watashi wa chichi ni jitensha o naoshite moraimashita.*\n*B: ja, kondo issho ni saikuringu ni ikimashou.*"
+   }
+  },
+  {
    "id": "l25-g-tara",
    "unit": "l25",
    "front": "～たら",
@@ -6902,6 +7310,23 @@
    "extra": {
     "ru": "> これからも がんばって ください。 [audio](media:c7a6b0daa9e970ba59311be4)\n> *korekaramo ganbatte kudasai*\n> — Продолжайте в том же духе!",
     "en": "> これからも がんばって ください。 [audio](media:c7a6b0daa9e970ba59311be4)\n> *korekaramo ganbatte kudasai*\n> — Keep up the good work!"
+   }
+  },
+  {
+   "id": "l25-dlg",
+   "unit": "l25",
+   "front": "A: {jk|もし宝くじが当たったら、何をしますか。|もし たからくじが あたったら、 なにを しますか。} [audio](media:68551bee16c3c0e33ee081c1)\nB: {jk|世界旅行をします。|せかいりょこうを します。} [audio](media:c0b1c2dbecf6e44da7ce4eed)\nA: {jk|私はいくらお金があっても、仕事を続けます。|わたしは いくら おかねが あっても、 しごとを つづけます。} [audio](media:3b18054e3f88cf34889990e5)\nB: {jk|偉いですね。|えらいですね。} [audio](media:0adf83671ad407bc407f098b)",
+   "hint": "",
+   "notype": true,
+   "opt": true,
+   "dlg": true,
+   "back": {
+    "ru": "A: Если выиграете в лотерею, что сделаете?\nB: Поеду путешествовать по миру.\nA: А я, сколько бы ни было денег, продолжу работать.\nB: Вот это молодец.",
+    "en": "A: If you won the lottery, what would you do?\nB: I'd travel around the world.\nA: No matter how much money I had, I'd keep working.\nB: That's admirable."
+   },
+   "extra": {
+    "ru": "*A: moshi takarakuji ga atattara, nani o shimasu ka.*\n*B: sekai ryokou o shimasu.*\n*A: watashi wa ikura okane ga attemo, shigoto o tsuzukemasu.*\n*B: erai desu ne.*",
+    "en": "*A: moshi takarakuji ga atattara, nani o shimasu ka.*\n*B: sekai ryokou o shimasu.*\n*A: watashi wa ikura okane ga attemo, shigoto o tsuzukemasu.*\n*B: erai desu ne.*"
    }
   },
   {
@@ -13028,6 +13453,370 @@
    "3153047a25b640f44a9b3e47": [
     8985297,
     6957
+   ],
+   "5faeaead1b4d8d68ea348be8": [
+    8992254,
+    28653
+   ],
+   "d68145dbe2e8bba09d874a33": [
+    9020907,
+    22701
+   ],
+   "5bce3ccea5caabec7f26fed3": [
+    9043608,
+    16365
+   ],
+   "4db4249ce66c02459d421e02": [
+    9059973,
+    30765
+   ],
+   "8973ab38b921cf8a17598c24": [
+    9090738,
+    10989
+   ],
+   "a12c2995de0af6cb95c37be6": [
+    9101727,
+    15597
+   ],
+   "7cc74bb1ea1efbab3e31ac70": [
+    9117324,
+    11181
+   ],
+   "d98e74d766f72a72482002e8": [
+    9128505,
+    23853
+   ],
+   "56db166b72beb9648e0b811c": [
+    9152358,
+    21549
+   ],
+   "7447c979a4e98cb61e22bed8": [
+    9173907,
+    21549
+   ],
+   "0151fbea81eeddbe9073db94": [
+    9195456,
+    10413
+   ],
+   "f121f53f24bad0f0dff5eae6": [
+    9205869,
+    15981
+   ],
+   "9b3be6d14225b86da5efa327": [
+    9221850,
+    29421
+   ],
+   "f19a5a07b6b3dfda092951ad": [
+    9251271,
+    14637
+   ],
+   "04c9015698c8cdf0b5820e94": [
+    9265908,
+    20589
+   ],
+   "5621c8fbad8bd73b14a903ee": [
+    9286497,
+    13293
+   ],
+   "65323659383318a85de813e0": [
+    9299790,
+    15981
+   ],
+   "b5a734bc5b1454c5c7d724bf": [
+    9315771,
+    14829
+   ],
+   "fa443bc5c17e0979be6cafe3": [
+    9330600,
+    27885
+   ],
+   "550ada86991b08ccb37826ff": [
+    9358485,
+    20589
+   ],
+   "3c47c9802703dff98319438c": [
+    9379074,
+    18669
+   ],
+   "fe7a0ab3fc7ff3adbd073bf3": [
+    9397743,
+    14061
+   ],
+   "e6c567f9ea01a4f862806c2e": [
+    9411804,
+    13293
+   ],
+   "2dce165599d9a2c1f08ce214": [
+    9425097,
+    18669
+   ],
+   "27d2cfb355b81b94ff571583": [
+    9443766,
+    17709
+   ],
+   "6382b800ab3ec6f6b61057e3": [
+    9461475,
+    18285
+   ],
+   "6fb55e95c270172d846b2444": [
+    9479760,
+    30765
+   ],
+   "a48484f52e121c3b65cdb7fb": [
+    9510525,
+    14253
+   ],
+   "facb52e473fd3e66bed50624": [
+    9524778,
+    23085
+   ],
+   "2e287f1e499ab07f46dd6d1a": [
+    9547863,
+    15405
+   ],
+   "3d1dab0bdb7eb5a936a7a16e": [
+    9563268,
+    30381
+   ],
+   "0317b90224c0ee68bc21c9f8": [
+    9593649,
+    12525
+   ],
+   "8bf528cb5a35361a10f5ec62": [
+    9606174,
+    29037
+   ],
+   "9e3276d97290ba880dc5b67d": [
+    9635211,
+    25197
+   ],
+   "e73205ceda33d02c992d2d3e": [
+    9660408,
+    20973
+   ],
+   "bc83073855100f3c1deb984a": [
+    9681381,
+    15597
+   ],
+   "9ef6216360d9167c95db1599": [
+    9696978,
+    19821
+   ],
+   "1307fbd77c6319c2a36e1310": [
+    9716799,
+    16557
+   ],
+   "3343603e4364eee1b430a88b": [
+    9733356,
+    19245
+   ],
+   "9fd10930c8e4c6a51943aa47": [
+    9752601,
+    15597
+   ],
+   "a5c5489a26156e72b17943ec": [
+    9768198,
+    30765
+   ],
+   "ccea311aaf2a31668a19fb94": [
+    9798963,
+    21165
+   ],
+   "90d0509b6aeb1ca3802d5baf": [
+    9820128,
+    32109
+   ],
+   "6969bfa17090f38f90913af0": [
+    9852237,
+    18093
+   ],
+   "c8cdaf89185d728cfba1ce85": [
+    9870330,
+    20973
+   ],
+   "20b51bd9b1b0ad5e00ef8cc9": [
+    9891303,
+    22701
+   ],
+   "47f678597640ac376c882021": [
+    9914004,
+    27885
+   ],
+   "fa6277deef85ba623d9e8409": [
+    9941889,
+    25389
+   ],
+   "8f0d0aec24d2d8a2b6d62e59": [
+    9967278,
+    13869
+   ],
+   "28b25989d2c3fdbdc909eca3": [
+    9981147,
+    16173
+   ],
+   "e5a8ba2823869c919127cbf3": [
+    9997320,
+    13485
+   ],
+   "e1a60d3f46fe944d9364501f": [
+    10010805,
+    27117
+   ],
+   "4ef3a38757bd3da80d4d5dcf": [
+    10037922,
+    16173
+   ],
+   "a3f06fe8203a34b575a1e2d5": [
+    10054095,
+    31533
+   ],
+   "0986bc00dc6ffc6854538187": [
+    10085628,
+    8685
+   ],
+   "a21769a506f5b8ac82d10341": [
+    10094313,
+    26349
+   ],
+   "8f1cd49332d46f81cefd0e54": [
+    10120662,
+    9837
+   ],
+   "e002e9d51e50bdbc23b982b5": [
+    10130499,
+    22317
+   ],
+   "c23a773a3231c730fe68adf3": [
+    10152816,
+    33645
+   ],
+   "30cd101ab0a5cdf0db32cb62": [
+    10186461,
+    18285
+   ],
+   "71897df5e195ff7fa3c32e74": [
+    10204746,
+    11757
+   ],
+   "064b3416696307b29550939c": [
+    10216503,
+    12909
+   ],
+   "419a6bbd081c1410c618f332": [
+    10229412,
+    20013
+   ],
+   "387a5b5a40bd2e8b8b7baf06": [
+    10249425,
+    25197
+   ],
+   "f756806393f3cad8cb921353": [
+    10274622,
+    19437
+   ],
+   "b8f2ea4b63a8c499222a7d5a": [
+    10294059,
+    29421
+   ],
+   "f5a3207e76b661fb213e8cbe": [
+    10323480,
+    16557
+   ],
+   "ff5dd8e1800f4a6a57949ff6": [
+    10340037,
+    24429
+   ],
+   "5c0418fb21174c31550b008e": [
+    10364466,
+    12909
+   ],
+   "9b234cfc7995f24b34dd970d": [
+    10377375,
+    18861
+   ],
+   "147152e292871749f5433065": [
+    10396236,
+    20973
+   ],
+   "15dff9338ceba6ae86d436d0": [
+    10417209,
+    16749
+   ],
+   "884dc3d748384a859b5ff374": [
+    10433958,
+    19629
+   ],
+   "560f35f67f76744daa4e2ba6": [
+    10453587,
+    14637
+   ],
+   "1a62b3b0c3a38592053541ca": [
+    10468224,
+    20589
+   ],
+   "18b93629812d87d5c131d3ba": [
+    10488813,
+    21549
+   ],
+   "2ae1fe689b7bc4598e8eca14": [
+    10510362,
+    21165
+   ],
+   "22914f72ca632a2a48e388db": [
+    10531527,
+    39405
+   ],
+   "668af60567001fd5430607fa": [
+    10570932,
+    19245
+   ],
+   "bf588bf97de4336cedcc2432": [
+    10590177,
+    14829
+   ],
+   "63a1a5be226da91d00f851df": [
+    10605006,
+    38061
+   ],
+   "097f912231488a65c2bf088a": [
+    10643067,
+    23853
+   ],
+   "ab48df445729be48bfc3c1c2": [
+    10666920,
+    9261
+   ],
+   "eef22bfdd9785d61e8816d91": [
+    10676181,
+    14061
+   ],
+   "4d9384e6c82f89011ea477e1": [
+    10690242,
+    13293
+   ],
+   "96d8f10df894d2cd45abf8e5": [
+    10703535,
+    32877
+   ],
+   "e1765566c02002999de3f8b5": [
+    10736412,
+    25005
+   ],
+   "68551bee16c3c0e33ee081c1": [
+    10761417,
+    25005
+   ],
+   "c0b1c2dbecf6e44da7ce4eed": [
+    10786422,
+    13101
+   ],
+   "3b18054e3f88cf34889990e5": [
+    10799523,
+    30189
+   ],
+   "0adf83671ad407bc407f098b": [
+    10829712,
+    9261
    ]
   },
   "words": {
