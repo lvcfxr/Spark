@@ -1,6 +1,72 @@
 {
  "releases": [
   {
+   "version": "0.41",
+   "date": "28.11.2026",
+   "ru": [
+    "Новый стиль «Тушь»: бумага, тушь и киноварь вместо разбитого стекла. Плоские спокойные экраны, японский текст — учебным шрифтом. Прежний стиль «Сияние» можно вернуть в настройках",
+    "Новый значок серии: круг энсо и иероглиф уровня — от «Ростка» 芽 до «Небес» 天; с «Горы» круг становится киноварью, с «Солнца» — печатью-ханко",
+    "Главная: вместо большой звезды — компактный круг цели дня с серией внутри и приветствие по-японски",
+    "Тон слова: у слов японских курсов — линия высоты, как в словаре NHK (где голос падает и что будет с частицей)",
+    "Ключи кандзи: у каждого кандзи — его ключ и другие кандзи курса с тем же ключом",
+    "«Тень»: слушаете фразу и повторяете в микрофон — Spark рисует вашу мелодию рядом с дикторской и оценивает сходство",
+    "Аудиоурок без рук: фраза, перевод голосом, пауза, чтобы сказать вслух, и снова фраза — для прогулки и дороги",
+    "Читалка: вставьте любой японский текст — у каждого слова перевод, чтение и тон, словарь узнаёт формы (食べなかった → 食べる); слово — в карточки одним касанием",
+    "Доли фокуса: колоды на паузе могут получать 10–20% повторений — самые «горящие» карточки, чтобы не забылись",
+    "Напоминания в браузере (web-push) — вне Telegram, в привычное время и вечером, с тихими часами"
+   ],
+   "en": [
+    "New “Ink” style: paper, ink and vermilion instead of shattered glass. Calm flat screens, Japanese text in a textbook font. The previous “Glow” style is still in Settings",
+    "New streak badge: an ensō circle with a level kanji — from “Sprout” 芽 to “Heavens” 天; from “Mountain” the circle turns vermilion, from “Sun” it becomes a hanko seal",
+    "Home: instead of the big star, a compact daily-goal circle with your streak inside and a Japanese greeting",
+    "Pitch accent: Japanese course words show the pitch line, NHK-dictionary style (where the voice drops and what happens to the particle)",
+    "Kanji radicals: every kanji shows its radical and other course kanji with the same radical",
+    "Shadowing: listen to a phrase and repeat into the mic — Spark draws your melody next to the speaker's and scores the match",
+    "Hands-free audio lesson: phrase, spoken translation, a pause to say it aloud, then the phrase again — for walks and commutes",
+    "Reader: paste any Japanese text — every word gets meaning, reading and pitch, inflected forms are recognised (食べなかった → 食べる); add words to cards in one tap",
+    "Focus shares: paused decks can get 10–20% of reviews — the most at-risk cards, so they don't fade",
+    "Browser reminders (web push) outside Telegram — at your usual time and in the evening, with quiet hours"
+   ]
+  },
+  {
+   "version": "0.40",
+   "date": "28.11.2026",
+   "ru": [
+    "Новый старт за три вопроса: какой язык, что уже знаете, сколько минут в день — и сразу первый урок (или короткий тест уровня). Цель дня подстраивается под выбранный темп",
+    "«Научитесь…» у каждого урока японского: вместо списка тем — что вы сможете сделать после урока. Пройденные уроки отмечены «Могу»",
+    "План к дате экзамена JLPT: выберите дату — Spark посчитает, сколько новых слов в день нужно, и честно скажет, если весь курс к этой дате не успеть",
+    "Трудные слова: если слово забывается уже четвёртый раз, Spark подскажет, как его запомнить, или предложит отложить его на время",
+    "Напоминания в Telegram называют слова, которые вот-вот забудутся, — не просто «пора заниматься»",
+    "Быстрее на больших колодах: списки карточек и колод больше не пересчитываются при каждой перерисовке"
+   ],
+   "en": [
+    "A new start in three questions: which language, what you already know, how many minutes a day — then straight to the first lesson (or a short placement test). The daily goal follows the pace you chose",
+    "“You'll learn to…” on every Japanese lesson: instead of a topic list, what you'll be able to do after it. Finished lessons say “I can”",
+    "A plan for your JLPT date: pick the date and Spark works out how many new words a day you need — and tells you honestly if the whole course won't fit",
+    "Hard words: when a word slips for the fourth time, Spark suggests how to remember it or offers to set it aside for a while",
+    "Telegram reminders now name the words that are about to slip away, not just “time to study”",
+    "Faster with large decks: card and deck lists are no longer rebuilt on every redraw"
+   ]
+  },
+  {
+   "version": "0.39",
+   "date": "28.11.2026",
+   "ru": [
+    "Фуригана над каждым словом, как в японских книгах, — вместо строки каны под фразой. Над кандзи, которые у вас уже в долгой памяти, она больше не показывается: читаете сами",
+    "Новые тренажёры на фразах из ваших уроков: «Частицы» (は, を, に, で… с коротким правилом после ответа), «Собери фразу» (перевод → японская фраза из кусков), «Слово в контексте» и «Диктант» (слушаете фразу и пишете каной, с разбором долгих гласных и っ)",
+    "Истории N4 и N3 сначала на слух: текст открывается после ответа на вопрос. Под историей — слова из неё, их можно одним касанием добавить в повторение",
+    "Страница японского курса: все тренажёры одной сеткой вместо длинного списка",
+    "«Умное занятие» теперь чередует и новые тренажёры — частицы, сборку фраз, слова в контексте и диктант"
+   ],
+   "en": [
+    "Furigana over each word, like in Japanese books, instead of a kana line under the sentence. It disappears over kanji already in your long-term memory, so you read them yourself",
+    "New trainers built from sentences in your lessons: Particles (は, を, に, で… with a short rule after each answer), Build the sentence (translation → Japanese from pieces), Word in context and Dictation (listen and write in kana, with long-vowel and っ analysis)",
+    "N4 and N3 stories are now listen-first: the text opens after you answer the question. Below the story are its words — add any of them to your reviews in one tap",
+    "Japanese course page: all trainers in one grid instead of a long list",
+    "The Smart session now rotates the new trainers too — particles, sentence building, words in context and dictation"
+   ]
+  },
+  {
    "version": "0.38",
    "date": "28.11.2026",
    "ru": [
