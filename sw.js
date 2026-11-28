@@ -1,5 +1,5 @@
-// Spark service worker 0.41.0
-const V = "spark-0.41.0", SHELL = ["./", "index.html", "config.js", "icon-512.png"];
+// Spark service worker 0.42.0
+const V = "spark-0.42.0", SHELL = ["./", "index.html", "config.js", "icon-512.png"];
 self.addEventListener("install", (e) => { e.waitUntil(caches.open(V).then((c) => Promise.allSettled(SHELL.map((u) => c.add(u)))).then(() => self.skipWaiting())); });
 self.addEventListener("activate", (e) => { e.waitUntil(caches.keys().then((ks) => Promise.all(ks.filter((k) => /^spark-\d/.test(k) && k !== V).map((k) => caches.delete(k)))).then(() => self.clients.claim())); });
 const netFirst = async (req, fallbackKey, ms) => {
@@ -18,7 +18,7 @@ const swr = async (req) => {
 // web-push: напоминание занятий; нажатие открывает Spark (или переключает на открытую вкладку)
 self.addEventListener("push", (e) => {
   let d = {}; try { d = e.data ? e.data.json() : {}; } catch { d = { body: e.data ? e.data.text() : "" }; }
-  e.waitUntil(self.registration.showNotification(d.title || "Spark", { body: d.body || "", icon: "icon-512.png", badge: "icon-512.png", tag: d.tag || "spark", renotify: false, data: { url: d.url || "./" } }));
+  e.waitUntil(self.registration.showNotification(d.title || "Sumi", { body: d.body || "", icon: "icon-512.png", badge: "icon-512.png", tag: d.tag || "spark", renotify: false, data: { url: d.url || "./" } }));
 });
 self.addEventListener("notificationclick", (e) => {
   e.notification.close();

@@ -1,6 +1,34 @@
 {
  "releases": [
   {
+   "version": "0.42",
+   "date": "28.11.2026",
+   "ru": [
+    "Новое имя — Sumi («тушь»). Новый логотип — круг энсо сухой кистью: чёрная тушь на бумаге; новая заставка, иконка и картинки бота",
+    "Стиль «Тушь» — японская учебная тетрадь: белая бумага с зерном васи, чёрная тушь, клетки 原稿用紙 в шапке, на карточке и в неделе; цвет — только красные чернила учителя",
+    "Серия дней — капли туши: Капля 滴 → … → Мастер 師. Капля живая: покачивается, расходится кругами по бумаге, с ростом серии появляются капли на орбите, кисть-энсо, падающая капля, туман туши, на вершине — печать и золотая фольга",
+    "Пометки учителя: верный ответ обводится кружком ◯, неверный перечёркивается красным мазком кисти",
+    "Ударные моменты в духе самурайских игр и манги: на вехах серии ответов у счётчика вспыхивает иероглиф 連 кистью с линиями скорости и брызгами туши; в конце занятия — круг энсо сухой кистью и 完, без ошибок — золотая фольга; день засчитан — капля падает на бумагу, расходятся круги и проступает знак серии",
+    "Главная: дата японскими цифрами на полях, пятно туши и частицы у круга серии, полоски-мазки кисти, мягкое появление блоков; кнопки при нажатии расходятся каплей туши"
+   ],
+   "en": [
+    "New name — Sumi (“ink”). New logo — a dry-brush ensō: black ink on paper; new splash screen, icon and bot pictures",
+    "The “Ink” style is a Japanese study notebook: white paper with washi grain, black ink, 原稿用紙 grid in the header, on the card and in the week row; the only colour is the teacher's red ink",
+    "Day streaks are ink drops: Drop 滴 → … → Master 師. The drop is alive: it sways and ripples across the paper; as the streak grows it gains orbiting drops, a brush ensō, a falling drop, ink mist, and at the top a seal and gold leaf",
+    "Teacher's marks: a correct answer gets a circle ◯, a wrong one a red brush slash",
+    "Impact moments inspired by samurai games and manga: at answer-streak milestones a brushed 連 with speed lines and ink splatter flashes by the counter; at the end of a session a dry-brush ensō and 完, gold leaf for no mistakes; when the day counts, a drop falls on the paper, ripples spread and the streak sign appears",
+    "Home: the date in Japanese numerals in the margin, an ink wash and motes around the streak circle, brush-stroke progress bars, soft entrance of blocks; buttons spread an ink drop when pressed"
+   ],
+   "fix": {
+    "ru": [
+     "Шрифт заголовков снова встроен в приложение (в 0.41 он не подгружался)"
+    ],
+    "en": [
+     "The heading font is embedded again (it didn't load in 0.41)"
+    ]
+   }
+  },
+  {
    "version": "0.41",
    "date": "28.11.2026",
    "ru": [

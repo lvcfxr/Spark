@@ -1,4 +1,4 @@
-# Spark
+# Sumi
 
 Карточки с интервальными повторениями для Telegram (Mini App). Сайт публикуется через GitHub Pages из ветки `main`.
 
@@ -13,4 +13,4 @@
 
 Исходный код, схема базы и инструкции по настройке хранятся отдельно и в этот репозиторий не входят.
 
-**Данные:** словари для подсказки «как запомнить» построены по частотам слов [wordfreq](https://github.com/rspeer/wordfreq) (CC BY-SA 4.0) и WordNet; живые записи произношения — Wikimedia Commons / Lingua Libre (лицензии CC). Звуки интерфейса — [Kenney](https://kenney.nl) и [UI SFX](https://github.com/romainsimon/uisfx) (CC0). Озвучка японских курсов (N5, N4, N3) — VOICEVOX Nemo. Порядок черт кандзи и каны — [KanjiVG](https://kanjivg.tagaini.net) (CC BY-SA 3.0). Словарь читалки и ключи кандзи — [JMdict и KANJIDIC2](https://www.edrdg.org/edrdg/licence.html) © EDRDG (CC BY-SA 4.0). Тон слов — [Kanjium](https://github.com/mifunetoshiro/kanjium) (CC BY-SA 4.0). Шрифт заголовков — Manrope (SIL OFL 1.1).
+**Данные:** словари для подсказки «как запомнить» построены по частотам слов [wordfreq](https://github.com/rspeer/wordfreq) (CC BY-SA 4.0) и WordNet; живые записи произношения — Wikimedia Commons / Lingua Libre (лицензии CC). Звуки интерфейса — [Kenney](https://kenney.nl) и [UI SFX](https://github.com/romainsimon/uisfx) (CC0). Озвучка японских курсов (N5, N4, N3) — VOICEVOX Nemo. Порядок черт кандзи и каны — [KanjiVG](https://kanjivg.tagaini.net) (CC BY-SA 3.0). Словарь читалки и ключи кандзи — [JMdict и KANJIDIC2](https://www.edrdg.org/edrdg/licence.html) © EDRDG (CC BY-SA 4.0). Тон слов — [Kanjium](https://github.com/mifunetoshiro/kanjium) (CC BY-SA 4.0). Шрифт заголовков — Manrope (SIL OFL 1.1). Иероглиф 墨 в логотипе — контуры Noto Serif CJK JP (SIL OFL 1.1).
