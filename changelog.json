@@ -1,6 +1,24 @@
 {
  "releases": [
   {
+   "version": "0.37",
+   "date": "28.11.2026",
+   "ru": [
+    "Фокус повторения: выберите, какие колоды идут в повторение — например, только японский. Остальные встают на паузу: их нет в «Занятии на сегодня», общем повторении, заданиях и напоминаниях бота, а прогресс сохраняется. Кнопка «Что повторять» — на главной, в настройках и в меню колоды",
+    "Японский N4 и N3: 641 кандзи отдельными блоками между уроками — значение, онъёми и кунъёми, слово-пример со звуком и порядок черт. Блоки идут за уроками, где эти знаки встречаются, и не закрывают путь дальше",
+    "Японский N4 и N3: примеры к словам и грамматике теперь записаны кандзи с фуриганой (по настройке — каной или только кандзи)",
+    "Мини-диалог в каждом уроке японского (75 диалогов): четыре реплики со звуком, затем перевод. Появятся и в уже начатых уровнях",
+    "Пробный экзамен JLPT N5, N4 и N3: слова и кандзи, грамматика, чтение и аудирование, таймер и проходной балл как на настоящем тесте, разбор ошибок. Лучший результат виден на странице курса и в «Что я умею»"
+   ],
+   "en": [
+    "Review focus: choose which decks go into your reviews — say, only Japanese. The rest are paused: they stay out of “Today’s session”, the combined review, daily quests and bot reminders, and their progress is kept. Look for “What to review” on the home screen, in settings and in the deck menu",
+    "Japanese N4 and N3: 641 kanji in their own blocks between lessons — meaning, on’yomi and kun’yomi, an example word with audio and stroke order. Each block follows the lessons where its kanji appear and never blocks the way forward",
+    "Japanese N4 and N3: examples for words and grammar are now written in kanji with furigana (or kana only / kanji only, per your setting)",
+    "A mini dialogue in every Japanese lesson (75 dialogues): four lines with audio, then the translation. They also appear in levels you’ve already started",
+    "JLPT N5, N4 and N3 mock exams: vocabulary and kanji, grammar, reading and listening, with a timer and pass mark like the real test, plus a review of mistakes. Your best score shows on the course page and in “What I can do”"
+   ]
+  },
+  {
    "version": "0.36",
    "date": "28.11.2026",
    "ru": [

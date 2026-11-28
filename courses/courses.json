@@ -500,7 +500,7 @@
    },
    "author": "Spark",
    "words": 652,
-   "minutes": 980,
+   "minutes": 1015,
    "units": [
     {
      "id": "hira1",
@@ -922,8 +922,8 @@
     "en": "The follow-up to “Japanese from scratch”: 25 N4 lessons — potential, intention, “seems” and hearsay, passive and causative, ば and なら conditionals, keigo and more. 75 grammar points and 250 new words, all with audio, romaji and a translation."
    },
    "author": "Spark",
-   "words": 325,
-   "minutes": 490,
+   "words": 520,
+   "minutes": 820,
    "units": [
     {
      "id": "l26",
@@ -942,6 +942,15 @@
      "count": 13
     },
     {
+     "id": "kj4-01",
+     "title": {
+      "ru": "Кандзи N4 · 1: 主 乗 仕 声 字…",
+      "en": "Kanji N4 · 1: 主 乗 仕 声 字…"
+     },
+     "count": 20,
+     "side": true
+    },
+    {
      "id": "l28",
      "title": {
       "ru": "Урок 28: Собираюсь и планирую",
@@ -956,6 +965,15 @@
       "en": "Lesson 29: Advice and “too much”"
      },
      "count": 13
+    },
+    {
+     "id": "kj4-02",
+     "title": {
+      "ru": "Кандзи N4 · 2: 開 会 借 兄 医…",
+      "en": "Kanji N4 · 2: 開 会 借 兄 医…"
+     },
+     "count": 20,
+     "side": true
     },
     {
      "id": "l30",
@@ -974,6 +992,15 @@
      "count": 13
     },
     {
+     "id": "kj4-03",
+     "title": {
+      "ru": "Кандзи N4 · 3: 明 歩 注 理 説…",
+      "en": "Kanji N4 · 3: 明 歩 注 理 説…"
+     },
+     "count": 20,
+     "side": true
+    },
+    {
      "id": "l32",
      "title": {
       "ru": "Урок 32: Одновременно и «к тому же»",
@@ -988,6 +1015,15 @@
       "en": "Lesson 33: Because"
      },
      "count": 13
+    },
+    {
+     "id": "kj4-04",
+     "title": {
+      "ru": "Кандзи N4 · 4: 音 題 不 便 公…",
+      "en": "Kanji N4 · 4: 音 題 不 便 公…"
+     },
+     "count": 20,
+     "side": true
     },
     {
      "id": "l34",
@@ -1006,6 +1042,15 @@
      "count": 13
     },
     {
+     "id": "kj4-05",
+     "title": {
+      "ru": "Кандзи N4 · 5: 妹 心 朝 止 試…",
+      "en": "Kanji N4 · 5: 妹 心 朝 止 試…"
+     },
+     "count": 20,
+     "side": true
+    },
+    {
      "id": "l36",
      "title": {
       "ru": "Урок 36: Страдательный залог",
@@ -1020,6 +1065,15 @@
       "en": "Lesson 37: Make and let"
      },
      "count": 13
+    },
+    {
+     "id": "kj4-06",
+     "title": {
+      "ru": "Кандзи N4 · 6: 犬 産 真 茶 送…",
+      "en": "Kanji N4 · 6: 犬 産 真 茶 送…"
+     },
+     "count": 20,
+     "side": true
     },
     {
      "id": "l38",
@@ -1044,6 +1098,15 @@
       "en": "Lesson 40: Just now and right then"
      },
      "count": 13
+    },
+    {
+     "id": "kj4-07",
+     "title": {
+      "ru": "Кандзи N4 · 7: 昼 考 親 言 赤…",
+      "en": "Kanji N4 · 7: 昼 考 親 言 赤…"
+     },
+     "count": 20,
+     "side": true
     },
     {
      "id": "l41",
@@ -1078,6 +1141,15 @@
      "count": 13
     },
     {
+     "id": "kj4-08",
+     "title": {
+      "ru": "Кандзи N4 · 8: 起 飯 住 所 映…",
+      "en": "Kanji N4 · 8: 起 飯 住 所 映…"
+     },
+     "count": 20,
+     "side": true
+    },
+    {
      "id": "l45",
      "title": {
       "ru": "Урок 45: Приказ и запрет",
@@ -1102,6 +1174,15 @@
      "count": 13
     },
     {
+     "id": "kj4-09",
+     "title": {
+      "ru": "Кандзи N4 · 9: 研 秋 究 場 正…",
+      "en": "Kanji N4 · 9: 研 秋 究 場 正…"
+     },
+     "count": 20,
+     "side": true
+    },
+    {
      "id": "l48",
      "title": {
       "ru": "Урок 48: Похоже на, как будто",
@@ -1124,6 +1205,15 @@
       "en": "Lesson 50: Requests and sensations"
      },
      "count": 13
+    },
+    {
+     "id": "kj4-10",
+     "title": {
+      "ru": "Кандзи N4 · 10: 光 別 春 特 青…",
+      "en": "Kanji N4 · 10: 光 別 春 特 青…"
+     },
+     "count": 15,
+     "side": true
     }
    ],
    "version": 3,
@@ -1153,8 +1243,8 @@
     "en": "The follow-up to N4: 25 N3 lessons — “no wonder” and “it’s not that”, “the more…, the more…”, “thanks to” and “because of”, “despite”, “have no choice but to”, “can’t help”, regrets and wishes. 75 grammar points and 250 words about life, work, feelings and the news, all with audio, romaji and a translation."
    },
    "author": "Spark",
-   "words": 325,
-   "minutes": 490,
+   "words": 771,
+   "minutes": 1195,
    "units": [
     {
      "id": "l51",
@@ -1165,12 +1255,30 @@
      "count": 13
     },
     {
+     "id": "kj3-01",
+     "title": {
+      "ru": "Кандзи N3 · 1: 両 争 他 位 係…",
+      "en": "Kanji N3 · 1: 両 争 他 位 係…"
+     },
+     "count": 20,
+     "side": true
+    },
+    {
      "id": "l52",
      "title": {
       "ru": "Урок 52: Вот почему и не то чтобы",
       "en": "Lesson 52: That’s why and it’s not that"
      },
      "count": 13
+    },
+    {
+     "id": "kj3-02",
+     "title": {
+      "ru": "Кандзи N3 · 2: 遅 倒 机 途 全…",
+      "en": "Kanji N3 · 2: 遅 倒 机 途 全…"
+     },
+     "count": 20,
+     "side": true
     },
     {
      "id": "l53",
@@ -1181,12 +1289,30 @@
      "count": 13
     },
     {
+     "id": "kj3-03",
+     "title": {
+      "ru": "Кандзи N3 · 3: 得 然 難 混 簡…",
+      "en": "Kanji N3 · 3: 得 然 難 混 簡…"
+     },
+     "count": 20,
+     "side": true
+    },
+    {
      "id": "l54",
      "title": {
       "ru": "Урок 54: Чем больше, тем…",
       "en": "Lesson 54: The more…, the more…"
      },
      "count": 13
+    },
+    {
+     "id": "kj3-04",
+     "title": {
+      "ru": "Кандзи N3 · 4: 部 確 解 認 身…",
+      "en": "Kanji N3 · 4: 部 確 解 認 身…"
+     },
+     "count": 20,
+     "side": true
     },
     {
      "id": "l55",
@@ -1197,12 +1323,30 @@
      "count": 13
     },
     {
+     "id": "kj3-05",
+     "title": {
+      "ru": "Кандзи N3 · 5: 港 満 球 登 面…",
+      "en": "Kanji N3 · 5: 港 満 球 登 面…"
+     },
+     "count": 20,
+     "side": true
+    },
+    {
      "id": "l56",
      "title": {
       "ru": "Урок 56: Зависит от и по словам",
       "en": "Lesson 56: Depends on and according to"
      },
      "count": 13
+    },
+    {
+     "id": "kj3-06",
+     "title": {
+      "ru": "Кандзи N3 · 6: 種 箱 米 育 調…",
+      "en": "Kanji N3 · 6: 種 箱 米 育 調…"
+     },
+     "count": 20,
+     "side": true
     },
     {
      "id": "l57",
@@ -1213,12 +1357,30 @@
      "count": 13
     },
     {
+     "id": "kj3-07",
+     "title": {
+      "ru": "Кандзи N3 · 7: 関 類 因 報 結…",
+      "en": "Kanji N3 · 7: 関 類 因 報 結…"
+     },
+     "count": 20,
+     "side": true
+    },
+    {
      "id": "l58",
      "title": {
       "ru": "Урок 58: Каждый раз и через один",
       "en": "Lesson 58: Every time and every other"
      },
      "count": 13
+    },
+    {
+     "id": "kj3-08",
+     "title": {
+      "ru": "Кандзи N3 · 8: 列 勤 吸 呼 留…",
+      "en": "Kanji N3 · 8: 列 勤 吸 呼 留…"
+     },
+     "count": 20,
+     "side": true
     },
     {
      "id": "l59",
@@ -1229,12 +1391,30 @@
      "count": 13
     },
     {
+     "id": "kj3-09",
+     "title": {
+      "ru": "Кандзи N3 · 9: 婦 存 宅 的 季…",
+      "en": "Kanji N3 · 9: 婦 存 宅 的 季…"
+     },
+     "count": 20,
+     "side": true
+    },
+    {
      "id": "l60",
      "title": {
       "ru": "Урок 60: Бывало и хотя",
       "en": "Lesson 60: Used to and although"
      },
      "count": 13
+    },
+    {
+     "id": "kj3-10",
+     "title": {
+      "ru": "Кандзи N3 · 10: 接 準 規 靴 園…",
+      "en": "Kanji N3 · 10: 接 準 規 靴 園…"
+     },
+     "count": 20,
+     "side": true
     },
     {
      "id": "l61",
@@ -1245,12 +1425,30 @@
      "count": 13
     },
     {
+     "id": "kj3-11",
+     "title": {
+      "ru": "Кандзи N3 · 11: 寝 暖 疲 許 城…",
+      "en": "Kanji N3 · 11: 寝 暖 疲 許 城…"
+     },
+     "count": 20,
+     "side": true
+    },
+    {
      "id": "l62",
      "title": {
       "ru": "Урок 62: Даже и именно",
       "en": "Lesson 62: Even and precisely"
      },
      "count": 13
+    },
+    {
+     "id": "kj3-12",
+     "title": {
+      "ru": "Кандзи N3 · 12: 財 布 信 念 残…",
+      "en": "Kanji N3 · 12: 財 布 信 念 残…"
+     },
+     "count": 20,
+     "side": true
     },
     {
      "id": "l63",
@@ -1269,12 +1467,30 @@
      "count": 13
     },
     {
+     "id": "kj3-13",
+     "title": {
+      "ru": "Кандзи N3 · 13: 能 可 更 利 値…",
+      "en": "Kanji N3 · 13: 能 可 更 利 値…"
+     },
+     "count": 20,
+     "side": true
+    },
+    {
      "id": "l65",
      "title": {
       "ru": "Урок 65: Вместо и с другой стороны",
       "en": "Lesson 65: Instead and on the other hand"
      },
      "count": 13
+    },
+    {
+     "id": "kj3-14",
+     "title": {
+      "ru": "Кандзи N3 · 14: 示 過 適 鉄 閉…",
+      "en": "Kanji N3 · 14: 示 過 適 鉄 閉…"
+     },
+     "count": 20,
+     "side": true
     },
     {
      "id": "l66",
@@ -1285,6 +1501,15 @@
      "count": 13
     },
     {
+     "id": "kj3-15",
+     "title": {
+      "ru": "Кандзи N3 · 15: 個 冊 再 処 制…",
+      "en": "Kanji N3 · 15: 個 冊 再 処 制…"
+     },
+     "count": 20,
+     "side": true
+    },
+    {
      "id": "l67",
      "title": {
       "ru": "Урок 67: Для своего и хотя",
@@ -1293,12 +1518,30 @@
      "count": 13
     },
     {
+     "id": "kj3-16",
+     "title": {
+      "ru": "Кандзи N3 · 16: 専 居 責 怒 皆…",
+      "en": "Kanji N3 · 16: 専 居 責 怒 皆…"
+     },
+     "count": 20,
+     "side": true
+    },
+    {
      "id": "l68",
      "title": {
       "ru": "Урок 68: Пока не и пока",
       "en": "Lesson 68: Not until and as long as"
      },
      "count": 13
+    },
+    {
+     "id": "kj3-17",
+     "title": {
+      "ru": "Кандзи N3 · 17: 歳 毛 頼 完 治…",
+      "en": "Kanji N3 · 17: 歳 毛 頼 完 治…"
+     },
+     "count": 20,
+     "side": true
     },
     {
      "id": "l69",
@@ -1317,6 +1560,15 @@
      "count": 13
     },
     {
+     "id": "kj3-18",
+     "title": {
+      "ru": "Кандзи N3 · 18: 伝 婚 破 祖 禁…",
+      "en": "Kanji N3 · 18: 伝 婚 破 祖 禁…"
+     },
+     "count": 20,
+     "side": true
+    },
+    {
      "id": "l71",
      "title": {
       "ru": "Урок 71: Советы и долг",
@@ -1325,12 +1577,30 @@
      "count": 13
     },
     {
+     "id": "kj3-19",
+     "title": {
+      "ru": "Кандзи N3 · 19: 背 裏 訪 論 識…",
+      "en": "Kanji N3 · 19: 背 裏 訪 論 識…"
+     },
+     "count": 20,
+     "side": true
+    },
+    {
      "id": "l72",
      "title": {
       "ru": "Урок 72: Насколько и ничто не сравнится",
       "en": "Lesson 72: To what extent and nothing compares"
      },
      "count": 13
+    },
+    {
+     "id": "kj3-20",
+     "title": {
+      "ru": "Кандзи N3 · 20: 預 晴 笑 平 悲…",
+      "en": "Kanji N3 · 20: 預 晴 笑 平 悲…"
+     },
+     "count": 20,
+     "side": true
     },
     {
      "id": "l73",
@@ -1349,12 +1619,30 @@
      "count": 13
     },
     {
+     "id": "kj3-21",
+     "title": {
+      "ru": "Кандзи N3 · 21: 飛 戻 基 奥 娘…",
+      "en": "Kanji N3 · 21: 飛 戻 基 奥 娘…"
+     },
+     "count": 20,
+     "side": true
+    },
+    {
      "id": "l75",
      "title": {
       "ru": "Урок 75: Если бы и как хорошо бы",
       "en": "Lesson 75: If only and wishes"
      },
      "count": 13
+    },
+    {
+     "id": "kj3-22",
+     "title": {
+      "ru": "Кандзи N3 · 22: 刺 怖 松 汗 汚…",
+      "en": "Kanji N3 · 22: 刺 怖 松 汗 汚…"
+     },
+     "count": 26,
+     "side": true
     }
    ],
    "version": 3,
