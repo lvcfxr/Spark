@@ -1,6 +1,24 @@
 {
  "releases": [
   {
+   "version": "0.38",
+   "date": "28.11.2026",
+   "ru": [
+    "«Умное занятие» вместо набора кнопок: одна кнопка на главной ведёт по шагам дня — карточки, потом тренировка на ваше слабое место, потом чтение. Тренировку приложение выбирает само: то, что вы недавно путали, или то, что давно не тренировали (спряжения, числа, слух, свежие слова)",
+    "Готовность к JLPT на главной: сколько из курса вы уже знаете по словам, грамматике, кандзи и кане — и где слабее всего",
+    "Разбор ошибок японского: если при вводе перепутаны долгая гласная, っ, звонкость или маленькие ゃゅょ, приложение сразу объясняет, что не так. Это уже не опечатка, а другое слово, поэтому ошибка учитывается и попадает в тренировку",
+    "Новый тренажёр «Слух: похожие слова»: 31 минимальная пара вроде おばさん/おばあさん и きて/きって со звуком",
+    "Истории к каждому из 75 уроков японского: сериал про Анну из России — от первых дней в Токио до работы переводчиком. Каждая фраза со звуком и фуриганой, перевод по нажатию, вопрос на понимание. Все истории собраны на странице курса"
+   ],
+   "en": [
+    "“Smart session” instead of a pile of buttons: one button on the home screen walks you through the day — cards, then practice on your weak spot, then reading. The app picks the practice itself: what you recently mixed up, or what you haven't trained in a while (conjugation, numbers, listening, recent words)",
+    "JLPT readiness on the home screen: how much of the course you already know in vocabulary, grammar, kanji and kana — and where you're weakest",
+    "Japanese error analysis: if you mix up a long vowel, っ, voicing or small ゃゅょ while typing, the app explains what's wrong right away. It's a different word, not a typo, so it counts as a mistake and feeds your practice",
+    "New trainer “Listening: similar words”: 31 minimal pairs like おばさん/おばあさん and きて/きって with audio",
+    "A story for each of the 75 Japanese lessons: a series about Anna from Russia, from her first days in Tokyo to working as an interpreter. Every sentence has audio and furigana, tap to translate, plus a comprehension question. All stories are listed on the course page"
+   ]
+  },
+  {
    "version": "0.37",
    "date": "28.11.2026",
    "ru": [

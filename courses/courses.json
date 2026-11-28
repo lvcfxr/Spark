@@ -495,8 +495,8 @@
     "en": "Beginner"
    },
    "description": {
-    "ru": "Хирагана и катакана целиком (с ё-он, сокуоном и долгими звуками), затем 25 уроков уровня N5 в классическом порядке учебников — от «A は B です» до «если» и «даже если», ещё 8 тематических блоков слов (числа, время, семья, еда, тело, город, погода, глаголы) и 80 кандзи N5 с чтениями и словами. Всё со звуком, ромадзи и переводом. Уровни открываются по очереди.",
-    "en": "Complete hiragana and katakana (with yōon, the small っ and long vowels), then 25 N5 lessons in the classic textbook order — from “A は B です” to “if” and “even if” — plus 8 themed word sets (numbers, time, family, food, body, town, weather, verbs) and the 80 N5 kanji with readings and words. Everything has audio, romaji and a translation. Levels unlock one by one."
+    "ru": "Хирагана и катакана целиком (с ё-он, сокуоном и долгими звуками), затем 25 уроков уровня N5 в классическом порядке учебников — от «A は B です» до «если» и «даже если», ещё 8 тематических блоков слов (числа, время, семья, еда, тело, город, погода, глаголы) и 80 кандзи N5 с чтениями и словами. В каждом уроке — мини-диалог, в конце — пробный экзамен N5. Всё со звуком, ромадзи и переводом. Уровни открываются по очереди.",
+    "en": "Complete hiragana and katakana (with yōon, the small っ and long vowels), then 25 N5 lessons in the classic textbook order — from “A は B です” to “if” and “even if” — plus 8 themed word sets (numbers, time, family, food, body, town, weather, verbs) and the 80 N5 kanji with readings and words. Every lesson has a mini dialogue, and there’s an N5 mock exam. Everything has audio, romaji and a translation. Levels unlock one by one."
    },
    "author": "Spark",
    "words": 652,
@@ -572,7 +572,8 @@
       "ru": "Урок 1: Знакомство",
       "en": "Lesson 1: Introductions"
      },
-     "count": 12
+     "count": 12,
+     "g": 3
     },
     {
      "id": "l02",
@@ -580,7 +581,8 @@
       "ru": "Урок 2: Это, то и вещи",
       "en": "Lesson 2: This, that and things"
      },
-     "count": 12
+     "count": 12,
+     "g": 3
     },
     {
      "id": "l03",
@@ -588,7 +590,8 @@
       "ru": "Урок 3: Где? Сколько стоит?",
       "en": "Lesson 3: Where? How much?"
      },
-     "count": 10
+     "count": 10,
+     "g": 2
     },
     {
      "id": "l04",
@@ -596,7 +599,8 @@
       "ru": "Урок 4: Время и ます",
       "en": "Lesson 4: Time and ます"
      },
-     "count": 13
+     "count": 13,
+     "g": 3
     },
     {
      "id": "l05",
@@ -604,7 +608,8 @@
       "ru": "Урок 5: Куда и на чём",
       "en": "Lesson 5: Going places"
      },
-     "count": 12
+     "count": 12,
+     "g": 3
     },
     {
      "id": "l06",
@@ -612,7 +617,8 @@
       "ru": "Урок 6: Что делаем? Приглашение",
       "en": "Lesson 6: Actions and invitations"
      },
-     "count": 12
+     "count": 12,
+     "g": 3
     },
     {
      "id": "l07",
@@ -620,7 +626,8 @@
       "ru": "Урок 7: Чем? Дарить и получать",
       "en": "Lesson 7: Tools, giving and receiving"
      },
-     "count": 12
+     "count": 12,
+     "g": 3
     },
     {
      "id": "l08",
@@ -628,7 +635,8 @@
       "ru": "Урок 8: Прилагательные",
       "en": "Lesson 8: Adjectives"
      },
-     "count": 13
+     "count": 13,
+     "g": 3
     },
     {
      "id": "l09",
@@ -636,7 +644,8 @@
       "ru": "Урок 9: Нравится, умею, понимаю",
       "en": "Lesson 9: Likes, skills, understanding"
      },
-     "count": 11
+     "count": 11,
+     "g": 2
     },
     {
      "id": "l10",
@@ -644,7 +653,8 @@
       "ru": "Урок 10: Есть, находится",
       "en": "Lesson 10: There is, is located"
      },
-     "count": 11
+     "count": 11,
+     "g": 2
     },
     {
      "id": "l11",
@@ -652,7 +662,8 @@
       "ru": "Урок 11: Счёт",
       "en": "Lesson 11: Counting"
      },
-     "count": 11
+     "count": 11,
+     "g": 2
     },
     {
      "id": "l12",
@@ -660,7 +671,8 @@
       "ru": "Урок 12: Прошлое и сравнение",
       "en": "Lesson 12: Past and comparison"
      },
-     "count": 10
+     "count": 10,
+     "g": 2
     },
     {
      "id": "l13",
@@ -668,7 +680,8 @@
       "ru": "Урок 13: Хочу",
       "en": "Lesson 13: Wants"
      },
-     "count": 11
+     "count": 11,
+     "g": 3
     },
     {
      "id": "l14",
@@ -676,7 +689,8 @@
       "ru": "Урок 14: て-форма",
       "en": "Lesson 14: The て-form"
      },
-     "count": 12
+     "count": 12,
+     "g": 3
     },
     {
      "id": "l15",
@@ -684,7 +698,8 @@
       "ru": "Урок 15: Можно и нельзя",
       "en": "Lesson 15: Permission and prohibition"
      },
-     "count": 11
+     "count": 11,
+     "g": 3
     },
     {
      "id": "l16",
@@ -692,7 +707,8 @@
       "ru": "Урок 16: Последовательность действий",
       "en": "Lesson 16: Sequences of actions"
      },
-     "count": 11
+     "count": 11,
+     "g": 3
     },
     {
      "id": "l17",
@@ -700,7 +716,8 @@
       "ru": "Урок 17: ない-форма",
       "en": "Lesson 17: The ない-form"
      },
-     "count": 11
+     "count": 11,
+     "g": 3
     },
     {
      "id": "l18",
@@ -708,7 +725,8 @@
       "ru": "Урок 18: Могу; хобби",
       "en": "Lesson 18: Can; hobbies"
      },
-     "count": 10
+     "count": 10,
+     "g": 3
     },
     {
      "id": "l19",
@@ -716,7 +734,8 @@
       "ru": "Урок 19: Опыт и перемены",
       "en": "Lesson 19: Experience and change"
      },
-     "count": 10
+     "count": 10,
+     "g": 3
     },
     {
      "id": "l20",
@@ -724,7 +743,8 @@
       "ru": "Урок 20: Простой стиль",
       "en": "Lesson 20: Plain style"
      },
-     "count": 9
+     "count": 9,
+     "g": 2
     },
     {
      "id": "l21",
@@ -732,7 +752,8 @@
       "ru": "Урок 21: Думаю, сказал",
       "en": "Lesson 21: I think, he said"
      },
-     "count": 10
+     "count": 10,
+     "g": 3
     },
     {
      "id": "l22",
@@ -740,7 +761,8 @@
       "ru": "Урок 22: Описание через действие",
       "en": "Lesson 22: Describing with clauses"
      },
-     "count": 9
+     "count": 9,
+     "g": 2
     },
     {
      "id": "l23",
@@ -748,7 +770,8 @@
       "ru": "Урок 23: Когда; если — то",
       "en": "Lesson 23: When; if — then"
      },
-     "count": 9
+     "count": 9,
+     "g": 2
     },
     {
      "id": "l24",
@@ -756,7 +779,8 @@
       "ru": "Урок 24: Мне сделали",
       "en": "Lesson 24: Doing things for others"
      },
-     "count": 8
+     "count": 8,
+     "g": 2
     },
     {
      "id": "l25",
@@ -764,7 +788,8 @@
       "ru": "Урок 25: Если; даже если",
       "en": "Lesson 25: If; even if"
      },
-     "count": 8
+     "count": 8,
+     "g": 2
     },
     {
      "id": "v01",
@@ -918,8 +943,8 @@
     "en": "Elementary"
    },
    "description": {
-    "ru": "Продолжение после курса «Японский с нуля»: 25 уроков уровня N4 — возможность, намерение, «кажется» и «говорят», пассив и каузатив, условия ば и なら, вежливая речь кэйго и многое другое. 75 грамматических тем и 250 новых слов, всё со звуком, ромадзи и переводом.",
-    "en": "The follow-up to “Japanese from scratch”: 25 N4 lessons — potential, intention, “seems” and hearsay, passive and causative, ば and なら conditionals, keigo and more. 75 grammar points and 250 new words, all with audio, romaji and a translation."
+    "ru": "Продолжение после курса «Японский с нуля»: 25 уроков уровня N4 — возможность, намерение, «кажется» и «говорят», пассив и каузатив, условия ば и なら, вежливая речь кэйго и многое другое. 75 грамматических тем, 250 новых слов и 195 кандзи N4 блоками между уроками; в каждом уроке мини-диалог, примеры записаны кандзи с фуриганой. Всё со звуком, ромадзи и переводом, в конце — пробный экзамен N4.",
+    "en": "The follow-up to “Japanese from scratch”: 25 N4 lessons — potential, intention, “seems” and hearsay, passive and causative, ば and なら conditionals, keigo and more. 75 grammar points, 250 new words and 195 N4 kanji in blocks between lessons; every lesson has a mini dialogue, and examples are written in kanji with furigana. All with audio, romaji and a translation, plus an N4 mock exam."
    },
    "author": "Spark",
    "words": 520,
@@ -931,7 +956,8 @@
       "ru": "Урок 26: Могу — потенциальная форма",
       "en": "Lesson 26: Can — the potential form"
      },
-     "count": 13
+     "count": 13,
+     "g": 3
     },
     {
      "id": "l27",
@@ -939,7 +965,8 @@
       "ru": "Урок 27: Состояние и подготовка",
       "en": "Lesson 27: States and preparation"
      },
-     "count": 13
+     "count": 13,
+     "g": 3
     },
     {
      "id": "kj4-01",
@@ -956,7 +983,8 @@
       "ru": "Урок 28: Собираюсь и планирую",
       "en": "Lesson 28: Intentions and plans"
      },
-     "count": 13
+     "count": 13,
+     "g": 3
     },
     {
      "id": "l29",
@@ -964,7 +992,8 @@
       "ru": "Урок 29: Советы и «слишком»",
       "en": "Lesson 29: Advice and “too much”"
      },
-     "count": 13
+     "count": 13,
+     "g": 3
     },
     {
      "id": "kj4-02",
@@ -981,7 +1010,8 @@
       "ru": "Урок 30: Может быть и должно быть",
       "en": "Lesson 30: Maybe and must be"
      },
-     "count": 13
+     "count": 13,
+     "g": 3
     },
     {
      "id": "l31",
@@ -989,7 +1019,8 @@
       "ru": "Урок 31: Похоже и говорят",
       "en": "Lesson 31: Looks like and I hear"
      },
-     "count": 13
+     "count": 13,
+     "g": 3
     },
     {
      "id": "kj4-03",
@@ -1006,7 +1037,8 @@
       "ru": "Урок 32: Одновременно и «к тому же»",
       "en": "Lesson 32: At the same time and “what’s more”"
      },
-     "count": 13
+     "count": 13,
+     "g": 3
     },
     {
      "id": "l33",
@@ -1014,7 +1046,8 @@
       "ru": "Урок 33: Потому что",
       "en": "Lesson 33: Because"
      },
-     "count": 13
+     "count": 13,
+     "g": 3
     },
     {
      "id": "kj4-04",
@@ -1031,7 +1064,8 @@
       "ru": "Урок 34: Чтобы",
       "en": "Lesson 34: In order to"
      },
-     "count": 13
+     "count": 13,
+     "g": 3
     },
     {
      "id": "l35",
@@ -1039,7 +1073,8 @@
       "ru": "Урок 35: Вежливо давать и получать",
       "en": "Lesson 35: Giving and receiving politely"
      },
-     "count": 13
+     "count": 13,
+     "g": 3
     },
     {
      "id": "kj4-05",
@@ -1056,7 +1091,8 @@
       "ru": "Урок 36: Страдательный залог",
       "en": "Lesson 36: The passive"
      },
-     "count": 13
+     "count": 13,
+     "g": 3
     },
     {
      "id": "l37",
@@ -1064,7 +1100,8 @@
       "ru": "Урок 37: Заставить и разрешить",
       "en": "Lesson 37: Make and let"
      },
-     "count": 13
+     "count": 13,
+     "g": 3
     },
     {
      "id": "kj4-06",
@@ -1081,7 +1118,8 @@
       "ru": "Урок 38: Если — ば и なら",
       "en": "Lesson 38: If — ば and なら"
      },
-     "count": 13
+     "count": 13,
+     "g": 3
     },
     {
      "id": "l39",
@@ -1089,7 +1127,8 @@
       "ru": "Урок 39: Попробовать и сделать до конца",
       "en": "Lesson 39: Try and finish"
      },
-     "count": 13
+     "count": 13,
+     "g": 3
     },
     {
      "id": "l40",
@@ -1097,7 +1136,8 @@
       "ru": "Урок 40: Только что и как раз",
       "en": "Lesson 40: Just now and right then"
      },
-     "count": 13
+     "count": 13,
+     "g": 3
     },
     {
      "id": "kj4-07",
@@ -1114,7 +1154,8 @@
       "ru": "Урок 41: Называется и спрашивают",
       "en": "Lesson 41: Called and asked"
      },
-     "count": 13
+     "count": 13,
+     "g": 3
     },
     {
      "id": "l42",
@@ -1122,7 +1163,8 @@
       "ru": "Урок 42: Решили и стараюсь",
       "en": "Lesson 42: Decided and trying to"
      },
-     "count": 13
+     "count": 13,
+     "g": 3
     },
     {
      "id": "l43",
@@ -1130,7 +1172,8 @@
       "ru": "Урок 43: Уважительная речь",
       "en": "Lesson 43: Respectful language"
      },
-     "count": 13
+     "count": 13,
+     "g": 3
     },
     {
      "id": "l44",
@@ -1138,7 +1181,8 @@
       "ru": "Урок 44: Скромная речь",
       "en": "Lesson 44: Humble language"
      },
-     "count": 13
+     "count": 13,
+     "g": 3
     },
     {
      "id": "kj4-08",
@@ -1155,7 +1199,8 @@
       "ru": "Урок 45: Приказ и запрет",
       "en": "Lesson 45: Commands and prohibitions"
      },
-     "count": 13
+     "count": 13,
+     "g": 3
     },
     {
      "id": "l46",
@@ -1163,7 +1208,8 @@
       "ru": "Урок 46: Сравнение и «только»",
       "en": "Lesson 46: Comparison and “only”"
      },
-     "count": 13
+     "count": 13,
+     "g": 3
     },
     {
      "id": "l47",
@@ -1171,7 +1217,8 @@
       "ru": "Урок 47: Пока и до",
       "en": "Lesson 47: While and by"
      },
-     "count": 13
+     "count": 13,
+     "g": 3
     },
     {
      "id": "kj4-09",
@@ -1188,7 +1235,8 @@
       "ru": "Урок 48: Похоже на, как будто",
       "en": "Lesson 48: Seems like and as if"
      },
-     "count": 13
+     "count": 13,
+     "g": 3
     },
     {
      "id": "l49",
@@ -1196,7 +1244,8 @@
       "ru": "Урок 49: Без и вместо",
       "en": "Lesson 49: Without and instead of"
      },
-     "count": 13
+     "count": 13,
+     "g": 3
     },
     {
      "id": "l50",
@@ -1204,7 +1253,8 @@
       "ru": "Урок 50: Просьбы и ощущения",
       "en": "Lesson 50: Requests and sensations"
      },
-     "count": 13
+     "count": 13,
+     "g": 3
     },
     {
      "id": "kj4-10",
@@ -1239,8 +1289,8 @@
     "en": "Intermediate"
    },
    "description": {
-    "ru": "Продолжение после N4: 25 уроков уровня N3 — «вот почему» и «не то чтобы», «чем больше, тем…», «благодаря» и «из-за», «несмотря на», «вынужден», «не могу не», сожаления и пожелания. 75 грамматических тем и 250 слов о жизни, работе, чувствах и новостях, всё со звуком, ромадзи и переводом.",
-    "en": "The follow-up to N4: 25 N3 lessons — “no wonder” and “it’s not that”, “the more…, the more…”, “thanks to” and “because of”, “despite”, “have no choice but to”, “can’t help”, regrets and wishes. 75 grammar points and 250 words about life, work, feelings and the news, all with audio, romaji and a translation."
+    "ru": "Продолжение после N4: 25 уроков уровня N3 — «вот почему» и «не то чтобы», «чем больше, тем…», «благодаря» и «из-за», «несмотря на», «вынужден», «не могу не», сожаления и пожелания. 75 грамматических тем, 250 слов о жизни, работе, чувствах и новостях и 446 кандзи N3 блоками между уроками; в каждом уроке мини-диалог, примеры записаны кандзи с фуриганой. Всё со звуком, ромадзи и переводом, в конце — пробный экзамен N3.",
+    "en": "The follow-up to N4: 25 N3 lessons — “no wonder” and “it’s not that”, “the more…, the more…”, “thanks to” and “because of”, “despite”, “have no choice but to”, “can’t help”, regrets and wishes. 75 grammar points, 250 words about life, work, feelings and the news, and 446 N3 kanji in blocks between lessons; every lesson has a mini dialogue, and examples are written in kanji with furigana. All with audio, romaji and a translation, plus an N3 mock exam."
    },
    "author": "Spark",
    "words": 771,
@@ -1252,7 +1302,8 @@
       "ru": "Урок 51: Собирался и чуть не",
       "en": "Lesson 51: About to and almost"
      },
-     "count": 13
+     "count": 13,
+     "g": 3
     },
     {
      "id": "kj3-01",
@@ -1269,7 +1320,8 @@
       "ru": "Урок 52: Вот почему и не то чтобы",
       "en": "Lesson 52: That’s why and it’s not that"
      },
-     "count": 13
+     "count": 13,
+     "g": 3
     },
     {
      "id": "kj3-02",
@@ -1286,7 +1338,8 @@
       "ru": "Урок 53: Наверняка и не может быть",
       "en": "Lesson 53: Surely and can’t be"
      },
-     "count": 13
+     "count": 13,
+     "g": 3
     },
     {
      "id": "kj3-03",
@@ -1303,7 +1356,8 @@
       "ru": "Урок 54: Чем больше, тем…",
       "en": "Lesson 54: The more…, the more…"
      },
-     "count": 13
+     "count": 13,
+     "g": 3
     },
     {
      "id": "kj3-04",
@@ -1320,7 +1374,8 @@
       "ru": "Урок 55: О, к и для",
       "en": "Lesson 55: About, towards and for"
      },
-     "count": 13
+     "count": 13,
+     "g": 3
     },
     {
      "id": "kj3-05",
@@ -1337,7 +1392,8 @@
       "ru": "Урок 56: Зависит от и по словам",
       "en": "Lesson 56: Depends on and according to"
      },
-     "count": 13
+     "count": 13,
+     "g": 3
     },
     {
      "id": "kj3-06",
@@ -1354,7 +1410,8 @@
       "ru": "Урок 57: В качестве и для (кого-то)",
       "en": "Lesson 57: As and for (someone)"
      },
-     "count": 13
+     "count": 13,
+     "g": 3
     },
     {
      "id": "kj3-07",
@@ -1371,7 +1428,8 @@
       "ru": "Урок 58: Каждый раз и через один",
       "en": "Lesson 58: Every time and every other"
      },
-     "count": 13
+     "count": 13,
+     "g": 3
     },
     {
      "id": "kj3-08",
@@ -1388,7 +1446,8 @@
       "ru": "Урок 59: Так положено и незачем",
       "en": "Lesson 59: It’s the rule and no need"
      },
-     "count": 13
+     "count": 13,
+     "g": 3
     },
     {
      "id": "kj3-09",
@@ -1405,7 +1464,8 @@
       "ru": "Урок 60: Бывало и хотя",
       "en": "Lesson 60: Used to and although"
      },
-     "count": 13
+     "count": 13,
+     "g": 3
     },
     {
      "id": "kj3-10",
@@ -1422,7 +1482,8 @@
       "ru": "Урок 61: -ватый и склонен к",
       "en": "Lesson 61: -ish and tend to"
      },
-     "count": 13
+     "count": 13,
+     "g": 3
     },
     {
      "id": "kj3-11",
@@ -1439,7 +1500,8 @@
       "ru": "Урок 62: Даже и именно",
       "en": "Lesson 62: Even and precisely"
      },
-     "count": 13
+     "count": 13,
+     "g": 3
     },
     {
      "id": "kj3-12",
@@ -1456,7 +1518,8 @@
       "ru": "Урок 63: Не только и мало того",
       "en": "Lesson 63: Not only and on top of that"
      },
-     "count": 13
+     "count": 13,
+     "g": 3
     },
     {
      "id": "l64",
@@ -1464,7 +1527,8 @@
       "ru": "Урок 64: Как сказано и делать вид",
       "en": "Lesson 64: As told and pretend"
      },
-     "count": 13
+     "count": 13,
+     "g": 3
     },
     {
      "id": "kj3-13",
@@ -1481,7 +1545,8 @@
       "ru": "Урок 65: Вместо и с другой стороны",
       "en": "Lesson 65: Instead and on the other hand"
      },
-     "count": 13
+     "count": 13,
+     "g": 3
     },
     {
      "id": "kj3-14",
@@ -1498,7 +1563,8 @@
       "ru": "Урок 66: Благодаря и из-за",
       "en": "Lesson 66: Thanks to and because of"
      },
-     "count": 13
+     "count": 13,
+     "g": 3
     },
     {
      "id": "kj3-15",
@@ -1515,7 +1581,8 @@
       "ru": "Урок 67: Для своего и хотя",
       "en": "Lesson 67: For its and despite"
      },
-     "count": 13
+     "count": 13,
+     "g": 3
     },
     {
      "id": "kj3-16",
@@ -1532,7 +1599,8 @@
       "ru": "Урок 68: Пока не и пока",
       "en": "Lesson 68: Not until and as long as"
      },
-     "count": 13
+     "count": 13,
+     "g": 3
     },
     {
      "id": "kj3-17",
@@ -1549,7 +1617,8 @@
       "ru": "Урок 69: Мол и говорят",
       "en": "Lesson 69: Reported speech and hearsay"
      },
-     "count": 13
+     "count": 13,
+     "g": 3
     },
     {
      "id": "l70",
@@ -1557,7 +1626,8 @@
       "ru": "Урок 70: Не могу и приходится",
       "en": "Lesson 70: Can’t and have to"
      },
-     "count": 13
+     "count": 13,
+     "g": 3
     },
     {
      "id": "kj3-18",
@@ -1574,7 +1644,8 @@
       "ru": "Урок 71: Советы и долг",
       "en": "Lesson 71: Advice and duty"
      },
-     "count": 13
+     "count": 13,
+     "g": 3
     },
     {
      "id": "kj3-19",
@@ -1591,7 +1662,8 @@
       "ru": "Урок 72: Насколько и ничто не сравнится",
       "en": "Lesson 72: To what extent and nothing compares"
      },
-     "count": 13
+     "count": 13,
+     "g": 3
     },
     {
      "id": "kj3-20",
@@ -1608,7 +1680,8 @@
       "ru": "Урок 73: В самый разгар и как только",
       "en": "Lesson 73: In the middle of and as soon as"
      },
-     "count": 13
+     "count": 13,
+     "g": 3
     },
     {
      "id": "l74",
@@ -1616,7 +1689,8 @@
       "ru": "Урок 74: Ужасно хочется",
       "en": "Lesson 74: Dying to"
      },
-     "count": 13
+     "count": 13,
+     "g": 3
     },
     {
      "id": "kj3-21",
@@ -1633,7 +1707,8 @@
       "ru": "Урок 75: Если бы и как хорошо бы",
       "en": "Lesson 75: If only and wishes"
      },
-     "count": 13
+     "count": 13,
+     "g": 3
     },
     {
      "id": "kj3-22",
