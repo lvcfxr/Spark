@@ -1,6 +1,30 @@
 {
  "releases": [
   {
+   "version": "0.42",
+   "date": "28.11.2026",
+   "ru": [
+    "Новое имя — Sumi 墨 («тушь»). Новый логотип: печать-ханко киноварью с иероглифом 墨; новая заставка, иконка и картинки бота",
+    "Серия дней — капли туши вместо звёзд: капля превращается в письмо — Капля 滴, Точка, Штрих… Страница, Книга 本… Мастер 師; растекается кольцами, с «Фразы» становится киноварью, с «Книги» — печатью",
+    "Неделя на главной — капли туши, ход занятия — мазок кисти, серия верных ответов — круг-энсо вместо самоцвета",
+    "Стиль «Тушь» доделан везде: значки пунктов в один цвет туши, редакционные заголовки разделов, уроки курса с номерами в круге, награды и уровни без золота, коллекция в оттенках туши"
+   ],
+   "en": [
+    "New name — Sumi 墨 (“ink”). New logo: a vermilion hanko seal with the kanji 墨; new splash screen, icon and bot pictures",
+    "Day streaks are ink drops instead of stars: the drop turns into writing — Drop 滴, Dot, Stroke… Page, Book 本… Master 師; it bleeds into rings, turns vermilion from “Phrase” and becomes a seal from “Book”",
+    "Home week row shows ink drops, the session progress is a brush stroke, the correct-answer streak is an ensō circle instead of a gem",
+    "“Ink” style finished everywhere: single-ink icons, editorial section headers, numbered course lessons in circles, rewards and levels without gold, the collection in ink tones"
+   ],
+   "fix": {
+    "ru": [
+     "Шрифт заголовков снова встроен в приложение (в 0.41 он не подгружался)"
+    ],
+    "en": [
+     "The heading font is embedded again (it didn't load in 0.41)"
+    ]
+   }
+  },
+  {
    "version": "0.41",
    "date": "28.11.2026",
    "ru": [
