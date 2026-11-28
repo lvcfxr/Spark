@@ -1,4 +1,4 @@
-# Каждый час бот проверяет: кому пора напомнить о занятиях (через 7 и 30 дней без занятий) и кому прислать «слово дня».
+# Каждый час бот проверяет: кому пора напомнить о занятиях (в Telegram и в браузере) (через 7 и 30 дней без занятий) и кому прислать «слово дня».
 # Тихие часы и часовой пояс учитываются для каждого человека отдельно. Нужны секреты репозитория SPARK_BOT_URL и SPARK_BOT_SECRET; без них ничего не делает.
 name: Bot — напоминания, слово дня и недельный отчёт
 on:
@@ -19,4 +19,6 @@ jobs:
           if [ -z "$BOT_URL" ] || [ -z "$BOT_SECRET" ]; then echo "Секреты бота не заданы — пропускаю"; exit 0; fi
           curl -fsS -X POST "$BOT_URL?action=remind" -H "x-admin-secret: $BOT_SECRET"; echo
           curl -fsS -X POST "$BOT_URL?action=word" -H "x-admin-secret: $BOT_SECRET"; echo
-          curl -fsS -X POST "$BOT_URL?action=weekly" -H "x-admin-secret: $BOT_SECRET"
+          curl -fsS -X POST "$BOT_URL?action=weekly" -H "x-admin-secret: $BOT_SECRET"; echo
+          # напоминания в браузере (web-push): соседняя функция push, тот же секрет; если её нет — не мешает остальному
+          curl -sS -X POST "${BOT_URL%telegram-bot}push?action=run" -H "x-admin-secret: $BOT_SECRET" || true
