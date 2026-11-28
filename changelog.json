@@ -1,6 +1,26 @@
 {
  "releases": [
   {
+   "version": "0.43",
+   "date": "28.11.2026",
+   "ru": [
+    "Sumi теперь про японский: другие языки — в архиве. Их курсы спрятаны, свои колоды на паузе в папке «Архив», прогресс цел; вернуть — «Только японский» в настройках",
+    "Путь JLPT на главной: лесенка N5 → N4 → N3 → N2, ваш уровень по знаниям и сколько осталось до следующего — слов, кандзи и грамматики; прогноз даты по вашему темпу",
+    "Подробный путь: по каждому уровню — слова, кандзи уровня, грамматика и кана, каких кандзи не хватает, результат пробного экзамена и что делать дальше",
+    "Словарь N5: 187 новых слов уровня в 8 блоках между уроками — со звуком, примерами и переводом. Вместе с уроками курс покрывает основной словарь N5",
+    "Новый старт под японский: два вопроса (что уже знаете, сколько времени в день) и честный срок до уровня",
+    "Динамика: окна поднимаются и оседают, экраны въезжают, списки появляются лесенкой, полоски и кольца прогресса наливаются, кнопки откликаются на касание"
+   ],
+   "en": [
+    "Sumi is now all about Japanese: other languages are archived. Their courses are hidden, your decks are paused in an “Archive” folder, progress is kept; bring them back with “Japanese only” in Settings",
+    "JLPT path on the home screen: an N5 → N4 → N3 → N2 ladder, your level by what you know and what’s left for the next — words, kanji and grammar; a date forecast at your pace",
+    "Detailed path: for each level — words, level kanji, grammar and kana, which kanji are missing, your mock exam result and what to do next",
+    "N5 vocabulary: 187 new level words in 8 blocks between lessons — with audio, examples and translations. Together with the lessons the course covers the core N5 vocabulary",
+    "A Japanese-first start: two questions (what you know, how much time a day) and an honest time to the level",
+    "Motion: sheets rise and settle, screens slide in, lists appear in a cascade, progress bars and rings fill up, buttons respond to taps"
+   ]
+  },
+  {
    "version": "0.42",
    "date": "28.11.2026",
    "ru": [

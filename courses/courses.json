@@ -499,8 +499,8 @@
     "en": "Complete hiragana and katakana (with yōon, the small っ and long vowels), then 25 N5 lessons in the classic textbook order — from “A は B です” to “if” and “even if” — plus 8 themed word sets (numbers, time, family, food, body, town, weather, verbs) and the 80 N5 kanji with readings and words. Every lesson has a mini dialogue, and there’s an N5 mock exam. Everything has audio, romaji and a translation. Levels unlock one by one."
    },
    "author": "Spark",
-   "words": 652,
-   "minutes": 1015,
+   "words": 839,
+   "minutes": 1295,
    "units": [
     {
      "id": "hira1",
@@ -606,6 +606,15 @@
      }
     },
     {
+     "id": "v09",
+     "title": {
+      "ru": "Словарь N5: в классе и дома",
+      "en": "N5 words: classroom and home"
+     },
+     "count": 25,
+     "side": true
+    },
+    {
      "id": "l04",
      "title": {
       "ru": "Урок 4: Время и ます",
@@ -643,6 +652,15 @@
       "ru": "пригласить кого-то и согласиться на приглашение",
       "en": "invite someone and accept an invitation"
      }
+    },
+    {
+     "id": "v10",
+     "title": {
+      "ru": "Словарь N5: счёт и даты",
+      "en": "N5 words: counting and dates"
+     },
+     "count": 22,
+     "side": true
     },
     {
      "id": "l07",
@@ -684,6 +702,15 @@
      }
     },
     {
+     "id": "v11",
+     "title": {
+      "ru": "Словарь N5: время и календарь",
+      "en": "N5 words: time and calendar"
+     },
+     "count": 22,
+     "side": true
+    },
+    {
      "id": "l10",
      "title": {
       "ru": "Урок 10: Есть, находится",
@@ -721,6 +748,15 @@
       "ru": "рассказать о прошлом и сравнить",
       "en": "talk about the past and compare"
      }
+    },
+    {
+     "id": "v12",
+     "title": {
+      "ru": "Словарь N5: люди и вежливые слова",
+      "en": "N5 words: people and polite words"
+     },
+     "count": 20,
+     "side": true
     },
     {
      "id": "l13",
@@ -762,6 +798,15 @@
      }
     },
     {
+     "id": "v13",
+     "title": {
+      "ru": "Словарь N5: одежда и мелочи",
+      "en": "N5 words: clothes and small things"
+     },
+     "count": 18,
+     "side": true
+    },
+    {
      "id": "l16",
      "title": {
       "ru": "Урок 16: Последовательность действий",
@@ -799,6 +844,15 @@
       "ru": "рассказать о хобби и о том, что умеете",
       "en": "talk about your hobbies and skills"
      }
+    },
+    {
+     "id": "v14",
+     "title": {
+      "ru": "Словарь N5: город и дорога",
+      "en": "N5 words: town and directions"
+     },
+     "count": 23,
+     "side": true
     },
     {
      "id": "l19",
@@ -840,6 +894,15 @@
      }
     },
     {
+     "id": "v15",
+     "title": {
+      "ru": "Словарь N5: еда и кухня",
+      "en": "N5 words: food and kitchen"
+     },
+     "count": 17,
+     "side": true
+    },
+    {
      "id": "l22",
      "title": {
       "ru": "Урок 22: Описание через действие",
@@ -879,6 +942,15 @@
      }
     },
     {
+     "id": "v16",
+     "title": {
+      "ru": "Словарь N5: какой? как?",
+      "en": "N5 words: what kind? how?"
+     },
+     "count": 23,
+     "side": true
+    },
+    {
      "id": "l25",
      "title": {
       "ru": "Урок 25: Если; даже если",
@@ -890,6 +962,15 @@
       "ru": "говорить о планах «если…» и «даже если…»",
       "en": "talk about plans with “if…” and “even if…”"
      }
+    },
+    {
+     "id": "v17",
+     "title": {
+      "ru": "Словарь N5: дела, хобби и связки",
+      "en": "N5 words: chores, hobbies and linking words"
+     },
+     "count": 17,
+     "side": true
     },
     {
      "id": "v01",
