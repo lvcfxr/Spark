@@ -1,6 +1,24 @@
 {
  "releases": [
   {
+   "version": "0.39",
+   "date": "28.11.2026",
+   "ru": [
+    "Фуригана над каждым словом, как в японских книгах, — вместо строки каны под фразой. Над кандзи, которые у вас уже в долгой памяти, она больше не показывается: читаете сами",
+    "Новые тренажёры на фразах из ваших уроков: «Частицы» (は, を, に, で… с коротким правилом после ответа), «Собери фразу» (перевод → японская фраза из кусков), «Слово в контексте» и «Диктант» (слушаете фразу и пишете каной, с разбором долгих гласных и っ)",
+    "Истории N4 и N3 сначала на слух: текст открывается после ответа на вопрос. Под историей — слова из неё, их можно одним касанием добавить в повторение",
+    "Страница японского курса: все тренажёры одной сеткой вместо длинного списка",
+    "«Умное занятие» теперь чередует и новые тренажёры — частицы, сборку фраз, слова в контексте и диктант"
+   ],
+   "en": [
+    "Furigana over each word, like in Japanese books, instead of a kana line under the sentence. It disappears over kanji already in your long-term memory, so you read them yourself",
+    "New trainers built from sentences in your lessons: Particles (は, を, に, で… with a short rule after each answer), Build the sentence (translation → Japanese from pieces), Word in context and Dictation (listen and write in kana, with long-vowel and っ analysis)",
+    "N4 and N3 stories are now listen-first: the text opens after you answer the question. Below the story are its words — add any of them to your reviews in one tap",
+    "Japanese course page: all trainers in one grid instead of a long list",
+    "The Smart session now rotates the new trainers too — particles, sentence building, words in context and dictation"
+   ]
+  },
+  {
    "version": "0.38",
    "date": "28.11.2026",
    "ru": [
