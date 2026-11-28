@@ -1,6 +1,26 @@
 {
  "releases": [
   {
+   "version": "0.40",
+   "date": "28.11.2026",
+   "ru": [
+    "Новый старт за три вопроса: какой язык, что уже знаете, сколько минут в день — и сразу первый урок (или короткий тест уровня). Цель дня подстраивается под выбранный темп",
+    "«Научитесь…» у каждого урока японского: вместо списка тем — что вы сможете сделать после урока. Пройденные уроки отмечены «Могу»",
+    "План к дате экзамена JLPT: выберите дату — Spark посчитает, сколько новых слов в день нужно, и честно скажет, если весь курс к этой дате не успеть",
+    "Трудные слова: если слово забывается уже четвёртый раз, Spark подскажет, как его запомнить, или предложит отложить его на время",
+    "Напоминания в Telegram называют слова, которые вот-вот забудутся, — не просто «пора заниматься»",
+    "Быстрее на больших колодах: списки карточек и колод больше не пересчитываются при каждой перерисовке"
+   ],
+   "en": [
+    "A new start in three questions: which language, what you already know, how many minutes a day — then straight to the first lesson (or a short placement test). The daily goal follows the pace you chose",
+    "“You'll learn to…” on every Japanese lesson: instead of a topic list, what you'll be able to do after it. Finished lessons say “I can”",
+    "A plan for your JLPT date: pick the date and Spark works out how many new words a day you need — and tells you honestly if the whole course won't fit",
+    "Hard words: when a word slips for the fourth time, Spark suggests how to remember it or offers to set it aside for a while",
+    "Telegram reminders now name the words that are about to slip away, not just “time to study”",
+    "Faster with large decks: card and deck lists are no longer rebuilt on every redraw"
+   ]
+  },
+  {
    "version": "0.39",
    "date": "28.11.2026",
    "ru": [

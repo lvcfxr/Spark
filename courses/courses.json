@@ -573,7 +573,11 @@
       "en": "Lesson 1: Introductions"
      },
      "count": 12,
-     "g": 3
+     "g": 3,
+     "can": {
+      "ru": "представиться и сказать, откуда вы",
+      "en": "introduce yourself and say where you're from"
+     }
     },
     {
      "id": "l02",
@@ -582,7 +586,11 @@
       "en": "Lesson 2: This, that and things"
      },
      "count": 12,
-     "g": 3
+     "g": 3,
+     "can": {
+      "ru": "спросить «что это?» и «чьё это?»",
+      "en": "ask “what is this?” and “whose is it?”"
+     }
     },
     {
      "id": "l03",
@@ -591,7 +599,11 @@
       "en": "Lesson 3: Where? How much?"
      },
      "count": 10,
-     "g": 2
+     "g": 2,
+     "can": {
+      "ru": "найти нужное место и спросить цену",
+      "en": "find a place and ask how much something costs"
+     }
     },
     {
      "id": "l04",
@@ -600,7 +612,11 @@
       "en": "Lesson 4: Time and ます"
      },
      "count": 13,
-     "g": 3
+     "g": 3,
+     "can": {
+      "ru": "рассказать о своём распорядке дня",
+      "en": "describe your daily routine"
+     }
     },
     {
      "id": "l05",
@@ -609,7 +625,11 @@
       "en": "Lesson 5: Going places"
      },
      "count": 12,
-     "g": 3
+     "g": 3,
+     "can": {
+      "ru": "сказать, куда и на чём вы едете",
+      "en": "say where you're going and how"
+     }
     },
     {
      "id": "l06",
@@ -618,7 +638,11 @@
       "en": "Lesson 6: Actions and invitations"
      },
      "count": 12,
-     "g": 3
+     "g": 3,
+     "can": {
+      "ru": "пригласить кого-то и согласиться на приглашение",
+      "en": "invite someone and accept an invitation"
+     }
     },
     {
      "id": "l07",
@@ -627,7 +651,11 @@
       "en": "Lesson 7: Tools, giving and receiving"
      },
      "count": 12,
-     "g": 3
+     "g": 3,
+     "can": {
+      "ru": "рассказать, что вам подарили и что вы подарили",
+      "en": "talk about giving and receiving gifts"
+     }
     },
     {
      "id": "l08",
@@ -636,7 +664,11 @@
       "en": "Lesson 8: Adjectives"
      },
      "count": 13,
-     "g": 3
+     "g": 3,
+     "can": {
+      "ru": "описать место, вещь или человека",
+      "en": "describe a place, a thing or a person"
+     }
     },
     {
      "id": "l09",
@@ -645,7 +677,11 @@
       "en": "Lesson 9: Likes, skills, understanding"
      },
      "count": 11,
-     "g": 2
+     "g": 2,
+     "can": {
+      "ru": "сказать, что вам нравится и что вы умеете",
+      "en": "say what you like and what you're good at"
+     }
     },
     {
      "id": "l10",
@@ -654,7 +690,11 @@
       "en": "Lesson 10: There is, is located"
      },
      "count": 11,
-     "g": 2
+     "g": 2,
+     "can": {
+      "ru": "объяснить, где что находится",
+      "en": "explain where things are"
+     }
     },
     {
      "id": "l11",
@@ -663,7 +703,11 @@
       "en": "Lesson 11: Counting"
      },
      "count": 11,
-     "g": 2
+     "g": 2,
+     "can": {
+      "ru": "считать вещи и людей, купить билеты и марки",
+      "en": "count things and people, buy tickets and stamps"
+     }
     },
     {
      "id": "l12",
@@ -672,7 +716,11 @@
       "en": "Lesson 12: Past and comparison"
      },
      "count": 10,
-     "g": 2
+     "g": 2,
+     "can": {
+      "ru": "рассказать о прошлом и сравнить",
+      "en": "talk about the past and compare"
+     }
     },
     {
      "id": "l13",
@@ -681,7 +729,11 @@
       "en": "Lesson 13: Wants"
      },
      "count": 11,
-     "g": 3
+     "g": 3,
+     "can": {
+      "ru": "сказать, чего вы хотите",
+      "en": "say what you want"
+     }
     },
     {
      "id": "l14",
@@ -690,7 +742,11 @@
       "en": "Lesson 14: The て-form"
      },
      "count": 12,
-     "g": 3
+     "g": 3,
+     "can": {
+      "ru": "попросить подождать, помочь или сделать что-то",
+      "en": "ask someone to wait, help or do something"
+     }
     },
     {
      "id": "l15",
@@ -699,7 +755,11 @@
       "en": "Lesson 15: Permission and prohibition"
      },
      "count": 11,
-     "g": 3
+     "g": 3,
+     "can": {
+      "ru": "спросить разрешения и понять запрет",
+      "en": "ask for permission and understand a ban"
+     }
     },
     {
      "id": "l16",
@@ -708,7 +768,11 @@
       "en": "Lesson 16: Sequences of actions"
      },
      "count": 11,
-     "g": 3
+     "g": 3,
+     "can": {
+      "ru": "рассказать, что делаете по порядку",
+      "en": "describe what you do step by step"
+     }
     },
     {
      "id": "l17",
@@ -717,7 +781,11 @@
       "en": "Lesson 17: The ない-form"
      },
      "count": 11,
-     "g": 3
+     "g": 3,
+     "can": {
+      "ru": "понять совет врача: что делать и чего не делать",
+      "en": "understand a doctor's advice: dos and don'ts"
+     }
     },
     {
      "id": "l18",
@@ -726,7 +794,11 @@
       "en": "Lesson 18: Can; hobbies"
      },
      "count": 10,
-     "g": 3
+     "g": 3,
+     "can": {
+      "ru": "рассказать о хобби и о том, что умеете",
+      "en": "talk about your hobbies and skills"
+     }
     },
     {
      "id": "l19",
@@ -735,7 +807,11 @@
       "en": "Lesson 19: Experience and change"
      },
      "count": 10,
-     "g": 3
+     "g": 3,
+     "can": {
+      "ru": "рассказать о своём опыте («я когда-то…»)",
+      "en": "talk about your experiences (“I've once…”)"
+     }
     },
     {
      "id": "l20",
@@ -744,7 +820,11 @@
       "en": "Lesson 20: Plain style"
      },
      "count": 9,
-     "g": 2
+     "g": 2,
+     "can": {
+      "ru": "болтать с другом в простом стиле",
+      "en": "chat with a friend in plain style"
+     }
     },
     {
      "id": "l21",
@@ -753,7 +833,11 @@
       "en": "Lesson 21: I think, he said"
      },
      "count": 10,
-     "g": 3
+     "g": 3,
+     "can": {
+      "ru": "передать чужие слова и своё мнение",
+      "en": "report what someone said and give your opinion"
+     }
     },
     {
      "id": "l22",
@@ -762,7 +846,11 @@
       "en": "Lesson 22: Describing with clauses"
      },
      "count": 9,
-     "g": 2
+     "g": 2,
+     "can": {
+      "ru": "описать человека или вещь целой фразой",
+      "en": "describe a person or thing with a whole clause"
+     }
     },
     {
      "id": "l23",
@@ -771,7 +859,11 @@
       "en": "Lesson 23: When; if — then"
      },
      "count": 9,
-     "g": 2
+     "g": 2,
+     "can": {
+      "ru": "объяснить дорогу и сказать «когда…»",
+      "en": "give directions and say “when…”"
+     }
     },
     {
      "id": "l24",
@@ -780,7 +872,11 @@
       "en": "Lesson 24: Doing things for others"
      },
      "count": 8,
-     "g": 2
+     "g": 2,
+     "can": {
+      "ru": "поблагодарить за помощь: «мне сделали»",
+      "en": "thank someone for doing something for you"
+     }
     },
     {
      "id": "l25",
@@ -789,7 +885,11 @@
       "en": "Lesson 25: If; even if"
      },
      "count": 8,
-     "g": 2
+     "g": 2,
+     "can": {
+      "ru": "говорить о планах «если…» и «даже если…»",
+      "en": "talk about plans with “if…” and “even if…”"
+     }
     },
     {
      "id": "v01",
@@ -957,7 +1057,11 @@
       "en": "Lesson 26: Can — the potential form"
      },
      "count": 13,
-     "g": 3
+     "g": 3,
+     "can": {
+      "ru": "сказать, что вы можете и чего не можете",
+      "en": "say what you can and can't do"
+     }
     },
     {
      "id": "l27",
@@ -966,7 +1070,11 @@
       "en": "Lesson 27: States and preparation"
      },
      "count": 13,
-     "g": 3
+     "g": 3,
+     "can": {
+      "ru": "описать, как всё подготовлено",
+      "en": "describe how things have been set up"
+     }
     },
     {
      "id": "kj4-01",
@@ -984,7 +1092,11 @@
       "en": "Lesson 28: Intentions and plans"
      },
      "count": 13,
-     "g": 3
+     "g": 3,
+     "can": {
+      "ru": "рассказать о планах и намерениях",
+      "en": "talk about plans and intentions"
+     }
     },
     {
      "id": "l29",
@@ -993,7 +1105,11 @@
       "en": "Lesson 29: Advice and “too much”"
      },
      "count": 13,
-     "g": 3
+     "g": 3,
+     "can": {
+      "ru": "дать совет и сказать «слишком»",
+      "en": "give advice and say “too much”"
+     }
     },
     {
      "id": "kj4-02",
@@ -1011,7 +1127,11 @@
       "en": "Lesson 30: Maybe and must be"
      },
      "count": 13,
-     "g": 3
+     "g": 3,
+     "can": {
+      "ru": "говорить о вероятности: «может быть», «должно быть»",
+      "en": "talk about likelihood: “maybe”, “must be”"
+     }
     },
     {
      "id": "l31",
@@ -1020,7 +1140,11 @@
       "en": "Lesson 31: Looks like and I hear"
      },
      "count": 13,
-     "g": 3
+     "g": 3,
+     "can": {
+      "ru": "передать слухи и сказать, на что похоже",
+      "en": "pass on rumours and say what something seems like"
+     }
     },
     {
      "id": "kj4-03",
@@ -1038,7 +1162,11 @@
       "en": "Lesson 32: At the same time and “what’s more”"
      },
      "count": 13,
-     "g": 3
+     "g": 3,
+     "can": {
+      "ru": "делать два дела сразу и перечислять причины",
+      "en": "talk about doing two things at once and list reasons"
+     }
     },
     {
      "id": "l33",
@@ -1047,7 +1175,11 @@
       "en": "Lesson 33: Because"
      },
      "count": 13,
-     "g": 3
+     "g": 3,
+     "can": {
+      "ru": "объяснить причину: «потому что»",
+      "en": "explain a reason: “because”"
+     }
     },
     {
      "id": "kj4-04",
@@ -1065,7 +1197,11 @@
       "en": "Lesson 34: In order to"
      },
      "count": 13,
-     "g": 3
+     "g": 3,
+     "can": {
+      "ru": "сказать, зачем вы что-то делаете",
+      "en": "say why you do something (“in order to”)"
+     }
     },
     {
      "id": "l35",
@@ -1074,7 +1210,11 @@
       "en": "Lesson 35: Giving and receiving politely"
      },
      "count": 13,
-     "g": 3
+     "g": 3,
+     "can": {
+      "ru": "вежливо дарить и принимать подарки",
+      "en": "give and receive gifts politely"
+     }
     },
     {
      "id": "kj4-05",
@@ -1092,7 +1232,11 @@
       "en": "Lesson 36: The passive"
      },
      "count": 13,
-     "g": 3
+     "g": 3,
+     "can": {
+      "ru": "рассказать, что с вами случилось (пассив)",
+      "en": "tell what happened to you (passive)"
+     }
     },
     {
      "id": "l37",
@@ -1101,7 +1245,11 @@
       "en": "Lesson 37: Make and let"
      },
      "count": 13,
-     "g": 3
+     "g": 3,
+     "can": {
+      "ru": "сказать, кто кого заставил или кому разрешил",
+      "en": "say who made or let someone do something"
+     }
     },
     {
      "id": "kj4-06",
@@ -1119,7 +1267,11 @@
       "en": "Lesson 38: If — ば and なら"
      },
      "count": 13,
-     "g": 3
+     "g": 3,
+     "can": {
+      "ru": "давать условия: «если…, то…»",
+      "en": "set conditions: “if…, then…”"
+     }
     },
     {
      "id": "l39",
@@ -1128,7 +1280,11 @@
       "en": "Lesson 39: Try and finish"
      },
      "count": 13,
-     "g": 3
+     "g": 3,
+     "can": {
+      "ru": "рассказать, что попробовали и что случайно сделали",
+      "en": "say what you tried and what you did by accident"
+     }
     },
     {
      "id": "l40",
@@ -1137,7 +1293,11 @@
       "en": "Lesson 40: Just now and right then"
      },
      "count": 13,
-     "g": 3
+     "g": 3,
+     "can": {
+      "ru": "сказать «только что» и «как раз собирался»",
+      "en": "say “just did” and “was just about to”"
+     }
     },
     {
      "id": "kj4-07",
@@ -1155,7 +1315,11 @@
       "en": "Lesson 41: Called and asked"
      },
      "count": 13,
-     "g": 3
+     "g": 3,
+     "can": {
+      "ru": "спросить, как что-то называется и что значит",
+      "en": "ask what something is called and what it means"
+     }
     },
     {
      "id": "l42",
@@ -1164,7 +1328,11 @@
       "en": "Lesson 42: Decided and trying to"
      },
      "count": 13,
-     "g": 3
+     "g": 3,
+     "can": {
+      "ru": "рассказать о своих решениях и привычках",
+      "en": "talk about your decisions and habits"
+     }
     },
     {
      "id": "l43",
@@ -1173,7 +1341,11 @@
       "en": "Lesson 43: Respectful language"
      },
      "count": 13,
-     "g": 3
+     "g": 3,
+     "can": {
+      "ru": "вежливо говорить о начальнике и клиенте",
+      "en": "speak politely about a boss or a client"
+     }
     },
     {
      "id": "l44",
@@ -1182,7 +1354,11 @@
       "en": "Lesson 44: Humble language"
      },
      "count": 13,
-     "g": 3
+     "g": 3,
+     "can": {
+      "ru": "скромно говорить о себе на работе",
+      "en": "speak humbly about yourself at work"
+     }
     },
     {
      "id": "kj4-08",
@@ -1200,7 +1376,11 @@
       "en": "Lesson 45: Commands and prohibitions"
      },
      "count": 13,
-     "g": 3
+     "g": 3,
+     "can": {
+      "ru": "понять приказы, запреты и знаки",
+      "en": "understand orders, bans and signs"
+     }
     },
     {
      "id": "l46",
@@ -1209,7 +1389,11 @@
       "en": "Lesson 46: Comparison and “only”"
      },
      "count": 13,
-     "g": 3
+     "g": 3,
+     "can": {
+      "ru": "сравнивать и говорить «только»",
+      "en": "compare things and say “only”"
+     }
     },
     {
      "id": "l47",
@@ -1218,7 +1402,11 @@
       "en": "Lesson 47: While and by"
      },
      "count": 13,
-     "g": 3
+     "g": 3,
+     "can": {
+      "ru": "договориться о сроках: «пока», «до»",
+      "en": "agree on deadlines: “while”, “by”"
+     }
     },
     {
      "id": "kj4-09",
@@ -1236,7 +1424,11 @@
       "en": "Lesson 48: Seems like and as if"
      },
      "count": 13,
-     "g": 3
+     "g": 3,
+     "can": {
+      "ru": "сказать, на что что-то похоже",
+      "en": "say what something is like"
+     }
     },
     {
      "id": "l49",
@@ -1245,7 +1437,11 @@
       "en": "Lesson 49: Without and instead of"
      },
      "count": 13,
-     "g": 3
+     "g": 3,
+     "can": {
+      "ru": "сказать «без» и «вместо»",
+      "en": "say “without” and “instead of”"
+     }
     },
     {
      "id": "l50",
@@ -1254,7 +1450,11 @@
       "en": "Lesson 50: Requests and sensations"
      },
      "count": 13,
-     "g": 3
+     "g": 3,
+     "can": {
+      "ru": "попросить о чём-то и описать своё самочувствие",
+      "en": "make a request and describe how you feel"
+     }
     },
     {
      "id": "kj4-10",
@@ -1303,7 +1503,11 @@
       "en": "Lesson 51: About to and almost"
      },
      "count": 13,
-     "g": 3
+     "g": 3,
+     "can": {
+      "ru": "рассказать, что чуть не случилось",
+      "en": "say what almost happened"
+     }
     },
     {
      "id": "kj3-01",
@@ -1321,7 +1525,11 @@
       "en": "Lesson 52: That’s why and it’s not that"
      },
      "count": 13,
-     "g": 3
+     "g": 3,
+     "can": {
+      "ru": "объяснить «вот почему» и «не то чтобы»",
+      "en": "explain “that's why” and “it's not that…”"
+     }
     },
     {
      "id": "kj3-02",
@@ -1339,7 +1547,11 @@
       "en": "Lesson 53: Surely and can’t be"
      },
      "count": 13,
-     "g": 3
+     "g": 3,
+     "can": {
+      "ru": "сделать уверенный вывод или отвергнуть его",
+      "en": "draw a confident conclusion or rule one out"
+     }
     },
     {
      "id": "kj3-03",
@@ -1357,7 +1569,11 @@
       "en": "Lesson 54: The more…, the more…"
      },
      "count": 13,
-     "g": 3
+     "g": 3,
+     "can": {
+      "ru": "сказать «чем больше…, тем…»",
+      "en": "say “the more…, the more…”"
+     }
     },
     {
      "id": "kj3-04",
@@ -1375,7 +1591,11 @@
       "en": "Lesson 55: About, towards and for"
      },
      "count": 13,
-     "g": 3
+     "g": 3,
+     "can": {
+      "ru": "говорить о теме и о том, что важно для вас",
+      "en": "talk about a topic and what matters to you"
+     }
     },
     {
      "id": "kj3-05",
@@ -1393,7 +1613,11 @@
       "en": "Lesson 56: Depends on and according to"
      },
      "count": 13,
-     "g": 3
+     "g": 3,
+     "can": {
+      "ru": "пересказать новости и сказать «зависит от…»",
+      "en": "retell the news and say “it depends on…”"
+     }
     },
     {
      "id": "kj3-06",
@@ -1411,7 +1635,11 @@
       "en": "Lesson 57: As and for (someone)"
      },
      "count": 13,
-     "g": 3
+     "g": 3,
+     "can": {
+      "ru": "сказать, в какой роли вы что-то делаете",
+      "en": "say in what role you do something"
+     }
     },
     {
      "id": "kj3-07",
@@ -1429,7 +1657,11 @@
       "en": "Lesson 58: Every time and every other"
      },
      "count": 13,
-     "g": 3
+     "g": 3,
+     "can": {
+      "ru": "сказать «каждый раз» и «через один»",
+      "en": "say “every time” and “every other”"
+     }
     },
     {
      "id": "kj3-08",
@@ -1447,7 +1679,11 @@
       "en": "Lesson 59: It’s the rule and no need"
      },
      "count": 13,
-     "g": 3
+     "g": 3,
+     "can": {
+      "ru": "объяснить правила и сказать «незачем»",
+      "en": "explain rules and say “there's no need”"
+     }
     },
     {
      "id": "kj3-09",
@@ -1465,7 +1701,11 @@
       "en": "Lesson 60: Used to and although"
      },
      "count": 13,
-     "g": 3
+     "g": 3,
+     "can": {
+      "ru": "вспоминать прошлое: «бывало…»",
+      "en": "reminisce: “I used to…”"
+     }
     },
     {
      "id": "kj3-10",
@@ -1483,7 +1723,11 @@
       "en": "Lesson 61: -ish and tend to"
      },
      "count": 13,
-     "g": 3
+     "g": 3,
+     "can": {
+      "ru": "описать склонности и самочувствие",
+      "en": "describe tendencies and how you feel"
+     }
     },
     {
      "id": "kj3-11",
@@ -1501,7 +1745,11 @@
       "en": "Lesson 62: Even and precisely"
      },
      "count": 13,
-     "g": 3
+     "g": 3,
+     "can": {
+      "ru": "сказать «даже» и «именно»",
+      "en": "say “even” and “exactly this”"
+     }
     },
     {
      "id": "kj3-12",
@@ -1519,7 +1767,11 @@
       "en": "Lesson 63: Not only and on top of that"
      },
      "count": 13,
-     "g": 3
+     "g": 3,
+     "can": {
+      "ru": "перечислять плюсы: «не только…, но и…»",
+      "en": "list advantages: “not only…, but also…”"
+     }
     },
     {
      "id": "l64",
@@ -1528,7 +1780,11 @@
       "en": "Lesson 64: As told and pretend"
      },
      "count": 13,
-     "g": 3
+     "g": 3,
+     "can": {
+      "ru": "сказать «как сказано» и «делать вид»",
+      "en": "say “as instructed” and “pretend”"
+     }
     },
     {
      "id": "kj3-13",
@@ -1546,7 +1802,11 @@
       "en": "Lesson 65: Instead and on the other hand"
      },
      "count": 13,
-     "g": 3
+     "g": 3,
+     "can": {
+      "ru": "сравнивать стороны: «зато», «с другой стороны»",
+      "en": "weigh pros and cons"
+     }
     },
     {
      "id": "kj3-14",
@@ -1564,7 +1824,11 @@
       "en": "Lesson 66: Thanks to and because of"
      },
      "count": 13,
-     "g": 3
+     "g": 3,
+     "can": {
+      "ru": "поблагодарить или объяснить, из-за чего беда",
+      "en": "thank someone or explain what caused a problem"
+     }
     },
     {
      "id": "kj3-15",
@@ -1582,7 +1846,11 @@
       "en": "Lesson 67: For its and despite"
      },
      "count": 13,
-     "g": 3
+     "g": 3,
+     "can": {
+      "ru": "сказать «для своих лет» и «хотя»",
+      "en": "say “for one's age” and “even though”"
+     }
     },
     {
      "id": "kj3-16",
@@ -1600,7 +1868,11 @@
       "en": "Lesson 68: Not until and as long as"
      },
      "count": 13,
-     "g": 3
+     "g": 3,
+     "can": {
+      "ru": "говорить о условиях: «пока не…», «насколько знаю»",
+      "en": "talk about conditions: “until…”, “as far as I know”"
+     }
     },
     {
      "id": "kj3-17",
@@ -1618,7 +1890,11 @@
       "en": "Lesson 69: Reported speech and hearsay"
      },
      "count": 13,
-     "g": 3
+     "g": 3,
+     "can": {
+      "ru": "пересказывать слухи в разговоре",
+      "en": "pass on gossip in conversation"
+     }
     },
     {
      "id": "l70",
@@ -1627,7 +1903,11 @@
       "en": "Lesson 70: Can’t and have to"
      },
      "count": 13,
-     "g": 3
+     "g": 3,
+     "can": {
+      "ru": "сказать «не могу не…» и «приходится»",
+      "en": "say “I can't not…” and “I have to”"
+     }
     },
     {
      "id": "kj3-18",
@@ -1645,7 +1925,11 @@
       "en": "Lesson 71: Advice and duty"
      },
      "count": 13,
-     "g": 3
+     "g": 3,
+     "can": {
+      "ru": "давать советы и говорить о долге",
+      "en": "give advice and talk about obligations"
+     }
     },
     {
      "id": "kj3-19",
@@ -1663,7 +1947,11 @@
       "en": "Lesson 72: To what extent and nothing compares"
      },
      "count": 13,
-     "g": 3
+     "g": 3,
+     "can": {
+      "ru": "описать сильные чувства и сравнить",
+      "en": "describe strong feelings and compare"
+     }
     },
     {
      "id": "kj3-20",
@@ -1681,7 +1969,11 @@
       "en": "Lesson 73: In the middle of and as soon as"
      },
      "count": 13,
-     "g": 3
+     "g": 3,
+     "can": {
+      "ru": "рассказать о внезапном событии",
+      "en": "describe a sudden event"
+     }
     },
     {
      "id": "l74",
@@ -1690,7 +1982,11 @@
       "en": "Lesson 74: Dying to"
      },
      "count": 13,
-     "g": 3
+     "g": 3,
+     "can": {
+      "ru": "сказать «ужасно хочется» и «не могу удержаться»",
+      "en": "say “I'm dying to” and “I can't help…”"
+     }
     },
     {
      "id": "kj3-21",
@@ -1708,7 +2004,11 @@
       "en": "Lesson 75: If only and wishes"
      },
      "count": 13,
-     "g": 3
+     "g": 3,
+     "can": {
+      "ru": "говорить о мечтах и сожалениях",
+      "en": "talk about dreams and regrets"
+     }
     },
     {
      "id": "kj3-22",
