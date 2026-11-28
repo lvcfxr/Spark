@@ -8786,6 +8786,2624 @@
    }
   },
   {
+   "id": "v09-isu",
+   "unit": "v09",
+   "front": "いす [audio](media:e2aba84e38e38ab879e8e54d)",
+   "hint": "椅子 · isu",
+   "back": {
+    "ru": "стул",
+    "en": "chair"
+   },
+   "extra": {
+    "ru": "> いすに すわって ください。 [audio](media:3743cad429af243f1c278212)\n> *isu ni suwatte kudasai*\n> — Садитесь на стул, пожалуйста.",
+    "en": "> いすに すわって ください。 [audio](media:3743cad429af243f1c278212)\n> *isu ni suwatte kudasai*\n> — Please sit on the chair."
+   }
+  },
+  {
+   "id": "v09-nooto",
+   "unit": "v09",
+   "front": "ノート [audio](media:0deaf08f613be56d760a4485)",
+   "hint": "nooto",
+   "back": {
+    "ru": "тетрадь",
+    "en": "notebook"
+   },
+   "extra": {
+    "ru": "> ノートに かいて ください。 [audio](media:1bed0ae0328793ba84cee0e7)\n> *nooto ni kaite kudasai*\n> — Напишите в тетради.",
+    "en": "> ノートに かいて ください。 [audio](media:1bed0ae0328793ba84cee0e7)\n> *nooto ni kaite kudasai*\n> — Please write it in your notebook."
+   }
+  },
+  {
+   "id": "v09-pen",
+   "unit": "v09",
+   "front": "ペン [audio](media:35356f1778535a03fe8fddd9)",
+   "hint": "pen",
+   "back": {
+    "ru": "ручка",
+    "en": "pen"
+   },
+   "extra": {
+    "ru": "> ペンを かして ください。 [audio](media:e0fa183e4e05c9d068d3d5dc)\n> *pen o kashite kudasai*\n> — Одолжите ручку, пожалуйста.",
+    "en": "> ペンを かして ください。 [audio](media:e0fa183e4e05c9d068d3d5dc)\n> *pen o kashite kudasai*\n> — Please lend me a pen."
+   }
+  },
+  {
+   "id": "v09-boorupen",
+   "unit": "v09",
+   "front": "ボールペン [audio](media:70e83999663a89433bc10a7f)",
+   "hint": "boorupen",
+   "back": {
+    "ru": "шариковая ручка",
+    "en": "ballpoint pen"
+   },
+   "extra": {
+    "ru": "> あかい ボールペンは ありますか。 [audio](media:cab30e19ce34bd87a4c9dc6c)\n> *akai boorupen wa arimasu ka*\n> — Есть красная шариковая ручка?",
+    "en": "> あかい ボールペンは ありますか。 [audio](media:cab30e19ce34bd87a4c9dc6c)\n> *akai boorupen wa arimasu ka*\n> — Do you have a red ballpoint pen?"
+   }
+  },
+  {
+   "id": "v09-peeji",
+   "unit": "v09",
+   "front": "ページ [audio](media:2f363c3b1bb2a3cc94a4f3d2)",
+   "hint": "peeji",
+   "back": {
+    "ru": "страница",
+    "en": "page"
+   },
+   "extra": {
+    "ru": "> じゅうページを あけて ください。 [audio](media:69da9b5150cd3a36372a0cfc)\n> *juupeeji o akete kudasai*\n> — Откройте десятую страницу.",
+    "en": "> じゅうページを あけて ください。 [audio](media:69da9b5150cd3a36372a0cfc)\n> *juupeeji o akete kudasai*\n> — Please open page ten."
+   }
+  },
+  {
+   "id": "v09-tesuto",
+   "unit": "v09",
+   "front": "テスト [audio](media:b2cf5d28411f95eb02f6b716)",
+   "hint": "tesuto",
+   "back": {
+    "ru": "контрольная, тест",
+    "en": "test"
+   },
+   "extra": {
+    "ru": "> あした テストが あります。 [audio](media:4c54fab0d6706085af6f0388)\n> *ashita tesuto ga arimasu*\n> — Завтра контрольная.",
+    "en": "> あした テストが あります。 [audio](media:4c54fab0d6706085af6f0388)\n> *ashita tesuto ga arimasu*\n> — There is a test tomorrow."
+   }
+  },
+  {
+   "id": "v09-kurasu",
+   "unit": "v09",
+   "front": "クラス [audio](media:e8e0088e1c6196823cd045a0)",
+   "hint": "kurasu",
+   "back": {
+    "ru": "класс, группа",
+    "en": "class"
+   },
+   "extra": {
+    "ru": "> わたしの クラスは にじゅうにんです。 [audio](media:f7639019c1d7ee87adcc6ab8)\n> *watashi no kurasu wa nijuunin desu*\n> — В моей группе двадцать человек.",
+    "en": "> わたしの クラスは にじゅうにんです。 [audio](media:f7639019c1d7ee87adcc6ab8)\n> *watashi no kurasu wa nijuunin desu*\n> — My class has twenty people."
+   }
+  },
+  {
+   "id": "v09-zasshi",
+   "unit": "v09",
+   "front": "ざっし [audio](media:d9cf11b19d4c364b7e8955c9)",
+   "hint": "雑誌 · zasshi",
+   "back": {
+    "ru": "журнал",
+    "en": "magazine"
+   },
+   "extra": {
+    "ru": "> でんしゃで ざっしを よみます。 [audio](media:c8adbf19e2d891c241b9f1dd)\n> *densha de zasshi o yomimasu*\n> — В электричке читаю журнал.",
+    "en": "> でんしゃで ざっしを よみます。 [audio](media:c8adbf19e2d891c241b9f1dd)\n> *densha de zasshi o yomimasu*\n> — I read a magazine on the train."
+   }
+  },
+  {
+   "id": "v09-bunshou",
+   "unit": "v09",
+   "front": "ぶんしょう [audio](media:89274ea47fbf273b5a8a0a0d)",
+   "hint": "文章 · bunshou",
+   "back": {
+    "ru": "текст, сочинение",
+    "en": "text, writing"
+   },
+   "extra": {
+    "ru": "> この ぶんしょうは やさしいです。 [audio](media:cd0d115509760ef10108c6df)\n> *kono bunshou wa yasashii desu*\n> — Этот текст лёгкий.",
+    "en": "> この ぶんしょうは やさしいです。 [audio](media:cd0d115509760ef10108c6df)\n> *kono bunshou wa yasashii desu*\n> — This text is easy."
+   }
+  },
+  {
+   "id": "v09-hiragana",
+   "unit": "v09",
+   "front": "ひらがな [audio](media:66ab0780f286743ed11006a4)",
+   "hint": "平仮名 · hiragana",
+   "back": {
+    "ru": "хирагана",
+    "en": "hiragana"
+   },
+   "extra": {
+    "ru": "> なまえを ひらがなで かきます。 [audio](media:fe48599fd9385e9ecffc1dfe)\n> *namae o hiragana de kakimasu*\n> — Пишу имя хираганой.",
+    "en": "> なまえを ひらがなで かきます。 [audio](media:fe48599fd9385e9ecffc1dfe)\n> *namae o hiragana de kakimasu*\n> — I write my name in hiragana."
+   }
+  },
+  {
+   "id": "v09-katakana",
+   "unit": "v09",
+   "front": "かたかな [audio](media:810fdb7f18a1da87a722ecae)",
+   "hint": "片仮名 · katakana",
+   "back": {
+    "ru": "катакана",
+    "en": "katakana"
+   },
+   "extra": {
+    "ru": "> かたかなは むずかしいですか。 [audio](media:c994889d94caf4331883e08f)\n> *katakana wa muzukashii desu ka*\n> — Катакана сложная?",
+    "en": "> かたかなは むずかしいですか。 [audio](media:c994889d94caf4331883e08f)\n> *katakana wa muzukashii desu ka*\n> — Is katakana difficult?"
+   }
+  },
+  {
+   "id": "v09-teeburu",
+   "unit": "v09",
+   "front": "テーブル [audio](media:d7bb6c2321fbf508d0ba8407)",
+   "hint": "teeburu",
+   "back": {
+    "ru": "стол (обеденный)",
+    "en": "table"
+   },
+   "extra": {
+    "ru": "> テーブルの うえに パンが あります。 [audio](media:2aaf310dd269eff90c2410fc)\n> *teeburu no ue ni pan ga arimasu*\n> — На столе хлеб.",
+    "en": "> テーブルの うえに パンが あります。 [audio](media:2aaf310dd269eff90c2410fc)\n> *teeburu no ue ni pan ga arimasu*\n> — There is bread on the table."
+   }
+  },
+  {
+   "id": "v09-hondana",
+   "unit": "v09",
+   "front": "ほんだな [audio](media:4b18ffa7cc5d42970a064cc5)",
+   "hint": "本棚 · hondana",
+   "back": {
+    "ru": "книжная полка",
+    "en": "bookshelf"
+   },
+   "extra": {
+    "ru": "> ほんだなに ほんが たくさん あります。 [audio](media:e6dc513bed3471bc0ef3e2f9)\n> *hondana ni hon ga takusan arimasu*\n> — На полке много книг.",
+    "en": "> ほんだなに ほんが たくさん あります。 [audio](media:e6dc513bed3471bc0ef3e2f9)\n> *hondana ni hon ga takusan arimasu*\n> — There are many books on the shelf."
+   }
+  },
+  {
+   "id": "v09-karendaa",
+   "unit": "v09",
+   "front": "カレンダー [audio](media:e528ee040ab3715c06b5a036)",
+   "hint": "karendaa",
+   "back": {
+    "ru": "календарь",
+    "en": "calendar"
+   },
+   "extra": {
+    "ru": "> カレンダーに よていを かきます。 [audio](media:86a765ce656d392e506bc82c)\n> *karendaa ni yotei o kakimasu*\n> — Записываю планы в календарь.",
+    "en": "> カレンダーに よていを かきます。 [audio](media:86a765ce656d392e506bc82c)\n> *karendaa ni yotei o kakimasu*\n> — I write my plans on the calendar."
+   }
+  },
+  {
+   "id": "v09-terebi",
+   "unit": "v09",
+   "front": "テレビ [audio](media:7f4f078d10ef0d9b793be1fd)",
+   "hint": "terebi",
+   "back": {
+    "ru": "телевизор",
+    "en": "television"
+   },
+   "extra": {
+    "ru": "> よる テレビを みます。 [audio](media:8335e841aac5bf17ff17bbcd)\n> *yoru terebi o mimasu*\n> — Вечером смотрю телевизор.",
+    "en": "> よる テレビを みます。 [audio](media:8335e841aac5bf17ff17bbcd)\n> *yoru terebi o mimasu*\n> — I watch TV in the evening."
+   }
+  },
+  {
+   "id": "v09-rajio",
+   "unit": "v09",
+   "front": "ラジオ [audio](media:f94251758fc25257331a9b52)",
+   "hint": "rajio",
+   "back": {
+    "ru": "радио",
+    "en": "radio"
+   },
+   "extra": {
+    "ru": "> くるまで ラジオを ききます。 [audio](media:4c589438ed1a7f1d52756dfd)\n> *kuruma de rajio o kikimasu*\n> — В машине слушаю радио.",
+    "en": "> くるまで ラジオを ききます。 [audio](media:4c589438ed1a7f1d52756dfd)\n> *kuruma de rajio o kikimasu*\n> — I listen to the radio in the car."
+   }
+  },
+  {
+   "id": "v09-kamera",
+   "unit": "v09",
+   "front": "カメラ [audio](media:ed2472b86adff56641983303)",
+   "hint": "kamera",
+   "back": {
+    "ru": "фотоаппарат",
+    "en": "camera"
+   },
+   "extra": {
+    "ru": "> あたらしい カメラを かいました。 [audio](media:18f4295389e7d8e30fc62f1a)\n> *atarashii kamera o kaimashita*\n> — Купил новый фотоаппарат.",
+    "en": "> あたらしい カメラを かいました。 [audio](media:18f4295389e7d8e30fc62f1a)\n> *atarashii kamera o kaimashita*\n> — I bought a new camera."
+   }
+  },
+  {
+   "id": "v09-doa",
+   "unit": "v09",
+   "front": "ドア [audio](media:9acd672b122b2d27dd1439b1)",
+   "hint": "doa",
+   "back": {
+    "ru": "дверь",
+    "en": "door"
+   },
+   "extra": {
+    "ru": "> ドアを しめて ください。 [audio](media:9e32bb1bac621ce75000b391)\n> *doa o shimete kudasai*\n> — Закройте дверь, пожалуйста.",
+    "en": "> ドアを しめて ください。 [audio](media:9e32bb1bac621ce75000b391)\n> *doa o shimete kudasai*\n> — Please close the door."
+   }
+  },
+  {
+   "id": "v09-beddo",
+   "unit": "v09",
+   "front": "ベッド [audio](media:608b3448a1d34b8ea108e7ae)",
+   "hint": "beddo",
+   "back": {
+    "ru": "кровать",
+    "en": "bed"
+   },
+   "extra": {
+    "ru": "> ねこが ベッドで ねて います。 [audio](media:58ee55c58d2f500e4902cf50)\n> *neko ga beddo de nete imasu*\n> — Кошка спит на кровати.",
+    "en": "> ねこが ベッドで ねて います。 [audio](media:58ee55c58d2f500e4902cf50)\n> *neko ga beddo de nete imasu*\n> — The cat is sleeping on the bed."
+   }
+  },
+  {
+   "id": "v09-poketto",
+   "unit": "v09",
+   "front": "ポケット [audio](media:e7ec11e52eb20ed37a874442)",
+   "hint": "poketto",
+   "back": {
+    "ru": "карман",
+    "en": "pocket"
+   },
+   "extra": {
+    "ru": "> かぎは ポケットに あります。 [audio](media:7fef50816069056f0ee5b3e2)\n> *kagi wa poketto ni arimasu*\n> — Ключ в кармане.",
+    "en": "> かぎは ポケットに あります。 [audio](media:7fef50816069056f0ee5b3e2)\n> *kagi wa poketto ni arimasu*\n> — The key is in my pocket."
+   }
+  },
+  {
+   "id": "v09-benkyou",
+   "unit": "v09",
+   "front": "べんきょう [audio](media:a09c85e71da9db3bf4cdce87)",
+   "hint": "勉強 · benkyou",
+   "back": {
+    "ru": "учёба",
+    "en": "study"
+   },
+   "extra": {
+    "ru": "> まいにち にほんごの べんきょうを します。 [audio](media:b276aa02020f123969125473)\n> *mainichi nihongo no benkyou o shimasu*\n> — Каждый день занимаюсь японским.",
+    "en": "> まいにち にほんごの べんきょうを します。 [audio](media:b276aa02020f123969125473)\n> *mainichi nihongo no benkyou o shimasu*\n> — I study Japanese every day."
+   }
+  },
+  {
+   "id": "v09-chizu",
+   "unit": "v09",
+   "front": "ちず [audio](media:2a0b2ea4c0040794834531b6)",
+   "hint": "地図 · chizu",
+   "back": {
+    "ru": "карта",
+    "en": "map"
+   },
+   "extra": {
+    "ru": "> ちずを みせて ください。 [audio](media:b8780b844a85c8299e67b3ed)\n> *chizu o misete kudasai*\n> — Покажите карту, пожалуйста.",
+    "en": "> ちずを みせて ください。 [audio](media:b8780b844a85c8299e67b3ed)\n> *chizu o misete kudasai*\n> — Please show me the map."
+   }
+  },
+  {
+   "id": "v09-kopii",
+   "unit": "v09",
+   "front": "コピー [audio](media:c86712488751770b77b55e0e)",
+   "hint": "kopii",
+   "back": {
+    "ru": "копия, ксерокопия",
+    "en": "copy"
+   },
+   "extra": {
+    "ru": "> これを コピー して ください。 [audio](media:6ee0591856a1091f8a10da4c)\n> *kore o kopii shite kudasai*\n> — Сделайте копию этого, пожалуйста.",
+    "en": "> これを コピー して ください。 [audio](media:6ee0591856a1091f8a10da4c)\n> *kore o kopii shite kudasai*\n> — Please make a copy of this."
+   }
+  },
+  {
+   "id": "v09-sumaho",
+   "unit": "v09",
+   "front": "スマホ [audio](media:3927614bceb2ceef82ff18ac)",
+   "hint": "sumaho",
+   "back": {
+    "ru": "смартфон",
+    "en": "smartphone"
+   },
+   "extra": {
+    "ru": "> スマホで しゃしんを とります。 [audio](media:2f105170c34ef6f934744053)\n> *sumaho de shashin o torimasu*\n> — Фотографирую на смартфон.",
+    "en": "> スマホで しゃしんを とります。 [audio](media:2f105170c34ef6f934744053)\n> *sumaho de shashin o torimasu*\n> — I take photos with my smartphone."
+   }
+  },
+  {
+   "id": "v09-meeru",
+   "unit": "v09",
+   "front": "メール [audio](media:6759ae64ae782fe941fce3f4)",
+   "hint": "meeru",
+   "back": {
+    "ru": "письмо (электронное)",
+    "en": "email"
+   },
+   "extra": {
+    "ru": "> あとで メールを おくります。 [audio](media:602040bc35444c620f5d4f48)\n> *ato de meeru o okurimasu*\n> — Потом пришлю письмо.",
+    "en": "> あとで メールを おくります。 [audio](media:602040bc35444c620f5d4f48)\n> *ato de meeru o okurimasu*\n> — I’ll send an email later."
+   }
+  },
+  {
+   "id": "v10-mittsu",
+   "unit": "v10",
+   "front": "みっつ [audio](media:18096704495ef5a6bf5841ea)",
+   "hint": "三つ · mittsu",
+   "back": {
+    "ru": "три (штуки)",
+    "en": "three (things)"
+   },
+   "extra": {
+    "ru": "> りんごを みっつ ください。 [audio](media:9f7303dd14498a43c3d69532)\n> *ringo o mittsu kudasai*\n> — Три яблока, пожалуйста.",
+    "en": "> りんごを みっつ ください。 [audio](media:9f7303dd14498a43c3d69532)\n> *ringo o mittsu kudasai*\n> — Three apples, please."
+   }
+  },
+  {
+   "id": "v10-yottsu",
+   "unit": "v10",
+   "front": "よっつ [audio](media:05064674b269ec70fe83c853)",
+   "hint": "四つ · yottsu",
+   "back": {
+    "ru": "четыре (штуки)",
+    "en": "four (things)"
+   },
+   "extra": {
+    "ru": "> いすが よっつ あります。 [audio](media:eca546f14c75e474fb64747b)\n> *isu ga yottsu arimasu*\n> — Есть четыре стула.",
+    "en": "> いすが よっつ あります。 [audio](media:eca546f14c75e474fb64747b)\n> *isu ga yottsu arimasu*\n> — There are four chairs."
+   }
+  },
+  {
+   "id": "v10-itsutsu",
+   "unit": "v10",
+   "front": "いつつ [audio](media:8c9070e6fe46add02d5773bd)",
+   "hint": "五つ · itsutsu",
+   "back": {
+    "ru": "пять (штук)",
+    "en": "five (things)"
+   },
+   "extra": {
+    "ru": "> たまごを いつつ かいました。 [audio](media:58f64659911b8b5ffb63a2d9)\n> *tamago o itsutsu kaimashita*\n> — Купил пять яиц.",
+    "en": "> たまごを いつつ かいました。 [audio](media:58f64659911b8b5ffb63a2d9)\n> *tamago o itsutsu kaimashita*\n> — I bought five eggs."
+   }
+  },
+  {
+   "id": "v10-muttsu",
+   "unit": "v10",
+   "front": "むっつ [audio](media:07ec5f1ec2688505908eda15)",
+   "hint": "六つ · muttsu",
+   "back": {
+    "ru": "шесть (штук)",
+    "en": "six (things)"
+   },
+   "extra": {
+    "ru": "> ケーキを むっつ ください。 [audio](media:acff81dec30e1e60ea4917f6)\n> *keeki o muttsu kudasai*\n> — Шесть пирожных, пожалуйста.",
+    "en": "> ケーキを むっつ ください。 [audio](media:acff81dec30e1e60ea4917f6)\n> *keeki o muttsu kudasai*\n> — Six cakes, please."
+   }
+  },
+  {
+   "id": "v10-yattsu",
+   "unit": "v10",
+   "front": "やっつ [audio](media:8ba5d89db5c542be3763925e)",
+   "hint": "八つ · yattsu",
+   "back": {
+    "ru": "восемь (штук)",
+    "en": "eight (things)"
+   },
+   "extra": {
+    "ru": "> はこに みかんが やっつ あります。 [audio](media:221202919c05e2c7fcb0d46d)\n> *hako ni mikan ga yattsu arimasu*\n> — В коробке восемь мандаринов.",
+    "en": "> はこに みかんが やっつ あります。 [audio](media:221202919c05e2c7fcb0d46d)\n> *hako ni mikan ga yattsu arimasu*\n> — There are eight tangerines in the box."
+   }
+  },
+  {
+   "id": "v10-kokonotsu",
+   "unit": "v10",
+   "front": "ここのつ [audio](media:7f1205e657011f3a48aee7aa)",
+   "hint": "九つ · kokonotsu",
+   "back": {
+    "ru": "девять (штук)",
+    "en": "nine (things)"
+   },
+   "extra": {
+    "ru": "> あめを ここのつ もらいました。 [audio](media:ab7760aed8f9a8b475529708)\n> *ame o kokonotsu moraimashita*\n> — Получил девять конфет.",
+    "en": "> あめを ここのつ もらいました。 [audio](media:ab7760aed8f9a8b475529708)\n> *ame o kokonotsu moraimashita*\n> — I got nine sweets."
+   }
+  },
+  {
+   "id": "v10-tsuitachi",
+   "unit": "v10",
+   "front": "ついたち [audio](media:3db73883ca93d8db4d06b2a6)",
+   "hint": "一日 · tsuitachi",
+   "back": {
+    "ru": "первое число",
+    "en": "the 1st (of the month)"
+   },
+   "extra": {
+    "ru": "> しがつ ついたちに にゅうがく します。 [audio](media:b22877c6321393837f662ba1)\n> *shigatsu tsuitachi ni nyuugaku shimasu*\n> — Поступаю в школу первого апреля.",
+    "en": "> しがつ ついたちに にゅうがく します。 [audio](media:b22877c6321393837f662ba1)\n> *shigatsu tsuitachi ni nyuugaku shimasu*\n> — I start school on April 1st."
+   }
+  },
+  {
+   "id": "v10-futsuka",
+   "unit": "v10",
+   "front": "ふつか [audio](media:76691bac050147e93e51b311)",
+   "hint": "二日 · futsuka",
+   "back": {
+    "ru": "второе число; два дня",
+    "en": "the 2nd; two days"
+   },
+   "extra": {
+    "ru": "> ふつか やすみました。 [audio](media:89ce2cb5d35ea8b8c695c6e1)\n> *futsuka yasumimashita*\n> — Два дня отдыхал.",
+    "en": "> ふつか やすみました。 [audio](media:89ce2cb5d35ea8b8c695c6e1)\n> *futsuka yasumimashita*\n> — I took two days off."
+   }
+  },
+  {
+   "id": "v10-mikka",
+   "unit": "v10",
+   "front": "みっか [audio](media:7672a09e3c4c17ac5d4cadfd)",
+   "hint": "三日 · mikka",
+   "back": {
+    "ru": "третье число; три дня",
+    "en": "the 3rd; three days"
+   },
+   "extra": {
+    "ru": "> みっかに かえります。 [audio](media:a25ae297f0f3c66b8a6a18b4)\n> *mikka ni kaerimasu*\n> — Вернусь третьего.",
+    "en": "> みっかに かえります。 [audio](media:a25ae297f0f3c66b8a6a18b4)\n> *mikka ni kaerimasu*\n> — I’ll come back on the 3rd."
+   }
+  },
+  {
+   "id": "v10-yokka",
+   "unit": "v10",
+   "front": "よっか [audio](media:aafa1de02c9ca758a6bd1723)",
+   "hint": "四日 · yokka",
+   "back": {
+    "ru": "четвёртое число; четыре дня",
+    "en": "the 4th; four days"
+   },
+   "extra": {
+    "ru": "> よっか かかります。 [audio](media:e2e7b8604761f7880005d669)\n> *yokka kakarimasu*\n> — Займёт четыре дня.",
+    "en": "> よっか かかります。 [audio](media:e2e7b8604761f7880005d669)\n> *yokka kakarimasu*\n> — It takes four days."
+   }
+  },
+  {
+   "id": "v10-nanoka",
+   "unit": "v10",
+   "front": "なのか [audio](media:22f649e4006b16dc61d27a50)",
+   "hint": "七日 · nanoka",
+   "back": {
+    "ru": "седьмое число; семь дней",
+    "en": "the 7th; seven days"
+   },
+   "extra": {
+    "ru": "> しちがつ なのかは たなばたです。 [audio](media:1c22dacd9539030fd2a17e77)\n> *shichigatsu nanoka wa tanabata desu*\n> — Седьмое июля — Танабата.",
+    "en": "> しちがつ なのかは たなばたです。 [audio](media:1c22dacd9539030fd2a17e77)\n> *shichigatsu nanoka wa tanabata desu*\n> — July 7th is Tanabata."
+   }
+  },
+  {
+   "id": "v10-youka",
+   "unit": "v10",
+   "front": "ようか [audio](media:efdb2461cab934b5e7b9d2e9)",
+   "hint": "八日 · youka",
+   "back": {
+    "ru": "восьмое число; восемь дней",
+    "en": "the 8th; eight days"
+   },
+   "extra": {
+    "ru": "> ようかに テストが あります。 [audio](media:0422037f287b6381b095f81f)\n> *youka ni tesuto ga arimasu*\n> — Восьмого контрольная.",
+    "en": "> ようかに テストが あります。 [audio](media:0422037f287b6381b095f81f)\n> *youka ni tesuto ga arimasu*\n> — There is a test on the 8th."
+   }
+  },
+  {
+   "id": "v10-kokonoka",
+   "unit": "v10",
+   "front": "ここのか [audio](media:31296af8f0c6dbda8aa15d15)",
+   "hint": "九日 · kokonoka",
+   "back": {
+    "ru": "девятое число; девять дней",
+    "en": "the 9th; nine days"
+   },
+   "extra": {
+    "ru": "> ここのかに あいましょう。 [audio](media:f122868d6a58cb7b37bebe3b)\n> *kokonoka ni aimashou*\n> — Давайте встретимся девятого.",
+    "en": "> ここのかに あいましょう。 [audio](media:f122868d6a58cb7b37bebe3b)\n> *kokonoka ni aimashou*\n> — Let’s meet on the 9th."
+   }
+  },
+  {
+   "id": "v10-hatsuka",
+   "unit": "v10",
+   "front": "はつか [audio](media:e75aceb316a36533305f62ce)",
+   "hint": "二十日 · hatsuka",
+   "back": {
+    "ru": "двадцатое число",
+    "en": "the 20th"
+   },
+   "extra": {
+    "ru": "> はつかに きゅうりょうが でます。 [audio](media:34a537f10a6f58e7a518ebdb)\n> *hatsuka ni kyuuryou ga demasu*\n> — Двадцатого дают зарплату.",
+    "en": "> はつかに きゅうりょうが でます。 [audio](media:34a537f10a6f58e7a518ebdb)\n> *hatsuka ni kyuuryou ga demasu*\n> — We get paid on the 20th."
+   }
+  },
+  {
+   "id": "v10-hatachi",
+   "unit": "v10",
+   "front": "はたち [audio](media:138e12283df66f55f6f4575f)",
+   "hint": "二十歳 · hatachi",
+   "back": {
+    "ru": "двадцать лет (о возрасте)",
+    "en": "twenty years old"
+   },
+   "extra": {
+    "ru": "> あには はたちです。 [audio](media:e9af22ff51d9cd9c09fb9808)\n> *ani wa hatachi desu*\n> — Брату двадцать лет.",
+    "en": "> あには はたちです。 [audio](media:e9af22ff51d9cd9c09fb9808)\n> *ani wa hatachi desu*\n> — My brother is twenty."
+   }
+  },
+  {
+   "id": "v10-ichinichi",
+   "unit": "v10",
+   "front": "いちにち [audio](media:9ede291a5ea68aca37f9a1f3)",
+   "hint": "一日 · ichinichi",
+   "back": {
+    "ru": "один день, весь день",
+    "en": "one day, all day"
+   },
+   "extra": {
+    "ru": "> いちにち じゅう いえに いました。 [audio](media:f1d8796c141b2fe6eb36749e)\n> *ichinichi juu ie ni imashita*\n> — Весь день был дома.",
+    "en": "> いちにち じゅう いえに いました。 [audio](media:f1d8796c141b2fe6eb36749e)\n> *ichinichi juu ie ni imashita*\n> — I was at home all day."
+   }
+  },
+  {
+   "id": "v10-hitotsuki",
+   "unit": "v10",
+   "front": "ひとつき [audio](media:aced16c2c8e3b6a51a821cda)",
+   "hint": "一月 · hitotsuki",
+   "back": {
+    "ru": "один месяц",
+    "en": "one month"
+   },
+   "extra": {
+    "ru": "> ひとつき にほんに いました。 [audio](media:74514ecc2126a15042b0514d)\n> *hitotsuki nihon ni imashita*\n> — Месяц был в Японии.",
+    "en": "> ひとつき にほんに いました。 [audio](media:74514ecc2126a15042b0514d)\n> *hitotsuki nihon ni imashita*\n> — I was in Japan for a month."
+   }
+  },
+  {
+   "id": "v10-hanbun",
+   "unit": "v10",
+   "front": "はんぶん [audio](media:a80372b48526af33bcfa63d4)",
+   "hint": "半分 · hanbun",
+   "back": {
+    "ru": "половина",
+    "en": "half"
+   },
+   "extra": {
+    "ru": "> ケーキを はんぶん たべました。 [audio](media:dc2aacb373f570cc003f30d6)\n> *keeki o hanbun tabemashita*\n> — Съел половину торта.",
+    "en": "> ケーキを はんぶん たべました。 [audio](media:dc2aacb373f570cc003f30d6)\n> *keeki o hanbun tabemashita*\n> — I ate half the cake."
+   }
+  },
+  {
+   "id": "v10-zero",
+   "unit": "v10",
+   "front": "ゼロ [audio](media:ab4f2f0f457a3b2cccddf51a)",
+   "hint": "zero",
+   "back": {
+    "ru": "ноль",
+    "en": "zero"
+   },
+   "extra": {
+    "ru": "> でんわばんごうは ゼロから はじまります。 [audio](media:fb2ccdae8ac2d841c2bf24bb)\n> *denwabangou wa zero kara hajimarimasu*\n> — Номер телефона начинается с нуля.",
+    "en": "> でんわばんごうは ゼロから はじまります。 [audio](media:fb2ccdae8ac2d841c2bf24bb)\n> *denwabangou wa zero kara hajimarimasu*\n> — The phone number starts with zero."
+   }
+  },
+  {
+   "id": "v10-meetoru",
+   "unit": "v10",
+   "front": "メートル [audio](media:b0f20d0371ab20d55488ad5a)",
+   "hint": "meetoru",
+   "back": {
+    "ru": "метр",
+    "en": "metre"
+   },
+   "extra": {
+    "ru": "> えきまで ごひゃくメートルです。 [audio](media:ddb7c601c2efa939d8d88526)\n> *eki made gohyakumeetoru desu*\n> — До станции пятьсот метров.",
+    "en": "> えきまで ごひゃくメートルです。 [audio](media:ddb7c601c2efa939d8d88526)\n> *eki made gohyakumeetoru desu*\n> — It’s five hundred metres to the station."
+   }
+  },
+  {
+   "id": "v10-kiro",
+   "unit": "v10",
+   "front": "キロ [audio](media:13415e87bef830b691d7e762)",
+   "hint": "kiro",
+   "back": {
+    "ru": "килограмм; километр",
+    "en": "kilo (gram or metre)"
+   },
+   "extra": {
+    "ru": "> まいにち ごキロ はしります。 [audio](media:a05419e74305b018eccb0625)\n> *mainichi gokiro hashirimasu*\n> — Каждый день бегаю пять километров.",
+    "en": "> まいにち ごキロ はしります。 [audio](media:a05419e74305b018eccb0625)\n> *mainichi gokiro hashirimasu*\n> — I run five kilometres every day."
+   }
+  },
+  {
+   "id": "v10-guramu",
+   "unit": "v10",
+   "front": "グラム [audio](media:539a8d2a567a7915b33c0892)",
+   "hint": "guramu",
+   "back": {
+    "ru": "грамм",
+    "en": "gram"
+   },
+   "extra": {
+    "ru": "> にくを にひゃくグラム ください。 [audio](media:0768713294fd16e7e41ec88d)\n> *niku o nihyakuguramu kudasai*\n> — Двести граммов мяса, пожалуйста.",
+    "en": "> にくを にひゃくグラム ください。 [audio](media:0768713294fd16e7e41ec88d)\n> *niku o nihyakuguramu kudasai*\n> — Two hundred grams of meat, please."
+   }
+  },
+  {
+   "id": "v11-asatte",
+   "unit": "v11",
+   "front": "あさって [audio](media:47ffee3ba02942d7db4cd92f)",
+   "hint": "明後日 · asatte",
+   "back": {
+    "ru": "послезавтра",
+    "en": "the day after tomorrow"
+   },
+   "extra": {
+    "ru": "> あさって ひまですか。 [audio](media:4a46a039d43e7e7248a02641)\n> *asatte hima desu ka*\n> — Послезавтра свободны?",
+    "en": "> あさって ひまですか。 [audio](media:4a46a039d43e7e7248a02641)\n> *asatte hima desu ka*\n> — Are you free the day after tomorrow?"
+   }
+  },
+  {
+   "id": "v11-ototoi",
+   "unit": "v11",
+   "front": "おととい [audio](media:a04d69c43487cce3455118dc)",
+   "hint": "一昨日 · ototoi",
+   "back": {
+    "ru": "позавчера",
+    "en": "the day before yesterday"
+   },
+   "extra": {
+    "ru": "> おととい えいがを みました。 [audio](media:db6c7a90ceedca15d8764933)\n> *ototoi eiga o mimashita*\n> — Позавчера смотрел фильм.",
+    "en": "> おととい えいがを みました。 [audio](media:db6c7a90ceedca15d8764933)\n> *ototoi eiga o mimashita*\n> — I saw a film the day before yesterday."
+   }
+  },
+  {
+   "id": "v11-ototoshi",
+   "unit": "v11",
+   "front": "おととし [audio](media:2af14e15192672f44ebcd048)",
+   "hint": "一昨年 · ototoshi",
+   "back": {
+    "ru": "позапрошлый год",
+    "en": "the year before last"
+   },
+   "extra": {
+    "ru": "> おととし にほんへ いきました。 [audio](media:cc8b902ad64d366bd4d60ae7)\n> *ototoshi nihon e ikimashita*\n> — В позапрошлом году ездил в Японию.",
+    "en": "> おととし にほんへ いきました。 [audio](media:cc8b902ad64d366bd4d60ae7)\n> *ototoshi nihon e ikimashita*\n> — I went to Japan the year before last."
+   }
+  },
+  {
+   "id": "v11-sarainen",
+   "unit": "v11",
+   "front": "さらいねん [audio](media:331a4187108d86aeb93a9247)",
+   "hint": "再来年 · sarainen",
+   "back": {
+    "ru": "через год, позаследующий год",
+    "en": "the year after next"
+   },
+   "extra": {
+    "ru": "> さらいねん だいがくを でます。 [audio](media:0657d519d59a931fb5776d20)\n> *sarainen daigaku o demasu*\n> — Через год окончу университет.",
+    "en": "> さらいねん だいがくを でます。 [audio](media:0657d519d59a931fb5776d20)\n> *sarainen daigaku o demasu*\n> — I graduate the year after next."
+   }
+  },
+  {
+   "id": "v11-sengetsu",
+   "unit": "v11",
+   "front": "せんげつ [audio](media:b149a430f5e3aab5b5b6ed73)",
+   "hint": "先月 · sengetsu",
+   "back": {
+    "ru": "прошлый месяц",
+    "en": "last month"
+   },
+   "extra": {
+    "ru": "> せんげつ ひっこしました。 [audio](media:ed62ee79f2a32d70a2cdd2d0)\n> *sengetsu hikkoshimashita*\n> — В прошлом месяце переехал.",
+    "en": "> せんげつ ひっこしました。 [audio](media:ed62ee79f2a32d70a2cdd2d0)\n> *sengetsu hikkoshimashita*\n> — I moved last month."
+   }
+  },
+  {
+   "id": "v11-kongetsu",
+   "unit": "v11",
+   "front": "こんげつ [audio](media:1c927007ebceccbaeabb35da)",
+   "hint": "今月 · kongetsu",
+   "back": {
+    "ru": "этот месяц",
+    "en": "this month"
+   },
+   "extra": {
+    "ru": "> こんげつは いそがしいです。 [audio](media:fa186577041512853710c891)\n> *kongetsu wa isogashii desu*\n> — В этом месяце я занят.",
+    "en": "> こんげつは いそがしいです。 [audio](media:fa186577041512853710c891)\n> *kongetsu wa isogashii desu*\n> — I’m busy this month."
+   }
+  },
+  {
+   "id": "v11-konshuu",
+   "unit": "v11",
+   "front": "こんしゅう [audio](media:6d05618983cc08c44690ee44)",
+   "hint": "今週 · konshuu",
+   "back": {
+    "ru": "эта неделя",
+    "en": "this week"
+   },
+   "extra": {
+    "ru": "> こんしゅうの どようびに あいましょう。 [audio](media:7eecf0605691b9373a867e92)\n> *konshuu no doyoubi ni aimashou*\n> — Встретимся в эту субботу.",
+    "en": "> こんしゅうの どようびに あいましょう。 [audio](media:7eecf0605691b9373a867e92)\n> *konshuu no doyoubi ni aimashou*\n> — Let’s meet this Saturday."
+   }
+  },
+  {
+   "id": "v11-maishuu",
+   "unit": "v11",
+   "front": "まいしゅう [audio](media:02f418c289fa907816007814)",
+   "hint": "毎週 · maishuu",
+   "back": {
+    "ru": "каждую неделю",
+    "en": "every week"
+   },
+   "extra": {
+    "ru": "> まいしゅう テニスを します。 [audio](media:cd82e7cdab9cb66656cf01aa)\n> *maishuu tenisu o shimasu*\n> — Каждую неделю играю в теннис.",
+    "en": "> まいしゅう テニスを します。 [audio](media:cd82e7cdab9cb66656cf01aa)\n> *maishuu tenisu o shimasu*\n> — I play tennis every week."
+   }
+  },
+  {
+   "id": "v11-maigetsu",
+   "unit": "v11",
+   "front": "まいげつ [audio](media:243ec9664d96d1aad4ad3d18)",
+   "hint": "毎月 · maigetsu",
+   "back": {
+    "ru": "каждый месяц (также まいつき)",
+    "en": "every month (also まいつき)"
+   },
+   "extra": {
+    "ru": "> まいげつ ほんを かいます。 [audio](media:7e536cc6b8d2ee2927306894)\n> *maigetsu hon o kaimasu*\n> — Каждый месяц покупаю книги.",
+    "en": "> まいげつ ほんを かいます。 [audio](media:7e536cc6b8d2ee2927306894)\n> *maigetsu hon o kaimasu*\n> — I buy books every month."
+   }
+  },
+  {
+   "id": "v11-mainen",
+   "unit": "v11",
+   "front": "まいねん [audio](media:8dda37dc5c61603fa1e24281)",
+   "hint": "毎年 · mainen",
+   "back": {
+    "ru": "каждый год (также まいとし)",
+    "en": "every year (also まいとし)"
+   },
+   "extra": {
+    "ru": "> まいねん なつに うみへ いきます。 [audio](media:b0ceb51a09e158831b0f624f)\n> *mainen natsu ni umi e ikimasu*\n> — Каждый год летом езжу на море.",
+    "en": "> まいねん なつに うみへ いきます。 [audio](media:b0ceb51a09e158831b0f624f)\n> *mainen natsu ni umi e ikimasu*\n> — I go to the sea every summer."
+   }
+  },
+  {
+   "id": "v11-maiban",
+   "unit": "v11",
+   "front": "まいばん [audio](media:88707c14776f437d092aa5c5)",
+   "hint": "毎晩 · maiban",
+   "back": {
+    "ru": "каждый вечер",
+    "en": "every evening"
+   },
+   "extra": {
+    "ru": "> まいばん シャワーを あびます。 [audio](media:19f3a5422afc75f3d9d142ba)\n> *maiban shawaa o abimasu*\n> — Каждый вечер принимаю душ.",
+    "en": "> まいばん シャワーを あびます。 [audio](media:19f3a5422afc75f3d9d142ba)\n> *maiban shawaa o abimasu*\n> — I take a shower every evening."
+   }
+  },
+  {
+   "id": "v11-konban",
+   "unit": "v11",
+   "front": "こんばん [audio](media:53e2f800cb466b1847c885e7)",
+   "hint": "今晩 · konban",
+   "back": {
+    "ru": "сегодня вечером",
+    "en": "this evening"
+   },
+   "extra": {
+    "ru": "> こんばん なにを しますか。 [audio](media:3c7f8a484c7c24eb9370dbf6)\n> *konban nani o shimasu ka*\n> — Что делаете сегодня вечером?",
+    "en": "> こんばん なにを しますか。 [audio](media:3c7f8a484c7c24eb9370dbf6)\n> *konban nani o shimasu ka*\n> — What are you doing this evening?"
+   }
+  },
+  {
+   "id": "v11-kesa",
+   "unit": "v11",
+   "front": "けさ [audio](media:e3db7383e016a5a3c6366e4d)",
+   "hint": "今朝 · kesa",
+   "back": {
+    "ru": "сегодня утром",
+    "en": "this morning"
+   },
+   "extra": {
+    "ru": "> けさ ろくじに おきました。 [audio](media:2033759264cb99770a3a2b8c)\n> *kesa rokuji ni okimashita*\n> — Сегодня утром встал в шесть.",
+    "en": "> けさ ろくじに おきました。 [audio](media:2033759264cb99770a3a2b8c)\n> *kesa rokuji ni okimashita*\n> — I got up at six this morning."
+   }
+  },
+  {
+   "id": "v11-yuube",
+   "unit": "v11",
+   "front": "ゆうべ [audio](media:8073d9462efb96659c449bce)",
+   "hint": "昨夜 · yuube",
+   "back": {
+    "ru": "вчера вечером",
+    "en": "last night"
+   },
+   "extra": {
+    "ru": "> ゆうべ よく ねました。 [audio](media:396cf52b54779fafc48fa28b)\n> *yuube yoku nemashita*\n> — Вчера вечером хорошо выспался.",
+    "en": "> ゆうべ よく ねました。 [audio](media:396cf52b54779fafc48fa28b)\n> *yuube yoku nemashita*\n> — I slept well last night."
+   }
+  },
+  {
+   "id": "v11-gozen",
+   "unit": "v11",
+   "front": "ごぜん [audio](media:1a2a26f26f922e9e523eccbf)",
+   "hint": "午前 · gozen",
+   "back": {
+    "ru": "до полудня, утро",
+    "en": "a.m., morning"
+   },
+   "extra": {
+    "ru": "> ごぜん くじに はじまります。 [audio](media:32bc3fcf7b6431c938e54cd6)\n> *gozen kuji ni hajimarimasu*\n> — Начинается в девять утра.",
+    "en": "> ごぜん くじに はじまります。 [audio](media:32bc3fcf7b6431c938e54cd6)\n> *gozen kuji ni hajimarimasu*\n> — It starts at 9 a.m."
+   }
+  },
+  {
+   "id": "v11-sugi",
+   "unit": "v11",
+   "front": "すぎ [audio](media:cc37e2a15d283f424b090179)",
+   "hint": "過ぎ · sugi",
+   "back": {
+    "ru": "после (о времени)",
+    "en": "past (time)"
+   },
+   "extra": {
+    "ru": "> いま ごじ じゅっぷん すぎです。 [audio](media:5540968501158c4bf037fe44)\n> *ima goji juppun sugi desu*\n> — Сейчас десять минут шестого.",
+    "en": "> いま ごじ じゅっぷん すぎです。 [audio](media:5540968501158c4bf037fe44)\n> *ima goji juppun sugi desu*\n> — It’s ten past five now."
+   }
+  },
+  {
+   "id": "v11-hajime",
+   "unit": "v11",
+   "front": "はじめ [audio](media:f272dbab16ac23e2501ff692)",
+   "hint": "初め · hajime",
+   "back": {
+    "ru": "начало",
+    "en": "beginning"
+   },
+   "extra": {
+    "ru": "> らいげつの はじめに かえります。 [audio](media:c9628f2e1f4658a30ec51f05)\n> *raigetsu no hajime ni kaerimasu*\n> — Вернусь в начале следующего месяца.",
+    "en": "> らいげつの はじめに かえります。 [audio](media:c9628f2e1f4658a30ec51f05)\n> *raigetsu no hajime ni kaerimasu*\n> — I’ll be back at the beginning of next month."
+   }
+  },
+  {
+   "id": "v11-yasumi",
+   "unit": "v11",
+   "front": "やすみ [audio](media:a0d1dace074c720c2629f671)",
+   "hint": "休み · yasumi",
+   "back": {
+    "ru": "выходной, перерыв, каникулы",
+    "en": "holiday, break"
+   },
+   "extra": {
+    "ru": "> あしたは やすみです。 [audio](media:b6f0d873c375e733f3bfa5f3)\n> *ashita wa yasumi desu*\n> — Завтра выходной.",
+    "en": "> あしたは やすみです。 [audio](media:b6f0d873c375e733f3bfa5f3)\n> *ashita wa yasumi desu*\n> — Tomorrow is a day off."
+   }
+  },
+  {
+   "id": "v11-tokidoki",
+   "unit": "v11",
+   "front": "ときどき [audio](media:2826589fa2800cd799967521)",
+   "hint": "時々 · tokidoki",
+   "back": {
+    "ru": "иногда",
+    "en": "sometimes"
+   },
+   "extra": {
+    "ru": "> ときどき りょうりを します。 [audio](media:51bcaeb02024d17ae3692c00)\n> *tokidoki ryouri o shimasu*\n> — Иногда готовлю.",
+    "en": "> ときどき りょうりを します。 [audio](media:51bcaeb02024d17ae3692c00)\n> *tokidoki ryouri o shimasu*\n> — I sometimes cook."
+   }
+  },
+  {
+   "id": "v11-itsumo",
+   "unit": "v11",
+   "front": "いつも [audio](media:a9b5a8cb830d5fca0bee37c7)",
+   "hint": "itsumo",
+   "back": {
+    "ru": "всегда",
+    "en": "always"
+   },
+   "extra": {
+    "ru": "> いつも バスで いきます。 [audio](media:b081643c9389e4409c0c6ead)\n> *itsumo basu de ikimasu*\n> — Всегда езжу на автобусе.",
+    "en": "> いつも バスで いきます。 [audio](media:b081643c9389e4409c0c6ead)\n> *itsumo basu de ikimasu*\n> — I always go by bus."
+   }
+  },
+  {
+   "id": "v11-tanjoubi",
+   "unit": "v11",
+   "front": "たんじょうび [audio](media:9ac333436ad2874fdf0371c3)",
+   "hint": "誕生日 · tanjoubi",
+   "back": {
+    "ru": "день рождения",
+    "en": "birthday"
+   },
+   "extra": {
+    "ru": "> たんじょうび おめでとう。 [audio](media:d17df98dcc9228222cd62791)\n> *tanjoubi omedetou*\n> — С днём рождения!",
+    "en": "> たんじょうび おめでとう。 [audio](media:d17df98dcc9228222cd62791)\n> *tanjoubi omedetou*\n> — Happy birthday!"
+   }
+  },
+  {
+   "id": "v11-yuuhan",
+   "unit": "v11",
+   "front": "ゆうはん [audio](media:470cc15eaad356904593241f)",
+   "hint": "夕飯 · yuuhan",
+   "back": {
+    "ru": "ужин",
+    "en": "dinner"
+   },
+   "extra": {
+    "ru": "> ゆうはんは しちじです。 [audio](media:f12527e42af99d49020623a3)\n> *yuuhan wa shichiji desu*\n> — Ужин в семь.",
+    "en": "> ゆうはんは しちじです。 [audio](media:f12527e42af99d49020623a3)\n> *yuuhan wa shichiji desu*\n> — Dinner is at seven."
+   }
+  },
+  {
+   "id": "v12-ojiisan",
+   "unit": "v12",
+   "front": "おじいさん [audio](media:eb2a19c1f0c39218de94693b)",
+   "hint": "ojiisan",
+   "back": {
+    "ru": "дедушка; пожилой мужчина",
+    "en": "grandfather; old man"
+   },
+   "extra": {
+    "ru": "> おじいさんは はちじゅっさいです。 [audio](media:8975b0c4c8238efabcd67443)\n> *ojiisan wa hachijussai desu*\n> — Дедушке восемьдесят лет.",
+    "en": "> おじいさんは はちじゅっさいです。 [audio](media:8975b0c4c8238efabcd67443)\n> *ojiisan wa hachijussai desu*\n> — Grandfather is eighty."
+   }
+  },
+  {
+   "id": "v12-obaasan",
+   "unit": "v12",
+   "front": "おばあさん [audio](media:32110b6762f4d14fbb4a6de7)",
+   "hint": "obaasan",
+   "back": {
+    "ru": "бабушка; пожилая женщина",
+    "en": "grandmother; old woman"
+   },
+   "extra": {
+    "ru": "> おばあさんは げんきです。 [audio](media:a0e9fd38fb67756e0c710cc9)\n> *obaasan wa genki desu*\n> — Бабушка здорова.",
+    "en": "> おばあさんは げんきです。 [audio](media:a0e9fd38fb67756e0c710cc9)\n> *obaasan wa genki desu*\n> — Grandmother is well."
+   }
+  },
+  {
+   "id": "v12-ojisan",
+   "unit": "v12",
+   "front": "おじさん [audio](media:0e27dbbbd4729a0654d9d737)",
+   "hint": "ojisan",
+   "back": {
+    "ru": "дядя; мужчина средних лет",
+    "en": "uncle; middle-aged man"
+   },
+   "extra": {
+    "ru": "> おじさんは おおさかに すんで います。 [audio](media:1d89c5b5a74de410e742cff3)\n> *ojisan wa oosaka ni sunde imasu*\n> — Дядя живёт в Осаке.",
+    "en": "> おじさんは おおさかに すんで います。 [audio](media:1d89c5b5a74de410e742cff3)\n> *ojisan wa oosaka ni sunde imasu*\n> — My uncle lives in Osaka."
+   }
+  },
+  {
+   "id": "v12-obasan",
+   "unit": "v12",
+   "front": "おばさん [audio](media:f49367701f2fd0d5cbcdb838)",
+   "hint": "obasan",
+   "back": {
+    "ru": "тётя; женщина средних лет",
+    "en": "aunt; middle-aged woman"
+   },
+   "extra": {
+    "ru": "> おばさんに てがみを かきました。 [audio](media:4ddce97c8bfdaa319282ac06)\n> *obasan ni tegami o kakimashita*\n> — Написал тёте письмо.",
+    "en": "> おばさんに てがみを かきました。 [audio](media:4ddce97c8bfdaa319282ac06)\n> *obasan ni tegami o kakimashita*\n> — I wrote a letter to my aunt."
+   }
+  },
+  {
+   "id": "v12-oniisan",
+   "unit": "v12",
+   "front": "おにいさん [audio](media:570a73533ae0d81374b46d6a)",
+   "hint": "お兄さん · oniisan",
+   "back": {
+    "ru": "старший брат (вежливо)",
+    "en": "older brother (polite)"
+   },
+   "extra": {
+    "ru": "> おにいさんは なんさいですか。 [audio](media:d42ab13feb177bb29ef2f4df)\n> *oniisan wa nansai desu ka*\n> — Сколько лет вашему брату?",
+    "en": "> おにいさんは なんさいですか。 [audio](media:d42ab13feb177bb29ef2f4df)\n> *oniisan wa nansai desu ka*\n> — How old is your brother?"
+   }
+  },
+  {
+   "id": "v12-oneesan",
+   "unit": "v12",
+   "front": "おねえさん [audio](media:e90b4253a4b4d3465c7f5ebf)",
+   "hint": "お姉さん · oneesan",
+   "back": {
+    "ru": "старшая сестра (вежливо)",
+    "en": "older sister (polite)"
+   },
+   "extra": {
+    "ru": "> おねえさんは きれいですね。 [audio](media:295c58320aef4c948125da5a)\n> *oneesan wa kirei desu ne*\n> — Ваша сестра красивая.",
+    "en": "> おねえさんは きれいですね。 [audio](media:295c58320aef4c948125da5a)\n> *oneesan wa kirei desu ne*\n> — Your sister is pretty."
+   }
+  },
+  {
+   "id": "v12-anata",
+   "unit": "v12",
+   "front": "あなた [audio](media:a036f93c9985f946491ffc18)",
+   "hint": "anata",
+   "back": {
+    "ru": "вы, ты",
+    "en": "you"
+   },
+   "extra": {
+    "ru": "> あなたの なまえは なんですか。 [audio](media:e54ce2f056faea4937169285)\n> *anata no namae wa nan desu ka*\n> — Как вас зовут?",
+    "en": "> あなたの なまえは なんですか。 [audio](media:e54ce2f056faea4937169285)\n> *anata no namae wa nan desu ka*\n> — What is your name?"
+   }
+  },
+  {
+   "id": "v12-minna",
+   "unit": "v12",
+   "front": "みんな [audio](media:590f98c3862fecc9eb822f49)",
+   "hint": "minna",
+   "back": {
+    "ru": "все",
+    "en": "everyone"
+   },
+   "extra": {
+    "ru": "> みんなで しゃしんを とりましょう。 [audio](media:6398d1f3ee8aa59d3e6615c9)\n> *minna de shashin o torimashou*\n> — Давайте сфотографируемся все вместе.",
+    "en": "> みんなで しゃしんを とりましょう。 [audio](media:6398d1f3ee8aa59d3e6615c9)\n> *minna de shashin o torimashou*\n> — Let’s all take a photo together."
+   }
+  },
+  {
+   "id": "v12-omawarisan",
+   "unit": "v12",
+   "front": "おまわりさん [audio](media:01e091d6b33ba34fb2ac26ee)",
+   "hint": "omawarisan",
+   "back": {
+    "ru": "полицейский (разг.)",
+    "en": "police officer (colloquial)"
+   },
+   "extra": {
+    "ru": "> みちが わからないので おまわりさんに ききました。 [audio](media:23bc19b70c4ae5ca079bf895)\n> *michi ga wakaranai node omawarisan ni kikimashita*\n> — Не знал дорогу и спросил полицейского.",
+    "en": "> みちが わからないので おまわりさんに ききました。 [audio](media:23bc19b70c4ae5ca079bf895)\n> *michi ga wakaranai node omawarisan ni kikimashita*\n> — I didn’t know the way, so I asked a police officer."
+   }
+  },
+  {
+   "id": "v12-kaisha",
+   "unit": "v12",
+   "front": "かいしゃ [audio](media:5fe6b348d3438388a204d912)",
+   "hint": "会社 · kaisha",
+   "back": {
+    "ru": "компания, фирма",
+    "en": "company"
+   },
+   "extra": {
+    "ru": "> ちちの かいしゃは とうきょうに あります。 [audio](media:1a0a784514dddcf844acfe9d)\n> *chichi no kaisha wa toukyou ni arimasu*\n> — Фирма отца в Токио.",
+    "en": "> ちちの かいしゃは とうきょうに あります。 [audio](media:1a0a784514dddcf844acfe9d)\n> *chichi no kaisha wa toukyou ni arimasu*\n> — My father’s company is in Tokyo."
+   }
+  },
+  {
+   "id": "v12-taishikan",
+   "unit": "v12",
+   "front": "たいしかん [audio](media:a79e1d3b3d3bf239f17e98e4)",
+   "hint": "大使館 · taishikan",
+   "back": {
+    "ru": "посольство",
+    "en": "embassy"
+   },
+   "extra": {
+    "ru": "> ロシア たいしかんは どこですか。 [audio](media:c17d67313bc312ad652256c9)\n> *roshia taishikan wa doko desu ka*\n> — Где российское посольство?",
+    "en": "> ロシア たいしかんは どこですか。 [audio](media:c17d67313bc312ad652256c9)\n> *roshia taishikan wa doko desu ka*\n> — Where is the Russian embassy?"
+   }
+  },
+  {
+   "id": "v12-irasshaimase",
+   "unit": "v12",
+   "front": "いらっしゃいませ [audio](media:60c59e745516d89fc97a761b)",
+   "hint": "irasshaimase",
+   "back": {
+    "ru": "добро пожаловать (в магазине)",
+    "en": "welcome (in a shop)"
+   },
+   "extra": {
+    "ru": "> いらっしゃいませ。なんめいさまですか。 [audio](media:3c4e9d9870001e8feaa1a5f7)\n> *irasshaimase nanmeisama desu ka*\n> — Добро пожаловать! Сколько вас?",
+    "en": "> いらっしゃいませ。なんめいさまですか。 [audio](media:3c4e9d9870001e8feaa1a5f7)\n> *irasshaimase nanmeisama desu ka*\n> — Welcome! How many people?"
+   }
+  },
+  {
+   "id": "v12-moshimoshi",
+   "unit": "v12",
+   "front": "もしもし [audio](media:bc580d89b8e170ade2e12cc2)",
+   "hint": "moshimoshi",
+   "back": {
+    "ru": "алло",
+    "en": "hello (on the phone)"
+   },
+   "extra": {
+    "ru": "> もしもし、たなかです。 [audio](media:4c61ccbc7cbe4f4fcbcbe647)\n> *moshimoshi tanaka desu*\n> — Алло, это Танака.",
+    "en": "> もしもし、たなかです。 [audio](media:4c61ccbc7cbe4f4fcbcbe647)\n> *moshimoshi tanaka desu*\n> — Hello, this is Tanaka."
+   }
+  },
+  {
+   "id": "v12-ikaga",
+   "unit": "v12",
+   "front": "いかが [audio](media:a6be753d7755202b0e89f836)",
+   "hint": "ikaga",
+   "back": {
+    "ru": "как (вежливо); не хотите ли",
+    "en": "how (polite); would you like"
+   },
+   "extra": {
+    "ru": "> コーヒーは いかがですか。 [audio](media:077fc99cd624f2b05b7e6aee)\n> *koohii wa ikaga desu ka*\n> — Не хотите кофе?",
+    "en": "> コーヒーは いかがですか。 [audio](media:077fc99cd624f2b05b7e6aee)\n> *koohii wa ikaga desu ka*\n> — Would you like some coffee?"
+   }
+  },
+  {
+   "id": "v12-kekkou",
+   "unit": "v12",
+   "front": "けっこう [audio](media:37997fc4cb40e7650c342561)",
+   "hint": "結構 · kekkou",
+   "back": {
+    "ru": "достаточно; нет, спасибо; неплохо",
+    "en": "fine; no thank you; quite"
+   },
+   "extra": {
+    "ru": "> いいえ、けっこうです。 [audio](media:69f31dd1d278e8f629f61e81)\n> *iie kekkou desu*\n> — Нет, спасибо.",
+    "en": "> いいえ、けっこうです。 [audio](media:69f31dd1d278e8f629f61e81)\n> *iie kekkou desu*\n> — No, thank you."
+   }
+  },
+  {
+   "id": "v12-daijoubu",
+   "unit": "v12",
+   "front": "だいじょうぶ [audio](media:8019289e51c32a8be4948d9a)",
+   "hint": "大丈夫 · daijoubu",
+   "back": {
+    "ru": "в порядке, ничего страшного",
+    "en": "all right, OK"
+   },
+   "extra": {
+    "ru": "> だいじょうぶですか。 [audio](media:408c0a9af073c0c028c755d8)\n> *daijoubu desu ka*\n> — Вы в порядке?",
+    "en": "> だいじょうぶですか。 [audio](media:408c0a9af073c0c028c755d8)\n> *daijoubu desu ka*\n> — Are you all right?"
+   }
+  },
+  {
+   "id": "v12-taihen",
+   "unit": "v12",
+   "front": "たいへん [audio](media:de64299b69964c9949287ca4)",
+   "hint": "大変 · taihen",
+   "back": {
+    "ru": "тяжело; очень",
+    "en": "hard, terrible; very"
+   },
+   "extra": {
+    "ru": "> しごとが おおくて たいへんです。 [audio](media:6f7ee978d45609b3cf6fe4e5)\n> *shigoto ga ookute taihen desu*\n> — Много работы — тяжело.",
+    "en": "> しごとが おおくて たいへんです。 [audio](media:6f7ee978d45609b3cf6fe4e5)\n> *shigoto ga ookute taihen desu*\n> — There’s a lot of work — it’s hard."
+   }
+  },
+  {
+   "id": "v12-douzo",
+   "unit": "v12",
+   "front": "どうぞ [audio](media:d531f9abb74204088f9a4fe8)",
+   "hint": "douzo",
+   "back": {
+    "ru": "пожалуйста (предлагая)",
+    "en": "please, go ahead"
+   },
+   "extra": {
+    "ru": "> どうぞ はいって ください。 [audio](media:41d35ad39bbdbfa920b3dbb9)\n> *douzo haitte kudasai*\n> — Проходите, пожалуйста.",
+    "en": "> どうぞ はいって ください。 [audio](media:41d35ad39bbdbfa920b3dbb9)\n> *douzo haitte kudasai*\n> — Please come in."
+   }
+  },
+  {
+   "id": "v12-doumo",
+   "unit": "v12",
+   "front": "どうも [audio](media:9a65bd9b5224c7314bf8f136)",
+   "hint": "doumo",
+   "back": {
+    "ru": "спасибо; очень",
+    "en": "thanks; very"
+   },
+   "extra": {
+    "ru": "> どうも ありがとう ございます。 [audio](media:369fea37557a838f64c8d06b)\n> *doumo arigatou gozaimasu*\n> — Большое спасибо.",
+    "en": "> どうも ありがとう ございます。 [audio](media:369fea37557a838f64c8d06b)\n> *doumo arigatou gozaimasu*\n> — Thank you very much."
+   }
+  },
+  {
+   "id": "v12-chotto",
+   "unit": "v12",
+   "front": "ちょっと [audio](media:aca09e5709c8565f0033cc5c)",
+   "hint": "chotto",
+   "back": {
+    "ru": "немного; минутку",
+    "en": "a little; just a moment"
+   },
+   "extra": {
+    "ru": "> ちょっと まって ください。 [audio](media:c1e74cf6bd3c2fd9a6d77bf4)\n> *chotto matte kudasai*\n> — Подождите минутку.",
+    "en": "> ちょっと まって ください。 [audio](media:c1e74cf6bd3c2fd9a6d77bf4)\n> *chotto matte kudasai*\n> — Please wait a moment."
+   }
+  },
+  {
+   "id": "v13-shatsu",
+   "unit": "v13",
+   "front": "シャツ [audio](media:7851e6e978caf530ab8d22ae)",
+   "hint": "shatsu",
+   "back": {
+    "ru": "рубашка",
+    "en": "shirt"
+   },
+   "extra": {
+    "ru": "> しろい シャツを きます。 [audio](media:d510998a4ceacf90ef74745b)\n> *shiroi shatsu o kimasu*\n> — Надеваю белую рубашку.",
+    "en": "> しろい シャツを きます。 [audio](media:d510998a4ceacf90ef74745b)\n> *shiroi shatsu o kimasu*\n> — I put on a white shirt."
+   }
+  },
+  {
+   "id": "v13-sukaato",
+   "unit": "v13",
+   "front": "スカート [audio](media:2721361964b2d73db665ca71)",
+   "hint": "sukaato",
+   "back": {
+    "ru": "юбка",
+    "en": "skirt"
+   },
+   "extra": {
+    "ru": "> あおい スカートが ほしいです。 [audio](media:0a2bdc40d4cc25bb1e7da3cf)\n> *aoi sukaato ga hoshii desu*\n> — Хочу синюю юбку.",
+    "en": "> あおい スカートが ほしいです。 [audio](media:0a2bdc40d4cc25bb1e7da3cf)\n> *aoi sukaato ga hoshii desu*\n> — I want a blue skirt."
+   }
+  },
+  {
+   "id": "v13-zubon",
+   "unit": "v13",
+   "front": "ズボン [audio](media:b32010b74a8521e9c68a5f01)",
+   "hint": "zubon",
+   "back": {
+    "ru": "брюки",
+    "en": "trousers"
+   },
+   "extra": {
+    "ru": "> この ズボンは ながいです。 [audio](media:e4821415e9119e29468f23c9)\n> *kono zubon wa nagai desu*\n> — Эти брюки длинные.",
+    "en": "> この ズボンは ながいです。 [audio](media:e4821415e9119e29468f23c9)\n> *kono zubon wa nagai desu*\n> — These trousers are long."
+   }
+  },
+  {
+   "id": "v13-seetaa",
+   "unit": "v13",
+   "front": "セーター [audio](media:cfc8caf1aa7c759d1535a5a5)",
+   "hint": "seetaa",
+   "back": {
+    "ru": "свитер",
+    "en": "sweater"
+   },
+   "extra": {
+    "ru": "> さむいから セーターを きます。 [audio](media:06211e749f51b5e6e31a18ef)\n> *samui kara seetaa o kimasu*\n> — Холодно, поэтому надеваю свитер.",
+    "en": "> さむいから セーターを きます。 [audio](media:06211e749f51b5e6e31a18ef)\n> *samui kara seetaa o kimasu*\n> — It’s cold, so I wear a sweater."
+   }
+  },
+  {
+   "id": "v13-kooto",
+   "unit": "v13",
+   "front": "コート [audio](media:6ffcc69b4c6fabdd47d25d1c)",
+   "hint": "kooto",
+   "back": {
+    "ru": "пальто",
+    "en": "coat"
+   },
+   "extra": {
+    "ru": "> コートを ぬいで ください。 [audio](media:a88bcca78b70ba5b0d6d6846)\n> *kooto o nuide kudasai*\n> — Снимите пальто, пожалуйста.",
+    "en": "> コートを ぬいで ください。 [audio](media:a88bcca78b70ba5b0d6d6846)\n> *kooto o nuide kudasai*\n> — Please take off your coat."
+   }
+  },
+  {
+   "id": "v13-uwagi",
+   "unit": "v13",
+   "front": "うわぎ [audio](media:44851a36c56fb2bab2f85ddd)",
+   "hint": "上着 · uwagi",
+   "back": {
+    "ru": "куртка, пиджак",
+    "en": "jacket"
+   },
+   "extra": {
+    "ru": "> うわぎを わすれました。 [audio](media:efe4e7aac928f722f3d5f23c)\n> *uwagi o wasuremashita*\n> — Забыл куртку.",
+    "en": "> うわぎを わすれました。 [audio](media:efe4e7aac928f722f3d5f23c)\n> *uwagi o wasuremashita*\n> — I forgot my jacket."
+   }
+  },
+  {
+   "id": "v13-kutsushita",
+   "unit": "v13",
+   "front": "くつした [audio](media:45d6c0e7327a8f9174debe11)",
+   "hint": "靴下 · kutsushita",
+   "back": {
+    "ru": "носки",
+    "en": "socks"
+   },
+   "extra": {
+    "ru": "> くつしたを はきます。 [audio](media:6da75fdbe1c7e0c6750007ba)\n> *kutsushita o hakimasu*\n> — Надеваю носки.",
+    "en": "> くつしたを はきます。 [audio](media:6da75fdbe1c7e0c6750007ba)\n> *kutsushita o hakimasu*\n> — I put on socks."
+   }
+  },
+  {
+   "id": "v13-nekutai",
+   "unit": "v13",
+   "front": "ネクタイ [audio](media:8c2c20a09237bc574c448f03)",
+   "hint": "nekutai",
+   "back": {
+    "ru": "галстук",
+    "en": "necktie"
+   },
+   "extra": {
+    "ru": "> ちちに ネクタイを あげました。 [audio](media:769ae7e479ed5238350b7a53)\n> *chichi ni nekutai o agemashita*\n> — Подарил отцу галстук.",
+    "en": "> ちちに ネクタイを あげました。 [audio](media:769ae7e479ed5238350b7a53)\n> *chichi ni nekutai o agemashita*\n> — I gave my father a tie."
+   }
+  },
+  {
+   "id": "v13-boushi",
+   "unit": "v13",
+   "front": "ぼうし [audio](media:3da1e1e11c479bfa239b20f1)",
+   "hint": "帽子 · boushi",
+   "back": {
+    "ru": "шапка, шляпа",
+    "en": "hat"
+   },
+   "extra": {
+    "ru": "> あつい ひは ぼうしを かぶります。 [audio](media:08839e07a60da386adef4931)\n> *atsui hi wa boushi o kaburimasu*\n> — В жаркий день надеваю шляпу.",
+    "en": "> あつい ひは ぼうしを かぶります。 [audio](media:08839e07a60da386adef4931)\n> *atsui hi wa boushi o kaburimasu*\n> — I wear a hat on hot days."
+   }
+  },
+  {
+   "id": "v13-surippa",
+   "unit": "v13",
+   "front": "スリッパ [audio](media:fd03271cec8477d4babb7de1)",
+   "hint": "surippa",
+   "back": {
+    "ru": "тапочки",
+    "en": "slippers"
+   },
+   "extra": {
+    "ru": "> いえの なかでは スリッパを はきます。 [audio](media:980e5e7a5481c49b9586aa67)\n> *ie no naka de wa surippa o hakimasu*\n> — Дома ношу тапочки.",
+    "en": "> いえの なかでは スリッパを はきます。 [audio](media:980e5e7a5481c49b9586aa67)\n> *ie no naka de wa surippa o hakimasu*\n> — I wear slippers in the house."
+   }
+  },
+  {
+   "id": "v13-hankachi",
+   "unit": "v13",
+   "front": "ハンカチ [audio](media:2b6ffe6ba46655d8e7a9dfe6)",
+   "hint": "hankachi",
+   "back": {
+    "ru": "носовой платок",
+    "en": "handkerchief"
+   },
+   "extra": {
+    "ru": "> ハンカチで てを ふきます。 [audio](media:c9d87a36835772c110e205b7)\n> *hankachi de te o fukimasu*\n> — Вытираю руки платком.",
+    "en": "> ハンカチで てを ふきます。 [audio](media:c9d87a36835772c110e205b7)\n> *hankachi de te o fukimasu*\n> — I dry my hands with a handkerchief."
+   }
+  },
+  {
+   "id": "v13-taoru",
+   "unit": "v13",
+   "front": "タオル [audio](media:514683d4cb9284174b34b39c)",
+   "hint": "taoru",
+   "back": {
+    "ru": "полотенце",
+    "en": "towel"
+   },
+   "extra": {
+    "ru": "> タオルを かして ください。 [audio](media:8045d33ac0e1bea5841e608b)\n> *taoru o kashite kudasai*\n> — Дайте, пожалуйста, полотенце.",
+    "en": "> タオルを かして ください。 [audio](media:8045d33ac0e1bea5841e608b)\n> *taoru o kashite kudasai*\n> — Please lend me a towel."
+   }
+  },
+  {
+   "id": "v13-sekken",
+   "unit": "v13",
+   "front": "せっけん [audio](media:f1350d6bf183e63be859d947)",
+   "hint": "石鹸 · sekken",
+   "back": {
+    "ru": "мыло",
+    "en": "soap"
+   },
+   "extra": {
+    "ru": "> せっけんで てを あらいます。 [audio](media:1e0c5452fa868d847513d7ac)\n> *sekken de te o araimasu*\n> — Мою руки с мылом.",
+    "en": "> せっけんで てを あらいます。 [audio](media:1e0c5452fa868d847513d7ac)\n> *sekken de te o araimasu*\n> — I wash my hands with soap."
+   }
+  },
+  {
+   "id": "v13-shawaa",
+   "unit": "v13",
+   "front": "シャワー [audio](media:18b032b99bd0ec15adb42ad4)",
+   "hint": "shawaa",
+   "back": {
+    "ru": "душ",
+    "en": "shower"
+   },
+   "extra": {
+    "ru": "> あさ シャワーを あびます。 [audio](media:7397dbbdfc50b37eb8c38d04)\n> *asa shawaa o abimasu*\n> — Утром принимаю душ.",
+    "en": "> あさ シャワーを あびます。 [audio](media:7397dbbdfc50b37eb8c38d04)\n> *asa shawaa o abimasu*\n> — I take a shower in the morning."
+   }
+  },
+  {
+   "id": "v13-furo",
+   "unit": "v13",
+   "front": "ふろ [audio](media:2dbe25d732c54a1ef762da10)",
+   "hint": "風呂 · furo",
+   "back": {
+    "ru": "ванна (часто おふろ)",
+    "en": "bath (often おふろ)"
+   },
+   "extra": {
+    "ru": "> まいばん おふろに はいります。 [audio](media:94e06a4b942626a85f699eda)\n> *maiban ofuro ni hairimasu*\n> — Каждый вечер принимаю ванну.",
+    "en": "> まいばん おふろに はいります。 [audio](media:94e06a4b942626a85f699eda)\n> *maiban ofuro ni hairimasu*\n> — I take a bath every evening."
+   }
+  },
+  {
+   "id": "v13-hagaki",
+   "unit": "v13",
+   "front": "はがき [audio](media:573ac7a207256188b8e71485)",
+   "hint": "葉書 · hagaki",
+   "back": {
+    "ru": "открытка",
+    "en": "postcard"
+   },
+   "extra": {
+    "ru": "> りょこうさきから はがきを おくりました。 [audio](media:f84f96323e3c84f4f88c469a)\n> *ryokousaki kara hagaki o okurimashita*\n> — Отправил открытку из поездки.",
+    "en": "> りょこうさきから はがきを おくりました。 [audio](media:f84f96323e3c84f4f88c469a)\n> *ryokousaki kara hagaki o okurimashita*\n> — I sent a postcard from my trip."
+   }
+  },
+  {
+   "id": "v13-fuutou",
+   "unit": "v13",
+   "front": "ふうとう [audio](media:47341ac163f2f1cfd0928201)",
+   "hint": "封筒 · fuutou",
+   "back": {
+    "ru": "конверт",
+    "en": "envelope"
+   },
+   "extra": {
+    "ru": "> てがみを ふうとうに いれます。 [audio](media:26d9dc1bc0c3bd78009df14c)\n> *tegami o fuutou ni iremasu*\n> — Кладу письмо в конверт.",
+    "en": "> てがみを ふうとうに いれます。 [audio](media:26d9dc1bc0c3bd78009df14c)\n> *tegami o fuutou ni iremasu*\n> — I put the letter in an envelope."
+   }
+  },
+  {
+   "id": "v13-posuto",
+   "unit": "v13",
+   "front": "ポスト [audio](media:cbf68a03a825d9ed722d6fe6)",
+   "hint": "posuto",
+   "back": {
+    "ru": "почтовый ящик",
+    "en": "postbox"
+   },
+   "extra": {
+    "ru": "> えきの まえに ポストが あります。 [audio](media:252ab15cf99ecfdb76b2659c)\n> *eki no mae ni posuto ga arimasu*\n> — Перед станцией есть почтовый ящик.",
+    "en": "> えきの まえに ポストが あります。 [audio](media:252ab15cf99ecfdb76b2659c)\n> *eki no mae ni posuto ga arimasu*\n> — There’s a postbox in front of the station."
+   }
+  },
+  {
+   "id": "v14-iriguchi",
+   "unit": "v14",
+   "front": "いりぐち [audio](media:589f7523bb62a9d83612930e)",
+   "hint": "入口 · iriguchi",
+   "back": {
+    "ru": "вход",
+    "en": "entrance"
+   },
+   "extra": {
+    "ru": "> いりぐちは あちらです。 [audio](media:c8f790d11946af6f456b0d65)\n> *iriguchi wa achira desu*\n> — Вход вон там.",
+    "en": "> いりぐちは あちらです。 [audio](media:c8f790d11946af6f456b0d65)\n> *iriguchi wa achira desu*\n> — The entrance is over there."
+   }
+  },
+  {
+   "id": "v14-deguchi",
+   "unit": "v14",
+   "front": "でぐち [audio](media:b95e9fc77f8b759c9d93c220)",
+   "hint": "出口 · deguchi",
+   "back": {
+    "ru": "выход",
+    "en": "exit"
+   },
+   "extra": {
+    "ru": "> ひがしぐちの でぐちで まって います。 [audio](media:2f53d17e12688cc2b716fc3c)\n> *higashiguchi no deguchi de matte imasu*\n> — Жду у восточного выхода.",
+    "en": "> ひがしぐちの でぐちで まって います。 [audio](media:2f53d17e12688cc2b716fc3c)\n> *higashiguchi no deguchi de matte imasu*\n> — I’m waiting at the east exit."
+   }
+  },
+  {
+   "id": "v14-kousaten",
+   "unit": "v14",
+   "front": "こうさてん [audio](media:d258fcb8f0cc6811070ee250)",
+   "hint": "交差点 · kousaten",
+   "back": {
+    "ru": "перекрёсток",
+    "en": "intersection"
+   },
+   "extra": {
+    "ru": "> つぎの こうさてんを みぎに まがって ください。 [audio](media:8250ecf2f784551f44dd3db9)\n> *tsugi no kousaten o migi ni magatte kudasai*\n> — На следующем перекрёстке поверните направо.",
+    "en": "> つぎの こうさてんを みぎに まがって ください。 [audio](media:8250ecf2f784551f44dd3db9)\n> *tsugi no kousaten o migi ni magatte kudasai*\n> — Turn right at the next intersection."
+   }
+  },
+  {
+   "id": "v14-kado",
+   "unit": "v14",
+   "front": "かど [audio](media:f0f19e3c1948d5c5ba2bfe48)",
+   "hint": "角 · kado",
+   "back": {
+    "ru": "угол",
+    "en": "corner"
+   },
+   "extra": {
+    "ru": "> かどに コンビニが あります。 [audio](media:ef8fe03e14081368795d9a26)\n> *kado ni konbini ga arimasu*\n> — На углу есть магазинчик.",
+    "en": "> かどに コンビニが あります。 [audio](media:ef8fe03e14081368795d9a26)\n> *kado ni konbini ga arimasu*\n> — There’s a convenience store on the corner."
+   }
+  },
+  {
+   "id": "v14-massugu",
+   "unit": "v14",
+   "front": "まっすぐ [audio](media:3878912458b831d0560fdf0c)",
+   "hint": "massugu",
+   "back": {
+    "ru": "прямо",
+    "en": "straight"
+   },
+   "extra": {
+    "ru": "> この みちを まっすぐ いって ください。 [audio](media:842c4f302100d1dc1dc1e7fa)\n> *kono michi o massugu itte kudasai*\n> — Идите прямо по этой дороге.",
+    "en": "> この みちを まっすぐ いって ください。 [audio](media:842c4f302100d1dc1dc1e7fa)\n> *kono michi o massugu itte kudasai*\n> — Go straight along this road."
+   }
+  },
+  {
+   "id": "v14-chikaku",
+   "unit": "v14",
+   "front": "ちかく [audio](media:fa297da34aa84add585705c5)",
+   "hint": "近く · chikaku",
+   "back": {
+    "ru": "рядом, поблизости",
+    "en": "nearby"
+   },
+   "extra": {
+    "ru": "> ちかくに びょういんは ありますか。 [audio](media:934fe4ca75091271f5b461b3)\n> *chikaku ni byouin wa arimasu ka*\n> — Поблизости есть больница?",
+    "en": "> ちかくに びょういんは ありますか。 [audio](media:934fe4ca75091271f5b461b3)\n> *chikaku ni byouin wa arimasu ka*\n> — Is there a hospital nearby?"
+   }
+  },
+  {
+   "id": "v14-minami",
+   "unit": "v14",
+   "front": "みなみ [audio](media:6cc3acd2978db29871fa5e9c)",
+   "hint": "南 · minami",
+   "back": {
+    "ru": "юг",
+    "en": "south"
+   },
+   "extra": {
+    "ru": "> みなみの くには あたたかいです。 [audio](media:50b1fe08e72416ec14868380)\n> *minami no kuni wa atatakai desu*\n> — В южных странах тепло.",
+    "en": "> みなみの くには あたたかいです。 [audio](media:50b1fe08e72416ec14868380)\n> *minami no kuni wa atatakai desu*\n> — Southern countries are warm."
+   }
+  },
+  {
+   "id": "v14-kita",
+   "unit": "v14",
+   "front": "きた [audio](media:fb161bc4976381eb30488a61)",
+   "hint": "北 · kita",
+   "back": {
+    "ru": "север",
+    "en": "north"
+   },
+   "extra": {
+    "ru": "> ほっかいどうは にほんの きたに あります。 [audio](media:05855d6cbc87814f2fb7df21)\n> *hokkaidou wa nihon no kita ni arimasu*\n> — Хоккайдо на севере Японии.",
+    "en": "> ほっかいどうは にほんの きたに あります。 [audio](media:05855d6cbc87814f2fb7df21)\n> *hokkaidou wa nihon no kita ni arimasu*\n> — Hokkaido is in the north of Japan."
+   }
+  },
+  {
+   "id": "v14-genkan",
+   "unit": "v14",
+   "front": "げんかん [audio](media:28169201895a7107538fd5fd)",
+   "hint": "玄関 · genkan",
+   "back": {
+    "ru": "прихожая, вход в дом",
+    "en": "entrance hall"
+   },
+   "extra": {
+    "ru": "> げんかんで くつを ぬぎます。 [audio](media:8eccc06eed76a3ee6d3a349c)\n> *genkan de kutsu o nugimasu*\n> — В прихожей снимаем обувь.",
+    "en": "> げんかんで くつを ぬぎます。 [audio](media:8eccc06eed76a3ee6d3a349c)\n> *genkan de kutsu o nugimasu*\n> — We take off our shoes in the entrance hall."
+   }
+  },
+  {
+   "id": "v14-rouka",
+   "unit": "v14",
+   "front": "ろうか [audio](media:b11515aa1fa4f5275a12b8b3)",
+   "hint": "廊下 · rouka",
+   "back": {
+    "ru": "коридор",
+    "en": "corridor"
+   },
+   "extra": {
+    "ru": "> ろうかを はしらないで ください。 [audio](media:a7619482f3212c3d67d514d4)\n> *rouka o hashiranaide kudasai*\n> — Не бегайте по коридору.",
+    "en": "> ろうかを はしらないで ください。 [audio](media:a7619482f3212c3d67d514d4)\n> *rouka o hashiranaide kudasai*\n> — Please don’t run in the corridor."
+   }
+  },
+  {
+   "id": "v14-tatemono",
+   "unit": "v14",
+   "front": "たてもの [audio](media:89af390e4f701bc50b196d98)",
+   "hint": "建物 · tatemono",
+   "back": {
+    "ru": "здание",
+    "en": "building"
+   },
+   "extra": {
+    "ru": "> あの たかい たてものは ホテルです。 [audio](media:34c9ccf3fa23f123faa817ff)\n> *ano takai tatemono wa hoteru desu*\n> — То высокое здание — гостиница.",
+    "en": "> あの たかい たてものは ホテルです。 [audio](media:34c9ccf3fa23f123faa817ff)\n> *ano takai tatemono wa hoteru desu*\n> — That tall building is a hotel."
+   }
+  },
+  {
+   "id": "v14-eigakan",
+   "unit": "v14",
+   "front": "えいがかん [audio](media:6559c1e958fa0ee9c7000edc)",
+   "hint": "映画館 · eigakan",
+   "back": {
+    "ru": "кинотеатр",
+    "en": "cinema"
+   },
+   "extra": {
+    "ru": "> どようびに えいがかんへ いきます。 [audio](media:7cffcfc83993306e4d41e1c8)\n> *doyoubi ni eigakan e ikimasu*\n> — В субботу иду в кино.",
+    "en": "> どようびに えいがかんへ いきます。 [audio](media:7cffcfc83993306e4d41e1c8)\n> *doyoubi ni eigakan e ikimasu*\n> — I’m going to the cinema on Saturday."
+   }
+  },
+  {
+   "id": "v14-kissaten",
+   "unit": "v14",
+   "front": "きっさてん [audio](media:5f6b29ce83b10d9bd61c0036)",
+   "hint": "喫茶店 · kissaten",
+   "back": {
+    "ru": "кафе, кофейня",
+    "en": "coffee shop"
+   },
+   "extra": {
+    "ru": "> きっさてんで ともだちと はなしました。 [audio](media:5b8b1eff12e0ec5c54e87697)\n> *kissaten de tomodachi to hanashimashita*\n> — Поговорил с другом в кафе.",
+    "en": "> きっさてんで ともだちと はなしました。 [audio](media:5b8b1eff12e0ec5c54e87697)\n> *kissaten de tomodachi to hanashimashita*\n> — I talked with a friend at a coffee shop."
+   }
+  },
+  {
+   "id": "v14-depaato",
+   "unit": "v14",
+   "front": "デパート [audio](media:e0d1dcdcdd9bfb2e96c80293)",
+   "hint": "depaato",
+   "back": {
+    "ru": "универмаг",
+    "en": "department store"
+   },
+   "extra": {
+    "ru": "> デパートで プレゼントを かいました。 [audio](media:cf56ad88c15ddbaaa3fe8125)\n> *depaato de purezento o kaimashita*\n> — Купил подарок в универмаге.",
+    "en": "> デパートで プレゼントを かいました。 [audio](media:cf56ad88c15ddbaaa3fe8125)\n> *depaato de purezento o kaimashita*\n> — I bought a present at the department store."
+   }
+  },
+  {
+   "id": "v14-resutoran",
+   "unit": "v14",
+   "front": "レストラン [audio](media:a0ad9832c91e6b6ca9bfe87c)",
+   "hint": "resutoran",
+   "back": {
+    "ru": "ресторан",
+    "en": "restaurant"
+   },
+   "extra": {
+    "ru": "> この レストランは おいしいです。 [audio](media:64f97a0adce77525dfe43b75)\n> *kono resutoran wa oishii desu*\n> — В этом ресторане вкусно.",
+    "en": "> この レストランは おいしいです。 [audio](media:64f97a0adce77525dfe43b75)\n> *kono resutoran wa oishii desu*\n> — This restaurant is good."
+   }
+  },
+  {
+   "id": "v14-hoteru",
+   "unit": "v14",
+   "front": "ホテル [audio](media:d8db07fd312117467740fabe)",
+   "hint": "hoteru",
+   "back": {
+    "ru": "гостиница",
+    "en": "hotel"
+   },
+   "extra": {
+    "ru": "> えきの まえの ホテルに とまります。 [audio](media:0fc5eb6bafc557776f529fca)\n> *eki no mae no hoteru ni tomarimasu*\n> — Остановлюсь в гостинице у станции.",
+    "en": "> えきの まえの ホテルに とまります。 [audio](media:0fc5eb6bafc557776f529fca)\n> *eki no mae no hoteru ni tomarimasu*\n> — I’ll stay at the hotel by the station."
+   }
+  },
+  {
+   "id": "v14-puuru",
+   "unit": "v14",
+   "front": "プール [audio](media:67fb59e2f3768a8c70db4c63)",
+   "hint": "puuru",
+   "back": {
+    "ru": "бассейн",
+    "en": "swimming pool"
+   },
+   "extra": {
+    "ru": "> なつは プールで およぎます。 [audio](media:61284727963b88c4b8479324)\n> *natsu wa puuru de oyogimasu*\n> — Летом плаваю в бассейне.",
+    "en": "> なつは プールで およぎます。 [audio](media:61284727963b88c4b8479324)\n> *natsu wa puuru de oyogimasu*\n> — In summer I swim in the pool."
+   }
+  },
+  {
+   "id": "v14-kouban",
+   "unit": "v14",
+   "front": "こうばん [audio](media:38e50b51c3c40e1213658e8c)",
+   "hint": "交番 · kouban",
+   "back": {
+    "ru": "полицейская будка",
+    "en": "police box"
+   },
+   "extra": {
+    "ru": "> こうばんで みちを ききました。 [audio](media:3feb467510fe1cb35fe30b3a)\n> *kouban de michi o kikimashita*\n> — Спросил дорогу в полицейской будке.",
+    "en": "> こうばんで みちを ききました。 [audio](media:3feb467510fe1cb35fe30b3a)\n> *kouban de michi o kikimashita*\n> — I asked for directions at the police box."
+   }
+  },
+  {
+   "id": "v14-konbini",
+   "unit": "v14",
+   "front": "コンビニ [audio](media:937de60dd059aa93bc09aa42)",
+   "hint": "konbini",
+   "back": {
+    "ru": "круглосуточный магазинчик",
+    "en": "convenience store"
+   },
+   "extra": {
+    "ru": "> コンビニで おにぎりを かいます。 [audio](media:a353a615ee0c34b5ded4f838)\n> *konbini de onigiri o kaimasu*\n> — Покупаю онигири в магазинчике.",
+    "en": "> コンビニで おにぎりを かいます。 [audio](media:a353a615ee0c34b5ded4f838)\n> *konbini de onigiri o kaimasu*\n> — I buy rice balls at the convenience store."
+   }
+  },
+  {
+   "id": "v14-jidousha",
+   "unit": "v14",
+   "front": "じどうしゃ [audio](media:31c5b9d82ba142a1b2f2d890)",
+   "hint": "自動車 · jidousha",
+   "back": {
+    "ru": "автомобиль",
+    "en": "automobile"
+   },
+   "extra": {
+    "ru": "> この まちは じどうしゃが おおいです。 [audio](media:d46f433f87283e4f492a81d1)\n> *kono machi wa jidousha ga ooi desu*\n> — В этом городе много машин.",
+    "en": "> この まちは じどうしゃが おおいです。 [audio](media:d46f433f87283e4f492a81d1)\n> *kono machi wa jidousha ga ooi desu*\n> — There are many cars in this town."
+   }
+  },
+  {
+   "id": "v14-takushii",
+   "unit": "v14",
+   "front": "タクシー [audio](media:fba516608afe1a24d051c20a)",
+   "hint": "takushii",
+   "back": {
+    "ru": "такси",
+    "en": "taxi"
+   },
+   "extra": {
+    "ru": "> タクシーで くうこうへ いきます。 [audio](media:788fff312528c826df1656ae)\n> *takushii de kuukou e ikimasu*\n> — Еду в аэропорт на такси.",
+    "en": "> タクシーで くうこうへ いきます。 [audio](media:788fff312528c826df1656ae)\n> *takushii de kuukou e ikimasu*\n> — I go to the airport by taxi."
+   }
+  },
+  {
+   "id": "v14-doubutsu",
+   "unit": "v14",
+   "front": "どうぶつ [audio](media:8a7466478d2a46c7f2e60ea0)",
+   "hint": "動物 · doubutsu",
+   "back": {
+    "ru": "животное",
+    "en": "animal"
+   },
+   "extra": {
+    "ru": "> どうぶつえんで どうぶつを みました。 [audio](media:5f09469406d7007238792ea3)\n> *doubutsuen de doubutsu o mimashita*\n> — Смотрел животных в зоопарке.",
+    "en": "> どうぶつえんで どうぶつを みました。 [audio](media:5f09469406d7007238792ea3)\n> *doubutsuen de doubutsu o mimashita*\n> — I saw animals at the zoo."
+   }
+  },
+  {
+   "id": "v14-paatii",
+   "unit": "v14",
+   "front": "パーティー [audio](media:d7c466127e81478a07a88481)",
+   "hint": "paatii",
+   "back": {
+    "ru": "вечеринка",
+    "en": "party"
+   },
+   "extra": {
+    "ru": "> きんようびに パーティーが あります。 [audio](media:76ab1b7a8c75e042f42caee4)\n> *kinyoubi ni paatii ga arimasu*\n> — В пятницу вечеринка.",
+    "en": "> きんようびに パーティーが あります。 [audio](media:76ab1b7a8c75e042f42caee4)\n> *kinyoubi ni paatii ga arimasu*\n> — There’s a party on Friday."
+   }
+  },
+  {
+   "id": "v15-gohan",
+   "unit": "v15",
+   "front": "ごはん [audio](media:0335ae945cdfa5d1554064f6)",
+   "hint": "ご飯 · gohan",
+   "back": {
+    "ru": "варёный рис; еда",
+    "en": "cooked rice; meal"
+   },
+   "extra": {
+    "ru": "> ごはんを たべましょう。 [audio](media:b0ee910ddc862a005da34921)\n> *gohan o tabemashou*\n> — Давайте поедим.",
+    "en": "> ごはんを たべましょう。 [audio](media:b0ee910ddc862a005da34921)\n> *gohan o tabemashou*\n> — Let’s eat."
+   }
+  },
+  {
+   "id": "v15-koohii",
+   "unit": "v15",
+   "front": "コーヒー [audio](media:e1137296ea5ed511d162fe8a)",
+   "hint": "koohii",
+   "back": {
+    "ru": "кофе",
+    "en": "coffee"
+   },
+   "extra": {
+    "ru": "> あさは コーヒーを のみます。 [audio](media:dc4ae87b428624a6429e48f3)\n> *asa wa koohii o nomimasu*\n> — Утром пью кофе.",
+    "en": "> あさは コーヒーを のみます。 [audio](media:dc4ae87b428624a6429e48f3)\n> *asa wa koohii o nomimasu*\n> — I drink coffee in the morning."
+   }
+  },
+  {
+   "id": "v15-pan",
+   "unit": "v15",
+   "front": "パン [audio](media:606c9266fc30568077200bde)",
+   "hint": "pan",
+   "back": {
+    "ru": "хлеб",
+    "en": "bread"
+   },
+   "extra": {
+    "ru": "> あさごはんに パンを たべます。 [audio](media:8914cfed946bba12c29cc57b)\n> *asagohan ni pan o tabemasu*\n> — На завтрак ем хлеб.",
+    "en": "> あさごはんに パンを たべます。 [audio](media:8914cfed946bba12c29cc57b)\n> *asagohan ni pan o tabemasu*\n> — I eat bread for breakfast."
+   }
+  },
+  {
+   "id": "v15-bataa",
+   "unit": "v15",
+   "front": "バター [audio](media:2d55cdc6f8ff777daa20824b)",
+   "hint": "bataa",
+   "back": {
+    "ru": "сливочное масло",
+    "en": "butter"
+   },
+   "extra": {
+    "ru": "> パンに バターを ぬります。 [audio](media:e24d331744d0e715144c4c8b)\n> *pan ni bataa o nurimasu*\n> — Мажу хлеб маслом.",
+    "en": "> パンに バターを ぬります。 [audio](media:e24d331744d0e715144c4c8b)\n> *pan ni bataa o nurimasu*\n> — I spread butter on bread."
+   }
+  },
+  {
+   "id": "v15-shouyu",
+   "unit": "v15",
+   "front": "しょうゆ [audio](media:f882355057da8ea4612cf504)",
+   "hint": "醤油 · shouyu",
+   "back": {
+    "ru": "соевый соус",
+    "en": "soy sauce"
+   },
+   "extra": {
+    "ru": "> おすしに しょうゆを つけます。 [audio](media:ef0f6bfe13539fb2c77974c5)\n> *osushi ni shouyu o tsukemasu*\n> — Макаю суши в соевый соус.",
+    "en": "> おすしに しょうゆを つけます。 [audio](media:ef0f6bfe13539fb2c77974c5)\n> *osushi ni shouyu o tsukemasu*\n> — I dip sushi in soy sauce."
+   }
+  },
+  {
+   "id": "v15-butaniku",
+   "unit": "v15",
+   "front": "ぶたにく [audio](media:cd650b8a577cd83eba3390c0)",
+   "hint": "豚肉 · butaniku",
+   "back": {
+    "ru": "свинина",
+    "en": "pork"
+   },
+   "extra": {
+    "ru": "> ぶたにくと やさいを いためます。 [audio](media:98ed4610a65d8ba71f54cb83)\n> *butaniku to yasai o itamemasu*\n> — Жарю свинину с овощами.",
+    "en": "> ぶたにくと やさいを いためます。 [audio](media:98ed4610a65d8ba71f54cb83)\n> *butaniku to yasai o itamemasu*\n> — I stir-fry pork and vegetables."
+   }
+  },
+  {
+   "id": "v15-toriniku",
+   "unit": "v15",
+   "front": "とりにく [audio](media:7ef8c273096acf9cc9003909)",
+   "hint": "鳥肉 · toriniku",
+   "back": {
+    "ru": "курица (мясо)",
+    "en": "chicken (meat)"
+   },
+   "extra": {
+    "ru": "> とりにくは やすいです。 [audio](media:1fb89e8f8e6bd1400118c890)\n> *toriniku wa yasui desu*\n> — Курица дешёвая.",
+    "en": "> とりにくは やすいです。 [audio](media:1fb89e8f8e6bd1400118c890)\n> *toriniku wa yasui desu*\n> — Chicken is cheap."
+   }
+  },
+  {
+   "id": "v15-obentou",
+   "unit": "v15",
+   "front": "おべんとう [audio](media:35fb7e0bc344430546de7ca9)",
+   "hint": "お弁当 · obentou",
+   "back": {
+    "ru": "ланч-бокс, бэнто",
+    "en": "boxed lunch"
+   },
+   "extra": {
+    "ru": "> おべんとうを もって いきます。 [audio](media:fec67b3d980a6d4f45fc5a05)\n> *obentou o motte ikimasu*\n> — Беру с собой бэнто.",
+    "en": "> おべんとうを もって いきます。 [audio](media:fec67b3d980a6d4f45fc5a05)\n> *obentou o motte ikimasu*\n> — I take a boxed lunch with me."
+   }
+  },
+  {
+   "id": "v15-osara",
+   "unit": "v15",
+   "front": "おさら [audio](media:43855de81e550f6f6480252d)",
+   "hint": "お皿 · osara",
+   "back": {
+    "ru": "тарелка",
+    "en": "plate"
+   },
+   "extra": {
+    "ru": "> おさらを あらって ください。 [audio](media:8a2e19e3e628d7df0a5d228b)\n> *osara o aratte kudasai*\n> — Помойте тарелки, пожалуйста.",
+    "en": "> おさらを あらって ください。 [audio](media:8a2e19e3e628d7df0a5d228b)\n> *osara o aratte kudasai*\n> — Please wash the plates."
+   }
+  },
+  {
+   "id": "v15-chawan",
+   "unit": "v15",
+   "front": "ちゃわん [audio](media:c739d7c911519d4b428ce3e2)",
+   "hint": "茶碗 · chawan",
+   "back": {
+    "ru": "чашка для риса",
+    "en": "rice bowl"
+   },
+   "extra": {
+    "ru": "> ちゃわんに ごはんを いれます。 [audio](media:6624375e182ba649d0553be8)\n> *chawan ni gohan o iremasu*\n> — Кладу рис в чашку.",
+    "en": "> ちゃわんに ごはんを いれます。 [audio](media:6624375e182ba649d0553be8)\n> *chawan ni gohan o iremasu*\n> — I put rice in the bowl."
+   }
+  },
+  {
+   "id": "v15-koppu",
+   "unit": "v15",
+   "front": "コップ [audio](media:e426bf81eaeed0baab5f5b8d)",
+   "hint": "koppu",
+   "back": {
+    "ru": "стакан",
+    "en": "glass, cup"
+   },
+   "extra": {
+    "ru": "> コップに みずを いれて ください。 [audio](media:44a439f1aff00622691bdb8d)\n> *koppu ni mizu o irete kudasai*\n> — Налейте воды в стакан.",
+    "en": "> コップに みずを いれて ください。 [audio](media:44a439f1aff00622691bdb8d)\n> *koppu ni mizu o irete kudasai*\n> — Please pour water into the glass."
+   }
+  },
+  {
+   "id": "v15-karai",
+   "unit": "v15",
+   "front": "からい [audio](media:58518b2b82a3c7759682c65b)",
+   "hint": "辛い · karai",
+   "back": {
+    "ru": "острый",
+    "en": "spicy"
+   },
+   "extra": {
+    "ru": "> この カレーは からいです。 [audio](media:c0dcee93a99ddd244f8db9e7)\n> *kono karee wa karai desu*\n> — Это карри острое.",
+    "en": "> この カレーは からいです。 [audio](media:c0dcee93a99ddd244f8db9e7)\n> *kono karee wa karai desu*\n> — This curry is spicy."
+   }
+  },
+  {
+   "id": "v15-mazui",
+   "unit": "v15",
+   "front": "まずい [audio](media:1d201368d0d1b31aaec44df4)",
+   "hint": "mazui",
+   "back": {
+    "ru": "невкусный",
+    "en": "tastes bad"
+   },
+   "extra": {
+    "ru": "> この コーヒーは まずいです。 [audio](media:4dfec4a75ce5b411bd9d7709)\n> *kono koohii wa mazui desu*\n> — Этот кофе невкусный.",
+    "en": "> この コーヒーは まずいです。 [audio](media:4dfec4a75ce5b411bd9d7709)\n> *kono koohii wa mazui desu*\n> — This coffee tastes bad."
+   }
+  },
+  {
+   "id": "v15-tsumetai",
+   "unit": "v15",
+   "front": "つめたい [audio](media:e09f166b0f4c7180ad60e41d)",
+   "hint": "冷たい · tsumetai",
+   "back": {
+    "ru": "холодный (на ощупь)",
+    "en": "cold (to the touch)"
+   },
+   "extra": {
+    "ru": "> つめたい みずを ください。 [audio](media:45f07018029b322343ea2dc6)\n> *tsumetai mizu o kudasai*\n> — Холодной воды, пожалуйста.",
+    "en": "> つめたい みずを ください。 [audio](media:45f07018029b322343ea2dc6)\n> *tsumetai mizu o kudasai*\n> — Cold water, please."
+   }
+  },
+  {
+   "id": "v15-naifu",
+   "unit": "v15",
+   "front": "ナイフ [audio](media:649b06c542cd46fc1fa3870e)",
+   "hint": "naifu",
+   "back": {
+    "ru": "нож",
+    "en": "knife"
+   },
+   "extra": {
+    "ru": "> ナイフで にくを きります。 [audio](media:4df698dd0d939b81cc82fe6b)\n> *naifu de niku o kirimasu*\n> — Режу мясо ножом.",
+    "en": "> ナイフで にくを きります。 [audio](media:4df698dd0d939b81cc82fe6b)\n> *naifu de niku o kirimasu*\n> — I cut the meat with a knife."
+   }
+  },
+  {
+   "id": "v15-fooku",
+   "unit": "v15",
+   "front": "フォーク [audio](media:0f1f71edf5cfc08b59d7d9a7)",
+   "hint": "fooku",
+   "back": {
+    "ru": "вилка",
+    "en": "fork"
+   },
+   "extra": {
+    "ru": "> フォークで たべても いいですか。 [audio](media:f49bfb7ca02e62986ef456d0)\n> *fooku de tabete mo ii desu ka*\n> — Можно есть вилкой?",
+    "en": "> フォークで たべても いいですか。 [audio](media:f49bfb7ca02e62986ef456d0)\n> *fooku de tabete mo ii desu ka*\n> — May I eat with a fork?"
+   }
+  },
+  {
+   "id": "v15-supuun",
+   "unit": "v15",
+   "front": "スプーン [audio](media:30be77373accde8e93200cbf)",
+   "hint": "supuun",
+   "back": {
+    "ru": "ложка",
+    "en": "spoon"
+   },
+   "extra": {
+    "ru": "> スプーンを ください。 [audio](media:b432d6cf550b416224d3fd92)\n> *supuun o kudasai*\n> — Дайте ложку, пожалуйста.",
+    "en": "> スプーンを ください。 [audio](media:b432d6cf550b416224d3fd92)\n> *supuun o kudasai*\n> — A spoon, please."
+   }
+  },
+  {
+   "id": "v16-omoshiroi",
+   "unit": "v16",
+   "front": "おもしろい [audio](media:a46533295486f3749cd0dbd2)",
+   "hint": "面白い · omoshiroi",
+   "back": {
+    "ru": "интересный, смешной",
+    "en": "interesting, funny"
+   },
+   "extra": {
+    "ru": "> この まんがは おもしろいです。 [audio](media:6e2aeed05fd00566cc7707db)\n> *kono manga wa omoshiroi desu*\n> — Эта манга интересная.",
+    "en": "> この まんがは おもしろいです。 [audio](media:6e2aeed05fd00566cc7707db)\n> *kono manga wa omoshiroi desu*\n> — This manga is interesting."
+   }
+  },
+  {
+   "id": "v16-tsumaranai",
+   "unit": "v16",
+   "front": "つまらない [audio](media:a391af2b579a79e72664d1bb)",
+   "hint": "tsumaranai",
+   "back": {
+    "ru": "скучный",
+    "en": "boring"
+   },
+   "extra": {
+    "ru": "> その えいがは つまらなかったです。 [audio](media:9614754b55969e700dd6fb26)\n> *sono eiga wa tsumaranakatta desu*\n> — Тот фильм был скучным.",
+    "en": "> その えいがは つまらなかったです。 [audio](media:9614754b55969e700dd6fb26)\n> *sono eiga wa tsumaranakatta desu*\n> — That film was boring."
+   }
+  },
+  {
+   "id": "v16-muzukashii",
+   "unit": "v16",
+   "front": "むずかしい [audio](media:6371599f7548a72faafdaecc)",
+   "hint": "難しい · muzukashii",
+   "back": {
+    "ru": "трудный",
+    "en": "difficult"
+   },
+   "extra": {
+    "ru": "> かんじは むずかしいですが おもしろいです。 [audio](media:0f7fa3fb2beb5791b7c74df1)\n> *kanji wa muzukashii desu ga omoshiroi desu*\n> — Кандзи трудные, но интересные.",
+    "en": "> かんじは むずかしいですが おもしろいです。 [audio](media:0f7fa3fb2beb5791b7c74df1)\n> *kanji wa muzukashii desu ga omoshiroi desu*\n> — Kanji are hard but interesting."
+   }
+  },
+  {
+   "id": "v16-omoi",
+   "unit": "v16",
+   "front": "おもい [audio](media:5273c4dc0bc8deadbb544335)",
+   "hint": "重い · omoi",
+   "back": {
+    "ru": "тяжёлый",
+    "en": "heavy"
+   },
+   "extra": {
+    "ru": "> この にもつは おもいです。 [audio](media:e3e6b447fc4352fafd16a0dc)\n> *kono nimotsu wa omoi desu*\n> — Этот багаж тяжёлый.",
+    "en": "> この にもつは おもいです。 [audio](media:e3e6b447fc4352fafd16a0dc)\n> *kono nimotsu wa omoi desu*\n> — This luggage is heavy."
+   }
+  },
+  {
+   "id": "v16-nagai",
+   "unit": "v16",
+   "front": "ながい [audio](media:85ec6c6ac8368f6a4fc25277)",
+   "hint": "長い · nagai",
+   "back": {
+    "ru": "длинный",
+    "en": "long"
+   },
+   "extra": {
+    "ru": "> かのじょの かみは ながいです。 [audio](media:947911c20d8d93320dba265e)\n> *kanojo no kami wa nagai desu*\n> — У неё длинные волосы.",
+    "en": "> かのじょの かみは ながいです。 [audio](media:947911c20d8d93320dba265e)\n> *kanojo no kami wa nagai desu*\n> — Her hair is long."
+   }
+  },
+  {
+   "id": "v16-futoi",
+   "unit": "v16",
+   "front": "ふとい [audio](media:93d25f5889a7547332d6af12)",
+   "hint": "太い · futoi",
+   "back": {
+    "ru": "толстый",
+    "en": "thick"
+   },
+   "extra": {
+    "ru": "> ふとい ペンで かいて ください。 [audio](media:a9da5ccad5552cbf1f724b03)\n> *futoi pen de kaite kudasai*\n> — Пишите толстой ручкой.",
+    "en": "> ふとい ペンで かいて ください。 [audio](media:a9da5ccad5552cbf1f724b03)\n> *futoi pen de kaite kudasai*\n> — Please write with a thick pen."
+   }
+  },
+  {
+   "id": "v16-hosoi",
+   "unit": "v16",
+   "front": "ほそい [audio](media:a43230387d5e6e06bd61673f)",
+   "hint": "細い · hosoi",
+   "back": {
+    "ru": "тонкий, узкий",
+    "en": "thin, narrow"
+   },
+   "extra": {
+    "ru": "> ほそい みちを あるきました。 [audio](media:48acb697a30c11eec6d5a3cd)\n> *hosoi michi o arukimashita*\n> — Шёл по узкой улочке.",
+    "en": "> ほそい みちを あるきました。 [audio](media:48acb697a30c11eec6d5a3cd)\n> *hosoi michi o arukimashita*\n> — I walked along a narrow street."
+   }
+  },
+  {
+   "id": "v16-osoi",
+   "unit": "v16",
+   "front": "おそい [audio](media:c620e4a61ed799c37621494f)",
+   "hint": "遅い · osoi",
+   "back": {
+    "ru": "медленный; поздний",
+    "en": "slow; late"
+   },
+   "extra": {
+    "ru": "> もう おそいから かえりましょう。 [audio](media:9a219dd94bc9e5d617960d6b)\n> *mou osoi kara kaerimashou*\n> — Уже поздно, пойдём домой.",
+    "en": "> もう おそいから かえりましょう。 [audio](media:9a219dd94bc9e5d617960d6b)\n> *mou osoi kara kaerimashou*\n> — It’s late, let’s go home."
+   }
+  },
+  {
+   "id": "v16-sukunai",
+   "unit": "v16",
+   "front": "すくない [audio](media:48909b36043b811e3610559e)",
+   "hint": "少ない · sukunai",
+   "back": {
+    "ru": "мало, немногочисленный",
+    "en": "few, little"
+   },
+   "extra": {
+    "ru": "> この まちは ひとが すくないです。 [audio](media:804eab189f2147758ab6a42b)\n> *kono machi wa hito ga sukunai desu*\n> — В этом городе мало людей.",
+    "en": "> この まちは ひとが すくないです。 [audio](media:804eab189f2147758ab6a42b)\n> *kono machi wa hito ga sukunai desu*\n> — There are few people in this town."
+   }
+  },
+  {
+   "id": "v16-urusai",
+   "unit": "v16",
+   "front": "うるさい [audio](media:932d792a65fce33b30ded0a5)",
+   "hint": "urusai",
+   "back": {
+    "ru": "шумный, назойливый",
+    "en": "noisy, annoying"
+   },
+   "extra": {
+    "ru": "> となりの へやが うるさいです。 [audio](media:07423a5e0a81adfdb9dbe611)\n> *tonari no heya ga urusai desu*\n> — В соседней комнате шумно.",
+    "en": "> となりの へやが うるさいです。 [audio](media:07423a5e0a81adfdb9dbe611)\n> *tonari no heya ga urusai desu*\n> — The room next door is noisy."
+   }
+  },
+  {
+   "id": "v16-kitanai",
+   "unit": "v16",
+   "front": "きたない [audio](media:8b9f2e5ebb5c5fd2703e1dc4)",
+   "hint": "汚い · kitanai",
+   "back": {
+    "ru": "грязный",
+    "en": "dirty"
+   },
+   "extra": {
+    "ru": "> へやが きたないから そうじ します。 [audio](media:c9ec4588df3660643fdceffd)\n> *heya ga kitanai kara souji shimasu*\n> — В комнате грязно — уберусь.",
+    "en": "> へやが きたないから そうじ します。 [audio](media:c9ec4588df3660643fdceffd)\n> *heya ga kitanai kara souji shimasu*\n> — The room is dirty, so I’ll clean."
+   }
+  },
+  {
+   "id": "v16-kawaii",
+   "unit": "v16",
+   "front": "かわいい [audio](media:59ba37df354a0d2f4df52c52)",
+   "hint": "kawaii",
+   "back": {
+    "ru": "милый",
+    "en": "cute"
+   },
+   "extra": {
+    "ru": "> あの いぬは かわいいですね。 [audio](media:b93b2c684de589ae1c999c14)\n> *ano inu wa kawaii desu ne*\n> — Какая милая собака!",
+    "en": "> あの いぬは かわいいですね。 [audio](media:b93b2c684de589ae1c999c14)\n> *ano inu wa kawaii desu ne*\n> — That dog is cute, isn’t it?"
+   }
+  },
+  {
+   "id": "v16-joubu",
+   "unit": "v16",
+   "front": "じょうぶ [audio](media:72cab52d7f50ccbb4f69e971)",
+   "hint": "丈夫 · joubu",
+   "back": {
+    "ru": "прочный; крепкий (о здоровье)",
+    "en": "sturdy; healthy"
+   },
+   "extra": {
+    "ru": "> この かばんは じょうぶです。 [audio](media:6a4a6e62a41e86d794a433f4)\n> *kono kaban wa joubu desu*\n> — Эта сумка прочная.",
+    "en": "> この かばんは じょうぶです。 [audio](media:6a4a6e62a41e86d794a433f4)\n> *kono kaban wa joubu desu*\n> — This bag is sturdy."
+   }
+  },
+  {
+   "id": "v16-rippa",
+   "unit": "v16",
+   "front": "りっぱ [audio](media:6324bf23f30bcd79f9ed9e59)",
+   "hint": "立派 · rippa",
+   "back": {
+    "ru": "великолепный, солидный",
+    "en": "splendid, fine"
+   },
+   "extra": {
+    "ru": "> りっぱな いえですね。 [audio](media:8c1a000ae9e5ec80449ded6a)\n> *rippana ie desu ne*\n> — Какой великолепный дом!",
+    "en": "> りっぱな いえですね。 [audio](media:8c1a000ae9e5ec80449ded6a)\n> *rippana ie desu ne*\n> — What a fine house!"
+   }
+  },
+  {
+   "id": "v16-chairo",
+   "unit": "v16",
+   "front": "ちゃいろ [audio](media:37f151ad7f48af721c60bae5)",
+   "hint": "茶色 · chairo",
+   "back": {
+    "ru": "коричневый",
+    "en": "brown"
+   },
+   "extra": {
+    "ru": "> ちゃいろの くつを かいました。 [audio](media:9be72e7cf5978886752afe1c)\n> *chairo no kutsu o kaimashita*\n> — Купил коричневые туфли.",
+    "en": "> ちゃいろの くつを かいました。 [audio](media:9be72e7cf5978886752afe1c)\n> *chairo no kutsu o kaimashita*\n> — I bought brown shoes."
+   }
+  },
+  {
+   "id": "v16-ookina",
+   "unit": "v16",
+   "front": "おおきな [audio](media:2ae79188fd23abfa02120971)",
+   "hint": "大きな · ookina",
+   "back": {
+    "ru": "большой (перед словом)",
+    "en": "big (before a noun)"
+   },
+   "extra": {
+    "ru": "> おおきな こえで はなして ください。 [audio](media:2bc4d03ed2664036540d04a7)\n> *ookina koe de hanashite kudasai*\n> — Говорите громко, пожалуйста.",
+    "en": "> おおきな こえで はなして ください。 [audio](media:2bc4d03ed2664036540d04a7)\n> *ookina koe de hanashite kudasai*\n> — Please speak in a loud voice."
+   }
+  },
+  {
+   "id": "v16-chiisana",
+   "unit": "v16",
+   "front": "ちいさな [audio](media:dcefe534942b7a0601c2767c)",
+   "hint": "小さな · chiisana",
+   "back": {
+    "ru": "маленький (перед словом)",
+    "en": "small (before a noun)"
+   },
+   "extra": {
+    "ru": "> ちいさな むらに すんで います。 [audio](media:e69f6a5def60db3a9871cf6f)\n> *chiisana mura ni sunde imasu*\n> — Живу в маленькой деревне.",
+    "en": "> ちいさな むらに すんで います。 [audio](media:e69f6a5def60db3a9871cf6f)\n> *chiisana mura ni sunde imasu*\n> — I live in a small village."
+   }
+  },
+  {
+   "id": "v16-daisuki",
+   "unit": "v16",
+   "front": "だいすき [audio](media:815de5b0108c4b5914541319)",
+   "hint": "大好き · daisuki",
+   "back": {
+    "ru": "очень любимый",
+    "en": "really like, love"
+   },
+   "extra": {
+    "ru": "> わたしは すしが だいすきです。 [audio](media:ae81412db79de8995ff18bbb)\n> *watashi wa sushi ga daisuki desu*\n> — Обожаю суши.",
+    "en": "> わたしは すしが だいすきです。 [audio](media:ae81412db79de8995ff18bbb)\n> *watashi wa sushi ga daisuki desu*\n> — I love sushi."
+   }
+  },
+  {
+   "id": "v16-takusan",
+   "unit": "v16",
+   "front": "たくさん [audio](media:a3ad94e683686238ff63c596)",
+   "hint": "takusan",
+   "back": {
+    "ru": "много",
+    "en": "a lot"
+   },
+   "extra": {
+    "ru": "> しゅくだいが たくさん あります。 [audio](media:a98e1e1e42b72bd78948d948)\n> *shukudai ga takusan arimasu*\n> — Много домашнего задания.",
+    "en": "> しゅくだいが たくさん あります。 [audio](media:a98e1e1e42b72bd78948d948)\n> *shukudai ga takusan arimasu*\n> — There is a lot of homework."
+   }
+  },
+  {
+   "id": "v16-motto",
+   "unit": "v16",
+   "front": "もっと [audio](media:a34b36ca500de388b011cc79)",
+   "hint": "motto",
+   "back": {
+    "ru": "ещё, больше",
+    "en": "more"
+   },
+   "extra": {
+    "ru": "> もっと ゆっくり はなして ください。 [audio](media:4724d21c8676ea9507ee4cf9)\n> *motto yukkuri hanashite kudasai*\n> — Говорите медленнее, пожалуйста.",
+    "en": "> もっと ゆっくり はなして ください。 [audio](media:4724d21c8676ea9507ee4cf9)\n> *motto yukkuri hanashite kudasai*\n> — Please speak more slowly."
+   }
+  },
+  {
+   "id": "v16-yoku",
+   "unit": "v16",
+   "front": "よく [audio](media:84b5e6d2edb770a8c45621cf)",
+   "hint": "yoku",
+   "back": {
+    "ru": "часто; хорошо",
+    "en": "often; well"
+   },
+   "extra": {
+    "ru": "> この みせには よく きます。 [audio](media:107d84798cee5e4d59ec8fc9)\n> *kono mise ni wa yoku kimasu*\n> — В этот магазин часто захожу.",
+    "en": "> この みせには よく きます。 [audio](media:107d84798cee5e4d59ec8fc9)\n> *kono mise ni wa yoku kimasu*\n> — I often come to this shop."
+   }
+  },
+  {
+   "id": "v16-mata",
+   "unit": "v16",
+   "front": "また [audio](media:5882dbc93db03a01c51680e2)",
+   "hint": "mata",
+   "back": {
+    "ru": "снова",
+    "en": "again"
+   },
+   "extra": {
+    "ru": "> また あした。 [audio](media:4a234aab2af19f24429ba380)\n> *mata ashita*\n> — До завтра!",
+    "en": "> また あした。 [audio](media:4a234aab2af19f24429ba380)\n> *mata ashita*\n> — See you tomorrow."
+   }
+  },
+  {
+   "id": "v16-naze",
+   "unit": "v16",
+   "front": "なぜ [audio](media:22e3fbe80f9b49cb0140e7e8)",
+   "hint": "naze",
+   "back": {
+    "ru": "почему",
+    "en": "why"
+   },
+   "extra": {
+    "ru": "> なぜ おくれたんですか。 [audio](media:dae8d58efb70e5d919e3d923)\n> *naze okuretan desu ka*\n> — Почему вы опоздали?",
+    "en": "> なぜ おくれたんですか。 [audio](media:dae8d58efb70e5d919e3d923)\n> *naze okuretan desu ka*\n> — Why were you late?"
+   }
+  },
+  {
+   "id": "v17-ireru",
+   "unit": "v17",
+   "front": "いれる [audio](media:73e4c88592ead47bb0cb2c28)",
+   "hint": "入れる · ireru",
+   "back": {
+    "ru": "класть внутрь; заваривать",
+    "en": "put in; make (tea)"
+   },
+   "extra": {
+    "ru": "> おちゃを いれましょうか。 [audio](media:8a0bb9b6d48909f6cc6d5c30)\n> *ocha o iremashou ka*\n> — Заварить чаю?",
+    "en": "> おちゃを いれましょうか。 [audio](media:8a0bb9b6d48909f6cc6d5c30)\n> *ocha o iremashou ka*\n> — Shall I make some tea?"
+   }
+  },
+  {
+   "id": "v17-umareru",
+   "unit": "v17",
+   "front": "うまれる [audio](media:328104fa6d96701a5df367c4)",
+   "hint": "生まれる · umareru",
+   "back": {
+    "ru": "рождаться",
+    "en": "be born"
+   },
+   "extra": {
+    "ru": "> わたしは モスクワで うまれました。 [audio](media:07ca483eb4b7d7dcaeaf1c6d)\n> *watashi wa mosukuwa de umaremashita*\n> — Я родился в Москве.",
+    "en": "> わたしは モスクワで うまれました。 [audio](media:07ca483eb4b7d7dcaeaf1c6d)\n> *watashi wa mosukuwa de umaremashita*\n> — I was born in Moscow."
+   }
+  },
+  {
+   "id": "v17-kakeru",
+   "unit": "v17",
+   "front": "かける [audio](media:1e8d8018d0d9ae6969042b68)",
+   "hint": "掛ける · kakeru",
+   "back": {
+    "ru": "вешать; надевать очки; звонить",
+    "en": "hang; put on glasses; make a call"
+   },
+   "extra": {
+    "ru": "> めがねを かけて よみます。 [audio](media:22184b0d75656e4206a157e9)\n> *megane o kakete yomimasu*\n> — Читаю в очках.",
+    "en": "> めがねを かけて よみます。 [audio](media:22184b0d75656e4206a157e9)\n> *megane o kakete yomimasu*\n> — I read with my glasses on."
+   }
+  },
+  {
+   "id": "v17-tsutomeru",
+   "unit": "v17",
+   "front": "つとめる [audio](media:e7cbe775db1b88609b30e95d)",
+   "hint": "勤める · tsutomeru",
+   "back": {
+    "ru": "служить, работать (в фирме)",
+    "en": "work for (a company)"
+   },
+   "extra": {
+    "ru": "> あねは ぎんこうに つとめて います。 [audio](media:851070bd6ccaff428a59fa4f)\n> *ane wa ginkou ni tsutomete imasu*\n> — Сестра работает в банке.",
+    "en": "> あねは ぎんこうに つとめて います。 [audio](media:851070bd6ccaff428a59fa4f)\n> *ane wa ginkou ni tsutomete imasu*\n> — My sister works at a bank."
+   }
+  },
+  {
+   "id": "v17-tobu",
+   "unit": "v17",
+   "front": "とぶ [audio](media:711bc089e9e1842b7b023df8)",
+   "hint": "飛ぶ · tobu",
+   "back": {
+    "ru": "летать",
+    "en": "fly"
+   },
+   "extra": {
+    "ru": "> そらを とりが とんで います。 [audio](media:2394cf1bb2fcc68de2579215)\n> *sora o tori ga tonde imasu*\n> — В небе летают птицы.",
+    "en": "> そらを とりが とんで います。 [audio](media:2394cf1bb2fcc68de2579215)\n> *sora o tori ga tonde imasu*\n> — Birds are flying in the sky."
+   }
+  },
+  {
+   "id": "v17-narabu",
+   "unit": "v17",
+   "front": "ならぶ [audio](media:2e07d53aac39a7d3baed21d6)",
+   "hint": "並ぶ · narabu",
+   "back": {
+    "ru": "выстраиваться в очередь",
+    "en": "line up"
+   },
+   "extra": {
+    "ru": "> みせの まえに ひとが ならんで います。 [audio](media:23821b45ba09ef7a89362222)\n> *mise no mae ni hito ga narande imasu*\n> — Перед магазином очередь.",
+    "en": "> みせの まえに ひとが ならんで います。 [audio](media:23821b45ba09ef7a89362222)\n> *mise no mae ni hito ga narande imasu*\n> — People are lined up in front of the shop."
+   }
+  },
+  {
+   "id": "v17-watasu",
+   "unit": "v17",
+   "front": "わたす [audio](media:6da4ed14521eca5dc918d104)",
+   "hint": "渡す · watasu",
+   "back": {
+    "ru": "передавать, вручать",
+    "en": "hand over"
+   },
+   "extra": {
+    "ru": "> この てがみを せんせいに わたして ください。 [audio](media:1793cb56b241599a4e6583a4)\n> *kono tegami o sensei ni watashite kudasai*\n> — Передайте это письмо учителю.",
+    "en": "> この てがみを せんせいに わたして ください。 [audio](media:1793cb56b241599a4e6583a4)\n> *kono tegami o sensei ni watashite kudasai*\n> — Please give this letter to the teacher."
+   }
+  },
+  {
+   "id": "v17-kumoru",
+   "unit": "v17",
+   "front": "くもる [audio](media:ba768ab2dea69671f7ce37fd)",
+   "hint": "曇る · kumoru",
+   "back": {
+    "ru": "затягиваться облаками",
+    "en": "become cloudy"
+   },
+   "extra": {
+    "ru": "> ごごから くもるでしょう。 [audio](media:9dc8a6407db0412d35cf180c)\n> *gogo kara kumoru deshou*\n> — После обеда, наверное, затянет.",
+    "en": "> ごごから くもるでしょう。 [audio](media:9dc8a6407db0412d35cf180c)\n> *gogo kara kumoru deshou*\n> — It will probably cloud over in the afternoon."
+   }
+  },
+  {
+   "id": "v17-souji",
+   "unit": "v17",
+   "front": "そうじ [audio](media:62c899bcfeb49e9eb9234bd8)",
+   "hint": "掃除 · souji",
+   "back": {
+    "ru": "уборка",
+    "en": "cleaning"
+   },
+   "extra": {
+    "ru": "> にちようびに へやの そうじを します。 [audio](media:942136bc4e191d4179123ee9)\n> *nichiyoubi ni heya no souji o shimasu*\n> — В воскресенье убираю комнату.",
+    "en": "> にちようびに へやの そうじを します。 [audio](media:942136bc4e191d4179123ee9)\n> *nichiyoubi ni heya no souji o shimasu*\n> — I clean my room on Sunday."
+   }
+  },
+  {
+   "id": "v17-sentaku",
+   "unit": "v17",
+   "front": "せんたく [audio](media:0982d91d52ccd42d0d3b2f24)",
+   "hint": "洗濯 · sentaku",
+   "back": {
+    "ru": "стирка",
+    "en": "laundry"
+   },
+   "extra": {
+    "ru": "> あさ せんたくを しました。 [audio](media:cc9372eb835dcfe4c80aa12f)\n> *asa sentaku o shimashita*\n> — Утром постирал.",
+    "en": "> あさ せんたくを しました。 [audio](media:cc9372eb835dcfe4c80aa12f)\n> *asa sentaku o shimashita*\n> — I did the laundry this morning."
+   }
+  },
+  {
+   "id": "v17-petto",
+   "unit": "v17",
+   "front": "ペット [audio](media:cadc1f5dd6dc3ebea8e4c4cc)",
+   "hint": "petto",
+   "back": {
+    "ru": "домашнее животное",
+    "en": "pet"
+   },
+   "extra": {
+    "ru": "> ペットを かって いますか。 [audio](media:3491630bc92006d643a45248)\n> *petto o katte imasu ka*\n> — У вас есть питомец?",
+    "en": "> ペットを かって いますか。 [audio](media:3491630bc92006d643a45248)\n> *petto o katte imasu ka*\n> — Do you have a pet?"
+   }
+  },
+  {
+   "id": "v17-gitaa",
+   "unit": "v17",
+   "front": "ギター [audio](media:8dac9cea34cc8faf344c52f6)",
+   "hint": "gitaa",
+   "back": {
+    "ru": "гитара",
+    "en": "guitar"
+   },
+   "extra": {
+    "ru": "> ギターを ひくのが すきです。 [audio](media:fd4b17e1d10e4afe2f8905a0)\n> *gitaa o hiku no ga suki desu*\n> — Люблю играть на гитаре.",
+    "en": "> ギターを ひくのが すきです。 [audio](media:fd4b17e1d10e4afe2f8905a0)\n> *gitaa o hiku no ga suki desu*\n> — I like playing the guitar."
+   }
+  },
+  {
+   "id": "v17-supootsu",
+   "unit": "v17",
+   "front": "スポーツ [audio](media:173955a37bbb2078f674a43e)",
+   "hint": "supootsu",
+   "back": {
+    "ru": "спорт",
+    "en": "sport"
+   },
+   "extra": {
+    "ru": "> どんな スポーツが すきですか。 [audio](media:f5331afc86d3d67b3d4bf61b)\n> *donna supootsu ga suki desu ka*\n> — Какой спорт любите?",
+    "en": "> どんな スポーツが すきですか。 [audio](media:f5331afc86d3d67b3d4bf61b)\n> *donna supootsu ga suki desu ka*\n> — What sports do you like?"
+   }
+  },
+  {
+   "id": "v17-shikashi",
+   "unit": "v17",
+   "front": "しかし [audio](media:625ea040acad7ed25cc4a439)",
+   "hint": "shikashi",
+   "back": {
+    "ru": "однако",
+    "en": "however"
+   },
+   "extra": {
+    "ru": "> たかいです。しかし とても いいです。 [audio](media:683345495978f8d672c6acce)\n> *takai desu shikashi totemo ii desu*\n> — Дорого. Однако очень хорошо.",
+    "en": "> たかいです。しかし とても いいです。 [audio](media:683345495978f8d672c6acce)\n> *takai desu shikashi totemo ii desu*\n> — It’s expensive. However, it’s very good."
+   }
+  },
+  {
+   "id": "v17-sorekara",
+   "unit": "v17",
+   "front": "それから [audio](media:d4fc9ec5e48582f6338d2a00)",
+   "hint": "sorekara",
+   "back": {
+    "ru": "потом, а затем",
+    "en": "and then"
+   },
+   "extra": {
+    "ru": "> ごはんを たべました。それから ねました。 [audio](media:9472b829229ddd584c226a7d)\n> *gohan o tabemashita sorekara nemashita*\n> — Поел. Потом лёг спать.",
+    "en": "> ごはんを たべました。それから ねました。 [audio](media:9472b829229ddd584c226a7d)\n> *gohan o tabemashita sorekara nemashita*\n> — I ate. Then I went to bed."
+   }
+  },
+  {
+   "id": "v17-demo",
+   "unit": "v17",
+   "front": "でも [audio](media:cedb6bdd4ab9ea74b4fd31fd)",
+   "hint": "demo",
+   "back": {
+    "ru": "но (в начале фразы)",
+    "en": "but"
+   },
+   "extra": {
+    "ru": "> つかれました。でも たのしかったです。 [audio](media:a0910276a8724e4df0b3851f)\n> *tsukaremashita demo tanoshikatta desu*\n> — Устал. Но было весело.",
+    "en": "> つかれました。でも たのしかったです。 [audio](media:a0910276a8724e4df0b3851f)\n> *tsukaremashita demo tanoshikatta desu*\n> — I’m tired. But it was fun."
+   }
+  },
+  {
+   "id": "v17-nado",
+   "unit": "v17",
+   "front": "など [audio](media:3823ec2cf374232969c45799)",
+   "hint": "nado",
+   "back": {
+    "ru": "и т. п., и прочее",
+    "en": "and so on"
+   },
+   "extra": {
+    "ru": "> りんごや みかんなどを かいました。 [audio](media:3aedd2030151fd58444f6883)\n> *ringo ya mikan nado o kaimashita*\n> — Купил яблоки, мандарины и прочее.",
+    "en": "> りんごや みかんなどを かいました。 [audio](media:3aedd2030151fd58444f6883)\n> *ringo ya mikan nado o kaimashita*\n> — I bought apples, tangerines and so on."
+   }
+  },
+  {
    "id": "kj01-ichi",
    "unit": "kj01",
    "front": "一",
@@ -9964,11 +12582,12 @@
     }
    ],
    "words": [
-    "l01-gakusei",
     "l01-daigaku",
     "l01-roshiajin",
+    "l01-gakusei",
+    "l01-nihon",
     "l05-tomodachi",
-    "l01-nihon"
+    "v10-hatsuka"
    ]
   },
   {
@@ -10092,12 +12711,13 @@
     }
    ],
    "words": [
-    "l03-uriba",
+    "v14-depaato",
     "v01-san",
     "l02-kaban",
+    "l03-uriba",
     "l25-ikura",
-    "v01-man",
     "l11-hitotsu",
+    "v01-man",
     "l08-takai"
    ]
   },
@@ -10158,16 +12778,16 @@
     }
    ],
    "words": [
-    "v01-roku",
     "l04-okimasu",
     "l04-ji",
-    "v01-go",
+    "v01-roku",
     "v01-kyuu",
-    "l04-benkyou",
     "l20-suru",
+    "l04-benkyou",
+    "v01-go",
     "l11-hitotsu",
-    "l04-kinou",
-    "v01-juu"
+    "l04-nemasu",
+    "l04-kinou"
    ]
   },
   {
@@ -10229,10 +12849,10 @@
    "words": [
     "l05-raishuu",
     "l05-ikimasu",
-    "l05-eki",
     "l05-basu",
-    "l05-kaerimasu",
-    "v02-doyoubi"
+    "l05-eki",
+    "v02-doyoubi",
+    "l05-kaerimasu"
    ]
   },
   {
@@ -10294,9 +12914,9 @@
    "words": [
     "l06-mimasu",
     "l06-nomimasu",
-    "l06-shashin",
+    "v08-torimasu",
     "l06-isshoni",
-    "v08-torimasu"
+    "l06-shashin"
    ]
   },
   {
@@ -10356,15 +12976,16 @@
     }
    ],
    "words": [
-    "l07-hana",
     "l07-agemasu",
+    "l07-hana",
     "l01-roshiajin",
     "v04-okashi",
+    "l01-sensei",
     "l07-oshiemasu",
     "l01-nihon",
-    "l01-sensei",
     "l06-tabemasu",
-    "l07-hashi"
+    "l07-hashi",
+    "v15-gohan"
    ]
   },
   {
@@ -10426,8 +13047,8 @@
    "words": [
     "l08-chiisai",
     "l08-kirei",
-    "l10-tonari",
     "l08-oishii",
+    "l10-tonari",
     "l08-yasui"
    ]
   },
@@ -10488,14 +13109,15 @@
     }
    ],
    "words": [
-    "l09-ongaku",
     "l01-nihon",
+    "l09-ongaku",
     "l09-suki",
     "l09-ryouri",
     "l09-jouzu",
     "l09-wakarimasu",
+    "l19-mada",
     "l09-heta",
-    "l19-mada"
+    "v09-katakana"
    ]
   },
   {
@@ -10557,12 +13179,12 @@
    "words": [
     "l10-tsukue",
     "l09-arimasu-have",
-    "l06-shashin",
     "l10-ue",
-    "l10-imasu",
+    "l06-shashin",
     "l01-roshiajin",
-    "l10-kouen",
-    "l10-mae"
+    "l10-imasu",
+    "l10-mae",
+    "l10-kouen"
    ]
   },
   {
@@ -10622,15 +13244,15 @@
     }
    ],
    "words": [
-    "l05-ikimasu",
     "v06-yuubinkyoku",
+    "l05-ikimasu",
     "v01-go",
-    "l06-kaimasu",
     "l11-kitte",
-    "l11-kakarimasu",
+    "l06-kaimasu",
     "l11-hitotsu",
+    "l11-kakarimasu",
     "l01-roshiajin",
-    "l11-kyoudai",
+    "l11-futari",
     "l10-imasu"
    ]
   },
@@ -10691,11 +13313,11 @@
     }
    ],
    "words": [
-    "l04-kinou",
     "l12-samui",
+    "l04-kinou",
     "v07-atatakai",
-    "l09-suki",
     "l12-ichiban",
+    "l09-suki",
     "l12-ryokou",
     "l12-tanoshii"
    ]
@@ -10759,9 +13381,9 @@
    "words": [
     "l08-atarashii",
     "l13-hoshii",
-    "v02-nichiyoubi",
-    "l05-ikimasu",
     "l13-kaimono",
+    "l05-ikimasu",
+    "v02-nichiyoubi",
     "v02-kyou",
     "l13-tsukaremashita",
     "l12-hayai",
@@ -10825,15 +13447,15 @@
     }
    ],
    "words": [
-    "l10-imasu",
     "v02-kyou",
-    "l02-kasa",
-    "l14-mochimasu",
+    "l10-imasu",
     "l05-eki",
     "l14-machimasu",
+    "l14-mochimasu",
+    "l02-kasa",
+    "v17-kakeru",
+    "v12-chotto",
     "v08-arukimasu",
-    "l11-futari",
-    "l05-ikimasu",
     "l14-yukkuri"
    ]
   },
@@ -10894,11 +13516,12 @@
     }
    ],
    "words": [
-    "l06-shashin",
     "v08-torimasu",
+    "l06-shashin",
     "l05-ikimasu",
     "l15-suwarimasu",
-    "l06-mimasu"
+    "l06-mimasu",
+    "v09-isu"
    ]
   },
   {
@@ -10959,15 +13582,15 @@
    ],
    "words": [
     "l16-abimasu",
+    "v13-shawaa",
     "l05-kaerimasu",
-    "v04-bangohan",
-    "l06-tabemasu",
     "l22-tsukurimasu",
-    "l18-hikimasu-play",
+    "l06-tabemasu",
+    "v04-bangohan",
     "l20-shukudai",
     "l16-owarimasu",
-    "v05-kami",
-    "l08-takai"
+    "l18-hikimasu-play",
+    "v16-nagai"
    ]
   },
   {
@@ -11027,16 +13650,16 @@
     }
    ],
    "words": [
-    "v05-kaze",
-    "l09-arimasu-have",
     "l16-hikimasu",
+    "l09-arimasu-have",
     "l17-netsu",
-    "l05-ikimasu",
+    "v05-kaze",
     "v02-kyou",
+    "l05-ikimasu",
     "l01-daigaku",
     "l06-nomimasu",
-    "l17-kusuri",
-    "l19-narimasu"
+    "l19-narimasu",
+    "l17-kusuri"
    ]
   },
   {
@@ -11098,14 +13721,14 @@
    "words": [
     "l18-utaimasu",
     "l18-shumi",
-    "l18-dekimasu",
     "l01-nihon",
+    "l18-dekimasu",
     "l18-unten",
     "v06-kuruma",
-    "l10-mae",
     "l04-nemasu",
-    "l11-futari",
-    "l20-suru"
+    "l10-mae",
+    "l20-suru",
+    "l11-futari"
    ]
   },
   {
@@ -11168,13 +13791,13 @@
     "l19-noborimasu",
     "l09-arimasu-have",
     "l11-hitotsu",
-    "l06-isshoni",
-    "l15-hairimasu",
     "l20-suru",
+    "l15-hairimasu",
+    "l06-isshoni",
     "l09-jouzu",
     "l19-dandan",
-    "l19-narimasu",
-    "l01-nihon"
+    "l01-nihon",
+    "l19-narimasu"
    ]
   },
   {
@@ -11234,11 +13857,12 @@
     }
    ],
    "words": [
-    "l20-suru",
     "l04-kinou",
+    "l20-suru",
     "l10-imasu",
     "l20-shukudai",
-    "l05-ikimasu"
+    "l05-ikimasu",
+    "v12-taihen"
    ]
   },
   {
@@ -11298,14 +13922,15 @@
     }
    ],
    "words": [
+    "l04-ashita",
     "l21-haremasu",
     "l21-iimasu",
-    "l04-ashita",
     "l21-omoimasu",
+    "v09-terebi",
     "l10-imasu",
     "l21-tabun",
-    "l21-shiai",
-    "l09-arimasu-have"
+    "l09-arimasu-have",
+    "l21-shiai"
    ]
   },
   {
@@ -11365,16 +13990,16 @@
     }
    ],
    "words": [
-    "l10-imasu",
     "l22-megane",
     "l01-sensei",
-    "l22-tsukurimasu",
+    "l10-imasu",
+    "v17-kakeru",
     "l08-oishii",
+    "l22-tsukurimasu",
     "l04-kinou",
-    "l06-kaimasu",
+    "v13-boushi",
     "l22-kaburimasu",
-    "l22-yakusoku",
-    "v08-aimasu"
+    "l06-kaimasu"
    ]
   },
   {
@@ -11434,16 +14059,16 @@
     }
    ],
    "words": [
+    "l20-suru",
+    "l04-ji",
     "l23-hima",
     "l10-kouen",
-    "l04-ji",
-    "l20-suru",
     "l23-migi",
+    "l05-ikimasu",
+    "l09-arimasu-have",
     "l23-magarimasu",
     "l23-michi",
-    "l09-arimasu-have",
-    "l05-ikimasu",
-    "l06-kaimasu"
+    "v14-massugu"
    ]
   },
   {
@@ -11503,6 +14128,7 @@
     }
    ],
    "words": [
+    "v11-tanjoubi",
     "l24-kuremasu",
     "l22-tsukurimasu",
     "l24-tsuremasu",
@@ -11511,7 +14137,6 @@
     "l01-roshiajin",
     "l24-okurimasu",
     "v03-haha",
-    "l07-moraimasu",
     "l24-iroiro"
    ]
   },
@@ -11572,16 +14197,16 @@
     }
    ],
    "words": [
-    "v01-okane",
     "l12-ryokou",
-    "l09-arimasu-have",
-    "l01-nihon",
     "l20-suru",
+    "l09-arimasu-have",
     "l25-moshi",
-    "v02-mainichi",
+    "v01-okane",
+    "l01-nihon",
     "l12-tanoshii",
+    "v02-mainichi",
     "v02-rainen",
-    "l25-ganbarimasu"
+    "v16-muzukashii"
    ]
   }
  ],
@@ -20911,6 +23536,1334 @@
    "227fc88719188717b3e69a05": [
     12941367,
     19245
+   ],
+   "e2aba84e38e38ab879e8e54d": [
+    12960612,
+    5421
+   ],
+   "3743cad429af243f1c278212": [
+    12966033,
+    13677
+   ],
+   "1bed0ae0328793ba84cee0e7": [
+    12979710,
+    13485
+   ],
+   "e0fa183e4e05c9d068d3d5dc": [
+    12993195,
+    12525
+   ],
+   "70e83999663a89433bc10a7f": [
+    13005720,
+    7917
+   ],
+   "cab30e19ce34bd87a4c9dc6c": [
+    13013637,
+    16365
+   ],
+   "2f363c3b1bb2a3cc94a4f3d2": [
+    13030002,
+    6573
+   ],
+   "69da9b5150cd3a36372a0cfc": [
+    13036575,
+    15405
+   ],
+   "b2cf5d28411f95eb02f6b716": [
+    13051980,
+    6381
+   ],
+   "4c54fab0d6706085af6f0388": [
+    13058361,
+    13293
+   ],
+   "f7639019c1d7ee87adcc6ab8": [
+    13071654,
+    17709
+   ],
+   "c8adbf19e2d891c241b9f1dd": [
+    13089363,
+    15213
+   ],
+   "89274ea47fbf273b5a8a0a0d": [
+    13104576,
+    7149
+   ],
+   "cd0d115509760ef10108c6df": [
+    13111725,
+    16749
+   ],
+   "66ab0780f286743ed11006a4": [
+    13128474,
+    7725
+   ],
+   "fe48599fd9385e9ecffc1dfe": [
+    13136199,
+    16365
+   ],
+   "810fdb7f18a1da87a722ecae": [
+    13152564,
+    7725
+   ],
+   "c994889d94caf4331883e08f": [
+    13160289,
+    16749
+   ],
+   "d7bb6c2321fbf508d0ba8407": [
+    13177038,
+    6765
+   ],
+   "2aaf310dd269eff90c2410fc": [
+    13183803,
+    17133
+   ],
+   "4b18ffa7cc5d42970a064cc5": [
+    13200936,
+    6957
+   ],
+   "e6dc513bed3471bc0ef3e2f9": [
+    13207893,
+    18093
+   ],
+   "e528ee040ab3715c06b5a036": [
+    13225986,
+    7917
+   ],
+   "86a765ce656d392e506bc82c": [
+    13233903,
+    16557
+   ],
+   "4c589438ed1a7f1d52756dfd": [
+    13250460,
+    14829
+   ],
+   "18f4295389e7d8e30fc62f1a": [
+    13265289,
+    16173
+   ],
+   "58ee55c58d2f500e4902cf50": [
+    13281462,
+    14829
+   ],
+   "7fef50816069056f0ee5b3e2": [
+    13296291,
+    15213
+   ],
+   "b276aa02020f123969125473": [
+    13311504,
+    19821
+   ],
+   "b8780b844a85c8299e67b3ed": [
+    13331325,
+    13485
+   ],
+   "c86712488751770b77b55e0e": [
+    13344810,
+    6765
+   ],
+   "6ee0591856a1091f8a10da4c": [
+    13351575,
+    14445
+   ],
+   "3927614bceb2ceef82ff18ac": [
+    13366020,
+    7149
+   ],
+   "2f105170c34ef6f934744053": [
+    13373169,
+    15405
+   ],
+   "6759ae64ae782fe941fce3f4": [
+    13388574,
+    5997
+   ],
+   "602040bc35444c620f5d4f48": [
+    13394571,
+    14445
+   ],
+   "18096704495ef5a6bf5841ea": [
+    13409016,
+    6765
+   ],
+   "9f7303dd14498a43c3d69532": [
+    13415781,
+    13101
+   ],
+   "05064674b269ec70fe83c853": [
+    13428882,
+    6765
+   ],
+   "eca546f14c75e474fb64747b": [
+    13435647,
+    12525
+   ],
+   "8c9070e6fe46add02d5773bd": [
+    13448172,
+    6765
+   ],
+   "58f64659911b8b5ffb63a2d9": [
+    13454937,
+    14445
+   ],
+   "07ec5f1ec2688505908eda15": [
+    13469382,
+    6957
+   ],
+   "acff81dec30e1e60ea4917f6": [
+    13476339,
+    14061
+   ],
+   "8ba5d89db5c542be3763925e": [
+    13490400,
+    6765
+   ],
+   "221202919c05e2c7fcb0d46d": [
+    13497165,
+    16557
+   ],
+   "7f1205e657011f3a48aee7aa": [
+    13513722,
+    7725
+   ],
+   "ab7760aed8f9a8b475529708": [
+    13521447,
+    14829
+   ],
+   "3db73883ca93d8db4d06b2a6": [
+    13536276,
+    7917
+   ],
+   "b22877c6321393837f662ba1": [
+    13544193,
+    18477
+   ],
+   "76691bac050147e93e51b311": [
+    13562670,
+    6765
+   ],
+   "89ce2cb5d35ea8b8c695c6e1": [
+    13569435,
+    12333
+   ],
+   "7672a09e3c4c17ac5d4cadfd": [
+    13581768,
+    6573
+   ],
+   "a25ae297f0f3c66b8a6a18b4": [
+    13588341,
+    12333
+   ],
+   "aafa1de02c9ca758a6bd1723": [
+    13600674,
+    6765
+   ],
+   "e2e7b8604761f7880005d669": [
+    13607439,
+    11373
+   ],
+   "22f649e4006b16dc61d27a50": [
+    13618812,
+    6573
+   ],
+   "1c22dacd9539030fd2a17e77": [
+    13625385,
+    17901
+   ],
+   "efdb2461cab934b5e7b9d2e9": [
+    13643286,
+    6189
+   ],
+   "0422037f287b6381b095f81f": [
+    13649475,
+    14637
+   ],
+   "31296af8f0c6dbda8aa15d15": [
+    13664112,
+    7533
+   ],
+   "f122868d6a58cb7b37bebe3b": [
+    13671645,
+    12525
+   ],
+   "e75aceb316a36533305f62ce": [
+    13684170,
+    6573
+   ],
+   "34a537f10a6f58e7a518ebdb": [
+    13690743,
+    15213
+   ],
+   "138e12283df66f55f6f4575f": [
+    13705956,
+    6957
+   ],
+   "e9af22ff51d9cd9c09fb9808": [
+    13712913,
+    11565
+   ],
+   "9ede291a5ea68aca37f9a1f3": [
+    13724478,
+    7725
+   ],
+   "f1d8796c141b2fe6eb36749e": [
+    13732203,
+    14637
+   ],
+   "aced16c2c8e3b6a51a821cda": [
+    13746840,
+    7341
+   ],
+   "74514ecc2126a15042b0514d": [
+    13754181,
+    13869
+   ],
+   "a80372b48526af33bcfa63d4": [
+    13768050,
+    6957
+   ],
+   "dc2aacb373f570cc003f30d6": [
+    13775007,
+    15213
+   ],
+   "fb2ccdae8ac2d841c2bf24bb": [
+    13790220,
+    20397
+   ],
+   "b0f20d0371ab20d55488ad5a": [
+    13810617,
+    6957
+   ],
+   "ddb7c601c2efa939d8d88526": [
+    13817574,
+    16365
+   ],
+   "13415e87bef830b691d7e762": [
+    13833939,
+    5613
+   ],
+   "a05419e74305b018eccb0625": [
+    13839552,
+    15789
+   ],
+   "539a8d2a567a7915b33c0892": [
+    13855341,
+    6189
+   ],
+   "0768713294fd16e7e41ec88d": [
+    13861530,
+    16173
+   ],
+   "47ffee3ba02942d7db4cd92f": [
+    13877703,
+    7341
+   ],
+   "4a46a039d43e7e7248a02641": [
+    13885044,
+    11949
+   ],
+   "a04d69c43487cce3455118dc": [
+    13896993,
+    7341
+   ],
+   "db6c7a90ceedca15d8764933": [
+    13904334,
+    13869
+   ],
+   "2af14e15192672f44ebcd048": [
+    13918203,
+    7725
+   ],
+   "cc8b902ad64d366bd4d60ae7": [
+    13925928,
+    14637
+   ],
+   "331a4187108d86aeb93a9247": [
+    13940565,
+    8301
+   ],
+   "0657d519d59a931fb5776d20": [
+    13948866,
+    15981
+   ],
+   "b149a430f5e3aab5b5b6ed73": [
+    13964847,
+    7917
+   ],
+   "ed62ee79f2a32d70a2cdd2d0": [
+    13972764,
+    13869
+   ],
+   "1c927007ebceccbaeabb35da": [
+    13986633,
+    7341
+   ],
+   "fa186577041512853710c891": [
+    13993974,
+    15405
+   ],
+   "6d05618983cc08c44690ee44": [
+    14009379,
+    6957
+   ],
+   "7eecf0605691b9373a867e92": [
+    14016336,
+    16941
+   ],
+   "02f418c289fa907816007814": [
+    14033277,
+    7341
+   ],
+   "cd82e7cdab9cb66656cf01aa": [
+    14040618,
+    14445
+   ],
+   "243ec9664d96d1aad4ad3d18": [
+    14055063,
+    7917
+   ],
+   "7e536cc6b8d2ee2927306894": [
+    14062980,
+    13869
+   ],
+   "8dda37dc5c61603fa1e24281": [
+    14076849,
+    7341
+   ],
+   "b0ceb51a09e158831b0f624f": [
+    14084190,
+    16173
+   ],
+   "88707c14776f437d092aa5c5": [
+    14100363,
+    6957
+   ],
+   "19f3a5422afc75f3d9d142ba": [
+    14107320,
+    15021
+   ],
+   "53e2f800cb466b1847c885e7": [
+    14122341,
+    6957
+   ],
+   "3c7f8a484c7c24eb9370dbf6": [
+    14129298,
+    13485
+   ],
+   "2033759264cb99770a3a2b8c": [
+    14142783,
+    14061
+   ],
+   "8073d9462efb96659c449bce": [
+    14156844,
+    6381
+   ],
+   "396cf52b54779fafc48fa28b": [
+    14163225,
+    11565
+   ],
+   "1a2a26f26f922e9e523eccbf": [
+    14174790,
+    6573
+   ],
+   "32bc3fcf7b6431c938e54cd6": [
+    14181363,
+    15405
+   ],
+   "cc37e2a15d283f424b090179": [
+    14196768,
+    6189
+   ],
+   "5540968501158c4bf037fe44": [
+    14202957,
+    15021
+   ],
+   "f272dbab16ac23e2501ff692": [
+    14217978,
+    6957
+   ],
+   "c9628f2e1f4658a30ec51f05": [
+    14224935,
+    17133
+   ],
+   "a0d1dace074c720c2629f671": [
+    14242068,
+    6957
+   ],
+   "b6f0d873c375e733f3bfa5f3": [
+    14249025,
+    12333
+   ],
+   "2826589fa2800cd799967521": [
+    14261358,
+    7533
+   ],
+   "51bcaeb02024d17ae3692c00": [
+    14268891,
+    13869
+   ],
+   "a9b5a8cb830d5fca0bee37c7": [
+    14282760,
+    6381
+   ],
+   "b081643c9389e4409c0c6ead": [
+    14289141,
+    12909
+   ],
+   "9ac333436ad2874fdf0371c3": [
+    14302050,
+    7917
+   ],
+   "d17df98dcc9228222cd62791": [
+    14309967,
+    12333
+   ],
+   "470cc15eaad356904593241f": [
+    14322300,
+    6765
+   ],
+   "f12527e42af99d49020623a3": [
+    14329065,
+    13101
+   ],
+   "eb2a19c1f0c39218de94693b": [
+    14342166,
+    8109
+   ],
+   "8975b0c4c8238efabcd67443": [
+    14350275,
+    17325
+   ],
+   "a0e9fd38fb67756e0c710cc9": [
+    14367600,
+    13869
+   ],
+   "0e27dbbbd4729a0654d9d737": [
+    14381469,
+    7149
+   ],
+   "1d89c5b5a74de410e742cff3": [
+    14388618,
+    18477
+   ],
+   "f49367701f2fd0d5cbcdb838": [
+    14407095,
+    6957
+   ],
+   "4ddce97c8bfdaa319282ac06": [
+    14414052,
+    16557
+   ],
+   "570a73533ae0d81374b46d6a": [
+    14430609,
+    7917
+   ],
+   "d42ab13feb177bb29ef2f4df": [
+    14438526,
+    15597
+   ],
+   "e90b4253a4b4d3465c7f5ebf": [
+    14454123,
+    7917
+   ],
+   "295c58320aef4c948125da5a": [
+    14462040,
+    15213
+   ],
+   "a036f93c9985f946491ffc18": [
+    14477253,
+    6189
+   ],
+   "e54ce2f056faea4937169285": [
+    14483442,
+    15405
+   ],
+   "590f98c3862fecc9eb822f49": [
+    14498847,
+    6381
+   ],
+   "6398d1f3ee8aa59d3e6615c9": [
+    14505228,
+    15597
+   ],
+   "01e091d6b33ba34fb2ac26ee": [
+    14520825,
+    8685
+   ],
+   "23bc19b70c4ae5ca079bf895": [
+    14529510,
+    24429
+   ],
+   "5fe6b348d3438388a204d912": [
+    14553939,
+    6957
+   ],
+   "1a0a784514dddcf844acfe9d": [
+    14560896,
+    19245
+   ],
+   "a79e1d3b3d3bf239f17e98e4": [
+    14580141,
+    8109
+   ],
+   "c17d67313bc312ad652256c9": [
+    14588250,
+    16941
+   ],
+   "60c59e745516d89fc97a761b": [
+    14605191,
+    10413
+   ],
+   "3c4e9d9870001e8feaa1a5f7": [
+    14615604,
+    22509
+   ],
+   "bc580d89b8e170ade2e12cc2": [
+    14638113,
+    8109
+   ],
+   "4c61ccbc7cbe4f4fcbcbe647": [
+    14646222,
+    16941
+   ],
+   "a6be753d7755202b0e89f836": [
+    14663163,
+    6189
+   ],
+   "077fc99cd624f2b05b7e6aee": [
+    14669352,
+    13677
+   ],
+   "37997fc4cb40e7650c342561": [
+    14683029,
+    7533
+   ],
+   "69f31dd1d278e8f629f61e81": [
+    14690562,
+    16749
+   ],
+   "8019289e51c32a8be4948d9a": [
+    14707311,
+    7917
+   ],
+   "408c0a9af073c0c028c755d8": [
+    14715228,
+    10797
+   ],
+   "de64299b69964c9949287ca4": [
+    14726025,
+    7341
+   ],
+   "6f7ee978d45609b3cf6fe4e5": [
+    14733366,
+    17325
+   ],
+   "d531f9abb74204088f9a4fe8": [
+    14750691,
+    6381
+   ],
+   "41d35ad39bbdbfa920b3dbb9": [
+    14757072,
+    13293
+   ],
+   "9a65bd9b5224c7314bf8f136": [
+    14770365,
+    6189
+   ],
+   "369fea37557a838f64c8d06b": [
+    14776554,
+    15405
+   ],
+   "d510998a4ceacf90ef74745b": [
+    14791959,
+    13101
+   ],
+   "2721361964b2d73db665ca71": [
+    14805060,
+    7533
+   ],
+   "0a2bdc40d4cc25bb1e7da3cf": [
+    14812593,
+    16173
+   ],
+   "e4821415e9119e29468f23c9": [
+    14828766,
+    14253
+   ],
+   "06211e749f51b5e6e31a18ef": [
+    14843019,
+    16749
+   ],
+   "6ffcc69b4c6fabdd47d25d1c": [
+    14859768,
+    6381
+   ],
+   "a88bcca78b70ba5b0d6d6846": [
+    14866149,
+    13485
+   ],
+   "44851a36c56fb2bab2f85ddd": [
+    14879634,
+    6573
+   ],
+   "efe4e7aac928f722f3d5f23c": [
+    14886207,
+    12525
+   ],
+   "45d6c0e7327a8f9174debe11": [
+    14898732,
+    7149
+   ],
+   "6da75fdbe1c7e0c6750007ba": [
+    14905881,
+    12333
+   ],
+   "769ae7e479ed5238350b7a53": [
+    14918214,
+    15405
+   ],
+   "08839e07a60da386adef4931": [
+    14933619,
+    17325
+   ],
+   "fd03271cec8477d4babb7de1": [
+    14950944,
+    7725
+   ],
+   "980e5e7a5481c49b9586aa67": [
+    14958669,
+    18477
+   ],
+   "2b6ffe6ba46655d8e7a9dfe6": [
+    14977146,
+    7533
+   ],
+   "c9d87a36835772c110e205b7": [
+    14984679,
+    14445
+   ],
+   "514683d4cb9284174b34b39c": [
+    14999124,
+    6381
+   ],
+   "8045d33ac0e1bea5841e608b": [
+    15005505,
+    13869
+   ],
+   "f1350d6bf183e63be859d947": [
+    15019374,
+    7149
+   ],
+   "1e0c5452fa868d847513d7ac": [
+    15026523,
+    14445
+   ],
+   "2dbe25d732c54a1ef762da10": [
+    15040968,
+    5805
+   ],
+   "573ac7a207256188b8e71485": [
+    15046773,
+    6957
+   ],
+   "f84f96323e3c84f4f88c469a": [
+    15053730,
+    18861
+   ],
+   "47341ac163f2f1cfd0928201": [
+    15072591,
+    7341
+   ],
+   "26d9dc1bc0c3bd78009df14c": [
+    15079932,
+    15789
+   ],
+   "252ab15cf99ecfdb76b2659c": [
+    15095721,
+    16941
+   ],
+   "589f7523bb62a9d83612930e": [
+    15112662,
+    7341
+   ],
+   "c8f790d11946af6f456b0d65": [
+    15120003,
+    13101
+   ],
+   "b95e9fc77f8b759c9d93c220": [
+    15133104,
+    6957
+   ],
+   "2f53d17e12688cc2b716fc3c": [
+    15140061,
+    18861
+   ],
+   "d258fcb8f0cc6811070ee250": [
+    15158922,
+    7917
+   ],
+   "8250ecf2f784551f44dd3db9": [
+    15166839,
+    22317
+   ],
+   "f0f19e3c1948d5c5ba2bfe48": [
+    15189156,
+    5805
+   ],
+   "ef8fe03e14081368795d9a26": [
+    15194961,
+    15021
+   ],
+   "3878912458b831d0560fdf0c": [
+    15209982,
+    7341
+   ],
+   "842c4f302100d1dc1dc1e7fa": [
+    15217323,
+    18669
+   ],
+   "fa297da34aa84add585705c5": [
+    15235992,
+    6957
+   ],
+   "934fe4ca75091271f5b461b3": [
+    15242949,
+    16173
+   ],
+   "6cc3acd2978db29871fa5e9c": [
+    15259122,
+    6573
+   ],
+   "50b1fe08e72416ec14868380": [
+    15265695,
+    16749
+   ],
+   "fb161bc4976381eb30488a61": [
+    15282444,
+    5421
+   ],
+   "05855d6cbc87814f2fb7df21": [
+    15287865,
+    20013
+   ],
+   "28169201895a7107538fd5fd": [
+    15307878,
+    6957
+   ],
+   "8eccc06eed76a3ee6d3a349c": [
+    15314835,
+    14829
+   ],
+   "b11515aa1fa4f5275a12b8b3": [
+    15329664,
+    6189
+   ],
+   "a7619482f3212c3d67d514d4": [
+    15335853,
+    16557
+   ],
+   "89af390e4f701bc50b196d98": [
+    15352410,
+    7725
+   ],
+   "34c9ccf3fa23f123faa817ff": [
+    15360135,
+    17517
+   ],
+   "6559c1e958fa0ee9c7000edc": [
+    15377652,
+    7725
+   ],
+   "7cffcfc83993306e4d41e1c8": [
+    15385377,
+    16941
+   ],
+   "5f6b29ce83b10d9bd61c0036": [
+    15402318,
+    7917
+   ],
+   "5b8b1eff12e0ec5c54e87697": [
+    15410235,
+    19245
+   ],
+   "cf56ad88c15ddbaaa3fe8125": [
+    15429480,
+    17901
+   ],
+   "64f97a0adce77525dfe43b75": [
+    15447381,
+    16557
+   ],
+   "0fc5eb6bafc557776f529fca": [
+    15463938,
+    17901
+   ],
+   "61284727963b88c4b8479324": [
+    15481839,
+    15789
+   ],
+   "38e50b51c3c40e1213658e8c": [
+    15497628,
+    6957
+   ],
+   "3feb467510fe1cb35fe30b3a": [
+    15504585,
+    15021
+   ],
+   "937de60dd059aa93bc09aa42": [
+    15519606,
+    7341
+   ],
+   "a353a615ee0c34b5ded4f838": [
+    15526947,
+    16941
+   ],
+   "31c5b9d82ba142a1b2f2d890": [
+    15543888,
+    7725
+   ],
+   "d46f433f87283e4f492a81d1": [
+    15551613,
+    18285
+   ],
+   "788fff312528c826df1656ae": [
+    15569898,
+    16557
+   ],
+   "5f09469406d7007238792ea3": [
+    15586455,
+    17709
+   ],
+   "76ab1b7a8c75e042f42caee4": [
+    15604164,
+    17133
+   ],
+   "b0ee910ddc862a005da34921": [
+    15621297,
+    11949
+   ],
+   "dc4ae87b428624a6429e48f3": [
+    15633246,
+    14829
+   ],
+   "2d55cdc6f8ff777daa20824b": [
+    15648075,
+    6573
+   ],
+   "e24d331744d0e715144c4c8b": [
+    15654648,
+    13869
+   ],
+   "f882355057da8ea4612cf504": [
+    15668517,
+    6957
+   ],
+   "ef0f6bfe13539fb2c77974c5": [
+    15675474,
+    15213
+   ],
+   "cd650b8a577cd83eba3390c0": [
+    15690687,
+    7725
+   ],
+   "98ed4610a65d8ba71f54cb83": [
+    15698412,
+    17133
+   ],
+   "7ef8c273096acf9cc9003909": [
+    15715545,
+    7341
+   ],
+   "1fb89e8f8e6bd1400118c890": [
+    15722886,
+    13677
+   ],
+   "35fb7e0bc344430546de7ca9": [
+    15736563,
+    7533
+   ],
+   "fec67b3d980a6d4f45fc5a05": [
+    15744096,
+    14445
+   ],
+   "43855de81e550f6f6480252d": [
+    15758541,
+    5997
+   ],
+   "8a2e19e3e628d7df0a5d228b": [
+    15764538,
+    14061
+   ],
+   "c739d7c911519d4b428ce3e2": [
+    15778599,
+    6765
+   ],
+   "6624375e182ba649d0553be8": [
+    15785364,
+    15405
+   ],
+   "e426bf81eaeed0baab5f5b8d": [
+    15800769,
+    6765
+   ],
+   "44a439f1aff00622691bdb8d": [
+    15807534,
+    16749
+   ],
+   "58518b2b82a3c7759682c65b": [
+    15824283,
+    6189
+   ],
+   "c0dcee93a99ddd244f8db9e7": [
+    15830472,
+    13869
+   ],
+   "1d201368d0d1b31aaec44df4": [
+    15844341,
+    6765
+   ],
+   "4dfec4a75ce5b411bd9d7709": [
+    15851106,
+    15021
+   ],
+   "e09f166b0f4c7180ad60e41d": [
+    15866127,
+    7533
+   ],
+   "45f07018029b322343ea2dc6": [
+    15873660,
+    14445
+   ],
+   "4df698dd0d939b81cc82fe6b": [
+    15888105,
+    14061
+   ],
+   "f49bfb7ca02e62986ef456d0": [
+    15902166,
+    15789
+   ],
+   "30be77373accde8e93200cbf": [
+    15917955,
+    7149
+   ],
+   "b432d6cf550b416224d3fd92": [
+    15925104,
+    11949
+   ],
+   "a46533295486f3749cd0dbd2": [
+    15937053,
+    7725
+   ],
+   "6e2aeed05fd00566cc7707db": [
+    15944778,
+    15789
+   ],
+   "a391af2b579a79e72664d1bb": [
+    15960567,
+    8301
+   ],
+   "9614754b55969e700dd6fb26": [
+    15968868,
+    18093
+   ],
+   "6371599f7548a72faafdaecc": [
+    15986961,
+    8685
+   ],
+   "0f7fa3fb2beb5791b7c74df1": [
+    15995646,
+    22317
+   ],
+   "5273c4dc0bc8deadbb544335": [
+    16017963,
+    6189
+   ],
+   "e3e6b447fc4352fafd16a0dc": [
+    16024152,
+    14253
+   ],
+   "85ec6c6ac8368f6a4fc25277": [
+    16038405,
+    6573
+   ],
+   "947911c20d8d93320dba265e": [
+    16044978,
+    15405
+   ],
+   "93d25f5889a7547332d6af12": [
+    16060383,
+    6381
+   ],
+   "a9da5ccad5552cbf1f724b03": [
+    16066764,
+    15597
+   ],
+   "a43230387d5e6e06bd61673f": [
+    16082361,
+    6765
+   ],
+   "48acb697a30c11eec6d5a3cd": [
+    16089126,
+    14253
+   ],
+   "c620e4a61ed799c37621494f": [
+    16103379,
+    6189
+   ],
+   "9a219dd94bc9e5d617960d6b": [
+    16109568,
+    15405
+   ],
+   "48909b36043b811e3610559e": [
+    16124973,
+    6957
+   ],
+   "804eab189f2147758ab6a42b": [
+    16131930,
+    17709
+   ],
+   "932d792a65fce33b30ded0a5": [
+    16149639,
+    6957
+   ],
+   "07423a5e0a81adfdb9dbe611": [
+    16156596,
+    16173
+   ],
+   "8b9f2e5ebb5c5fd2703e1dc4": [
+    16172769,
+    7149
+   ],
+   "c9ec4588df3660643fdceffd": [
+    16179918,
+    17709
+   ],
+   "59ba37df354a0d2f4df52c52": [
+    16197627,
+    7725
+   ],
+   "b93b2c684de589ae1c999c14": [
+    16205352,
+    14829
+   ],
+   "72cab52d7f50ccbb4f69e971": [
+    16220181,
+    6189
+   ],
+   "6a4a6e62a41e86d794a433f4": [
+    16226370,
+    14253
+   ],
+   "6324bf23f30bcd79f9ed9e59": [
+    16240623,
+    6189
+   ],
+   "8c1a000ae9e5ec80449ded6a": [
+    16246812,
+    11565
+   ],
+   "37f151ad7f48af721c60bae5": [
+    16258377,
+    6573
+   ],
+   "9be72e7cf5978886752afe1c": [
+    16264950,
+    14445
+   ],
+   "2ae79188fd23abfa02120971": [
+    16279395,
+    7341
+   ],
+   "2bc4d03ed2664036540d04a7": [
+    16286736,
+    17133
+   ],
+   "dcefe534942b7a0601c2767c": [
+    16303869,
+    7725
+   ],
+   "e69f6a5def60db3a9871cf6f": [
+    16311594,
+    15981
+   ],
+   "815de5b0108c4b5914541319": [
+    16327575,
+    7341
+   ],
+   "ae81412db79de8995ff18bbb": [
+    16334916,
+    16365
+   ],
+   "a3ad94e683686238ff63c596": [
+    16351281,
+    6957
+   ],
+   "a98e1e1e42b72bd78948d948": [
+    16358238,
+    15405
+   ],
+   "a34b36ca500de388b011cc79": [
+    16373643,
+    6189
+   ],
+   "4724d21c8676ea9507ee4cf9": [
+    16379832,
+    17517
+   ],
+   "84b5e6d2edb770a8c45621cf": [
+    16397349,
+    5613
+   ],
+   "107d84798cee5e4d59ec8fc9": [
+    16402962,
+    15021
+   ],
+   "5882dbc93db03a01c51680e2": [
+    16417983,
+    5613
+   ],
+   "4a234aab2af19f24429ba380": [
+    16423596,
+    8109
+   ],
+   "22e3fbe80f9b49cb0140e7e8": [
+    16431705,
+    5997
+   ],
+   "dae8d58efb70e5d919e3d923": [
+    16437702,
+    13293
+   ],
+   "73e4c88592ead47bb0cb2c28": [
+    16450995,
+    5805
+   ],
+   "8a0bb9b6d48909f6cc6d5c30": [
+    16456800,
+    11949
+   ],
+   "328104fa6d96701a5df367c4": [
+    16468749,
+    6573
+   ],
+   "07ca483eb4b7d7dcaeaf1c6d": [
+    16475322,
+    17709
+   ],
+   "1e8d8018d0d9ae6969042b68": [
+    16493031,
+    6573
+   ],
+   "22184b0d75656e4206a157e9": [
+    16499604,
+    14637
+   ],
+   "e7cbe775db1b88609b30e95d": [
+    16514241,
+    7149
+   ],
+   "851070bd6ccaff428a59fa4f": [
+    16521390,
+    17325
+   ],
+   "711bc089e9e1842b7b023df8": [
+    16538715,
+    5421
+   ],
+   "2394cf1bb2fcc68de2579215": [
+    16544136,
+    14829
+   ],
+   "2e07d53aac39a7d3baed21d6": [
+    16558965,
+    6381
+   ],
+   "23821b45ba09ef7a89362222": [
+    16565346,
+    18477
+   ],
+   "6da4ed14521eca5dc918d104": [
+    16583823,
+    6765
+   ],
+   "1793cb56b241599a4e6583a4": [
+    16590588,
+    21549
+   ],
+   "ba768ab2dea69671f7ce37fd": [
+    16612137,
+    6189
+   ],
+   "9dc8a6407db0412d35cf180c": [
+    16618326,
+    12717
+   ],
+   "62c899bcfeb49e9eb9234bd8": [
+    16631043,
+    6957
+   ],
+   "942136bc4e191d4179123ee9": [
+    16638000,
+    19053
+   ],
+   "0982d91d52ccd42d0d3b2f24": [
+    16657053,
+    7725
+   ],
+   "cc9372eb835dcfe4c80aa12f": [
+    16664778,
+    13485
+   ],
+   "cadc1f5dd6dc3ebea8e4c4cc": [
+    16678263,
+    6189
+   ],
+   "3491630bc92006d643a45248": [
+    16684452,
+    13485
+   ],
+   "fd4b17e1d10e4afe2f8905a0": [
+    16697937,
+    15021
+   ],
+   "173955a37bbb2078f674a43e": [
+    16712958,
+    7533
+   ],
+   "f5331afc86d3d67b3d4bf61b": [
+    16720491,
+    15405
+   ],
+   "625ea040acad7ed25cc4a439": [
+    16735896,
+    7149
+   ],
+   "683345495978f8d672c6acce": [
+    16743045,
+    21357
+   ],
+   "d4fc9ec5e48582f6338d2a00": [
+    16764402,
+    7533
+   ],
+   "9472b829229ddd584c226a7d": [
+    16771935,
+    22317
+   ],
+   "cedb6bdd4ab9ea74b4fd31fd": [
+    16794252,
+    5805
+   ],
+   "a0910276a8724e4df0b3851f": [
+    16800057,
+    21741
+   ],
+   "3823ec2cf374232969c45799": [
+    16821798,
+    5613
+   ],
+   "3aedd2030151fd58444f6883": [
+    16827411,
+    16941
    ]
   },
   "words": {
@@ -22121,6 +26074,754 @@
    "0023848eb0782de08a3eead2": [
     "ja",
     "とります"
+   ],
+   "e2aba84e38e38ab879e8e54d": [
+    "ja",
+    "いす"
+   ],
+   "0deaf08f613be56d760a4485": [
+    "ja",
+    "ノート"
+   ],
+   "35356f1778535a03fe8fddd9": [
+    "ja",
+    "ペン"
+   ],
+   "70e83999663a89433bc10a7f": [
+    "ja",
+    "ボールペン"
+   ],
+   "2f363c3b1bb2a3cc94a4f3d2": [
+    "ja",
+    "ページ"
+   ],
+   "b2cf5d28411f95eb02f6b716": [
+    "ja",
+    "テスト"
+   ],
+   "e8e0088e1c6196823cd045a0": [
+    "ja",
+    "クラス"
+   ],
+   "d9cf11b19d4c364b7e8955c9": [
+    "ja",
+    "ざっし"
+   ],
+   "89274ea47fbf273b5a8a0a0d": [
+    "ja",
+    "ぶんしょう"
+   ],
+   "66ab0780f286743ed11006a4": [
+    "ja",
+    "ひらがな"
+   ],
+   "810fdb7f18a1da87a722ecae": [
+    "ja",
+    "かたかな"
+   ],
+   "d7bb6c2321fbf508d0ba8407": [
+    "ja",
+    "テーブル"
+   ],
+   "4b18ffa7cc5d42970a064cc5": [
+    "ja",
+    "ほんだな"
+   ],
+   "e528ee040ab3715c06b5a036": [
+    "ja",
+    "カレンダー"
+   ],
+   "7f4f078d10ef0d9b793be1fd": [
+    "ja",
+    "テレビ"
+   ],
+   "f94251758fc25257331a9b52": [
+    "ja",
+    "ラジオ"
+   ],
+   "ed2472b86adff56641983303": [
+    "ja",
+    "カメラ"
+   ],
+   "9acd672b122b2d27dd1439b1": [
+    "ja",
+    "ドア"
+   ],
+   "608b3448a1d34b8ea108e7ae": [
+    "ja",
+    "ベッド"
+   ],
+   "e7ec11e52eb20ed37a874442": [
+    "ja",
+    "ポケット"
+   ],
+   "a09c85e71da9db3bf4cdce87": [
+    "ja",
+    "べんきょう"
+   ],
+   "2a0b2ea4c0040794834531b6": [
+    "ja",
+    "ちず"
+   ],
+   "c86712488751770b77b55e0e": [
+    "ja",
+    "コピー"
+   ],
+   "3927614bceb2ceef82ff18ac": [
+    "ja",
+    "スマホ"
+   ],
+   "6759ae64ae782fe941fce3f4": [
+    "ja",
+    "メール"
+   ],
+   "18096704495ef5a6bf5841ea": [
+    "ja",
+    "みっつ"
+   ],
+   "05064674b269ec70fe83c853": [
+    "ja",
+    "よっつ"
+   ],
+   "8c9070e6fe46add02d5773bd": [
+    "ja",
+    "いつつ"
+   ],
+   "07ec5f1ec2688505908eda15": [
+    "ja",
+    "むっつ"
+   ],
+   "8ba5d89db5c542be3763925e": [
+    "ja",
+    "やっつ"
+   ],
+   "7f1205e657011f3a48aee7aa": [
+    "ja",
+    "ここのつ"
+   ],
+   "3db73883ca93d8db4d06b2a6": [
+    "ja",
+    "ついたち"
+   ],
+   "76691bac050147e93e51b311": [
+    "ja",
+    "ふつか"
+   ],
+   "7672a09e3c4c17ac5d4cadfd": [
+    "ja",
+    "みっか"
+   ],
+   "aafa1de02c9ca758a6bd1723": [
+    "ja",
+    "よっか"
+   ],
+   "22f649e4006b16dc61d27a50": [
+    "ja",
+    "なのか"
+   ],
+   "efdb2461cab934b5e7b9d2e9": [
+    "ja",
+    "ようか"
+   ],
+   "31296af8f0c6dbda8aa15d15": [
+    "ja",
+    "ここのか"
+   ],
+   "e75aceb316a36533305f62ce": [
+    "ja",
+    "はつか"
+   ],
+   "138e12283df66f55f6f4575f": [
+    "ja",
+    "はたち"
+   ],
+   "9ede291a5ea68aca37f9a1f3": [
+    "ja",
+    "いちにち"
+   ],
+   "aced16c2c8e3b6a51a821cda": [
+    "ja",
+    "ひとつき"
+   ],
+   "a80372b48526af33bcfa63d4": [
+    "ja",
+    "はんぶん"
+   ],
+   "ab4f2f0f457a3b2cccddf51a": [
+    "ja",
+    "ゼロ"
+   ],
+   "b0f20d0371ab20d55488ad5a": [
+    "ja",
+    "メートル"
+   ],
+   "13415e87bef830b691d7e762": [
+    "ja",
+    "キロ"
+   ],
+   "539a8d2a567a7915b33c0892": [
+    "ja",
+    "グラム"
+   ],
+   "47ffee3ba02942d7db4cd92f": [
+    "ja",
+    "あさって"
+   ],
+   "a04d69c43487cce3455118dc": [
+    "ja",
+    "おととい"
+   ],
+   "2af14e15192672f44ebcd048": [
+    "ja",
+    "おととし"
+   ],
+   "331a4187108d86aeb93a9247": [
+    "ja",
+    "さらいねん"
+   ],
+   "b149a430f5e3aab5b5b6ed73": [
+    "ja",
+    "せんげつ"
+   ],
+   "1c927007ebceccbaeabb35da": [
+    "ja",
+    "こんげつ"
+   ],
+   "6d05618983cc08c44690ee44": [
+    "ja",
+    "こんしゅう"
+   ],
+   "02f418c289fa907816007814": [
+    "ja",
+    "まいしゅう"
+   ],
+   "243ec9664d96d1aad4ad3d18": [
+    "ja",
+    "まいげつ"
+   ],
+   "8dda37dc5c61603fa1e24281": [
+    "ja",
+    "まいねん"
+   ],
+   "88707c14776f437d092aa5c5": [
+    "ja",
+    "まいばん"
+   ],
+   "53e2f800cb466b1847c885e7": [
+    "ja",
+    "こんばん"
+   ],
+   "e3db7383e016a5a3c6366e4d": [
+    "ja",
+    "けさ"
+   ],
+   "8073d9462efb96659c449bce": [
+    "ja",
+    "ゆうべ"
+   ],
+   "1a2a26f26f922e9e523eccbf": [
+    "ja",
+    "ごぜん"
+   ],
+   "cc37e2a15d283f424b090179": [
+    "ja",
+    "すぎ"
+   ],
+   "f272dbab16ac23e2501ff692": [
+    "ja",
+    "はじめ"
+   ],
+   "a0d1dace074c720c2629f671": [
+    "ja",
+    "やすみ"
+   ],
+   "2826589fa2800cd799967521": [
+    "ja",
+    "ときどき"
+   ],
+   "a9b5a8cb830d5fca0bee37c7": [
+    "ja",
+    "いつも"
+   ],
+   "9ac333436ad2874fdf0371c3": [
+    "ja",
+    "たんじょうび"
+   ],
+   "470cc15eaad356904593241f": [
+    "ja",
+    "ゆうはん"
+   ],
+   "eb2a19c1f0c39218de94693b": [
+    "ja",
+    "おじいさん"
+   ],
+   "32110b6762f4d14fbb4a6de7": [
+    "ja",
+    "おばあさん"
+   ],
+   "0e27dbbbd4729a0654d9d737": [
+    "ja",
+    "おじさん"
+   ],
+   "f49367701f2fd0d5cbcdb838": [
+    "ja",
+    "おばさん"
+   ],
+   "570a73533ae0d81374b46d6a": [
+    "ja",
+    "おにいさん"
+   ],
+   "e90b4253a4b4d3465c7f5ebf": [
+    "ja",
+    "おねえさん"
+   ],
+   "a036f93c9985f946491ffc18": [
+    "ja",
+    "あなた"
+   ],
+   "590f98c3862fecc9eb822f49": [
+    "ja",
+    "みんな"
+   ],
+   "01e091d6b33ba34fb2ac26ee": [
+    "ja",
+    "おまわりさん"
+   ],
+   "5fe6b348d3438388a204d912": [
+    "ja",
+    "かいしゃ"
+   ],
+   "a79e1d3b3d3bf239f17e98e4": [
+    "ja",
+    "たいしかん"
+   ],
+   "60c59e745516d89fc97a761b": [
+    "ja",
+    "いらっしゃいませ"
+   ],
+   "bc580d89b8e170ade2e12cc2": [
+    "ja",
+    "もしもし"
+   ],
+   "a6be753d7755202b0e89f836": [
+    "ja",
+    "いかが"
+   ],
+   "37997fc4cb40e7650c342561": [
+    "ja",
+    "けっこう"
+   ],
+   "8019289e51c32a8be4948d9a": [
+    "ja",
+    "だいじょうぶ"
+   ],
+   "de64299b69964c9949287ca4": [
+    "ja",
+    "たいへん"
+   ],
+   "d531f9abb74204088f9a4fe8": [
+    "ja",
+    "どうぞ"
+   ],
+   "9a65bd9b5224c7314bf8f136": [
+    "ja",
+    "どうも"
+   ],
+   "aca09e5709c8565f0033cc5c": [
+    "ja",
+    "ちょっと"
+   ],
+   "7851e6e978caf530ab8d22ae": [
+    "ja",
+    "シャツ"
+   ],
+   "2721361964b2d73db665ca71": [
+    "ja",
+    "スカート"
+   ],
+   "b32010b74a8521e9c68a5f01": [
+    "ja",
+    "ズボン"
+   ],
+   "cfc8caf1aa7c759d1535a5a5": [
+    "ja",
+    "セーター"
+   ],
+   "6ffcc69b4c6fabdd47d25d1c": [
+    "ja",
+    "コート"
+   ],
+   "44851a36c56fb2bab2f85ddd": [
+    "ja",
+    "うわぎ"
+   ],
+   "45d6c0e7327a8f9174debe11": [
+    "ja",
+    "くつした"
+   ],
+   "8c2c20a09237bc574c448f03": [
+    "ja",
+    "ネクタイ"
+   ],
+   "3da1e1e11c479bfa239b20f1": [
+    "ja",
+    "ぼうし"
+   ],
+   "fd03271cec8477d4babb7de1": [
+    "ja",
+    "スリッパ"
+   ],
+   "2b6ffe6ba46655d8e7a9dfe6": [
+    "ja",
+    "ハンカチ"
+   ],
+   "514683d4cb9284174b34b39c": [
+    "ja",
+    "タオル"
+   ],
+   "f1350d6bf183e63be859d947": [
+    "ja",
+    "せっけん"
+   ],
+   "18b032b99bd0ec15adb42ad4": [
+    "ja",
+    "シャワー"
+   ],
+   "2dbe25d732c54a1ef762da10": [
+    "ja",
+    "ふろ"
+   ],
+   "573ac7a207256188b8e71485": [
+    "ja",
+    "はがき"
+   ],
+   "47341ac163f2f1cfd0928201": [
+    "ja",
+    "ふうとう"
+   ],
+   "cbf68a03a825d9ed722d6fe6": [
+    "ja",
+    "ポスト"
+   ],
+   "589f7523bb62a9d83612930e": [
+    "ja",
+    "いりぐち"
+   ],
+   "b95e9fc77f8b759c9d93c220": [
+    "ja",
+    "でぐち"
+   ],
+   "d258fcb8f0cc6811070ee250": [
+    "ja",
+    "こうさてん"
+   ],
+   "f0f19e3c1948d5c5ba2bfe48": [
+    "ja",
+    "かど"
+   ],
+   "3878912458b831d0560fdf0c": [
+    "ja",
+    "まっすぐ"
+   ],
+   "fa297da34aa84add585705c5": [
+    "ja",
+    "ちかく"
+   ],
+   "6cc3acd2978db29871fa5e9c": [
+    "ja",
+    "みなみ"
+   ],
+   "fb161bc4976381eb30488a61": [
+    "ja",
+    "きた"
+   ],
+   "28169201895a7107538fd5fd": [
+    "ja",
+    "げんかん"
+   ],
+   "b11515aa1fa4f5275a12b8b3": [
+    "ja",
+    "ろうか"
+   ],
+   "89af390e4f701bc50b196d98": [
+    "ja",
+    "たてもの"
+   ],
+   "6559c1e958fa0ee9c7000edc": [
+    "ja",
+    "えいがかん"
+   ],
+   "5f6b29ce83b10d9bd61c0036": [
+    "ja",
+    "きっさてん"
+   ],
+   "e0d1dcdcdd9bfb2e96c80293": [
+    "ja",
+    "デパート"
+   ],
+   "a0ad9832c91e6b6ca9bfe87c": [
+    "ja",
+    "レストラン"
+   ],
+   "d8db07fd312117467740fabe": [
+    "ja",
+    "ホテル"
+   ],
+   "67fb59e2f3768a8c70db4c63": [
+    "ja",
+    "プール"
+   ],
+   "38e50b51c3c40e1213658e8c": [
+    "ja",
+    "こうばん"
+   ],
+   "937de60dd059aa93bc09aa42": [
+    "ja",
+    "コンビニ"
+   ],
+   "31c5b9d82ba142a1b2f2d890": [
+    "ja",
+    "じどうしゃ"
+   ],
+   "fba516608afe1a24d051c20a": [
+    "ja",
+    "タクシー"
+   ],
+   "8a7466478d2a46c7f2e60ea0": [
+    "ja",
+    "どうぶつ"
+   ],
+   "d7c466127e81478a07a88481": [
+    "ja",
+    "パーティー"
+   ],
+   "0335ae945cdfa5d1554064f6": [
+    "ja",
+    "ごはん"
+   ],
+   "e1137296ea5ed511d162fe8a": [
+    "ja",
+    "コーヒー"
+   ],
+   "606c9266fc30568077200bde": [
+    "ja",
+    "パン"
+   ],
+   "2d55cdc6f8ff777daa20824b": [
+    "ja",
+    "バター"
+   ],
+   "f882355057da8ea4612cf504": [
+    "ja",
+    "しょうゆ"
+   ],
+   "cd650b8a577cd83eba3390c0": [
+    "ja",
+    "ぶたにく"
+   ],
+   "7ef8c273096acf9cc9003909": [
+    "ja",
+    "とりにく"
+   ],
+   "35fb7e0bc344430546de7ca9": [
+    "ja",
+    "おべんとう"
+   ],
+   "43855de81e550f6f6480252d": [
+    "ja",
+    "おさら"
+   ],
+   "c739d7c911519d4b428ce3e2": [
+    "ja",
+    "ちゃわん"
+   ],
+   "e426bf81eaeed0baab5f5b8d": [
+    "ja",
+    "コップ"
+   ],
+   "58518b2b82a3c7759682c65b": [
+    "ja",
+    "からい"
+   ],
+   "1d201368d0d1b31aaec44df4": [
+    "ja",
+    "まずい"
+   ],
+   "e09f166b0f4c7180ad60e41d": [
+    "ja",
+    "つめたい"
+   ],
+   "649b06c542cd46fc1fa3870e": [
+    "ja",
+    "ナイフ"
+   ],
+   "0f1f71edf5cfc08b59d7d9a7": [
+    "ja",
+    "フォーク"
+   ],
+   "30be77373accde8e93200cbf": [
+    "ja",
+    "スプーン"
+   ],
+   "a46533295486f3749cd0dbd2": [
+    "ja",
+    "おもしろい"
+   ],
+   "a391af2b579a79e72664d1bb": [
+    "ja",
+    "つまらない"
+   ],
+   "6371599f7548a72faafdaecc": [
+    "ja",
+    "むずかしい"
+   ],
+   "5273c4dc0bc8deadbb544335": [
+    "ja",
+    "おもい"
+   ],
+   "85ec6c6ac8368f6a4fc25277": [
+    "ja",
+    "ながい"
+   ],
+   "93d25f5889a7547332d6af12": [
+    "ja",
+    "ふとい"
+   ],
+   "a43230387d5e6e06bd61673f": [
+    "ja",
+    "ほそい"
+   ],
+   "c620e4a61ed799c37621494f": [
+    "ja",
+    "おそい"
+   ],
+   "48909b36043b811e3610559e": [
+    "ja",
+    "すくない"
+   ],
+   "932d792a65fce33b30ded0a5": [
+    "ja",
+    "うるさい"
+   ],
+   "8b9f2e5ebb5c5fd2703e1dc4": [
+    "ja",
+    "きたない"
+   ],
+   "59ba37df354a0d2f4df52c52": [
+    "ja",
+    "かわいい"
+   ],
+   "72cab52d7f50ccbb4f69e971": [
+    "ja",
+    "じょうぶ"
+   ],
+   "6324bf23f30bcd79f9ed9e59": [
+    "ja",
+    "りっぱ"
+   ],
+   "37f151ad7f48af721c60bae5": [
+    "ja",
+    "ちゃいろ"
+   ],
+   "2ae79188fd23abfa02120971": [
+    "ja",
+    "おおきな"
+   ],
+   "dcefe534942b7a0601c2767c": [
+    "ja",
+    "ちいさな"
+   ],
+   "815de5b0108c4b5914541319": [
+    "ja",
+    "だいすき"
+   ],
+   "a3ad94e683686238ff63c596": [
+    "ja",
+    "たくさん"
+   ],
+   "a34b36ca500de388b011cc79": [
+    "ja",
+    "もっと"
+   ],
+   "84b5e6d2edb770a8c45621cf": [
+    "ja",
+    "よく"
+   ],
+   "5882dbc93db03a01c51680e2": [
+    "ja",
+    "また"
+   ],
+   "22e3fbe80f9b49cb0140e7e8": [
+    "ja",
+    "なぜ"
+   ],
+   "73e4c88592ead47bb0cb2c28": [
+    "ja",
+    "いれる"
+   ],
+   "328104fa6d96701a5df367c4": [
+    "ja",
+    "うまれる"
+   ],
+   "1e8d8018d0d9ae6969042b68": [
+    "ja",
+    "かける"
+   ],
+   "e7cbe775db1b88609b30e95d": [
+    "ja",
+    "つとめる"
+   ],
+   "711bc089e9e1842b7b023df8": [
+    "ja",
+    "とぶ"
+   ],
+   "2e07d53aac39a7d3baed21d6": [
+    "ja",
+    "ならぶ"
+   ],
+   "6da4ed14521eca5dc918d104": [
+    "ja",
+    "わたす"
+   ],
+   "ba768ab2dea69671f7ce37fd": [
+    "ja",
+    "くもる"
+   ],
+   "62c899bcfeb49e9eb9234bd8": [
+    "ja",
+    "そうじ"
+   ],
+   "0982d91d52ccd42d0d3b2f24": [
+    "ja",
+    "せんたく"
+   ],
+   "cadc1f5dd6dc3ebea8e4c4cc": [
+    "ja",
+    "ペット"
+   ],
+   "8dac9cea34cc8faf344c52f6": [
+    "ja",
+    "ギター"
+   ],
+   "173955a37bbb2078f674a43e": [
+    "ja",
+    "スポーツ"
+   ],
+   "625ea040acad7ed25cc4a439": [
+    "ja",
+    "しかし"
+   ],
+   "d4fc9ec5e48582f6338d2a00": [
+    "ja",
+    "それから"
+   ],
+   "cedb6bdd4ab9ea74b4fd31fd": [
+    "ja",
+    "でも"
+   ],
+   "3823ec2cf374232969c45799": [
+    "ja",
+    "など"
    ]
   }
  }
